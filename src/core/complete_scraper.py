@@ -1360,7 +1360,7 @@ class CompleteScraper:
             
             # Navigate to the profile page
             try:
-                await page.goto(profile_url, wait_until='networkidle', timeout=15000)
+                await page.goto(profile_url, wait_until='networkidle')
                 await asyncio.sleep(2)
             except Exception as nav_error:
                 self.logger.error(f"    [ERROR] Navigation failed: {nav_error}")
@@ -1674,44 +1674,29 @@ class CompleteScraper:
         """
         
         try:
-            # Initialize Playwright with timeout protection
-            self.logger.info("🔄 Initializing Playwright browser...")
-            playwright = await asyncio.wait_for(
-                async_playwright().start(),
-                timeout=15.0  # 15 second timeout for browser initialization
+            # Initialize Playwright without timeout protection
+            self.logger.info("[START] Initializing Playwright browser...")
+            playwright = await async_playwright().start()
+            
+            self.logger.info("[START] Launching browser...")
+            browser = await playwright.chromium.launch(
+                headless=self.config.HEADLESS,
+                channel='msedge',
+                args=self.config.BROWSER_ARGS
+            )
+            self.logger.info("[START] Creating browser context...")
+            context = await browser.new_context(
+                viewport={'width': self.config.VIEWPORT_WIDTH, 'height': self.config.VIEWPORT_HEIGHT},
+                user_agent=self.config.USER_AGENT
             )
             
-            self.logger.info("🔄 Launching browser...")
-            browser = await asyncio.wait_for(
-                playwright.chromium.launch(
-                    headless=self.config.HEADLESS,
-                    channel='msedge',
-                    args=self.config.BROWSER_ARGS
-                ),
-                timeout=10.0  # 10 second timeout for browser launch
-            )
-            self.logger.info("🔄 Creating browser context...")
-            context = await asyncio.wait_for(
-                browser.new_context(
-                    viewport={'width': self.config.VIEWPORT_WIDTH, 'height': self.config.VIEWPORT_HEIGHT},
-                    user_agent=self.config.USER_AGENT
-                ),
-                timeout=5.0
-            )
-            
-            self.logger.info("🔄 Creating new page...")
-            page = await asyncio.wait_for(
-                context.new_page(),
-                timeout=5.0
-            )
+            self.logger.info("[START] Creating new page...")
+            page = await context.new_page()
             page.set_default_timeout(self.config.TIMEOUT)
             
-            # Login and get to main page with timeout
-            self.logger.info("🔄 Attempting login...")
-            login_success = await asyncio.wait_for(
-                self.auto_login.login(page, self.config.BASE_URL),
-                timeout=15.0  # 15 second timeout for login
-            )
+            # Login and get to main page without timeout
+            self.logger.info("[START] Attempting login...")
+            login_success = await self.auto_login.login(page, self.config.BASE_URL)
             if not login_success:
                 self.logger.error("❌ Failed to login")
                 await browser.close()
@@ -1773,25 +1758,14 @@ class CompleteScraper:
                 # Continue without seating data rather than failing completely
             
             # Clean up browser resources
-            self.logger.info("🔄 Cleaning up browser resources...")
-            await asyncio.wait_for(browser.close(), timeout=5.0)
-            await asyncio.wait_for(playwright.stop(), timeout=5.0)
+            self.logger.info("[CLEANUP] Cleaning up browser resources...")
+            await browser.close()
+            await playwright.stop()
             
             self.logger.info(f"✅ Successfully scraped {len(employees)} employees")
             
             return employees
             
-        except asyncio.TimeoutError as e:
-            self.logger.error(f"⏰ Scraping timed out: {e}")
-            # Try to clean up browser if it exists
-            try:
-                if 'browser' in locals():
-                    await browser.close()
-                if 'playwright' in locals():
-                    await playwright.stop()
-            except:
-                pass
-            return []
         except Exception as e:
             self.logger.error(f"❌ Error during scraping: {e}")
             # Try to clean up browser if it exists

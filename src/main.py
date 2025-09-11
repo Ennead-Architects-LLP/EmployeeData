@@ -156,28 +156,19 @@ class TimeoutManager:
         self.logger.info("[STOP] All timers cancelled")
 
 
-async def run_with_timeout_protection(orchestrator: Orchestrator, config: ScraperConfig):
-    """Run orchestrator with comprehensive timeout protection."""
-    timeout_manager = TimeoutManager(default_timeout=10.0)
-    
+async def run_without_timeout(orchestrator: Orchestrator, config: ScraperConfig):
+    """Run orchestrator without timeout protection."""
     try:
-        # Step 1: Setup with timeout
-        async with timeout_manager.timeout_protection("Setup directories", 5.0):
-            config.setup_directories()
+        # Step 1: Setup directories
+        config.setup_directories()
         
-        # Step 2: Run orchestrator with timeout
-        async with timeout_manager.timeout_protection("Main scraping operation", 1800.0):
-            html_path = await orchestrator.run()
-            return html_path
+        # Step 2: Run orchestrator
+        html_path = await orchestrator.run()
+        return html_path
             
-    except asyncio.TimeoutError as e:
-        timeout_manager.logger.error(f"Operation timed out: {e}")
-        return None
     except Exception as e:
-        timeout_manager.logger.error(f"Operation failed: {e}")
+        print(f"Operation failed: {e}")
         return None
-    finally:
-        await timeout_manager.cancel_all_timers()
 
 
 async def main():
@@ -289,9 +280,9 @@ async def main():
         print("="*50)
     
     try:
-        # Delegate to orchestrator with timeout protection
+        # Delegate to orchestrator without timeout protection
         orchestrator = Orchestrator(config)
-        html_path = await run_with_timeout_protection(orchestrator, config)
+        html_path = await run_without_timeout(orchestrator, config)
         
         if not html_path:
             print("❌ Scraping failed or timed out.")

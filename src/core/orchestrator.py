@@ -17,37 +17,25 @@ class Orchestrator:
         scraper = CompleteScraper(self.config)
 
         try:
-            # Step 1: Scrape employees with timeout
+            # Step 1: Scrape employees without timeout
             self.logger.info("[STEP 1] Scraping employees...")
-            employees = await asyncio.wait_for(
-                scraper.scrape_all_employees(), 
-                timeout=1800.0
-            )
+            employees = await scraper.scrape_all_employees()
             if not employees:
                 self.logger.error("[ERROR] No employees scraped. Aborting.")
                 return ""
 
-            # Step 2: Save JSON with timeout
+            # Step 2: Save JSON without timeout
             self.logger.info("[STEP 2] Saving JSON...")
-            json_path = await asyncio.wait_for(
-                asyncio.to_thread(scraper.save_to_json, employees),
-                timeout=5.0
-            )
+            json_path = await asyncio.to_thread(scraper.save_to_json, employees)
             self.logger.info(f"[SUCCESS] Saved JSON to {json_path}")
 
-            # Step 3: Generate HTML with timeout
+            # Step 3: Generate HTML without timeout
             self.logger.info("[STEP 3] Generating HTML...")
-            html_path = await asyncio.wait_for(
-                asyncio.to_thread(scraper.generate_html_report, json_path),
-                timeout=10.0
-            )
+            html_path = await asyncio.to_thread(scraper.generate_html_report, json_path)
             self.logger.info(f"[SUCCESS] Generated HTML at {html_path}")
 
             return html_path
             
-        except asyncio.TimeoutError:
-            self.logger.error("[TIMEOUT] Orchestrator operation timed out")
-            return ""
         except Exception as e:
             self.logger.error(f"[ERROR] Orchestrator failed: {e}")
             return ""
