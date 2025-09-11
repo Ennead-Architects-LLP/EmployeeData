@@ -1,0 +1,22 @@
+# Employee Data Scraper Dependencies
+
+# Web scraping and browser automation
+playwright>=1.40.0
+
+# GUI for credentials (built into Python standard library - tkinter)
+# No additional package needed for tkinter
+
+# Standard library modules used:
+# - asyncio (built-in)
+# - argparse (built-in) 
+# - logging (built-in)
+# - pathlib (built-in)
+# - json (built-in)
+# - datetime (built-in)
+# - typing (built-in)
+# - urllib.parse (built-in)
+# - shutil (built-in)
+# - os (built-in)
+# - sys (built-in)
+# - re (built-in)
+# - time (built-in)
