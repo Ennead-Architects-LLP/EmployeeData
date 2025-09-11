@@ -113,7 +113,7 @@ class TimeoutManager:
     async def timeout_protection(self, operation_name: str, timeout: float = None):
         """Context manager for timeout protection with automatic reset."""
         timeout = timeout or self.default_timeout
-        self.logger.info(f"🔄 Starting {operation_name} (timeout: {timeout}s)")
+        self.logger.info(f"[START] {operation_name} (timeout: {timeout}s)")
         
         start_time = asyncio.get_event_loop().time()
         
@@ -130,13 +130,13 @@ class TimeoutManager:
                 self.active_timers.discard(timeout_task)
                 
             elapsed = asyncio.get_event_loop().time() - start_time
-            self.logger.info(f"✅ {operation_name} completed in {elapsed:.2f}s")
+            self.logger.info(f"[SUCCESS] {operation_name} completed in {elapsed:.2f}s")
             
         except asyncio.TimeoutError:
-            self.logger.error(f"⏰ {operation_name} timed out after {timeout}s")
+            self.logger.error(f"[TIMEOUT] {operation_name} timed out after {timeout}s")
             raise
         except Exception as e:
-            self.logger.error(f"❌ {operation_name} failed: {e}")
+            self.logger.error(f"[ERROR] {operation_name} failed: {e}")
             raise
         finally:
             # Clean up timeout task
@@ -153,7 +153,7 @@ class TimeoutManager:
         for timer in list(self.active_timers):
             timer.cancel()
             self.active_timers.discard(timer)
-        self.logger.info("🛑 All timers cancelled")
+        self.logger.info("[STOP] All timers cancelled")
 
 
 async def run_with_timeout_protection(orchestrator: Orchestrator, config: ScraperConfig):
@@ -166,7 +166,7 @@ async def run_with_timeout_protection(orchestrator: Orchestrator, config: Scrape
             config.setup_directories()
         
         # Step 2: Run orchestrator with timeout
-        async with timeout_manager.timeout_protection("Main scraping operation", 30.0):
+        async with timeout_manager.timeout_protection("Main scraping operation", 1800.0):
             html_path = await orchestrator.run()
             return html_path
             

@@ -431,7 +431,24 @@ class CompleteScraper:
                         self.logger.info(f"Processing location {i+1}: {location_name}")
                         
                         # Click the checkbox to filter by this location
-                        await checkbox.click()
+                        # Try multiple click methods to ensure it works
+                        try:
+                            # Method 1: Direct click
+                            await checkbox.click()
+                        except:
+                            try:
+                                # Method 2: Force click with JavaScript
+                                await page.evaluate("(element) => element.click()", checkbox)
+                            except:
+                                # Method 3: Click the label if checkbox is not directly clickable
+                                label = await page.query_selector(f'label[for="{await checkbox.get_attribute("id")}"]')
+                                if label:
+                                    await label.click()
+                                else:
+                                    # Method 4: Click the parent element
+                                    parent = await checkbox.query_selector('xpath=..')
+                                    if parent:
+                                        await parent.click()
                         await asyncio.sleep(2)  # Wait for page to filter
                         
                         # Click Apply button if it exists
@@ -1260,6 +1277,9 @@ class CompleteScraper:
         """
         self.logger.info("Scrolling to load all project rows...")
         
+        # First, try to find the specific table container
+        table_container = await page.query_selector('.gridViewStyles__GridView, .projects-table, .data-grid, [class*="table"], [class*="grid"]')
+        
         # Get initial count of project rows
         initial_rows = await page.query_selector_all('div[class*="gridViewStyles__HorizontalCell"]')
         initial_count = len(initial_rows)
@@ -1271,8 +1291,21 @@ class CompleteScraper:
         last_count = initial_count
         
         while scroll_attempts < max_scroll_attempts:
-            # Scroll to bottom of page
-            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            if table_container:
+                # Scroll within the specific table container
+                await page.evaluate("""
+                    (container) => {
+                        if (container) {
+                            container.scrollTop = container.scrollHeight;
+                        } else {
+                            window.scrollTo(0, document.body.scrollHeight);
+                        }
+                    }
+                """, table_container)
+            else:
+                # Fallback: scroll the main page
+                await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            
             await asyncio.sleep(2)  # Wait for content to load
             
             # Check if new content was loaded
@@ -1290,7 +1323,10 @@ class CompleteScraper:
             scroll_attempts += 1
         
         # Final scroll to top to ensure we can see all content
-        await page.evaluate("window.scrollTo(0, 0)")
+        if table_container:
+            await page.evaluate("(container) => container.scrollTop = 0", table_container)
+        else:
+            await page.evaluate("window.scrollTo(0, 0)")
         await asyncio.sleep(1)
         
         final_rows = await page.query_selector_all('div[class*="gridViewStyles__HorizontalCell"]')

@@ -1,0 +1,79 @@
+{
+  "real_name": "Robinson Strong",
+  "email": "robinson.strong@ennead.com",
+  "bio": null,
+  "phone": "212-792-5973",
+  "mobile": "212-792-5973",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/61E6B0A1-B90D-4219-A188-C86088141053/robinson-strong",
+  "image_url": "https://ei.ennead.com/api/image/743b4f1b-8875-434f-a654-a4e1fbb91900/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Associate",
+  "department": null,
+  "years_with_firm": 3,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA",
+    "GBCI",
+    "LEED GA"
+  ],
+  "education": [
+    {
+      "institution": "Pratt Institute",
+      "degree": "Undergraduate",
+      "specialty": "Bachelor of Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Shaoxing Textile Museum",
+      "number": "2418",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+    },
+    {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "number": "2322",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition"
+    },
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "2151",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+      "number": "2133",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "2025",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Robinson.Strong@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T16:01:45.309329",
+  "profile_id": "robinson-strong"
+}

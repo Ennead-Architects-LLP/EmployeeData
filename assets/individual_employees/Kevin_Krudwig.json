@@ -1,0 +1,111 @@
+{
+  "real_name": "Kevin Krudwig",
+  "email": "kevin.krudwig@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5945",
+  "mobile": "(212) 792-5945",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/FDBB7DC3-F171-42C1-8F68-9BEB3075B618/kevin-krudwig",
+  "image_url": "https://ei.ennead.com/api/image/1846fb8b-4d9f-464f-ac2d-879068d84820/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 17,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA",
+    "LEED AP BD+C"
+  ],
+  "education": [
+    {
+      "institution": "Rensselaer Polytechnic Institute",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Wentworth Institute of Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "2151",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "number": "2128",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+    },
+    {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "number": "2109",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
+    },
+    {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "number": "2100",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+    },
+    {
+      "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
+      "number": "1904",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit"
+    },
+    {
+      "name": "Frank Sinatra School of the Arts",
+      "number": "0307",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts"
+    },
+    {
+      "name": "Jefferson Health, Honickman Center",
+      "number": "1835",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center"
+    },
+    {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "number": "1013",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion"
+    },
+    {
+      "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
+      "number": "1228",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update"
+    },
+    {
+      "name": "Yale University Art Gallery Renovation and Expansion",
+      "number": "0708",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/7D89837C-218E-48FE-8DE2-F0191F1DBBE3/yale-university-art-gallery-renovation-and-expansion"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkrudwig@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T15:53:37.241661",
+  "profile_id": "kevin-krudwig"
+}

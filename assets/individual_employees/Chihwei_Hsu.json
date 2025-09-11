@@ -1,0 +1,153 @@
+{
+  "real_name": "Chihwei Hsu",
+  "email": "chihwei.hsu@ennead.com",
+  "bio": null,
+  "phone": "212-792-5892",
+  "mobile": "212-792-5892",
+  "office_location": "California",
+  "profile_url": "https://ei.ennead.com/employee/5CF3F46F-0CE1-446C-9D41-BD51ED8B9B55/chihwei-hsu",
+  "image_url": "https://ei.ennead.com/api/image/4e084f95-1b96-43c4-8524-15550685bb76/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Senior Associate",
+  "department": null,
+  "years_with_firm": 9,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "NCARB",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Cooper Union",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "National Cheng Kung University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Shaoxing Textile Museum",
+      "number": "",
+      "client": "2418",
+      "role": "Zhejiang China Textile City Group",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+    },
+    {
+      "name": "455 First Avenue",
+      "number": "",
+      "client": "2314",
+      "role": "Taconic Partners LLC",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "number": "",
+      "client": "2128",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+    },
+    {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "number": "",
+      "client": "2125",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    },
+    {
+      "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+      "number": "",
+      "client": "2111",
+      "role": "Shanghai International Tendering Co., Ltd",
+      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity"
+    },
+    {
+      "name": "Capitol Crossing",
+      "number": "",
+      "client": "1850",
+      "role": "Capitol Crossing III LLC, and Capitol Crossing IV LLC",
+      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing"
+    },
+    {
+      "name": "Beihang University Qingdao Campus, International Science and Education City",
+      "number": "",
+      "client": "1729",
+      "role": "Qingdao Oceantec Valley Administration Bureau",
+      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city"
+    },
+    {
+      "name": "Lixin University of Finance and Accounting, Pudong New Campus Master Plan",
+      "number": "",
+      "client": "1730",
+      "role": "Shanghai Baitong Project Management Consulting co., Ltd.",
+      "url": "https://ei.ennead.com/project/4E502D5D-B536-4D71-9162-8196605365D9/lixin-university-of-finance-and-accounting-pudong-new-campus-master-plan"
+    },
+    {
+      "name": "Lingang Science and Technology City (S&T)",
+      "number": "",
+      "client": "1520",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t"
+    },
+    {
+      "name": "Oceanwide, Wuhan CBD",
+      "number": "",
+      "client": "1653",
+      "role": "",
+      "url": "https://ei.ennead.com/project/309C1698-FCF3-4C40-B9A7-B2DFFB281210/oceanwide-wuhan-cbd"
+    },
+    {
+      "name": "Modern Meadow",
+      "number": "",
+      "client": "1733",
+      "role": "Modern Meadow",
+      "url": "https://ei.ennead.com/project/2775EDA5-9E5B-4A48-BD68-A05BA3AA838C/modern-meadow"
+    },
+    {
+      "name": "Sylvia H. Rambo United States Courthouse (Harrisburg Federal Courthouse)",
+      "number": "",
+      "client": "1629",
+      "role": "U.S. General Services Administration",
+      "url": "https://ei.ennead.com/project/BE3AB8DD-D1A9-4C76-A8C0-7AC7DF83B4CF/sylvia-h-rambo-united-states-courthouse-harrisburg-federal-courthouse"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "Taopu North",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Chihwei.Hsu@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T15:45:50.287216",
+  "profile_id": "chihwei-hsu"
+}

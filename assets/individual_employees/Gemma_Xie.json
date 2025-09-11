@@ -1,0 +1,37 @@
+{
+  "real_name": "Gemma Xie",
+  "email": "gemma.xie@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/6E1393C8-8556-4793-B7AA-3844636F124B/gemma-xie",
+  "image_url": "https://ei.ennead.com/api/image/cfe6b2ea-e241-425e-9133-806f3dc978d7/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 1,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell Unversity, College of Architecture",
+      "degree": "Graduate",
+      "specialty": "Master of Architecture"
+    },
+    {
+      "institution": "Syracuse University- School of Architecture",
+      "degree": "Undergraduate",
+      "specialty": "Bachelor of Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Gemma.Xie@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T15:49:45.028346",
+  "profile_id": "gemma-xie"
+}

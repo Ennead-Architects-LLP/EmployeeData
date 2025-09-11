@@ -1,0 +1,69 @@
+{
+  "real_name": "Tinglan Guo",
+  "email": "tinglan.guo@ennead.com",
+  "bio": null,
+  "phone": "212-792-5905",
+  "mobile": "212-792-5905",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/48D41746-D366-46AC-9722-426562E8039F/tinglan-guo",
+  "image_url": "https://ei.ennead.com/api/image/9effaa95-3986-48a0-ba69-b3af4c56a9da/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Associate",
+  "department": null,
+  "years_with_firm": 1,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA",
+    "LEED AP BD+C"
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architectural Design"
+    },
+    {
+      "institution": "Huazhong University",
+      "degree": "Undergraduate",
+      "specialty": "Science & Technical"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "2151",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "number": "2100",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+    },
+    {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "number": "1643",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tinglan.guo@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T16:03:56.492507",
+  "profile_id": "tinglan-guo"
+}

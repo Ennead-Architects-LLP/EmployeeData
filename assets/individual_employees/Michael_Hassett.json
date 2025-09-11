@@ -1,0 +1,37 @@
+{
+  "real_name": "Michael Hassett",
+  "email": "michael.hassett@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5903",
+  "mobile": "(212) 792-5903",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/FF201408-2C96-478B-B29B-5010CD82A071/michael-hassett",
+  "image_url": "https://ei.ennead.com/api/image/ace22334-f9ba-4517-909c-21b26ba78697/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Associate",
+  "department": null,
+  "years_with_firm": 21,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Brooklyn College",
+      "degree": "Undergraduate",
+      "specialty": "Arts in Art/Architectural History"
+    },
+    {
+      "institution": "Pratt",
+      "degree": "Graduate",
+      "specialty": "Library and Information Science"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mhassett@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T15:58:51.371949",
+  "profile_id": "michael-hassett"
+}

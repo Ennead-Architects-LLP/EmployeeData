@@ -1,0 +1,141 @@
+{
+  "real_name": "Matthew Dionne",
+  "email": "matthew.dionne@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5870",
+  "mobile": "(212) 792-5870",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/7F89BFFA-3D6E-41B9-8B95-82A314B07226/matthew-dionne",
+  "image_url": "https://ei.ennead.com/api/image/c0a8b003-6fc2-4ad5-9514-9c1079baf016/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 18,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "LEED AP",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Wentworth Institute of Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "NYU Langone Health, Medical Science Building Renovations: Student Library",
+      "number": "",
+      "client": "1324",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/6C171C9B-169D-4E28-B1CE-EC39DD07D79F/nyu-langone-health-medical-science-building-renovations--student-library"
+    },
+    {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
+      "number": "",
+      "client": "1847",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings"
+    },
+    {
+      "name": "New York University. Grey Art Museum",
+      "number": "",
+      "client": "1942",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum"
+    },
+    {
+      "name": "Allegheny College, Vukovich Center for Communication Arts",
+      "number": "",
+      "client": "0512",
+      "role": "Allegheny College",
+      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts"
+    },
+    {
+      "name": "Frank Sinatra School of the Arts",
+      "number": "",
+      "client": "0307",
+      "role": "New York City School Construction Authority",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts"
+    },
+    {
+      "name": "New York University, StudentLink and Global Services Center",
+      "number": "",
+      "client": "1320",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/80A64965-D1A1-4A0D-B9F2-AA042AA0BC49/new-york-university-studentlink-and-global-services-center"
+    },
+    {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "number": "",
+      "client": "1013",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion"
+    },
+    {
+      "name": "NYU Langone Health, Master Plan",
+      "number": "",
+      "client": "0806",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan"
+    },
+    {
+      "name": "NYU Langone Health, Science Building",
+      "number": "",
+      "client": "1101",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+    },
+    {
+      "name": "NYU Langone Health, Tisch Hospital Elevator Tower and Lobby",
+      "number": "",
+      "client": "0916",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/B9543A56-1A01-4772-8B56-97B9A063BF08/nyu-langone-health-tisch-hospital-elevator-tower-and-lobby"
+    },
+    {
+      "name": "NYU Langone Health, Tisch Hospital Renovations: Cafeteria",
+      "number": "",
+      "client": "1301",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/CD58B9F7-F686-4801-BCF4-831AB75C6074/nyu-langone-health-tisch-hospital-renovations--cafeteria"
+    },
+    {
+      "name": "Peabody Essex Museum, Expansion and Renovation",
+      "number": "",
+      "client": "1319",
+      "role": "Blue Sky Third Avenue Management LLC",
+      "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation"
+    },
+    {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "number": "",
+      "client": "1836",
+      "role": "Princeton University",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+    },
+    {
+      "name": "University of Michigan, Biological Science Building",
+      "number": "",
+      "client": "1315",
+      "role": "University of Michigan",
+      "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building"
+    },
+    {
+      "name": "Weitzman National Museum of American Jewish History",
+      "number": "",
+      "client": "0618",
+      "role": "Weitzman National Museum of American Jewish History",
+      "url": "https://ei.ennead.com/project/B95D7AD5-B82C-4744-B85E-B2E519878B42/weitzman-national-museum-of-american-jewish-history"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mdionne@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T15:57:54.976587",
+  "profile_id": "matthew-dionne"
+}

@@ -1,0 +1,54 @@
+{
+  "real_name": "Latoya Kamdang",
+  "email": "latoya.kamdang@ennead.com",
+  "bio": null,
+  "phone": "2127925864",
+  "mobile": "2127925864",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/57AE66EA-CBD1-4B9D-BA96-61BD2176D3F5/latoya-kamdang",
+  "image_url": "https://ei.ennead.com/api/image/2b0e46ab-6f48-40fa-8990-2627689ef653/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA",
+    "LEED AP BD+C",
+    "Mass Timber",
+    "National Organization of Minority Architects"
+  ],
+  "education": [
+    {
+      "institution": "University of Pennsylvania",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "The George Washington Universit",
+      "degree": "Graduate",
+      "specialty": "MFA Interior"
+    },
+    {
+      "institution": "Georgetown University",
+      "degree": "Undergraduate",
+      "specialty": "Business Administration"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=latoya.kamdang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T15:55:31.162119",
+  "profile_id": "latoya-kamdang"
+}

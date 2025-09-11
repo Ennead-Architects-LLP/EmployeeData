@@ -1,0 +1,225 @@
+{
+  "real_name": "Jarrett Pelletier",
+  "email": "jarrett.pelletier@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5956",
+  "mobile": "(212) 792-5956",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/23930926-10AC-42DF-8CA7-F7B5ABD3875B/jarrett-pelletier",
+  "image_url": "https://ei.ennead.com/api/image/db482945-08de-4420-b909-67da65251fa3/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Principal",
+  "department": null,
+  "years_with_firm": 20,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "NCARB",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Carnegie Mellon University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cornell University, Computing and Information Science Building",
+      "number": "",
+      "client": "0623",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D2D5966C-16CE-4DD4-A900-19D24404D219/cornell-university-computing-and-information-science-building"
+    },
+    {
+      "name": "York Avenue Development",
+      "number": "",
+      "client": "0615",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D19CC9CD-4756-4F8C-8402-F39ED058DCB4/york-avenue-development"
+    },
+    {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "number": "",
+      "client": "2100",
+      "role": "Milwaukee Public Museum",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+    },
+    {
+      "name": "Alta Community Center Feasibility Study (ELab)",
+      "number": "",
+      "client": "2010",
+      "role": "Town of Alta",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab"
+    },
+    {
+      "name": "New York Blood Center Applied Life Sciences Hub",
+      "number": "",
+      "client": "1852",
+      "role": "New York Blood Center",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub"
+    },
+    {
+      "name": "Massachusetts Institute of Technology, Stephen A. Schwarzman College of Computing (MIT)",
+      "number": "",
+      "client": "1909",
+      "role": "Massachusetts Institute of Technology",
+      "url": "https://ei.ennead.com/project/7B410E83-8B38-4EC1-82B9-33793246428B/massachusetts-institute-of-technology-stephen-a-schwarzman-college-of-computing-mit"
+    },
+    {
+      "name": "Frank Sinatra School of the Arts",
+      "number": "",
+      "client": "0307",
+      "role": "New York City School Construction Authority",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts"
+    },
+    {
+      "name": "Jefferson Health, Honickman Center",
+      "number": "",
+      "client": "1835",
+      "role": "National Real Estate Development",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center"
+    },
+    {
+      "name": "Kuwait University Health Sciences Campus",
+      "number": "",
+      "client": "1704",
+      "role": "Perkins Eastman",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus"
+    },
+    {
+      "name": "Marina Bay Integrated Resort Competition",
+      "number": "",
+      "client": "0524",
+      "role": "City of Appleton, Wisconsin",
+      "url": "https://ei.ennead.com/project/AE7B93CE-3E9F-4B09-BFD1-F0B3D136F425/marina-bay-integrated-resort-competition"
+    },
+    {
+      "name": "NASA Goddard Space Flight Center",
+      "number": "",
+      "client": "0914",
+      "role": "Lord Cultural Resources",
+      "url": "https://ei.ennead.com/project/7EDED3EB-9ECF-4548-8DE7-C02F89B08101/nasa-goddard-space-flight-center"
+    },
+    {
+      "name": "Natural History Museum of Utah",
+      "number": "",
+      "client": "0423",
+      "role": "GSBS Architects",
+      "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah"
+    },
+    {
+      "name": "Newseum / Freedom Forum Foundation World Headquarters",
+      "number": "",
+      "client": "0025",
+      "role": "The Freedom Forum",
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters"
+    },
+    {
+      "name": "NYU Langone Health, Master Plan",
+      "number": "",
+      "client": "0806",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan"
+    },
+    {
+      "name": "Phil and Penny Knight Campus for Accelerating Scientific Impact at University of Oregon",
+      "number": "",
+      "client": "1703",
+      "role": "University of Oregon",
+      "url": "https://ei.ennead.com/project/71B181F2-EDBC-42B9-A856-0078C8571EDC/phil-and-penny-knight-campus-for-accelerating-scientific-impact-at-university-of-oregon"
+    },
+    {
+      "name": "Riverhouse, One Rockefeller Park",
+      "number": "",
+      "client": "0401",
+      "role": "Sheldrake Organization, Inc",
+      "url": "https://ei.ennead.com/project/0D1904C4-C62B-4DE4-9103-75510202CAA6/riverhouse-one-rockefeller-park"
+    },
+    {
+      "name": "Stanford NYC",
+      "number": "",
+      "client": "1102",
+      "role": "Stanford University",
+      "url": "https://ei.ennead.com/project/D15FDF3D-263A-4A21-B382-CE2B1A38D438/stanford-nyc"
+    },
+    {
+      "name": "Staten Island Courthouse, St. George",
+      "number": "",
+      "client": "0613",
+      "role": "Dormitory Authority of the State of New York",
+      "url": "https://ei.ennead.com/project/7A8892A0-FA7A-40EF-8300-79377462C96C/staten-island-courthouse-st-george"
+    },
+    {
+      "name": "The Standard, High Line",
+      "number": "",
+      "client": "0417",
+      "role": "Andre Balazs Properties",
+      "url": "https://ei.ennead.com/project/EF6D393F-EC53-4C9B-A168-546C41EB470D/the-standard-high-line"
+    },
+    {
+      "name": "TWA Flight Center (Standard Flight Center)",
+      "number": "",
+      "client": "1204",
+      "role": "Andre Balazs Properties",
+      "url": "https://ei.ennead.com/project/8FC7C89F-08F8-462F-BCB3-BF30EBC4BB41/twa-flight-center-standard-flight-center"
+    },
+    {
+      "name": "University of Michigan, Biological Science Building",
+      "number": "",
+      "client": "1315",
+      "role": "University of Michigan",
+      "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building"
+    },
+    {
+      "name": "University of North Texas Denton Business Leadership Center",
+      "number": "",
+      "client": "0813",
+      "role": "Jacobs Carter Burgess",
+      "url": "https://ei.ennead.com/project/371988C1-F755-44C9-971A-426D93EE535B/university-of-north-texas-denton-business-leadership-center"
+    },
+    {
+      "name": "Weill Cornell Medicine, Belfer Research Building",
+      "number": "",
+      "client": "0705",
+      "role": "Weill Cornell Medicine",
+      "url": "https://ei.ennead.com/project/DB19CFB5-F090-48CF-B1A5-F41E0C470039/weill-cornell-medicine-belfer-research-building"
+    },
+    {
+      "name": "Weitzman National Museum of American Jewish History",
+      "number": "",
+      "client": "0618",
+      "role": "Weitzman National Museum of American Jewish History",
+      "url": "https://ei.ennead.com/project/B95D7AD5-B82C-4744-B85E-B2E519878B42/weitzman-national-museum-of-american-jewish-history"
+    },
+    {
+      "name": "York College Academic Village and Conference Center",
+      "number": "",
+      "client": "1011",
+      "role": "The City University Construction Fund",
+      "url": "https://ei.ennead.com/project/22D306CA-47EC-413E-8483-F5158CD1C5D7/york-college-academic-village-and-conference-center"
+    },
+    {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Engineering Education and Research Center (EERC)",
+      "number": "",
+      "client": "1012",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/0240BEA5-3779-48E4-A600-E3DFCA2E31BB/the-university-of-texas-at-austin-cockrell-school-of-engineering-engineering-education-and-research-center-eerc"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jpelletier@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T15:50:43.461789",
+  "profile_id": "jarrett-pelletier"
+}

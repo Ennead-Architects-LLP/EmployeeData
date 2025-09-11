@@ -1,0 +1,56 @@
+{
+  "real_name": "Julia Specht",
+  "email": "julia.specht@ennead.com",
+  "bio": null,
+  "phone": "2125846324",
+  "mobile": "2125846324",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/2122E102-4776-4A63-864D-2BE688A1C1B2/julia-specht",
+  "image_url": "https://ei.ennead.com/api/image/51a20e06-054e-4c65-aa23-6b08adf2d9fb/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 1,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "LEED AP BD+C"
+  ],
+  "education": [
+    {
+      "institution": "Technical University Dresden",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "455 First Avenue",
+      "number": "2314",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue"
+    },
+    {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "number": "2210",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
+    },
+    {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "number": "2001",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=julia.specht@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T15:52:30.474633",
+  "profile_id": "julia-specht"
+}

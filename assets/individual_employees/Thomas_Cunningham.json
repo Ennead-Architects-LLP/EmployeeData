@@ -1,0 +1,47 @@
+{
+  "real_name": "Thomas Cunningham",
+  "email": "thomas.cunningham@ennead.com",
+  "bio": null,
+  "phone": "646-437-1710",
+  "mobile": "646-437-1710",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/4D24DF6E-C163-4119-BF61-EC0B3607F261/thomas-cunningham",
+  "image_url": "https://ei.ennead.com/api/image/bf321cdb-2e15-4746-9871-12cebf2441b7/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Virginia",
+      "degree": "Undergraduate",
+      "specialty": "Bachelor of Science in Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "The Westminster Schools, Love Hall",
+      "number": "2105",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall"
+    },
+    {
+      "name": "Westminster Schools - Blake Center",
+      "number": "1946",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Thomas.Cunningham@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T16:03:33.217257",
+  "profile_id": "thomas-cunningham"
+}

@@ -1,0 +1,334 @@
+{
+  "real_name": "Tomas Rossant",
+  "email": "tomas.rossant@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5961",
+  "mobile": "(212) 792-5961",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/845F0F53-C9C0-4916-8500-300604DFAB46/tomas-rossant",
+  "image_url": "https://ei.ennead.com/api/image/8af49c6b-6d28-4463-9c1b-b9d1b14bb90a/preview?size=300w300h_fxd&version=0",
+  "image_local_path": null,
+  "position": "Partner",
+  "department": null,
+  "years_with_firm": 30,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "NCARB",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Dartmouth College",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Harvard",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "AZ",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "CO",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "GA",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NC",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NV",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "RI",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "TX",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "WA",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mayo Clinic Executive Health Gonda",
+      "number": "",
+      "client": "2338",
+      "role": "BWBR Architects, Inc.",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda"
+    },
+    {
+      "name": "300 Lafayette",
+      "number": "",
+      "client": "0517",
+      "role": "As Realty Partners",
+      "url": "https://ei.ennead.com/project/B2895CED-85EB-4451-9BB4-555F00F32F48/300-lafayette"
+    },
+    {
+      "name": "The Westminster Schools, Barge Commons (formerly Westminster Center Phase 1)",
+      "number": "",
+      "client": "1761B",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1"
+    },
+    {
+      "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall Addition",
+      "number": "",
+      "client": "1761A",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition"
+    },
+    {
+      "name": "The Westminster Schools, Thompson Stadium",
+      "number": "",
+      "client": "1761C",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium"
+    },
+    {
+      "name": "University of North Carolina School of Law",
+      "number": "",
+      "client": "2243",
+      "role": "Moseley Architects",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law"
+    },
+    {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "number": "",
+      "client": "2235",
+      "role": "Harvard University",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study"
+    },
+    {
+      "name": "American Museum of Natural History, Starr Natural Sciences Building",
+      "number": "",
+      "client": "9718",
+      "role": "American Museum of Natural History",
+      "url": "https://ei.ennead.com/project/CBC51CF1-ADE0-445E-B80B-B491CA0FCB8E/american-museum-of-natural-history-starr-natural-sciences-building"
+    },
+    {
+      "name": "Children's Hospital at Montefiore",
+      "number": "",
+      "client": "1409",
+      "role": "",
+      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore"
+    },
+    {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
+      "number": "",
+      "client": "0919",
+      "role": "",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion"
+    },
+    {
+      "name": "GSP Arts Uberlandia",
+      "number": "",
+      "client": "1118",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DE89DED1-43D9-4AC1-B189-9FC26315137C/gsp-arts-uberlandia"
+    },
+    {
+      "name": "Memorial Sloan-Kettering Institute, Benjamin M. Rosen Student & Faculty Club",
+      "number": "",
+      "client": "9729",
+      "role": "",
+      "url": "https://ei.ennead.com/project/27F14926-F129-4B31-8EF5-8EE457B16FD7/memorial-sloan-kettering-institute-benjamin-m-rosen-student-faculty-club"
+    },
+    {
+      "name": "The Mobius (30th Street and 10th Ave - Related)",
+      "number": "",
+      "client": "1235",
+      "role": "",
+      "url": "https://ei.ennead.com/project/9CE0AD42-778D-4D0B-A373-E94F49BB1192/the-mobius-30th-street-and-10th-ave-related"
+    },
+    {
+      "name": "Weitzman National Museum of American Jewish History (first Site)",
+      "number": "",
+      "client": "0029",
+      "role": "",
+      "url": "https://ei.ennead.com/project/40185FFF-5D97-4938-9184-BE011BA9D967/weitzman-national-museum-of-american-jewish-history-first-site"
+    },
+    {
+      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+      "number": "",
+      "client": "2206",
+      "role": "Lord, Aeck & Sargent, Inc.",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning"
+    },
+    {
+      "name": "Columbia University Law School, Library Addition",
+      "number": "",
+      "client": "0808",
+      "role": "Columbia University",
+      "url": "https://ei.ennead.com/project/0B40D3E3-5BDA-46AB-B852-FA845E369EA9/columbia-university-law-school-library-addition"
+    },
+    {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "number": "",
+      "client": "2109",
+      "role": "Northwell Health",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
+    },
+    {
+      "name": "The Westminster Schools, Love Hall",
+      "number": "",
+      "client": "2105",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall"
+    },
+    {
+      "name": "JUNO, Capitol Hill",
+      "number": "",
+      "client": "2020",
+      "role": "Juno",
+      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill"
+    },
+    {
+      "name": "Juno Austin",
+      "number": "",
+      "client": "2007",
+      "role": "CODA Built",
+      "url": "https://ei.ennead.com/project/8E22BD56-6AA6-4805-B639-17C9F5F76BFD/juno-austin"
+    },
+    {
+      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+      "number": "",
+      "client": "1911",
+      "role": "Perkins Eastman",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019"
+    },
+    {
+      "name": "Westminster Schools - Blake Center",
+      "number": "",
+      "client": "1946",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
+    },
+    {
+      "name": "Sing Sing Prison Museum",
+      "number": "",
+      "client": "1926",
+      "role": "Sing Sing Prison Museum",
+      "url": "https://ei.ennead.com/project/DF537E06-2132-4FC7-995B-66D7BDC8A943/sing-sing-prison-museum"
+    },
+    {
+      "name": "Branksome Hall, Innovation and Performing Arts Centre",
+      "number": "",
+      "client": "1842",
+      "role": "MacLennan Jaunkalns Miller Architects",
+      "url": "https://ei.ennead.com/project/4A2C4E53-041E-46D8-8C74-86FFCB1F695F/branksome-hall-innovation-and-performing-arts-centre"
+    },
+    {
+      "name": "Modern Meadow",
+      "number": "",
+      "client": "1733",
+      "role": "Modern Meadow",
+      "url": "https://ei.ennead.com/project/2775EDA5-9E5B-4A48-BD68-A05BA3AA838C/modern-meadow"
+    },
+    {
+      "name": "Apple Scottsdale",
+      "number": "",
+      "client": "1600",
+      "role": "Apple Inc.",
+      "url": "https://ei.ennead.com/project/62EAAD49-9D9B-406B-B5FA-FB6B61A3CE5D/apple-scottsdale"
+    },
+    {
+      "name": "Arizona State University, Beus Center for Law and Society (ASU)",
+      "number": "",
+      "client": "1314",
+      "role": "Arizona State University (ASU)",
+      "url": "https://ei.ennead.com/project/DC6D031D-D1E0-4D39-A43D-6188E2F15C4F/arizona-state-university-beus-center-for-law-and-society-asu"
+    },
+    {
+      "name": "Brooklyn Botanic Garden, Eastern Parkway Entrance",
+      "number": "",
+      "client": "0101",
+      "role": "Brooklyn Botanic Garden",
+      "url": "https://ei.ennead.com/project/2ABBEF3B-4F9B-4146-8224-A27125C6ECD2/brooklyn-botanic-garden-eastern-parkway-entrance"
+    },
+    {
+      "name": "Brown University School of Professional Studies MPR",
+      "number": "",
+      "client": "1745",
+      "role": "Brown University",
+      "url": "https://ei.ennead.com/project/87C53259-3E59-4256-AEB6-E1A4AADD79F3/brown-university-school-of-professional-studies-mpr"
+    },
+    {
+      "name": "Columbia University Law School, Jerome L. Greene Hall",
+      "number": "",
+      "client": "9314",
+      "role": "Columbia University",
+      "url": "https://ei.ennead.com/project/4A17E664-4F6E-427D-A25B-7B807DA22857/columbia-university-law-school-jerome-l-greene-hall"
+    },
+    {
+      "name": "Harvard Law School Comprehensive Physical Plan",
+      "number": "",
+      "client": "9930",
+      "role": "Harvard University",
+      "url": "https://ei.ennead.com/project/1ECE05A4-243D-42B9-914B-272434D84D36/harvard-law-school-comprehensive-physical-plan"
+    },
+    {
+      "name": "Harvard University, Faculty of Arts and Sciences, Anthropology, Psychology & Sociology Departments Programming and Planning Study",
+      "number": "",
+      "client": "0625",
+      "role": "Harvard University",
+      "url": "https://ei.ennead.com/project/67A8C741-8A04-42A1-99E7-4D491669B137/harvard-university-faculty-of-arts-and-sciences-anthropology-psychology-sociology-departments-programming-and-planning-study"
+    },
+    {
+      "name": "Harvard University, Faculty of Arts and Sciences, Music Department Precinct Programming and Planning Study",
+      "number": "",
+      "client": "0703",
+      "role": "Harvard University",
+      "url": "https://ei.ennead.com/project/654CB725-69F5-4415-A17B-9ED5FB1E5443/harvard-university-faculty-of-arts-and-sciences-music-department-precinct-programming-and-planning-study"
+    },
+    {
+      "name": "Hudson New York (formerly known as Henry Hudson Hotel)",
+      "number": "",
+      "client": "9816",
+      "role": "Ian Schrager Company LLC",
+      "url": "https://ei.ennead.com/project/7021F047-AB36-4C46-B78B-EE265A4C0F20/hudson-new-york-formerly-known-as-henry-hudson-hotel"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=trossant@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-11T16:04:36.314125",
+  "profile_id": "tomas-rossant"
+}
