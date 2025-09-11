@@ -37,6 +37,7 @@ import sys
 from pathlib import Path
 
 from .modules import CompleteScraper, ScraperConfig, AutoLogin, show_credentials_gui
+from .modules.orchestrator import Orchestrator
 
 
 def print_debug_help():
@@ -206,68 +207,13 @@ async def main():
         print("="*50)
     
     try:
-        # Create and run scraper
-        scraper = CompleteScraper(config)
-        
-        # Scrape all employees
-        employees = await scraper.scrape_all_employees()
-        
-        if not employees:
-            logger.warning("No employees were scraped. Check the website structure or selectors.")
+        # Delegate to orchestrator for stepwise execution and checks
+        orchestrator = Orchestrator(config)
+        html_path = await orchestrator.run()
+        if not html_path:
+            print("Scraping failed or produced no output.")
             return
         
-        # Save results
-        output_path = scraper.save_to_json(employees)
-        
-        # Generate HTML report
-        html_path = scraper.generate_html_report(output_path)
-        
-        # Print statistics
-        logger.info("Scraping completed successfully!")
-        
-        print("\n" + "="*50)
-        print("SCRAPING COMPLETED SUCCESSFULLY!")
-        print("="*50)
-        print(f"Total employees scraped: {len(employees)}")
-        print(f"Employees with emails: {len([e for e in employees if e.email])}")
-        print(f"Employees with phones: {len([e for e in employees if e.phone])}")
-        print(f"Employees with bios: {len([e for e in employees if e.bio])}")
-        print(f"Employees with positions: {len([e for e in employees if e.position])}")
-        print(f"Employees with departments: {len([e for e in employees if e.department])}")
-        print(f"Employees with images: {len([e for e in employees if e.image_url])}")
-        print(f"Employees with office locations: {len([e for e in employees if e.office_location])}")
-        print(f"Employees with seat assignments: {len([e for e in employees if e.seat_assignment])}")
-        
-        # Show office location breakdown
-        location_counts = {}
-        for employee in employees:
-            if employee.office_location:
-                location = employee.office_location.strip()
-                if location:
-                    location_counts[location] = location_counts.get(location, 0) + 1
-        
-        if location_counts:
-            print("\nOffice Location Breakdown:")
-            for location, count in sorted(location_counts.items()):
-                print(f"  {location}: {count} employees")
-        else:
-            print("\nNo office location data found")
-        
-        # Show department breakdown
-        department_counts = {}
-        for employee in employees:
-            if employee.department:
-                dept = employee.department.strip()
-                if dept:
-                    department_counts[dept] = department_counts.get(dept, 0) + 1
-        
-        if department_counts:
-            print("\nDepartment Breakdown:")
-            for dept, count in sorted(department_counts.items()):
-                print(f"  {dept}: {count} employees")
-        else:
-            print("\nNo department data found")
-        print(f"Output file: {output_path}")
         print(f"HTML report: {html_path}")
         
         if config.DEBUG_MODE:
@@ -276,7 +222,7 @@ async def main():
             print(f"   Debug directory: {debug_dir}")
             print(f"   DOM captures: {debug_dir / 'dom_captures'}")
             print(f"   Screenshots: {debug_dir / 'screenshots'}")
-            print(f"   JSON output: {output_path}")
+            print(f"   JSON output: {config.get_output_path()}")
             print(f"   (Limited to {config.DEBUG_MAX_EMPLOYEES} employees)")
         
         print("="*50)

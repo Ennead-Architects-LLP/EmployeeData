@@ -25,7 +25,12 @@ class ScraperConfig:
     MAX_CONCURRENT_DOWNLOADS = 5
     
     # Output settings
+    # HTML (index.html) remains at OUTPUT_DIR (repo root)
     OUTPUT_DIR = "."
+    # JSON and individual JSON live under assets/
+    ASSETS_DIR = "assets"
+    # Debug and logs live under DEBUG/
+    DEBUG_DIR = "DEBUG"
     JSON_FILENAME = "employees_data.json"
     INDIVIDUAL_FILES = True
     
@@ -41,7 +46,7 @@ class ScraperConfig:
     
     # Logging settings
     LOG_LEVEL = "INFO"
-    LOG_FILE = "scraper.log"
+    LOG_FILE = "DEBUG/scraper.log"
     LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     
     # User agent (Edge)
@@ -57,7 +62,7 @@ class ScraperConfig:
     
     def get_debug_output_path(self) -> Path:
         """Get the debug output directory path."""
-        debug_dir = Path(self.OUTPUT_DIR) / "debug"
+        debug_dir = Path(self.DEBUG_DIR)
         debug_dir.mkdir(parents=True, exist_ok=True)
         return debug_dir
     
@@ -79,21 +84,29 @@ class ScraperConfig:
         config.HEADLESS = os.getenv('SCRAPER_HEADLESS', 'true').lower() == 'true'
         config.DOWNLOAD_IMAGES = os.getenv('SCRAPER_DOWNLOAD_IMAGES', 'true').lower() == 'true'
         config.OUTPUT_DIR = os.getenv('SCRAPER_OUTPUT_DIR', config.OUTPUT_DIR)
+        config.ASSETS_DIR = os.getenv('SCRAPER_ASSETS_DIR', config.ASSETS_DIR)
+        config.DEBUG_DIR = os.getenv('SCRAPER_DEBUG_DIR', config.DEBUG_DIR)
         config.LOG_LEVEL = os.getenv('SCRAPER_LOG_LEVEL', config.LOG_LEVEL)
         
         return config
     
     def setup_directories(self):
         """Create necessary directories."""
+        # Root for index.html
         Path(self.OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
+        # Assets directories for JSON and images
+        Path(self.ASSETS_DIR).mkdir(parents=True, exist_ok=True)
+        Path(self.ASSETS_DIR, "individual_employees").mkdir(parents=True, exist_ok=True)
         if self.DOWNLOAD_IMAGES:
             Path(self.IMAGE_DOWNLOAD_DIR).mkdir(parents=True, exist_ok=True)
+        # Debug directory
+        Path(self.DEBUG_DIR).mkdir(parents=True, exist_ok=True)
     
     def get_output_path(self, filename: str = None) -> Path:
         """Get full output path for a file."""
         if filename is None:
             filename = self.JSON_FILENAME
-        return Path(self.OUTPUT_DIR) / filename
+        return Path(self.ASSETS_DIR) / filename
     
     def cleanup_debug_files(self, max_files_per_folder: int = 30):
         """

@@ -43,3 +43,6 @@ ENV/
 # Browser data
 browser_data/
 user_data/
+
+# Ignore local debug artifacts
+DEBUG/

@@ -28,7 +28,8 @@ class HTMLReportGenerator:
         self.logger = logging.getLogger(__name__)
     
     def generate_report(self, employees_data: List[Dict[str, Any]], 
-                       json_file_path: str = None) -> str:
+                       json_file_path: str = None,
+                       fetched_at: str = None) -> str:
         """
         Generate a beautiful HTML report from employee data.
         
@@ -42,7 +43,7 @@ class HTMLReportGenerator:
         self.logger.info(f"Generating HTML report for {len(employees_data)} employees")
         
         # Generate HTML content
-        html_content = self._generate_html_content(employees_data, json_file_path)
+        html_content = self._generate_html_content(employees_data, fetched_at)
         
         # Save HTML file at root as index.html for GitHub Pages
         html_file_path = self.output_dir / "index.html"
@@ -56,7 +57,7 @@ class HTMLReportGenerator:
         return str(html_file_path)
     
     def _generate_html_content(self, employees_data: List[Dict[str, Any]], 
-                              json_file_path: str = None) -> str:
+                              fetched_at: str = None) -> str:
         """Generate the complete HTML content."""
         
         # Calculate statistics
@@ -83,6 +84,7 @@ class HTMLReportGenerator:
         with open(script_path, 'w', encoding='utf-8') as js_file:
             js_file.write(self._get_javascript())
 
+        fetched_text = fetched_at or "unknown"
         html_content = f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -110,6 +112,7 @@ class HTMLReportGenerator:
                 <div class="header-meta">
                     <span class="meta-text">Powered by EnneadTab Ecosystem</span>
                     <span class="meta-text">Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</span>
+                    <span class="meta-text">Data fetched on: {fetched_text}</span>
                 </div>
             </div>
         </header>
@@ -1308,16 +1311,21 @@ class HTMLReportGenerator:
                 data = json.load(f)
             
             # Handle different JSON structures
+            fetched_at = None
             if isinstance(data, dict) and 'employees' in data:
                 # New structure with metadata and employees array
                 employees_data = data['employees']
+                try:
+                    fetched_at = data.get('metadata', {}).get('scraped_at')
+                except Exception:
+                    fetched_at = None
             elif isinstance(data, list):
                 # Direct array of employees
                 employees_data = data
             else:
                 raise ValueError("Invalid JSON structure: expected list of employees or dict with 'employees' key")
             
-            return self.generate_report(employees_data, json_file_path)
+            return self.generate_report(employees_data, json_file_path, fetched_at)
         except Exception as e:
             self.logger.error(f"Error generating report from JSON file: {e}")
             raise

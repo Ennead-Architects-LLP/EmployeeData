@@ -73,7 +73,7 @@ class SeatingChartScraper:
         """Setup debug directories for DOM capture and screenshots."""
         from .config import ScraperConfig
         cfg = ScraperConfig.from_env()
-        self.debug_dir = Path(cfg.OUTPUT_DIR) / "debug" / "seating_chart"
+        self.debug_dir = Path(cfg.DEBUG_DIR) / "seating_chart"
         self.dom_dir = self.debug_dir / "dom_captures"
         self.screenshot_dir = self.debug_dir / "screenshots"
         
@@ -670,7 +670,7 @@ class SeatingChartScraper:
         """
         from .config import ScraperConfig
         cfg = ScraperConfig.from_env()
-        output_dir = Path(cfg.OUTPUT_DIR)
+        output_dir = Path(cfg.ASSETS_DIR)
         output_dir.mkdir(parents=True, exist_ok=True)
         
         output_path = output_dir / filename

@@ -3,57 +3,57 @@
     {
       "selector": "circle.seatCircle",
       "count": 150,
-      "timestamp": "2025-09-11T13:07:28.569957"
+      "timestamp": "2025-09-11T13:20:39.431255"
     },
     {
       "selector": "circle[firstName]",
       "count": 150,
-      "timestamp": "2025-09-11T13:07:28.606854"
+      "timestamp": "2025-09-11T13:20:39.467695"
     },
     {
       "selector": "circle[lastName]",
       "count": 150,
-      "timestamp": "2025-09-11T13:07:28.633365"
+      "timestamp": "2025-09-11T13:20:39.494564"
     },
     {
       "selector": "circle[seat]",
       "count": 150,
-      "timestamp": "2025-09-11T13:07:28.660688"
+      "timestamp": "2025-09-11T13:20:39.522274"
     },
     {
       "selector": "tr",
       "count": 744,
-      "timestamp": "2025-09-11T13:07:28.765166"
+      "timestamp": "2025-09-11T13:20:39.626508"
     },
     {
       "selector": "[class*=\"row\"]",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:28.779631"
+      "timestamp": "2025-09-11T13:20:39.641240"
     },
     {
       "selector": "div[class*=\"item\"]",
       "count": 7,
-      "timestamp": "2025-09-11T13:07:28.796518"
+      "timestamp": "2025-09-11T13:20:39.659494"
     },
     {
       "selector": "div:has(> div:has-text(\"EA\"))",
       "count": 19,
-      "timestamp": "2025-09-11T13:07:28.829379"
+      "timestamp": "2025-09-11T13:20:39.693952"
     },
     {
       "selector": "div:has(> div:has-text(\"EF\"))",
       "count": 10,
-      "timestamp": "2025-09-11T13:07:28.852113"
+      "timestamp": "2025-09-11T13:20:39.715127"
     },
     {
       "selector": "div:has(> div:has-text(\"Technical\"))",
       "count": 10,
-      "timestamp": "2025-09-11T13:07:28.874158"
+      "timestamp": "2025-09-11T13:20:39.735733"
     },
     {
       "selector": "div:has(> div:has-text(\"Marketing\"))",
       "count": 10,
-      "timestamp": "2025-09-11T13:07:28.894936"
+      "timestamp": "2025-09-11T13:20:39.755462"
     }
   ],
   "name_selectors": [],
@@ -61,904 +61,904 @@
     {
       "selector": "regex_EA",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.162205"
+      "timestamp": "2025-09-11T13:20:40.012012"
     },
     {
       "selector": "regex_EF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.211741"
+      "timestamp": "2025-09-11T13:20:40.054343"
     },
     {
       "selector": "regex_EG",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.256868"
+      "timestamp": "2025-09-11T13:20:40.095076"
     },
     {
       "selector": "regex_SE",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.414313"
+      "timestamp": "2025-09-11T13:20:40.251573"
     },
     {
       "selector": "regex_ED",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.469511"
+      "timestamp": "2025-09-11T13:20:40.295925"
     },
     {
       "selector": "regex_WB",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.645225"
+      "timestamp": "2025-09-11T13:20:40.440115"
     },
     {
       "selector": "regex_WA",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.693975"
+      "timestamp": "2025-09-11T13:20:40.479306"
     },
     {
       "selector": "regex_SD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.742801"
+      "timestamp": "2025-09-11T13:20:40.532530"
     },
     {
       "selector": "regex_WD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.896527"
+      "timestamp": "2025-09-11T13:20:40.682532"
     },
     {
       "selector": "regex_SF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.941707"
+      "timestamp": "2025-09-11T13:20:40.723222"
     },
     {
       "selector": "regex_SC",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:30.091173"
+      "timestamp": "2025-09-11T13:20:40.875050"
     },
     {
       "selector": "regex_WD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:30.139652"
+      "timestamp": "2025-09-11T13:20:40.914296"
     },
     {
       "selector": "regex_WB",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:30.524534"
+      "timestamp": "2025-09-11T13:20:41.295731"
     },
     {
       "selector": "regex_WD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:30.617110"
+      "timestamp": "2025-09-11T13:20:41.375460"
     },
     {
       "selector": "regex_WD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:31.881915"
+      "timestamp": "2025-09-11T13:20:42.604881"
     },
     {
       "selector": "regex_EF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:32.344954"
+      "timestamp": "2025-09-11T13:20:43.028669"
     },
     {
       "selector": "regex_SC",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:32.400335"
+      "timestamp": "2025-09-11T13:20:43.078978"
     },
     {
       "selector": "regex_WB",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:32.627024"
+      "timestamp": "2025-09-11T13:20:43.275439"
     },
     {
       "selector": "regex_SC",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:32.775914"
+      "timestamp": "2025-09-11T13:20:43.424910"
     },
     {
       "selector": "regex_WD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:32.823826"
+      "timestamp": "2025-09-11T13:20:43.465732"
     },
     {
       "selector": "regex_ED",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:32.872361"
+      "timestamp": "2025-09-11T13:20:43.512231"
     },
     {
       "selector": "regex_ED",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:33.319089"
+      "timestamp": "2025-09-11T13:20:43.936070"
     },
     {
       "selector": "regex_SD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:33.771038"
+      "timestamp": "2025-09-11T13:20:44.343206"
     },
     {
       "selector": "regex_EA",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:33.929827"
+      "timestamp": "2025-09-11T13:20:44.497947"
     },
     {
       "selector": "regex_EG",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:34.162978"
+      "timestamp": "2025-09-11T13:20:44.720797"
     },
     {
       "selector": "regex_WB",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:34.362762"
+      "timestamp": "2025-09-11T13:20:44.899069"
     },
     {
       "selector": "regex_SF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:35.314935"
+      "timestamp": "2025-09-11T13:20:45.752318"
     },
     {
       "selector": "regex_SD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:35.568475"
+      "timestamp": "2025-09-11T13:20:45.968908"
     },
     {
       "selector": "regex_SD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:35.953400"
+      "timestamp": "2025-09-11T13:20:46.337582"
     },
     {
       "selector": "regex_EA",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:36.160980"
+      "timestamp": "2025-09-11T13:20:46.526875"
     },
     {
       "selector": "regex_EF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:36.404945"
+      "timestamp": "2025-09-11T13:20:46.782894"
     },
     {
       "selector": "regex_ED",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:36.808986"
+      "timestamp": "2025-09-11T13:20:47.162116"
     },
     {
       "selector": "regex_WA",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:37.565481"
+      "timestamp": "2025-09-11T13:20:47.843426"
     },
     {
       "selector": "regex_ED",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:37.723879"
+      "timestamp": "2025-09-11T13:20:47.993058"
     },
     {
       "selector": "regex_SC",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:37.768582"
+      "timestamp": "2025-09-11T13:20:48.030887"
     },
     {
       "selector": "regex_WB",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:37.811331"
+      "timestamp": "2025-09-11T13:20:48.073003"
     },
     {
       "selector": "regex_SC",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:37.967457"
+      "timestamp": "2025-09-11T13:20:48.216756"
     },
     {
       "selector": "regex_EG",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.205355"
+      "timestamp": "2025-09-11T13:20:48.456961"
     },
     {
       "selector": "regex_SD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.248503"
+      "timestamp": "2025-09-11T13:20:48.500583"
     },
     {
       "selector": "regex_EF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.402791"
+      "timestamp": "2025-09-11T13:20:48.647877"
     },
     {
       "selector": "regex_WD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.699329"
+      "timestamp": "2025-09-11T13:20:48.910666"
     },
     {
       "selector": "regex_EG",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.327504"
+      "timestamp": "2025-09-11T13:20:49.569866"
     },
     {
       "selector": "regex_SF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.539767"
+      "timestamp": "2025-09-11T13:20:49.765677"
     },
     {
       "selector": "regex_WB",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.586619"
+      "timestamp": "2025-09-11T13:20:49.802988"
     },
     {
       "selector": "regex_SE",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.222909"
+      "timestamp": "2025-09-11T13:20:50.397905"
     },
     {
       "selector": "regex_EG",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.468408"
+      "timestamp": "2025-09-11T13:20:50.643651"
     },
     {
       "selector": "regex_EG",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.675328"
+      "timestamp": "2025-09-11T13:20:50.838744"
     },
     {
       "selector": "regex_SD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.875297"
+      "timestamp": "2025-09-11T13:20:51.038524"
     },
     {
       "selector": "regex_EA",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.577136"
+      "timestamp": "2025-09-11T13:20:51.703197"
     },
     {
       "selector": "regex_WD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.195620"
+      "timestamp": "2025-09-11T13:20:52.263456"
     },
     {
       "selector": "regex_SD",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.245059"
+      "timestamp": "2025-09-11T13:20:52.301861"
     },
     {
       "selector": "regex_SC",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.452453"
+      "timestamp": "2025-09-11T13:20:52.502791"
     },
     {
       "selector": "regex_EF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.505377"
+      "timestamp": "2025-09-11T13:20:52.548370"
     },
     {
       "selector": "regex_SF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.961083"
+      "timestamp": "2025-09-11T13:20:52.964705"
     },
     {
       "selector": "regex_EF",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:45.200518"
+      "timestamp": "2025-09-11T13:20:55.011803"
     },
     {
       "selector": "regex_EA",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:45.442441"
+      "timestamp": "2025-09-11T13:20:55.236009"
     }
   ],
   "department_selectors": [
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.162385"
+      "timestamp": "2025-09-11T13:20:40.012185"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.257053"
+      "timestamp": "2025-09-11T13:20:40.095248"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.414501"
+      "timestamp": "2025-09-11T13:20:40.251759"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:29.469694"
-    },
-    {
-      "selector": "text_Marketing",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:29.645432"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:29.694158"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:29.742981"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:29.941872"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:30.091372"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:30.139841"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:30.331304"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:30.374864"
+      "timestamp": "2025-09-11T13:20:40.296120"
     },
     {
       "selector": "text_Marketing",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:30.524706"
+      "timestamp": "2025-09-11T13:20:40.440295"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:30.806822"
+      "timestamp": "2025-09-11T13:20:40.479471"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:30.956690"
+      "timestamp": "2025-09-11T13:20:40.532716"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:31.002627"
+      "timestamp": "2025-09-11T13:20:40.723395"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:31.050667"
+      "timestamp": "2025-09-11T13:20:40.875282"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:31.198227"
+      "timestamp": "2025-09-11T13:20:40.914464"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:31.241641"
+      "timestamp": "2025-09-11T13:20:41.099044"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:31.396366"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:31.443660"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:31.925258"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:32.125445"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:32.400528"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:32.872541"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:33.026691"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:33.068845"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:33.319305"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:33.520142"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:33.677108"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:33.723771"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:33.771224"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:33.930005"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:34.120764"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:34.206234"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:34.409461"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:34.575653"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:34.669322"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:34.830756"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:34.873436"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.032821"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.123053"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.273433"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.315101"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.476135"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.521665"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.568652"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.755940"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.907720"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:35.953587"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.006949"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.161156"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.203788"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.359788"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.405117"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.454269"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.656854"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.809176"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.858623"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:36.912941"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:37.116062"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:37.317776"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:37.361038"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:37.519006"
-    },
-    {
-      "selector": "text_Technical",
-      "count": 1,
-      "timestamp": "2025-09-11T13:07:37.724056"
+      "timestamp": "2025-09-11T13:20:41.143719"
     },
     {
       "selector": "text_Marketing",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:37.811515"
+      "timestamp": "2025-09-11T13:20:41.295920"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:37.967657"
+      "timestamp": "2025-09-11T13:20:41.574214"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.011367"
+      "timestamp": "2025-09-11T13:20:41.728390"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.205527"
+      "timestamp": "2025-09-11T13:20:41.772043"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.248677"
+      "timestamp": "2025-09-11T13:20:41.810278"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.402972"
+      "timestamp": "2025-09-11T13:20:41.964528"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.449748"
+      "timestamp": "2025-09-11T13:20:42.002031"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.609305"
+      "timestamp": "2025-09-11T13:20:42.157468"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.653318"
+      "timestamp": "2025-09-11T13:20:42.196867"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:38.848791"
+      "timestamp": "2025-09-11T13:20:42.646186"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.082925"
+      "timestamp": "2025-09-11T13:20:42.836470"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.127206"
+      "timestamp": "2025-09-11T13:20:43.079176"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.277524"
+      "timestamp": "2025-09-11T13:20:43.512423"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.327693"
+      "timestamp": "2025-09-11T13:20:43.663583"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.539950"
+      "timestamp": "2025-09-11T13:20:43.700692"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.750267"
+      "timestamp": "2025-09-11T13:20:43.936295"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:39.985789"
+      "timestamp": "2025-09-11T13:20:44.120233"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.029631"
+      "timestamp": "2025-09-11T13:20:44.260950"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.223091"
+      "timestamp": "2025-09-11T13:20:44.300612"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.419613"
+      "timestamp": "2025-09-11T13:20:44.343404"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.468597"
+      "timestamp": "2025-09-11T13:20:44.498124"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:40.875492"
+      "timestamp": "2025-09-11T13:20:44.678936"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.080862"
+      "timestamp": "2025-09-11T13:20:44.757253"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.124245"
+      "timestamp": "2025-09-11T13:20:44.938919"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.092646"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.169072"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.313036"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.352075"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.492729"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.567517"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.713449"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.752490"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.891525"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.930459"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:45.969081"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.151069"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.300135"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.337755"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.380190"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.527077"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.572210"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.741311"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.783119"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:46.827372"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.017647"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.162311"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.202142"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.240763"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.423158"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.607009"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.651862"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.801808"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:47.993240"
     },
     {
       "selector": "text_Marketing",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.377542"
+      "timestamp": "2025-09-11T13:20:48.073176"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.531674"
+      "timestamp": "2025-09-11T13:20:48.216929"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.577320"
+      "timestamp": "2025-09-11T13:20:48.264646"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.744424"
+      "timestamp": "2025-09-11T13:20:48.457148"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.838349"
+      "timestamp": "2025-09-11T13:20:48.500772"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:41.999011"
+      "timestamp": "2025-09-11T13:20:48.648056"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.042688"
+      "timestamp": "2025-09-11T13:20:48.686510"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.195821"
+      "timestamp": "2025-09-11T13:20:48.832854"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.245296"
+      "timestamp": "2025-09-11T13:20:48.870957"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.293241"
+      "timestamp": "2025-09-11T13:20:49.065285"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.452628"
+      "timestamp": "2025-09-11T13:20:49.307457"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.505593"
+      "timestamp": "2025-09-11T13:20:49.351724"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.709996"
+      "timestamp": "2025-09-11T13:20:49.506997"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.916630"
+      "timestamp": "2025-09-11T13:20:49.570052"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:42.961262"
+      "timestamp": "2025-09-11T13:20:49.765849"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:43.214858"
+      "timestamp": "2025-09-11T13:20:49.951637"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:43.366752"
+      "timestamp": "2025-09-11T13:20:50.180498"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:43.567325"
+      "timestamp": "2025-09-11T13:20:50.220066"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:43.628440"
+      "timestamp": "2025-09-11T13:20:50.398077"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:50.597480"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:50.643846"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:51.038717"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:51.230919"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:51.271291"
     },
     {
       "selector": "text_Marketing",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:43.686535"
+      "timestamp": "2025-09-11T13:20:51.507443"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:43.851494"
+      "timestamp": "2025-09-11T13:20:51.664996"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:43.896895"
+      "timestamp": "2025-09-11T13:20:51.703390"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:44.046461"
+      "timestamp": "2025-09-11T13:20:51.849254"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:44.094469"
+      "timestamp": "2025-09-11T13:20:51.930139"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.081879"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.119949"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.263639"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.302036"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.341396"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.502980"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.548573"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.739419"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.927366"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:52.964884"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:53.185701"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:53.326900"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:53.509614"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:53.550334"
     },
     {
       "selector": "text_Marketing",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:44.142393"
+      "timestamp": "2025-09-11T13:20:53.587793"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:44.493947"
+      "timestamp": "2025-09-11T13:20:53.731289"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:44.540444"
+      "timestamp": "2025-09-11T13:20:53.770589"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:44.750210"
+      "timestamp": "2025-09-11T13:20:53.930456"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:44.949609"
+      "timestamp": "2025-09-11T13:20:53.973455"
+    },
+    {
+      "selector": "text_Marketing",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:54.013944"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:44.996932"
+      "timestamp": "2025-09-11T13:20:54.347858"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:45.042294"
+      "timestamp": "2025-09-11T13:20:54.392451"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:45.245932"
+      "timestamp": "2025-09-11T13:20:54.585120"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:45.395143"
+      "timestamp": "2025-09-11T13:20:54.778725"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:45.442620"
+      "timestamp": "2025-09-11T13:20:54.818394"
     },
     {
       "selector": "text_Technical",
       "count": 1,
-      "timestamp": "2025-09-11T13:07:45.487479"
+      "timestamp": "2025-09-11T13:20:54.860390"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:55.053847"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:55.194408"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:55.236194"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:20:55.279511"
     }
   ]
 }
