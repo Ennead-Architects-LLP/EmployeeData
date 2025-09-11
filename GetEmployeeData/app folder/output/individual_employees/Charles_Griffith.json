@@ -1,0 +1,246 @@
+{
+  "real_name": "Charles Griffith",
+  "email": "charles.griffith@ennead.com",
+  "bio": null,
+  "phone": "212-792-5893",
+  "mobile": "212-792-5893",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/24F77CC0-86A3-49ED-AE2F-8CA9FA5234E7/charles-griffith",
+  "image_url": "https://ei.ennead.com/api/image/ffcbc359-8d1c-4049-b637-a8a937a82479/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Charles Griffith_profile.jpg",
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 42,
+  "seat_assignment": null,
+  "memberships": [
+    "LEED AP",
+    "AIA",
+    "NCARB"
+  ],
+  "education": [
+    {
+      "institution": "University of Arizona",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "number": "",
+      "client": "2412",
+      "role": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+    },
+    {
+      "name": "Carnegie Hall Recital PA & Handrail",
+      "number": "",
+      "client": "1524",
+      "role": "Carnegie Hall Corporation",
+      "url": "https://ei.ennead.com/project/59CBAA41-975A-4C0B-9C6A-E3ECC512C670/carnegie-hall-recital-pa-handrail"
+    },
+    {
+      "name": "Vietnam Veterans Memorial Education Center",
+      "number": "",
+      "client": "0922",
+      "role": "The Vietnam Veterans Memorial Fund",
+      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center"
+    },
+    {
+      "name": "Leighton House",
+      "number": "",
+      "client": "8715",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8BB43E0F-A177-4997-B8B2-FB746839706E/leighton-house"
+    },
+    {
+      "name": "Liberty House, Battery Park City",
+      "number": "",
+      "client": "8227",
+      "role": "",
+      "url": "https://ei.ennead.com/project/9EDE4188-2479-4EE3-9E3F-5BED11971F93/liberty-house-battery-park-city"
+    },
+    {
+      "name": "New York Public Library for the Performing Arts (NYPL)",
+      "number": "",
+      "client": "9420",
+      "role": "The New York Public Library",
+      "url": "https://ei.ennead.com/project/5F99AFFF-99E8-43DF-9B6E-D5354EB9DF29/new-york-public-library-for-the-performing-arts-nypl"
+    },
+    {
+      "name": "New York City Center, Manhattan Theatre Club 2012 Renovations",
+      "number": "",
+      "client": "1107",
+      "role": "",
+      "url": "https://ei.ennead.com/project/487605D9-64ED-416A-B05F-3DDFD272E65E/new-york-city-center-manhattan-theatre-club-2012-renovations"
+    },
+    {
+      "name": "University of California, San Diego, Biological and Physical Sciences Building",
+      "number": "",
+      "client": "0629",
+      "role": "",
+      "url": "https://ei.ennead.com/project/83D250EC-9231-4952-8837-2E0C2DB6CC0F/university-of-california-san-diego-biological-and-physical-sciences-building"
+    },
+    {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "number": "",
+      "client": "2125",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    },
+    {
+      "name": "Inova Oakville at Potomac Yards Healthplex",
+      "number": "",
+      "client": "2029",
+      "role": "Inova Health System",
+      "url": "https://ei.ennead.com/project/7523ABE9-B271-4D5A-9DF9-898EF2044C01/inova-oakville-at-potomac-yards-healthplex"
+    },
+    {
+      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+      "number": "",
+      "client": "1911",
+      "role": "Perkins Eastman",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019"
+    },
+    {
+      "name": "Modern Meadow",
+      "number": "",
+      "client": "1733",
+      "role": "Modern Meadow",
+      "url": "https://ei.ennead.com/project/2775EDA5-9E5B-4A48-BD68-A05BA3AA838C/modern-meadow"
+    },
+    {
+      "name": "Carnegie Hall, Judy and Arthur Zankel Hall",
+      "number": "",
+      "client": "9726",
+      "role": "Carnegie Hall Corporation",
+      "url": "https://ei.ennead.com/project/FD6A3450-04D8-4735-9598-4ECFFA5581F3/carnegie-hall-judy-and-arthur-zankel-hall"
+    },
+    {
+      "name": "Jones Hall Concept Design",
+      "number": "",
+      "client": "1618",
+      "role": "Foundation for Jones Hall",
+      "url": "https://ei.ennead.com/project/57D5344B-D09F-4C82-A653-B0EA29C667CA/jones-hall-concept-design"
+    },
+    {
+      "name": "Kansas State University, College of Architecture Planning and Design",
+      "number": "",
+      "client": "1414",
+      "role": "BNIM",
+      "url": "https://ei.ennead.com/project/254C84D8-F993-449A-9C67-BBD8B9BDF58E/kansas-state-university-college-of-architecture-planning-and-design"
+    },
+    {
+      "name": "Mashantucket Pequot Museum and Research Center",
+      "number": "",
+      "client": "9316",
+      "role": "Research Associates",
+      "url": "https://ei.ennead.com/project/11768C10-A522-416E-9769-F9B42E36B840/mashantucket-pequot-museum-and-research-center"
+    },
+    {
+      "name": "Metropolitan Opera, Lobby Renovation and Expansion",
+      "number": "",
+      "client": "1537",
+      "role": "Metropolitan Opera Association, Inc.",
+      "url": "https://ei.ennead.com/project/14D2CEEA-87F8-4534-BE0F-6B67EB376828/metropolitan-opera-lobby-renovation-and-expansion"
+    },
+    {
+      "name": "Mount Sinai Downtown Transformation",
+      "number": "",
+      "client": "1648",
+      "role": "ArchNexus",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation"
+    },
+    {
+      "name": "New York City Center Renovation",
+      "number": "",
+      "client": "0907",
+      "role": "New York City Center",
+      "url": "https://ei.ennead.com/project/ADC0C6E6-C2F0-4AAE-A660-F7B1DFA00231/new-york-city-center-renovation"
+    },
+    {
+      "name": "New York University, Center for Genomics and Systems Biology",
+      "number": "",
+      "client": "0608",
+      "role": "EYP Inc.",
+      "url": "https://ei.ennead.com/project/377F48A8-D06C-463E-A678-B1D60AA3775A/new-york-university-center-for-genomics-and-systems-biology"
+    },
+    {
+      "name": "NYU Langone Health, Skirball Institute for Biomolecular Medicine and Residence Tower",
+      "number": "",
+      "client": "8901",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/C68AED36-E85D-4C82-A0F9-F556C045D954/nyu-langone-health-skirball-institute-for-biomolecular-medicine-and-residence-tower"
+    },
+    {
+      "name": "Riverhouse, One Rockefeller Park",
+      "number": "",
+      "client": "0401",
+      "role": "Sheldrake Organization, Inc",
+      "url": "https://ei.ennead.com/project/0D1904C4-C62B-4DE4-9103-75510202CAA6/riverhouse-one-rockefeller-park"
+    },
+    {
+      "name": "State University of New York at Cobleskill, Center for Agriculture and Natural Resources",
+      "number": "",
+      "client": "0913",
+      "role": "State University Construction Fund",
+      "url": "https://ei.ennead.com/project/105F2E7D-5CC8-40A9-963B-A667A5AA232E/state-university-of-new-york-at-cobleskill-center-for-agriculture-and-natural-resources"
+    },
+    {
+      "name": "The Ohio State University, Interdisciplinary Research Building Study",
+      "number": "",
+      "client": "1731",
+      "role": "The Ohio State University",
+      "url": "https://ei.ennead.com/project/C050D578-2772-4E53-B2F3-B97CE0E670F6/the-ohio-state-university-interdisciplinary-research-building-study"
+    },
+    {
+      "name": "University of Michigan School of Music, Theatre & Dance, Earl V. Moore Building Renovation and Brehm Pavilion",
+      "number": "",
+      "client": "1209",
+      "role": "University of Michigan",
+      "url": "https://ei.ennead.com/project/DE7F27EA-9AEA-4067-886B-46EAAC67B6EE/university-of-michigan-school-of-music-theatre-dance-earl-v-moore-building-renovation-and-brehm-pavilion"
+    },
+    {
+      "name": "University of Michigan, Biological Science Building",
+      "number": "",
+      "client": "1315",
+      "role": "University of Michigan",
+      "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building"
+    },
+    {
+      "name": "University of Michigan, Biomedical Science Research Building",
+      "number": "",
+      "client": "0019",
+      "role": "University of Michigan",
+      "url": "https://ei.ennead.com/project/44BB748A-5D2C-47CC-BDA9-B86665A4C364/university-of-michigan-biomedical-science-research-building"
+    },
+    {
+      "name": "University of Michigan, Museum of Art Master Plan",
+      "number": "",
+      "client": "0020",
+      "role": "University of Michigan",
+      "url": "https://ei.ennead.com/project/61CE7FC4-3739-4EA0-B07A-FDB15F8F6BFC/university-of-michigan-museum-of-art-master-plan"
+    },
+    {
+      "name": "Weill Cornell Medicine, Belfer Research Building",
+      "number": "",
+      "client": "0705",
+      "role": "Weill Cornell Medicine",
+      "url": "https://ei.ennead.com/project/DB19CFB5-F090-48CF-B1A5-F41E0C470039/weill-cornell-medicine-belfer-research-building"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cgriffith@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:31:09.887689",
+  "profile_id": "charles-griffith"
+}

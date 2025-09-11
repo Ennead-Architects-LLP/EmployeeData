@@ -1,0 +1,46 @@
+{
+  "real_name": "Richard Zhu",
+  "email": "richard.zhu@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/81066D21-DF0A-47A6-A2DF-25B3DCA6B06C/richard-zhu",
+  "image_url": "https://ei.ennead.com/api/image/7ba385c1-2a68-425f-be7c-177fdf15e511/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Richard Zhu_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 1,
+  "seat_assignment": null,
+  "memberships": [
+    "LEED GA"
+  ],
+  "education": [
+    {
+      "institution": "Pratt Institute",
+      "degree": "Undergraduate",
+      "specialty": "Master of Architecture"
+    },
+    {
+      "institution": "Parsons School of Design",
+      "degree": "Graduate",
+      "specialty": "Bachelor of Interior Design"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "number": "2412",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Richard.Zhu@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:48:06.151818",
+  "profile_id": "richard-zhu"
+}

@@ -1,0 +1,31 @@
+{
+  "real_name": "Matt Ryan",
+  "email": "matthew.ryan@ennead.com",
+  "bio": null,
+  "phone": "2127925836",
+  "mobile": "2127925836",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/22E212EC-D481-4F29-9817-D863AE939804/matt-ryan",
+  "image_url": "https://ei.ennead.com/api/image/d3d01fad-7244-4060-ac27-a31ac5d934ab/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Matt Ryan_profile.jpg",
+  "position": "Director",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Baruch College",
+      "degree": "5 Year Professional",
+      "specialty": "Economics"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=matthew.ryan@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:43:37.029442",
+  "profile_id": "matt-ryan"
+}

@@ -1,0 +1,64 @@
+{
+  "real_name": "Jay Chang",
+  "email": "jungin.chang@ennead.com",
+  "bio": null,
+  "phone": "2127925981",
+  "mobile": "2127925981",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/C26C5364-CCCA-4E09-B865-551987410F00/jay-chang",
+  "image_url": "https://ei.ennead.com/api/image/0d5a2c8c-3efc-447a-8b69-53a349f4c60d/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Jay Chang_profile.jpg",
+  "position": "Associate",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "memberships": [
+    "GBCI",
+    "LEED GA",
+    "National Organization of Minority Architects"
+  ],
+  "education": [
+    {
+      "institution": "Pratt Institute",
+      "degree": "Graduate",
+      "specialty": "School of Design"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Roundabout Theatre Master Plan & Concept",
+      "number": "2330",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept"
+    },
+    {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "number": "2224",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+    },
+    {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "number": "2128",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+    },
+    {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "number": "1836",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jungin.chang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:37:06.540675",
+  "profile_id": "jay-chang"
+}

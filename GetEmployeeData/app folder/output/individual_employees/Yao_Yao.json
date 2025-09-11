@@ -1,0 +1,68 @@
+{
+  "real_name": "Yao Yao",
+  "email": "yao.yao@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/238D13F9-E7EB-4A32-9F50-984D5F1B4D48/yao-yao",
+  "image_url": "https://ei.ennead.com/api/image/f76017b0-87d1-4b13-9464-e662dd2b0baa/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Yao Yao_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 5,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "number": "2401",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i"
+    },
+    {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "number": "2322",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition"
+    },
+    {
+      "name": "Alibaba Cainiao Phase II",
+      "number": "2127",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "2025",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "1940",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "number": "1841",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=yyao@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:53:11.669676",
+  "profile_id": "yao-yao"
+}

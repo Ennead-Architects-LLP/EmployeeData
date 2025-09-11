@@ -1,0 +1,61 @@
+{
+  "real_name": "John Huang",
+  "email": "zhengjohn.huang@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/D819A3E8-A452-4932-BBAD-FA2B5E7D0922/john-huang",
+  "image_url": "https://ei.ennead.com/api/image/2d448b57-28eb-40a3-9eb1-d4a4104b4bbc/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\John Huang_profile.jpg",
+  "position": "Senior Associate",
+  "department": null,
+  "years_with_firm": 5,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "number": "2227",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "2135",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "2103",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "Lingang Fengxian Soccer Training Center",
+      "number": "2005",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "1940",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=zjhuang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:37:47.258191",
+  "profile_id": "john-huang"
+}

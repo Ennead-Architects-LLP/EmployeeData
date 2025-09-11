@@ -1,0 +1,64 @@
+{
+  "real_name": "Sanah Mengi",
+  "email": "sanah.mengi@ennead.com",
+  "bio": null,
+  "phone": "646.437.1764",
+  "mobile": "646.437.1764",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/45E9238E-64EA-4B64-A521-65AD2A6087BF/sanah-mengi",
+  "image_url": "https://ei.ennead.com/api/image/65d71293-ef9a-435a-9d83-c5d26a9ca7bc/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Sanah Mengi_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "memberships": [
+    "AIA",
+    "LEED GA",
+    "National Organization of Minority Architects"
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Masters of Science in Architecture and Urban Design"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+      "number": "2321",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition"
+    },
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "2151",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "number": "2224",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+    },
+    {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
+      "number": "1847",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sanah.mengi@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:48:44.681265",
+  "profile_id": "sanah-mengi"
+}

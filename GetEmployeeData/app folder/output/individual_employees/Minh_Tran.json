@@ -1,0 +1,210 @@
+{
+  "real_name": "Minh Tran",
+  "email": "Minh.Tran@ennead.com",
+  "bio": null,
+  "phone": "(646) 437-1754",
+  "mobile": "(646) 437-1754",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/D99CC57A-FD16-41C4-9089-D6C559783801/minh-tran",
+  "image_url": "https://ei.ennead.com/api/image/087d0893-dc1d-458e-a730-71f971bc7f27/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Minh Tran_profile.jpg",
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 12,
+  "seat_assignment": null,
+  "memberships": [
+    "AIA",
+    "National Organization of Minority Architects"
+  ],
+  "education": [
+    {
+      "institution": "University of Texas, Austin",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "The Westminster Schools, Barge Commons (formerly Westminster Center Phase 1)",
+      "number": "",
+      "client": "1761B",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1"
+    },
+    {
+      "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall Addition",
+      "number": "",
+      "client": "1761A",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition"
+    },
+    {
+      "name": "The Westminster Schools, Thompson Stadium",
+      "number": "",
+      "client": "1761C",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium"
+    },
+    {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "number": "",
+      "client": "2235",
+      "role": "Harvard University",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study"
+    },
+    {
+      "name": "American School in Japan Master Plan",
+      "number": "",
+      "client": "2231",
+      "role": "American School in Japan",
+      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan"
+    },
+    {
+      "name": "Colin Powell School for Civic and Global Leadership at The City College of New York",
+      "number": "",
+      "client": "1220",
+      "role": "City University of New York, City College",
+      "url": "https://ei.ennead.com/project/4EB6598F-1C37-451C-ACF8-155A62912C15/colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york"
+    },
+    {
+      "name": "The Westminster Schools, Love Hall",
+      "number": "",
+      "client": "2105",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall"
+    },
+    {
+      "name": "The Spence School, 412 E 90 Street Conversion Study",
+      "number": "",
+      "client": "2032",
+      "role": "Spence School",
+      "url": "https://ei.ennead.com/project/13B54F34-8325-4412-A565-A8F3BCB931E4/the-spence-school-412-e-90-street-conversion-study"
+    },
+    {
+      "name": "The University of Texas at Austin, McCombs School of Business, Future Growth Study",
+      "number": "",
+      "client": "2017",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/DF3441F3-B1AD-4A8F-B44B-0B6F561B391B/the-university-of-texas-at-austin-mccombs-school-of-business-future-growth-study"
+    },
+    {
+      "name": "San Diego Museum of Art Reimagined (Museum Plan)",
+      "number": "",
+      "client": "2006",
+      "role": "The San Diego Museum of Art",
+      "url": "https://ei.ennead.com/project/9F89D97F-F0CB-4484-AD84-A07C25AB1516/san-diego-museum-of-art-reimagined-museum-plan"
+    },
+    {
+      "name": "New York University. Grey Art Museum",
+      "number": "",
+      "client": "1942",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum"
+    },
+    {
+      "name": "Westminster Schools - Blake Center",
+      "number": "",
+      "client": "1946",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
+    },
+    {
+      "name": "East Harlem Tutorial Program, Scholars Academy High School",
+      "number": "",
+      "client": "1846",
+      "role": "East Harlem Tutorial Program",
+      "url": "https://ei.ennead.com/project/839505BB-B85E-4091-AC91-15B9207F2398/east-harlem-tutorial-program-scholars-academy-high-school"
+    },
+    {
+      "name": "Apple Scottsdale",
+      "number": "",
+      "client": "1600",
+      "role": "Apple Inc.",
+      "url": "https://ei.ennead.com/project/62EAAD49-9D9B-406B-B5FA-FB6B61A3CE5D/apple-scottsdale"
+    },
+    {
+      "name": "Concordia Pudong",
+      "number": "",
+      "client": "1805",
+      "role": "Concordia International School Shanghai",
+      "url": "https://ei.ennead.com/project/BAFEA2ED-630A-4C0F-8BB7-0B569EBDB7CB/concordia-pudong"
+    },
+    {
+      "name": "Jazz at Lincoln Center, Frederick P. Rose Hall Public Space Redesign",
+      "number": "",
+      "client": "1233",
+      "role": "Miami Design District",
+      "url": "https://ei.ennead.com/project/4810BF50-1D65-4A4F-8F8E-DEC69077E660/jazz-at-lincoln-center-frederick-p-rose-hall-public-space-redesign"
+    },
+    {
+      "name": "New York University, StudentLink and Global Services Center",
+      "number": "",
+      "client": "1320",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/80A64965-D1A1-4A0D-B9F2-AA042AA0BC49/new-york-university-studentlink-and-global-services-center"
+    },
+    {
+      "name": "Peabody Essex Museum, Expansion and Renovation",
+      "number": "",
+      "client": "1319",
+      "role": "Blue Sky Third Avenue Management LLC",
+      "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation"
+    },
+    {
+      "name": "Sidwell Friends School, Comprehensive Master Plan",
+      "number": "",
+      "client": "1410",
+      "role": "Sidwell Friends School",
+      "url": "https://ei.ennead.com/project/2FA1A651-34A6-4F03-8D08-1C9563F67F96/sidwell-friends-school-comprehensive-master-plan"
+    },
+    {
+      "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
+      "number": "",
+      "client": "1406",
+      "role": "Stanford University",
+      "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute"
+    },
+    {
+      "name": "State University of New York at Cobleskill, Center for Agriculture and Natural Resources",
+      "number": "",
+      "client": "0913",
+      "role": "State University Construction Fund",
+      "url": "https://ei.ennead.com/project/105F2E7D-5CC8-40A9-963B-A667A5AA232E/state-university-of-new-york-at-cobleskill-center-for-agriculture-and-natural-resources"
+    },
+    {
+      "name": "State University of New York Downstate, Health Science Center",
+      "number": "",
+      "client": "0917",
+      "role": "State University Construction Fund",
+      "url": "https://ei.ennead.com/project/3F1D9CB1-E586-47A4-ABCA-425CB04B8769/state-university-of-new-york-downstate-health-science-center"
+    },
+    {
+      "name": "The Lane at Boerum Place",
+      "number": "",
+      "client": "1408",
+      "role": "Lonicera Partners",
+      "url": "https://ei.ennead.com/project/9807CBD8-8F19-48CF-98DD-45614BAB7BD9/the-lane-at-boerum-place"
+    },
+    {
+      "name": "The Westminster Schools, Campus Master Plan",
+      "number": "",
+      "client": "1761",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/89DFBE62-29BC-4E54-851B-2F252F27FEC8/the-westminster-schools-campus-master-plan"
+    },
+    {
+      "name": "University of Chicago, David M. Rubenstein Forum Competition",
+      "number": "",
+      "client": "1504",
+      "role": "The University of Chicago",
+      "url": "https://ei.ennead.com/project/1A527EC8-5AD4-4496-A6E3-9A4A9EC7A69F/university-of-chicago-david-m-rubenstein-forum-competition"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mtran@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:45:23.252549",
+  "profile_id": "minh-tran"
+}

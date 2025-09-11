@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ennead's People - Employee Directory</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Background Slideshow -->
+    <div class="slideshow-container">
+        <div class="slide active"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title">Ennead's People (1 employees)</h1>
+                <div class="header-meta">
+                    <span class="meta-text">Powered by EnneadTab Ecosystem</span>
+                    <span class="meta-text">Generated on: 2025-09-11 13:07:46</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search and Filters -->
+        <div class="search-section">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <img src="https://img.icons8.com/?size=100&id=enn64pGPtmU9&format=png&color=000000" alt="Search" class="search-icon">
+                    <input type="text" id="searchInput" placeholder="Search by name, position, location, phone, email, or project..." class="search-input">
+                </div>
+                <div class="search-suggestions">
+                    <span class="suggestion-label">Try searching for:</span>
+                    <span class="search-suggestion" onclick="setSearchTerm('New York')">New York</span>
+                    <span class="search-suggestion" onclick="setSearchTerm('Shanghai')">Shanghai</span>
+                    <span class="search-suggestion" onclick="setSearchTerm('California')">California</span>
+                    <span class="search-suggestion" onclick="setSearchTerm('212')">212 (NY area code)</span>
+                    <span class="search-suggestion" onclick="setSearchTerm('@ennead.com')">@ennead.com</span>
+                </div>
+            </div>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="departmentFilter" class="filter-label">Department</label>
+                    <select id="departmentFilter" class="filter-select">
+                        <option value="">All Departments</option>
+                        
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="membershipFilter" class="filter-label">Membership</label>
+                    <select id="membershipFilter" class="filter-select">
+                        <option value="">All Memberships</option>
+                        
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="officeLocationFilter" class="filter-label">Office Location</label>
+                    <select id="officeLocationFilter" class="filter-select">
+                        <option value="">All Locations</option>
+                        
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortBy" class="filter-label">Sort by</label>
+                    <select id="sortBy" class="filter-select">
+                        <option value="name">Name</option>
+                        <option value="position">Position</option>
+                        <option value="years">Years with Firm</option>
+                        <option value="department">Department</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button id="clearAllFilters" class="clear-all-button">Clear All Filters</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Employee Cards -->
+        <div class="employees-section">
+            <div class="section-header">
+                <h2>Employee Directory</h2>
+                <div class="results-info">
+                    <span id="resultsCount">1 employees found</span>
+                </div>
+            </div>
+            <div id="employeeCards" class="employee-cards-grid">
+                
+        <div class="employee-card" data-searchable="Adriana Burton Project Coordinator University of Massachusetts Science Park and Research Campus (SPARC) Kips Bay Northwell, Third Avenue Medical Office Building Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design 212-792-5964 adriana.burton@ennead.com" data-department="None" data-memberships="" data-office-location="">
+            <div class="card-header">
+                <img src="assets\images\Adriana Burton_profile.jpg" alt="Adriana Burton" class="employee-photo">
+                <div class="employee-info">
+                    <h3 class="employee-name">Adriana Burton</h3>
+                    <div class="employee-position">Project Coordinator</div>
+                    
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="contact-item"><strong>Email:</strong> <a href="mailto:adriana.burton@ennead.com">adriana.burton@ennead.com</a></div><div class="contact-item"><strong>Phone:</strong> <a href="tel:212-792-5964">212-792-5964</a></div><div class="contact-item"><strong>Teams:</strong> <a href="https://teams.microsoft.com/l/chat/0/0?users=Adriana.Burton@ennead.com" target="_blank">Open MS Teams</a></div>
+                <div class="years"><strong>Years with Firm:</strong> 3</div>
+                
+                
+                <div class="education"><strong>Education:</strong> University of Massachusetts - Undergraduate in Arts in Classics/Minor in Arabic Studies</div>
+                
+            <div class="projects">
+                <div class="projects-header" onclick="toggleProjects('projects_adriana-burton')">
+                    <strong>Projects:</strong> 3 projects
+                    <span class="expand-icon" id="icon_projects_adriana-burton">▼</span>
+                </div>
+                <div class="projects-list" id="projects_adriana-burton" style="display: none;">
+                    
+                <div class="project-item">
+                    <a href="https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay" target="_blank" class="project-link">Science Park and Research Campus (SPARC) Kips Bay</a>
+                    <div class='project-details'><span class='project-number'>#2412</span></div>
+                </div>
+                
+                <div class="project-item">
+                    <a href="https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building" target="_blank" class="project-link">Northwell, Third Avenue Medical Office Building</a>
+                    <div class='project-details'><span class='project-number'>#2109</span></div>
+                </div>
+                
+                <div class="project-item">
+                    <a href="https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design" target="_blank" class="project-link">Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design</a>
+                    <div class='project-details'><span class='project-number'>#1836</span></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+            <div class="card-footer">
+                <a href="https://ei.ennead.com/employee/E8FAC548-D560-4BD6-9240-6CEB9899F377/adriana-burton" target="_blank" class="profile-link">View Full Profile</a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Generated by @ EnneadTab 2025</p>
+                <p class="data-sources">Data Sources: Employee contact info from EI, seating info from check-in-website, computer info from IT</p>
+            </div>
+        </footer>
+        
+        <!-- Return to Top Button -->
+        <button id="returnToTop" class="return-to-top" onclick="scrollToTop()" title="Return to Top">
+            <span class="arrow-up">↑</span>
+        </button>
+    </div>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

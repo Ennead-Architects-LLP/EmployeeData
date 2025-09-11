@@ -1,0 +1,340 @@
+{
+  "real_name": "Thomas Wong",
+  "email": "thomas.wong@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5980",
+  "mobile": "(212) 792-5980",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/BFD3B741-DDB8-40F8-95A2-0E42962452B4/thomas-wong",
+  "image_url": "https://ei.ennead.com/api/image/36d823ff-816c-4ccf-9c70-81350cbd3c72/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Thomas Wong_profile.jpg",
+  "position": "Partner",
+  "department": null,
+  "years_with_firm": 31,
+  "seat_assignment": null,
+  "memberships": [
+    "NCARB",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Cornell University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "CO",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "DC",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "FL",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "MD",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "MI",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NV",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "PA",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "VA",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Shaoxing Textile Museum",
+      "number": "",
+      "client": "2418",
+      "role": "Zhejiang China Textile City Group",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+    },
+    {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "number": "",
+      "client": "2412",
+      "role": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+    },
+    {
+      "name": "New Nanchang Library Design Competition",
+      "number": "",
+      "client": "229124",
+      "role": "",
+      "url": "https://ei.ennead.com/project/C48ECFB9-4228-4EF5-843F-89A8F972D80C/new-nanchang-library-design-competition"
+    },
+    {
+      "name": "Ennead Architects, 1 World Trade Center",
+      "number": "",
+      "client": "1806",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A01D96E9-D4FA-4D9F-BDF0-4A017C7F07E0/ennead-architects-1-world-trade-center"
+    },
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "",
+      "client": "2151",
+      "role": "NYU Langone - Long Island",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "Vietnam Veterans Memorial Education Center",
+      "number": "",
+      "client": "0922",
+      "role": "The Vietnam Veterans Memorial Fund",
+      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center"
+    },
+    {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "number": "",
+      "client": "2227",
+      "role": "Huzhou Professional School",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
+    },
+    {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "number": "",
+      "client": "2224",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+    },
+    {
+      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+      "number": "",
+      "client": "2226",
+      "role": "University of Florida",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition"
+    },
+    {
+      "name": "Inova Central Region Emergency Department Expansion",
+      "number": "",
+      "client": "2223",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+    },
+    {
+      "name": "NYU Langone Health, Medical Science Building Renovations: Student Library",
+      "number": "",
+      "client": "1324",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/6C171C9B-169D-4E28-B1CE-EC39DD07D79F/nyu-langone-health-medical-science-building-renovations--student-library"
+    },
+    {
+      "name": "Sherman Avenue Mixed Use Development",
+      "number": "",
+      "client": "1229",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A54AD7A9-0AB3-47C0-B668-2BC495B066B8/sherman-avenue-mixed-use-development"
+    },
+    {
+      "name": "The Walters Art Museum Master Plan",
+      "number": "",
+      "client": "0719",
+      "role": "",
+      "url": "https://ei.ennead.com/project/39740538-5E6D-42AC-9F7C-D2C4587B0701/the-walters-art-museum-master-plan"
+    },
+    {
+      "name": "Zhonghuan Investment Development – Hongqi Village Plot E3",
+      "number": "",
+      "client": "1644",
+      "role": "",
+      "url": "https://ei.ennead.com/project/48365B9C-5F8C-47BC-AEDE-CD44D20D897F/zhonghuan-investment-development-hongqi-village-plot-e3"
+    },
+    {
+      "name": "Cornell University, Computing and Information Science Building",
+      "number": "",
+      "client": "0623",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D2D5966C-16CE-4DD4-A900-19D24404D219/cornell-university-computing-and-information-science-building"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "number": "",
+      "client": "2128",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+    },
+    {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "number": "",
+      "client": "2125",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    },
+    {
+      "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+      "number": "",
+      "client": "2117",
+      "role": "University of Florida",
+      "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation"
+    },
+    {
+      "name": "DingTalk Competition",
+      "number": "",
+      "client": "2101",
+      "role": "",
+      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition"
+    },
+    {
+      "name": "Inova Oakville at Potomac Yards Healthplex",
+      "number": "",
+      "client": "2029",
+      "role": "Inova Health System",
+      "url": "https://ei.ennead.com/project/7523ABE9-B271-4D5A-9DF9-898EF2044C01/inova-oakville-at-potomac-yards-healthplex"
+    },
+    {
+      "name": "COMAC Campus, New Headquarters",
+      "number": "",
+      "client": "2009",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters"
+    },
+    {
+      "name": "Project Darwin, Natural History Museum",
+      "number": "",
+      "client": "2004",
+      "role": "Miral Asset Management LLC",
+      "url": "https://ei.ennead.com/project/A33E7BEF-8C69-44C1-A92A-41138617A2B3/project-darwin-natural-history-museum"
+    },
+    {
+      "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
+      "number": "",
+      "client": "2002",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall"
+    },
+    {
+      "name": "Shanghai Lingang WLA Conference Center",
+      "number": "",
+      "client": "1941",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/B1A8E4E7-3B91-44AE-AED2-042155E5469F/shanghai-lingang-wla-conference-center"
+    },
+    {
+      "name": "Edelman Fossil Museum of Rowan University",
+      "number": "",
+      "client": "1824",
+      "role": "KSS Architects LLP",
+      "url": "https://ei.ennead.com/project/08F1108D-F92B-429F-89E7-6DF373F0CCA8/edelman-fossil-museum-of-rowan-university"
+    },
+    {
+      "name": "Wuxi Art Museum",
+      "number": "",
+      "client": "1931",
+      "role": "Wuxi Culture and Tourism Bureau",
+      "url": "https://ei.ennead.com/project/3D1D6BFF-2B0A-4B7A-9D3B-B84AA3DCF71A/wuxi-art-museum"
+    },
+    {
+      "name": "Capitol Crossing",
+      "number": "",
+      "client": "1850",
+      "role": "Capitol Crossing III LLC, and Capitol Crossing IV LLC",
+      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing"
+    },
+    {
+      "name": "Shenzhen Science and Technology Museum (S&T)",
+      "number": "",
+      "client": "1923",
+      "role": "Shenzhen Toutiao Technology Co., Ltd.",
+      "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t"
+    },
+    {
+      "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
+      "number": "",
+      "client": "1900",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6"
+    },
+    {
+      "name": "Baoshan Nanda",
+      "number": "",
+      "client": "1848",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda"
+    },
+    {
+      "name": "Beihang University Qingdao Campus, International Science and Education City",
+      "number": "",
+      "client": "1729",
+      "role": "Qingdao Oceantec Valley Administration Bureau",
+      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city"
+    },
+    {
+      "name": "Lingang Fengxian Biopharm Office Park",
+      "number": "",
+      "client": "1740",
+      "role": "Shanghai Lingang Huaping Economic Development Co. Ltd.",
+      "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park"
+    },
+    {
+      "name": "Lixin University of Finance and Accounting, Pudong New Campus Master Plan",
+      "number": "",
+      "client": "1730",
+      "role": "Shanghai Baitong Project Management Consulting co., Ltd.",
+      "url": "https://ei.ennead.com/project/4E502D5D-B536-4D71-9162-8196605365D9/lixin-university-of-finance-and-accounting-pudong-new-campus-master-plan"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=twong@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:50:04.639553",
+  "profile_id": "thomas-wong"
+}

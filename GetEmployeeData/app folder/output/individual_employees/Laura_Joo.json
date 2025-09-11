@@ -1,0 +1,86 @@
+{
+  "real_name": "Laura Joo",
+  "email": "Laura.Joo@ennead.com",
+  "bio": null,
+  "phone": "646-437-1789",
+  "mobile": "646-437-1789",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/B3A3891B-2125-4BE8-8A49-77A0ADAB180C/laura-joo",
+  "image_url": "https://ei.ennead.com/api/image/8511be81-b00f-46f1-b452-0070064ad988/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Laura Joo_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 4,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Harvard University Graduate School of Design",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Pratt Institute",
+      "degree": "Undergraduate",
+      "specialty": "Interior Design"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "2151",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "number": "2224",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+    },
+    {
+      "name": "Inova Central Region Emergency Department Expansion",
+      "number": "2223",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+    },
+    {
+      "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+      "number": "2117",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation"
+    },
+    {
+      "name": "JUNO, Capitol Hill",
+      "number": "2020",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill"
+    },
+    {
+      "name": "New York Blood Center Applied Life Sciences Hub",
+      "number": "1852",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub"
+    },
+    {
+      "name": "Wuxi Art Museum",
+      "number": "1931",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3D1D6BFF-2B0A-4B7A-9D3B-B84AA3DCF71A/wuxi-art-museum"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Laura.Joo@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:41:27.284591",
+  "profile_id": "laura-joo"
+}

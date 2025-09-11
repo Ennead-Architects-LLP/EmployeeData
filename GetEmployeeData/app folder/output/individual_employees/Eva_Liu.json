@@ -1,0 +1,60 @@
+{
+  "real_name": "Eva Liu",
+  "email": "xinyue.liu@ennead.com",
+  "bio": null,
+  "phone": "646-437-1727",
+  "mobile": "646-437-1727",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/7CC0B85D-6924-4208-AF39-C334B2F5B285/eva-liu",
+  "image_url": "https://ei.ennead.com/api/image/e68b15aa-67b7-4316-bb23-b6ee14f95c40/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Eva Liu_profile.jpg",
+  "position": "Architectural Designer",
+  "department": null,
+  "years_with_firm": 0,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Rice University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture - Expected Graduation 2024"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "number": "2235",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study"
+    },
+    {
+      "name": "American School in Japan Master Plan",
+      "number": "2231",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan"
+    },
+    {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "number": "2100",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+    },
+    {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "number": "2001",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xinyue.liu@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:34:07.611829",
+  "profile_id": "eva-liu"
+}

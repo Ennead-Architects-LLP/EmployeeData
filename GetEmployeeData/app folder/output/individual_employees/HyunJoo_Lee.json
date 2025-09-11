@@ -1,0 +1,86 @@
+{
+  "real_name": "HyunJoo Lee",
+  "email": "hyunjoo.lee@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5923",
+  "mobile": "(212) 792-5923",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/50755AEA-603D-423B-82E2-71EBC3B91CAB/hyunjoo-lee",
+  "image_url": "https://ei.ennead.com/api/image/9d274414-e4fc-4f1e-bb81-213de544d8b7/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\HyunJoo Lee_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 6,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Rhode Island School of Design",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Seoul National University",
+      "degree": "Undergraduate",
+      "specialty": "Arts"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "New York University Kimmel Center Stair",
+      "number": "2414",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair"
+    },
+    {
+      "name": "New Nanchang Library Design Competition",
+      "number": "229124",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/C48ECFB9-4228-4EF5-843F-89A8F972D80C/new-nanchang-library-design-competition"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "2124",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    },
+    {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "number": "1845",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
+    },
+    {
+      "name": "Westminster Schools - Blake Center",
+      "number": "1946",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
+    },
+    {
+      "name": "Kuwait University Health Sciences Campus",
+      "number": "1704",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus"
+    },
+    {
+      "name": "The Westminster Schools, Campus Master Plan",
+      "number": "1761",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/89DFBE62-29BC-4E54-851B-2F252F27FEC8/the-westminster-schools-campus-master-plan"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=hjlee@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:36:14.337898",
+  "profile_id": "hyunjoo-lee"
+}

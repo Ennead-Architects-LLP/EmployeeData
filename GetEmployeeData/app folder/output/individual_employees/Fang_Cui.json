@@ -1,0 +1,33 @@
+{
+  "real_name": "Fang Cui",
+  "email": "fang.cui@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/976FF832-15D5-4F3B-9962-04D242641738/fang-cui",
+  "image_url": "https://ei.ennead.com/api/image/a2c53592-28a6-4d68-bcce-1c755f31b309/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Fang Cui_profile.jpg",
+  "position": "Director",
+  "department": null,
+  "years_with_firm": 1,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "1735",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Fang.Cui@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:34:13.479642",
+  "profile_id": "fang-cui"
+}

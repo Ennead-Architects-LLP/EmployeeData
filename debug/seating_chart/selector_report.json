@@ -1,0 +1,964 @@
+{
+  "employee_elements": [
+    {
+      "selector": "circle.seatCircle",
+      "count": 150,
+      "timestamp": "2025-09-11T13:07:28.569957"
+    },
+    {
+      "selector": "circle[firstName]",
+      "count": 150,
+      "timestamp": "2025-09-11T13:07:28.606854"
+    },
+    {
+      "selector": "circle[lastName]",
+      "count": 150,
+      "timestamp": "2025-09-11T13:07:28.633365"
+    },
+    {
+      "selector": "circle[seat]",
+      "count": 150,
+      "timestamp": "2025-09-11T13:07:28.660688"
+    },
+    {
+      "selector": "tr",
+      "count": 744,
+      "timestamp": "2025-09-11T13:07:28.765166"
+    },
+    {
+      "selector": "[class*=\"row\"]",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:28.779631"
+    },
+    {
+      "selector": "div[class*=\"item\"]",
+      "count": 7,
+      "timestamp": "2025-09-11T13:07:28.796518"
+    },
+    {
+      "selector": "div:has(> div:has-text(\"EA\"))",
+      "count": 19,
+      "timestamp": "2025-09-11T13:07:28.829379"
+    },
+    {
+      "selector": "div:has(> div:has-text(\"EF\"))",
+      "count": 10,
+      "timestamp": "2025-09-11T13:07:28.852113"
+    },
+    {
+      "selector": "div:has(> div:has-text(\"Technical\"))",
+      "count": 10,
+      "timestamp": "2025-09-11T13:07:28.874158"
+    },
+    {
+      "selector": "div:has(> div:has-text(\"Marketing\"))",
+      "count": 10,
+      "timestamp": "2025-09-11T13:07:28.894936"
+    }
+  ],
+  "name_selectors": [],
+  "seat_selectors": [
+    {
+      "selector": "regex_EA",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.162205"
+    },
+    {
+      "selector": "regex_EF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.211741"
+    },
+    {
+      "selector": "regex_EG",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.256868"
+    },
+    {
+      "selector": "regex_SE",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.414313"
+    },
+    {
+      "selector": "regex_ED",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.469511"
+    },
+    {
+      "selector": "regex_WB",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.645225"
+    },
+    {
+      "selector": "regex_WA",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.693975"
+    },
+    {
+      "selector": "regex_SD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.742801"
+    },
+    {
+      "selector": "regex_WD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.896527"
+    },
+    {
+      "selector": "regex_SF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.941707"
+    },
+    {
+      "selector": "regex_SC",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.091173"
+    },
+    {
+      "selector": "regex_WD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.139652"
+    },
+    {
+      "selector": "regex_WB",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.524534"
+    },
+    {
+      "selector": "regex_WD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.617110"
+    },
+    {
+      "selector": "regex_WD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:31.881915"
+    },
+    {
+      "selector": "regex_EF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.344954"
+    },
+    {
+      "selector": "regex_SC",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.400335"
+    },
+    {
+      "selector": "regex_WB",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.627024"
+    },
+    {
+      "selector": "regex_SC",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.775914"
+    },
+    {
+      "selector": "regex_WD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.823826"
+    },
+    {
+      "selector": "regex_ED",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.872361"
+    },
+    {
+      "selector": "regex_ED",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.319089"
+    },
+    {
+      "selector": "regex_SD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.771038"
+    },
+    {
+      "selector": "regex_EA",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.929827"
+    },
+    {
+      "selector": "regex_EG",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.162978"
+    },
+    {
+      "selector": "regex_WB",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.362762"
+    },
+    {
+      "selector": "regex_SF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.314935"
+    },
+    {
+      "selector": "regex_SD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.568475"
+    },
+    {
+      "selector": "regex_SD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.953400"
+    },
+    {
+      "selector": "regex_EA",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.160980"
+    },
+    {
+      "selector": "regex_EF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.404945"
+    },
+    {
+      "selector": "regex_ED",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.808986"
+    },
+    {
+      "selector": "regex_WA",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.565481"
+    },
+    {
+      "selector": "regex_ED",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.723879"
+    },
+    {
+      "selector": "regex_SC",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.768582"
+    },
+    {
+      "selector": "regex_WB",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.811331"
+    },
+    {
+      "selector": "regex_SC",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.967457"
+    },
+    {
+      "selector": "regex_EG",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.205355"
+    },
+    {
+      "selector": "regex_SD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.248503"
+    },
+    {
+      "selector": "regex_EF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.402791"
+    },
+    {
+      "selector": "regex_WD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.699329"
+    },
+    {
+      "selector": "regex_EG",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.327504"
+    },
+    {
+      "selector": "regex_SF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.539767"
+    },
+    {
+      "selector": "regex_WB",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.586619"
+    },
+    {
+      "selector": "regex_SE",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.222909"
+    },
+    {
+      "selector": "regex_EG",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.468408"
+    },
+    {
+      "selector": "regex_EG",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.675328"
+    },
+    {
+      "selector": "regex_SD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.875297"
+    },
+    {
+      "selector": "regex_EA",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.577136"
+    },
+    {
+      "selector": "regex_WD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.195620"
+    },
+    {
+      "selector": "regex_SD",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.245059"
+    },
+    {
+      "selector": "regex_SC",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.452453"
+    },
+    {
+      "selector": "regex_EF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.505377"
+    },
+    {
+      "selector": "regex_SF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.961083"
+    },
+    {
+      "selector": "regex_EF",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:45.200518"
+    },
+    {
+      "selector": "regex_EA",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:45.442441"
+    }
+  ],
+  "department_selectors": [
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.162385"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.257053"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.414501"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.469694"
+    },
+    {
+      "selector": "text_Marketing",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.645432"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.694158"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.742981"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:29.941872"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.091372"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.139841"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.331304"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.374864"
+    },
+    {
+      "selector": "text_Marketing",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.524706"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.806822"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:30.956690"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:31.002627"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:31.050667"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:31.198227"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:31.241641"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:31.396366"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:31.443660"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:31.925258"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.125445"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.400528"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:32.872541"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.026691"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.068845"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.319305"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.520142"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.677108"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.723771"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.771224"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:33.930005"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.120764"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.206234"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.409461"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.575653"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.669322"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.830756"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:34.873436"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.032821"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.123053"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.273433"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.315101"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.476135"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.521665"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.568652"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.755940"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.907720"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:35.953587"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.006949"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.161156"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.203788"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.359788"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.405117"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.454269"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.656854"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.809176"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.858623"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:36.912941"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.116062"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.317776"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.361038"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.519006"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.724056"
+    },
+    {
+      "selector": "text_Marketing",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.811515"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:37.967657"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.011367"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.205527"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.248677"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.402972"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.449748"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.609305"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.653318"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:38.848791"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.082925"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.127206"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.277524"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.327693"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.539950"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.750267"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:39.985789"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.029631"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.223091"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.419613"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.468597"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:40.875492"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.080862"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.124245"
+    },
+    {
+      "selector": "text_Marketing",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.377542"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.531674"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.577320"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.744424"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.838349"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:41.999011"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.042688"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.195821"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.245296"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.293241"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.452628"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.505593"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.709996"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.916630"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:42.961262"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:43.214858"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:43.366752"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:43.567325"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:43.628440"
+    },
+    {
+      "selector": "text_Marketing",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:43.686535"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:43.851494"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:43.896895"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:44.046461"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:44.094469"
+    },
+    {
+      "selector": "text_Marketing",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:44.142393"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:44.493947"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:44.540444"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:44.750210"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:44.949609"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:44.996932"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:45.042294"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:45.245932"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:45.395143"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:45.442620"
+    },
+    {
+      "selector": "text_Technical",
+      "count": 1,
+      "timestamp": "2025-09-11T13:07:45.487479"
+    }
+  ]
+}

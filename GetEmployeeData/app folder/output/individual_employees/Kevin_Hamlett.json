@@ -1,0 +1,137 @@
+{
+  "real_name": "Kevin Hamlett",
+  "email": "kevin.hamlett@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5952",
+  "mobile": "(212) 792-5952",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5A43B998-C0F8-44E2-8EC9-3A07B6E3F372/kevin-hamlett",
+  "image_url": "https://ei.ennead.com/api/image/2356ff67-6615-4080-b02c-f8a7cde99f95/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Kevin Hamlett_profile.jpg",
+  "position": "Senior Associate",
+  "department": null,
+  "years_with_firm": 7,
+  "seat_assignment": null,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "North Carolina State University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Virginia",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+      "number": "",
+      "client": "2321",
+      "role": "VIP.com",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition"
+    },
+    {
+      "name": "Ennead Architects, 1 World Trade Center",
+      "number": "",
+      "client": "1806",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A01D96E9-D4FA-4D9F-BDF0-4A017C7F07E0/ennead-architects-1-world-trade-center"
+    },
+    {
+      "name": "Alibaba Cainiao Phase II",
+      "number": "",
+      "client": "2127",
+      "role": "Shenzhen Toutiao Technology Co., Ltd.",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "",
+      "client": "2103",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "",
+      "client": "2025",
+      "role": "Shenhzen Int. Performance Center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    },
+    {
+      "name": "The Cove, Crescent Park Jersey City",
+      "number": "",
+      "client": "1902",
+      "role": "AQ Liberty LLC (Argent Ventures)",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "",
+      "client": "1735",
+      "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    },
+    {
+      "name": "China Resources Land MixC Park (CR Land)",
+      "number": "",
+      "client": "1741",
+      "role": "Shanghai Huaxi Real Estate Development Co., Ltd",
+      "url": "https://ei.ennead.com/project/EFDF0880-F722-4F44-AB9A-5FC86CDEF90B/china-resources-land-mixc-park-cr-land"
+    },
+    {
+      "name": "Hero South Plot",
+      "number": "",
+      "client": "1712",
+      "role": "Shanghai Rongyin Properties Co., Ltd.",
+      "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot"
+    },
+    {
+      "name": "Hongkun Edgewater",
+      "number": "",
+      "client": "1750",
+      "role": "Hongkun USA",
+      "url": "https://ei.ennead.com/project/A3D371E7-B27A-4197-AE68-769A3D0FD928/hongkun-edgewater"
+    },
+    {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "number": "",
+      "client": "1836",
+      "role": "Princeton University",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+    },
+    {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "number": "",
+      "client": "1725",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "Taopu North",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=khamlett@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:39:18.783496",
+  "profile_id": "kevin-hamlett"
+}

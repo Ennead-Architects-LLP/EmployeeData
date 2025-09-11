@@ -1,0 +1,172 @@
+{
+  "real_name": "Chuck Wolf",
+  "email": "charles.wolf@ennead.com",
+  "bio": null,
+  "phone": "646-437-1718",
+  "mobile": "646-437-1718",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/3F6825C5-562F-4A0C-9774-CDE8C8FBB006/chuck-wolf",
+  "image_url": "https://ei.ennead.com/api/image/6ddf28bb-e042-4f53-82a5-28cb411c00f1/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Chuck Wolf_profile.jpg",
+  "position": "Senior Associate",
+  "department": null,
+  "years_with_firm": 11,
+  "seat_assignment": null,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "University of Oregon",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Washington University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "number": "",
+      "client": "2322",
+      "role": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition"
+    },
+    {
+      "name": "Omaha Performing Arts, Steelhouse Omaha",
+      "number": "",
+      "client": "1843B",
+      "role": "Omaha Performing Arts",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha"
+    },
+    {
+      "name": "GSP Arts Uberlandia",
+      "number": "",
+      "client": "1118",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DE89DED1-43D9-4AC1-B189-9FC26315137C/gsp-arts-uberlandia"
+    },
+    {
+      "name": "Yidan Center",
+      "number": "",
+      "client": "2134",
+      "role": "Shenzhen Qianhai Yidan Educational, Scientific and Cultural Company",
+      "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "",
+      "client": "2025",
+      "role": "Shenhzen Int. Performance Center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    },
+    {
+      "name": "Omaha Performing Arts Campus Expansion",
+      "number": "",
+      "client": "1843",
+      "role": "Omaha Performing Arts",
+      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion"
+    },
+    {
+      "name": "Beihang University Qingdao Campus, International Science and Education City",
+      "number": "",
+      "client": "1729",
+      "role": "Qingdao Oceantec Valley Administration Bureau",
+      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city"
+    },
+    {
+      "name": "Lingang Fengxian Biopharm Office Park",
+      "number": "",
+      "client": "1740",
+      "role": "Shanghai Lingang Huaping Economic Development Co. Ltd.",
+      "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park"
+    },
+    {
+      "name": "Hero Tandi Pen",
+      "number": "",
+      "client": "1621",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/A44ADE52-65BF-41A5-8CCB-D5C03ED01E77/hero-tandi-pen"
+    },
+    {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "number": "",
+      "client": "1841",
+      "role": "Huawei Technologies Co., Ltd.",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition"
+    },
+    {
+      "name": "Huawei Wuhan Research and Development Campus",
+      "number": "",
+      "client": "1326",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus"
+    },
+    {
+      "name": "Nanjing Qilin Technology Innovation Park (Plot 3)",
+      "number": "",
+      "client": "1303",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/706ECC86-72A7-4FD9-B7C9-EF75C03FF86A/nanjing-qilin-technology-innovation-park-plot-3"
+    },
+    {
+      "name": "Shanghai Lingang Innovation and Entrepreneurship Zone",
+      "number": "",
+      "client": "1503",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/121E4D74-C03B-4A24-B59E-8C93D8A49195/shanghai-lingang-innovation-and-entrepreneurship-zone"
+    },
+    {
+      "name": "Stanford University, Denning House",
+      "number": "",
+      "client": "1604",
+      "role": "Stanford University",
+      "url": "https://ei.ennead.com/project/1AE1E92E-5E2C-465A-8FA7-F5EBA5291E06/stanford-university-denning-house"
+    },
+    {
+      "name": "The National Inventors Hall of Fame",
+      "number": "",
+      "client": "8830",
+      "role": "TEST",
+      "url": "https://ei.ennead.com/project/CF5576DF-D822-437F-BC39-CCAE17C47157/the-national-inventors-hall-of-fame"
+    },
+    {
+      "name": "Xiamen Music Center",
+      "number": "",
+      "client": "1535",
+      "role": "Xiamen",
+      "url": "https://ei.ennead.com/project/8EDD5884-6E70-4E69-9912-7175E7B7715B/xiamen-music-center"
+    },
+    {
+      "name": "Shanghai Astronomy Museum (Planetarium)",
+      "number": "",
+      "client": "1331",
+      "role": "The Davis Companies",
+      "url": "https://ei.ennead.com/project/29D257CF-CC0F-4D77-8750-0D4582C95142/shanghai-astronomy-museum-planetarium"
+    },
+    {
+      "name": "Omaha Performing Arts Campus Basic Services",
+      "number": "",
+      "client": "184300",
+      "role": "Holland Basham Architects",
+      "url": "https://ei.ennead.com/project/60BA4E63-B6E1-4A96-8A36-ABF28EF1D544/omaha-performing-arts-campus-basic-services"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Charles.wolf@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:31:46.296759",
+  "profile_id": "chuck-wolf"
+}

@@ -1,0 +1,81 @@
+{
+  "real_name": "Mariana Bravo",
+  "email": "mariana.bravo@ennead.com",
+  "bio": null,
+  "phone": "646-437-1708",
+  "mobile": "646-437-1708",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/C67011DC-A4BF-40F2-AB88-2009D0F4C26D/mariana-bravo",
+  "image_url": "https://ei.ennead.com/api/image/ef0d755e-8c01-4e0d-b36d-f8f92f176767/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Mariana Bravo_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Pratt Institute",
+      "degree": "Undergraduate",
+      "specialty": "Bachelor of Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Shaoxing Textile Museum",
+      "number": "2418",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+    },
+    {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "number": "2412",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+    },
+    {
+      "name": "Mayo Clinic Executive Health Gonda",
+      "number": "2338",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda"
+    },
+    {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "number": "2322",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition"
+    },
+    {
+      "name": "The Old Globe Concept Design",
+      "number": "2230",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design"
+    },
+    {
+      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+      "number": "2226",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition"
+    },
+    {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "number": "2210",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mariana.bravo@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:42:40.238239",
+  "profile_id": "mariana-bravo"
+}

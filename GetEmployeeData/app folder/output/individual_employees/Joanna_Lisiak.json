@@ -1,0 +1,43 @@
+{
+  "real_name": "Joanna Lisiak",
+  "email": "joanna.lisiak@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5886",
+  "mobile": "(212) 792-5886",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/F415157F-5DB7-47B8-9C48-9AB6E8101831/joanna-lisiak",
+  "image_url": "https://ei.ennead.com/api/image/5155993e-702b-4b90-a72e-9b873a9464e4/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Joanna Lisiak_profile.jpg",
+  "position": "Director",
+  "department": null,
+  "years_with_firm": 9,
+  "seat_assignment": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "NYU",
+      "degree": "Undergraduate",
+      "specialty": "Business Finance"
+    },
+    {
+      "institution": "South New Hampshire University",
+      "degree": "Undergraduate",
+      "specialty": "Business Finance"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Notary Public",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jlisiak@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:37:42.575025",
+  "profile_id": "joanna-lisiak"
+}

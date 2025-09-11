@@ -1,0 +1,293 @@
+{
+  "real_name": "Charles Brainerd",
+  "email": "charles.brainerd@ennead.com",
+  "bio": null,
+  "phone": "212-792-5907",
+  "mobile": "212-792-5907",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/C6B8EB65-350E-4974-9BC4-0877AFBBA190/charles-brainerd",
+  "image_url": "https://ei.ennead.com/api/image/8ca2edd3-61db-425e-a76f-24c37592defb/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Charles Brainerd_profile.jpg",
+  "position": "Senior Associate",
+  "department": null,
+  "years_with_firm": 27,
+  "seat_assignment": null,
+  "memberships": [
+    "PH",
+    "AIA",
+    "LEED AP"
+  ],
+  "education": [
+    {
+      "institution": "Harvard",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Harvard",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "The Cathedral Church of Saint John the Divine North Transept",
+      "number": "",
+      "client": "1312",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept"
+    },
+    {
+      "name": "Lycée Français de New York, Ongoing Services (Lycee Francais)",
+      "number": "",
+      "client": "0603",
+      "role": "Lycee Francais de New York",
+      "url": "https://ei.ennead.com/project/0399CDA5-3D7D-4E02-B5CA-B3A24903E679/lyc-e-fran-ais-de-new-york-ongoing-services-lycee-francais"
+    },
+    {
+      "name": "New York Academy of Medicine, Programming and Planning",
+      "number": "",
+      "client": "0125",
+      "role": "",
+      "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning"
+    },
+    {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
+      "number": "",
+      "client": "1847",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings"
+    },
+    {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "number": "",
+      "client": "1724",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof"
+    },
+    {
+      "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
+      "number": "",
+      "client": "2002",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall"
+    },
+    {
+      "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
+      "number": "",
+      "client": "1904",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, North Tower",
+      "number": "",
+      "client": "1925",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/99550CD6-67CB-4F2D-B620-1E5AD2FCC9D1/the-cathedral-church-of-st-john-the-divine-north-tower"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Offices Redesign",
+      "number": "",
+      "client": "1920",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/E208C9D3-8588-4CD6-B3D6-A967B68962A1/the-cathedral-church-of-st-john-the-divine-offices-redesign"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Tomb of Christ",
+      "number": "",
+      "client": "1910",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/24136CFF-8675-4073-89E0-2DA2462362E5/the-cathedral-church-of-st-john-the-divine-tomb-of-christ"
+    },
+    {
+      "name": "Westminster Schools - Blake Center",
+      "number": "",
+      "client": "1946",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
+    },
+    {
+      "name": "Brooklyn Museum, Great Hall",
+      "number": "",
+      "client": "1106",
+      "role": "Brooklyn Museum",
+      "url": "https://ei.ennead.com/project/DD4ACE57-C761-4267-BA9C-C63D66CB6504/brooklyn-museum-great-hall"
+    },
+    {
+      "name": "Allegheny College, Vukovich Center for Communication Arts",
+      "number": "",
+      "client": "0512",
+      "role": "Allegheny College",
+      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts"
+    },
+    {
+      "name": "American Museum of Natural History, Rose Center for Earth and Space",
+      "number": "",
+      "client": "9501",
+      "role": "American Museum of Natural History",
+      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space"
+    },
+    {
+      "name": "Asheville Art Museum",
+      "number": "",
+      "client": "0817",
+      "role": "Asheville Art Museum",
+      "url": "https://ei.ennead.com/project/9021C1CD-5B57-4D12-846B-CD99B26A6922/asheville-art-museum"
+    },
+    {
+      "name": "Carnegie Hall, Judy and Arthur Zankel Hall",
+      "number": "",
+      "client": "9726",
+      "role": "Carnegie Hall Corporation",
+      "url": "https://ei.ennead.com/project/FD6A3450-04D8-4735-9598-4ECFFA5581F3/carnegie-hall-judy-and-arthur-zankel-hall"
+    },
+    {
+      "name": "Columbia University Law School, Jerome L. Greene Hall",
+      "number": "",
+      "client": "9314",
+      "role": "Columbia University",
+      "url": "https://ei.ennead.com/project/4A17E664-4F6E-427D-A25B-7B807DA22857/columbia-university-law-school-jerome-l-greene-hall"
+    },
+    {
+      "name": "Lycée Français de New York Renovation and Expansion (Lycee Francais)",
+      "number": "",
+      "client": "1334",
+      "role": "Lycee Francais de New York",
+      "url": "https://ei.ennead.com/project/0AB247F6-39F9-4B46-ADC7-2AF458B2B544/lyc-e-fran-ais-de-new-york-renovation-and-expansion-lycee-francais"
+    },
+    {
+      "name": "Mashantucket Pequot Museum and Research Center",
+      "number": "",
+      "client": "9316",
+      "role": "Research Associates",
+      "url": "https://ei.ennead.com/project/11768C10-A522-416E-9769-F9B42E36B840/mashantucket-pequot-museum-and-research-center"
+    },
+    {
+      "name": "Massachusetts College of Art and Design, Design and Media Center",
+      "number": "",
+      "client": "1020",
+      "role": "Division of Capital Asset Management and Maintenance",
+      "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center"
+    },
+    {
+      "name": "New York University, Department of Journalism",
+      "number": "",
+      "client": "0509",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/64722D05-9BA1-4F2B-8109-9545F58477A4/new-york-university-department-of-journalism"
+    },
+    {
+      "name": "New York University, Gallatin School of Individualized Study",
+      "number": "",
+      "client": "0609",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/88100CBA-B5DE-47BD-BEE6-F0FA87C06370/new-york-university-gallatin-school-of-individualized-study"
+    },
+    {
+      "name": "NYU Langone Health, Science Building",
+      "number": "",
+      "client": "1101",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+    },
+    {
+      "name": "Queens Borough Public Library, Flushing Regional Branch",
+      "number": "",
+      "client": "9217",
+      "role": "Department of General Services",
+      "url": "https://ei.ennead.com/project/3DFD1D99-34B2-47A6-A0F6-9E735A167126/queens-borough-public-library-flushing-regional-branch"
+    },
+    {
+      "name": "Smithsonian Institution, Cooper-Hewitt National Design Museum, Miller/Fox Houses",
+      "number": "",
+      "client": "9123",
+      "role": "Smithsonian Institution",
+      "url": "https://ei.ennead.com/project/C59A3BC5-820C-4A00-B365-DAB057F71815/smithsonian-institution-cooper-hewitt-national-design-museum-miller-fox-houses"
+    },
+    {
+      "name": "Stanford Law School, Crown Hall, Master Plan and Renovation",
+      "number": "",
+      "client": "1113",
+      "role": "Stanford University",
+      "url": "https://ei.ennead.com/project/2133497C-6BA6-4366-8D66-B9BC6A508C8B/stanford-law-school-crown-hall-master-plan-and-renovation"
+    },
+    {
+      "name": "State University of New York Downstate, Health Science Center",
+      "number": "",
+      "client": "0917",
+      "role": "State University Construction Fund",
+      "url": "https://ei.ennead.com/project/3F1D9CB1-E586-47A4-ABCA-425CB04B8769/state-university-of-new-york-downstate-health-science-center"
+    },
+    {
+      "name": "Staten Island Courthouse, St. George",
+      "number": "",
+      "client": "0613",
+      "role": "Dormitory Authority of the State of New York",
+      "url": "https://ei.ennead.com/project/7A8892A0-FA7A-40EF-8300-79377462C96C/staten-island-courthouse-st-george"
+    },
+    {
+      "name": "The Bard Graduate Center: Decorative Arts, Design History, Material Culture, Academic Building Phase II",
+      "number": "",
+      "client": "0619",
+      "role": "The Iris Foundation",
+      "url": "https://ei.ennead.com/project/1D54C82D-9B5F-4857-ADDC-F6EFCDE0EB4D/the-bard-graduate-center--decorative-arts-design-history-material-culture-academic-building-phase-ii"
+    },
+    {
+      "name": "The David H. Koch Center for Cancer Care at Memorial Sloan Kettering Cancer Center",
+      "number": "",
+      "client": "1212",
+      "role": "Perkins Eastman",
+      "url": "https://ei.ennead.com/project/0E550866-E034-4A49-A363-F69BAE4C5EC8/the-david-h-koch-center-for-cancer-care-at-memorial-sloan-kettering-cancer-center"
+    },
+    {
+      "name": "The Mercersburg Academy, Burgin Center for the Arts",
+      "number": "",
+      "client": "0122",
+      "role": "Mercersburg Academy",
+      "url": "https://ei.ennead.com/project/F73C47A0-09CE-4865-BF64-6295194CB3E2/the-mercersburg-academy-burgin-center-for-the-arts"
+    },
+    {
+      "name": "University of Michigan, Biomedical Science Research Building",
+      "number": "",
+      "client": "0019",
+      "role": "University of Michigan",
+      "url": "https://ei.ennead.com/project/44BB748A-5D2C-47CC-BDA9-B86665A4C364/university-of-michigan-biomedical-science-research-building"
+    },
+    {
+      "name": "Vermont College of Fine Arts, New Faculty Housing and Exhibition Hall",
+      "number": "",
+      "client": "1215",
+      "role": "CRSA Architects",
+      "url": "https://ei.ennead.com/project/7482268C-0BDB-4826-8AA7-53B7217CE0DB/vermont-college-of-fine-arts-new-faculty-housing-and-exhibition-hall"
+    },
+    {
+      "name": "Westchester Community College, Gateway Center for English as a Second Language",
+      "number": "",
+      "client": "0424",
+      "role": "Westchester Community College",
+      "url": "https://ei.ennead.com/project/859C8284-F8E2-498B-901D-DE29E9388878/westchester-community-college-gateway-center-for-english-as-a-second-language"
+    },
+    {
+      "name": "York College Academic Village and Conference Center",
+      "number": "",
+      "client": "1011",
+      "role": "The City University Construction Fund",
+      "url": "https://ei.ennead.com/project/22D306CA-47EC-413E-8483-F5158CD1C5D7/york-college-academic-village-and-conference-center"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cbrainerd@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:30:54.689892",
+  "profile_id": "charles-brainerd"
+}

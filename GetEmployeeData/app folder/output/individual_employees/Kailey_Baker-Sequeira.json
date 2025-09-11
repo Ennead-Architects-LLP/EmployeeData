@@ -1,0 +1,123 @@
+{
+  "real_name": "Kailey Baker-Sequeira",
+  "email": "kailey.baker@ennead.com",
+  "bio": null,
+  "phone": "(646) 437-1763",
+  "mobile": "(646) 437-1763",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/3F3D98E5-17BD-4D69-B46D-A9B61049FC1D/kailey-baker-sequeira",
+  "image_url": "https://ei.ennead.com/api/image/ec41c097-2523-46e8-8914-130935f3b6b8/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Kailey Baker-Sequeira_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 7,
+  "seat_assignment": null,
+  "memberships": [
+    "NCARB"
+  ],
+  "education": [
+    {
+      "institution": "Ken State University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Savannah College of Art & Design",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "The Old Globe Concept Design",
+      "number": "",
+      "client": "2230",
+      "role": "The Old Globe Ampitheatre",
+      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design"
+    },
+    {
+      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+      "number": "",
+      "client": "2206",
+      "role": "Lord, Aeck & Sargent, Inc.",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning"
+    },
+    {
+      "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
+      "number": "",
+      "client": "2120",
+      "role": "DLR Group",
+      "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2"
+    },
+    {
+      "name": "The Public, Delacorte Theater, Central Park",
+      "number": "",
+      "client": "2031",
+      "role": "The Public Theater",
+      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park"
+    },
+    {
+      "name": "New York Blood Center Applied Life Sciences Hub",
+      "number": "",
+      "client": "1852",
+      "role": "New York Blood Center",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub"
+    },
+    {
+      "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
+      "number": "",
+      "client": "1904",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit"
+    },
+    {
+      "name": "Purdue University Polytechnic Institute, College of Engineering, Dudley and Lambertus Halls (Gateway)",
+      "number": "",
+      "client": "1922",
+      "role": "BSA LifeStructures",
+      "url": "https://ei.ennead.com/project/CC0FBA10-4F97-4086-83AC-C1A42862AA28/purdue-university-polytechnic-institute-college-of-engineering-dudley-and-lambertus-halls-gateway"
+    },
+    {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "number": "",
+      "client": "2001",
+      "role": "University of California, Santa Cruz",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+    },
+    {
+      "name": "Westminster Schools - Blake Center",
+      "number": "",
+      "client": "1946",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
+    },
+    {
+      "name": "Edelman Fossil Museum of Rowan University",
+      "number": "",
+      "client": "1824",
+      "role": "KSS Architects LLP",
+      "url": "https://ei.ennead.com/project/08F1108D-F92B-429F-89E7-6DF373F0CCA8/edelman-fossil-museum-of-rowan-university"
+    },
+    {
+      "name": "Purdue University, Chaney-Hale Hall of Science",
+      "number": "",
+      "client": "1766",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/96366A47-615C-4561-94A0-00542D865A88/purdue-university-chaney-hale-hall-of-science"
+    },
+    {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "number": "",
+      "client": "1836",
+      "role": "Princeton University",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kbaker@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:38:38.851454",
+  "profile_id": "kailey-baker-sequeira"
+}

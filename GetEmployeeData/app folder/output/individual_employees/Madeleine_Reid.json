@@ -1,0 +1,53 @@
+{
+  "real_name": "Madeleine Reid",
+  "email": "madeleine.reid@ennead.com",
+  "bio": null,
+  "phone": "646-437-1762",
+  "mobile": "646-437-1762",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/C50C2E11-24D1-453E-806A-B6922DF1FC42/madeleine-reid",
+  "image_url": "https://ei.ennead.com/api/image/5eb213ae-8620-4ae7-afe8-bcf4ddcb99b1/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Madeleine Reid_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "memberships": [
+    "LEED GA"
+  ],
+  "education": [
+    {
+      "institution": "Brown University",
+      "degree": "Undergraduate",
+      "specialty": "Bachelors Architecture"
+    },
+    {
+      "institution": "Yale School of Architecture",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Inova Central Region Emergency Department Expansion",
+      "number": "2223",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+    },
+    {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "number": "2128",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Madeleine.Reid@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:42:28.523062",
+  "profile_id": "madeleine-reid"
+}

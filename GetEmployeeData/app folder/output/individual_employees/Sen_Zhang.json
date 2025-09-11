@@ -1,0 +1,88 @@
+{
+  "real_name": "Sen Zhang",
+  "email": "sen.zhang@ennead.com",
+  "bio": null,
+  "phone": "(212) 807-7171",
+  "mobile": "(212) 807-7171",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/AFAC893E-5BBE-4022-A73A-81E8977F35CF/sen-zhang",
+  "image_url": "https://ei.ennead.com/api/image/043875ea-6ef6-4ad3-9e47-b5b6e809526d/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Sen Zhang_profile.jpg",
+  "position": "Associate",
+  "department": null,
+  "years_with_firm": 5,
+  "seat_assignment": null,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Advance Architecture"
+    },
+    {
+      "institution": "Rensselaer Polytechnic Institute",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "2151",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "2135",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "ByteDance Houhai Center Project",
+      "number": "2018",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "1940",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "1735",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    },
+    {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "number": "1643",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "1763",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=szhang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:49:00.661130",
+  "profile_id": "sen-zhang"
+}

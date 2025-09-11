@@ -1,0 +1,75 @@
+{
+  "real_name": "Liz Shaban",
+  "email": "Liz.Shaban@ennead.com",
+  "bio": null,
+  "phone": "(646) 437-1736",
+  "mobile": "(646) 437-1736",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5D780051-30CD-461E-8B26-AE79829AFB88/liz-shaban",
+  "image_url": "https://ei.ennead.com/api/image/7d479e0a-f89b-41b1-b022-bfaf5a5c6251/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "L:\\4b_Design Technology\\05_EnneadTab-DB\\Shared Data Dump\\EmployeeData\\employee_images\\Liz Shaban_profile.jpg",
+  "position": "Associate",
+  "department": null,
+  "years_with_firm": 12,
+  "seat_assignment": null,
+  "memberships": [
+    "LEED AP",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "University of Virginia",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Washington University, St. Louis",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
+      "number": "1847",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings"
+    },
+    {
+      "name": "Connecticut College, Athey Center for Performance and Research at Palmer Auditorium",
+      "number": "1837",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium"
+    },
+    {
+      "name": "NYU Langone Health, Science Building",
+      "number": "1101",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+    },
+    {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "number": "1836",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=liz.shaban@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-10T19:41:52.928121",
+  "profile_id": "liz-shaban"
+}
