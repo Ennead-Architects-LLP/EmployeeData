@@ -15,7 +15,7 @@ class AutoLogin:
     Handles automatic login to Microsoft authentication systems.
     """
     
-    def __init__(self, credentials_file: str = "credentials.json"):
+    def __init__(self, credentials_file: str = "credentials/credentials.json"):
         """
         Initialize the auto-login handler.
         

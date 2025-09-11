@@ -124,6 +124,33 @@ class SeatingChartScraper:
             json.dump(self.working_selectors, f, indent=2, ensure_ascii=False)
         
         self.logger.info(f"Selector report saved: {report_file}")
+
+        # Persist cumulative selector history for future pruning
+        try:
+            cumulative: Dict[str, Dict[str, Dict[str, int]]] = {}
+            if self.selector_history_file.exists():
+                with open(self.selector_history_file, 'r', encoding='utf-8') as f:
+                    cumulative = json.load(f) or {}
+
+            # Merge: increment counts and update last_seen
+            for selector_type, items in self.working_selectors.items():
+                cumulative.setdefault(selector_type, {})
+                for it in items:
+                    sel = it.get('selector')
+                    cnt = int(it.get('count', 0))
+                    entry = cumulative[selector_type].get(sel, {"total_count": 0, "last_seen": None})
+                    entry["total_count"] = int(entry.get("total_count", 0)) + cnt
+                    entry["last_seen"] = datetime.now().isoformat()
+                    cumulative[selector_type][sel] = entry
+
+            # Ensure assets dir exists and write back
+            self.assets_dir.mkdir(parents=True, exist_ok=True)
+            with open(self.selector_history_file, 'w', encoding='utf-8') as f:
+                json.dump(cumulative, f, indent=2, ensure_ascii=False)
+
+            self.logger.info(f"Selector history updated: {self.selector_history_file}")
+        except Exception as e:
+            self.logger.warning(f"Failed to update selector history: {e}")
         
     async def scrape_all_employees(self, page: Optional[Page] = None) -> List[SeatingChartData]:
         """

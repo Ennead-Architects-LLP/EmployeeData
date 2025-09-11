@@ -1,7 +1,8 @@
 import sys
 import asyncio
-from GetEmployeeData.__main__ import main as scraper_main
+from app import Orchestrator  # thin facade to internal modules
+from GetEmployeeData.modules.config import ScraperConfig
 
 if __name__ == "__main__":
-    # Pass through CLI args are already handled inside main's argparse
-    asyncio.run(scraper_main())
+    config = ScraperConfig.from_env()
+    asyncio.run(Orchestrator(config).run())

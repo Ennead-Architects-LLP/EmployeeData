@@ -9,7 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
             color: #ffffff;
-            line-height: 1.6;
+            line-height: 1.8;
             min-height: 100vh;
             position: relative;
             overflow-x: hidden;
@@ -39,7 +39,7 @@
         }
 
         .slide.active {
-            opacity: 0.15; /* Very subtle background effect */
+            opacity: 0.10; /* Very subtle background effect */
         }
 
         .slide:nth-child(1) {
@@ -69,12 +69,12 @@
         }
 
         .header {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.45);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             padding: 30px;
             margin-bottom: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
         .main-title {
@@ -85,6 +85,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.35);
         }
 
         .header-meta {
@@ -94,16 +95,16 @@
         }
 
         .meta-text {
-            color: #b0b0b0;
+            color: #d0d0d0;
             font-size: 0.9rem;
         }
 
         .search-section {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.40);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
         .search-container {
@@ -138,7 +139,7 @@
         }
 
         .filter-select option {
-            background: #2d2d2d;
+            background: #1f1f1f;
             color: #ffffff;
         }
 
@@ -181,10 +182,10 @@
         }
 
         .employees-section {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.40);
             border-radius: 15px;
             padding: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
         .section-header {
@@ -213,12 +214,13 @@
         }
 
         .employee-card {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.46);
             border-radius: 15px;
             padding: 25px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            box-shadow: 0 6px 24px rgba(0,0,0,0.35);
         }
 
         .employee-card:hover {
@@ -262,22 +264,23 @@
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 5px;
-            color: #ffffff;
+            color: #f7f7f7;
         }
 
         .employee-position {
-            color: #4CAF50;
+            color: #7ed957; /* brighter green */
             font-weight: 500;
             margin-bottom: 5px;
         }
 
         .employee-department {
-            color: #b0b0b0;
+            color: #c7c7c7;
             font-size: 0.9rem;
         }
 
         .card-content {
             margin-bottom: 20px;
+            font-size: 0.95rem;
         }
 
         .contact-item, .memberships, .education, .projects, .years, .computer {
@@ -290,8 +293,8 @@
             position: relative;
             display: flex;
             align-items: center;
-            background: white;
-            border: 2px solid #2196F3;
+            background: #ffffff;
+            border: 2px solid #2a88ff;
             border-radius: 25px;
             padding: 0;
             max-width: 400px;
@@ -312,11 +315,11 @@
             font-size: 16px;
             background: transparent;
             outline: none;
-            color: #333;
+            color: #222222;
         }
 
         .search-input::placeholder {
-            color: #999;
+            color: #666666;
         }
 
         .search-suggestions {
@@ -380,16 +383,16 @@
         .filter-label {
             font-weight: 600;
             margin-bottom: 8px;
-            color: #495057;
+            color: #e6e6e6;
             font-size: 14px;
         }
 
         .filter-select {
             padding: 12px 15px;
-            border: 2px solid #e9ecef;
+            border: 2px solid rgba(255,255,255,0.28);
             border-radius: 8px;
             font-size: 14px;
-            background: white;
+            background: rgba(255,255,255,0.12);
             transition: all 0.3s ease;
         }
 
@@ -410,6 +413,7 @@
             font-weight: 600;
             transition: all 0.3s ease;
             align-self: end;
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.35));
         }
 
         .clear-all-button:hover {
@@ -483,7 +487,7 @@
         }
 
         .contact-item a {
-            color: #4CAF50;
+            color: #7ed957;
             text-decoration: none;
         }
 
@@ -505,6 +509,7 @@
             border-radius: 8px;
             font-weight: 500;
             transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.35));
         }
 
         .profile-link:hover {
@@ -590,7 +595,7 @@
             font-size: 20px;
             font-weight: bold;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.45);
             transition: all 0.3s ease;
             z-index: 1000;
             opacity: 0;

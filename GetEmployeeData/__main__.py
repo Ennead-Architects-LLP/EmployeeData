@@ -223,6 +223,9 @@ async def main():
             print(f"   DOM captures: {debug_dir / 'dom_captures'}")
             print(f"   Screenshots: {debug_dir / 'screenshots'}")
             print(f"   JSON output: {config.get_output_path()}")
+            # Helpful pointers
+            print(f"   Log file: {config.LOG_FILE}")
+            print(f"   Selector report: {debug_dir / 'seating_chart' / 'selector_report.json'}")
             print(f"   (Limited to {config.DEBUG_MAX_EMPLOYEES} employees)")
         
         print("="*50)
