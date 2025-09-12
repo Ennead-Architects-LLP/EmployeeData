@@ -178,19 +178,23 @@ def backup_computer_data(computer_data):
         filename = f"{computer_name}_{timestamp}.json"
         file_path = os.path.join(COMPUTER_BACKUP_DIR, filename)
         
-        # Create backup data with metadata (remove redundant fields from computer_info)
-        clean_computer_data = computer_data.copy()
-        # Remove redundant fields that are already at the top level
-        clean_computer_data.pop('Computername', None)
-        clean_computer_data.pop('human_name', None)
-        clean_computer_data.pop('Username', None)
-        
+        # Create flat backup data structure
         backup_data = {
             "timestamp": datetime.now().isoformat(),
             "computer_name": computer_data.get('Computername', 'Unknown'),
             "human_name": computer_data.get('human_name', 'Unknown'),
             "username": computer_data.get('Username', 'Unknown'),
-            "computer_info": clean_computer_data
+            # Add all computer specs directly to the root level
+            "cpu": computer_data.get('CPU', 'Unknown'),
+            "os": computer_data.get('OS', 'Unknown'),
+            "manufacturer": computer_data.get('Manufacturer', 'Unknown'),
+            "model": computer_data.get('Model', 'Unknown'),
+            "gpu_name": computer_data.get('GPU Name', 'Unknown'),
+            "gpu_driver": computer_data.get('GPU Driver', 'Unknown'),
+            "gpu_memory": computer_data.get('GPU Memory'),
+            "memory_bytes": computer_data.get('Total Physical Memory'),
+            "serial_number": computer_data.get('Serial Number', 'Unknown'),
+            "collection_date": computer_data.get('Date', 'Unknown')
         }
         
         # Save backup file
