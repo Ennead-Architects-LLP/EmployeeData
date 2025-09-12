@@ -1,0 +1,66 @@
+{
+  "real_name": "Adriana Burton",
+  "email": "adriana.burton@ennead.com",
+  "bio": null,
+  "phone": "212-792-5964",
+  "mobile": "212-792-5964",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/E8FAC548-D560-4BD6-9240-6CEB9899F377/adriana-burton",
+  "image_url": "https://ei.ennead.com/api/image/8d165831-ca65-4db1-bc85-81493022afa4/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Adriana Burton_profile.jpg",
+  "position": "Project Coordinator",
+  "department": null,
+  "years_with_firm": 3,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Massachusetts",
+      "degree": "Undergraduate",
+      "specialty": "Arts in Classics/Minor in Arabic Studies"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "number": "",
+      "client": "2412",
+      "role": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+    },
+    {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "number": "",
+      "client": "2109",
+      "role": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
+    },
+    {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "number": "",
+      "client": "1836",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Adriana.Burton@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:39:03.687359",
+  "profile_id": "adriana-burton",
+  "computer_info": {
+    "computername": "TEST-COMPUTER",
+    "os": "Windows 11 Test",
+    "manufacturer": "Test Manufacturer",
+    "model": "Test Model",
+    "cpu": "Test CPU",
+    "gpu_name": "Test GPU",
+    "gpu_driver": "Test Driver",
+    "memory_bytes": 8589934592,
+    "serial_number": "TEST123456",
+    "last_updated": "2025-09-12T17:05:21.494107"
+  }
+}

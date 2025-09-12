@@ -1,0 +1,52 @@
+name: Daily Employee Data Scraper
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Test mode (dry run)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  daily-scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        cd 2-scraper
+        pip install -r requirements.txt
+        pip install playwright
+        playwright install chromium
+    
+    - name: Run daily scraper
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TEST_MODE: ${{ github.event.inputs.test_mode || 'false' }}
+      run: |
+        cd 2-scraper
+        python daily_scraper.py
+    
+    - name: Commit and push changes
+      if: github.event.inputs.test_mode != 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add 1-website/assets/
+        git diff --staged --quiet || git commit -m "Daily update: Employee data and images"
+        git push

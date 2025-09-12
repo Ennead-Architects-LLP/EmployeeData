@@ -40,11 +40,100 @@ def load_computer_data():
         print(f"Error loading computer data: {e}")
         return None
 
+def find_employee_by_name(employees, name):
+    """Find employee by name (fuzzy matching)"""
+    if not name:
+        return None
+    
+    name_lower = name.lower().strip()
+    
+    # Exact match first
+    for emp in employees:
+        if emp.get('real_name', '').lower().strip() == name_lower:
+            return emp
+    
+    # Partial match
+    for emp in employees:
+        emp_name = emp.get('real_name', '').lower().strip()
+        if name_lower in emp_name or emp_name in name_lower:
+            return emp
+    
+    return None
+
+def find_employee_by_username(employees, username):
+    """Find employee by username (from email)"""
+    if not username:
+        return None
+    
+    username_lower = username.lower().strip()
+    
+    for emp in employees:
+        email = emp.get('email', '')
+        if email:
+            emp_username = email.split('@')[0].lower().strip()
+            if emp_username == username_lower:
+                return emp
+    
+    return None
+
+def load_employee_data():
+    """Load existing employee data"""
+    try:
+        with open("1-website/assets/employees_data.json", 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            return data.get('employees', [])
+    except FileNotFoundError:
+        print("Employee data file not found")
+        return []
+    except Exception as e:
+        print(f"Error loading employee data: {e}")
+        return []
+
+def update_individual_employee_file(employee_data, computer_data):
+    """Update individual employee JSON file with computer data"""
+    try:
+        # Find the employee's individual file
+        employee_name = employee_data.get('real_name', '').replace(' ', '_')
+        individual_file = Path("1-website/assets/individual_employees") / f"{employee_name}.json"
+        
+        if individual_file.exists():
+            # Update the individual file
+            with open(individual_file, 'r', encoding='utf-8') as f:
+                individual_data = json.load(f)
+            
+            # Add computer data
+            individual_data['computer_info'] = {
+                'computername': computer_data.get('Computername'),
+                'os': computer_data.get('OS'),
+                'manufacturer': computer_data.get('Manufacturer'),
+                'model': computer_data.get('Model'),
+                'cpu': computer_data.get('CPU'),
+                'gpu_name': computer_data.get('GPU Name'),
+                'gpu_driver': computer_data.get('GPU Driver'),
+                'memory_bytes': computer_data.get('Total Physical Memory'),
+                'serial_number': computer_data.get('Serial Number'),
+                'last_updated': datetime.now().isoformat()
+            }
+            
+            # Save updated individual file
+            with open(individual_file, 'w', encoding='utf-8') as f:
+                json.dump(individual_data, f, indent=2, ensure_ascii=False, default=str)
+            
+            print(f"Updated individual employee file: {individual_file}")
+            return True
+        else:
+            print(f"Individual employee file not found: {individual_file}")
+            return False
+            
+    except Exception as e:
+        print(f"Error updating individual employee file: {e}")
+        return False
+
 def save_computer_data(data):
-    """Save computer data to assets directory"""
+    """Save computer data to assets directory and merge with employee records"""
     try:
         # Create computer_data directory
-        data_dir = Path("assets/computer_data")
+        data_dir = Path("1-website/assets/computer_data")
         data_dir.mkdir(exist_ok=True)
         
         # Generate filename based on computer name and timestamp
@@ -82,6 +171,45 @@ def save_computer_data(data):
             json.dump(all_computers, f, indent=2, ensure_ascii=False, default=str)
         
         print(f"Updated master computer data file: {master_file}")
+        
+        # Merge computer data with employee records
+        employees = load_employee_data()
+        if employees:
+            # Try to find employee by name first
+            user_name = data.get('Name', '')
+            username = data.get('Username', '')
+            employee = find_employee_by_name(employees, user_name)
+            
+            # If not found by name, try by username
+            if not employee and username:
+                employee = find_employee_by_username(employees, username)
+            
+            if employee:
+                # Update individual employee file
+                update_individual_employee_file(employee, data)
+                
+                # Also update the main employees data file
+                employee['computer_info'] = {
+                    'computername': data.get('Computername'),
+                    'os': data.get('OS'),
+                    'manufacturer': data.get('Manufacturer'),
+                    'model': data.get('Model'),
+                    'cpu': data.get('CPU'),
+                    'gpu_name': data.get('GPU Name'),
+                    'gpu_driver': data.get('GPU Driver'),
+                    'memory_bytes': data.get('Total Physical Memory'),
+                    'serial_number': data.get('Serial Number'),
+                    'last_updated': datetime.now().isoformat()
+                }
+                
+                # Save updated employees data
+                with open("1-website/assets/employees_data.json", 'w', encoding='utf-8') as f:
+                    json.dump({"employees": employees}, f, indent=2, ensure_ascii=False, default=str)
+                
+                print(f"Updated employee record for {user_name} ({username})")
+            else:
+                print(f"Could not find employee record for {user_name} ({username})")
+        
         return True
         
     except Exception as e:
@@ -91,7 +219,7 @@ def save_computer_data(data):
 def create_summary_html():
     """Create a summary HTML page for computer data"""
     try:
-        master_file = Path("assets/computer_data/all_computers.json")
+        master_file = Path("1-website/assets/computer_data/all_computers.json")
         if not master_file.exists():
             return
         
@@ -171,7 +299,7 @@ def create_summary_html():
 """
         
         # Save HTML file
-        html_file = Path("assets/computer_data/index.html")
+        html_file = Path("1-website/assets/computer_data/index.html")
         with open(html_file, 'w', encoding='utf-8') as f:
             f.write(html_content)
         

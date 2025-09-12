@@ -1,0 +1,18 @@
+/* Footer Styles */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #b0b0b0;
+    font-size: 0.9rem;
+}
+
+.footer-content p {
+    margin-bottom: 5px;
+}
+
+.data-sources {
+    font-size: 0.8rem;
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
+}

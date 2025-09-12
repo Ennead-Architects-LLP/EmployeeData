@@ -1,0 +1,46 @@
+/* Background Slideshow Styles */
+.slideshow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.slide.active {
+    opacity: 0.10; /* Very subtle background effect */
+}
+
+.slide:nth-child(1) {
+    background-image: url('https://static.designboom.com/wp-content/uploads/2022/07/new-milwaukee-public-museum-by-ennead-architects-and-kahler-slater-designboom-02.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('https://www.archpaper.com/wp-content/uploads/2021/07/01_Shanghai-Astronomy-Museum_Aerial_Photo-by-ArchExists-1-scaled.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('https://archinect.gumlet.io/uploads/77/7716e6676923bf8785e6b1c7dbf79493.jpg?auto=compress%2Cformat');
+}
+
+.slide:nth-child(4) {
+    background-image: url('https://visualatelier8.com/wp-content/uploads/2019/03/Yangtze-River-Estuary-Chinese-Sturgeon-Nature-Preserve-Ennead-Visual-Atelier-8-Architecture-11.jpg');
+}
+
+.slide:nth-child(5) {
+    background-image: url('https://images.adsttc.com/media/images/57c9/46c4/e58e/cebf/2400/0027/medium_jpg/ACLS_NW_Corner.jpg?1472808637');
+}

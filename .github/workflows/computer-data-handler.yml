@@ -28,14 +28,15 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install requests pyyaml
+        pip install requests pyyaml flask
     
     - name: Handle computer data
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TEST_MODE: ${{ github.event.inputs.test_mode || 'false' }}
       run: |
-        python .github/scripts/handle_computer_data.py
+        # Use the updated server component to handle computer data
+        python 4-server/server.py
     
     - name: Regenerate website with new computer data
       if: github.event.inputs.test_mode != 'true'
