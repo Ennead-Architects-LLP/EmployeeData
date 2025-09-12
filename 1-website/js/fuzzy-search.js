@@ -8,8 +8,8 @@ class FuzzySearch {
     initialize(employees) {
         // Extract all employee names for fuzzy matching
         this.employeeNames = employees.map(emp => ({
-            name: emp.real_name,
-            normalized: this.normalize(emp.real_name),
+            name: emp.human_name,
+            normalized: this.normalize(emp.human_name),
             employee: emp
         }));
     }

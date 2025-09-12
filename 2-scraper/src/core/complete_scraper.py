@@ -1090,10 +1090,10 @@ class CompleteScraper:
             page: Playwright page object
             employee: EmployeeData object to store project information
         """
-        self.logger.info(f"Extracting projects from table for {employee.real_name}")
+        self.logger.info(f"Extracting projects from table for {employee.human_name}")
         
         # First, let's debug the table structure
-        await self._debug_table_structure(page, employee.real_name)
+        await self._debug_table_structure(page, employee.human_name)
         
         # Try multiple approaches to find project data
         project_extraction_methods = [
@@ -1113,7 +1113,7 @@ class CompleteScraper:
                 self.logger.warning(f"Method {method.__name__} failed: {e}")
                 continue
         
-        self.logger.warning(f"No projects found for {employee.real_name} using any method")
+        self.logger.warning(f"No projects found for {employee.human_name} using any method")
     
     async def _debug_table_structure(self, page, employee_name):
         """
@@ -1415,7 +1415,7 @@ class CompleteScraper:
             page: Playwright page object
             employee: EmployeeData object to store project information
         """
-        self.logger.info(f"Extracting projects from side panel for {employee.real_name}")
+        self.logger.info(f"Extracting projects from side panel for {employee.human_name}")
         
         # Try multiple selectors for project links in the side panel
         project_selectors = [
@@ -1604,7 +1604,7 @@ class CompleteScraper:
             
             # Create employee object
             employee = EmployeeData()
-            employee.real_name = employee_name
+            employee.human_name = employee_name
             employee.profile_url = profile_url
             employee.profile_id = profile_url.split('/')[-1] if '/' in profile_url else f"employee_{employee_name.replace(' ', '_')}"
             employee.office_location = office_location
@@ -2107,7 +2107,7 @@ class CompleteScraper:
                 if seating_data:
                     self.logger.info(f"Found {len(seating_data)} employees in seating chart")
                     print(f"DEBUG: Sample seating data: {[f'{emp.name}: {emp.seat}' for emp in seating_data[:3]]}")
-                    print(f"DEBUG: Main employee names: {[emp.real_name for emp in all_employees]}")
+                    print(f"DEBUG: Main employee names: {[emp.human_name for emp in all_employees]}")
                     print(f"DEBUG: Sample seating names: {[emp.name for emp in seating_data[:5]]}")
                     # Merge seating data with employee data
                     all_employees = self.data_merger.merge_employee_data(all_employees, seating_data)
@@ -2292,7 +2292,7 @@ class CompleteScraper:
             
             # Also save individual files for this batch
             for employee in batch:
-                individual_path = self.config.get_output_path(f"individual_employees/{employee.real_name.replace(' ', '_')}.json")
+                individual_path = self.config.get_output_path(f"individual_employees/{employee.human_name.replace(' ', '_')}.json")
                 with open(individual_path, 'w', encoding='utf-8') as f:
                     json.dump(employee.to_dict(), f, indent=2, ensure_ascii=False)
                     
@@ -2327,7 +2327,7 @@ class CompleteScraper:
         
         # Check data quality for each employee
         for employee in actual_employees:
-            if employee and employee.real_name:
+            if employee and employee.human_name:
                 verification_results['successful_scrapes'] += 1
                 
                 # Check for missing critical data
@@ -2343,7 +2343,7 @@ class CompleteScraper:
                 
                 if issues:
                     verification_results['data_quality_issues'].append({
-                        'employee': employee.real_name,
+                        'employee': employee.human_name,
                         'issues': issues
                     })
             else:
@@ -2436,8 +2436,8 @@ class CompleteScraper:
             individual_dir.mkdir(exist_ok=True)
             
             for employee in employees:
-                if employee.real_name:
-                    safe_name = employee.real_name.replace(' ', '_').replace('/', '_').replace('\\', '_')
+                if employee.human_name:
+                    safe_name = employee.human_name.replace(' ', '_').replace('/', '_').replace('\\', '_')
                     individual_file = individual_dir / f"{safe_name}.json"
                     with open(individual_file, 'w', encoding='utf-8') as f:
                         json.dump(employee.to_dict(), f, indent=2, ensure_ascii=False)

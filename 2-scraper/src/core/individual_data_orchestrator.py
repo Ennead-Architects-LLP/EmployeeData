@@ -53,7 +53,7 @@ class IndividualDataOrchestrator:
     def save_individual_employee(self, employee_data: Dict[str, Any]) -> bool:
         """Save individual employee data to JSON file"""
         try:
-            employee_name = employee_data.get('real_name', 'unknown')
+            employee_name = employee_data.get('human_name', 'unknown')
             filename = self.get_employee_filename(employee_name)
             file_path = self.individual_employees_dir / filename
             
@@ -97,7 +97,7 @@ class IndividualDataOrchestrator:
                 timeout=self.config.TIMEOUT
             )
             
-            name = employee_data.get('real_name', 'unknown').replace(' ', '_')
+            name = employee_data.get('human_name', 'unknown').replace(' ', '_')
             local_path = f"{name}_profile.jpg"
             
             success = await image_downloader.download_image(
@@ -107,17 +107,17 @@ class IndividualDataOrchestrator:
             
             if success:
                 employee_data['image_local_path'] = f"assets/images/{local_path}"
-                self.logger.info(f"Downloaded image for {employee_data.get('real_name', 'Unknown')}")
+                self.logger.info(f"Downloaded image for {employee_data.get('human_name', 'Unknown')}")
             
         except Exception as e:
-            self.logger.warning(f"Error downloading image for {employee_data.get('real_name', 'Unknown')}: {e}")
+            self.logger.warning(f"Error downloading image for {employee_data.get('human_name', 'Unknown')}: {e}")
         
         return employee_data
     
     async def process_employee(self, employee_data: Dict[str, Any]) -> bool:
         """Process individual employee: load existing, merge, download image, save"""
         try:
-            employee_name = employee_data.get('real_name', 'unknown')
+            employee_name = employee_data.get('human_name', 'unknown')
             self.logger.info(f"Processing employee: {employee_name}")
             
             # Load existing data
@@ -138,7 +138,7 @@ class IndividualDataOrchestrator:
                 return False
                 
         except Exception as e:
-            self.logger.error(f"❌ Error processing employee {employee_data.get('real_name', 'Unknown')}: {e}")
+            self.logger.error(f"❌ Error processing employee {employee_data.get('human_name', 'Unknown')}: {e}")
             return False
     
     async def scrape_employees(self) -> List[Dict[str, Any]]:

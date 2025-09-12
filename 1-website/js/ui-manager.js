@@ -32,9 +32,9 @@ function renderEmployees(employees = filteredEmployees) {
 
 function createEmployeeCard(employee) {
     // Use local image path if available, otherwise fall back to image_url or default
-    const imageUrl = employee.image_local_path || employee.image_url || `assets/images/${employee.real_name?.replace(/\s+/g, '_')}_profile.jpg`;
+    const imageUrl = employee.image_local_path || employee.image_url || `assets/images/${employee.human_name?.replace(/\s+/g, '_')}_profile.jpg`;
     const projects = employee.projects || [];
-    const projectId = `projects_${employee.real_name?.replace(/\s+/g, '_')}`;
+    const projectId = `projects_${employee.human_name?.replace(/\s+/g, '_')}`;
     
     // Handle phone formatting - the phone is already formatted in the JSON
     const phone = employee.phone || employee.mobile || '';
@@ -55,10 +55,10 @@ function createEmployeeCard(employee) {
     return `
         <div class="employee-card">
             <div class="employee-image">
-                <img src="${imageUrl}" alt="${employee.real_name}" onerror="this.src='assets/images/default_profile.jpg'">
+                <img src="${imageUrl}" alt="${employee.human_name}" onerror="this.src='assets/images/default_profile.jpg'">
             </div>
             <div class="employee-info">
-                <h3 class="employee-name">${employee.real_name || 'Unknown'}</h3>
+                <h3 class="employee-name">${employee.human_name || 'Unknown'}</h3>
                 <p class="employee-position">${employee.position || employee.title || 'Position not available'}</p>
                 <p class="employee-location">${employee.office_location || 'Location not available'}</p>
                 ${department ? `<p class="employee-department">Department: ${department}</p>` : ''}

@@ -14,7 +14,7 @@ class EmployeeData:
     All fields are optional to handle missing data gracefully.
     """
     # Basic Information
-    real_name: Optional[str] = None
+    human_name: Optional[str] = None
     email: Optional[str] = None
     bio: Optional[str] = None
     
@@ -91,12 +91,12 @@ class EmployeeData:
     
     def is_valid(self) -> bool:
         """Check if the employee data has at least basic information."""
-        return bool(self.real_name or self.email)
+        return bool(self.human_name or self.email)
     
     def get_display_name(self) -> str:
         """Get a display name for the employee."""
-        if self.real_name:
-            return self.real_name
+        if self.human_name:
+            return self.human_name
         elif self.email:
             return self.email.split('@')[0]
         else:
@@ -122,4 +122,4 @@ class EmployeeData:
     
     def __repr__(self) -> str:
         """Detailed representation of the employee data."""
-        return f"EmployeeData(real_name='{self.real_name}', email='{self.email}', profile_url='{self.profile_url}')"
+        return f"EmployeeData(human_name='{self.human_name}', email='{self.email}', profile_url='{self.profile_url}')"

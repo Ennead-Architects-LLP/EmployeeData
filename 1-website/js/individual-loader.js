@@ -19,8 +19,10 @@ async function initializeApp() {
         // Load computer data
         await loadComputerData();
         
-        // Initialize UI
-        initializeUI();
+        // Initialize UI (handled by ui-manager.js)
+        if (typeof initializeUI === 'function') {
+            initializeUI();
+        }
         
         // Hide loading indicator
         document.getElementById('loadingIndicator').style.display = 'none';
@@ -35,8 +37,8 @@ async function loadIndividualEmployeeData() {
     try {
         console.log('Loading individual employee data...');
         
-        // Get list of individual employee files
-        const response = await fetch('individual_employees/');
+        // Get list of individual employee files from assets directory
+        const response = await fetch('assets/individual_employees/');
         if (!response.ok) {
             throw new Error('Failed to load employee directory');
         }
@@ -52,7 +54,7 @@ async function loadIndividualEmployeeData() {
         allEmployees = [];
         for (const filename of files) {
             try {
-                const employeeResponse = await fetch(`individual_employees/${filename}`);
+                const employeeResponse = await fetch(`assets/individual_employees/${filename}`);
                 if (employeeResponse.ok) {
                     const employeeData = await employeeResponse.json();
                     allEmployees.push(employeeData);
@@ -78,35 +80,41 @@ async function loadIndividualEmployeeData() {
     } catch (error) {
         console.error('Error loading individual employee data:', error);
         
-        // Fallback: try to load a few individual files if index fails
+        // Fallback: try to load individual files directly from directory listing
         try {
             console.log('Trying fallback: loading individual files directly...');
-            // Try to load a few known employee files as fallback
-            const fallbackFiles = ['index.json', 'Sen_Zhang.json', 'Adriana_Burton.json'];
-            const employees = [];
-            
-            for (const filename of fallbackFiles) {
-                try {
-                    const response = await fetch(`individual_employees/${filename}`);
-                    if (response.ok) {
-                        const data = await response.json();
-                        if (Array.isArray(data)) {
-                            employees.push(...data);
-                        } else {
-                            employees.push(data);
+            // Try to get directory listing again for fallback
+            const fallbackResponse = await fetch('assets/individual_employees/');
+            if (fallbackResponse.ok) {
+                const fallbackText = await fallbackResponse.text();
+                const fallbackFiles = extractJsonFiles(fallbackText);
+                const employees = [];
+                
+                for (const filename of fallbackFiles) {
+                    try {
+                        const response = await fetch(`assets/individual_employees/${filename}`);
+                        if (response.ok) {
+                            const data = await response.json();
+                            if (Array.isArray(data)) {
+                                employees.push(...data);
+                            } else {
+                                employees.push(data);
+                            }
                         }
+                    } catch (error) {
+                        console.warn(`Could not load fallback file ${filename}:`, error);
                     }
-                } catch (error) {
-                    console.warn(`Could not load fallback file ${filename}:`, error);
                 }
-            }
-            
-            if (employees.length > 0) {
-                allEmployees = employees;
-                filteredEmployees = [...allEmployees];
-                console.log('Fallback: Loaded from individual files');
+                
+                if (employees.length > 0) {
+                    allEmployees = employees;
+                    filteredEmployees = [...allEmployees];
+                    console.log('Fallback: Loaded from individual files');
+                } else {
+                    throw new Error('No fallback data available');
+                }
             } else {
-                throw new Error('No fallback data available');
+                throw new Error('Could not access directory for fallback');
             }
         } catch (fallbackError) {
             throw new Error('Failed to load employee data from any source');
@@ -129,7 +137,7 @@ function extractJsonFiles(htmlText) {
 
 async function loadComputerData() {
     try {
-        const response = await fetch('computer_data/all_computers.json');
+        const response = await fetch('assets/computer_data/all_computers.json');
         if (!response.ok) {
             throw new Error('Computer data not available');
         }
@@ -142,157 +150,9 @@ async function loadComputerData() {
     }
 }
 
-function initializeUI() {
-    // Populate filters
-    populateFilters();
-    
-    // Render employees
-    renderEmployees();
-    
-    // Setup search and filters
-    setupEventListeners();
-}
+// UI functions are handled by ui-manager.js and filters.js
 
-function populateFilters() {
-    // Get unique locations and departments
-    const locations = [...new Set(allEmployees.map(emp => emp.office_location).filter(Boolean))].sort();
-    const departments = [...new Set(allEmployees.map(emp => emp.department).filter(Boolean))].sort();
-    
-    // Populate location filter
-    const locationFilter = document.getElementById('locationFilter');
-    locations.forEach(location => {
-        const option = document.createElement('option');
-        option.value = location;
-        option.textContent = location;
-        locationFilter.appendChild(option);
-    });
-    
-    // Populate department filter
-    const departmentFilter = document.getElementById('departmentFilter');
-    departments.forEach(department => {
-        const option = document.createElement('option');
-        option.value = department;
-        option.textContent = department;
-        departmentFilter.appendChild(option);
-    });
-}
-
-function setupEventListeners() {
-    // Search input
-    document.getElementById('searchInput').addEventListener('input', handleSearch);
-    
-    // Filters
-    document.getElementById('locationFilter').addEventListener('change', applyFilters);
-    document.getElementById('departmentFilter').addEventListener('change', applyFilters);
-    document.getElementById('sortBy').addEventListener('change', applyFilters);
-}
-
-function handleSearch() {
-    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-    
-    if (searchTerm === '') {
-        filteredEmployees = [...allEmployees];
-    } else {
-        filteredEmployees = allEmployees.filter(employee => {
-            const searchableText = [
-                employee.real_name,
-                employee.position,
-                employee.office_location,
-                employee.phone,
-                employee.email,
-                employee.department,
-                ...(employee.projects || []).map(p => p.name || p.title || '')
-            ].join(' ').toLowerCase();
-            
-            return searchableText.includes(searchTerm);
-        });
-    }
-    
-    applyFilters();
-}
-
-function applyFilters() {
-    let filtered = [...filteredEmployees];
-    
-    // Apply location filter
-    const locationFilter = document.getElementById('locationFilter').value;
-    if (locationFilter) {
-        filtered = filtered.filter(emp => emp.office_location === locationFilter);
-    }
-    
-    // Apply department filter
-    const departmentFilter = document.getElementById('departmentFilter').value;
-    if (departmentFilter) {
-        filtered = filtered.filter(emp => emp.department === departmentFilter);
-    }
-    
-    // Apply sorting
-    const sortBy = document.getElementById('sortBy').value;
-    filtered.sort((a, b) => {
-        switch (sortBy) {
-            case 'name':
-                return (a.real_name || '').localeCompare(b.real_name || '');
-            case 'location':
-                return (a.office_location || '').localeCompare(b.office_location || '');
-            case 'department':
-                return (a.department || '').localeCompare(b.department || '');
-            default:
-                return 0;
-        }
-    });
-    
-    renderEmployees(filtered);
-}
-
-function renderEmployees(employees = filteredEmployees) {
-    const grid = document.getElementById('employeeGrid');
-    
-    if (employees.length === 0) {
-        grid.innerHTML = '<div class="no-results">No employees found matching your criteria.</div>';
-        return;
-    }
-    
-    grid.innerHTML = employees.map(employee => createEmployeeCard(employee)).join('');
-}
-
-function createEmployeeCard(employee) {
-    const imageUrl = employee.image_local_path || employee.image_url || `images/${employee.real_name?.replace(/\s+/g, '_')}_profile.jpg`;
-    const projects = employee.projects || [];
-    const projectId = `projects_${employee.real_name?.replace(/\s+/g, '_')}`;
-    
-    return `
-        <div class="employee-card">
-            <div class="employee-image">
-                <img src="${imageUrl}" alt="${employee.real_name}" onerror="this.src='images/default_profile.jpg'">
-            </div>
-            <div class="employee-info">
-                <h3 class="employee-name">${employee.real_name || 'Unknown'}</h3>
-                <p class="employee-position">${employee.position || 'Position not available'}</p>
-                <p class="employee-location">${employee.office_location || 'Location not available'}</p>
-                <div class="contact-info">
-                    ${employee.email ? `<p class="contact-item">📧 <a href="mailto:${employee.email}">${employee.email}</a></p>` : ''}
-                    ${employee.phone ? `<p class="contact-item">📞 <a href="tel:${employee.phone}">${employee.phone}</a></p>` : ''}
-                </div>
-                ${projects.length > 0 ? `
-                    <div class="projects-section">
-                        <h4>Projects (${projects.length})</h4>
-                        <div class="projects-list" id="${projectId}" style="display: none;">
-                            ${projects.map(project => `
-                                <div class="project-item">
-                                    <strong>${project.name || project.title || 'Untitled Project'}</strong>
-                                    ${project.description ? `<p>${project.description}</p>` : ''}
-                                </div>
-                            `).join('')}
-                        </div>
-                        <button class="toggle-projects" onclick="toggleProjects('${projectId}')">
-                            <span id="icon_${projectId}">▶</span> Show Projects
-                        </button>
-                    </div>
-                ` : ''}
-            </div>
-        </div>
-    `;
-}
+// Search, filter, and rendering functions are handled by other modules
 
 function displayComputerData() {
     const container = document.getElementById('computerDataContainer');

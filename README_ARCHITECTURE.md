@@ -114,7 +114,7 @@ python server.py
 ```json
 [
   {
-    "real_name": "John Doe",
+    "human_name": "John Doe",
     "email": "john@ennead.com",
     "position": "Architect",
     "office_location": "New York",

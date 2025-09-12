@@ -191,7 +191,7 @@ class SimpleEmployeeScraper:
                     const data = {};
                     
                     // Basic information
-                    data.real_name = document.querySelector('h1, .employee-name, .profile-name')?.textContent?.trim() || '';
+                    data.human_name = document.querySelector('h1, .employee-name, .profile-name')?.textContent?.trim() || '';
                     data.email = document.querySelector('a[href^="mailto:"]')?.href?.replace('mailto:', '') || '';
                     data.phone = document.querySelector('a[href^="tel:"]')?.href?.replace('tel:', '') || '';
                     
@@ -218,7 +218,7 @@ class SimpleEmployeeScraper:
             
             # Create EmployeeData object
             employee = EmployeeData(
-                real_name=employee_data.get('real_name') or name,
+                human_name=employee_data.get('human_name') or name,
                 email=employee_data.get('email'),
                 phone=employee_data.get('phone'),
                 position=employee_data.get('position'),

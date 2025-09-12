@@ -43,7 +43,7 @@ function handleSearch() {
         // Combine and deduplicate results
         const combinedResults = [...fuzzyResults, ...textSearchResults];
         filteredEmployees = combinedResults.filter((employee, index, self) => 
-            index === self.findIndex(emp => emp.real_name === employee.real_name)
+            index === self.findIndex(emp => emp.human_name === employee.human_name)
         );
         
         suggestionsContainer.classList.remove('show');

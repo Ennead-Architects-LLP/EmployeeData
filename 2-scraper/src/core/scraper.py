@@ -314,7 +314,7 @@ class EmployeeScraper:
                 if element:
                     name = await element.text_content()
                     if name and name.strip():
-                        employee.real_name = name.strip()
+                        employee.human_name = name.strip()
                         break
             
             # Extract email
@@ -591,8 +591,8 @@ class EmployeeScraper:
             
             # Save individual employee files
             for employee in self.employees:
-                if employee.real_name:
-                    safe_name = self.image_downloader._sanitize_filename(employee.real_name) if self.image_downloader else employee.real_name
+                if employee.human_name:
+                    safe_name = self.image_downloader._sanitize_filename(employee.human_name) if self.image_downloader else employee.human_name
                     individual_file = output_path / f"{safe_name}.json"
                     with open(individual_file, 'w', encoding='utf-8') as f:
                         json.dump(employee.to_dict(), f, indent=2, ensure_ascii=False)

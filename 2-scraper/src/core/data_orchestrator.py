@@ -108,7 +108,7 @@ class DataOrchestrator:
         for employee in employees:
             if employee.get('profile_url'):
                 try:
-                    name = employee.get('real_name', 'unknown').replace(' ', '_')
+                    name = employee.get('human_name', 'unknown').replace(' ', '_')
                     local_path = f"{name}_profile.jpg"
                     
                     success = await image_downloader.download_image(
@@ -121,7 +121,7 @@ class DataOrchestrator:
                         download_count += 1
                     
                 except Exception as e:
-                    self.logger.warning(f"Error downloading image for {employee.get('real_name', 'Unknown')}: {e}")
+                    self.logger.warning(f"Error downloading image for {employee.get('human_name', 'Unknown')}: {e}")
         
         self.logger.info(f"Downloaded {download_count} profile images")
         return employees

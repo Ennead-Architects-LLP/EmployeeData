@@ -38,9 +38,9 @@ async def test_scraper():
             for employee in new_employees[:3]:  # Test with first 3 employees
                 if await orchestrator.process_employee(employee):
                     processed_count += 1
-                    print(f"✅ Processed {employee.get('real_name', 'Unknown')}")
+                    print(f"✅ Processed {employee.get('human_name', 'Unknown')}")
                 else:
-                    print(f"❌ Failed to process {employee.get('real_name', 'Unknown')}")
+                    print(f"❌ Failed to process {employee.get('human_name', 'Unknown')}")
             
             print(f"✅ Successfully processed {processed_count} employees")
         else:
