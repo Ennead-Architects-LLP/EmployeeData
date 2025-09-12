@@ -242,8 +242,7 @@ class ComputerInfoCollector:
                         "gpu_driver": self.data.get('GPU Driver', 'Unknown'),
                         "gpu_memory": self.data.get('GPU Memory'),
                         "memory_bytes": self.data.get('Total Physical Memory'),
-                        "serial_number": self.data.get('Serial Number', 'Unknown'),
-                        "collection_date": self.data.get('Date', 'Unknown')
+                        "serial_number": self.data.get('Serial Number', 'Unknown')
                     }
                 }
             }

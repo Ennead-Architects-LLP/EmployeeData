@@ -118,17 +118,17 @@ def update_employee_computer_info(employee_file_path, computer_data):
         with open(employee_file_path, 'r', encoding='utf-8') as f:
             employee_data = json.load(f)
         
-        # Create new computer info entry using nested field names
+        # Create new computer info entry (handle both old and new field names)
         new_computer_info = {
-            'computername': computer_data.get('computer_name'),
-            'os': computer_data.get('os'),
-            'manufacturer': computer_data.get('manufacturer'),
-            'model': computer_data.get('model'),
-            'cpu': computer_data.get('cpu'),
-            'gpu_name': computer_data.get('gpu_name'),
-            'gpu_driver': computer_data.get('gpu_driver'),
-            'memory_bytes': computer_data.get('memory_bytes'),
-            'serial_number': computer_data.get('serial_number'),
+            'computername': computer_data.get('computer_name', computer_data.get('Computername')),
+            'os': computer_data.get('os', computer_data.get('OS')),
+            'manufacturer': computer_data.get('manufacturer', computer_data.get('Manufacturer')),
+            'model': computer_data.get('model', computer_data.get('Model')),
+            'cpu': computer_data.get('cpu', computer_data.get('CPU')),
+            'gpu_name': computer_data.get('gpu_name', computer_data.get('GPU Name')),
+            'gpu_driver': computer_data.get('gpu_driver', computer_data.get('GPU Driver')),
+            'memory_bytes': computer_data.get('memory_bytes', computer_data.get('Total Physical Memory')),
+            'serial_number': computer_data.get('serial_number', computer_data.get('Serial Number')),
             'last_updated': datetime.now().isoformat()
         }
         
@@ -178,8 +178,27 @@ def backup_computer_data(computer_data):
         filename = f"{computer_name}_{timestamp}.json"
         file_path = os.path.join(COMPUTER_BACKUP_DIR, filename)
         
-        # Create flat backup data structure (data is already flat from aboutme)
-        backup_data = computer_data.copy()
+        # Create backup data structure (handle both flat and nested)
+        if 'computer_name' in computer_data:
+            # New nested structure - data is already in the right format
+            backup_data = computer_data.copy()
+        else:
+            # Old flat structure - convert to new format
+            backup_data = {
+                "computer_name": computer_data.get('Computername', 'Unknown'),
+                "human_name": computer_data.get('Name', computer_data.get('human_name', 'Unknown')),
+                "username": computer_data.get('Username', 'Unknown'),
+                "cpu": computer_data.get('CPU', 'Unknown'),
+                "os": computer_data.get('OS', 'Unknown'),
+                "manufacturer": computer_data.get('Manufacturer', 'Unknown'),
+                "model": computer_data.get('Model', 'Unknown'),
+                "gpu_name": computer_data.get('GPU Name', 'Unknown'),
+                "gpu_driver": computer_data.get('GPU Driver', 'Unknown'),
+                "gpu_memory": computer_data.get('GPU Memory'),
+                "memory_bytes": computer_data.get('Total Physical Memory'),
+                "serial_number": computer_data.get('Serial Number', 'Unknown')
+            }
+        
         # Add server timestamp
         backup_data["server_timestamp"] = datetime.now().isoformat()
         
@@ -245,11 +264,18 @@ def handle_computer_data():
         if not data:
             return jsonify({'error': 'No data provided'}), 400
         
-        computer_data = data.get('computer_data', {})
+        # Handle both old and new payload structures
+        if 'computer_info' in data:
+            # New nested structure
+            computer_data = data.get('computer_info', {})
+        else:
+            # Old flat structure (for backward compatibility)
+            computer_data = data.get('computer_data', {})
+        
         if not computer_data:
             return jsonify({'error': 'No computer data provided'}), 400
         
-        print(f"📥 Received computer data for: {computer_data.get('Computername', 'Unknown')}")
+        print(f"📥 Received computer data for: {computer_data.get('computer_name', computer_data.get('Computername', 'Unknown'))}")
         
         # Find the employee file that matches this user
         employee_file_path = find_employee_file_by_user(computer_data)
