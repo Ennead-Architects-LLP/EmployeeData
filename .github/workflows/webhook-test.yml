@@ -1,0 +1,20 @@
+name: Webhook Test
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Test step
+      run: |
+        echo "Webhook test workflow is working"
+        echo "Current directory: $(pwd)"
+        ls -la
+        echo "This workflow should work with push or manual trigger"

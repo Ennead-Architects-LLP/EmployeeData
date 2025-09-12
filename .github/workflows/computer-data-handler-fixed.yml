@@ -1,0 +1,65 @@
+name: Handle Computer Data Fixed
+
+on:
+  repository_dispatch:
+    types: [computer-data]
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Test mode (dry run)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  handle-computer-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        pip install requests pyyaml flask
+    
+    - name: Create backup directory
+      run: |
+        mkdir -p 1-website/assets/computer_info_data_backup
+        echo "Created backup directory"
+    
+    - name: Handle computer data
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TEST_MODE: ${{ github.event.inputs.test_mode || 'false' }}
+      run: |
+        echo "Current directory: $(pwd)"
+        echo "Files in current directory:"
+        ls -la
+        echo "Files in 4-server directory:"
+        ls -la 4-server/
+        echo "Files in 1-website/assets/individual_employees directory:"
+        ls -la 1-website/assets/individual_employees/ | head -10
+        
+        echo "Starting server.py..."
+        python 4-server/server.py
+    
+    - name: Update JSON data only (no website regeneration needed)
+      if: github.event.inputs.test_mode != 'true'
+      run: |
+        echo "Computer data processed and JSON files updated"
+        echo "Website loads data dynamically - no regeneration needed"
+    
+    - name: Commit and push changes
+      if: github.event.inputs.test_mode != 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add 1-website/assets/individual_employees/ 1-website/assets/computer_info_data_backup/
+        git diff --staged --quiet || git commit -m "Update computer data from AboutMe app"
+        git push
