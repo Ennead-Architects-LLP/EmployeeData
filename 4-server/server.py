@@ -118,7 +118,7 @@ def update_employee_computer_info(employee_file_path, computer_data):
         with open(employee_file_path, 'r', encoding='utf-8') as f:
             employee_data = json.load(f)
         
-        # Create new computer info entry using flat field names
+        # Create new computer info entry using nested field names
         new_computer_info = {
             'computername': computer_data.get('computer_name'),
             'os': computer_data.get('os'),
@@ -312,8 +312,9 @@ def process_computer_data_from_event():
         with open(event_path, 'r', encoding='utf-8') as f:
             event_data = json.load(f)
         
-        # Extract flat data from repository dispatch event
-        computer_data = event_data.get('client_payload', {})
+        # Extract nested data from repository dispatch event
+        client_payload = event_data.get('client_payload', {})
+        computer_data = client_payload.get('computer_info', {})
         if not computer_data:
             print("❌ No computer data found in event payload")
             return False

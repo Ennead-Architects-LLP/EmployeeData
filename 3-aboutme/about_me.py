@@ -225,28 +225,27 @@ class ComputerInfoCollector:
         try:
             url = f"https://api.github.com/repos/{EMBEDDED_REPO_OWNER}/{EMBEDDED_REPO_NAME}/dispatches"
             
-            # Prepare flat data for transmission
-            flat_data = {
-                "timestamp": datetime.now().isoformat(),
-                "source": "about_me_app",
-                "computer_name": self.data.get('Computername', 'Unknown'),
-                "human_name": self.data.get('human_name', 'Unknown'),
-                "username": self.data.get('Username', 'Unknown'),
-                "cpu": self.data.get('CPU', 'Unknown'),
-                "os": self.data.get('OS', 'Unknown'),
-                "manufacturer": self.data.get('Manufacturer', 'Unknown'),
-                "model": self.data.get('Model', 'Unknown'),
-                "gpu_name": self.data.get('GPU Name', 'Unknown'),
-                "gpu_driver": self.data.get('GPU Driver', 'Unknown'),
-                "gpu_memory": self.data.get('GPU Memory'),
-                "memory_bytes": self.data.get('Total Physical Memory'),
-                "serial_number": self.data.get('Serial Number', 'Unknown'),
-                "collection_date": self.data.get('Date', 'Unknown')
-            }
-            
+            # Prepare nested data for transmission (stays within GitHub's 10 property limit)
             payload = {
                 "event_type": "computer-data",
-                "client_payload": flat_data
+                "client_payload": {
+                    "timestamp": datetime.now().isoformat(),
+                    "computer_info": {
+                        "computer_name": self.data.get('Computername', 'Unknown'),
+                        "human_name": self.data.get('human_name', 'Unknown'),
+                        "username": self.data.get('Username', 'Unknown'),
+                        "cpu": self.data.get('CPU', 'Unknown'),
+                        "os": self.data.get('OS', 'Unknown'),
+                        "manufacturer": self.data.get('Manufacturer', 'Unknown'),
+                        "model": self.data.get('Model', 'Unknown'),
+                        "gpu_name": self.data.get('GPU Name', 'Unknown'),
+                        "gpu_driver": self.data.get('GPU Driver', 'Unknown'),
+                        "gpu_memory": self.data.get('GPU Memory'),
+                        "memory_bytes": self.data.get('Total Physical Memory'),
+                        "serial_number": self.data.get('Serial Number', 'Unknown'),
+                        "collection_date": self.data.get('Date', 'Unknown')
+                    }
+                }
             }
             
             headers = {
