@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-09-12T23:08:51.636977",
+  "computer_name": "EA-25CWFS3",
+  "user_name": "Sen Zhang",
+  "username": "szhang",
+  "computer_info": {
+    "CPU": "13th Gen Intel(R) Core(TM) i7-1370P",
+    "Computername": "EA-25CWFS3",
+    "Date": "2025-09-12T19:08:34.941210",
+    "GPU Driver": "32.0.101.6078",
+    "GPU Memory": 2147479552,
+    "GPU Name": "Intel(R) Iris(R) Xe Graphics",
+    "GPU Processor": "Intel(R) Iris(R) Xe Graphics Family",
+    "Manufacturer": "Dell Inc.",
+    "Model": "Latitude 5540",
+    "Name": "Sen Zhang",
+    "OS": "Windows 11",
+    "Serial Number": "1X5CKS3",
+    "Total Physical Memory": 16815702016,
+    "Username": "szhang"
+  }
+}

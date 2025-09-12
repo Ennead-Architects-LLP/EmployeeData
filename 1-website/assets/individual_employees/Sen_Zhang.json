@@ -85,4 +85,19 @@
   "linkedin_url": null,
   "website_url": null,
   "scraped_at": "2025-09-12T15:03:46.155093",
-  "profile_id": "sen-zhang"}
+  "profile_id": "sen-zhang",
+  "computer_info": [
+    {
+      "computername": "EA-25CWFS3",
+      "os": "Windows 11",
+      "manufacturer": "Dell Inc.",
+      "model": "Latitude 5540",
+      "cpu": "13th Gen Intel(R) Core(TM) i7-1370P",
+      "gpu_name": "Intel(R) Iris(R) Xe Graphics",
+      "gpu_driver": "32.0.101.6078",
+      "memory_bytes": 16815702016,
+      "serial_number": "1X5CKS3",
+      "last_updated": "2025-09-12T23:08:51.636651"
+    }
+  ]
+}
