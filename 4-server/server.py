@@ -118,17 +118,17 @@ def update_employee_computer_info(employee_file_path, computer_data):
         with open(employee_file_path, 'r', encoding='utf-8') as f:
             employee_data = json.load(f)
         
-        # Create new computer info entry
+        # Create new computer info entry using flat field names
         new_computer_info = {
-            'computername': computer_data.get('Computername'),
-            'os': computer_data.get('OS'),
-            'manufacturer': computer_data.get('Manufacturer'),
-            'model': computer_data.get('Model'),
-            'cpu': computer_data.get('CPU'),
-            'gpu_name': computer_data.get('GPU Name'),
-            'gpu_driver': computer_data.get('GPU Driver'),
-            'memory_bytes': computer_data.get('Total Physical Memory'),
-            'serial_number': computer_data.get('Serial Number'),
+            'computername': computer_data.get('computer_name'),
+            'os': computer_data.get('os'),
+            'manufacturer': computer_data.get('manufacturer'),
+            'model': computer_data.get('model'),
+            'cpu': computer_data.get('cpu'),
+            'gpu_name': computer_data.get('gpu_name'),
+            'gpu_driver': computer_data.get('gpu_driver'),
+            'memory_bytes': computer_data.get('memory_bytes'),
+            'serial_number': computer_data.get('serial_number'),
             'last_updated': datetime.now().isoformat()
         }
         
@@ -178,24 +178,10 @@ def backup_computer_data(computer_data):
         filename = f"{computer_name}_{timestamp}.json"
         file_path = os.path.join(COMPUTER_BACKUP_DIR, filename)
         
-        # Create flat backup data structure
-        backup_data = {
-            "timestamp": datetime.now().isoformat(),
-            "computer_name": computer_data.get('Computername', 'Unknown'),
-            "human_name": computer_data.get('human_name', 'Unknown'),
-            "username": computer_data.get('Username', 'Unknown'),
-            # Add all computer specs directly to the root level
-            "cpu": computer_data.get('CPU', 'Unknown'),
-            "os": computer_data.get('OS', 'Unknown'),
-            "manufacturer": computer_data.get('Manufacturer', 'Unknown'),
-            "model": computer_data.get('Model', 'Unknown'),
-            "gpu_name": computer_data.get('GPU Name', 'Unknown'),
-            "gpu_driver": computer_data.get('GPU Driver', 'Unknown'),
-            "gpu_memory": computer_data.get('GPU Memory'),
-            "memory_bytes": computer_data.get('Total Physical Memory'),
-            "serial_number": computer_data.get('Serial Number', 'Unknown'),
-            "collection_date": computer_data.get('Date', 'Unknown')
-        }
+        # Create flat backup data structure (data is already flat from aboutme)
+        backup_data = computer_data.copy()
+        # Add server timestamp
+        backup_data["server_timestamp"] = datetime.now().isoformat()
         
         # Save backup file
         with open(file_path, 'w', encoding='utf-8') as f:
@@ -326,13 +312,13 @@ def process_computer_data_from_event():
         with open(event_path, 'r', encoding='utf-8') as f:
             event_data = json.load(f)
         
-        # Extract computer data from repository dispatch event
-        computer_data = event_data.get('client_payload', {}).get('computer_data')
+        # Extract flat data from repository dispatch event
+        computer_data = event_data.get('client_payload', {})
         if not computer_data:
             print("❌ No computer data found in event payload")
             return False
         
-        print(f"📥 Processing computer data for: {computer_data.get('Computername', 'Unknown')}")
+        print(f"📥 Processing computer data for: {computer_data.get('computer_name', 'Unknown')}")
         
         # Find the employee file that matches this user
         employee_file_path = find_employee_file_by_user(computer_data)
