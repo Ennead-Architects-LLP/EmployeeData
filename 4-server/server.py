@@ -77,7 +77,7 @@ def _employee_matches_user(employee_data, human_name, username):
     try:
         # Try exact match first, then fuzzy match
         if human_name:
-            employee_name = employee_data.get('real_name', '').strip()
+            employee_name = employee_data.get('human_name', '').strip()
             
             # Exact match (case insensitive)
             if employee_name.lower() == human_name.lower():
