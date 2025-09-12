@@ -28,7 +28,8 @@ def find_employee_file_by_user(computer_data):
     """Find the employee JSON file that matches the user from computer data"""
     try:
         human_name = computer_data.get('human_name', '').strip()
-        username = computer_data.get('Username', '').strip()
+        # Check both 'username' and 'Username' for backward compatibility
+        username = computer_data.get('username', computer_data.get('Username', '')).strip()
         
         if not human_name and not username:
             print("❌ No user name or username provided in computer data")
