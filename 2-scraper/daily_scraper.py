@@ -49,6 +49,7 @@ async def main():
         
         # Run data collection
         logger.info(f"Starting daily scraper at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        logger.info("Credential priority: GitHub secrets → local credentials.json → GUI setup")
         success = await orchestrator.run()
         
         if success:
