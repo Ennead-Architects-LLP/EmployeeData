@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(646) 437-1723",
   "mobile": "(646) 437-1723",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/4F9AB3FE-5D2B-495E-82E8-ADED253C9A83/kori-camacho-onal",
   "image_url": "https://ei.ennead.com/api/image/356559b1-9c5e-4785-a883-af7a4f5a77c8/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kori Camacho-Onal_profile.jpg",
@@ -96,6 +96,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kcamacho@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:21:49.134183",
+  "scraped_at": "2025-09-12T13:34:26.703971",
   "profile_id": "kori-camacho-onal"
 }

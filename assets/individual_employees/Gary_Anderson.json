@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5862",
   "mobile": "(212) 792-5862",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/3DF5399F-CA60-4DEB-81F7-ED56C58D6A22/gary-anderson",
   "image_url": "https://ei.ennead.com/api/image/6bdec633-99cd-4008-b246-685a22d00624/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Gary Anderson_profile.jpg",
@@ -282,6 +282,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ganderson@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:15:09.654574",
+  "scraped_at": "2025-09-12T13:28:05.571824",
   "profile_id": "gary-anderson"
 }

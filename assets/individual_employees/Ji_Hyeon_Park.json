@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "646-437-1711",
   "mobile": "646-437-1711",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/8846087C-D9A7-45C8-9E69-7F607F76EC20/ji-hyeon-park",
   "image_url": "https://ei.ennead.com/api/image/30999718-8597-454f-a7b9-a9f939c186a2/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Ji Hyeon Park_profile.jpg",
@@ -58,6 +58,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=JiHyeon.Park@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:18:13.428801",
+  "scraped_at": "2025-09-12T13:31:20.379812",
   "profile_id": "ji-hyeon-park"
 }

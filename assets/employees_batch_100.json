@@ -1,0 +1,900 @@
+[
+  {
+    "real_name": "Latoya Kamdang",
+    "email": "latoya.kamdang@ennead.com",
+    "bio": null,
+    "phone": "2127925864",
+    "mobile": "2127925864",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/57AE66EA-CBD1-4B9D-BA96-61BD2176D3F5/latoya-kamdang",
+    "image_url": "https://ei.ennead.com/api/image/2b0e46ab-6f48-40fa-8990-2627689ef653/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Latoya Kamdang_profile.jpg",
+    "position": "Associate Principal",
+    "department": null,
+    "years_with_firm": 2,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "AIA",
+      "LEED AP BD+C",
+      "Mass Timber",
+      "National Organization of Minority Architects"
+    ],
+    "education": [
+      {
+        "institution": "University of Pennsylvania",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      },
+      {
+        "institution": "The George Washington Universit",
+        "degree": "Graduate",
+        "specialty": "MFA Interior"
+      },
+      {
+        "institution": "Georgetown University",
+        "degree": "Undergraduate",
+        "specialty": "Business Administration"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=latoya.kamdang@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:35:44.028506",
+    "profile_id": "latoya-kamdang"
+  },
+  {
+    "real_name": "Laura Joo",
+    "email": "Laura.Joo@ennead.com",
+    "bio": null,
+    "phone": "646-437-1789",
+    "mobile": "646-437-1789",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/B3A3891B-2125-4BE8-8A49-77A0ADAB180C/laura-joo",
+    "image_url": "https://ei.ennead.com/api/image/8511be81-b00f-46f1-b452-0070064ad988/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Laura Joo_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 4,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Harvard University Graduate School of Design",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      },
+      {
+        "institution": "Pratt Institute",
+        "degree": "Undergraduate",
+        "specialty": "Interior Design"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "number": "2151",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      },
+      {
+        "name": "NYULH Brooklyn Ambulatory Hub Building",
+        "number": "2224",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      },
+      {
+        "name": "Inova Central Region Emergency Department Expansion",
+        "number": "2223",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+      },
+      {
+        "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+        "number": "2117",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation"
+      },
+      {
+        "name": "JUNO, Capitol Hill",
+        "number": "2020",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill"
+      },
+      {
+        "name": "New York Blood Center Applied Life Sciences Hub",
+        "number": "1852",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub"
+      },
+      {
+        "name": "Wuxi Art Museum",
+        "number": "1931",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/3D1D6BFF-2B0A-4B7A-9D3B-B84AA3DCF71A/wuxi-art-museum"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Laura.Joo@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:35:49.243637",
+    "profile_id": "laura-joo"
+  },
+  {
+    "real_name": "Laura Rodriguez",
+    "email": "laura.rodriguez@ennead.com",
+    "bio": null,
+    "phone": "2127925936",
+    "mobile": "2127925936",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/1AA7790D-F9E5-4D03-8D1E-1898554338F6/laura-rodriguez",
+    "image_url": "https://ei.ennead.com/api/image/e038898b-1fd0-44ba-a911-531351566e96/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Laura Rodriguez_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 3,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "University of Florida",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "number": "2151",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      },
+      {
+        "name": "NYULH Brooklyn Ambulatory Hub Building",
+        "number": "2224",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      },
+      {
+        "name": "Inova Central Region Emergency Department Expansion",
+        "number": "2223",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+      },
+      {
+        "name": "Bilibili Shanghai Headquarters",
+        "number": "2135",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+      },
+      {
+        "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+        "number": "2128",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+      },
+      {
+        "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+        "number": "2001",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=laura.rodriguez@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:35:55.585735",
+    "profile_id": "laura-rodriguez"
+  },
+  {
+    "real_name": "Leah Li",
+    "email": "leah.li@ennead.com",
+    "bio": null,
+    "phone": null,
+    "mobile": null,
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/4F51B4E0-1A6E-4839-AC67-1D2D9553B6B1/leah-li",
+    "image_url": "https://ei.ennead.com/api/image/767ddf15-3a45-4d2c-ac58-c2bf894605a3/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Leah Li_profile.jpg",
+    "position": "Senior Associate",
+    "department": null,
+    "years_with_firm": 10,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Dalian Nationality University",
+        "degree": "Undergraduate",
+        "specialty": "English Literature"
+      },
+      {
+        "institution": "Shanghai University of Finance and Economics",
+        "degree": "Graduate",
+        "specialty": "Investment"
+      }
+    ],
+    "licenses": [],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lli@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:36:02.346137",
+    "profile_id": "leah-li"
+  },
+  {
+    "real_name": "Lena Yang",
+    "email": "lena.yang@ennead.com",
+    "bio": null,
+    "phone": "2127925982",
+    "mobile": "2127925982",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/8D4A79E8-8C3C-4E2B-829F-626A1AF824A5/lena-yang",
+    "image_url": "https://ei.ennead.com/api/image/b88ca299-9e9c-475d-8d3a-5c88deb4aa41/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Lena Yang_profile.jpg",
+    "position": "Designer",
+    "department": null,
+    "years_with_firm": 2,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "University of Michigan",
+        "degree": "Undergraduate",
+        "specialty": "Graphic Design"
+      }
+    ],
+    "licenses": [],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lena.yang@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:36:07.802535",
+    "profile_id": "lena-yang"
+  },
+  {
+    "real_name": "Lisa Reese",
+    "email": "lisa.reese@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5876",
+    "mobile": "(212) 792-5876",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/7005FD7D-D1A0-4E1E-8709-86E8F147D17E/lisa-reese",
+    "image_url": "https://ei.ennead.com/api/image/93e0f2b6-bace-4d28-85e7-ee7d165a3e5d/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Lisa Reese_profile.jpg",
+    "position": "Senior Associate",
+    "department": null,
+    "years_with_firm": 20,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "FIT",
+        "degree": "Associates",
+        "specialty": "Applied Sciences"
+      }
+    ],
+    "licenses": [],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lreese@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:36:13.862407",
+    "profile_id": "lisa-reese"
+  },
+  {
+    "real_name": "Liz Shaban",
+    "email": "Liz.Shaban@ennead.com",
+    "bio": null,
+    "phone": "(646) 437-1736",
+    "mobile": "(646) 437-1736",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/5D780051-30CD-461E-8B26-AE79829AFB88/liz-shaban",
+    "image_url": "https://ei.ennead.com/api/image/7d479e0a-f89b-41b1-b022-bfaf5a5c6251/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Liz Shaban_profile.jpg",
+    "position": "Associate",
+    "department": null,
+    "years_with_firm": 12,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "LEED AP",
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "University of Virginia",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      },
+      {
+        "institution": "Washington University, St. Louis",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "New York University, Renovations to Chemical Biology Buildings",
+        "number": "1847",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings"
+      },
+      {
+        "name": "Connecticut College, Athey Center for Performance and Research at Palmer Auditorium",
+        "number": "1837",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium"
+      },
+      {
+        "name": "NYU Langone Health, Science Building",
+        "number": "1101",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+      },
+      {
+        "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+        "number": "1836",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=liz.shaban@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:36:20.654253",
+    "profile_id": "liz-shaban"
+  },
+  {
+    "real_name": "Lois Mate",
+    "email": "lois.mate@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5934",
+    "mobile": "(212) 792-5934",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/0CAD5856-12CA-4985-BB72-F2B81FC54FC8/lois-mate",
+    "image_url": "https://ei.ennead.com/api/image/fb237f40-76cb-4748-bdc6-ff8636a36840/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Lois Mate_profile.jpg",
+    "position": "Associate Principal",
+    "department": null,
+    "years_with_firm": 38,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      },
+      {
+        "institution": "University of Virginia",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "Union Theological Seminary Tower",
+        "number": "",
+        "client": "8631",
+        "role": "",
+        "url": "https://ei.ennead.com/project/CD0C57D7-A22E-4995-925A-59924B0E4017/union-theological-seminary-tower"
+      },
+      {
+        "name": "Corning Incorporated, Houghton Park, C Building (Renovation)",
+        "number": "",
+        "client": "9303",
+        "role": "",
+        "url": "https://ei.ennead.com/project/28247E7B-D3CE-4855-B9A8-7B95E05D56E1/corning-incorporated-houghton-park-c-building-renovation"
+      },
+      {
+        "name": "New York Academy of Medicine, Programming and Planning",
+        "number": "",
+        "client": "0125",
+        "role": "",
+        "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning"
+      },
+      {
+        "name": "York Avenue Development",
+        "number": "",
+        "client": "0615",
+        "role": "",
+        "url": "https://ei.ennead.com/project/D19CC9CD-4756-4F8C-8402-F39ED058DCB4/york-avenue-development"
+      },
+      {
+        "name": "New York University, Renovations to Chemical Biology Buildings",
+        "number": "",
+        "client": "1847",
+        "role": "New York University",
+        "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings"
+      },
+      {
+        "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
+        "number": "",
+        "client": "2120",
+        "role": "DLR Group",
+        "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2"
+      },
+      {
+        "name": "Purdue University Polytechnic Institute, College of Engineering, Dudley and Lambertus Halls (Gateway)",
+        "number": "",
+        "client": "1922",
+        "role": "BSA LifeStructures",
+        "url": "https://ei.ennead.com/project/CC0FBA10-4F97-4086-83AC-C1A42862AA28/purdue-university-polytechnic-institute-college-of-engineering-dudley-and-lambertus-halls-gateway"
+      },
+      {
+        "name": "Weill Cornell Medicine, Belfer Research Building, 8th Floor Fit-Out",
+        "number": "",
+        "client": "1918",
+        "role": "Weill Cornell Medicine",
+        "url": "https://ei.ennead.com/project/5095F049-F058-484D-A9D3-F659D335FB34/weill-cornell-medicine-belfer-research-building-8th-floor-fit-out"
+      },
+      {
+        "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+        "number": "",
+        "client": "2001",
+        "role": "University of California, Santa Cruz",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+      },
+      {
+        "name": "Massachusetts Institute of Technology, Stephen A. Schwarzman College of Computing (MIT)",
+        "number": "",
+        "client": "1909",
+        "role": "Massachusetts Institute of Technology",
+        "url": "https://ei.ennead.com/project/7B410E83-8B38-4EC1-82B9-33793246428B/massachusetts-institute-of-technology-stephen-a-schwarzman-college-of-computing-mit"
+      },
+      {
+        "name": "The Blue Shield of California Theater at YBCA (Yerba Buena)",
+        "number": "",
+        "client": "8804",
+        "role": "TEST",
+        "url": "https://ei.ennead.com/project/CB6DA139-4052-449A-9F83-DBBCE4412634/the-blue-shield-of-california-theater-at-ybca-yerba-buena"
+      },
+      {
+        "name": "Brooklyn Botanic Garden, Eastern Parkway Entrance",
+        "number": "",
+        "client": "0101",
+        "role": "Brooklyn Botanic Garden",
+        "url": "https://ei.ennead.com/project/2ABBEF3B-4F9B-4146-8224-A27125C6ECD2/brooklyn-botanic-garden-eastern-parkway-entrance"
+      },
+      {
+        "name": "General Theological Seminary, Chelsea Enclave",
+        "number": "",
+        "client": "0510",
+        "role": "The Brodsky Organization",
+        "url": "https://ei.ennead.com/project/C06962F7-763F-437E-8AA0-B0A69A12C787/general-theological-seminary-chelsea-enclave"
+      },
+      {
+        "name": "Jefferson Health, Honickman Center",
+        "number": "",
+        "client": "1835",
+        "role": "National Real Estate Development",
+        "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center"
+      },
+      {
+        "name": "Mashantucket Pequot Museum and Research Center",
+        "number": "",
+        "client": "9316",
+        "role": "Research Associates",
+        "url": "https://ei.ennead.com/project/11768C10-A522-416E-9769-F9B42E36B840/mashantucket-pequot-museum-and-research-center"
+      },
+      {
+        "name": "New York Stem Cell Foundation, Research Institute Laboratory",
+        "number": "",
+        "client": "1538",
+        "role": "New York Stem Cell Foundation",
+        "url": "https://ei.ennead.com/project/E740ACA9-4A79-473B-8ECA-D376BCADB117/new-york-stem-cell-foundation-research-institute-laboratory"
+      },
+      {
+        "name": "NYU Langone Health, Downtown Ambulatory Care Center",
+        "number": "",
+        "client": "0631",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/901110C3-C350-4E32-8441-FC1D969BADA3/nyu-langone-health-downtown-ambulatory-care-center"
+      },
+      {
+        "name": "NYU Langone Health, Master Plan",
+        "number": "",
+        "client": "0806",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan"
+      },
+      {
+        "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
+        "number": "",
+        "client": "1228",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update"
+      },
+      {
+        "name": "NYU Langone Health, Medical Science Building, HVAC Equipment Removal Feasibility Study",
+        "number": "",
+        "client": "1721",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/C80C7C2D-4F19-43A6-8F29-B2736785C088/nyu-langone-health-medical-science-building-hvac-equipment-removal-feasibility-study"
+      },
+      {
+        "name": "NYU Langone Health, Science Building",
+        "number": "",
+        "client": "1101",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+      },
+      {
+        "name": "NYU Langone Health, Skirball Institute for Biomolecular Medicine and Residence Tower",
+        "number": "",
+        "client": "8901",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/C68AED36-E85D-4C82-A0F9-F556C045D954/nyu-langone-health-skirball-institute-for-biomolecular-medicine-and-residence-tower"
+      },
+      {
+        "name": "Phil and Penny Knight Campus for Accelerating Scientific Impact at University of Oregon",
+        "number": "",
+        "client": "1703",
+        "role": "University of Oregon",
+        "url": "https://ei.ennead.com/project/71B181F2-EDBC-42B9-A856-0078C8571EDC/phil-and-penny-knight-campus-for-accelerating-scientific-impact-at-university-of-oregon"
+      },
+      {
+        "name": "Stanford NYC",
+        "number": "",
+        "client": "1102",
+        "role": "Stanford University",
+        "url": "https://ei.ennead.com/project/D15FDF3D-263A-4A21-B382-CE2B1A38D438/stanford-nyc"
+      },
+      {
+        "name": "University of Michigan, Biomedical Science Research Building",
+        "number": "",
+        "client": "0019",
+        "role": "University of Michigan",
+        "url": "https://ei.ennead.com/project/44BB748A-5D2C-47CC-BDA9-B86665A4C364/university-of-michigan-biomedical-science-research-building"
+      },
+      {
+        "name": "Weill Cornell Medicine, Belfer Research Building",
+        "number": "",
+        "client": "0705",
+        "role": "Weill Cornell Medicine",
+        "url": "https://ei.ennead.com/project/DB19CFB5-F090-48CF-B1A5-F41E0C470039/weill-cornell-medicine-belfer-research-building"
+      },
+      {
+        "name": "Weill Cornell Medicine, Weill Greenberg Center",
+        "number": "",
+        "client": "0133",
+        "role": "Weill Cornell Medicine",
+        "url": "https://ei.ennead.com/project/C2FB767E-4966-4EEF-B1EE-2B973C64242F/weill-cornell-medicine-weill-greenberg-center"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lmate@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:36:28.382132",
+    "profile_id": "lois-mate"
+  },
+  {
+    "real_name": "Lynn Zhang",
+    "email": "lynn.zhang@ennead.com",
+    "bio": null,
+    "phone": null,
+    "mobile": null,
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/4B8D3ED6-43D8-43EC-A153-E13F031E3918/lynn-zhang",
+    "image_url": "https://ei.ennead.com/api/image/e50f2432-b0b7-4fce-a5d7-ee921dcbeaf0/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Lynn Zhang_profile.jpg",
+    "position": "Associate Principal",
+    "department": null,
+    "years_with_firm": 10,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Nanjing Tech University",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "PRC Class 1 Registered Architect",
+        "state": "Shanghai",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "Shaoxing Textile Museum",
+        "number": "",
+        "client": "2418",
+        "role": "Zhejiang China Textile City Group",
+        "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+      },
+      {
+        "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+        "number": "",
+        "client": "2220",
+        "role": "Chengdu shudu urban construction co., Ltd.",
+        "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum"
+      },
+      {
+        "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+        "number": "",
+        "client": "2133",
+        "role": "Tencent",
+        "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood"
+      },
+      {
+        "name": "Nanda Plot 111-01",
+        "number": "",
+        "client": "2103",
+        "role": "Lingang",
+        "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+      },
+      {
+        "name": "DingTalk Competition",
+        "number": "",
+        "client": "2101",
+        "role": "",
+        "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition"
+      },
+      {
+        "name": "Shenzhen Conservatory of Music",
+        "number": "",
+        "client": "2030",
+        "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+        "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music"
+      },
+      {
+        "name": "COMAC Campus, New Headquarters",
+        "number": "",
+        "client": "2009",
+        "role": "Lingang",
+        "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters"
+      },
+      {
+        "name": "Lingang Global Digital Trade Headquarters",
+        "number": "",
+        "client": "1948",
+        "role": "Lingang Group",
+        "url": "https://ei.ennead.com/project/19F45A2B-4333-4D4A-944A-F64E147374F5/lingang-global-digital-trade-headquarters"
+      },
+      {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+        "number": "",
+        "client": "1940",
+        "role": "Lingang Group",
+        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+      },
+      {
+        "name": "Lingang Kangqiao Phase III",
+        "number": "",
+        "client": "1906",
+        "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+        "url": "https://ei.ennead.com/project/DA87A9E3-0110-4374-B3DC-9460BAAF96A2/lingang-kangqiao-phase-iii"
+      },
+      {
+        "name": "Baoshan Nanda",
+        "number": "",
+        "client": "1848",
+        "role": "Lingang Economic Group",
+        "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda"
+      },
+      {
+        "name": "Beihang University Qingdao Campus, International Science and Education City",
+        "number": "",
+        "client": "1729",
+        "role": "Qingdao Oceantec Valley Administration Bureau",
+        "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city"
+      },
+      {
+        "name": "Lixin University of Finance and Accounting, Pudong New Campus Master Plan",
+        "number": "",
+        "client": "1730",
+        "role": "Shanghai Baitong Project Management Consulting co., Ltd.",
+        "url": "https://ei.ennead.com/project/4E502D5D-B536-4D71-9162-8196605365D9/lixin-university-of-finance-and-accounting-pudong-new-campus-master-plan"
+      },
+      {
+        "name": "Taopu Sci-Tech City Plot 606",
+        "number": "",
+        "client": "1735",
+        "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+      },
+      {
+        "name": "Hero Tandi Pen",
+        "number": "",
+        "client": "1621",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/A44ADE52-65BF-41A5-8CCB-D5C03ED01E77/hero-tandi-pen"
+      },
+      {
+        "name": "Lingang Science and Technology City (S&T)",
+        "number": "",
+        "client": "1520",
+        "role": "Lingang Economic Group",
+        "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t"
+      },
+      {
+        "name": "Hero South Plot",
+        "number": "",
+        "client": "1712",
+        "role": "Shanghai Rongyin Properties Co., Ltd.",
+        "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot"
+      },
+      {
+        "name": "Huawei Wuhan Research and Development Campus",
+        "number": "",
+        "client": "1326",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus"
+      },
+      {
+        "name": "Husu Dafeng Industrial Park",
+        "number": "",
+        "client": "1739",
+        "role": "Husu Dafeng Industrial Park Service Center Development Company",
+        "url": "https://ei.ennead.com/project/443B00F1-7DFB-4506-AFBB-DA09A4D98467/husu-dafeng-industrial-park"
+      },
+      {
+        "name": "NYU Langone Health, Medical Science Building, HVAC Equipment Removal Feasibility Study",
+        "number": "",
+        "client": "1721",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/C80C7C2D-4F19-43A6-8F29-B2736785C088/nyu-langone-health-medical-science-building-hvac-equipment-removal-feasibility-study"
+      },
+      {
+        "name": "Pujiang Phase II",
+        "number": "",
+        "client": "1817",
+        "role": "Shanghai Lingang Pujiang International Science and Technology City Development Co., Ltd.",
+        "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii"
+      },
+      {
+        "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
+        "number": "",
+        "client": "1416",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city"
+      },
+      {
+        "name": "Taopu Sci-Tech Smart City Phase I (Taopu 605)",
+        "number": "",
+        "client": "1433",
+        "role": "Lingang Economic Group",
+        "url": "https://ei.ennead.com/project/7C36DE44-B5F0-4051-B171-22A9BC33509B/taopu-sci-tech-smart-city-phase-i-taopu-605"
+      },
+      {
+        "name": "Taopu Smart City Plot 615/616",
+        "number": "",
+        "client": "1749",
+        "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+        "url": "https://ei.ennead.com/project/208EEB2F-05ED-407C-9CC8-67F5937024D1/taopu-smart-city-plot-615-616"
+      },
+      {
+        "name": "Taopu Smart City, Plot 603",
+        "number": "",
+        "client": "1763",
+        "role": "Taopu North",
+        "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lzhang@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:37:03.558477",
+    "profile_id": "lynn-zhang"
+  },
+  {
+    "real_name": "Madeleine Reid",
+    "email": "madeleine.reid@ennead.com",
+    "bio": null,
+    "phone": "646-437-1762",
+    "mobile": "646-437-1762",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/C50C2E11-24D1-453E-806A-B6922DF1FC42/madeleine-reid",
+    "image_url": "https://ei.ennead.com/api/image/5eb213ae-8620-4ae7-afe8-bcf4ddcb99b1/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Madeleine Reid_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 2,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "LEED GA"
+    ],
+    "education": [
+      {
+        "institution": "Brown University",
+        "degree": "Undergraduate",
+        "specialty": "Bachelors Architecture"
+      },
+      {
+        "institution": "Yale School of Architecture",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "Inova Central Region Emergency Department Expansion",
+        "number": "2223",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+      },
+      {
+        "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+        "number": "2128",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Madeleine.Reid@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:37:30.529323",
+    "profile_id": "madeleine-reid"
+  }
+]

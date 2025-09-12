@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5921",
   "mobile": "(212) 792-5921",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/5A702A67-C369-45A9-B29D-381DF97C63FA/kevin-seymour",
   "image_url": "https://ei.ennead.com/api/image/f7de9516-3bc0-49fb-8281-701c109a8632/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kevin Seymour_profile.jpg",
@@ -206,6 +206,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kseymour@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:21:27.803731",
+  "scraped_at": "2025-09-12T13:34:09.868052",
   "profile_id": "kevin-seymour"
 }

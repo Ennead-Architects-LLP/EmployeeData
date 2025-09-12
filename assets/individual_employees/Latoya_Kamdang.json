@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "2127925864",
   "mobile": "2127925864",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/57AE66EA-CBD1-4B9D-BA96-61BD2176D3F5/latoya-kamdang",
   "image_url": "https://ei.ennead.com/api/image/2b0e46ab-6f48-40fa-8990-2627689ef653/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Latoya Kamdang_profile.jpg",
@@ -49,6 +49,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=latoya.kamdang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:23:18.240169",
+  "scraped_at": "2025-09-12T13:35:44.028506",
   "profile_id": "latoya-kamdang"
 }

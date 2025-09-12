@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(646) 437-1736",
   "mobile": "(646) 437-1736",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/5D780051-30CD-461E-8B26-AE79829AFB88/liz-shaban",
   "image_url": "https://ei.ennead.com/api/image/7d479e0a-f89b-41b1-b022-bfaf5a5c6251/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Liz Shaban_profile.jpg",
@@ -71,6 +71,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=liz.shaban@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:23:52.828828",
+  "scraped_at": "2025-09-12T13:36:20.654253",
   "profile_id": "liz-shaban"
 }

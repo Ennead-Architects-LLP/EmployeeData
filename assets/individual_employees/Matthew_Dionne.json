@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5870",
   "mobile": "(212) 792-5870",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/7F89BFFA-3D6E-41B9-8B95-82A314B07226/matthew-dionne",
   "image_url": "https://ei.ennead.com/api/image/c0a8b003-6fc2-4ad5-9514-9c1079baf016/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Matthew Dionne_profile.jpg",
@@ -136,6 +136,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mdionne@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:26:12.247342",
+  "scraped_at": "2025-09-12T13:39:20.073387",
   "profile_id": "matthew-dionne"
 }

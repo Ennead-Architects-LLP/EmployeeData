@@ -1,0 +1,292 @@
+{
+  "real_name": "Grace Chen",
+  "email": "grace.chen@ennead.com",
+  "bio": null,
+  "phone": "1-213-265-7362",
+  "mobile": "1-213-265-7362",
+  "office_location": "California",
+  "profile_url": "https://ei.ennead.com/employee/E4274DA1-05F6-4EAC-AEE5-9DA4DF570E76/grace-chen",
+  "image_url": "https://ei.ennead.com/api/image/49a50d31-a728-4f0e-868d-6e39961999c9/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Grace Chen_profile.jpg",
+  "position": "Partner",
+  "department": null,
+  "years_with_firm": 6,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Tongji University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Tongji University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "PRC Class 1 Registered Architect",
+      "state": "Shanghai",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Shaoxing Textile Museum",
+      "number": "",
+      "client": "2418",
+      "role": "Zhejiang China Textile City Group",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+    },
+    {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "number": "",
+      "client": "2322",
+      "role": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition"
+    },
+    {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+      "number": "",
+      "client": "2321",
+      "role": "VIP.com",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition"
+    },
+    {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "number": "",
+      "client": "2227",
+      "role": "Huzhou Professional School",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
+    },
+    {
+      "name": "Zhonghuan Investment Development – Hongqi Village Plot E3",
+      "number": "",
+      "client": "1644",
+      "role": "",
+      "url": "https://ei.ennead.com/project/48365B9C-5F8C-47BC-AEDE-CD44D20D897F/zhonghuan-investment-development-hongqi-village-plot-e3"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+      "number": "",
+      "client": "2133",
+      "role": "Tencent",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "",
+      "client": "2103",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "DingTalk Competition",
+      "number": "",
+      "client": "2101",
+      "role": "",
+      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition"
+    },
+    {
+      "name": "ByteDance Houhai Center Project",
+      "number": "",
+      "client": "2018",
+      "role": "Shenzhen Toutiao Technology Co., Ltd.",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "",
+      "client": "2025",
+      "role": "Shenhzen Int. Performance Center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    },
+    {
+      "name": "Shenzhen Conservatory of Music",
+      "number": "",
+      "client": "2030",
+      "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music"
+    },
+    {
+      "name": "COMAC Campus, New Headquarters",
+      "number": "",
+      "client": "2009",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters"
+    },
+    {
+      "name": "Shenzhen Xiaomi Headquarters",
+      "number": "",
+      "client": "2016",
+      "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
+    },
+    {
+      "name": "Lingang Fengxian Soccer Training Center",
+      "number": "",
+      "client": "2005",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "",
+      "client": "1940",
+      "role": "Lingang Group",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "Zhangjiang Science City Core Area Plots 76-02/77-02",
+      "number": "",
+      "client": "1915",
+      "role": "Shanghai Lingang Pujiang International Science and Technology City Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/D4B4EDBB-65B6-47E1-8750-8F36344BA499/zhangjiang-science-city-core-area-plots-76-02-77-02"
+    },
+    {
+      "name": "Baoshan Nanda",
+      "number": "",
+      "client": "1848",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda"
+    },
+    {
+      "name": "Lingang Fengxian Biopharm Office Park",
+      "number": "",
+      "client": "1740",
+      "role": "Shanghai Lingang Huaping Economic Development Co. Ltd.",
+      "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park"
+    },
+    {
+      "name": "Lixin University of Finance and Accounting, Pudong New Campus Master Plan",
+      "number": "",
+      "client": "1730",
+      "role": "Shanghai Baitong Project Management Consulting co., Ltd.",
+      "url": "https://ei.ennead.com/project/4E502D5D-B536-4D71-9162-8196605365D9/lixin-university-of-finance-and-accounting-pudong-new-campus-master-plan"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "",
+      "client": "1735",
+      "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    },
+    {
+      "name": "Lingang Science and Technology City (S&T)",
+      "number": "",
+      "client": "1520",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t"
+    },
+    {
+      "name": "Fudan University, Handan Campus, China Economy & Cultural Research Center",
+      "number": "",
+      "client": "1646",
+      "role": "Oceanwide",
+      "url": "https://ei.ennead.com/project/3BF8EB37-CCD5-43A3-9A61-4CC3DBD2393B/fudan-university-handan-campus-china-economy-cultural-research-center"
+    },
+    {
+      "name": "Hero South Plot",
+      "number": "",
+      "client": "1712",
+      "role": "Shanghai Rongyin Properties Co., Ltd.",
+      "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot"
+    },
+    {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "number": "",
+      "client": "1841",
+      "role": "Huawei Technologies Co., Ltd.",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition"
+    },
+    {
+      "name": "Husu Dafeng Industrial Park",
+      "number": "",
+      "client": "1739",
+      "role": "Husu Dafeng Industrial Park Service Center Development Company",
+      "url": "https://ei.ennead.com/project/443B00F1-7DFB-4506-AFBB-DA09A4D98467/husu-dafeng-industrial-park"
+    },
+    {
+      "name": "Pujiang Phase II",
+      "number": "",
+      "client": "1817",
+      "role": "Shanghai Lingang Pujiang International Science and Technology City Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii"
+    },
+    {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "number": "",
+      "client": "1725",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1"
+    },
+    {
+      "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
+      "number": "",
+      "client": "1416",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city"
+    },
+    {
+      "name": "Taopu Sci-Tech Smart City Phase I (Taopu 605)",
+      "number": "",
+      "client": "1433",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/7C36DE44-B5F0-4051-B171-22A9BC33509B/taopu-sci-tech-smart-city-phase-i-taopu-605"
+    },
+    {
+      "name": "Taopu Smart City Plot 615/616",
+      "number": "",
+      "client": "1749",
+      "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "url": "https://ei.ennead.com/project/208EEB2F-05ED-407C-9CC8-67F5937024D1/taopu-smart-city-plot-615-616"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "Taopu North",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    },
+    {
+      "name": "Tianjin Academy of Fine Arts Competition (TAFA)",
+      "number": "",
+      "client": "1516",
+      "role": "Tianjin",
+      "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa"
+    },
+    {
+      "name": "Xiamen Music Center",
+      "number": "",
+      "client": "1535",
+      "role": "Xiamen",
+      "url": "https://ei.ennead.com/project/8EDD5884-6E70-4E69-9912-7175E7B7715B/xiamen-music-center"
+    },
+    {
+      "name": "Yangtze River Estuary Chinese Sturgeon Nature Preserve",
+      "number": "",
+      "client": "1818",
+      "role": "Shanghai Yangtze Estuary Chinese Sturgeon Nature Reserve Admin. Off.",
+      "url": "https://ei.ennead.com/project/D49DA45D-F81A-491F-B1BB-2BB83F9C773A/yangtze-river-estuary-chinese-sturgeon-nature-preserve"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=gchen@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T13:28:33.918810",
+  "profile_id": "grace-chen"
+}

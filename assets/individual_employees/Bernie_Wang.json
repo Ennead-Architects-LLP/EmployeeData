@@ -1,0 +1,76 @@
+{
+  "real_name": "Bernie Wang",
+  "email": "bernieyujiao.wang@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "California",
+  "profile_url": "https://ei.ennead.com/employee/0FBB5946-A250-4A52-9D5D-142F59A6D398/bernie-wang",
+  "image_url": "https://ei.ennead.com/api/image/59df943d-f900-4a75-9ca1-f4318e0a3369/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Bernie Wang_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 5,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "number": "2227",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
+    },
+    {
+      "name": "Alibaba Cainiao Phase II",
+      "number": "2127",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "2135",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "2103",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "2025",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "1735",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    },
+    {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "number": "1841",
+      "client": "",
+      "role": "",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=bwang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T13:21:22.703978",
+  "profile_id": "bernie-wang"
+}

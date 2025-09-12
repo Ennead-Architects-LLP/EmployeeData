@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5944",
   "mobile": "(212) 792-5944",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/D51B5411-C747-44E1-B177-78D083760D08/francelle-lim",
   "image_url": "https://ei.ennead.com/api/image/87dfd4df-9fb4-4bde-8bb1-7734d32ff50e/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Francelle Lim_profile.jpg",
@@ -267,6 +267,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=flim@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:14:40.673035",
+  "scraped_at": "2025-09-12T13:27:47.846704",
   "profile_id": "francelle-lim"
 }

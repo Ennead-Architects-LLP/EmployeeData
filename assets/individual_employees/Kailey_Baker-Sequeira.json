@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(646) 437-1763",
   "mobile": "(646) 437-1763",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/3F3D98E5-17BD-4D69-B46D-A9B61049FC1D/kailey-baker-sequeira",
   "image_url": "https://ei.ennead.com/api/image/ec41c097-2523-46e8-8914-130935f3b6b8/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kailey Baker-Sequeira_profile.jpg",
@@ -119,6 +119,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kbaker@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:19:33.015190",
+  "scraped_at": "2025-09-12T13:32:38.085201",
   "profile_id": "kailey-baker-sequeira"
 }

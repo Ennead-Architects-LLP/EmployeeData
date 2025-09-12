@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "646-437-1726",
   "mobile": "646-437-1726",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/47832C14-0186-4B81-A95C-CC7DF9DDD1FB/ingrid-evenson",
   "image_url": "https://ei.ennead.com/api/image/bae4208c-1f64-4352-8de2-1214b858f3b1/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Ingrid Evenson_profile.jpg",
@@ -70,6 +70,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ingrid.evenson@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:16:34.900710",
+  "scraped_at": "2025-09-12T13:29:32.072946",
   "profile_id": "ingrid-evenson"
 }

@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212- 807-7171",
   "mobile": "212- 807-7171",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/7AB19767-2636-495D-9325-4A76A179DA9E/joseph-fleischer",
   "image_url": null,
   "image_local_path": null,
@@ -301,6 +301,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jfleischer@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:18:53.144369",
+  "scraped_at": "2025-09-12T13:32:03.622479",
   "profile_id": "joseph-fleischer"
 }

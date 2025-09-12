@@ -173,7 +173,7 @@ async def run_without_timeout(orchestrator: Orchestrator, config: ScraperConfig)
 
 async def main():
     """Main function to run the employee scraper."""
-    parser = argparse.ArgumentParser(description="Scrape employee data from Ennead website (Parallel processing by default)")
+    parser = argparse.ArgumentParser(description="Scrape employee data from Ennead website (Sequential processing by default)")
     parser.add_argument("--headless", type=str, default="true", 
                        help="Run browser in headless mode (true/false)")
     parser.add_argument("--no-images", action="store_true", 
@@ -200,10 +200,10 @@ async def main():
                        help="Show detailed help for debug mode options")
     parser.add_argument("--cleanup-debug", type=int, nargs='?', const=30, metavar='MAX_FILES',
                        help="Clean up debug files keeping max files per folder (default: 30)")
-    parser.add_argument("--parallel", action="store_true", default=True,
-                       help="Use parallel processing with multiple browser contexts (faster but uses more resources) - DEFAULT")
-    parser.add_argument("--sequential", action="store_true",
-                       help="Use sequential processing instead of parallel")
+    parser.add_argument("--parallel", action="store_true",
+                       help="Use parallel processing with multiple browser contexts (faster but uses more resources)")
+    parser.add_argument("--sequential", action="store_true", default=True,
+                       help="Use sequential processing (DEFAULT) - more reliable but slower")
     parser.add_argument("--max-workers", type=int, default=3,
                        help="Maximum number of parallel workers (default: 3)")
     
@@ -286,8 +286,8 @@ async def main():
         print("="*50)
     
     try:
-        # Determine processing mode: parallel is default unless --sequential is specified
-        use_parallel = not args.sequential
+        # Determine processing mode: sequential is default unless --parallel is specified
+        use_parallel = args.parallel
         
         # Delegate to orchestrator without timeout protection
         orchestrator = Orchestrator(config, use_parallel=use_parallel, max_workers=args.max_workers)

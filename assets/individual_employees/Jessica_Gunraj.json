@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5904",
   "mobile": "212-792-5904",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/A1A6C742-745F-4838-8569-F9E1D8760F65/jessica-gunraj",
   "image_url": "https://ei.ennead.com/api/image/aa9d9bee-7b9f-4ab9-a89c-2999af5f4a88/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Jessica Gunraj_profile.jpg",
@@ -65,6 +65,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jgunraj@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:18:05.719841",
+  "scraped_at": "2025-09-12T13:31:12.309864",
   "profile_id": "jessica-gunraj"
 }

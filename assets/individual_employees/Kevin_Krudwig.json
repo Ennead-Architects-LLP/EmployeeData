@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5945",
   "mobile": "(212) 792-5945",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/FDBB7DC3-F171-42C1-8F68-9BEB3075B618/kevin-krudwig",
   "image_url": "https://ei.ennead.com/api/image/1846fb8b-4d9f-464f-ac2d-879068d84820/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kevin Krudwig_profile.jpg",
@@ -106,6 +106,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkrudwig@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:20:51.361361",
+  "scraped_at": "2025-09-12T13:33:44.469246",
   "profile_id": "kevin-krudwig"
 }

@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5913",
   "mobile": "(212) 792-5913",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/BD7BBAB2-C1D9-415F-B578-6AEACCB12967/marissa-sweig",
   "image_url": "https://ei.ennead.com/api/image/ac7fd1d3-da5a-49ef-b5ec-95d26f7c5e10/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Marissa Sweig_profile.jpg",
@@ -232,6 +232,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=msweig@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:24:47.693730",
+  "scraped_at": "2025-09-12T13:37:56.601289",
   "profile_id": "marissa-sweig"
 }

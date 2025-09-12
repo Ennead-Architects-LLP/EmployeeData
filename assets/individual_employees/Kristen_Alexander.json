@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5887",
   "mobile": "(212) 792-5887",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/45737279-4EDA-40F3-9415-545EBA58AC39/kristen-alexander",
   "image_url": "https://ei.ennead.com/api/image/b16fbe82-0a08-421c-9ed1-0f26dacf1ebc/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kristen Alexander_profile.jpg",
@@ -114,6 +114,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kalexander@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:21:56.358229",
+  "scraped_at": "2025-09-12T13:34:33.306959",
   "profile_id": "kristen-alexander"
 }

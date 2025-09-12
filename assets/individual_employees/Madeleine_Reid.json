@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "646-437-1762",
   "mobile": "646-437-1762",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/C50C2E11-24D1-453E-806A-B6922DF1FC42/madeleine-reid",
   "image_url": "https://ei.ennead.com/api/image/5eb213ae-8620-4ae7-afe8-bcf4ddcb99b1/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Madeleine Reid_profile.jpg",
@@ -49,6 +49,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Madeleine.Reid@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:24:21.676589",
+  "scraped_at": "2025-09-12T13:37:30.529323",
   "profile_id": "madeleine-reid"
 }

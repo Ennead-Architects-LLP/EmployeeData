@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5938",
   "mobile": "(212) 792-5938",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/5D528721-568B-47C1-8036-24B56D0F6FB6/kevin-mcclurkan",
   "image_url": "https://ei.ennead.com/api/image/b1cea48c-4c99-4b12-87fd-be465ac83e6a/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kevin McClurkan_profile.jpg",
@@ -332,6 +332,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmcclurkan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:20:58.940222",
+  "scraped_at": "2025-09-12T13:33:51.707250",
   "profile_id": "kevin-mcclurkan"
 }

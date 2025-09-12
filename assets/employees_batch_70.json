@@ -1,0 +1,700 @@
+[
+  {
+    "real_name": "Jasmine Ho",
+    "email": "Jasmine.Ho@ennead.com",
+    "bio": null,
+    "phone": "(213) 855-3993",
+    "mobile": "(213) 855-3993",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/19B74845-956B-4B2E-B47E-2CD494008890/jasmine-ho",
+    "image_url": "https://ei.ennead.com/api/image/55b20c1b-bfe7-429f-aab1-40e61393d6d4/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Jasmine Ho_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 0,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "University of Southern California",
+        "degree": "Graduate",
+        "specialty": "Bachelor of Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "Mayo Clinic Executive Health Gonda",
+        "number": "2338",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda"
+      },
+      {
+        "name": "NYULH Brooklyn Ambulatory Hub Building",
+        "number": "2224",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Jasmine.Ho@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:30:31.466353",
+    "profile_id": "jasmine-ho"
+  },
+  {
+    "real_name": "Jason Ojeda",
+    "email": "Jason.Ojeda@ennead.com",
+    "bio": null,
+    "phone": "646-437-1732",
+    "mobile": "646-437-1732",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/32E83119-67D7-48A3-8FA2-B10D85680A32/jason-ojeda",
+    "image_url": null,
+    "image_local_path": null,
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 0,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Catholic University of America",
+        "degree": "Graduate",
+        "specialty": "Concentration in History of Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Jason.Ojeda@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:30:39.175957",
+    "profile_id": "jason-ojeda"
+  },
+  {
+    "real_name": "Jay Chang",
+    "email": "jungin.chang@ennead.com",
+    "bio": null,
+    "phone": "2127925981",
+    "mobile": "2127925981",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/C26C5364-CCCA-4E09-B865-551987410F00/jay-chang",
+    "image_url": "https://ei.ennead.com/api/image/0d5a2c8c-3efc-447a-8b69-53a349f4c60d/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Jay Chang_profile.jpg",
+    "position": "Associate",
+    "department": null,
+    "years_with_firm": 2,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "GBCI",
+      "LEED GA",
+      "National Organization of Minority Architects"
+    ],
+    "education": [
+      {
+        "institution": "Pratt Institute",
+        "degree": "Graduate",
+        "specialty": "School of Design"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "Roundabout Theatre Master Plan & Concept",
+        "number": "2330",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept"
+      },
+      {
+        "name": "NYULH Brooklyn Ambulatory Hub Building",
+        "number": "2224",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      },
+      {
+        "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+        "number": "2128",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+      },
+      {
+        "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+        "number": "1836",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jungin.chang@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:30:45.504534",
+    "profile_id": "jay-chang"
+  },
+  {
+    "real_name": "Jenn Sandoval",
+    "email": "jenn.sandoval@ennead.com",
+    "bio": null,
+    "phone": "(646) 437-1788",
+    "mobile": "(646) 437-1788",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/77FF1409-1FBD-4128-9BC2-597713BD6D21/jenn-sandoval",
+    "image_url": "https://ei.ennead.com/api/image/bd81a5e3-bee9-4fd3-8912-ec340c8ca0e6/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Jenn Sandoval_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 5,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "FIU Florida International University",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      },
+      {
+        "institution": "FIU Florida International University",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      },
+      {
+        "institution": "Palermo University",
+        "degree": "Exchange Student",
+        "specialty": "Sustainable Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "Inova Central Region Emergency Department Expansion",
+        "number": "",
+        "client": "2223",
+        "role": "Ballinger",
+        "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+      },
+      {
+        "name": "Bilibili Shanghai Headquarters",
+        "number": "",
+        "client": "2135",
+        "role": "Bilibili Co.,Ltd.",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+      },
+      {
+        "name": "Inova (Franconia) Springfield Hospital",
+        "number": "",
+        "client": "2125",
+        "role": "Ballinger",
+        "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+      },
+      {
+        "name": "Inova Alexandria Hospital at Landmark",
+        "number": "",
+        "client": "2124",
+        "role": "Ballinger",
+        "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+      },
+      {
+        "name": "Shenzhen Xiaomi Headquarters",
+        "number": "",
+        "client": "2016",
+        "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+        "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
+      },
+      {
+        "name": "Divco West Cambridge Crossing: Parcel U",
+        "number": "",
+        "client": "1933",
+        "role": "Jacobs",
+        "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
+      },
+      {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+        "number": "",
+        "client": "1940",
+        "role": "Lingang Group",
+        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+      },
+      {
+        "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+        "number": "",
+        "client": "2001",
+        "role": "University of California, Santa Cruz",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+      },
+      {
+        "name": "East Harlem Tutorial Program, Scholars Academy High School",
+        "number": "",
+        "client": "1846",
+        "role": "East Harlem Tutorial Program",
+        "url": "https://ei.ennead.com/project/839505BB-B85E-4091-AC91-15B9207F2398/east-harlem-tutorial-program-scholars-academy-high-school"
+      },
+      {
+        "name": "Taopu Sci-Tech City Plot 606",
+        "number": "",
+        "client": "1735",
+        "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+      },
+      {
+        "name": "Jefferson Health, Honickman Center",
+        "number": "",
+        "client": "1835",
+        "role": "National Real Estate Development",
+        "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jsandoval@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:30:53.157654",
+    "profile_id": "jenn-sandoval"
+  },
+  {
+    "real_name": "Jessica Gunraj",
+    "email": "jessica.gunraj@ennead.com",
+    "bio": null,
+    "phone": "212-792-5904",
+    "mobile": "212-792-5904",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/A1A6C742-745F-4838-8569-F9E1D8760F65/jessica-gunraj",
+    "image_url": "https://ei.ennead.com/api/image/aa9d9bee-7b9f-4ab9-a89c-2999af5f4a88/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Jessica Gunraj_profile.jpg",
+    "position": "Associate",
+    "department": null,
+    "years_with_firm": 5,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "University of Oregon",
+        "degree": "Graduate",
+        "specialty": "M.Arch"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "NYULH Brooklyn Ambulatory Hub Building",
+        "number": "2224",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      },
+      {
+        "name": "ByteDance Houhai Center Project",
+        "number": "2018",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+      },
+      {
+        "name": "Shenzhen Xiaomi Headquarters",
+        "number": "2016",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
+      },
+      {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+        "number": "1940",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jgunraj@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:31:12.309864",
+    "profile_id": "jessica-gunraj"
+  },
+  {
+    "real_name": "Ji Hyeon Park",
+    "email": "JiHyeon.Park@ennead.com",
+    "bio": null,
+    "phone": "646-437-1711",
+    "mobile": "646-437-1711",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/8846087C-D9A7-45C8-9E69-7F607F76EC20/ji-hyeon-park",
+    "image_url": "https://ei.ennead.com/api/image/30999718-8597-454f-a7b9-a9f939c186a2/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Ji Hyeon Park_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 4,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "LEED AP BD+C",
+      "Fitwel Ambassador",
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Graduate",
+        "specialty": "M.S. in Advanced  Architectural Design"
+      },
+      {
+        "institution": "Pratt Institute",
+        "degree": "Undergraduate",
+        "specialty": "B.Arch"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "number": "2151",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      },
+      {
+        "name": "Inova (Franconia) Springfield Hospital",
+        "number": "2125",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+      },
+      {
+        "name": "Inova Alexandria Hospital at Landmark",
+        "number": "2124",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=JiHyeon.Park@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:31:20.379812",
+    "profile_id": "ji-hyeon-park"
+  },
+  {
+    "real_name": "Jlees Ahmed",
+    "email": "Jlees.Ahmed@ennead.com",
+    "bio": null,
+    "phone": "(212)792-5879",
+    "mobile": "(212)792-5879",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/69602942-684D-4B09-B7FA-950CE3347DDE/jlees-ahmed",
+    "image_url": "https://ei.ennead.com/api/image/96150d7d-7942-44d8-ab42-0a0f7de18572/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Jlees Ahmed_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 0,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Illinois Institute of Technology",
+        "degree": "Undergraduate",
+        "specialty": "Bachelor of Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Jlees.Ahmed@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:31:26.995006",
+    "profile_id": "jlees-ahmed"
+  },
+  {
+    "real_name": "Joanna Lisiak",
+    "email": "joanna.lisiak@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5886",
+    "mobile": "(212) 792-5886",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/F415157F-5DB7-47B8-9C48-9AB6E8101831/joanna-lisiak",
+    "image_url": "https://ei.ennead.com/api/image/5155993e-702b-4b90-a72e-9b873a9464e4/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Joanna Lisiak_profile.jpg",
+    "position": "Director",
+    "department": null,
+    "years_with_firm": 9,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "NYU",
+        "degree": "Undergraduate",
+        "specialty": "Business Finance"
+      },
+      {
+        "institution": "South New Hampshire University",
+        "degree": "Undergraduate",
+        "specialty": "Business Finance"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Notary Public",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jlisiak@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:31:32.269826",
+    "profile_id": "joanna-lisiak"
+  },
+  {
+    "real_name": "John Huang",
+    "email": "zhengjohn.huang@ennead.com",
+    "bio": null,
+    "phone": null,
+    "mobile": null,
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/D819A3E8-A452-4932-BBAD-FA2B5E7D0922/john-huang",
+    "image_url": "https://ei.ennead.com/api/image/2d448b57-28eb-40a3-9eb1-d4a4104b4bbc/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/John Huang_profile.jpg",
+    "position": "Senior Associate",
+    "department": null,
+    "years_with_firm": 5,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "Huzhou Vocational and Technical Campus Master Plan",
+        "number": "2227",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
+      },
+      {
+        "name": "Bilibili Shanghai Headquarters",
+        "number": "2135",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+      },
+      {
+        "name": "Nanda Plot 111-01",
+        "number": "2103",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+      },
+      {
+        "name": "Lingang Fengxian Soccer Training Center",
+        "number": "2005",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center"
+      },
+      {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+        "number": "1940",
+        "client": "",
+        "role": "",
+        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=zjhuang@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:31:41.532692",
+    "profile_id": "john-huang"
+  },
+  {
+    "real_name": "John Jordan",
+    "email": "john.jordan@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5908",
+    "mobile": "(212) 792-5908",
+    "office_location": "California",
+    "profile_url": "https://ei.ennead.com/employee/7C5D3389-A947-4933-8D32-A1BD5C952C1E/john-jordan",
+    "image_url": "https://ei.ennead.com/api/image/5b86fdbe-1c7c-48c1-8843-682889a89467/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/John Jordan_profile.jpg",
+    "position": "Senior Associate",
+    "department": null,
+    "years_with_firm": 29,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "GBCI",
+      "LEED AP",
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "Tulane University",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "American Museum of Natural History, Hall of Ocean Life",
+        "number": "",
+        "client": "9926",
+        "role": "American Museum of Natural History",
+        "url": "https://ei.ennead.com/project/CF386AFD-6743-445A-92B6-CC5B8DA615D2/american-museum-of-natural-history-hall-of-ocean-life"
+      },
+      {
+        "name": "Johns Hopkins University Bloomberg Center",
+        "number": "",
+        "client": "1845",
+        "role": "SmithGroup",
+        "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
+      },
+      {
+        "name": "Shenhzen International Performance Center",
+        "number": "",
+        "client": "2025",
+        "role": "Shenhzen Int. Performance Center",
+        "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+      },
+      {
+        "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+        "number": "",
+        "client": "2001",
+        "role": "University of California, Santa Cruz",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+      },
+      {
+        "name": "American Museum of Natural History, Rose Center for Earth and Space",
+        "number": "",
+        "client": "9501",
+        "role": "American Museum of Natural History",
+        "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space"
+      },
+      {
+        "name": "American Museum of Natural History, Samuel J. & Ethel LeFrak IMAX Theater",
+        "number": "",
+        "client": "0034",
+        "role": "American Museum of Natural History",
+        "url": "https://ei.ennead.com/project/687709A7-4B03-469E-9552-FEBA5162CF1D/american-museum-of-natural-history-samuel-j-ethel-lefrak-imax-theater"
+      },
+      {
+        "name": "Cathedral of St. John the Divine, Crypt Arts Center and North Transept Renovation",
+        "number": "",
+        "client": "0721",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/5B2D696B-833B-453D-89BB-8587949D39D3/cathedral-of-st-john-the-divine-crypt-arts-center-and-north-transept-renovation"
+      },
+      {
+        "name": "Natural History Museum of Utah",
+        "number": "",
+        "client": "0423",
+        "role": "GSBS Architects",
+        "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah"
+      },
+      {
+        "name": "New York Hall of Science Great Hall Upgrades and Terrace Improvements",
+        "number": "",
+        "client": "0810",
+        "role": "New York Hall of Science",
+        "url": "https://ei.ennead.com/project/7DD086B3-436C-4215-AC53-BC344E2D3BD6/new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements"
+      },
+      {
+        "name": "Newseum / Freedom Forum Foundation World Headquarters",
+        "number": "",
+        "client": "0025",
+        "role": "The Freedom Forum",
+        "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters"
+      },
+      {
+        "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
+        "number": "",
+        "client": "1004",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building"
+      },
+      {
+        "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+        "number": "",
+        "client": "1013",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion"
+      },
+      {
+        "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
+        "number": "",
+        "client": "1228",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update"
+      },
+      {
+        "name": "NYU Langone Health, Science Building",
+        "number": "",
+        "client": "1101",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+      },
+      {
+        "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+        "number": "",
+        "client": "1836",
+        "role": "Princeton University",
+        "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      },
+      {
+        "name": "Public Theater Annex - 440 Lafayette",
+        "number": "",
+        "client": "1706",
+        "role": "The Public Theater",
+        "url": "https://ei.ennead.com/project/236880BF-3BC5-49C1-8CA0-44EE7D268CC2/public-theater-annex-440-lafayette"
+      },
+      {
+        "name": "Weill Cornell Medicine, Belfer Research Building",
+        "number": "",
+        "client": "0705",
+        "role": "Weill Cornell Medicine",
+        "url": "https://ei.ennead.com/project/DB19CFB5-F090-48CF-B1A5-F41E0C470039/weill-cornell-medicine-belfer-research-building"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jjordan@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T13:31:47.813634",
+    "profile_id": "john-jordan"
+  }
+]

@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5895",
   "mobile": "212-792-5895",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/DFC1F864-A592-4D80-AD8C-DDD653523917/melissa-hendrix",
   "image_url": "https://ei.ennead.com/api/image/3744b9b3-f012-413e-8722-a4701ec25e66/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Melissa Hendrix_profile.jpg",
@@ -48,6 +48,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=melissa.hendrix@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:26:36.657245",
+  "scraped_at": "2025-09-12T13:39:53.361275",
   "profile_id": "melissa-hendrix"
 }

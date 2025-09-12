@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "2127925936",
   "mobile": "2127925936",
-  "office_location": "",
+  "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/1AA7790D-F9E5-4D03-8D1E-1898554338F6/laura-rodriguez",
   "image_url": "https://ei.ennead.com/api/image/e038898b-1fd0-44ba-a911-531351566e96/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Laura Rodriguez_profile.jpg",
@@ -70,6 +70,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=laura.rodriguez@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T12:23:31.825349",
+  "scraped_at": "2025-09-12T13:35:55.585735",
   "profile_id": "laura-rodriguez"
 }

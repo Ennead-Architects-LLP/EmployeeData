@@ -1,0 +1,136 @@
+{
+  "real_name": "Di Chang",
+  "email": "di.chang@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "California",
+  "profile_url": "https://ei.ennead.com/employee/B24FAF66-2A57-48C7-9D37-CBDB3733BA9F/di-chang",
+  "image_url": "https://ei.ennead.com/api/image/5656798e-5474-4156-aebf-95ffc2b95d66/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Di Chang_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 7,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Dalian University of Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "UCLA",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "number": "",
+      "client": "2401",
+      "role": "Shenzhen Hong Kong Science and Technology Innovation Cooperation Zone Development Co., Ltd",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i"
+    },
+    {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "number": "",
+      "client": "2227",
+      "role": "Huzhou Professional School",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "",
+      "client": "2103",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "",
+      "client": "2025",
+      "role": "Shenhzen Int. Performance Center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "",
+      "client": "1940",
+      "role": "Lingang Group",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "Bao Steel Wusong Pilot District",
+      "number": "",
+      "client": "1919",
+      "role": "Lingang BaoWu Group",
+      "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district"
+    },
+    {
+      "name": "Lingang Kangqiao Phase III",
+      "number": "",
+      "client": "1906",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/DA87A9E3-0110-4374-B3DC-9460BAAF96A2/lingang-kangqiao-phase-iii"
+    },
+    {
+      "name": "Shenzhen Science and Technology Museum (S&T)",
+      "number": "",
+      "client": "1923",
+      "role": "Shenzhen Toutiao Technology Co., Ltd.",
+      "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t"
+    },
+    {
+      "name": "Jiaotong University School of Medicine",
+      "number": "",
+      "client": "1849",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/A0C7E268-84CF-4256-8255-209394AC6E9E/jiaotong-university-school-of-medicine"
+    },
+    {
+      "name": "Hero South Plot",
+      "number": "",
+      "client": "1712",
+      "role": "Shanghai Rongyin Properties Co., Ltd.",
+      "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot"
+    },
+    {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "number": "",
+      "client": "1841",
+      "role": "Huawei Technologies Co., Ltd.",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition"
+    },
+    {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "number": "",
+      "client": "1725",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "Taopu North",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    },
+    {
+      "name": "Yangtze River Estuary Chinese Sturgeon Nature Preserve",
+      "number": "",
+      "client": "1818",
+      "role": "Shanghai Yangtze Estuary Chinese Sturgeon Nature Reserve Admin. Off.",
+      "url": "https://ei.ennead.com/project/D49DA45D-F81A-491F-B1BB-2BB83F9C773A/yangtze-river-estuary-chinese-sturgeon-nature-preserve"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dchang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T13:24:59.774332",
+  "profile_id": "di-chang"
+}

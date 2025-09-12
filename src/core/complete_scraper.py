@@ -61,11 +61,11 @@ class CompleteScraper:
         """
         self.logger.info("Finding employee profile links...")
         
-        # First, try to extract office location data from the filter dropdown
-        office_location_mapping = await self._extract_office_location_filter_data(page)
-        
-        # Scroll down to load all employees (in case of lazy loading)
+        # Scroll down to load all employees first (in case of lazy loading)
         await self._scroll_to_load_all_employees(page)
+        
+        # Then extract office location data using systematic method
+        office_location_mapping = await self._extract_office_location_data_systematic(page)
         
         # Get all links on the page after scrolling
         all_links = await page.query_selector_all('a')
@@ -501,6 +501,143 @@ class CompleteScraper:
             
         except Exception as e:
             self.logger.error(f"Error extracting office location filter data: {e}")
+            return {}
+
+    async def _extract_office_location_data_systematic(self, page) -> Dict[str, str]:
+        """
+        Extract office location data using systematic sequential clicking method.
+        First gets all employee URLs, then clicks each office location to discover additional employees.
+        Returns a mapping of employee URL to office location.
+        """
+        self.logger.info("Extracting office location data using systematic sequential method...")
+        
+        try:
+            # Step 1: Get all employee URLs from the landing page (no filters)
+            self.logger.info("Step 1: Getting all employee URLs from landing page...")
+            all_employee_links = await self._get_visible_employee_links(page)
+            self.logger.info(f"Found {len(all_employee_links)} total employee links on landing page")
+            
+            # Step 2: Find the office location filter element
+            office_filter_selectors = [
+                'div[data-key="text_default_1"]',  # Office location filter
+                'button:has-text("Office")',
+                'div[class*="filter"]:has-text("Office")',
+                'div[class*="dropdown"]:has-text("Office")'
+            ]
+            
+            office_filter_element = None
+            for selector in office_filter_selectors:
+                try:
+                    element = await page.query_selector(selector)
+                    if element and await element.is_visible():
+                        office_filter_element = element
+                        self.logger.info(f"Found office location filter with selector: {selector}")
+                        break
+                except:
+                    continue
+            
+            if not office_filter_element:
+                self.logger.warning("Office location filter not found - cannot extract office location data")
+                return {}
+            
+            # Step 3: Click to open the filter dropdown
+            await office_filter_element.click()
+            await asyncio.sleep(2)
+            
+            # Step 4: Find location checkboxes
+            checkbox_selectors = [
+                'input[type="checkbox"]',
+                'div[role="checkbox"]',
+                'span[role="checkbox"]',
+                'div[class*="checkbox"] input',
+                'label input[type="checkbox"]'
+            ]
+            
+            location_checkboxes = []
+            for selector in checkbox_selectors:
+                try:
+                    checkboxes = await page.query_selector_all(selector)
+                    if checkboxes:
+                        for checkbox in checkboxes:
+                            try:
+                                parent_text = await checkbox.evaluate('el => el.closest("div").textContent')
+                                if any(location in parent_text for location in ["New York", "Shanghai", "California", "Office"]):
+                                    location_checkboxes.append(checkbox)
+                            except:
+                                continue
+                        if location_checkboxes:
+                            break
+                except:
+                    continue
+            
+            if not location_checkboxes:
+                self.logger.warning("No location checkboxes found")
+                return {}
+            
+            # Step 5: Systematic sequential clicking to discover office assignments
+            employee_location_mapping = {}
+            location_names = ["New York", "Shanghai", "California"]
+            previous_employees = set()
+            
+            for i, location_name in enumerate(location_names):
+                try:
+                    if i < len(location_checkboxes):
+                        checkbox = location_checkboxes[i]
+                        self.logger.info(f"Step {i+2}: Clicking {location_name} checkbox...")
+                        
+                        # Click the checkbox
+                        await checkbox.click()
+                        await asyncio.sleep(2)
+                        
+                        # Click Apply button if it exists
+                        apply_button = await page.query_selector('button:has-text("Apply")')
+                        if apply_button:
+                            await apply_button.click()
+                            await asyncio.sleep(3)  # Wait for filter to apply
+                        
+                        # Get current visible employees
+                        current_employee_links = await self._get_visible_employee_links(page)
+                        self.logger.info(f"Found {len(current_employee_links)} employees after clicking {location_name}")
+                        
+                        # Find new employees (difference from previous)
+                        current_employees = set(current_employee_links)
+                        new_employees = current_employees - previous_employees
+                        
+                        self.logger.info(f"New employees discovered for {location_name}: {len(new_employees)}")
+                        
+                        # Map new employees to this location
+                        for employee_url in new_employees:
+                            employee_location_mapping[employee_url] = location_name
+                        
+                        # Update previous employees for next iteration
+                        previous_employees = current_employees
+                        
+                        # DEBUG: Capture DOM after clicking location checkbox
+                        if self.config.DEBUG_MODE:
+                            await self._capture_dom_for_debug(page, f"office_location_{location_name.replace(' ', '_').lower()}", f"After clicking {location_name} - {len(new_employees)} new employees")
+                        
+                    else:
+                        self.logger.warning(f"Not enough checkboxes found for location {location_name}")
+                    
+                except Exception as e:
+                    self.logger.error(f"Error processing location {location_name}: {e}")
+                    continue
+            
+            # Step 6: Close the dropdown
+            await page.click('body')
+            await asyncio.sleep(0.5)
+            
+            # Step 7: Save office location mapping to JSON file
+            office_mapping_file = self.config.get_output_path().parent / "office_location_mapping.json"
+            with open(office_mapping_file, 'w') as f:
+                json.dump(employee_location_mapping, f, indent=2)
+            self.logger.info(f"Saved office location mapping to {office_mapping_file}")
+            
+            self.logger.info(f"Successfully mapped {len(employee_location_mapping)} employees to office locations")
+            return employee_location_mapping
+            
+        except Exception as e:
+            self.logger.error(f"Error extracting office location data: {e}")
             return {}
     
     async def _extract_office_locations_from_employee_cards(self, page) -> Dict[str, str]:
@@ -1299,14 +1436,23 @@ class CompleteScraper:
             client = ''
             role = ''
             
-            for text in texts:
-                if len(text) > 10 and not text.isdigit():
+            # For side panel: order is project name, client name, project num
+            for i, text in enumerate(texts):
+                if i == 0 and not project_name:
+                    # First item is always project name
                     project_name = text
-                elif text.isdigit() or len(text) <= 10:
-                    if not project_number:
-                        project_number = text
-                    elif not client:
+                elif i == 1 and not client:
+                    # Second item is client name (even if it looks like a number)
+                    client = text
+                elif i == 2 and not project_number:
+                    # Third item is project number
+                    project_number = text
+                else:
+                    # Handle any remaining items
+                    if not client:
                         client = text
+                    elif not project_number:
+                        project_number = text
                     elif not role:
                         role = text
             
@@ -2114,7 +2260,7 @@ class CompleteScraper:
                     issues.append("Missing position")
                 if not employee.phone:
                     issues.append("Missing phone")
-                if not employee.profile_image_path:
+                if not employee.image_local_path:
                     issues.append("Missing profile image")
                 
                 if issues:
