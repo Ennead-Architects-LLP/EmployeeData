@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Computer Information Collector
+Computer Information Collector - Embedded Token Version
 Generates a JSON file with comprehensive computer information
-Based on the GPU by User.xlsx header structure
+Embedded with GitHub token for easy distribution to non-technical users
 """
 
 import json
@@ -15,11 +15,21 @@ import requests
 import argparse
 from datetime import datetime
 
+token_file = "token.json"
+with open(token_file, 'r') as f:
+    token_data = json.load(f)
+    EMBEDDED_GITHUB_TOKEN = token_data['token']
+
+# EMBEDDED CONFIGURATION - Replace with your actual values
+EMBEDDED_REPO_OWNER = "Ennead-Architects-LLP"
+EMBEDDED_REPO_NAME = "EmployeeData"
+EMBEDDED_WEBSITE_URL = "https://ennead-architects-llp.github.io/EmployeeData"
+
 class ComputerInfoCollector:
     def __init__(self, website_url=None):
         self.data = {}
         self.wmi_conn = None
-        self.website_url = website_url or "https://szhang.github.io/EmployeeData"
+        self.website_url = website_url or EMBEDDED_WEBSITE_URL
         
     def collect_all_info(self):
         """Collect essential computer information matching Excel headers"""
@@ -210,14 +220,10 @@ class ComputerInfoCollector:
             print(f"Error saving to JSON: {e}")
             return False
     
-    def send_to_github_repo(self, github_token, repo_owner="szhang", repo_name="EmployeeData"):
-        """Send data to GitHub repository via repository dispatch API"""
+    def send_to_github_repo(self):
+        """Send data to GitHub repository via repository dispatch API using embedded token"""
         try:
-            if not github_token:
-                print("GitHub token required for repository dispatch")
-                return False
-                
-            url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/dispatches"
+            url = f"https://api.github.com/repos/{EMBEDDED_REPO_OWNER}/{EMBEDDED_REPO_NAME}/dispatches"
             
             # Prepare data for transmission
             payload = {
@@ -230,243 +236,81 @@ class ComputerInfoCollector:
             }
             
             headers = {
-                "Authorization": f"token {github_token}",
+                "Authorization": f"token {EMBEDDED_GITHUB_TOKEN}",
                 "Accept": "application/vnd.github.v3+json",
                 "User-Agent": "AboutMe-ComputerInfo/1.0"
             }
             
-            print(f"Sending data to GitHub repository {repo_owner}/{repo_name}...")
+            print(f"Sending computer information to GitHub...")
             print(f"   Computer: {self.data.get('Computername', 'Unknown')}")
             print(f"   User: {self.data.get('Name', 'Unknown')} ({self.data.get('Username', 'Unknown')})")
             
             response = requests.post(url, json=payload, headers=headers, timeout=30)
             
             if response.status_code == 204:  # 204 No Content is success for repository dispatch
-                print("Data successfully sent to GitHub repository!")
-                print("   The data will be processed by GitHub Actions and appear on the website shortly.")
-                print(f"   View workflow: https://github.com/{repo_owner}/{repo_name}/actions")
+                print("✅ Computer information sent successfully!")
+                print("   Your data will be processed and appear on the website shortly.")
                 return True
             else:
-                print(f"Failed to send data. Status code: {response.status_code}")
+                print(f"❌ Failed to send data. Status code: {response.status_code}")
                 print(f"Response: {response.text}")
                 return False
                 
         except requests.exceptions.RequestException as e:
-            print(f"Network error sending data: {e}")
+            print(f"❌ Network error: {e}")
             return False
         except Exception as e:
-            print(f"Error sending data: {e}")
+            print(f"❌ Error sending data: {e}")
             return False
-    
-    def send_to_direct_server(self, server_url="http://localhost:5000"):
-        """Send data directly to a running server (for testing)"""
-        try:
-            url = f"{server_url}/api/computer-data"
-            
-            payload = {
-                "computer_data": self.data,
-                "timestamp": datetime.now().isoformat(),
-                "source": "about_me_app"
-            }
-            
-            headers = {
-                "Content-Type": "application/json",
-                "User-Agent": "AboutMe-ComputerInfo/1.0"
-            }
-            
-            print(f"Sending data to local server at {server_url}...")
-            print(f"   Computer: {self.data.get('Computername', 'Unknown')}")
-            print(f"   User: {self.data.get('Name', 'Unknown')} ({self.data.get('Username', 'Unknown')})")
-            
-            response = requests.post(url, json=payload, headers=headers, timeout=30)
-            
-            if response.status_code == 200:
-                result = response.json()
-                print("Data successfully sent to server!")
-                print(f"   Response: {result.get('message', 'Success')}")
-                if 'updated_employees' in result:
-                    print(f"   Updated {result['updated_employees']} employee(s)")
-                return True
-            else:
-                print(f"Failed to send data. Status code: {response.status_code}")
-                print(f"Response: {response.text}")
-                return False
-                
-        except requests.exceptions.RequestException as e:
-            print(f"Network error sending data to server: {e}")
-            return False
-        except Exception as e:
-            print(f"Error sending data to server: {e}")
-            return False
-    
-    def send_to_github_issue(self, github_token=None, repo_owner="szhang", repo_name="EmployeeData"):
-        """Send data as a GitHub issue (alternative method for static sites)"""
-        try:
-            if not github_token:
-                print("GitHub token required for issue creation")
-                return False
-                
-            url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/issues"
-            
-            # Format data as markdown
-            data_md = self._format_data_as_markdown()
-            
-            payload = {
-                "title": f"Computer Info: {self.data.get('Computername', 'Unknown')} - {self.data.get('Name', 'Unknown')}",
-                "body": f"## Computer Information Report\n\n{data_md}\n\n---\n*Generated by AboutMe app on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*",
-                "labels": ["computer-info", "automated"]
-            }
-            
-            headers = {
-                "Authorization": f"token {github_token}",
-                "Accept": "application/vnd.github.v3+json"
-            }
-            
-            print(f"Creating GitHub issue for computer data...")
-            response = requests.post(url, json=payload, headers=headers, timeout=30)
-            
-            if response.status_code == 201:
-                issue_url = response.json().get("html_url")
-                print(f"Data sent as GitHub issue: {issue_url}")
-                return True
-            else:
-                print(f"Failed to create GitHub issue. Status code: {response.status_code}")
-                print(f"Response: {response.text}")
-                return False
-                
-        except requests.exceptions.RequestException as e:
-            print(f"Network error creating GitHub issue: {e}")
-            return False
-        except Exception as e:
-            print(f"Error creating GitHub issue: {e}")
-            return False
-    
-    def _format_data_as_markdown(self):
-        """Format collected data as markdown for GitHub issues"""
-        md_lines = []
-        
-        # Basic info
-        md_lines.append(f"**Computer Name:** {self.data.get('Computername', 'Unknown')}")
-        md_lines.append(f"**User:** {self.data.get('Name', 'Unknown')} ({self.data.get('Username', 'Unknown')})")
-        md_lines.append(f"**OS:** {self.data.get('OS', 'Unknown')}")
-        md_lines.append(f"**Manufacturer:** {self.data.get('Manufacturer', 'Unknown')}")
-        md_lines.append(f"**Model:** {self.data.get('Model', 'Unknown')}")
-        md_lines.append(f"**CPU:** {self.data.get('CPU', 'Unknown')}")
-        
-        # Memory info
-        memory_bytes = self.data.get('Total Physical Memory', 0)
-        if memory_bytes and memory_bytes != 'Unknown':
-            memory_gb = memory_bytes / (1024**3)
-            md_lines.append(f"**Memory:** {memory_gb:.1f} GB ({memory_bytes:,} bytes)")
-        else:
-            md_lines.append(f"**Memory:** {memory_bytes}")
-        
-        # GPU info
-        md_lines.append(f"**GPU:** {self.data.get('GPU Name', 'Unknown')}")
-        md_lines.append(f"**GPU Driver:** {self.data.get('GPU Driver', 'Unknown')}")
-        md_lines.append(f"**Serial Number:** {self.data.get('Serial Number', 'Unknown')}")
-        
-        # Raw JSON data
-        md_lines.append("\n### Raw Data (JSON)")
-        md_lines.append("```json")
-        md_lines.append(json.dumps(self.data, indent=2, ensure_ascii=False, default=str))
-        md_lines.append("```")
-        
-        return "\n".join(md_lines)
 
     def print_summary(self):
         """Print a summary of collected information"""
-        print("\n=== Computer Information Summary ===")
+        print("\n" + "="*50)
+        print("COMPUTER INFORMATION SUMMARY")
+        print("="*50)
         print(f"Computer Name: {self.data.get('Computername', 'Unknown')}")
         print(f"User: {self.data.get('Name', 'Unknown')} ({self.data.get('Username', 'Unknown')})")
         print(f"OS: {self.data.get('OS', 'Unknown')}")
         print(f"Manufacturer: {self.data.get('Manufacturer', 'Unknown')}")
         print(f"Model: {self.data.get('Model', 'Unknown')}")
         print(f"CPU: {self.data.get('CPU', 'Unknown')}")
-        print(f"Memory: {self.data.get('Total Physical Memory', 'Unknown')} bytes")
+        
+        # Format memory nicely
+        memory_bytes = self.data.get('Total Physical Memory', 0)
+        if memory_bytes and memory_bytes != 'Unknown':
+            memory_gb = memory_bytes / (1024**3)
+            print(f"Memory: {memory_gb:.1f} GB")
+        else:
+            print(f"Memory: {memory_bytes}")
+            
         print(f"GPU: {self.data.get('GPU Name', 'Unknown')}")
         print(f"Serial Number: {self.data.get('Serial Number', 'Unknown')}")
-        print("=" * 40)
+        print("="*50)
 
 def main():
-    """Main function with command-line arguments"""
-    parser = argparse.ArgumentParser(description="Collect computer information and optionally send to website")
-    parser.add_argument("--website-url", type=str, 
-                       default="https://szhang.github.io/EmployeeData",
-                       help="Website URL to send data to")
-    parser.add_argument("--send-to-github", action="store_true",
-                       help="Send data to GitHub repository (recommended)")
-    parser.add_argument("--send-to-server", action="store_true",
-                       help="Send data to local server (for testing)")
-    parser.add_argument("--server-url", type=str, default="http://localhost:5000",
-                       help="Server URL for direct POST requests")
-    parser.add_argument("--send-as-issue", action="store_true",
-                       help="Send data as GitHub issue (alternative method)")
-    parser.add_argument("--github-token", type=str,
-                       help="GitHub token for issue creation")
-    parser.add_argument("--repo-owner", type=str, default="szhang",
-                       help="GitHub repository owner")
-    parser.add_argument("--repo-name", type=str, default="EmployeeData",
-                       help="GitHub repository name")
-    parser.add_argument("--output", type=str, default="computer_info.json",
-                       help="Output JSON filename")
-    parser.add_argument("--no-save", action="store_true",
-                       help="Don't save to local JSON file")
-    parser.add_argument("--debug", action="store_true",
-                       help="Enable debug output")
+    """Main function - simplified for non-technical users"""
+    print("🔍 Collecting your computer information...")
+    print("   This may take a few seconds...")
     
-    args = parser.parse_args()
-    
-    print("Collecting computer information...")
-    
-    collector = ComputerInfoCollector(website_url=args.website_url)
+    collector = ComputerInfoCollector()
     collector.collect_all_info()
     
     # Print summary
     collector.print_summary()
     
-    if args.debug:
-        print("\nDebug: Raw collected data:")
-        print(json.dumps(collector.data, indent=2, default=str))
-    
-    # Save to JSON (unless disabled)
-    if not args.no_save:
-        collector.save_to_json(args.output)
-    
-    # Send data based on arguments
-    success = True
-    
-    if args.send_to_github:
-        print("\nSending data to GitHub repository...")
-        success &= collector.send_to_github_repo(
-            github_token=args.github_token,
-            repo_owner=args.repo_owner,
-            repo_name=args.repo_name
-        )
-    
-    if args.send_to_server:
-        print("\nSending data to local server...")
-        success &= collector.send_to_direct_server(server_url=args.server_url)
-    
-    if args.send_as_issue:
-        print("\nSending data as GitHub issue...")
-        success &= collector.send_to_github_issue(
-            github_token=args.github_token,
-            repo_owner=args.repo_owner,
-            repo_name=args.repo_name
-        )
-    
-    if not args.send_to_github and not args.send_to_server and not args.send_as_issue:
-        print("\nTips for sending data:")
-        print("   • GitHub (recommended): --send-to-github --github-token YOUR_TOKEN")
-        print("   • Local server (testing): --send-to-server")
-        print("   • GitHub issue (fallback): --send-as-issue --github-token YOUR_TOKEN")
-        print("   The data will be processed and appear on the website.")
+    # Send to GitHub
+    print("\n📤 Sending information to the server...")
+    success = collector.send_to_github_repo()
     
     if success:
-        print("\nCollection and transmission complete!")
+        print("\n🎉 All done! Your computer information has been submitted successfully.")
+        print("   You can close this window now.")
     else:
-        print("\nCollection complete, but some transmissions failed!")
+        print("\n⚠️  There was a problem sending your information.")
+        print("   Please try again later or contact support.")
+    
+    # Keep window open so user can see the result
+    input("\nPress Enter to close this window...")
 
 if __name__ == "__main__":
     main()

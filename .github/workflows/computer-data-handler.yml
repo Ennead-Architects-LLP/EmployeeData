@@ -38,36 +38,17 @@ jobs:
         # Use the updated server component to handle computer data
         python 4-server/server.py
     
-    - name: Regenerate website with new computer data
+    - name: Update JSON data only (no website regeneration needed)
       if: github.event.inputs.test_mode != 'true'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo "🔄 Regenerating website with updated computer data..."
-        
-        # Install Python dependencies for website generation
-        pip install playwright pyttsx3 requests
-        
-        # Install Playwright browsers
-        playwright install chromium
-        
-        # Run the main scraper to regenerate the website
-        echo "Running website regeneration..."
-        python src/main.py --headless=true --no-images --output employees_data.json
-        
-        # Check if HTML was generated successfully
-        if [ -f "index.html" ]; then
-          echo "✅ Website regenerated successfully"
-        else
-          echo "❌ Website regeneration failed"
-          exit 1
-        fi
+        echo "✅ Computer data processed and JSON files updated"
+        echo "ℹ️  Website loads data dynamically - no regeneration needed"
     
     - name: Commit and push changes
       if: github.event.inputs.test_mode != 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add assets/computer_data/ index.html assets/
-        git diff --staged --quiet || git commit -m "Update website with new computer data from AboutMe app"
+        git add assets/individual_employees/
+        git diff --staged --quiet || git commit -m "Update computer data from AboutMe app"
         git push
