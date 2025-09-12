@@ -30,12 +30,16 @@ jobs:
       run: |
         pip install requests pyyaml flask
     
+    - name: Create backup directory
+      run: |
+        mkdir -p 1-website/assets/computer_info_data_backup
+        echo "Created backup directory"
+    
     - name: Handle computer data
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TEST_MODE: ${{ github.event.inputs.test_mode || 'false' }}
       run: |
-        # Debug: Show current directory and files
         echo "Current directory: $(pwd)"
         echo "Files in current directory:"
         ls -la
@@ -44,21 +48,20 @@ jobs:
         echo "Files in 1-website/assets/individual_employees directory:"
         ls -la 1-website/assets/individual_employees/ | head -10
         
-        # Use the updated server component to handle computer data
         echo "Starting server.py..."
         python 4-server/server.py
     
     - name: Update JSON data only (no website regeneration needed)
       if: github.event.inputs.test_mode != 'true'
       run: |
-        echo "✅ Computer data processed and JSON files updated"
-        echo "ℹ️  Website loads data dynamically - no regeneration needed"
+        echo "Computer data processed and JSON files updated"
+        echo "Website loads data dynamically - no regeneration needed"
     
     - name: Commit and push changes
       if: github.event.inputs.test_mode != 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add assets/individual_employees/ assets/computer_info_data_backup/
+        git add 1-website/assets/individual_employees/ 1-website/assets/computer_info_data_backup/
         git diff --staged --quiet || git commit -m "Update computer data from AboutMe app"
         git push
