@@ -1885,7 +1885,8 @@ class CompleteScraper:
             self.logger.error(f"    [ERROR] Error scraping profile: {e}")
             return None
     
-    async def scrape_all_employees_parallel(self, max_parallel_workers: int = 3) -> List[EmployeeData]:
+    # Parallel processing methods removed for stability - only sequential processing supported
+    # async def scrape_all_employees_parallel(self, max_parallel_workers: int = 3) -> List[EmployeeData]:
         """
         Scrape all employees from the directory with parallel processing and incremental saving.
         
@@ -2261,7 +2262,7 @@ class CompleteScraper:
             self.logger.warning("⚠️ Parallel processing failed, falling back to sequential processing...")
             return await self.scrape_all_employees_incremental()
         
-        return all_employees
+        # return all_employees
     
     async def _save_incremental_batch(self, batch: List[EmployeeData], current_count: int, total_count: int):
         """

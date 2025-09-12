@@ -200,12 +200,7 @@ async def main():
                        help="Show detailed help for debug mode options")
     parser.add_argument("--cleanup-debug", type=int, nargs='?', const=30, metavar='MAX_FILES',
                        help="Clean up debug files keeping max files per folder (default: 30)")
-    parser.add_argument("--parallel", action="store_true",
-                       help="Use parallel processing with multiple browser contexts (faster but uses more resources)")
-    parser.add_argument("--sequential", action="store_true", default=True,
-                       help="Use sequential processing (DEFAULT) - more reliable but slower")
-    parser.add_argument("--max-workers", type=int, default=3,
-                       help="Maximum number of parallel workers (default: 3)")
+    # Parallel processing removed - only sequential processing supported for stability
     
     args = parser.parse_args()
     
@@ -286,11 +281,9 @@ async def main():
         print("="*50)
     
     try:
-        # Determine processing mode: sequential is default unless --parallel is specified
-        use_parallel = args.parallel
-        
+        # Use only sequential processing for stability
         # Delegate to orchestrator without timeout protection
-        orchestrator = Orchestrator(config, use_parallel=use_parallel, max_workers=args.max_workers)
+        orchestrator = Orchestrator(config, use_parallel=False, max_workers=1)
         html_path = await run_without_timeout(orchestrator, config)
         
         if not html_path:
