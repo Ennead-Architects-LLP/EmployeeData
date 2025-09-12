@@ -27,10 +27,10 @@ COMPUTER_BACKUP_DIR = '1-website/assets/computer_info_data_backup'
 def find_employee_file_by_user(computer_data):
     """Find the employee JSON file that matches the user from computer data"""
     try:
-        user_name = computer_data.get('Name', '').strip()
+        human_name = computer_data.get('Name', '').strip()
         username = computer_data.get('Username', '').strip()
         
-        if not user_name and not username:
+        if not human_name and not username:
             print("❌ No user name or username provided in computer data")
             return None
         
@@ -57,7 +57,7 @@ def find_employee_file_by_user(computer_data):
                     employee_data = json.load(f)
                 
                 # Check if this employee matches by name or username
-                if _employee_matches_user(employee_data, user_name, username):
+                if _employee_matches_user(employee_data, human_name, username):
                     print(f"✅ Found matching employee in {filename}")
                     return employee_path
                     
@@ -65,7 +65,7 @@ def find_employee_file_by_user(computer_data):
                 print(f"⚠️  Warning: Could not read {filename}: {e}")
                 continue
         
-        print(f"⚠️  No matching employee found for user: {user_name} ({username})")
+        print(f"⚠️  No matching employee found for user: {human_name} ({username})")
         return None
         
     except Exception as e:
@@ -182,7 +182,7 @@ def backup_computer_data(computer_data):
         backup_data = {
             "timestamp": datetime.now().isoformat(),
             "computer_name": computer_data.get('Computername', 'Unknown'),
-            "user_name": computer_data.get('Name', 'Unknown'),
+            "human_name": computer_data.get('Name', 'Unknown'),
             "username": computer_data.get('Username', 'Unknown'),
             "computer_info": computer_data
         }
