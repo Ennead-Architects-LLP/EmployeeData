@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/6970B111-F37B-41BF-A962-A2ED2B60DC6C/mimoza-gjonbalaj",
   "image_url": "https://ei.ennead.com/api/image/11208012-2c74-4cb9-b868-02ad2025075e/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Mimoza Gjonbalaj_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 11,
@@ -273,6 +273,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mgjonbalaj@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:57:30.287696",
+  "scraped_at": "2025-09-12T12:27:56.937548",
   "profile_id": "mimoza-gjonbalaj"
 }

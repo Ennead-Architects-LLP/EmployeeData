@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/C7B1B906-D634-49B1-ACA7-4B6B2B35D002/nicole-levine",
   "image_url": "https://ei.ennead.com/api/image/899a2af9-93d0-4cfb-99cf-1be78cc93a56/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Nicole Levine_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 2,
@@ -42,6 +42,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=nicole.levine@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:59:25.519513",
+  "scraped_at": "2025-09-12T12:30:00.066609",
   "profile_id": "nicole-levine"
 }

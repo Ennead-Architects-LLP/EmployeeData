@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/277B7067-A751-4D21-B191-89F43C02A9E8/doris-lewis",
   "image_url": "https://ei.ennead.com/api/image/856a4c05-aee0-4342-abbb-fab03a22c9b0/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Doris Lewis_profile.jpg",
   "position": "Director",
   "department": null,
   "years_with_firm": 25,
@@ -34,6 +34,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dlewis@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:42:19.953139",
+  "scraped_at": "2025-09-12T12:13:00.273790",
   "profile_id": "doris-lewis"
 }

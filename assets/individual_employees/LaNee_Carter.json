@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/8F3C11B9-4383-40DF-876A-A90BAE216435/lanee-carter",
   "image_url": "https://ei.ennead.com/api/image/8511f767-80be-47fc-a86b-8fb663b30cb5/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/LaNee Carter_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 2,
@@ -52,6 +52,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lanee.carter@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:52:50.306186",
+  "scraped_at": "2025-09-12T12:23:10.043436",
   "profile_id": "lanee-carter"
 }

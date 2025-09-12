@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/22E212EC-D481-4F29-9817-D863AE939804/matt-ryan",
   "image_url": "https://ei.ennead.com/api/image/d3d01fad-7244-4060-ac27-a31ac5d934ab/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Matt Ryan_profile.jpg",
   "position": "Director",
   "department": null,
   "years_with_firm": 2,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=matthew.ryan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:55:50.339888",
+  "scraped_at": "2025-09-12T12:26:04.765382",
   "profile_id": "matt-ryan"
 }

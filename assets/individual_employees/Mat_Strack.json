@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/4578F5DB-EC75-48D2-9960-1D5DB97A2DD2/mat-strack",
   "image_url": "https://ei.ennead.com/api/image/2683a95b-967f-418b-b58f-b19e87b1d631/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Mat Strack_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 7,
@@ -120,6 +120,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=MStrack@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:54:57.148772",
+  "scraped_at": "2025-09-12T12:25:12.060958",
   "profile_id": "mat-strack"
 }

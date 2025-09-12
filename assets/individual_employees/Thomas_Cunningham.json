@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/4D24DF6E-C163-4119-BF61-EC0B3607F261/thomas-cunningham",
   "image_url": "https://ei.ennead.com/api/image/bf321cdb-2e15-4746-9871-12cebf2441b7/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Thomas Cunningham_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 2,
@@ -42,6 +42,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Thomas.Cunningham@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:03:30.308129",
+  "scraped_at": "2025-09-12T12:33:57.963126",
   "profile_id": "thomas-cunningham"
 }

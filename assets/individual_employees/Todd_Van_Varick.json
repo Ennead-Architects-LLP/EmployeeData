@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/5F8177FA-175D-4522-A981-28FB640F18E6/todd-van-varick",
   "image_url": "https://ei.ennead.com/api/image/705a9575-5345-420b-ae63-47f0fa601571/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Todd Van Varick_profile.jpg",
   "position": "Principal",
   "department": null,
   "years_with_firm": 23,
@@ -245,6 +245,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tvanvarick@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:04:35.251159",
+  "scraped_at": "2025-09-12T12:34:44.193157",
   "profile_id": "todd-van-varick"
 }

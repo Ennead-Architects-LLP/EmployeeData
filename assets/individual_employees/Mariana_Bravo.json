@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/C67011DC-A4BF-40F2-AB88-2009D0F4C26D/mariana-bravo",
   "image_url": "https://ei.ennead.com/api/image/ef0d755e-8c01-4e0d-b36d-f8f92f176767/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Mariana Bravo_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 2,
@@ -77,6 +77,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mariana.bravo@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:54:25.573263",
+  "scraped_at": "2025-09-12T12:24:38.366097",
   "profile_id": "mariana-bravo"
 }

@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/237516F1-A1DB-4D92-A8A2-C844BAEE4CF5/annie-durden",
   "image_url": "https://ei.ennead.com/api/image/68bb70c9-d66f-4e56-aefe-a7975fc2a6d9/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Annie Durden_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 0,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Annie.Durden@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:38:04.851076",
+  "scraped_at": "2025-09-12T12:08:08.424391",
   "profile_id": "annie-durden"
 }

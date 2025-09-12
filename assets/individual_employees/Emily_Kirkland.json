@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/2B6CDE51-EE86-4812-8ACF-AE6DF4341126/emily-kirkland",
   "image_url": "https://ei.ennead.com/api/image/a43e56db-0319-4470-bc27-e073d31bed4b/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Emily Kirkland_profile.jpg",
   "position": "Principal",
   "department": null,
   "years_with_firm": 14,
@@ -144,6 +144,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ekirkland@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:42:49.121736",
+  "scraped_at": "2025-09-12T12:13:26.590598",
   "profile_id": "emily-kirkland"
 }

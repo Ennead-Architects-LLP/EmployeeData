@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/48D41746-D366-46AC-9722-426562E8039F/tinglan-guo",
   "image_url": "https://ei.ennead.com/api/image/9effaa95-3986-48a0-ba69-b3af4c56a9da/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Tinglan Guo_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 1,
@@ -64,6 +64,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tinglan.guo@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:04:02.514012",
+  "scraped_at": "2025-09-12T12:34:21.374505",
   "profile_id": "tinglan-guo"
 }

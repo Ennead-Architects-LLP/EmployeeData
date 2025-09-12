@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/BFD3B741-DDB8-40F8-95A2-0E42962452B4/thomas-wong",
   "image_url": "https://ei.ennead.com/api/image/36d823ff-816c-4ccf-9c70-81350cbd3c72/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Thomas Wong_profile.jpg",
   "position": "Partner",
   "department": null,
   "years_with_firm": 31,
@@ -336,6 +336,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=twong@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:03:38.490116",
+  "scraped_at": "2025-09-12T12:34:03.784052",
   "profile_id": "thomas-wong"
 }

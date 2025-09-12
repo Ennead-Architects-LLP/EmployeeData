@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/000553B1-D590-4FBD-BDA1-9D19B7197C92/kathleen-kulpa",
   "image_url": "https://ei.ennead.com/api/image/3c60199a-cca0-4880-be9c-233fd2117482/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Kathleen Kulpa_profile.jpg",
   "position": "Associate Principal",
   "department": null,
   "years_with_firm": 22,
@@ -252,6 +252,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkulpa@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:49:22.484493",
+  "scraped_at": "2025-09-12T12:19:54.548249",
   "profile_id": "kathleen-kulpa"
 }

@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/E2A1C95D-F439-417F-B3EE-7482855B7BA9/sam-johnson",
   "image_url": "https://ei.ennead.com/api/image/1770c2eb-952c-44b7-a8f7-cc6f2703459c/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Sam Johnson_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 5,
@@ -127,6 +127,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sjohnson@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:01:08.159096",
+  "scraped_at": "2025-09-12T12:31:38.661718",
   "profile_id": "sam-johnson"
 }

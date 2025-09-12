@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/81066D21-DF0A-47A6-A2DF-25B3DCA6B06C/richard-zhu",
   "image_url": "https://ei.ennead.com/api/image/7ba385c1-2a68-425f-be7c-177fdf15e511/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Richard Zhu_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 1,
@@ -42,6 +42,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Richard.Zhu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:00:43.376404",
+  "scraped_at": "2025-09-12T12:31:16.079020",
   "profile_id": "richard-zhu"
 }

@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/CCFF20D3-EE16-4C23-AB3F-191C2D42C14B/yeng-tse-wu",
   "image_url": "https://ei.ennead.com/api/image/cad1ce24-8f9c-4e91-a2c5-aa2fac1b3a35/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Yeng-Tse Wu_profile.jpg",
   "position": "Associate Principal",
   "department": null,
   "years_with_firm": 9,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ywu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:07:01.149609",
+  "scraped_at": "2025-09-12T12:36:28.030486",
   "profile_id": "yeng-tse-wu"
 }

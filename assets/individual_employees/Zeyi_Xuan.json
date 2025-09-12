@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/716C5DB1-BE5D-46DE-B0F9-F77BBC3BB868/zeyi-xuan",
   "image_url": "https://ei.ennead.com/api/image/4d423cf5-a4f5-439b-8e87-c0aa02cc06bc/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Zeyi Xuan_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 6,
@@ -56,6 +56,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=zeyi.xuan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:07:26.863792",
+  "scraped_at": "2025-09-12T12:36:46.021684",
   "profile_id": "zeyi-xuan"
 }

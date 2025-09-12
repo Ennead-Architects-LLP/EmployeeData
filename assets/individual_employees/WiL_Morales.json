@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/9515BBD1-0CDA-4F70-9FF0-65E290CEC5AB/wil-morales",
   "image_url": "https://ei.ennead.com/api/image/144d349a-4dae-4993-ac06-541d907a4911/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/WiL Morales_profile.jpg",
   "position": "Director",
   "department": null,
   "years_with_firm": 2,
@@ -39,6 +39,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wilmarie.morales@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:05:57.345906",
+  "scraped_at": "2025-09-12T12:35:42.038159",
   "profile_id": "wil-morales"
 }

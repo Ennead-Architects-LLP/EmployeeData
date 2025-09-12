@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/B1615BD3-2B40-429C-ACD8-2ADB03F75A9D/callie-fleetwood",
   "image_url": "https://ei.ennead.com/api/image/a7e87d5f-8b03-4606-ad8c-e0a0594d00eb/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Callie Fleetwood_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 5,
@@ -96,6 +96,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cfleetwood@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:39:34.877316",
+  "scraped_at": "2025-09-12T12:09:37.342632",
   "profile_id": "callie-fleetwood"
 }

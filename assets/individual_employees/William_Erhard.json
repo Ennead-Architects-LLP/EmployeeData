@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/2F2F7379-3149-4224-9D47-CEE7C886A79E/william-erhard",
   "image_url": "https://ei.ennead.com/api/image/6350e478-87ff-494c-a99f-3cb90251e3f3/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/William Erhard_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 13,
@@ -214,6 +214,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=berhard@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:06:04.568471",
+  "scraped_at": "2025-09-12T12:35:47.304127",
   "profile_id": "william-erhard"
 }

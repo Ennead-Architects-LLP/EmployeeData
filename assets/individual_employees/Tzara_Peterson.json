@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/CBB4F8BE-2F79-4A05-8ECD-2A34F5459F0A/tzara-peterson",
   "image_url": "https://ei.ennead.com/api/image/659b240e-14ac-4469-a7fc-df7b6c5eeee7/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Tzara Peterson_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 5,
@@ -113,6 +113,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tpeterson@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:05:40.885786",
+  "scraped_at": "2025-09-12T12:35:30.707674",
   "profile_id": "tzara-peterson"
 }

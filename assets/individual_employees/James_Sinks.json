@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/6DEFED4A-B3F6-43F9-BA28-51135DD13916/james-sinks",
   "image_url": "https://ei.ennead.com/api/image/aff23cea-9e77-43b5-8077-d6d438cb5492/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/James Sinks_profile.jpg",
   "position": "Associate Principal",
   "department": null,
   "years_with_firm": 41,
@@ -204,6 +204,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jsinks@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:46:04.686878",
+  "scraped_at": "2025-09-12T12:16:43.102659",
   "profile_id": "james-sinks"
 }

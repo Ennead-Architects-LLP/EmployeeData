@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/17E19AFA-8F7E-4A49-ABB8-3C5ABC2FA727/rick-michod",
   "image_url": "https://ei.ennead.com/api/image/5925e806-0f4a-48df-be25-89dc997a7294/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Rick Michod_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 9,
@@ -77,6 +77,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=rmichod@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:00:51.399806",
+  "scraped_at": "2025-09-12T12:31:23.205033",
   "profile_id": "rick-michod"
 }

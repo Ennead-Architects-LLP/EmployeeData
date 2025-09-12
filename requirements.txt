@@ -3,6 +3,9 @@
 # Web scraping and browser automation
 playwright>=1.40.0
 
+# Text-to-speech for voice announcements
+pyttsx3>=2.90
+
 # GUI for credentials (built into Python standard library - tkinter)
 # No additional package needed for tkinter
 

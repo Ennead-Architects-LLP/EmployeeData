@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/3F6825C5-562F-4A0C-9774-CDE8C8FBB006/chuck-wolf",
   "image_url": "https://ei.ennead.com/api/image/6ddf28bb-e042-4f53-82a5-28cb411c00f1/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Chuck Wolf_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 11,
@@ -168,6 +168,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Charles.wolf@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:40:44.910122",
+  "scraped_at": "2025-09-12T12:11:12.960860",
   "profile_id": "chuck-wolf"
 }

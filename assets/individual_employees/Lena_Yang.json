@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/8D4A79E8-8C3C-4E2B-829F-626A1AF824A5/lena-yang",
   "image_url": "https://ei.ennead.com/api/image/b88ca299-9e9c-475d-8d3a-5c88deb4aa41/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Lena Yang_profile.jpg",
   "position": "Designer",
   "department": null,
   "years_with_firm": 2,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lena.yang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:53:23.456122",
+  "scraped_at": "2025-09-12T12:23:39.498815",
   "profile_id": "lena-yang"
 }

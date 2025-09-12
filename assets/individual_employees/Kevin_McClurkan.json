@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/5D528721-568B-47C1-8036-24B56D0F6FB6/kevin-mcclurkan",
   "image_url": "https://ei.ennead.com/api/image/b1cea48c-4c99-4b12-87fd-be465ac83e6a/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Kevin McClurkan_profile.jpg",
   "position": "Partner",
   "department": null,
   "years_with_firm": 38,
@@ -332,6 +332,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmcclurkan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:50:35.523507",
+  "scraped_at": "2025-09-12T12:20:58.940222",
   "profile_id": "kevin-mcclurkan"
 }

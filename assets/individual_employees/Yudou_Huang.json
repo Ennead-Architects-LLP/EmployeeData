@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/A3464BBA-D554-4521-8D28-EE50CEC641D0/yudou-huang",
   "image_url": "https://ei.ennead.com/api/image/220613fa-0cdd-425e-985a-4f80b3adb496/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Yudou Huang_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 5,
@@ -91,6 +91,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=yhuang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:07:08.071058",
+  "scraped_at": "2025-09-12T12:36:33.027191",
   "profile_id": "yudou-huang"
 }

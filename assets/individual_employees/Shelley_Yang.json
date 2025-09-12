@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/B322DA6F-6790-4D46-95E0-59F05C922D03/shelley-yang",
   "image_url": "https://ei.ennead.com/api/image/18ea8eb3-007e-4c57-ad31-a737800412bc/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Shelley Yang_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 5,
@@ -87,6 +87,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=syang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:02:10.762080",
+  "scraped_at": "2025-09-12T12:32:43.094797",
   "profile_id": "shelley-yang"
 }

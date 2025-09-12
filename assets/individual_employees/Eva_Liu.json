@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/7CC0B85D-6924-4208-AF39-C334B2F5B285/eva-liu",
   "image_url": "https://ei.ennead.com/api/image/e68b15aa-67b7-4316-bb23-b6ee14f95c40/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Eva Liu_profile.jpg",
   "position": "Architectural Designer",
   "department": null,
   "years_with_firm": 0,
@@ -56,6 +56,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xinyue.liu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:43:18.227930",
+  "scraped_at": "2025-09-12T12:13:52.104558",
   "profile_id": "eva-liu"
 }

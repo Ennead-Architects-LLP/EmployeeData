@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/DFC1F864-A592-4D80-AD8C-DDD653523917/melissa-hendrix",
   "image_url": "https://ei.ennead.com/api/image/3744b9b3-f012-413e-8722-a4701ec25e66/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Melissa Hendrix_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 4,
@@ -48,6 +48,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=melissa.hendrix@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:56:20.509465",
+  "scraped_at": "2025-09-12T12:26:36.657245",
   "profile_id": "melissa-hendrix"
 }

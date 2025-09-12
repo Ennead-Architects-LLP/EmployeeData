@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/203D4660-D781-477E-B7E9-0E34573B550D/don-weinreich",
   "image_url": "https://ei.ennead.com/api/image/2eb82ad0-7a21-406a-9c7e-35e37e3bf774/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Don Weinreich_profile.jpg",
   "position": "Partner",
   "department": null,
   "years_with_firm": 38,
@@ -344,6 +344,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dweinreich@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:41:55.687043",
+  "scraped_at": "2025-09-12T12:12:35.776447",
   "profile_id": "don-weinreich"
 }

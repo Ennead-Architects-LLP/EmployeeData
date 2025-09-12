@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/23930926-10AC-42DF-8CA7-F7B5ABD3875B/jarrett-pelletier",
   "image_url": "https://ei.ennead.com/api/image/db482945-08de-4420-b909-67da65251fa3/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Jarrett Pelletier_profile.jpg",
   "position": "Principal",
   "department": null,
   "years_with_firm": 20,
@@ -220,6 +220,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jpelletier@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:46:28.175837",
+  "scraped_at": "2025-09-12T12:17:07.881110",
   "profile_id": "jarrett-pelletier"
 }

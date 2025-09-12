@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/0A2AE6B5-08BB-47EF-8273-287E958D6B1C/alex-o-briant",
   "image_url": "https://ei.ennead.com/api/image/8a23e0c2-740b-4ee5-ba9d-90289d7d1111/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Alex O'Briant_profile.jpg",
   "position": "Principal",
   "department": null,
   "years_with_firm": 21,
@@ -287,6 +287,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aobriant@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:36:52.044266",
+  "scraped_at": "2025-09-12T12:06:55.227950",
   "profile_id": "alex-o-briant"
 }

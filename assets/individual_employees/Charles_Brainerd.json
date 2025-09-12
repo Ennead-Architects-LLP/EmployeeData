@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/C6B8EB65-350E-4974-9BC4-0877AFBBA190/charles-brainerd",
   "image_url": "https://ei.ennead.com/api/image/8ca2edd3-61db-425e-a76f-24c37592defb/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Charles Brainerd_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 27,
@@ -289,6 +289,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cbrainerd@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:39:46.541426",
+  "scraped_at": "2025-09-12T12:09:49.196058",
   "profile_id": "charles-brainerd"
 }

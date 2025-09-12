@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/C26C5364-CCCA-4E09-B865-551987410F00/jay-chang",
   "image_url": "https://ei.ennead.com/api/image/0d5a2c8c-3efc-447a-8b69-53a349f4c60d/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Jay Chang_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 2,
@@ -60,6 +60,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jungin.chang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:46:58.860258",
+  "scraped_at": "2025-09-12T12:17:37.887936",
   "profile_id": "jay-chang"
 }

@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/387B0887-5E49-4641-B3DF-3F1211DCF542/scott-eno",
   "image_url": "https://ei.ennead.com/api/image/df4c0614-c907-45be-839f-39d9b74bd399/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Scott Eno_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 0,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=scott.eno@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:01:47.383238",
+  "scraped_at": "2025-09-12T12:32:20.035076",
   "profile_id": "scott-eno"
 }

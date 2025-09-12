@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/6E1393C8-8556-4793-B7AA-3844636F124B/gemma-xie",
   "image_url": "https://ei.ennead.com/api/image/cfe6b2ea-e241-425e-9133-806f3dc978d7/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Gemma Xie_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 1,
@@ -32,6 +32,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Gemma.Xie@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:45:10.778913",
+  "scraped_at": "2025-09-12T12:15:45.286550",
   "profile_id": "gemma-xie"
 }

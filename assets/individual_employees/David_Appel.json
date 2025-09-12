@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/114F46E3-BD41-4591-AEA2-59963514A4AE/david-appel",
   "image_url": "https://ei.ennead.com/api/image/bbdad632-ae0e-4328-975d-ae7f6417da55/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/David Appel_profile.jpg",
   "position": "Director",
   "department": null,
   "years_with_firm": 7,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dappel@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:41:16.545981",
+  "scraped_at": "2025-09-12T12:11:51.893535",
   "profile_id": "david-appel"
 }

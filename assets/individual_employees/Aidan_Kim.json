@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/F6242792-03FE-439A-B497-FB36AF4476A5/aidan-kim",
   "image_url": "https://ei.ennead.com/api/image/3fda878f-d3e0-4f49-b612-deec73409f00/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Aidan Kim_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 7,
@@ -138,6 +138,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=AKim@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:36:14.195363",
+  "scraped_at": "2025-09-12T12:05:47.306311",
   "profile_id": "aidan-kim"
 }

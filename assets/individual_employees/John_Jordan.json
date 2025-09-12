@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/7C5D3389-A947-4933-8D32-A1BD5C952C1E/john-jordan",
   "image_url": "https://ei.ennead.com/api/image/5b86fdbe-1c7c-48c1-8843-682889a89467/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/John Jordan_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 29,
@@ -158,6 +158,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jjordan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:47:59.790104",
+  "scraped_at": "2025-09-12T12:18:32.836097",
   "profile_id": "john-jordan"
 }

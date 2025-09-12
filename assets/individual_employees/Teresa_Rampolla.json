@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/5C2E5A44-624F-493B-8944-9F6840C1A330/teresa-rampolla",
   "image_url": "https://ei.ennead.com/api/image/0bdaa2da-cebb-4df4-95aa-0fa6ba0cb337/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Teresa Rampolla_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 2,
@@ -69,6 +69,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=teresa.rampolla@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:03:21.638608",
+  "scraped_at": "2025-09-12T12:33:51.999163",
   "profile_id": "teresa-rampolla"
 }

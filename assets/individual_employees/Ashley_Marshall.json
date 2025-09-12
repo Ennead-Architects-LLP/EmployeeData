@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/188493E0-424F-4388-B9CB-04AE9834C01A/ashley-marshall",
   "image_url": "https://ei.ennead.com/api/image/afbbae6a-bea0-433c-a680-430bb38e1b15/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Ashley Marshall_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 4,
@@ -44,6 +44,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Ashley.Marshall@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:38:52.695645",
+  "scraped_at": "2025-09-12T12:08:55.609097",
   "profile_id": "ashley-marshall"
 }

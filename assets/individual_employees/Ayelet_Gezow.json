@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/CAA12CFA-AED0-42AB-8CB2-07B2E191FE1F/ayelet-gezow",
   "image_url": "https://ei.ennead.com/api/image/d284c63a-62cc-4421-93a7-2de222620c10/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Ayelet Gezow_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 5,
@@ -112,6 +112,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=agezow@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:38:59.338634",
+  "scraped_at": "2025-09-12T12:09:01.646223",
   "profile_id": "ayelet-gezow"
 }

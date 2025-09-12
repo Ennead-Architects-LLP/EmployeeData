@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/0C266130-C393-4681-9C1D-33CE5610DA9E/matt-mendicino",
   "image_url": "https://ei.ennead.com/api/image/f3677db0-704d-4e02-ace6-67364bf546c1/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Matt Mendicino_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 2,
@@ -70,6 +70,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Matthew.Mendicino@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:55:41.915591",
+  "scraped_at": "2025-09-12T12:25:56.161897",
   "profile_id": "matt-mendicino"
 }

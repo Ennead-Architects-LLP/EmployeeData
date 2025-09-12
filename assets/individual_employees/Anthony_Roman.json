@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/28B922DB-097C-4F7A-B0B6-88650654FBC9/anthony-roman",
   "image_url": "https://ei.ennead.com/api/image/b409a022-1fd3-47cc-873c-bf1170c012b2/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Anthony Roman_profile.jpg",
   "position": "Associate Principal",
   "department": null,
   "years_with_firm": 26,
@@ -30,6 +30,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=troman@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:38:26.842146",
+  "scraped_at": "2025-09-12T12:08:29.588063",
   "profile_id": "anthony-roman"
 }

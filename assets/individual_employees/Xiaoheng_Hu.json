@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/2C3367F2-E428-4A96-84D4-F4D4A63FFD09/xiaoheng-hu",
   "image_url": "https://ei.ennead.com/api/image/3b565652-666e-4dbb-9435-15b85e4d46b1/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Xiaoheng Hu_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 6,
@@ -98,6 +98,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xhu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:06:50.955569",
+  "scraped_at": "2025-09-12T12:36:21.442067",
   "profile_id": "xiaoheng-hu"
 }

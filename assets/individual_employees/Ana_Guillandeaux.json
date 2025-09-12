@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/639E4501-DDC3-4E60-B6EC-B34713676511/ana-guillandeaux",
   "image_url": "https://ei.ennead.com/api/image/adecf2c7-5820-4880-bc05-7dc3cdfe95d4/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Ana Guillandeaux_profile.jpg",
   "position": "Director",
   "department": null,
   "years_with_firm": 5,
@@ -39,6 +39,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aguillandeaux@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:37:59.656261",
+  "scraped_at": "2025-09-12T12:08:03.357234",
   "profile_id": "ana-guillandeaux"
 }

@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/B666C1B5-D9B5-4D53-B5A8-386943CC2BB9/fanny-liu",
   "image_url": "https://ei.ennead.com/api/image/87ffc025-a627-4c9a-8ea9-69e708614bcb/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Fanny Liu_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 2,
@@ -85,6 +85,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fliu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:43:26.440818",
+  "scraped_at": "2025-09-12T12:13:59.118283",
   "profile_id": "fanny-liu"
 }

@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/E8FAC548-D560-4BD6-9240-6CEB9899F377/adriana-burton",
   "image_url": "https://ei.ennead.com/api/image/8d165831-ca65-4db1-bc85-81493022afa4/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Adriana Burton_profile.jpg",
   "position": "Project Coordinator",
   "department": null,
   "years_with_firm": 3,
@@ -49,6 +49,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Adriana.Burton@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:36:07.948891",
+  "scraped_at": "2025-09-12T12:05:41.043595",
   "profile_id": "adriana-burton"
 }

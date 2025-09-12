@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/50755AEA-603D-423B-82E2-71EBC3B91CAB/hyunjoo-lee",
   "image_url": "https://ei.ennead.com/api/image/9d274414-e4fc-4f1e-bb81-213de544d8b7/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/HyunJoo Lee_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 6,
@@ -82,6 +82,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=hjlee@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:45:48.373472",
+  "scraped_at": "2025-09-12T12:16:26.276065",
   "profile_id": "hyunjoo-lee"
 }

@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/0D0861F1-D714-4F66-84D6-B0EDB9D34436/michael-fierle",
   "image_url": "https://ei.ennead.com/api/image/1a3e21ac-ead5-418d-a7cb-3f60b20049b8/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Michael Fierle_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 4,
@@ -65,6 +65,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Michael.Fierle@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:57:01.171755",
+  "scraped_at": "2025-09-12T12:27:18.913302",
   "profile_id": "michael-fierle"
 }

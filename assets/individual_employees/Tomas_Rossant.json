@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/845F0F53-C9C0-4916-8500-300604DFAB46/tomas-rossant",
   "image_url": "https://ei.ennead.com/api/image/8af49c6b-6d28-4463-9c1b-b9d1b14bb90a/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Tomas Rossant_profile.jpg",
   "position": "Partner",
   "department": null,
   "years_with_firm": 30,
@@ -329,6 +329,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=trossant@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:04:58.137748",
+  "scraped_at": "2025-09-12T12:35:00.921246",
   "profile_id": "tomas-rossant"
 }

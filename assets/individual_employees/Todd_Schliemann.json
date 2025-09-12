@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/D73A7D08-4C19-4E14-BE62-9E562C6E2201/todd-schliemann",
   "image_url": "https://ei.ennead.com/api/image/51abf059-ba4a-4e9b-9d78-a927c798ff61/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Todd Schliemann_profile.jpg",
   "position": "Partner",
   "department": null,
   "years_with_firm": 45,
@@ -289,6 +289,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tschliemann@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:04:10.982407",
+  "scraped_at": "2025-09-12T12:34:27.479471",
   "profile_id": "todd-schliemann"
 }

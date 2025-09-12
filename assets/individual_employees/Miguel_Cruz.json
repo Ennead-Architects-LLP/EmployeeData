@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/9F5BEBA4-A5C0-403A-A4C1-C4E0A9B44C1C/miguel-cruz",
   "image_url": "https://ei.ennead.com/api/image/046eb77c-8dcd-4604-b406-07e4f525cd08/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Miguel Cruz_profile.jpg",
   "position": "Director",
   "department": null,
   "years_with_firm": 20,
@@ -21,6 +21,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mcruz@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:57:23.289457",
+  "scraped_at": "2025-09-12T12:27:49.954683",
   "profile_id": "miguel-cruz"
 }

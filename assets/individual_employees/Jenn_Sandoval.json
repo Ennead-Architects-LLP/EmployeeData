@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/77FF1409-1FBD-4128-9BC2-597713BD6D21/jenn-sandoval",
   "image_url": "https://ei.ennead.com/api/image/bd81a5e3-bee9-4fd3-8912-ec340c8ca0e6/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Jenn Sandoval_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 5,
@@ -115,6 +115,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jsandoval@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:47:07.156050",
+  "scraped_at": "2025-09-12T12:17:43.851289",
   "profile_id": "jenn-sandoval"
 }

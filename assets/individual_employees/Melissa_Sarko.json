@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/3117264B-7AF8-4216-B2B8-110C1618F13C/melissa-sarko",
   "image_url": "https://ei.ennead.com/api/image/a66b9142-7104-4d36-8adf-75dfe8f56e4a/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Melissa Sarko_profile.jpg",
   "position": "Principal",
   "department": null,
   "years_with_firm": 21,
@@ -212,6 +212,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=msarko@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:56:28.946707",
+  "scraped_at": "2025-09-12T12:26:45.625719",
   "profile_id": "melissa-sarko"
 }

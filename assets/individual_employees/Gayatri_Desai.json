@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/0212BE24-8205-4025-918F-B151E289A05B/gayatri-desai",
   "image_url": "https://ei.ennead.com/api/image/49b429e2-06ce-41d7-86af-696cdd41767a/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Gayatri Desai_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 4,
@@ -44,6 +44,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Gayatri.Desai@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:45:02.551431",
+  "scraped_at": "2025-09-12T12:15:37.712896",
   "profile_id": "gayatri-desai"
 }

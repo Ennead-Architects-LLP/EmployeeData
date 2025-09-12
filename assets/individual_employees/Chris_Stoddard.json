@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/EB1819C8-4B02-4677-BB34-71ACEAB46825/chris-stoddard",
   "image_url": "https://ei.ennead.com/api/image/dc918efd-7efe-4fe5-ac9a-a693c85f795b/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Chris Stoddard_profile.jpg",
   "position": "Principal",
   "department": null,
   "years_with_firm": 5,
@@ -91,6 +91,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cstoddard@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:40:38.482043",
+  "scraped_at": "2025-09-12T12:11:03.536468",
   "profile_id": "chris-stoddard"
 }

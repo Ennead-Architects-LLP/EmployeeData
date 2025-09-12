@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/8EA3A178-44C8-4BB0-BFED-678D1B3A3C3B/sivan-szapiro",
   "image_url": "https://ei.ennead.com/api/image/fd62836c-0c3b-49e8-85c8-b51d262984db/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Sivan Szapiro_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 0,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Sivan.Szapiro@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:02:19.322777",
+  "scraped_at": "2025-09-12T12:32:50.960086",
   "profile_id": "sivan-szapiro"
 }

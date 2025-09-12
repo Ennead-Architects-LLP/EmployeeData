@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/45E9238E-64EA-4B64-A521-65AD2A6087BF/sanah-mengi",
   "image_url": "https://ei.ennead.com/api/image/65d71293-ef9a-435a-9d83-c5d26a9ca7bc/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Sanah Mengi_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 2,
@@ -60,6 +60,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sanah.mengi@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:01:30.549118",
+  "scraped_at": "2025-09-12T12:32:00.637905",
   "profile_id": "sanah-mengi"
 }

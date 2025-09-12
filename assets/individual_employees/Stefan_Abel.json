@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/D79405D8-253E-466E-9D01-6A6B4DF3C220/stefan-abel",
   "image_url": "https://ei.ennead.com/api/image/15acc832-132b-45ce-837c-f220a77e6119/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Stefan Abel_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 18,
@@ -199,6 +199,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sabel@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:02:31.163670",
+  "scraped_at": "2025-09-12T12:32:59.394580",
   "profile_id": "stefan-abel"
 }

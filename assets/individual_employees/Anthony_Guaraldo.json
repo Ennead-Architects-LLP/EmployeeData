@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/11151DB9-750E-4094-ACEC-78CB9D141892/anthony-guaraldo",
   "image_url": "https://ei.ennead.com/api/image/379286e6-7e60-4a80-81c6-af50b353a071/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Anthony Guaraldo_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 21,
@@ -196,6 +196,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aguaraldo@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:38:09.887148",
+  "scraped_at": "2025-09-12T12:08:13.410150",
   "profile_id": "anthony-guaraldo"
 }

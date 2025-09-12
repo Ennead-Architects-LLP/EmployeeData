@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/7F2CE0E9-9DFF-449B-888B-00D3F621A7DC/favian-garcia",
   "image_url": "https://ei.ennead.com/api/image/5b979377-53ec-45bd-9862-aedb0a1c85da/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Favian Garcia_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 10,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fgarcia@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:43:34.787653",
+  "scraped_at": "2025-09-12T12:14:05.883560",
   "profile_id": "favian-garcia"
 }

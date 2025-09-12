@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/AFAC893E-5BBE-4022-A73A-81E8977F35CF/sen-zhang",
   "image_url": "https://ei.ennead.com/api/image/043875ea-6ef6-4ad3-9e47-b5b6e809526d/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Sen Zhang_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 5,
@@ -84,6 +84,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=szhang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:01:54.370174",
+  "scraped_at": "2025-09-12T12:32:26.493901",
   "profile_id": "sen-zhang"
 }

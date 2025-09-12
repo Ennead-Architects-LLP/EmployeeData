@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/2E5405E6-4350-4D89-946C-4A39A131E708/rachel-britain",
   "image_url": "https://ei.ennead.com/api/image/e0ccecbe-7bed-49ec-88c1-a000d61396bc/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Rachel Britain_profile.jpg",
   "position": "Director",
   "department": null,
   "years_with_firm": 3,
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Rachel.Britain@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:00:05.620038",
+  "scraped_at": "2025-09-12T12:30:41.502196",
   "profile_id": "rachel-britain"
 }

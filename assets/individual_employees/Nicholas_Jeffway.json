@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/76F7BD0C-57A9-4BC1-A63E-B145443C64F9/nicholas-jeffway",
   "image_url": "https://ei.ennead.com/api/image/88ef39bd-ab0b-462b-9174-12cf1fd92df7/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Nicholas Jeffway_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 7,
@@ -147,6 +147,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=NJeffway@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:59:02.779393",
+  "scraped_at": "2025-09-12T12:29:41.592964",
   "profile_id": "nicholas-jeffway"
 }

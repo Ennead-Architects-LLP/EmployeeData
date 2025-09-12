@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/A3F00F64-D544-4FFE-8BEC-0E424BE2EC3A/clayton-kaul",
   "image_url": "https://ei.ennead.com/api/image/215fcc9f-f794-41bb-b76d-d1817b471b9f/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Clayton Kaul_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 9,
@@ -77,6 +77,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ckaul@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:41:08.332819",
+  "scraped_at": "2025-09-12T12:11:44.590508",
   "profile_id": "clayton-kaul"
 }

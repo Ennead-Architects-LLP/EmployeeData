@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/6A3F30BF-0D4A-4CC3-8A3E-784DAAB74571/kyung-min",
   "image_url": "https://ei.ennead.com/api/image/398b7ada-278f-495b-86c8-2296706c4694/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Kyung Min_profile.jpg",
   "position": "Architect",
   "department": null,
   "years_with_firm": 11,
@@ -259,6 +259,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmin@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:52:18.419524",
+  "scraped_at": "2025-09-12T12:22:39.925876",
   "profile_id": "kyung-min"
 }

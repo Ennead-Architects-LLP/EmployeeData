@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/61E6B0A1-B90D-4219-A188-C86088141053/robinson-strong",
   "image_url": "https://ei.ennead.com/api/image/743b4f1b-8875-434f-a654-a4e1fbb91900/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Robinson Strong_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 3,
@@ -74,6 +74,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Robinson.Strong@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:00:59.807101",
+  "scraped_at": "2025-09-12T12:31:30.779007",
   "profile_id": "robinson-strong"
 }

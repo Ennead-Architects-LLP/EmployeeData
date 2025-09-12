@@ -7,7 +7,7 @@
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/CE15FC96-7131-4088-A016-EC892D0437E3/sha-li",
   "image_url": "https://ei.ennead.com/api/image/2f26977d-7ce9-434a-ab09-7e0de8060a82/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Sha Li_profile.jpg",
   "position": "Associate",
   "department": null,
   "years_with_firm": 4,
@@ -59,6 +59,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Sha.Li@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T17:02:02.648710",
+  "scraped_at": "2025-09-12T12:32:35.279088",
   "profile_id": "sha-li"
 }

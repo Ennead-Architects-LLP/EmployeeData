@@ -7,7 +7,7 @@
   "office_location": "California",
   "profile_url": "https://ei.ennead.com/employee/1320E993-003D-4C70-81A6-938FF88AE832/alfonso-gorini",
   "image_url": "https://ei.ennead.com/api/image/7cab69fb-7a8b-4e65-83da-866913487fe2/preview?size=300w300h_fxd&version=0",
-  "image_local_path": null,
+  "image_local_path": "assets/images/Alfonso Gorini_profile.jpg",
   "position": "Senior Associate",
   "department": null,
   "years_with_firm": 14,
@@ -212,6 +212,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=agorini@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-11T16:37:09.354138",
+  "scraped_at": "2025-09-12T12:07:13.321220",
   "profile_id": "alfonso-gorini"
 }
