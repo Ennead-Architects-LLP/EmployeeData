@@ -22,6 +22,7 @@ REPO_OWNER = os.environ.get('REPO_OWNER', 'Ennead-Architects-LLP')
 REPO_NAME = os.environ.get('REPO_NAME', 'EmployeeData')
 # Using individual JSON files only - direct updates to employee records
 INDIVIDUAL_EMPLOYEES_DIR = '1-website/assets/individual_employees'
+COMPUTER_BACKUP_DIR = '1-website/assets/computer_info_data_backup'
 
 def find_employee_file_by_user(computer_data):
     """Find the employee JSON file that matches the user from computer data"""
@@ -165,6 +166,38 @@ def update_employee_computer_info(employee_file_path, computer_data):
         print(f"❌ Error updating employee file: {e}")
         return False
 
+def backup_computer_data(computer_data):
+    """Create a backup of computer data for archival purposes"""
+    try:
+        # Ensure backup directory exists
+        os.makedirs(COMPUTER_BACKUP_DIR, exist_ok=True)
+        
+        # Generate filename with timestamp
+        computer_name = computer_data.get('Computername', 'unknown').replace(' ', '_').replace('/', '_')
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        filename = f"{computer_name}_{timestamp}.json"
+        file_path = os.path.join(COMPUTER_BACKUP_DIR, filename)
+        
+        # Create backup data with metadata
+        backup_data = {
+            "timestamp": datetime.now().isoformat(),
+            "computer_name": computer_data.get('Computername', 'Unknown'),
+            "user_name": computer_data.get('Name', 'Unknown'),
+            "username": computer_data.get('Username', 'Unknown'),
+            "computer_info": computer_data
+        }
+        
+        # Save backup file
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(backup_data, f, indent=2, ensure_ascii=False, default=str)
+        
+        print(f"✅ Computer data backup saved to {file_path}")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Error creating computer backup: {e}")
+        return False
+
 
 def commit_to_github(computer_data=None):
     """Commit changes to GitHub repository using git commands"""
@@ -180,7 +213,7 @@ def commit_to_github(computer_data=None):
         subprocess.run(['git', 'config', '--local', 'user.name', 'GitHub Action'], check=True)
         
         # Add changes
-        subprocess.run(['git', 'add', INDIVIDUAL_EMPLOYEES_DIR], check=True)
+        subprocess.run(['git', 'add', INDIVIDUAL_EMPLOYEES_DIR, COMPUTER_BACKUP_DIR], check=True)
         
         # Check if there are changes to commit
         result = subprocess.run(['git', 'diff', '--staged', '--quiet'], capture_output=True)
@@ -230,6 +263,10 @@ def handle_computer_data():
         # Update the computer info in the employee's file
         if not update_employee_computer_info(employee_file_path, computer_data):
             return jsonify({'error': 'Failed to update employee computer info'}), 500
+        
+        # Create backup of computer data
+        if not backup_computer_data(computer_data):
+            print("⚠️  Warning: Computer backup failed, but employee update succeeded")
         
         updated_count = 1
         
@@ -298,6 +335,10 @@ def process_computer_data_from_event():
             print("❌ Failed to update employee computer info")
             return False
         
+        # Create backup of computer data
+        if not backup_computer_data(computer_data):
+            print("⚠️  Warning: Computer backup failed, but employee update succeeded")
+        
         updated_count = 1
         
         # Commit to GitHub
@@ -333,6 +374,7 @@ def main():
         print("⚠️  Warning: No GitHub token configured")
     
     print(f"👥 Individual employees directory: {INDIVIDUAL_EMPLOYEES_DIR}")
+    print(f"💾 Computer backup directory: {COMPUTER_BACKUP_DIR}")
     print(f"🌐 Server starting on port 5000")
     
     # Start Flask server

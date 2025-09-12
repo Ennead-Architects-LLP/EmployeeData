@@ -49,6 +49,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add assets/individual_employees/
+        git add assets/individual_employees/ assets/computer_info_data_backup/
         git diff --staged --quiet || git commit -m "Update computer data from AboutMe app"
         git push
