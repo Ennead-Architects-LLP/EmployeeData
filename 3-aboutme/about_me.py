@@ -68,7 +68,7 @@ class ComputerInfoCollector:
         """Get current user information"""
         try:
             self.data["Username"] = os.environ.get('USERNAME', os.environ.get('USER', ''))
-            self.data["Name"] = self._get_user_full_name()
+            self.data["human_name"] = self._get_user_full_name()
         except Exception as e:
             self.data["user_info_error"] = str(e)
     
@@ -243,7 +243,7 @@ class ComputerInfoCollector:
             
             print(f"Sending computer information to GitHub...")
             print(f"   Computer: {self.data.get('Computername', 'Unknown')}")
-            print(f"   User: {self.data.get('Name', 'Unknown')} ({self.data.get('Username', 'Unknown')})")
+            print(f"   User: {self.data.get('human_name', 'Unknown')} ({self.data.get('Username', 'Unknown')})")
             
             response = requests.post(url, json=payload, headers=headers, timeout=30)
             
@@ -269,7 +269,7 @@ class ComputerInfoCollector:
         print("COMPUTER INFORMATION SUMMARY")
         print("="*50)
         print(f"Computer Name: {self.data.get('Computername', 'Unknown')}")
-        print(f"User: {self.data.get('Name', 'Unknown')} ({self.data.get('Username', 'Unknown')})")
+        print(f"User: {self.data.get('human_name', 'Unknown')} ({self.data.get('Username', 'Unknown')})")
         print(f"OS: {self.data.get('OS', 'Unknown')}")
         print(f"Manufacturer: {self.data.get('Manufacturer', 'Unknown')}")
         print(f"Model: {self.data.get('Model', 'Unknown')}")

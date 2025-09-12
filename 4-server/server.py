@@ -27,7 +27,7 @@ COMPUTER_BACKUP_DIR = '1-website/assets/computer_info_data_backup'
 def find_employee_file_by_user(computer_data):
     """Find the employee JSON file that matches the user from computer data"""
     try:
-        human_name = computer_data.get('Name', '').strip()
+        human_name = computer_data.get('human_name', '').strip()
         username = computer_data.get('Username', '').strip()
         
         if not human_name and not username:
@@ -182,7 +182,7 @@ def backup_computer_data(computer_data):
         backup_data = {
             "timestamp": datetime.now().isoformat(),
             "computer_name": computer_data.get('Computername', 'Unknown'),
-            "human_name": computer_data.get('Name', 'Unknown'),
+            "human_name": computer_data.get('human_name', 'Unknown'),
             "username": computer_data.get('Username', 'Unknown'),
             "computer_info": computer_data
         }
@@ -222,7 +222,7 @@ def commit_to_github(computer_data=None):
             return True
         
         # Commit changes
-        human_name = computer_data.get('Name', 'Unknown') if computer_data else 'Unknown'
+        human_name = computer_data.get('human_name', 'Unknown') if computer_data else 'Unknown'
         commit_message = f"AutoUpdate Computer Data: {human_name} - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         subprocess.run(['git', 'commit', '-m', commit_message], check=True)
         
