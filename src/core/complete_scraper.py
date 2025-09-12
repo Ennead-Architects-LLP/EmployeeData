@@ -20,6 +20,7 @@ from ..services.auth import AutoLogin
 from ..services.image_downloader import ImageDownloader
 from ..services.html_generator import HTMLReportGenerator
 from ..services.seating_scraper import SeatingChartScraper
+from ..services.debug_utilities import PerformanceMonitor, ContentAnalyzer, ErrorDiagnostics, DebugReportGenerator, log_operation_start, log_operation_end, log_error_with_context
 from .data_merger import DataMerger
 
 
@@ -43,9 +44,16 @@ class CompleteScraper:
         self.seating_scraper = SeatingChartScraper(headless=self.config.HEADLESS, timeout=self.config.TIMEOUT, debug_mode=self.config.DEBUG_MODE)
         self.data_merger = DataMerger()
         
+        # Initialize debug utilities
+        self.performance_monitor = PerformanceMonitor(self.logger)
+        self.content_analyzer = ContentAnalyzer(self.logger)
+        self.error_diagnostics = ErrorDiagnostics(self.logger)
+        self.debug_report_generator = None  # Will be initialized when needed
+        
         # Setup debug directories if in debug mode
         if self.config.DEBUG_MODE:
             self.config.setup_debug_directories()
+            self.debug_report_generator = DebugReportGenerator(self.config.get_debug_output_path(), self.logger)
     
     async def find_employee_profile_links(self, page) -> List[Tuple[str, str, str]]:
         """
@@ -1887,27 +1895,32 @@ class CompleteScraper:
         Returns:
             List of EmployeeData objects
         """
+        operation_id = self.performance_monitor.start_operation("scrape_all_employees_parallel")
+        log_operation_start(self.logger, "Parallel Employee Scraping", workers=max_parallel_workers)
+        
         try:
             # Initialize Playwright without timeout protection
-            self.logger.info("[START] Initializing Playwright browser...")
-            playwright = await async_playwright().start()
-            
-            self.logger.info("[START] Launching browser...")
-            browser = await playwright.chromium.launch(
-                headless=self.config.HEADLESS,
-                channel='msedge',
-                args=self.config.BROWSER_ARGS
-            )
+            async with self.performance_monitor.track_operation("playwright_initialization", operation_id):
+                self.logger.info("[START] Initializing Playwright browser...")
+                playwright = await async_playwright().start()
+                
+                self.logger.info("[START] Launching browser...")
+                browser = await playwright.chromium.launch(
+                    headless=self.config.HEADLESS,
+                    channel='msedge',
+                    args=self.config.BROWSER_ARGS
+                )
             
             # Create main context for finding employee links
-            self.logger.info("[START] Creating main browser context...")
-            main_context = await browser.new_context(
-                viewport={'width': self.config.VIEWPORT_WIDTH, 'height': self.config.VIEWPORT_HEIGHT},
-                user_agent=self.config.USER_AGENT
-            )
-            
-            main_page = await main_context.new_page()
-            main_page.set_default_timeout(self.config.TIMEOUT)
+            async with self.performance_monitor.track_operation("browser_context_creation", operation_id):
+                self.logger.info("[START] Creating main browser context...")
+                main_context = await browser.new_context(
+                    viewport={'width': self.config.VIEWPORT_WIDTH, 'height': self.config.VIEWPORT_HEIGHT},
+                    user_agent=self.config.USER_AGENT
+                )
+                
+                main_page = await main_context.new_page()
+                main_page.set_default_timeout(self.config.TIMEOUT)
             
             # Login and get to main page
             self.logger.info("[START] Attempting login...")
@@ -1944,18 +1957,67 @@ class CompleteScraper:
             
             self.logger.info(f"✅ Successfully scraped {len(all_employees)} employees with parallel processing")
             
+            # End performance monitoring with success
+            self.performance_monitor.end_operation(operation_id, True, metadata={
+                "employees_count": len(all_employees),
+                "workers_used": max_parallel_workers
+            })
+            
+            # Generate content analysis if in debug mode
+            if self.config.DEBUG_MODE and self.debug_report_generator and all_employees:
+                try:
+                    content_analysis = self.content_analyzer.analyze_employee_data(all_employees)
+                    self.logger.info(f"Content analysis: {content_analysis['statistics']}")
+                except Exception as analysis_error:
+                    self.logger.warning(f"Failed to analyze content: {analysis_error}")
+            
             return all_employees
             
         except Exception as e:
+            # Enhanced error handling with diagnostics
+            error_diagnosis = self.error_diagnostics.diagnose_error(e, {
+                "operation": "scrape_all_employees_parallel",
+                "max_workers": max_parallel_workers,
+                "debug_mode": self.config.DEBUG_MODE
+            })
+            
+            log_error_with_context(self.logger, e, "Parallel Employee Scraping", 
+                                 workers=max_parallel_workers, 
+                                 debug_mode=self.config.DEBUG_MODE)
+            
+            # Log detailed error information
             self.logger.error(f"❌ Error during parallel scraping: {e}")
+            self.logger.error(f"   Error type: {error_diagnosis['error_type']}")
+            self.logger.error(f"   Categorized issues: {error_diagnosis['categorized_issues']}")
+            
+            if error_diagnosis['recovery_suggestions']:
+                self.logger.error("   Recovery suggestions:")
+                for suggestion in error_diagnosis['recovery_suggestions'][:3]:  # Show top 3
+                    self.logger.error(f"     - {suggestion}")
+            
             # Try to clean up browser if it exists
             try:
                 if 'browser' in locals():
                     await browser.close()
                 if 'playwright' in locals():
                     await playwright.stop()
-            except:
-                pass
+            except Exception as cleanup_error:
+                self.logger.warning(f"Error during cleanup: {cleanup_error}")
+            
+            # End performance monitoring
+            self.performance_monitor.end_operation(operation_id, False, str(e))
+            
+            # Generate debug report if in debug mode
+            if self.config.DEBUG_MODE and self.debug_report_generator:
+                try:
+                    error_report = self.error_diagnostics.generate_error_report([e])
+                    report_path = self.debug_report_generator.output_dir / f"error_report_{int(time.time())}.json"
+                    with open(report_path, 'w') as f:
+                        json.dump(error_report, f, indent=2)
+                    self.logger.info(f"Error report saved to: {report_path}")
+                except Exception as report_error:
+                    self.logger.warning(f"Failed to generate error report: {report_error}")
+            
             return []
 
     async def scrape_all_employees_incremental(self) -> List[EmployeeData]:
