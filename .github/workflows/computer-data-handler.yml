@@ -35,7 +35,17 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TEST_MODE: ${{ github.event.inputs.test_mode || 'false' }}
       run: |
+        # Debug: Show current directory and files
+        echo "Current directory: $(pwd)"
+        echo "Files in current directory:"
+        ls -la
+        echo "Files in 4-server directory:"
+        ls -la 4-server/
+        echo "Files in 1-website/assets/individual_employees directory:"
+        ls -la 1-website/assets/individual_employees/ | head -10
+        
         # Use the updated server component to handle computer data
+        echo "Starting server.py..."
         python 4-server/server.py
     
     - name: Update JSON data only (no website regeneration needed)
