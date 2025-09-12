@@ -761,6 +761,7 @@ class CompleteScraper:
     async def _scroll_to_load_all_employees(self, page):
         """
         Scroll down the page to load all employees (for lazy loading scenarios).
+        Enhanced to check for pagination and load more employees.
         
         Args:
             page: Playwright page object
@@ -772,15 +773,28 @@ class CompleteScraper:
         initial_count = len(initial_links)
         self.logger.info(f"Initial employee links found: {initial_count}")
         
+        # Check for pagination controls
+        pagination_selectors = [
+            'button[aria-label*="next"]',
+            'button[aria-label*="Next"]',
+            'a[aria-label*="next"]',
+            'a[aria-label*="Next"]',
+            '.pagination button:last-child',
+            '.pagination a:last-child',
+            '[data-testid*="next"]',
+            '[data-testid*="Next"]'
+        ]
+        
         # Scroll down multiple times to trigger lazy loading
         scroll_attempts = 0
-        max_scroll_attempts = 10
+        max_scroll_attempts = 15  # Increased from 10
         last_count = initial_count
+        no_new_content_count = 0  # Track consecutive attempts with no new content
         
         while scroll_attempts < max_scroll_attempts:
             # Scroll to bottom of page
             await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            await asyncio.sleep(2)  # Wait for content to load
+            await asyncio.sleep(3)  # Increased wait time
             
             # Check if new content was loaded
             current_links = await page.query_selector_all('a[href*="employee/"]')
@@ -788,10 +802,47 @@ class CompleteScraper:
             
             self.logger.info(f"Scroll attempt {scroll_attempts + 1}: Found {current_count} employee links")
             
-            # If no new links were loaded, we've reached the end
+            # If no new links were loaded, check for pagination
             if current_count == last_count:
-                self.logger.info("No new employees loaded, stopping scroll")
-                break
+                no_new_content_count += 1
+                
+                # Look for pagination controls
+                pagination_found = False
+                for selector in pagination_selectors:
+                    try:
+                        pagination_element = await page.query_selector(selector)
+                        if pagination_element:
+                            # Check if the element is clickable
+                            is_visible = await pagination_element.is_visible()
+                            is_enabled = await pagination_element.is_enabled()
+                            
+                            if is_visible and is_enabled:
+                                self.logger.info(f"Found pagination control: {selector}")
+                                await pagination_element.click()
+                                await asyncio.sleep(3)  # Wait for new page to load
+                                
+                                # Check if we got more employees
+                                new_links = await page.query_selector_all('a[href*="employee/"]')
+                                new_count = len(new_links)
+                                
+                                if new_count > current_count:
+                                    self.logger.info(f"Pagination loaded {new_count - current_count} more employees")
+                                    current_count = new_count
+                                    pagination_found = True
+                                    no_new_content_count = 0  # Reset counter
+                                    break
+                                else:
+                                    self.logger.info("Pagination button didn't load more employees")
+                    except Exception as e:
+                        self.logger.debug(f"Error checking pagination selector {selector}: {e}")
+                        continue
+                
+                # If no pagination found or didn't work, and we've tried multiple times
+                if not pagination_found and no_new_content_count >= 3:
+                    self.logger.info("No new employees loaded after multiple attempts, stopping scroll")
+                    break
+            else:
+                no_new_content_count = 0  # Reset counter when we find new content
             
             last_count = current_count
             scroll_attempts += 1
@@ -1665,9 +1716,9 @@ class CompleteScraper:
             self.logger.error(f"    [ERROR] Error scraping profile: {e}")
             return None
     
-    async def scrape_all_employees(self) -> List[EmployeeData]:
+    async def scrape_all_employees_incremental(self) -> List[EmployeeData]:
         """
-        Scrape all employees from the directory.
+        Scrape all employees from the directory with incremental saving to manage memory.
         
         Returns:
             List of EmployeeData objects
@@ -1716,16 +1767,25 @@ class CompleteScraper:
                 self.logger.warning("No employee profile links found!")
                 return []
             
-            self.logger.info(f"Scraping {len(employee_links)} employee profiles...")
+            self.logger.info(f"Scraping {len(employee_links)} employee profiles with incremental saving...")
             
-            # Scrape each employee profile
-            employees = []
+            # Initialize incremental saving
+            all_employees = []
+            batch_size = 10  # Save every 10 employees
+            current_batch = []
+            
             for i, (profile_url, employee_name, office_location) in enumerate(employee_links, 1):
                 self.logger.info(f"[{i}/{len(employee_links)}] Processing: {employee_name}")
                 
                 employee = await self.scrape_employee_profile(page, profile_url, employee_name, office_location)
                 if employee:
-                    employees.append(employee)
+                    current_batch.append(employee)
+                    all_employees.append(employee)
+                
+                # Save incrementally every batch_size employees
+                if len(current_batch) >= batch_size or i == len(employee_links):
+                    await self._save_incremental_batch(current_batch, i, len(employee_links))
+                    current_batch = []  # Clear batch to free memory
                 
                 # Add small delay to be respectful
                 await asyncio.sleep(1)
@@ -1734,7 +1794,7 @@ class CompleteScraper:
             print("DEBUG: Starting seating chart scraping section")
             try:
                 self.logger.info("Scraping seating chart data...")
-                print(f"DEBUG: About to call seating chart scraper with {len(employees)} existing employees")
+                print(f"DEBUG: About to call seating chart scraper with {len(all_employees)} existing employees")
                 # Pass the authenticated page to the seating chart scraper
                 seating_data = await self.seating_scraper.scrape_all_employees(page)
                 print(f"DEBUG: Seating chart scraper returned {len(seating_data) if seating_data else 0} employees")
@@ -1742,11 +1802,11 @@ class CompleteScraper:
                 if seating_data:
                     self.logger.info(f"Found {len(seating_data)} employees in seating chart")
                     print(f"DEBUG: Sample seating data: {[f'{emp.name}: {emp.seat}' for emp in seating_data[:3]]}")
-                    print(f"DEBUG: Main employee names: {[emp.real_name for emp in employees]}")
+                    print(f"DEBUG: Main employee names: {[emp.real_name for emp in all_employees]}")
                     print(f"DEBUG: Sample seating names: {[emp.name for emp in seating_data[:5]]}")
                     # Merge seating data with employee data
-                    employees = self.data_merger.merge_employee_data(employees, seating_data)
-                    print(f"DEBUG: After merging, {len([e for e in employees if e.seat_assignment])} employees have seat assignments")
+                    all_employees = self.data_merger.merge_employee_data(all_employees, seating_data)
+                    print(f"DEBUG: After merging, {len([e for e in all_employees if e.seat_assignment])} employees have seat assignments")
                     self.logger.info("Successfully merged seating chart data")
                 else:
                     self.logger.warning("No seating chart data found")
@@ -1762,9 +1822,9 @@ class CompleteScraper:
             await browser.close()
             await playwright.stop()
             
-            self.logger.info(f"✅ Successfully scraped {len(employees)} employees")
+            self.logger.info(f"✅ Successfully scraped {len(all_employees)} employees")
             
-            return employees
+            return all_employees
             
         except Exception as e:
             self.logger.error(f"❌ Error during scraping: {e}")
@@ -1777,6 +1837,41 @@ class CompleteScraper:
             except:
                 pass
             return []
+    
+    async def _save_incremental_batch(self, batch: List[EmployeeData], current_count: int, total_count: int):
+        """
+        Save a batch of employees incrementally to manage memory.
+        
+        Args:
+            batch: List of EmployeeData objects to save
+            current_count: Current employee count processed
+            total_count: Total number of employees to process
+        """
+        if not batch:
+            return
+            
+        try:
+            # Create incremental filename
+            batch_filename = f"employees_batch_{current_count}.json"
+            batch_path = self.config.get_output_path(batch_filename)
+            
+            # Convert to JSON-serializable format
+            batch_data = [emp.to_dict() for emp in batch]
+            
+            # Save batch
+            with open(batch_path, 'w', encoding='utf-8') as f:
+                json.dump(batch_data, f, indent=2, ensure_ascii=False)
+            
+            self.logger.info(f"💾 Saved batch of {len(batch)} employees to {batch_filename} ({current_count}/{total_count})")
+            
+            # Also save individual files for this batch
+            for employee in batch:
+                individual_path = self.config.get_output_path(f"individual_employees/{employee.real_name.replace(' ', '_')}.json")
+                with open(individual_path, 'w', encoding='utf-8') as f:
+                    json.dump(employee.to_dict(), f, indent=2, ensure_ascii=False)
+                    
+        except Exception as e:
+            self.logger.error(f"Error saving incremental batch: {e}")
     
     def save_to_json(self, employees: List[EmployeeData], filename: Optional[str] = None) -> str:
         """

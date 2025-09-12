@@ -21,9 +21,9 @@ class Orchestrator:
         scraper = CompleteScraper(self.config)
 
         try:
-            # Step 1: Scrape employees without timeout
-            self.logger.info("[STEP 1] Scraping employees...")
-            employees = await scraper.scrape_all_employees()
+            # Step 1: Scrape employees with incremental saving
+            self.logger.info("[STEP 1] Scraping employees with incremental saving...")
+            employees = await scraper.scrape_all_employees_incremental()
             if not employees:
                 self.logger.error("[ERROR] No employees scraped. Aborting.")
                 voice_announcer.announce_error("No employees were scraped")
