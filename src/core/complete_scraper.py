@@ -577,7 +577,7 @@ class CompleteScraper:
             # Step 5: Systematic sequential clicking to discover office assignments
             employee_location_mapping = {}
             location_names = ["New York", "Shanghai", "California"]
-            previous_employees = set()
+            previous_employee_urls = set()
             
             for i, location_name in enumerate(location_names):
                 try:
@@ -599,22 +599,29 @@ class CompleteScraper:
                         current_employee_links = await self._get_visible_employee_links(page)
                         self.logger.info(f"Found {len(current_employee_links)} employees after clicking {location_name}")
                         
-                        # Find new employees (difference from previous)
-                        current_employees = set(current_employee_links)
-                        new_employees = current_employees - previous_employees
+                        # Extract URLs from current employee links
+                        current_employee_urls = set()
+                        for link in current_employee_links:
+                            if isinstance(link, tuple) and len(link) >= 1:
+                                current_employee_urls.add(link[0])  # URL is first element
+                            elif isinstance(link, str):
+                                current_employee_urls.add(link)
                         
-                        self.logger.info(f"New employees discovered for {location_name}: {len(new_employees)}")
+                        # Find new employees (difference from previous)
+                        new_employee_urls = current_employee_urls - previous_employee_urls
+                        
+                        self.logger.info(f"New employees discovered for {location_name}: {len(new_employee_urls)}")
                         
                         # Map new employees to this location
-                        for employee_url in new_employees:
+                        for employee_url in new_employee_urls:
                             employee_location_mapping[employee_url] = location_name
                         
                         # Update previous employees for next iteration
-                        previous_employees = current_employees
+                        previous_employee_urls = current_employee_urls
                         
                         # DEBUG: Capture DOM after clicking location checkbox
                         if self.config.DEBUG_MODE:
-                            await self._capture_dom_for_debug(page, f"office_location_{location_name.replace(' ', '_').lower()}", f"After clicking {location_name} - {len(new_employees)} new employees")
+                            await self._capture_dom_for_debug(page, f"office_location_{location_name.replace(' ', '_').lower()}", f"After clicking {location_name} - {len(new_employee_urls)} new employees")
                         
                     else:
                         self.logger.warning(f"Not enough checkboxes found for location {location_name}")

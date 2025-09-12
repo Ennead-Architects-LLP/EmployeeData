@@ -5,7 +5,7 @@
     "bio": null,
     "phone": "212-792-5964",
     "mobile": "212-792-5964",
-    "office_location": "California",
+    "office_location": "",
     "profile_url": "https://ei.ennead.com/employee/E8FAC548-D560-4BD6-9240-6CEB9899F377/adriana-burton",
     "image_url": "https://ei.ennead.com/api/image/8d165831-ca65-4db1-bc85-81493022afa4/preview?size=300w300h_fxd&version=0",
     "image_local_path": "assets/images/Adriana Burton_profile.jpg",
@@ -26,22 +26,22 @@
     "projects": [
       {
         "name": "Science Park and Research Campus (SPARC) Kips Bay",
-        "number": "2412",
-        "client": "",
+        "number": "",
+        "client": "2412",
         "role": "",
         "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
       },
       {
         "name": "Northwell, Third Avenue Medical Office Building",
-        "number": "2109",
-        "client": "",
+        "number": "",
+        "client": "2109",
         "role": "",
         "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
       },
       {
         "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-        "number": "1836",
-        "client": "",
+        "number": "",
+        "client": "1836",
         "role": "",
         "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
       }
@@ -50,7 +50,7 @@
     "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Adriana.Burton@ennead.com",
     "linkedin_url": null,
     "website_url": null,
-    "scraped_at": "2025-09-12T13:35:05.305035",
+    "scraped_at": "2025-09-12T14:25:49.949535",
     "profile_id": "adriana-burton"
   },
   {
@@ -59,7 +59,7 @@
     "bio": null,
     "phone": "212-792-5891",
     "mobile": "212-792-5891",
-    "office_location": "California",
+    "office_location": "",
     "profile_url": "https://ei.ennead.com/employee/F6242792-03FE-439A-B497-FB36AF4476A5/aidan-kim",
     "image_url": "https://ei.ennead.com/api/image/3fda878f-d3e0-4f49-b612-deec73409f00/preview?size=300w300h_fxd&version=0",
     "image_local_path": "assets/images/Aidan Kim_profile.jpg",
@@ -193,7 +193,7 @@
     "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=AKim@ennead.com",
     "linkedin_url": null,
     "website_url": null,
-    "scraped_at": "2025-09-12T13:35:12.020514",
+    "scraped_at": "2025-09-12T14:25:58.530268",
     "profile_id": "aidan-kim"
   },
   {
@@ -202,7 +202,7 @@
     "bio": null,
     "phone": "212-792-5997",
     "mobile": "212-792-5997",
-    "office_location": "California",
+    "office_location": "",
     "profile_url": "https://ei.ennead.com/employee/D5F71818-5957-4E06-A29B-BA46047A354B/aislinn-weidele",
     "image_url": "https://ei.ennead.com/api/image/9c39af50-bf76-47c0-bdde-d9c6c8e4ad70/preview?size=300w300h_fxd&version=0",
     "image_local_path": "assets/images/Aislinn Weidele_profile.jpg",
@@ -230,7 +230,7 @@
     "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aweidele@ennead.com",
     "linkedin_url": null,
     "website_url": null,
-    "scraped_at": "2025-09-12T13:35:28.164819",
+    "scraped_at": "2025-09-12T14:26:18.931843",
     "profile_id": "aislinn-weidele"
   }
 ]
