@@ -101,8 +101,8 @@ def update_individual_employee_file(employee_data, computer_data):
             with open(individual_file, 'r', encoding='utf-8') as f:
                 individual_data = json.load(f)
             
-            # Add computer data
-            individual_data['computer_info'] = {
+            # Create new computer info entry
+            new_computer_info = {
                 'computername': computer_data.get('Computername'),
                 'os': computer_data.get('OS'),
                 'manufacturer': computer_data.get('Manufacturer'),
@@ -114,6 +114,29 @@ def update_individual_employee_file(employee_data, computer_data):
                 'serial_number': computer_data.get('Serial Number'),
                 'last_updated': datetime.now().isoformat()
             }
+            
+            # Handle computer_info as a list
+            if 'computer_info' not in individual_data:
+                individual_data['computer_info'] = []
+            elif not isinstance(individual_data['computer_info'], list):
+                # Convert existing single dict to list if needed
+                individual_data['computer_info'] = [individual_data['computer_info']]
+            
+            # Check if this computer already exists (by computername and serial number)
+            computer_exists = False
+            for i, existing_computer in enumerate(individual_data['computer_info']):
+                if (existing_computer.get('computername') == new_computer_info.get('computername') and 
+                    existing_computer.get('serial_number') == new_computer_info.get('serial_number')):
+                    # Update existing entry
+                    individual_data['computer_info'][i] = new_computer_info
+                    computer_exists = True
+                    print(f"Updated existing computer entry for {new_computer_info.get('computername')}")
+                    break
+            
+            if not computer_exists:
+                # Add new computer entry
+                individual_data['computer_info'].append(new_computer_info)
+                print(f"Added new computer entry for {new_computer_info.get('computername')}")
             
             # Save updated individual file
             with open(individual_file, 'w', encoding='utf-8') as f:
@@ -185,11 +208,8 @@ def save_computer_data(data):
                 employee = find_employee_by_username(employees, username)
             
             if employee:
-                # Update individual employee file
-                update_individual_employee_file(employee, data)
-                
-                # Also update the main employees data file
-                employee['computer_info'] = {
+                # Create new computer info entry
+                new_computer_info = {
                     'computername': data.get('Computername'),
                     'os': data.get('OS'),
                     'manufacturer': data.get('Manufacturer'),
@@ -201,6 +221,32 @@ def save_computer_data(data):
                     'serial_number': data.get('Serial Number'),
                     'last_updated': datetime.now().isoformat()
                 }
+                
+                # Handle computer_info as a list in main employee data
+                if 'computer_info' not in employee:
+                    employee['computer_info'] = []
+                elif not isinstance(employee['computer_info'], list):
+                    # Convert existing single dict to list if needed
+                    employee['computer_info'] = [employee['computer_info']]
+                
+                # Check if this computer already exists (by computername and serial number)
+                computer_exists = False
+                for i, existing_computer in enumerate(employee['computer_info']):
+                    if (existing_computer.get('computername') == new_computer_info.get('computername') and 
+                        existing_computer.get('serial_number') == new_computer_info.get('serial_number')):
+                        # Update existing entry
+                        employee['computer_info'][i] = new_computer_info
+                        computer_exists = True
+                        print(f"Updated existing computer entry in main data for {new_computer_info.get('computername')}")
+                        break
+                
+                if not computer_exists:
+                    # Add new computer entry
+                    employee['computer_info'].append(new_computer_info)
+                    print(f"Added new computer entry to main data for {new_computer_info.get('computername')}")
+                
+                # Update individual employee file
+                update_individual_employee_file(employee, data)
                 
                 # Save updated employees data
                 with open("1-website/assets/employees_data.json", 'w', encoding='utf-8') as f:

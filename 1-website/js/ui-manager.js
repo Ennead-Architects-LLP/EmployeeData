@@ -49,7 +49,8 @@ function createEmployeeCard(employee) {
     const education = employee.education || [];
     
     // Handle computer specifications if available
-    const computerInfo = employee.computer || employee.computer_specs;
+    const computerInfo = employee.computer_info || employee.computer || employee.computer_specs;
+    const computers = Array.isArray(computerInfo) ? computerInfo : (computerInfo ? [computerInfo] : []);
     
     return `
         <div class="employee-card">
@@ -76,16 +77,22 @@ function createEmployeeCard(employee) {
                         `).join('')}
                     </div>
                 ` : ''}
-                ${computerInfo ? `
+                ${computers.length > 0 ? `
                     <div class="computer-section">
-                        <h4>🖥️ Computer Specifications</h4>
-                        <div class="computer-details">
-                            ${computerInfo.OS ? `<p class="computer-item"><strong>OS:</strong> ${computerInfo.OS}</p>` : ''}
-                            ${computerInfo.CPU ? `<p class="computer-item"><strong>CPU:</strong> ${computerInfo.CPU}</p>` : ''}
-                            ${computerInfo['GPU Name'] ? `<p class="computer-item"><strong>GPU:</strong> ${computerInfo['GPU Name']}</p>` : ''}
-                            ${computerInfo['Total Physical Memory'] ? `<p class="computer-item"><strong>RAM:</strong> ${Math.round(computerInfo['Total Physical Memory'] / (1024**3))} GB</p>` : ''}
-                            ${computerInfo.Manufacturer && computerInfo.Model ? `<p class="computer-item"><strong>Hardware:</strong> ${computerInfo.Manufacturer} ${computerInfo.Model}</p>` : ''}
-                        </div>
+                        <h4>🖥️ Computer Specifications (${computers.length})</h4>
+                        ${computers.map((computer, index) => `
+                            <div class="computer-details">
+                                ${computer.computername ? `<h5 class="computer-name">${computer.computername}</h5>` : ''}
+                                <div class="computer-specs">
+                                    ${computer.os ? `<p class="computer-item"><strong>OS:</strong> ${computer.os}</p>` : ''}
+                                    ${computer.cpu ? `<p class="computer-item"><strong>CPU:</strong> ${computer.cpu}</p>` : ''}
+                                    ${computer.gpu_name ? `<p class="computer-item"><strong>GPU:</strong> ${computer.gpu_name}</p>` : ''}
+                                    ${computer.memory_bytes ? `<p class="computer-item"><strong>RAM:</strong> ${Math.round(computer.memory_bytes / (1024**3))} GB</p>` : ''}
+                                    ${computer.manufacturer && computer.model ? `<p class="computer-item"><strong>Hardware:</strong> ${computer.manufacturer} ${computer.model}</p>` : ''}
+                                    ${computer.serial_number ? `<p class="computer-item"><strong>Serial:</strong> ${computer.serial_number}</p>` : ''}
+                                </div>
+                            </div>
+                        `).join('')}
                     </div>
                 ` : ''}
                 ${projects.length > 0 ? `

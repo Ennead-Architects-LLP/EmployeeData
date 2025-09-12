@@ -66,14 +66,15 @@ async function loadEmployeeData() {
         fuzzySearch.initialize(allEmployees);
         
         // Update header with employee count
-        document.getElementById('mainTitle').textContent = `Ennead's People (${allEmployees.length} employees)`;
+        document.getElementById('mainTitle').innerHTML = `Ennead's People <span class="employee-count">(${allEmployees.length} employees)</span>`;
         
         // Update generation time
         const now = new Date();
-        document.getElementById('generatedTime').textContent = `Generated on: ${now.toLocaleString()}`;
+        const formattedTime = now.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, '').replace(/:/g, '-');
+        document.getElementById('generatedTime').textContent = `Generated: ${formattedTime}`;
         
         // Update data time (use current time as fallback)
-        document.getElementById('dataTime').textContent = `Data fetched on: ${now.toISOString()}`;
+        document.getElementById('dataTime').textContent = `Data: ${formattedTime}`;
         
     } catch (error) {
         console.error('Error loading employee data:', error);
@@ -84,23 +85,40 @@ async function loadEmployeeData() {
 
 async function loadFallbackEmployeeData() {
     try {
-        const response = await fetch('assets/employees_data.json');
-        if (!response.ok) {
-            throw new Error('Failed to load fallback employee data');
+        // Try to load from individual files as fallback
+        const indexResponse = await fetch('assets/individual_employees/index.json');
+        if (!indexResponse.ok) {
+            throw new Error('Failed to load employee index');
         }
-        const data = await response.json();
-        allEmployees = data.employees || data;
+        
+        const employeeFiles = await indexResponse.json();
+        const employees = [];
+        
+        for (const filename of employeeFiles.slice(0, 10)) { // Load only first 10 as fallback
+            try {
+                const response = await fetch(`assets/individual_employees/${filename}`);
+                if (response.ok) {
+                    const employee = await response.json();
+                    employees.push(employee);
+                }
+            } catch (error) {
+                console.warn(`Could not load ${filename}:`, error);
+            }
+        }
+        
+        allEmployees = employees;
         filteredEmployees = [...allEmployees];
         
         console.log('Loaded fallback employees:', allEmployees.length);
         
         // Update header with employee count
-        document.getElementById('mainTitle').textContent = `Ennead's People (${allEmployees.length} employees)`;
+        document.getElementById('mainTitle').innerHTML = `Ennead's People <span class="employee-count">(${allEmployees.length} employees)</span>`;
         
         // Update generation time
         const now = new Date();
-        document.getElementById('generatedTime').textContent = `Generated on: ${now.toLocaleString()}`;
-        document.getElementById('dataTime').textContent = `Data fetched on: ${now.toISOString()}`;
+        const formattedTime = now.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, '').replace(/:/g, '-');
+        document.getElementById('generatedTime').textContent = `Generated: ${formattedTime}`;
+        document.getElementById('dataTime').textContent = `Data: ${formattedTime}`;
         
     } catch (error) {
         console.error('Error loading fallback employee data:', error);

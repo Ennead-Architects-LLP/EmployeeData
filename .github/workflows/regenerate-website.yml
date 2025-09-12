@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'assets/computer_data/**'
-      - 'assets/employees_data.json'
+      - 'assets/individual_employees/**'
   workflow_dispatch:
 
 jobs:

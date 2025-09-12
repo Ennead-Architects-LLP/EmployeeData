@@ -86,16 +86,66 @@
   "website_url": null,
   "scraped_at": "2025-09-12T15:03:46.155093",
   "profile_id": "sen-zhang",
-  "computer_info": {
-    "computername": "TEST-WORKSTATION-001",
-    "os": "Windows 11 Pro",
-    "manufacturer": "Dell Technologies",
-    "model": "OptiPlex 7090",
-    "cpu": "Intel Core i7-11700",
-    "gpu_name": "NVIDIA GeForce RTX 3060",
-    "gpu_driver": "31.0.15.3742",
-    "memory_bytes": 34359738368,
-    "serial_number": "TEST123456789",
-    "last_updated": "2025-09-12T17:16:19.406830"
-  }
+  "computer_info": [
+    {
+      "computername": "TEST-WORKSTATION-001",
+      "os": "Windows 11 Pro",
+      "manufacturer": "Dell Technologies",
+      "model": "OptiPlex 7090",
+      "cpu": "Intel Core i7-11700",
+      "gpu_name": "NVIDIA GeForce RTX 3060",
+      "gpu_driver": "31.0.15.3742",
+      "memory_bytes": 34359738368,
+      "serial_number": "TEST123456789",
+      "last_updated": "2025-09-12T17:16:19.406830"
+    },
+    {
+      "computername": "WORKSTATION-001",
+      "os": "Windows 11 Pro",
+      "manufacturer": "Dell Technologies",
+      "model": "OptiPlex 7090",
+      "cpu": "Intel Core i9-12900K",
+      "gpu_name": "NVIDIA GeForce RTX 3060",
+      "gpu_driver": null,
+      "memory_bytes": 68719476736,
+      "serial_number": "WORK001",
+      "last_updated": "2025-09-12T17:25:06.815034"
+    },
+    {
+      "computername": "LAPTOP-002",
+      "os": "Windows 11 Home",
+      "manufacturer": "Lenovo",
+      "model": "ThinkPad X1 Carbon",
+      "cpu": "Intel Core i7-1260P",
+      "gpu_name": "Intel Iris Xe",
+      "gpu_driver": null,
+      "memory_bytes": 17179869184,
+      "serial_number": "LAPTOP002",
+      "last_updated": "2025-09-12T17:25:06.812522"
+    },
+    {
+      "computername": "WORKFLOW-TEST",
+      "os": "Windows 11",
+      "manufacturer": null,
+      "model": null,
+      "cpu": null,
+      "gpu_name": null,
+      "gpu_driver": null,
+      "memory_bytes": null,
+      "serial_number": "WORKFLOW123",
+      "last_updated": "2025-09-12T17:25:42.477148"
+    },
+    {
+      "computername": "TEST-GITHUB-WORKFLOW",
+      "os": "Windows 11 Pro",
+      "manufacturer": "Dell Technologies",
+      "model": "OptiPlex 7090",
+      "cpu": "Intel Core i7-11700",
+      "gpu_name": "NVIDIA GeForce RTX 3060",
+      "gpu_driver": null,
+      "memory_bytes": 34359738368,
+      "serial_number": "GITHUB123",
+      "last_updated": "2025-09-12T17:25:42.503793"
+    }
+  ]
 }

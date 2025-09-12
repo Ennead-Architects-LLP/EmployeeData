@@ -578,49 +578,29 @@ class EmployeeScraper:
             self.logger.error(f"Error scraping employees: {str(e)}")
             return []
     
-    def save_to_json(self, filename: str = "employees_data.json"):
+    def save_to_individual_files(self, output_dir: str = "assets/individual_employees"):
         """
-        Save scraped employee data to JSON file.
+        Save scraped employee data to individual JSON files.
         
         Args:
-            filename: Output filename
+            output_dir: Output directory for individual files
         """
         try:
-            output_path = Path(filename)
+            output_path = Path(output_dir)
+            output_path.mkdir(parents=True, exist_ok=True)
             
-            # Convert employees to dictionaries
-            employees_data = [emp.to_dict() for emp in self.employees]
-            
-            # Create output data structure
-            output_data = {
-                "metadata": {
-                    "total_employees": len(self.employees),
-                    "scraped_at": self.employees[0].scraped_at if self.employees else None,
-                    "source_url": self.base_url,
-                    "download_images": self.download_images
-                },
-                "employees": employees_data
-            }
-            
-            # Save to file
-            with open(output_path, 'w', encoding='utf-8') as f:
-                json.dump(output_data, f, indent=2, ensure_ascii=False)
-            
-            self.logger.info(f"Saved {len(self.employees)} employees to {output_path}")
-            
-            # Also save individual employee files for easier access
-            individual_dir = output_path.parent / "individual_employees"
-            individual_dir.mkdir(exist_ok=True)
-            
+            # Save individual employee files
             for employee in self.employees:
                 if employee.real_name:
                     safe_name = self.image_downloader._sanitize_filename(employee.real_name) if self.image_downloader else employee.real_name
-                    individual_file = individual_dir / f"{safe_name}.json"
+                    individual_file = output_path / f"{safe_name}.json"
                     with open(individual_file, 'w', encoding='utf-8') as f:
                         json.dump(employee.to_dict(), f, indent=2, ensure_ascii=False)
             
+            self.logger.info(f"Saved {len(self.employees)} employees to individual files in {output_path}")
+            
         except Exception as e:
-            self.logger.error(f"Error saving to JSON: {str(e)}")
+            self.logger.error(f"Error saving to individual files: {str(e)}")
     
     def get_scraping_stats(self) -> Dict[str, Any]:
         """Get statistics about the scraping process."""

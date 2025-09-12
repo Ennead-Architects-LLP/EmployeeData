@@ -210,6 +210,22 @@
 }
 
 .computer-details {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid #4a90e2;
+}
+
+.computer-name {
+    color: #4a90e2;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.computer-specs {
     display: flex;
     flex-direction: column;
     gap: 4px;

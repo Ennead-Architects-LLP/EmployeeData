@@ -65,27 +65,48 @@ async function loadIndividualEmployeeData() {
         filteredEmployees = [...allEmployees];
         
         // Update header with employee count
-        document.getElementById('mainTitle').textContent = `Ennead's People (${allEmployees.length} employees)`;
+        document.getElementById('mainTitle').innerHTML = `Ennead's People <span class="employee-count">(${allEmployees.length} employees)</span>`;
         
         // Update generation time
         const now = new Date();
-        document.getElementById('generatedTime').textContent = `Generated on: ${now.toLocaleString()}`;
-        document.getElementById('dataTime').textContent = `Data fetched on: ${now.toISOString()}`;
+        const formattedTime = now.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, '').replace(/:/g, '-');
+        document.getElementById('generatedTime').textContent = `Generated: ${formattedTime}`;
+        document.getElementById('dataTime').textContent = `Data: ${formattedTime}`;
         
         console.log(`Successfully loaded ${allEmployees.length} employees from individual files`);
         
     } catch (error) {
         console.error('Error loading individual employee data:', error);
         
-        // Fallback: try to load from big JSON file if individual files fail
+        // Fallback: try to load a few individual files if index fails
         try {
-            const response = await fetch('employees_data.json');
-            if (response.ok) {
-                allEmployees = await response.json();
+            console.log('Trying fallback: loading individual files directly...');
+            // Try to load a few known employee files as fallback
+            const fallbackFiles = ['index.json', 'Sen_Zhang.json', 'Adriana_Burton.json'];
+            const employees = [];
+            
+            for (const filename of fallbackFiles) {
+                try {
+                    const response = await fetch(`individual_employees/${filename}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        if (Array.isArray(data)) {
+                            employees.push(...data);
+                        } else {
+                            employees.push(data);
+                        }
+                    }
+                } catch (error) {
+                    console.warn(`Could not load fallback file ${filename}:`, error);
+                }
+            }
+            
+            if (employees.length > 0) {
+                allEmployees = employees;
                 filteredEmployees = [...allEmployees];
-                console.log('Fallback: Loaded from big JSON file');
+                console.log('Fallback: Loaded from individual files');
             } else {
-                throw new Error('Both individual files and big JSON failed');
+                throw new Error('No fallback data available');
             }
         } catch (fallbackError) {
             throw new Error('Failed to load employee data from any source');

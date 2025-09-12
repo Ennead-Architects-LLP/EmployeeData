@@ -10,13 +10,33 @@ from pathlib import Path
 from datetime import datetime
 
 def load_employee_data():
-    """Load existing employee data"""
+    """Load existing employee data from individual JSON files"""
     try:
-        with open('assets/employees_data.json', 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        print("❌ Employee data not found. Please run the main scraper first.")
-        return None
+        # Load the index file to get list of employee files
+        index_path = Path('assets/individual_employees/index.json')
+        if not index_path.exists():
+            print("❌ Employee index not found. Please run the main scraper first.")
+            return None
+        
+        with open(index_path, 'r', encoding='utf-8') as f:
+            employee_files = json.load(f)
+        
+        # Load each individual employee file
+        employees = []
+        for filename in employee_files:
+            try:
+                employee_path = Path(f'assets/individual_employees/{filename}')
+                if employee_path.exists():
+                    with open(employee_path, 'r', encoding='utf-8') as f:
+                        employee_data = json.load(f)
+                        employees.append(employee_data)
+            except Exception as e:
+                print(f"⚠️  Warning: Could not load {filename}: {e}")
+                continue
+        
+        print(f"✅ Loaded {len(employees)} employees from individual files")
+        return employees
+        
     except Exception as e:
         print(f"❌ Error loading employee data: {e}")
         return None

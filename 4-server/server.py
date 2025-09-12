@@ -19,37 +19,46 @@ app = Flask(__name__)
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 REPO_OWNER = os.environ.get('REPO_OWNER', 'szhang')
 REPO_NAME = os.environ.get('REPO_NAME', 'EmployeeData')
-EMPLOYEE_DATA_FILE = '1-website/assets/employees_data.json'
+# No longer using compiled JSON file - using individual files only
 INDIVIDUAL_EMPLOYEES_DIR = '1-website/assets/individual_employees'
 COMPUTER_DATA_DIR = '1-website/assets/computer_data'
 
 def load_employee_data():
-    """Load existing employee data"""
+    """Load existing employee data from individual JSON files"""
     try:
-        with open(EMPLOYEE_DATA_FILE, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return data.get('employees', [])
-    except FileNotFoundError:
-        print(f"❌ Employee data file not found: {EMPLOYEE_DATA_FILE}")
-        return []
+        # Load the index file to get list of employee files
+        index_path = os.path.join(INDIVIDUAL_EMPLOYEES_DIR, 'index.json')
+        if not os.path.exists(index_path):
+            print(f"❌ Employee index not found: {index_path}")
+            return []
+        
+        with open(index_path, 'r', encoding='utf-8') as f:
+            employee_files = json.load(f)
+        
+        # Load each individual employee file
+        employees = []
+        for filename in employee_files:
+            try:
+                employee_path = os.path.join(INDIVIDUAL_EMPLOYEES_DIR, filename)
+                if os.path.exists(employee_path):
+                    with open(employee_path, 'r', encoding='utf-8') as f:
+                        employee_data = json.load(f)
+                        employees.append(employee_data)
+            except Exception as e:
+                print(f"⚠️  Warning: Could not load {filename}: {e}")
+                continue
+        
+        print(f"✅ Loaded {len(employees)} employees from individual files")
+        return employees
+        
     except Exception as e:
         print(f"❌ Error loading employee data: {e}")
         return []
 
 def save_employee_data(employees):
-    """Save employee data to file"""
-    try:
-        # Ensure directory exists
-        os.makedirs(os.path.dirname(EMPLOYEE_DATA_FILE), exist_ok=True)
-        
-        with open(EMPLOYEE_DATA_FILE, 'w', encoding='utf-8') as f:
-            json.dump(employees, f, indent=2, ensure_ascii=False, default=str)
-        
-        print(f"✅ Employee data saved to {EMPLOYEE_DATA_FILE}")
-        return True
-    except Exception as e:
-        print(f"❌ Error saving employee data: {e}")
-        return False
+    """Save employee data - no longer needed as we use individual files"""
+    print("ℹ️  Employee data is now managed through individual JSON files")
+    return True
 
 def save_computer_data(computer_data):
     """Save computer data to individual file"""
@@ -144,8 +153,8 @@ def update_individual_employee_file(employee_data, computer_data):
             with open(individual_file, 'r', encoding='utf-8') as f:
                 individual_data = json.load(f)
             
-            # Add computer data
-            individual_data['computer_info'] = {
+            # Create new computer info entry
+            new_computer_info = {
                 'computername': computer_data.get('Computername'),
                 'os': computer_data.get('OS'),
                 'manufacturer': computer_data.get('Manufacturer'),
@@ -157,6 +166,29 @@ def update_individual_employee_file(employee_data, computer_data):
                 'serial_number': computer_data.get('Serial Number'),
                 'last_updated': datetime.now().isoformat()
             }
+            
+            # Handle computer_info as a list
+            if 'computer_info' not in individual_data:
+                individual_data['computer_info'] = []
+            elif not isinstance(individual_data['computer_info'], list):
+                # Convert existing single dict to list if needed
+                individual_data['computer_info'] = [individual_data['computer_info']]
+            
+            # Check if this computer already exists (by computername and serial number)
+            computer_exists = False
+            for i, existing_computer in enumerate(individual_data['computer_info']):
+                if (existing_computer.get('computername') == new_computer_info.get('computername') and 
+                    existing_computer.get('serial_number') == new_computer_info.get('serial_number')):
+                    # Update existing entry
+                    individual_data['computer_info'][i] = new_computer_info
+                    computer_exists = True
+                    print(f"✅ Updated existing computer entry for {new_computer_info.get('computername')}")
+                    break
+            
+            if not computer_exists:
+                # Add new computer entry
+                individual_data['computer_info'].append(new_computer_info)
+                print(f"✅ Added new computer entry for {new_computer_info.get('computername')}")
             
             # Save updated individual file
             with open(individual_file, 'w', encoding='utf-8') as f:
@@ -186,8 +218,8 @@ def merge_computer_data(employees, computer_data):
         employee = find_employee_by_username(employees, username)
     
     if employee:
-        # Merge computer data into employee record
-        employee['computer_info'] = {
+        # Create new computer info entry
+        new_computer_info = {
             'computername': computer_data.get('Computername'),
             'os': computer_data.get('OS'),
             'manufacturer': computer_data.get('Manufacturer'),
@@ -199,6 +231,29 @@ def merge_computer_data(employees, computer_data):
             'serial_number': computer_data.get('Serial Number'),
             'last_updated': datetime.now().isoformat()
         }
+        
+        # Handle computer_info as a list in main employee data
+        if 'computer_info' not in employee:
+            employee['computer_info'] = []
+        elif not isinstance(employee['computer_info'], list):
+            # Convert existing single dict to list if needed
+            employee['computer_info'] = [employee['computer_info']]
+        
+        # Check if this computer already exists (by computername and serial number)
+        computer_exists = False
+        for i, existing_computer in enumerate(employee['computer_info']):
+            if (existing_computer.get('computername') == new_computer_info.get('computername') and 
+                existing_computer.get('serial_number') == new_computer_info.get('serial_number')):
+                # Update existing entry
+                employee['computer_info'][i] = new_computer_info
+                computer_exists = True
+                print(f"✅ Updated existing computer entry in main data for {new_computer_info.get('computername')}")
+                break
+        
+        if not computer_exists:
+            # Add new computer entry
+            employee['computer_info'].append(new_computer_info)
+            print(f"✅ Added new computer entry to main data for {new_computer_info.get('computername')}")
         
         # Also update individual employee file
         update_individual_employee_file(employee, computer_data)
