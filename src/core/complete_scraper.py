@@ -65,7 +65,9 @@ class CompleteScraper:
         await self._scroll_to_load_all_employees(page)
         
         # Then extract office location data using systematic method
-        office_location_mapping = await self._extract_office_location_data_systematic(page)
+        # DISABLED: Office location extraction to focus on employee research
+        # office_location_mapping = await self._extract_office_location_data_systematic(page)
+        office_location_mapping = {}  # Empty mapping to disable office location extraction
         
         # Get all links on the page after scrolling
         all_links = await page.query_selector_all('a')
@@ -95,7 +97,9 @@ class CompleteScraper:
                                 seen_urls.add(href)
                                 
                                 # Try to extract office location from the main page
-                                office_location = await self._extract_office_location_from_main_page(link)
+                                # DISABLED: Office location extraction to focus on employee research
+                                # office_location = await self._extract_office_location_from_main_page(link)
+                                office_location = ""  # Disabled office location extraction
                                 
                                 # If we couldn't find location from the main page, try the filter mapping
                                 if not office_location and office_location_mapping:
@@ -113,6 +117,10 @@ class CompleteScraper:
         if self.config.DEBUG_MODE and len(employee_links) > self.config.DEBUG_MAX_EMPLOYEES:
             self.logger.info(f"DEBUG MODE: Limiting to first {self.config.DEBUG_MAX_EMPLOYEES} employees")
             employee_links = employee_links[:self.config.DEBUG_MAX_EMPLOYEES]
+        
+        # Reverse the list to process employees in backward order
+        employee_links.reverse()
+        self.logger.info("Reversed employee processing order - will process from last to first")
         
         return employee_links
     
