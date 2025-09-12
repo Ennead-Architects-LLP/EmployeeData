@@ -174,7 +174,7 @@ def backup_computer_data(computer_data):
         os.makedirs(COMPUTER_BACKUP_DIR, exist_ok=True)
         
         # Generate filename with timestamp
-        computer_name = computer_data.get('Computername', 'unknown').replace(' ', '_').replace('/', '_')
+        computer_name = computer_data.get('computer_name', computer_data.get('Computername', 'unknown')).replace(' ', '_').replace('/', '_')
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         filename = f"{computer_name}_{timestamp}.json"
         file_path = os.path.join(COMPUTER_BACKUP_DIR, filename)

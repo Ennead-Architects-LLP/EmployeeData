@@ -1,0 +1,5 @@
+[33mf76f847[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m AutoUpdate Computer Data: Sen Zhang - 2025-09-12 23:40:37
+[33m1d59f9a[m Fix username field mismatch: Support both 'username' and 'Username' for backward compatibility
+[33ma13de78[m Refactor employee data structure: Remove unnecessary files and update employee JSON data with consistent phone number formatting. Clean up scripts related to website generation and data handling.
+[33m715eb3f[m Remove redundant collection_date field - timestamp already provides this information
+[33mbfff41b[m Redesign payload: Use nested structure with timestamp and computer_info object to stay within GitHub API limits
