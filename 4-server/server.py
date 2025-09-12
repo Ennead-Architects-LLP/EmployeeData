@@ -178,13 +178,19 @@ def backup_computer_data(computer_data):
         filename = f"{computer_name}_{timestamp}.json"
         file_path = os.path.join(COMPUTER_BACKUP_DIR, filename)
         
-        # Create backup data with metadata
+        # Create backup data with metadata (remove redundant fields from computer_info)
+        clean_computer_data = computer_data.copy()
+        # Remove redundant fields that are already at the top level
+        clean_computer_data.pop('Computername', None)
+        clean_computer_data.pop('human_name', None)
+        clean_computer_data.pop('Username', None)
+        
         backup_data = {
             "timestamp": datetime.now().isoformat(),
             "computer_name": computer_data.get('Computername', 'Unknown'),
             "human_name": computer_data.get('human_name', 'Unknown'),
             "username": computer_data.get('Username', 'Unknown'),
-            "computer_info": computer_data
+            "computer_info": clean_computer_data
         }
         
         # Save backup file
