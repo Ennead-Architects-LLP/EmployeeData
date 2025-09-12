@@ -7,11 +7,12 @@ from .complete_scraper import CompleteScraper
 from ..services.voice_announcer import voice_announcer
 
 class Orchestrator:
-    def __init__(self, config: Optional[ScraperConfig] = None, use_parallel: bool = False, max_workers: int = 3):
+    def __init__(self, config: Optional[ScraperConfig] = None, use_parallel: bool = False, max_workers: int = 1):
         self.config = config or ScraperConfig.from_env()
         self.logger = logging.getLogger(__name__)
-        self.use_parallel = use_parallel
-        self.max_workers = max_workers
+        # Only sequential processing supported for stability
+        self.use_parallel = False
+        self.max_workers = 1
 
     async def run(self) -> str:
         self.logger.info("[START] Starting orchestrator")
@@ -23,13 +24,9 @@ class Orchestrator:
         scraper = CompleteScraper(self.config)
 
         try:
-            # Step 1: Scrape employees (parallel or sequential)
-            if self.use_parallel:
-                self.logger.info(f"[STEP 1] Scraping employees with parallel processing ({self.max_workers} workers)...")
-                employees = await scraper.scrape_all_employees_parallel(max_parallel_workers=self.max_workers)
-            else:
-                self.logger.info("[STEP 1] Scraping employees with incremental saving...")
-                employees = await scraper.scrape_all_employees_incremental()
+            # Step 1: Scrape employees (sequential only for stability)
+            self.logger.info("[STEP 1] Scraping employees with incremental saving...")
+            employees = await scraper.scrape_all_employees_incremental()
             if not employees:
                 self.logger.error("[ERROR] No employees scraped. Aborting.")
                 voice_announcer.announce_error("No employees were scraped")
