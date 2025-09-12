@@ -1,0 +1,166 @@
+{
+  "timestamp": "2025-09-12T14:44:05.425629",
+  "test_results": [
+    {
+      "test_name": "Sequential",
+      "workers": 1,
+      "duration": 9.534302473068237,
+      "employees_count": 0,
+      "rate": 0.0,
+      "completion_rate": 0.0,
+      "all_completed": false,
+      "method": "sequential",
+      "performance_summary": {
+        "test_name": "Sequential",
+        "total_duration": 9.542128324508667,
+        "total_operations": 5,
+        "successful_operations": 4,
+        "success_rate": 80.0,
+        "performance_data": [
+          {
+            "operation": "directory_setup",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:43:53.533351"
+          },
+          {
+            "operation": "debug_directory_setup",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:43:53.533351"
+          },
+          {
+            "operation": "scraper_creation",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:43:53.539443"
+          },
+          {
+            "operation": "scraping_sequential",
+            "duration": 9.534302473068237,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:03.073746",
+            "employees_count": 0,
+            "workers": 1
+          },
+          {
+            "operation": "verification",
+            "duration": 0.1,
+            "success": false,
+            "timestamp": "2025-09-12T14:44:03.075479",
+            "completion_rate": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Parallel-2",
+      "workers": 2,
+      "duration": 1.186103343963623,
+      "employees_count": 0,
+      "rate": 0.0,
+      "completion_rate": 0.0,
+      "all_completed": false,
+      "method": "parallel",
+      "performance_summary": {
+        "test_name": "Parallel-2",
+        "total_duration": 1.1871070861816406,
+        "total_operations": 5,
+        "successful_operations": 4,
+        "success_rate": 80.0,
+        "performance_data": [
+          {
+            "operation": "directory_setup",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:03.075479"
+          },
+          {
+            "operation": "debug_directory_setup",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:03.075479"
+          },
+          {
+            "operation": "scraper_creation",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:03.075479"
+          },
+          {
+            "operation": "scraping_parallel",
+            "duration": 1.186103343963623,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:04.261583",
+            "employees_count": 0,
+            "workers": 2
+          },
+          {
+            "operation": "verification",
+            "duration": 0.1,
+            "success": false,
+            "timestamp": "2025-09-12T14:44:04.261583",
+            "completion_rate": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Parallel-3",
+      "workers": 3,
+      "duration": 1.1580021381378174,
+      "employees_count": 0,
+      "rate": 0.0,
+      "completion_rate": 0.0,
+      "all_completed": false,
+      "method": "parallel",
+      "performance_summary": {
+        "test_name": "Parallel-3",
+        "total_duration": 1.1630427837371826,
+        "total_operations": 5,
+        "successful_operations": 4,
+        "success_rate": 80.0,
+        "performance_data": [
+          {
+            "operation": "directory_setup",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:04.263583"
+          },
+          {
+            "operation": "debug_directory_setup",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:04.263583"
+          },
+          {
+            "operation": "scraper_creation",
+            "duration": 0.1,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:04.264582"
+          },
+          {
+            "operation": "scraping_parallel",
+            "duration": 1.1580021381378174,
+            "success": true,
+            "timestamp": "2025-09-12T14:44:05.423615",
+            "employees_count": 0,
+            "workers": 3
+          },
+          {
+            "operation": "verification",
+            "duration": 0.1,
+            "success": false,
+            "timestamp": "2025-09-12T14:44:05.423615",
+            "completion_rate": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 3,
+    "successful_tests": 3,
+    "failed_tests": 0
+  }
+}
