@@ -27,7 +27,8 @@ def load_employee_data():
     """Load existing employee data"""
     try:
         with open(EMPLOYEE_DATA_FILE, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            data = json.load(f)
+            return data.get('employees', [])
     except FileNotFoundError:
         print(f"❌ Employee data file not found: {EMPLOYEE_DATA_FILE}")
         return []

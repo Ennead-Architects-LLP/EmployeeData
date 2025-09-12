@@ -23,7 +23,7 @@ function renderEmployees(employees = filteredEmployees) {
     const grid = document.getElementById('employeeGrid');
     
     if (employees.length === 0) {
-        grid.innerHTML = '<div class="no-results">No employee data available.</div>';
+        grid.innerHTML = '<div class="no-results">No employees found matching your search.</div>';
         return;
     }
     
@@ -47,6 +47,9 @@ function createEmployeeCard(employee) {
     
     // Handle education
     const education = employee.education || [];
+    
+    // Handle computer specifications if available
+    const computerInfo = employee.computer || employee.computer_specs;
     
     return `
         <div class="employee-card">
@@ -73,6 +76,18 @@ function createEmployeeCard(employee) {
                         `).join('')}
                     </div>
                 ` : ''}
+                ${computerInfo ? `
+                    <div class="computer-section">
+                        <h4>🖥️ Computer Specifications</h4>
+                        <div class="computer-details">
+                            ${computerInfo.OS ? `<p class="computer-item"><strong>OS:</strong> ${computerInfo.OS}</p>` : ''}
+                            ${computerInfo.CPU ? `<p class="computer-item"><strong>CPU:</strong> ${computerInfo.CPU}</p>` : ''}
+                            ${computerInfo['GPU Name'] ? `<p class="computer-item"><strong>GPU:</strong> ${computerInfo['GPU Name']}</p>` : ''}
+                            ${computerInfo['Total Physical Memory'] ? `<p class="computer-item"><strong>RAM:</strong> ${Math.round(computerInfo['Total Physical Memory'] / (1024**3))} GB</p>` : ''}
+                            ${computerInfo.Manufacturer && computerInfo.Model ? `<p class="computer-item"><strong>Hardware:</strong> ${computerInfo.Manufacturer} ${computerInfo.Model}</p>` : ''}
+                        </div>
+                    </div>
+                ` : ''}
                 ${projects.length > 0 ? `
                     <div class="projects-section">
                         <h4>Projects (${projects.length})</h4>
@@ -96,76 +111,4 @@ function createEmployeeCard(employee) {
     `;
 }
 
-function displayComputerData() {
-    const container = document.getElementById('computerDataContainer');
-    
-    if (!computerData || computerData.length === 0) {
-        container.innerHTML = '<div class="no-data-message">No computer data available yet.</div>';
-        return;
-    }
-
-    // Sort by timestamp (newest first)
-    const sortedComputers = computerData.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-
-    let html = `
-        <div class="computer-stats">
-            <div class="stat-item">
-                <span class="stat-number">${computerData.length}</span>
-                <span class="stat-label">Total Submissions</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">${new Set(computerData.map(c => c.computer_name)).size}</span>
-                <span class="stat-label">Unique Computers</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">${new Set(computerData.map(c => c.user)).size}</span>
-                <span class="stat-label">Unique Users</span>
-            </div>
-        </div>
-        <div class="computer-list">
-    `;
-
-    // Show last 10 submissions
-    sortedComputers.slice(0, 10).forEach(computer => {
-        const data = computer.data;
-        const memoryGB = data['Total Physical Memory'] ? (data['Total Physical Memory'] / (1024**3)).toFixed(1) : 'Unknown';
-        
-        html += `
-            <div class="computer-card">
-                <div class="computer-header">
-                    <h3>${data.Computername || 'Unknown'}</h3>
-                    <span class="timestamp">${new Date(computer.timestamp).toLocaleString()}</span>
-                </div>
-                <div class="computer-details">
-                    <div class="detail-row">
-                        <span class="label">User:</span>
-                        <span class="value">${data.Name || 'Unknown'} (${data.Username || 'Unknown'})</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">OS:</span>
-                        <span class="value">${data.OS || 'Unknown'}</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">Hardware:</span>
-                        <span class="value">${data.Manufacturer || 'Unknown'} ${data.Model || 'Unknown'}</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">CPU:</span>
-                        <span class="value">${data.CPU || 'Unknown'}</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">GPU:</span>
-                        <span class="value">${data['GPU Name'] || 'Unknown'}</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">Memory:</span>
-                        <span class="value">${memoryGB} GB</span>
-                    </div>
-                </div>
-            </div>
-        `;
-    });
-
-    html += '</div>';
-    container.innerHTML = html;
-}
+// Computer data is now integrated into individual employee cards

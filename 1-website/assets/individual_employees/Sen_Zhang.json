@@ -85,5 +85,17 @@
   "linkedin_url": null,
   "website_url": null,
   "scraped_at": "2025-09-12T15:03:46.155093",
-  "profile_id": "sen-zhang"
+  "profile_id": "sen-zhang",
+  "computer_info": {
+    "computername": "TEST-WORKSTATION-001",
+    "os": "Windows 11 Pro",
+    "manufacturer": "Dell Technologies",
+    "model": "OptiPlex 7090",
+    "cpu": "Intel Core i7-11700",
+    "gpu_name": "NVIDIA GeForce RTX 3060",
+    "gpu_driver": "31.0.15.3742",
+    "memory_bytes": 34359738368,
+    "serial_number": "TEST123456789",
+    "last_updated": "2025-09-12T17:16:19.406830"
+  }
 }

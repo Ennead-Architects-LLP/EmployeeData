@@ -16,8 +16,7 @@ async function initializeApp() {
         // Load employee data
         await loadEmployeeData();
         
-        // Load computer data
-        await loadComputerData();
+        // Computer data is now merged into individual employee files
         
         // Initialize UI
         initializeUI();
@@ -120,7 +119,7 @@ async function loadComputerData() {
     } catch (error) {
         console.log('No computer data available yet');
         document.getElementById('computerDataContainer').innerHTML = 
-            '<div class="no-data-message">No computer data available yet. Data will appear here when users submit their computer information.</div>';
+            '<div class="no-data-message">No computer specifications submitted yet. Employee computer data will appear here when users submit their system information.</div>';
     }
 }
 

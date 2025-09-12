@@ -195,3 +195,33 @@
 .project-link:hover {
     text-decoration: underline;
 }
+
+/* Computer specifications section */
+.computer-section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.computer-section h4 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.computer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.computer-item {
+    color: #e0e0e0;
+    font-size: 0.85rem;
+    margin: 2px 0;
+}
+
+.computer-item strong {
+    color: #b0b0b0;
+    margin-right: 8px;
+}
