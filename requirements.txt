@@ -6,6 +6,13 @@ playwright>=1.40.0
 # Text-to-speech for voice announcements
 pyttsx3>=2.90
 
+# HTTP requests for data transmission
+requests>=2.31.0
+
+# System information collection
+psutil>=5.9.0
+wmi>=1.5.1
+
 # GUI for credentials (built into Python standard library - tkinter)
 # No additional package needed for tkinter
 

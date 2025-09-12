@@ -1,0 +1,72 @@
+name: Handle Computer Data
+
+on:
+  repository_dispatch:
+    types: [computer-data]
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Test mode (dry run)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  handle-computer-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        pip install requests pyyaml
+    
+    - name: Handle computer data
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TEST_MODE: ${{ github.event.inputs.test_mode || 'false' }}
+      run: |
+        python .github/scripts/handle_computer_data.py
+    
+    - name: Regenerate website with new computer data
+      if: github.event.inputs.test_mode != 'true'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "🔄 Regenerating website with updated computer data..."
+        
+        # Install Python dependencies for website generation
+        pip install playwright pyttsx3 requests
+        
+        # Install Playwright browsers
+        playwright install chromium
+        
+        # Run the main scraper to regenerate the website
+        echo "Running website regeneration..."
+        python src/main.py --headless=true --no-images --output employees_data.json
+        
+        # Check if HTML was generated successfully
+        if [ -f "index.html" ]; then
+          echo "✅ Website regenerated successfully"
+        else
+          echo "❌ Website regeneration failed"
+          exit 1
+        fi
+    
+    - name: Commit and push changes
+      if: github.event.inputs.test_mode != 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add assets/computer_data/ index.html assets/
+        git diff --staged --quiet || git commit -m "Update website with new computer data from AboutMe app"
+        git push

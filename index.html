@@ -14738,6 +14738,15 @@
             </div>
         </footer>
         
+        <!-- Computer Data Collection Section -->
+        <div class="computer-data-section">
+            <h2>🖥️ Computer Data Collection</h2>
+            <p>Data collected from AboutMe applications across the organization</p>
+            <div id="computerDataContainer">
+                <div class="loading-message">Loading computer data...</div>
+            </div>
+        </div>
+
         <!-- Return to Top Button -->
         <button id="returnToTop" class="return-to-top" onclick="scrollToTop()" title="Return to Top">
             <span class="arrow-up">↑</span>
@@ -14745,5 +14754,98 @@
     </div>
 
     <script src="assets/app.js"></script>
+    <script>
+        // Load and display computer data
+        async function loadComputerData() {
+            try {
+                const response = await fetch('assets/computer_data/all_computers.json');
+                if (!response.ok) {
+                    throw new Error('Computer data not available');
+                }
+                const data = await response.json();
+                displayComputerData(data);
+            } catch (error) {
+                document.getElementById('computerDataContainer').innerHTML = 
+                    '<div class="no-data-message">No computer data available yet. Data will appear here when users submit their computer information.</div>';
+            }
+        }
+
+        function displayComputerData(computers) {
+            const container = document.getElementById('computerDataContainer');
+            
+            if (!computers || computers.length === 0) {
+                container.innerHTML = '<div class="no-data-message">No computer data available yet.</div>';
+                return;
+            }
+
+            // Sort by timestamp (newest first)
+            const sortedComputers = computers.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+            let html = `
+                <div class="computer-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">${computers.length}</span>
+                        <span class="stat-label">Total Submissions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">${new Set(computers.map(c => c.computer_name)).size}</span>
+                        <span class="stat-label">Unique Computers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">${new Set(computers.map(c => c.user)).size}</span>
+                        <span class="stat-label">Unique Users</span>
+                    </div>
+                </div>
+                <div class="computer-list">
+            `;
+
+            // Show last 10 submissions
+            sortedComputers.slice(0, 10).forEach(computer => {
+                const data = computer.data;
+                const memoryGB = data['Total Physical Memory'] ? (data['Total Physical Memory'] / (1024**3)).toFixed(1) : 'Unknown';
+                
+                html += `
+                    <div class="computer-card">
+                        <div class="computer-header">
+                            <h3>${data.Computername || 'Unknown'}</h3>
+                            <span class="timestamp">${new Date(computer.timestamp).toLocaleString()}</span>
+                        </div>
+                        <div class="computer-details">
+                            <div class="detail-row">
+                                <span class="label">User:</span>
+                                <span class="value">${data.Name || 'Unknown'} (${data.Username || 'Unknown'})</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">OS:</span>
+                                <span class="value">${data.OS || 'Unknown'}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Hardware:</span>
+                                <span class="value">${data.Manufacturer || 'Unknown'} ${data.Model || 'Unknown'}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">CPU:</span>
+                                <span class="value">${data.CPU || 'Unknown'}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">GPU:</span>
+                                <span class="value">${data['GPU Name'] || 'Unknown'}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Memory:</span>
+                                <span class="value">${memoryGB} GB</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        // Load computer data when page loads
+        document.addEventListener('DOMContentLoaded', loadComputerData);
+    </script>
 </body>
 </html>
