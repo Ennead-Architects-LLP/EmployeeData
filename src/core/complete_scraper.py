@@ -8,7 +8,7 @@ import json
 import logging
 import re
 from datetime import datetime
-from typing import List, Optional, Tuple, Dict
+from typing import List, Optional, Tuple, Dict, Any
 
 # Third-party imports
 from playwright.async_api import async_playwright
@@ -1716,6 +1716,87 @@ class CompleteScraper:
             self.logger.error(f"    [ERROR] Error scraping profile: {e}")
             return None
     
+    async def scrape_all_employees_parallel(self, max_parallel_workers: int = 3) -> List[EmployeeData]:
+        """
+        Scrape all employees from the directory with parallel processing and incremental saving.
+        
+        Args:
+            max_parallel_workers: Maximum number of parallel browser contexts to use
+            
+        Returns:
+            List of EmployeeData objects
+        """
+        try:
+            # Initialize Playwright without timeout protection
+            self.logger.info("[START] Initializing Playwright browser...")
+            playwright = await async_playwright().start()
+            
+            self.logger.info("[START] Launching browser...")
+            browser = await playwright.chromium.launch(
+                headless=self.config.HEADLESS,
+                channel='msedge',
+                args=self.config.BROWSER_ARGS
+            )
+            
+            # Create main context for finding employee links
+            self.logger.info("[START] Creating main browser context...")
+            main_context = await browser.new_context(
+                viewport={'width': self.config.VIEWPORT_WIDTH, 'height': self.config.VIEWPORT_HEIGHT},
+                user_agent=self.config.USER_AGENT
+            )
+            
+            main_page = await main_context.new_page()
+            main_page.set_default_timeout(self.config.TIMEOUT)
+            
+            # Login and get to main page
+            self.logger.info("[START] Attempting login...")
+            login_success = await self.auto_login.login(main_page, self.config.BASE_URL)
+            if not login_success:
+                self.logger.error("❌ Failed to login")
+                await browser.close()
+                return []
+            
+            # Wait for page to load completely
+            await main_page.wait_for_load_state('networkidle')
+            await asyncio.sleep(3)
+            
+            # Find employee profile links
+            employee_links = await self.find_employee_profile_links(main_page)
+            
+            if not employee_links:
+                self.logger.warning("No employee profile links found!")
+                await browser.close()
+                return []
+            
+            self.logger.info(f"Found {len(employee_links)} employees to scrape with {max_parallel_workers} parallel workers")
+            
+            # Close main context as we'll create worker contexts
+            await main_context.close()
+            
+            # Process employees in parallel chunks
+            all_employees = await self._process_employees_parallel(browser, employee_links, max_parallel_workers)
+            
+            # Clean up browser resources
+            self.logger.info("[CLEANUP] Cleaning up browser resources...")
+            await browser.close()
+            await playwright.stop()
+            
+            self.logger.info(f"✅ Successfully scraped {len(all_employees)} employees with parallel processing")
+            
+            return all_employees
+            
+        except Exception as e:
+            self.logger.error(f"❌ Error during parallel scraping: {e}")
+            # Try to clean up browser if it exists
+            try:
+                if 'browser' in locals():
+                    await browser.close()
+                if 'playwright' in locals():
+                    await playwright.stop()
+            except:
+                pass
+            return []
+
     async def scrape_all_employees_incremental(self) -> List[EmployeeData]:
         """
         Scrape all employees from the directory with incremental saving to manage memory.
@@ -1838,6 +1919,127 @@ class CompleteScraper:
                 pass
             return []
     
+    async def _process_employees_parallel(self, browser, employee_links: List[Tuple[str, str, str]], max_workers: int) -> List[EmployeeData]:
+        """
+        Process employees in parallel using multiple browser contexts.
+        
+        Args:
+            browser: Playwright browser instance
+            employee_links: List of (profile_url, employee_name, office_location) tuples
+            max_workers: Maximum number of parallel workers
+            
+        Returns:
+            List of all scraped EmployeeData objects
+        """
+        import asyncio
+        from collections import deque
+        import threading
+        
+        # Create a thread-safe queue for employee links
+        employee_queue = deque(employee_links)
+        all_employees = []
+        
+        # Thread-safe lock for shared data access
+        data_lock = asyncio.Lock()
+        
+        # Progress tracking
+        completed_count = 0
+        total_count = len(employee_links)
+        
+        async def worker_worker(worker_id: int):
+            """Worker function that processes employees from the queue."""
+            nonlocal completed_count
+            
+            # Create worker context
+            context = await browser.new_context(
+                viewport={'width': self.config.VIEWPORT_WIDTH, 'height': self.config.VIEWPORT_HEIGHT},
+                user_agent=self.config.USER_AGENT
+            )
+            
+            page = await context.new_page()
+            page.set_default_timeout(self.config.TIMEOUT)
+            
+            # Login for this worker
+            self.logger.info(f"[WORKER {worker_id}] Logging in...")
+            login_success = await self.auto_login.login(page, self.config.BASE_URL)
+            if not login_success:
+                self.logger.error(f"[WORKER {worker_id}] ❌ Failed to login")
+                await context.close()
+                return []
+            
+            # Verify we're actually on the employee directory page
+            current_url = page.url
+            if "login" in current_url.lower() or "signin" in current_url.lower() or "microsoftonline" in current_url.lower():
+                self.logger.error(f"[WORKER {worker_id}] ❌ Still on login page after authentication: {current_url}")
+                await context.close()
+                return []
+            
+            self.logger.info(f"[WORKER {worker_id}] ✅ Successfully authenticated and on employee directory")
+            
+            worker_employees = []
+            batch_size = 5  # Smaller batches for parallel processing
+            
+            try:
+                while True:
+                    # Get next employee from queue (thread-safe)
+                    async with data_lock:
+                        if not employee_queue:
+                            break
+                        profile_url, employee_name, office_location = employee_queue.popleft()
+                        current_index = total_count - len(employee_queue)
+                    
+                    self.logger.info(f"[WORKER {worker_id}] [{current_index}/{total_count}] Processing: {employee_name}")
+                    
+                    # Scrape employee profile
+                    employee = await self.scrape_employee_profile(page, profile_url, employee_name, office_location)
+                    
+                    if employee:
+                        worker_employees.append(employee)
+                        
+                        # Thread-safe progress update
+                        async with data_lock:
+                            completed_count += 1
+                            all_employees.append(employee)
+                            
+                            # Save incrementally
+                            if len(worker_employees) >= batch_size:
+                                await self._save_incremental_batch(worker_employees, completed_count, total_count)
+                                worker_employees = []  # Clear batch
+                    
+                    # Small delay to be respectful
+                    await asyncio.sleep(0.5)
+                    
+            except Exception as e:
+                self.logger.error(f"[WORKER {worker_id}] Error: {e}")
+            finally:
+                # Save any remaining employees from this worker
+                if worker_employees:
+                    async with data_lock:
+                        await self._save_incremental_batch(worker_employees, completed_count, total_count)
+                
+                await context.close()
+                self.logger.info(f"[WORKER {worker_id}] Completed, processed {len(worker_employees)} employees")
+        
+        # Create and run worker tasks
+        self.logger.info(f"Starting {max_workers} parallel workers...")
+        worker_tasks = [worker_worker(i) for i in range(max_workers)]
+        
+        # Wait for all workers to complete
+        results = await asyncio.gather(*worker_tasks, return_exceptions=True)
+        
+        # Check if any workers failed
+        failed_workers = sum(1 for result in results if isinstance(result, Exception))
+        successful_workers = len(results) - failed_workers
+        
+        self.logger.info(f"✅ Parallel processing completed. {successful_workers}/{len(results)} workers successful. Total employees: {len(all_employees)}")
+        
+        # If parallel processing failed completely, fall back to sequential
+        if len(all_employees) == 0:
+            self.logger.warning("⚠️ Parallel processing failed, falling back to sequential processing...")
+            return await self.scrape_all_employees_incremental()
+        
+        return all_employees
+    
     async def _save_incremental_batch(self, batch: List[EmployeeData], current_count: int, total_count: int):
         """
         Save a batch of employees incrementally to manage memory.
@@ -1872,6 +2074,80 @@ class CompleteScraper:
                     
         except Exception as e:
             self.logger.error(f"Error saving incremental batch: {e}")
+    
+    async def verify_all_tasks_completed(self, expected_employee_count: int, actual_employees: List[EmployeeData]) -> Dict[str, Any]:
+        """
+        Verify that all research tasks have been completed successfully.
+        
+        Args:
+            expected_employee_count: Expected number of employees to scrape
+            actual_employees: List of actually scraped employees
+            
+        Returns:
+            Dictionary with verification results
+        """
+        verification_results = {
+            'total_expected': expected_employee_count,
+            'total_scraped': len(actual_employees),
+            'completion_rate': 0.0,
+            'missing_employees': [],
+            'successful_scrapes': 0,
+            'failed_scrapes': 0,
+            'data_quality_issues': [],
+            'all_tasks_completed': False
+        }
+        
+        # Calculate completion rate
+        if expected_employee_count > 0:
+            verification_results['completion_rate'] = (len(actual_employees) / expected_employee_count) * 100
+        
+        # Check data quality for each employee
+        for employee in actual_employees:
+            if employee and employee.real_name:
+                verification_results['successful_scrapes'] += 1
+                
+                # Check for missing critical data
+                issues = []
+                if not employee.email:
+                    issues.append("Missing email")
+                if not employee.position:
+                    issues.append("Missing position")
+                if not employee.phone:
+                    issues.append("Missing phone")
+                if not employee.profile_image_path:
+                    issues.append("Missing profile image")
+                
+                if issues:
+                    verification_results['data_quality_issues'].append({
+                        'employee': employee.real_name,
+                        'issues': issues
+                    })
+            else:
+                verification_results['failed_scrapes'] += 1
+        
+        # Determine if all tasks are completed
+        verification_results['all_tasks_completed'] = (
+            verification_results['completion_rate'] >= 95.0 and  # At least 95% completion
+            verification_results['successful_scrapes'] > 0 and   # At least some successful scrapes
+            len(verification_results['data_quality_issues']) < len(actual_employees) * 0.3  # Less than 30% have quality issues
+        )
+        
+        # Log verification results
+        self.logger.info("🔍 TASK VERIFICATION RESULTS:")
+        self.logger.info(f"   Expected employees: {verification_results['total_expected']}")
+        self.logger.info(f"   Scraped employees: {verification_results['total_scraped']}")
+        self.logger.info(f"   Completion rate: {verification_results['completion_rate']:.1f}%")
+        self.logger.info(f"   Successful scrapes: {verification_results['successful_scrapes']}")
+        self.logger.info(f"   Failed scrapes: {verification_results['failed_scrapes']}")
+        self.logger.info(f"   Data quality issues: {len(verification_results['data_quality_issues'])}")
+        self.logger.info(f"   All tasks completed: {'✅ YES' if verification_results['all_tasks_completed'] else '❌ NO'}")
+        
+        if verification_results['data_quality_issues']:
+            self.logger.warning("⚠️  Data quality issues found:")
+            for issue in verification_results['data_quality_issues'][:5]:  # Show first 5
+                self.logger.warning(f"   - {issue['employee']}: {', '.join(issue['issues'])}")
+        
+        return verification_results
     
     def save_to_json(self, employees: List[EmployeeData], filename: Optional[str] = None) -> str:
         """
