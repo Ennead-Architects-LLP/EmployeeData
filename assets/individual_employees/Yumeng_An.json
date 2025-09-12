@@ -30,50 +30,50 @@
   "projects": [
     {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
-      "number": "2412",
-      "client": "",
+      "number": "",
+      "client": "2412",
       "role": "",
       "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
     },
     {
       "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
-      "number": "2138",
-      "client": "",
+      "number": "",
+      "client": "2138",
       "role": "",
       "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus"
     },
     {
       "name": "Alibaba Cainiao Phase II",
-      "number": "2127",
-      "client": "",
+      "number": "",
+      "client": "2127",
       "role": "",
       "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii"
     },
     {
       "name": "Yidan Center",
-      "number": "2134",
-      "client": "",
+      "number": "",
+      "client": "2134",
       "role": "",
       "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center"
     },
     {
       "name": "Northwell, Third Avenue Medical Office Building",
-      "number": "2109",
-      "client": "",
+      "number": "",
+      "client": "2109",
       "role": "",
       "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
     },
     {
       "name": "Nature & Culture Museum of Wisconsin",
-      "number": "2100",
-      "client": "",
+      "number": "",
+      "client": "2100",
       "role": "",
       "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
     },
     {
       "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-      "number": "1643",
-      "client": "",
+      "number": "",
+      "client": "1643",
       "role": "",
       "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
     }
@@ -82,6 +82,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Yumeng.An@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:47:51.959036",
+  "scraped_at": "2025-09-12T14:58:30.066956",
   "profile_id": "yumeng-an"
 }

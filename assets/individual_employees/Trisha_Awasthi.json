@@ -38,43 +38,43 @@
   "projects": [
     {
       "name": "Harvard Yard Libraries Feasibility Study",
-      "number": "2235",
-      "client": "",
+      "number": "",
+      "client": "2235",
       "role": "",
       "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study"
     },
     {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
-      "number": "2224",
-      "client": "",
+      "number": "",
+      "client": "2224",
       "role": "",
       "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
     },
     {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-      "number": "2128",
-      "client": "",
+      "number": "",
+      "client": "2128",
       "role": "",
       "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
     },
     {
       "name": "The Westminster Schools, Love Hall",
-      "number": "2105",
-      "client": "",
+      "number": "",
+      "client": "2105",
       "role": "",
       "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall"
     },
     {
       "name": "Nature & Culture Museum of Wisconsin",
-      "number": "2100",
-      "client": "",
+      "number": "",
+      "client": "2100",
       "role": "",
       "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
     },
     {
       "name": "Westminster Schools - Blake Center",
-      "number": "1946",
-      "client": "",
+      "number": "",
+      "client": "1946",
       "role": "",
       "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
     }
@@ -83,6 +83,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=trisha.awasthi@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:46:31.610597",
+  "scraped_at": "2025-09-12T15:01:04.646208",
   "profile_id": "trisha-awasthi"
 }

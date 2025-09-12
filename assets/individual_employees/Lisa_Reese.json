@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5876",
   "mobile": "(212) 792-5876",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/7005FD7D-D1A0-4E1E-8709-86E8F147D17E/lisa-reese",
   "image_url": "https://ei.ennead.com/api/image/93e0f2b6-bace-4d28-85e7-ee7d165a3e5d/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Lisa Reese_profile.jpg",
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lreese@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:36:13.862407",
+  "scraped_at": "2025-09-12T15:12:01.272545",
   "profile_id": "lisa-reese"
 }

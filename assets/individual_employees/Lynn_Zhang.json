@@ -4,7 +4,7 @@
   "bio": null,
   "phone": null,
   "mobile": null,
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/4B8D3ED6-43D8-43EC-A153-E13F031E3918/lynn-zhang",
   "image_url": "https://ei.ennead.com/api/image/e50f2432-b0b7-4fce-a5d7-ee921dcbeaf0/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Lynn Zhang_profile.jpg",
@@ -210,6 +210,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lzhang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:37:03.558477",
+  "scraped_at": "2025-09-12T15:11:17.368636",
   "profile_id": "lynn-zhang"
 }

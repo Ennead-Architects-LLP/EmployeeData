@@ -35,71 +35,71 @@
   "projects": [
     {
       "name": "University of North Carolina School of Law",
-      "number": "2243",
-      "client": "",
+      "number": "",
+      "client": "2243",
       "role": "",
       "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law"
     },
     {
       "name": "Inova Central Region Emergency Department Expansion",
-      "number": "2223",
-      "client": "",
+      "number": "",
+      "client": "2223",
       "role": "",
       "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
     },
     {
       "name": "United States Consulate General, Nogales Mexico",
-      "number": "1608",
-      "client": "",
+      "number": "",
+      "client": "1608",
       "role": "",
       "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico"
     },
     {
       "name": "United States Consulate General, Lagos Nigeria (OBO)",
-      "number": "1807",
-      "client": "",
+      "number": "",
+      "client": "1807",
       "role": "",
       "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
     },
     {
       "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
-      "number": "2001",
-      "client": "",
+      "number": "",
+      "client": "2001",
       "role": "",
       "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
     },
     {
       "name": "Sidwell Friends School, Comprehensive Master Plan",
-      "number": "1410",
-      "client": "",
+      "number": "",
+      "client": "1410",
       "role": "",
       "url": "https://ei.ennead.com/project/2FA1A651-34A6-4F03-8D08-1C9563F67F96/sidwell-friends-school-comprehensive-master-plan"
     },
     {
       "name": "Taopu Master Plan and Urban Design (Big Taopu)",
-      "number": "1502",
-      "client": "",
+      "number": "",
+      "client": "1502",
       "role": "",
       "url": "https://ei.ennead.com/project/AEA7479F-4093-43FE-AAF1-92F00E14AFBD/taopu-master-plan-and-urban-design-big-taopu"
     },
     {
       "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
-      "number": "1416",
-      "client": "",
+      "number": "",
+      "client": "1416",
       "role": "",
       "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city"
     },
     {
       "name": "United Nations High Commissioner for Refugees, Rethinking Refugee Communities (Ennead Lab, UNHCR, Stanford)",
-      "number": "1216",
-      "client": "",
+      "number": "",
+      "client": "1216",
       "role": "",
       "url": "https://ei.ennead.com/project/225877E2-E8B8-42C4-B784-2CFDB402283E/united-nations-high-commissioner-for-refugees-rethinking-refugee-communities-ennead-lab-unhcr-stanford"
     },
     {
       "name": "United States Embassy, Ankara (OBO)",
-      "number": "1425",
-      "client": "",
+      "number": "",
+      "client": "1425",
       "role": "",
       "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
     }
@@ -108,6 +108,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=smarcatili@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:43:50.579824",
+  "scraped_at": "2025-09-12T15:03:57.490650",
   "profile_id": "sandra-marcatili"
 }

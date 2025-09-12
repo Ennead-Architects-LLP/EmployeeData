@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(646) 437-1706",
   "mobile": "(646) 437-1706",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/114F46E3-BD41-4591-AEA2-59963514A4AE/david-appel",
   "image_url": "https://ei.ennead.com/api/image/bbdad632-ae0e-4328-975d-ae7f6417da55/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/David Appel_profile.jpg",
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dappel@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:24:25.393237",
+  "scraped_at": "2025-09-12T15:33:29.387492",
   "profile_id": "david-appel"
 }

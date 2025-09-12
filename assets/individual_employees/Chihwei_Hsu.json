@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5892",
   "mobile": "212-792-5892",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/5CF3F46F-0CE1-446C-9D41-BD51ED8B9B55/chihwei-hsu",
   "image_url": "https://ei.ennead.com/api/image/4e084f95-1b96-43c4-8524-15550685bb76/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Chihwei Hsu_profile.jpg",
@@ -148,6 +148,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Chihwei.Hsu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:23:21.194371",
+  "scraped_at": "2025-09-12T15:34:08.881805",
   "profile_id": "chihwei-hsu"
 }

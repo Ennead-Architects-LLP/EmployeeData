@@ -40,22 +40,22 @@
   "projects": [
     {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "2151",
-      "client": "",
+      "number": "",
+      "client": "2151",
       "role": "",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
     },
     {
       "name": "Nature & Culture Museum of Wisconsin",
-      "number": "2100",
-      "client": "",
+      "number": "",
+      "client": "2100",
       "role": "",
       "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
     },
     {
       "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-      "number": "1643",
-      "client": "",
+      "number": "",
+      "client": "1643",
       "role": "",
       "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
     }
@@ -64,6 +64,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tinglan.guo@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:45:30.337210",
+  "scraped_at": "2025-09-12T15:02:10.080157",
   "profile_id": "tinglan-guo"
 }

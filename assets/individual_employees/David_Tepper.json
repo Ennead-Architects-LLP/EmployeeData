@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5974",
   "mobile": "(212) 792-5974",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/B9FE4AC9-6B71-40F5-8783-2F24CBD14E80/david-tepper",
   "image_url": "https://ei.ennead.com/api/image/1a06716a-06f9-4e1e-a7bd-a4c61163b171/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/David Tepper_profile.jpg",
@@ -289,6 +289,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dtepper@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:24:30.515627",
+  "scraped_at": "2025-09-12T15:33:10.938555",
   "profile_id": "david-tepper"
 }

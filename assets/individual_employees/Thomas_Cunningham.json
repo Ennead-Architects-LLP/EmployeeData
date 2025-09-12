@@ -25,15 +25,15 @@
   "projects": [
     {
       "name": "The Westminster Schools, Love Hall",
-      "number": "2105",
-      "client": "",
+      "number": "",
+      "client": "2105",
       "role": "",
       "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall"
     },
     {
       "name": "Westminster Schools - Blake Center",
-      "number": "1946",
-      "client": "",
+      "number": "",
+      "client": "1946",
       "role": "",
       "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
     }
@@ -42,6 +42,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Thomas.Cunningham@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:45:05.815149",
+  "scraped_at": "2025-09-12T15:02:36.790383",
   "profile_id": "thomas-cunningham"
 }

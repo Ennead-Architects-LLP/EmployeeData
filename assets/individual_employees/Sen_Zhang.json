@@ -32,50 +32,50 @@
   "projects": [
     {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "2151",
-      "client": "",
+      "number": "",
+      "client": "2151",
       "role": "",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
     },
     {
       "name": "Bilibili Shanghai Headquarters",
-      "number": "2135",
-      "client": "",
+      "number": "",
+      "client": "2135",
       "role": "",
       "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
     },
     {
       "name": "ByteDance Houhai Center Project",
-      "number": "2018",
-      "client": "",
+      "number": "",
+      "client": "2018",
       "role": "",
       "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
     },
     {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
-      "number": "1940",
-      "client": "",
+      "number": "",
+      "client": "1940",
       "role": "",
       "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
     },
     {
       "name": "Taopu Sci-Tech City Plot 606",
-      "number": "1735",
-      "client": "",
+      "number": "",
+      "client": "1735",
       "role": "",
       "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
     },
     {
       "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-      "number": "1643",
-      "client": "",
+      "number": "",
+      "client": "1643",
       "role": "",
       "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
     },
     {
       "name": "Taopu Smart City, Plot 603",
-      "number": "1763",
-      "client": "",
+      "number": "",
+      "client": "1763",
       "role": "",
       "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
     }
@@ -84,6 +84,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=szhang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:44:01.858506",
+  "scraped_at": "2025-09-12T15:03:46.155093",
   "profile_id": "sen-zhang"
 }

@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5904",
   "mobile": "212-792-5904",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/A1A6C742-745F-4838-8569-F9E1D8760F65/jessica-gunraj",
   "image_url": "https://ei.ennead.com/api/image/aa9d9bee-7b9f-4ab9-a89c-2999af5f4a88/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Jessica Gunraj_profile.jpg",
@@ -34,29 +34,29 @@
   "projects": [
     {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
-      "number": "2224",
-      "client": "",
+      "number": "",
+      "client": "2224",
       "role": "",
       "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
     },
     {
       "name": "ByteDance Houhai Center Project",
-      "number": "2018",
-      "client": "",
+      "number": "",
+      "client": "2018",
       "role": "",
       "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
     },
     {
       "name": "Shenzhen Xiaomi Headquarters",
-      "number": "2016",
-      "client": "",
+      "number": "",
+      "client": "2016",
       "role": "",
       "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
     },
     {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
-      "number": "1940",
-      "client": "",
+      "number": "",
+      "client": "1940",
       "role": "",
       "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
     }
@@ -65,6 +65,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jgunraj@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:31:12.309864",
+  "scraped_at": "2025-09-12T15:27:42.354749",
   "profile_id": "jessica-gunraj"
 }

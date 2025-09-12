@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5986",
   "mobile": "212-792-5986",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/D2D3DAC4-707D-4B7F-9405-86FECC71FE84/brian-masuda",
   "image_url": "https://ei.ennead.com/api/image/fc3d6739-a7ab-4c21-93d3-3c5bd9c61289/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Brian Masuda_profile.jpg",
@@ -288,6 +288,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=bmasuda@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:21:30.643778",
+  "scraped_at": "2025-09-12T15:35:23.890908",
   "profile_id": "brian-masuda"
 }

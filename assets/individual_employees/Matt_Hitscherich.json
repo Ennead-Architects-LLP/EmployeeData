@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(646) 437-1733",
   "mobile": "(646) 437-1733",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/BE640C28-CAAC-4973-AA24-3303C2289244/matt-hitscherich",
   "image_url": "https://ei.ennead.com/api/image/970a4ca5-e807-40de-acb2-24f33366d27b/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Matt Hitscherich_profile.jpg",
@@ -175,6 +175,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mhitscherich@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:38:44.749696",
+  "scraped_at": "2025-09-12T15:10:06.869807",
   "profile_id": "matt-hitscherich"
 }

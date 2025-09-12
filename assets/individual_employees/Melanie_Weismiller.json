@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "1-213-265-7592",
   "mobile": "1-213-265-7592",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/84F91309-485A-4748-BCD7-C1D909ACF5C4/melanie-weismiller",
   "image_url": "https://ei.ennead.com/api/image/4e0bf8dd-177f-41d8-98f2-b699b87a4951/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Melanie Weismiller_profile.jpg",
@@ -156,6 +156,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mweismiller@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:39:36.305803",
+  "scraped_at": "2025-09-12T15:09:20.046059",
   "profile_id": "melanie-weismiller"
 }

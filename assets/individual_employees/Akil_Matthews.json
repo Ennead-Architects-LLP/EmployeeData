@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5821",
   "mobile": "212-792-5821",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/D2A2445E-FD95-4FC3-9CB8-241842FF6362/akil-matthews",
   "image_url": "https://ei.ennead.com/api/image/edaec686-64a8-4bed-b8e2-802dfc37614e/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Akil Matthews_profile.jpg",
@@ -183,6 +183,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=amatthews@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:55:42.912875",
+  "scraped_at": "2025-09-12T15:38:22.033116",
   "profile_id": "akil-matthews"
 }

@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "646-437-1766",
   "mobile": "646-437-1766",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/B666C1B5-D9B5-4D53-B5A8-386943CC2BB9/fanny-liu",
   "image_url": "https://ei.ennead.com/api/image/87ffc025-a627-4c9a-8ea9-69e708614bcb/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Fanny Liu_profile.jpg",
@@ -33,50 +33,50 @@
   "projects": [
     {
       "name": "Inova Central Region Emergency Department Expansion",
-      "number": "2223",
-      "client": "",
+      "number": "",
+      "client": "2223",
       "role": "",
       "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
     },
     {
       "name": "Inova Alexandria Hospital at Landmark",
-      "number": "2124",
-      "client": "",
+      "number": "",
+      "client": "2124",
       "role": "",
       "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
     },
     {
       "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
-      "number": "2111",
-      "client": "",
+      "number": "",
+      "client": "2111",
       "role": "",
       "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity"
     },
     {
       "name": "Nanda Plot 111-01",
-      "number": "2103",
-      "client": "",
+      "number": "",
+      "client": "2103",
       "role": "",
       "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
     },
     {
       "name": "Alta Community Center Feasibility Study (ELab)",
-      "number": "2010",
-      "client": "",
+      "number": "",
+      "client": "2010",
       "role": "",
       "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab"
     },
     {
       "name": "Divco West Cambridge Crossing: Parcel U",
-      "number": "1933",
-      "client": "",
+      "number": "",
+      "client": "1933",
       "role": "",
       "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
     },
     {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
-      "number": "1940",
-      "client": "",
+      "number": "",
+      "client": "1940",
       "role": "",
       "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
     }
@@ -85,6 +85,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fliu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:26:58.100052",
+  "scraped_at": "2025-09-12T15:31:09.764413",
   "profile_id": "fanny-liu"
 }

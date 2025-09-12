@@ -4,7 +4,7 @@
   "bio": null,
   "phone": null,
   "mobile": null,
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/E31357CC-ADFB-449C-81E9-579C26D33AA1/l-fang",
   "image_url": "https://ei.ennead.com/api/image/0de15351-5f00-4bd2-b523-cafb22d6f7ee/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/L Fang_profile.jpg",
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Qirui.Fang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:35:26.563132",
+  "scraped_at": "2025-09-12T15:12:49.462241",
   "profile_id": "l-fang"
 }

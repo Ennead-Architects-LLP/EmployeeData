@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5979",
   "mobile": "(212) 792-5979",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/203D4660-D781-477E-B7E9-0E34573B550D/don-weinreich",
   "image_url": "https://ei.ennead.com/api/image/2eb82ad0-7a21-406a-9c7e-35e37e3bf774/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Don Weinreich_profile.jpg",
@@ -344,6 +344,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dweinreich@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:25:15.921503",
+  "scraped_at": "2025-09-12T15:32:26.933703",
   "profile_id": "don-weinreich"
 }

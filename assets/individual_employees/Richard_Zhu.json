@@ -32,8 +32,8 @@
   "projects": [
     {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
-      "number": "2412",
-      "client": "",
+      "number": "",
+      "client": "2412",
       "role": "",
       "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
     }
@@ -42,6 +42,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Richard.Zhu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:43:09.538045",
+  "scraped_at": "2025-09-12T15:04:44.940862",
   "profile_id": "richard-zhu"
 }

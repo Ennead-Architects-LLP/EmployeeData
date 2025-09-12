@@ -4,7 +4,7 @@
   "bio": null,
   "phone": null,
   "mobile": null,
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/B24FAF66-2A57-48C7-9D37-CBDB3733BA9F/di-chang",
   "image_url": "https://ei.ennead.com/api/image/5656798e-5474-4156-aebf-95ffc2b95d66/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Di Chang_profile.jpg",
@@ -131,6 +131,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dchang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:24:59.774332",
+  "scraped_at": "2025-09-12T15:32:43.774897",
   "profile_id": "di-chang"
 }

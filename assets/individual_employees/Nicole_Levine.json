@@ -32,8 +32,8 @@
   "projects": [
     {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-      "number": "1836",
-      "client": "",
+      "number": "",
+      "client": "1836",
       "role": "",
       "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
     }
@@ -42,6 +42,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=nicole.levine@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:42:12.572296",
+  "scraped_at": "2025-09-12T15:06:11.342406",
   "profile_id": "nicole-levine"
 }

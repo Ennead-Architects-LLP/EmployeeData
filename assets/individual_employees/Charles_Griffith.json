@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5893",
   "mobile": "212-792-5893",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/24F77CC0-86A3-49ED-AE2F-8CA9FA5234E7/charles-griffith",
   "image_url": "https://ei.ennead.com/api/image/ffcbc359-8d1c-4049-b637-a8a937a82479/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Charles Griffith_profile.jpg",
@@ -242,6 +242,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cgriffith@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:22:49.636510",
+  "scraped_at": "2025-09-12T15:34:25.919653",
   "profile_id": "charles-griffith"
 }

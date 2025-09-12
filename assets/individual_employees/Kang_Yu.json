@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "+86 138 1770 4627",
   "mobile": "+86 138 1770 4627",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/FC81A4A7-03C6-4B1B-8D49-96971D869F0E/kang-yu",
   "image_url": "https://ei.ennead.com/api/image/467ceb5f-cf77-48a4-81f1-dfd616e7d427/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kang Yu_profile.jpg",
@@ -19,8 +19,8 @@
   "projects": [
     {
       "name": "Bilibili Shanghai Headquarters",
-      "number": "2135",
-      "client": "",
+      "number": "",
+      "client": "2135",
       "role": "",
       "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
     }
@@ -29,6 +29,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Kang.Yu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:32:53.711298",
+  "scraped_at": "2025-09-12T15:26:08.533489",
   "profile_id": "kang-yu"
 }

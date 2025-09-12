@@ -32,57 +32,57 @@
   "projects": [
     {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
-      "number": "2322",
-      "client": "",
+      "number": "",
+      "client": "2322",
       "role": "",
       "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition"
     },
     {
       "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
-      "number": "2321",
-      "client": "",
+      "number": "",
+      "client": "2321",
       "role": "",
       "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition"
     },
     {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "2151",
-      "client": "",
+      "number": "",
+      "client": "2151",
       "role": "",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
     },
     {
       "name": "Shenhzen International Performance Center",
-      "number": "2025",
-      "client": "",
+      "number": "",
+      "client": "2025",
       "role": "",
       "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
     },
     {
       "name": "The Public, Delacorte Theater, Central Park",
-      "number": "2031",
-      "client": "",
+      "number": "",
+      "client": "2031",
       "role": "",
       "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park"
     },
     {
       "name": "Capitol Crossing",
-      "number": "1850",
-      "client": "",
+      "number": "",
+      "client": "1850",
       "role": "",
       "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing"
     },
     {
       "name": "Shenzhen Science and Technology Museum (S&T)",
-      "number": "1923",
-      "client": "",
+      "number": "",
+      "client": "1923",
       "role": "",
       "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t"
     },
     {
       "name": "Huawei Qingpu R&D Design Competition",
-      "number": "1841",
-      "client": "",
+      "number": "",
+      "client": "1841",
       "role": "",
       "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition"
     }
@@ -91,6 +91,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=yhuang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:47:45.325502",
+  "scraped_at": "2025-09-12T14:58:36.201831",
   "profile_id": "yudou-huang"
 }

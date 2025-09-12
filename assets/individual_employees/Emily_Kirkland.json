@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5915",
   "mobile": "(212) 792-5915",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/2B6CDE51-EE86-4812-8ACF-AE6DF4341126/emily-kirkland",
   "image_url": "https://ei.ennead.com/api/image/a43e56db-0319-4470-bc27-e073d31bed4b/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Emily Kirkland_profile.jpg",
@@ -144,6 +144,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ekirkland@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:26:21.221012",
+  "scraped_at": "2025-09-12T15:31:32.062563",
   "profile_id": "emily-kirkland"
 }

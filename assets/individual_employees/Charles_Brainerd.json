@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5907",
   "mobile": "212-792-5907",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/C6B8EB65-350E-4974-9BC4-0877AFBBA190/charles-brainerd",
   "image_url": "https://ei.ennead.com/api/image/8ca2edd3-61db-425e-a76f-24c37592defb/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Charles Brainerd_profile.jpg",
@@ -289,6 +289,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cbrainerd@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:22:24.983050",
+  "scraped_at": "2025-09-12T15:34:43.874535",
   "profile_id": "charles-brainerd"
 }

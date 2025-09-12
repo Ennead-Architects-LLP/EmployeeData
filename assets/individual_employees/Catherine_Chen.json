@@ -4,7 +4,7 @@
   "bio": null,
   "phone": null,
   "mobile": null,
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/E8B0BC7C-A30F-405E-8883-E742D2CD0053/catherine-chen",
   "image_url": "https://ei.ennead.com/api/image/c0d842ad-574b-4536-afde-48b5ec889bbe/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Catherine Chen_profile.jpg",
@@ -30,50 +30,50 @@
   "projects": [
     {
       "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
-      "number": "2138",
-      "client": "",
+      "number": "",
+      "client": "2138",
       "role": "",
       "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus"
     },
     {
       "name": "Bilibili Shanghai Headquarters",
-      "number": "2135",
-      "client": "",
+      "number": "",
+      "client": "2135",
       "role": "",
       "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
     },
     {
       "name": "ByteDance Houhai Center Project",
-      "number": "2018",
-      "client": "",
+      "number": "",
+      "client": "2018",
       "role": "",
       "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
     },
     {
       "name": "Shenhzen International Performance Center",
-      "number": "2025",
-      "client": "",
+      "number": "",
+      "client": "2025",
       "role": "",
       "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
     },
     {
       "name": "Taopu Sci-Tech City Plot 606",
-      "number": "1735",
-      "client": "",
+      "number": "",
+      "client": "1735",
       "role": "",
       "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
     },
     {
       "name": "Hero South Plot",
-      "number": "1712",
-      "client": "",
+      "number": "",
+      "client": "1712",
       "role": "",
       "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot"
     },
     {
       "name": "Taopu Smart City, Plot 603",
-      "number": "1763",
-      "client": "",
+      "number": "",
+      "client": "1763",
       "role": "",
       "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
     }
@@ -82,6 +82,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xhchen@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:22:15.584830",
+  "scraped_at": "2025-09-12T15:35:03.625334",
   "profile_id": "catherine-chen"
 }

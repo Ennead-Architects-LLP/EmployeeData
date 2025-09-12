@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "2127925940",
   "mobile": "2127925940",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/8F3C11B9-4383-40DF-876A-A90BAE216435/lanee-carter",
   "image_url": "https://ei.ennead.com/api/image/8511f767-80be-47fc-a86b-8fb663b30cb5/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/LaNee Carter_profile.jpg",
@@ -35,15 +35,15 @@
   "projects": [
     {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "2151",
-      "client": "",
+      "number": "",
+      "client": "2151",
       "role": "",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
     },
     {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
-      "number": "2224",
-      "client": "",
+      "number": "",
+      "client": "2224",
       "role": "",
       "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
     }
@@ -52,6 +52,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lanee.carter@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:35:37.164150",
+  "scraped_at": "2025-09-12T15:12:36.227524",
   "profile_id": "lanee-carter"
 }

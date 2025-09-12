@@ -4,7 +4,7 @@
   "bio": null,
   "phone": null,
   "mobile": null,
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/FB08F6C7-311B-4324-83CB-BCEED7043049/elizabeth-austin",
   "image_url": "https://ei.ennead.com/api/image/330ba282-6fc4-41b1-bd0f-c67945603c27/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Elizabeth Austin_profile.jpg",
@@ -24,6 +24,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=elizabeth.austin@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:26:09.773330",
+  "scraped_at": "2025-09-12T15:31:54.799916",
   "profile_id": "elizabeth-austin"
 }

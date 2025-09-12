@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "1-213-787-6612",
   "mobile": "1-213-787-6612",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/A23D36C3-03CF-451A-AA57-49DA76859895/demi-osaki",
   "image_url": "https://ei.ennead.com/api/image/39acde65-f703-4c82-ba60-e24f9f4fe42c/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Demi Osaki_profile.jpg",
@@ -32,6 +32,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Demi.Osaki@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:24:54.341943",
+  "scraped_at": "2025-09-12T15:32:59.476955",
   "profile_id": "demi-osaki"
 }

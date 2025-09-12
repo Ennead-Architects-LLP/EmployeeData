@@ -34,29 +34,29 @@
   "projects": [
     {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "2151",
-      "client": "",
+      "number": "",
+      "client": "2151",
       "role": "",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
     },
     {
       "name": "Inova Central Region Emergency Department Expansion",
-      "number": "2223",
-      "client": "",
+      "number": "",
+      "client": "2223",
       "role": "",
       "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
     },
     {
       "name": "Bilibili Shanghai Headquarters",
-      "number": "2135",
-      "client": "",
+      "number": "",
+      "client": "2135",
       "role": "",
       "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
     },
     {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-      "number": "2128",
-      "client": "",
+      "number": "",
+      "client": "2128",
       "role": "",
       "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
     }
@@ -65,6 +65,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Michael.Fierle@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:40:24.043067",
+  "scraped_at": "2025-09-12T15:08:43.249799",
   "profile_id": "michael-fierle"
 }

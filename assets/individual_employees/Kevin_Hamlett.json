@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "(212) 792-5952",
   "mobile": "(212) 792-5952",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/5A43B998-C0F8-44E2-8EC9-3A07B6E3F372/kevin-hamlett",
   "image_url": "https://ei.ennead.com/api/image/2356ff67-6615-4080-b02c-f8a7cde99f95/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kevin Hamlett_profile.jpg",
@@ -133,6 +133,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=khamlett@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:33:21.189751",
+  "scraped_at": "2025-09-12T15:25:31.530202",
   "profile_id": "kevin-hamlett"
 }

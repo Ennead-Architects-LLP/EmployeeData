@@ -1,31 +1,466 @@
 [
   {
-    "real_name": "Kevin Krudwig",
-    "email": "kevin.krudwig@ennead.com",
+    "real_name": "Latoya Kamdang",
+    "email": "latoya.kamdang@ennead.com",
     "bio": null,
-    "phone": "(212) 792-5945",
-    "mobile": "(212) 792-5945",
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/FDBB7DC3-F171-42C1-8F68-9BEB3075B618/kevin-krudwig",
-    "image_url": "https://ei.ennead.com/api/image/1846fb8b-4d9f-464f-ac2d-879068d84820/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Kevin Krudwig_profile.jpg",
+    "phone": "2127925864",
+    "mobile": "2127925864",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/57AE66EA-CBD1-4B9D-BA96-61BD2176D3F5/latoya-kamdang",
+    "image_url": "https://ei.ennead.com/api/image/2b0e46ab-6f48-40fa-8990-2627689ef653/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Latoya Kamdang_profile.jpg",
     "position": "Associate Principal",
     "department": null,
-    "years_with_firm": 17,
+    "years_with_firm": 2,
     "seat_assignment": null,
     "computer": null,
     "memberships": [
       "AIA",
-      "LEED AP BD+C"
+      "LEED AP BD+C",
+      "Mass Timber",
+      "National Organization of Minority Architects"
     ],
     "education": [
       {
-        "institution": "Rensselaer Polytechnic Institute",
+        "institution": "University of Pennsylvania",
         "degree": "Graduate",
         "specialty": "Architecture"
       },
       {
-        "institution": "Wentworth Institute of Technology",
+        "institution": "The George Washington Universit",
+        "degree": "Graduate",
+        "specialty": "MFA Interior"
+      },
+      {
+        "institution": "Georgetown University",
+        "degree": "Undergraduate",
+        "specialty": "Business Administration"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=latoya.kamdang@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T15:12:30.516641",
+    "profile_id": "latoya-kamdang"
+  },
+  {
+    "real_name": "LaNee Carter",
+    "email": "lanee.carter@ennead.com",
+    "bio": null,
+    "phone": "2127925940",
+    "mobile": "2127925940",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/8F3C11B9-4383-40DF-876A-A90BAE216435/lanee-carter",
+    "image_url": "https://ei.ennead.com/api/image/8511f767-80be-47fc-a86b-8fb663b30cb5/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/LaNee Carter_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 2,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "AIA",
+      "National Organization of Minority Architects"
+    ],
+    "education": [
+      {
+        "institution": "Philadelphia University",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "number": "",
+        "client": "2151",
+        "role": "",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      },
+      {
+        "name": "NYULH Brooklyn Ambulatory Hub Building",
+        "number": "",
+        "client": "2224",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lanee.carter@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T15:12:36.227524",
+    "profile_id": "lanee-carter"
+  },
+  {
+    "real_name": "Lan Chen",
+    "email": "Lan.Chen@ennead.com",
+    "bio": null,
+    "phone": null,
+    "mobile": null,
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
+    "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Lan Chen_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 4,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "Bilibili Shanghai Headquarters",
+        "number": "",
+        "client": "2135",
+        "role": "",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T15:12:42.873864",
+    "profile_id": "lan-chen"
+  },
+  {
+    "real_name": "L Fang",
+    "email": "Qirui.Fang@ennead.com",
+    "bio": null,
+    "phone": null,
+    "mobile": null,
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/E31357CC-ADFB-449C-81E9-579C26D33AA1/l-fang",
+    "image_url": "https://ei.ennead.com/api/image/0de15351-5f00-4bd2-b523-cafb22d6f7ee/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/L Fang_profile.jpg",
+    "position": "architect",
+    "department": null,
+    "years_with_firm": 0,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Pratt Institute School of Architecture",
+        "degree": "Undergraduate",
+        "specialty": "Architecture &  Sustainability"
+      }
+    ],
+    "licenses": [],
+    "projects": [],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Qirui.Fang@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T15:12:49.462241",
+    "profile_id": "l-fang"
+  },
+  {
+    "real_name": "Kyung Min",
+    "email": "kyung.min@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5978",
+    "mobile": "(212) 792-5978",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/6A3F30BF-0D4A-4CC3-8A3E-784DAAB74571/kyung-min",
+    "image_url": "https://ei.ennead.com/api/image/398b7ada-278f-495b-86c8-2296706c4694/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Kyung Min_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 11,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "NCARB"
+    ],
+    "education": [
+      {
+        "institution": "Kyung Hee University",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      },
+      {
+        "institution": "Syracuse University",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "Seoul Foreign School, New High School",
+        "number": "",
+        "client": "1211B",
+        "role": "",
+        "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school"
+      },
+      {
+        "name": "Genentech Bayview Campus Competition",
+        "number": "",
+        "client": "2249",
+        "role": "Genentech",
+        "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition"
+      },
+      {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "number": "",
+        "client": "2151",
+        "role": "NYU Langone - Long Island",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      },
+      {
+        "name": "Huzhou Vocational and Technical Campus Master Plan",
+        "number": "",
+        "client": "2227",
+        "role": "Huzhou Professional School",
+        "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
+      },
+      {
+        "name": "Hana Dream Square",
+        "number": "",
+        "client": "1432",
+        "role": "",
+        "url": "https://ei.ennead.com/project/AC2D7D1E-E60B-4E65-9FE1-84F826984E5B/hana-dream-square"
+      },
+      {
+        "name": "National Grid Gas Conditioning System at Newtown Creek",
+        "number": "",
+        "client": "1424",
+        "role": "",
+        "url": "https://ei.ennead.com/project/1E7A97BA-3008-4BE7-BA12-07DADB1D0004/national-grid-gas-conditioning-system-at-newtown-creek"
+      },
+      {
+        "name": "Zhengzhou Bairui Financial Center",
+        "number": "",
+        "client": "1330",
+        "role": "",
+        "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center"
+      },
+      {
+        "name": "Bilibili Shanghai Headquarters",
+        "number": "",
+        "client": "2135",
+        "role": "Bilibili Co.,Ltd.",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+      },
+      {
+        "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+        "number": "",
+        "client": "2111",
+        "role": "Shanghai International Tendering Co., Ltd",
+        "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity"
+      },
+      {
+        "name": "Nanda Plot 111-01",
+        "number": "",
+        "client": "2103",
+        "role": "Lingang",
+        "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+      },
+      {
+        "name": "ByteDance Houhai Center Project",
+        "number": "",
+        "client": "2018",
+        "role": "Shenzhen Toutiao Technology Co., Ltd.",
+        "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+      },
+      {
+        "name": "New York Blood Center Applied Life Sciences Hub",
+        "number": "",
+        "client": "1852",
+        "role": "New York Blood Center",
+        "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub"
+      },
+      {
+        "name": "Divco West Cambridge Crossing: Parcel U",
+        "number": "",
+        "client": "1933",
+        "role": "Jacobs",
+        "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
+      },
+      {
+        "name": "Bao Steel Wusong Pilot District",
+        "number": "",
+        "client": "1919",
+        "role": "Lingang BaoWu Group",
+        "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district"
+      },
+      {
+        "name": "Shanghai Pujiang Oriental Smart Media City Project",
+        "number": "",
+        "client": "1913",
+        "role": "Shanghai Oriental Pearl Industrial Development Co., Ltd., & Shanghai Lingang Pujiang International T",
+        "url": "https://ei.ennead.com/project/CDB6A79F-F127-4D48-80F9-A8A8A53AF6F2/shanghai-pujiang-oriental-smart-media-city-project"
+      },
+      {
+        "name": "Lingang Fengxian Biopharm Office Park",
+        "number": "",
+        "client": "1740",
+        "role": "Shanghai Lingang Huaping Economic Development Co. Ltd.",
+        "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park"
+      },
+      {
+        "name": "Taopu Sci-Tech City Plot 606",
+        "number": "",
+        "client": "1735",
+        "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+      },
+      {
+        "name": "China Resources Land MixC Park (CR Land)",
+        "number": "",
+        "client": "1741",
+        "role": "Shanghai Huaxi Real Estate Development Co., Ltd",
+        "url": "https://ei.ennead.com/project/EFDF0880-F722-4F44-AB9A-5FC86CDEF90B/china-resources-land-mixc-park-cr-land"
+      },
+      {
+        "name": "Huawei Wuhan Research and Development Campus",
+        "number": "",
+        "client": "1326",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus"
+      },
+      {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "number": "",
+        "client": "1643",
+        "role": "Northwell Health",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
+      },
+      {
+        "name": "Lingang Pujiang International Healthcare City",
+        "number": "",
+        "client": "1701",
+        "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+        "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city"
+      },
+      {
+        "name": "NYU Langone Health, Science Building",
+        "number": "",
+        "client": "1101",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+      },
+      {
+        "name": "Pujiang Phase II",
+        "number": "",
+        "client": "1817",
+        "role": "Shanghai Lingang Pujiang International Science and Technology City Development Co., Ltd.",
+        "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii"
+      },
+      {
+        "name": "R&F Shanghai Hongqiao Plot 5",
+        "number": "",
+        "client": "1327",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5"
+      },
+      {
+        "name": "Seoul Foreign School, Facilities Master Plan (SFS)",
+        "number": "",
+        "client": "1211",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/5C9CA77A-F708-4BCD-909B-985FEF17DFFD/seoul-foreign-school-facilities-master-plan-sfs"
+      },
+      {
+        "name": "Shanghai Children's Library Design Competition",
+        "number": "",
+        "client": "1742",
+        "role": "Shanghai Children's Library",
+        "url": "https://ei.ennead.com/project/0ACE6F00-9DD9-4839-9DA2-3BA9BDC0AC11/shanghai-children-s-library-design-competition"
+      },
+      {
+        "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
+        "number": "",
+        "client": "1406",
+        "role": "Stanford University",
+        "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute"
+      },
+      {
+        "name": "Stanford University, Bass Biology Building",
+        "number": "",
+        "client": "1434",
+        "role": "Flad Architects",
+        "url": "https://ei.ennead.com/project/EC3145A0-7E07-47F8-A90A-13EE36802DA9/stanford-university-bass-biology-building"
+      },
+      {
+        "name": "Taopu Master Plan and Urban Design (Big Taopu)",
+        "number": "",
+        "client": "1502",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/AEA7479F-4093-43FE-AAF1-92F00E14AFBD/taopu-master-plan-and-urban-design-big-taopu"
+      },
+      {
+        "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
+        "number": "",
+        "client": "1416",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city"
+      },
+      {
+        "name": "Taopu Smart City, Plot 603",
+        "number": "",
+        "client": "1763",
+        "role": "Taopu North",
+        "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+      },
+      {
+        "name": "Tianjin Academy of Fine Arts Competition (TAFA)",
+        "number": "",
+        "client": "1516",
+        "role": "Tianjin",
+        "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmin@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T15:12:54.887208",
+    "profile_id": "kyung-min"
+  },
+  {
+    "real_name": "Kyo-Young Jin",
+    "email": "kyo.jin@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5942",
+    "mobile": "(212) 792-5942",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/29EC5B97-3555-4437-8C85-5537FF90953B/kyo-young-jin",
+    "image_url": "https://ei.ennead.com/api/image/0a88eb2f-0fee-4078-b665-95abbe31020d/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Kyo-Young Jin_profile.jpg",
+    "position": "Architect",
+    "department": null,
+    "years_with_firm": 20,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "NCARB"
+    ],
+    "education": [
+      {
+        "institution": "University of Illinois, Urbana Champaign",
         "degree": "Undergraduate",
         "specialty": "Architecture"
       }
@@ -33,82 +468,597 @@
     "licenses": [],
     "projects": [
       {
-        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-        "number": "2151",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+        "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+        "number": "",
+        "client": "1911",
+        "role": "Perkins Eastman",
+        "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019"
       },
       {
-        "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-        "number": "2128",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+        "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
+        "number": "",
+        "client": "2002",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall"
       },
       {
-        "name": "Northwell, Third Avenue Medical Office Building",
-        "number": "2109",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
+        "name": "City University of New York, Medgar Evers College, Academic Building I",
+        "number": "",
+        "client": "9929",
+        "role": "Dormitory Authority of the State of New York",
+        "url": "https://ei.ennead.com/project/FFA2FFA1-C895-4B10-8C72-F7E29F740641/city-university-of-new-york-medgar-evers-college-academic-building-i"
       },
       {
-        "name": "Nature & Culture Museum of Wisconsin",
-        "number": "2100",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+        "name": "Natural History Museum of Utah",
+        "number": "",
+        "client": "0423",
+        "role": "GSBS Architects",
+        "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah"
       },
       {
-        "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
-        "number": "1904",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit"
+        "name": "New York City Public Schools, Intermediate / High School, District 43",
+        "number": "",
+        "client": "0404",
+        "role": "New York City School Construction Authority",
+        "url": "https://ei.ennead.com/project/01891292-1661-4DFC-B601-26702654B3FE/new-york-city-public-schools-intermediate-high-school-district-43"
       },
       {
-        "name": "Frank Sinatra School of the Arts",
-        "number": "0307",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts"
+        "name": "New York University, Department of Journalism",
+        "number": "",
+        "client": "0509",
+        "role": "New York University",
+        "url": "https://ei.ennead.com/project/64722D05-9BA1-4F2B-8109-9545F58477A4/new-york-university-department-of-journalism"
       },
       {
-        "name": "Jefferson Health, Honickman Center",
-        "number": "1835",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center"
+        "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+        "number": "",
+        "client": "1407",
+        "role": "Northwestern University",
+        "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission"
+      },
+      {
+        "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
+        "number": "",
+        "client": "1004",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building"
       },
       {
         "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
-        "number": "1013",
-        "client": "",
-        "role": "",
+        "number": "",
+        "client": "1013",
+        "role": "NYU Langone Health",
         "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion"
       },
       {
-        "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
-        "number": "1228",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update"
+        "name": "NYU Langone Health, Tisch Hospital Elevator Tower and Lobby",
+        "number": "",
+        "client": "0916",
+        "role": "NYU Langone Health",
+        "url": "https://ei.ennead.com/project/B9543A56-1A01-4772-8B56-97B9A063BF08/nyu-langone-health-tisch-hospital-elevator-tower-and-lobby"
       },
       {
-        "name": "Yale University Art Gallery Renovation and Expansion",
-        "number": "0708",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/7D89837C-218E-48FE-8DE2-F0191F1DBBE3/yale-university-art-gallery-renovation-and-expansion"
+        "name": "Peabody Essex Museum, Expansion and Renovation",
+        "number": "",
+        "client": "1319",
+        "role": "Blue Sky Third Avenue Management LLC",
+        "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation"
+      },
+      {
+        "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+        "number": "",
+        "client": "1836",
+        "role": "Princeton University",
+        "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      },
+      {
+        "name": "Riverhouse, One Rockefeller Park",
+        "number": "",
+        "client": "0401",
+        "role": "Sheldrake Organization, Inc",
+        "url": "https://ei.ennead.com/project/0D1904C4-C62B-4DE4-9103-75510202CAA6/riverhouse-one-rockefeller-park"
+      },
+      {
+        "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
+        "number": "",
+        "client": "1406",
+        "role": "Stanford University",
+        "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute"
+      },
+      {
+        "name": "The David H. Koch Center for Cancer Care at Memorial Sloan Kettering Cancer Center",
+        "number": "",
+        "client": "1212",
+        "role": "Perkins Eastman",
+        "url": "https://ei.ennead.com/project/0E550866-E034-4A49-A363-F69BAE4C5EC8/the-david-h-koch-center-for-cancer-care-at-memorial-sloan-kettering-cancer-center"
+      },
+      {
+        "name": "The Pennsylvania State University, Penn State Dickinson Law, Lewis Katz Hall",
+        "number": "",
+        "client": "0521",
+        "role": "The Pennsylvania State University",
+        "url": "https://ei.ennead.com/project/F0D3AFEF-5D61-4E28-8A48-C46BA7E7DC66/the-pennsylvania-state-university-penn-state-dickinson-law-lewis-katz-hall"
+      },
+      {
+        "name": "The Pennsylvania State University, Penn State Law, Lewis Katz Building",
+        "number": "",
+        "client": "0522",
+        "role": "The Pennsylvania State University",
+        "url": "https://ei.ennead.com/project/AB1E54E3-9541-48BF-861A-BEA87BE933C5/the-pennsylvania-state-university-penn-state-law-lewis-katz-building"
+      },
+      {
+        "name": "The Public Theater at Astor Place Facade Restoration Entry and Lobby Redesign",
+        "number": "",
+        "client": "0707",
+        "role": "New York City Department of Design and Construction",
+        "url": "https://ei.ennead.com/project/CC2E6701-F1B6-4F1C-BA24-D35723C8C53E/the-public-theater-at-astor-place-facade-restoration-entry-and-lobby-redesign"
+      },
+      {
+        "name": "United States Embassy, Ankara (OBO)",
+        "number": "",
+        "client": "1425",
+        "role": "U.S. Department of State",
+        "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
+      },
+      {
+        "name": "Vassar College, Integrated Science Commons",
+        "number": "",
+        "client": "0717",
+        "role": "Vassar College",
+        "url": "https://ei.ennead.com/project/43256F2E-323C-4C9C-A218-EE55FA7F35EB/vassar-college-integrated-science-commons"
+      },
+      {
+        "name": "Westchester Community College, Gateway Center for English as a Second Language",
+        "number": "",
+        "client": "0424",
+        "role": "Westchester Community College",
+        "url": "https://ei.ennead.com/project/859C8284-F8E2-498B-901D-DE29E9388878/westchester-community-college-gateway-center-for-english-as-a-second-language"
+      },
+      {
+        "name": "Stanford University, Bing Concert Hall",
+        "number": "",
+        "client": "0718",
+        "role": "Stanford University",
+        "url": "https://ei.ennead.com/project/19D3C710-6AD3-4BDA-AF5E-93E87954A185/stanford-university-bing-concert-hall"
       }
     ],
     "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkrudwig@ennead.com",
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kjin@ennead.com",
     "linkedin_url": null,
     "website_url": null,
-    "scraped_at": "2025-09-12T13:33:44.469246",
-    "profile_id": "kevin-krudwig"
+    "scraped_at": "2025-09-12T15:13:12.691814",
+    "profile_id": "kyo-young-jin"
+  },
+  {
+    "real_name": "Kristen Alexander",
+    "email": "kristen.alexander@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5887",
+    "mobile": "(212) 792-5887",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/45737279-4EDA-40F3-9415-545EBA58AC39/kristen-alexander",
+    "image_url": "https://ei.ennead.com/api/image/b16fbe82-0a08-421c-9ed1-0f26dacf1ebc/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Kristen Alexander_profile.jpg",
+    "position": "Associate Principal",
+    "department": null,
+    "years_with_firm": 11,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "University of Texas, Austin",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "University of North Carolina School of Law",
+        "number": "",
+        "client": "2243",
+        "role": "Moseley Architects",
+        "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law"
+      },
+      {
+        "name": "Barbados Archive: Temporary Facility (ELab)",
+        "number": "",
+        "client": "2234",
+        "role": "Government of Barbados",
+        "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab"
+      },
+      {
+        "name": "Children's Hospital at Montefiore",
+        "number": "",
+        "client": "1409",
+        "role": "",
+        "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore"
+      },
+      {
+        "name": "United States Consulate General, Nogales Mexico",
+        "number": "",
+        "client": "1608",
+        "role": "U.S. Department of State",
+        "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico"
+      },
+      {
+        "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
+        "number": "",
+        "client": "1700",
+        "role": "U.S. Department of State",
+        "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council"
+      },
+      {
+        "name": "United States Consulate General, Lagos Nigeria (OBO)",
+        "number": "",
+        "client": "1807",
+        "role": "U.S. Department of State",
+        "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
+      },
+      {
+        "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
+        "number": "",
+        "client": "1838",
+        "role": "U.S. Department of State",
+        "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo"
+      },
+      {
+        "name": "Huawei Wuhan Research and Development Campus",
+        "number": "",
+        "client": "1326",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus"
+      },
+      {
+        "name": "R&F Shanghai Hongqiao Plot 5",
+        "number": "",
+        "client": "1327",
+        "role": "Ennead Architects International LLP",
+        "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5"
+      },
+      {
+        "name": "United States Embassy, Ankara (OBO)",
+        "number": "",
+        "client": "1425",
+        "role": "U.S. Department of State",
+        "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
+      },
+      {
+        "name": "Westmoreland Museum of American Art",
+        "number": "",
+        "client": "1105",
+        "role": "Westmoreland Museum of American Art",
+        "url": "https://ei.ennead.com/project/5BB168F2-21B3-42DE-B36D-C9AD21853342/westmoreland-museum-of-american-art"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kalexander@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T15:24:22.126444",
+    "profile_id": "kristen-alexander"
+  },
+  {
+    "real_name": "Kori Camacho-Onal",
+    "email": "kori.camacho-onal@ennead.com",
+    "bio": null,
+    "phone": "(646) 437-1723",
+    "mobile": "(646) 437-1723",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/4F9AB3FE-5D2B-495E-82E8-ADED253C9A83/kori-camacho-onal",
+    "image_url": "https://ei.ennead.com/api/image/356559b1-9c5e-4785-a883-af7a4f5a77c8/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Kori Camacho-Onal_profile.jpg",
+    "position": "Senior Associate",
+    "department": null,
+    "years_with_firm": 11,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "CSI",
+      "AIA",
+      "NCARB",
+      "National Organization of Minority Architects"
+    ],
+    "education": [
+      {
+        "institution": "University of Arizona",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [
+      {
+        "license": "Registered Architect",
+        "state": "NY",
+        "number": "",
+        "earned": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "Carnegie Hall Recital PA & Handrail",
+        "number": "",
+        "client": "1524",
+        "role": "",
+        "url": "https://ei.ennead.com/project/59CBAA41-975A-4C0B-9C6A-E3ECC512C670/carnegie-hall-recital-pa-handrail"
+      },
+      {
+        "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
+        "number": "",
+        "client": "1700",
+        "role": "",
+        "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council"
+      },
+      {
+        "name": "United States Consulate General, Lagos Nigeria (OBO)",
+        "number": "",
+        "client": "1807",
+        "role": "",
+        "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
+      },
+      {
+        "name": "Massachusetts College of Art and Design, Design and Media Center",
+        "number": "",
+        "client": "1020",
+        "role": "",
+        "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center"
+      },
+      {
+        "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+        "number": "",
+        "client": "1836",
+        "role": "",
+        "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      },
+      {
+        "name": "State University of New York Downstate, Health Science Center",
+        "number": "",
+        "client": "0917",
+        "role": "",
+        "url": "https://ei.ennead.com/project/3F1D9CB1-E586-47A4-ABCA-425CB04B8769/state-university-of-new-york-downstate-health-science-center"
+      },
+      {
+        "name": "United States Embassy, Ankara (OBO)",
+        "number": "",
+        "client": "1425",
+        "role": "",
+        "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
+      },
+      {
+        "name": "University of Michigan, Biological Science Building",
+        "number": "",
+        "client": "1315",
+        "role": "",
+        "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kcamacho@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T15:24:38.778004",
+    "profile_id": "kori-camacho-onal"
+  },
+  {
+    "real_name": "Kevin Seymour",
+    "email": "kevin.seymour@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5921",
+    "mobile": "(212) 792-5921",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/5A702A67-C369-45A9-B29D-381DF97C63FA/kevin-seymour",
+    "image_url": "https://ei.ennead.com/api/image/f7de9516-3bc0-49fb-8281-701c109a8632/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Kevin Seymour_profile.jpg",
+    "position": "Associate Principal",
+    "department": null,
+    "years_with_firm": 14,
+    "seat_assignment": null,
+    "computer": null,
+    "memberships": [
+      "AIA",
+      "LEED AP",
+      "ADP",
+      "NCARB"
+    ],
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      },
+      {
+        "institution": "University of Texas, Austin",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": [
+      {
+        "name": "New York University Kimmel Center Stair",
+        "number": "",
+        "client": "2414",
+        "role": "New York University",
+        "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair"
+      },
+      {
+        "name": "The Cathedral School of St. John the Divine Addition",
+        "number": "",
+        "client": "1412B",
+        "role": "",
+        "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition"
+      },
+      {
+        "name": "Cathedral of St. John the Divine - Miscellaneous Projects 2004",
+        "number": "",
+        "client": "0410",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/055B2A77-AD0F-4C4E-8671-24F6DD7D5B54/cathedral-of-st-john-the-divine-miscellaneous-projects-2004"
+      },
+      {
+        "name": "Harvard Yard Libraries Feasibility Study",
+        "number": "",
+        "client": "2235",
+        "role": "Harvard University",
+        "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study"
+      },
+      {
+        "name": "The Cathedral Church of Saint John the Divine North Transept",
+        "number": "",
+        "client": "1312",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept"
+      },
+      {
+        "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+        "number": "",
+        "client": "2226",
+        "role": "University of Florida",
+        "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition"
+      },
+      {
+        "name": "Cincinnati Music Hall Revitalization",
+        "number": "",
+        "client": "1007",
+        "role": "",
+        "url": "https://ei.ennead.com/project/E64A9AA3-B607-446C-9BE2-1CB460070430/cincinnati-music-hall-revitalization"
+      },
+      {
+        "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+        "number": "",
+        "client": "2206",
+        "role": "Lord, Aeck & Sargent, Inc.",
+        "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning"
+      },
+      {
+        "name": "ByteDance Houhai Center Project",
+        "number": "",
+        "client": "2018",
+        "role": "Shenzhen Toutiao Technology Co., Ltd.",
+        "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+      },
+      {
+        "name": "COMAC Campus, New Headquarters",
+        "number": "",
+        "client": "2009",
+        "role": "Lingang",
+        "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters"
+      },
+      {
+        "name": "Shenzhen Xiaomi Headquarters",
+        "number": "",
+        "client": "2016",
+        "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+        "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
+      },
+      {
+        "name": "Cathedral Church of Saint John the Divine Dome Roof",
+        "number": "",
+        "client": "1724",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof"
+      },
+      {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+        "number": "",
+        "client": "1940",
+        "role": "Lingang Group",
+        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+      },
+      {
+        "name": "The Cathedral Church of St. John the Divine, Penn Station Light Fixtures",
+        "number": "",
+        "client": "1932",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/FFADB3D0-35A3-4810-9BC2-F5C9DEE544A4/the-cathedral-church-of-st-john-the-divine-penn-station-light-fixtures"
+      },
+      {
+        "name": "The Cathedral Church of St. John the Divine, Diocesan Apartment",
+        "number": "",
+        "client": "1924",
+        "role": "",
+        "url": "https://ei.ennead.com/project/D6BEAAA5-E16A-406D-A5AD-9CAC8A9328FC/the-cathedral-church-of-st-john-the-divine-diocesan-apartment"
+      },
+      {
+        "name": "The Cathedral Church of St. John the Divine, North Tower",
+        "number": "",
+        "client": "1925",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/99550CD6-67CB-4F2D-B620-1E5AD2FCC9D1/the-cathedral-church-of-st-john-the-divine-north-tower"
+      },
+      {
+        "name": "The Cathedral Church of St. John the Divine, Offices Redesign",
+        "number": "",
+        "client": "1920",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/E208C9D3-8588-4CD6-B3D6-A967B68962A1/the-cathedral-church-of-st-john-the-divine-offices-redesign"
+      },
+      {
+        "name": "The Cathedral Church of St. John the Divine, Tomb of Christ",
+        "number": "",
+        "client": "1910",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/24136CFF-8675-4073-89E0-2DA2462362E5/the-cathedral-church-of-st-john-the-divine-tomb-of-christ"
+      },
+      {
+        "name": "New York University. Grey Art Museum",
+        "number": "",
+        "client": "1942",
+        "role": "New York University",
+        "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum"
+      },
+      {
+        "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
+        "number": "",
+        "client": "1900",
+        "role": "New York University",
+        "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6"
+      },
+      {
+        "name": "Cathedral School of Saint John the Divine, Synod Hall",
+        "number": "",
+        "client": "1202",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/5176D192-74A1-414A-9726-A6835B2A8B76/cathedral-school-of-saint-john-the-divine-synod-hall"
+      },
+      {
+        "name": "Cathedral School of St. John the Divine, 2010 Summer Renovations",
+        "number": "",
+        "client": "0918",
+        "role": "The Cathedral School of St. John the Divine",
+        "url": "https://ei.ennead.com/project/DB3ED462-82BC-42F1-A531-171EF2E1667E/cathedral-school-of-st-john-the-divine-2010-summer-renovations"
+      },
+      {
+        "name": "Cathedral School of St. John the Divine, 2011 Summer Renovations",
+        "number": "",
+        "client": "1015",
+        "role": "The Cathedral Church of Saint John the Divine",
+        "url": "https://ei.ennead.com/project/CE017616-53C3-44EB-B1C4-7F4A94C18931/cathedral-school-of-st-john-the-divine-2011-summer-renovations"
+      },
+      {
+        "name": "Massachusetts College of Art and Design, Design and Media Center",
+        "number": "",
+        "client": "1020",
+        "role": "Division of Capital Asset Management and Maintenance",
+        "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center"
+      }
+    ],
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kseymour@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-12T15:24:44.656649",
+    "profile_id": "kevin-seymour"
   },
   {
     "real_name": "Kevin McClurkan",
@@ -116,7 +1066,7 @@
     "bio": null,
     "phone": "(212) 792-5938",
     "mobile": "(212) 792-5938",
-    "office_location": "California",
+    "office_location": "",
     "profile_url": "https://ei.ennead.com/employee/5D528721-568B-47C1-8036-24B56D0F6FB6/kevin-mcclurkan",
     "image_url": "https://ei.ennead.com/api/image/b1cea48c-4c99-4b12-87fd-be465ac83e6a/preview?size=300w300h_fxd&version=0",
     "image_local_path": "assets/images/Kevin McClurkan_profile.jpg",
@@ -444,1014 +1394,7 @@
     "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmcclurkan@ennead.com",
     "linkedin_url": null,
     "website_url": null,
-    "scraped_at": "2025-09-12T13:33:51.707250",
+    "scraped_at": "2025-09-12T15:25:01.735031",
     "profile_id": "kevin-mcclurkan"
-  },
-  {
-    "real_name": "Kevin Seymour",
-    "email": "kevin.seymour@ennead.com",
-    "bio": null,
-    "phone": "(212) 792-5921",
-    "mobile": "(212) 792-5921",
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/5A702A67-C369-45A9-B29D-381DF97C63FA/kevin-seymour",
-    "image_url": "https://ei.ennead.com/api/image/f7de9516-3bc0-49fb-8281-701c109a8632/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Kevin Seymour_profile.jpg",
-    "position": "Associate Principal",
-    "department": null,
-    "years_with_firm": 14,
-    "seat_assignment": null,
-    "computer": null,
-    "memberships": [
-      "AIA",
-      "LEED AP",
-      "ADP",
-      "NCARB"
-    ],
-    "education": [
-      {
-        "institution": "Columbia University",
-        "degree": "Graduate",
-        "specialty": "Architecture"
-      },
-      {
-        "institution": "University of Texas, Austin",
-        "degree": "Undergraduate",
-        "specialty": "Architecture"
-      }
-    ],
-    "licenses": [],
-    "projects": [
-      {
-        "name": "New York University Kimmel Center Stair",
-        "number": "",
-        "client": "2414",
-        "role": "New York University",
-        "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair"
-      },
-      {
-        "name": "The Cathedral School of St. John the Divine Addition",
-        "number": "",
-        "client": "1412B",
-        "role": "",
-        "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition"
-      },
-      {
-        "name": "Cathedral of St. John the Divine - Miscellaneous Projects 2004",
-        "number": "",
-        "client": "0410",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/055B2A77-AD0F-4C4E-8671-24F6DD7D5B54/cathedral-of-st-john-the-divine-miscellaneous-projects-2004"
-      },
-      {
-        "name": "Harvard Yard Libraries Feasibility Study",
-        "number": "",
-        "client": "2235",
-        "role": "Harvard University",
-        "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study"
-      },
-      {
-        "name": "The Cathedral Church of Saint John the Divine North Transept",
-        "number": "",
-        "client": "1312",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept"
-      },
-      {
-        "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
-        "number": "",
-        "client": "2226",
-        "role": "University of Florida",
-        "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition"
-      },
-      {
-        "name": "Cincinnati Music Hall Revitalization",
-        "number": "",
-        "client": "1007",
-        "role": "",
-        "url": "https://ei.ennead.com/project/E64A9AA3-B607-446C-9BE2-1CB460070430/cincinnati-music-hall-revitalization"
-      },
-      {
-        "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
-        "number": "",
-        "client": "2206",
-        "role": "Lord, Aeck & Sargent, Inc.",
-        "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning"
-      },
-      {
-        "name": "ByteDance Houhai Center Project",
-        "number": "",
-        "client": "2018",
-        "role": "Shenzhen Toutiao Technology Co., Ltd.",
-        "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
-      },
-      {
-        "name": "COMAC Campus, New Headquarters",
-        "number": "",
-        "client": "2009",
-        "role": "Lingang",
-        "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters"
-      },
-      {
-        "name": "Shenzhen Xiaomi Headquarters",
-        "number": "",
-        "client": "2016",
-        "role": "Shenzhen Xiaomi Technology Co. Ltd.",
-        "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
-      },
-      {
-        "name": "Cathedral Church of Saint John the Divine Dome Roof",
-        "number": "",
-        "client": "1724",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof"
-      },
-      {
-        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
-        "number": "",
-        "client": "1940",
-        "role": "Lingang Group",
-        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
-      },
-      {
-        "name": "The Cathedral Church of St. John the Divine, Penn Station Light Fixtures",
-        "number": "",
-        "client": "1932",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/FFADB3D0-35A3-4810-9BC2-F5C9DEE544A4/the-cathedral-church-of-st-john-the-divine-penn-station-light-fixtures"
-      },
-      {
-        "name": "The Cathedral Church of St. John the Divine, Diocesan Apartment",
-        "number": "",
-        "client": "1924",
-        "role": "",
-        "url": "https://ei.ennead.com/project/D6BEAAA5-E16A-406D-A5AD-9CAC8A9328FC/the-cathedral-church-of-st-john-the-divine-diocesan-apartment"
-      },
-      {
-        "name": "The Cathedral Church of St. John the Divine, North Tower",
-        "number": "",
-        "client": "1925",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/99550CD6-67CB-4F2D-B620-1E5AD2FCC9D1/the-cathedral-church-of-st-john-the-divine-north-tower"
-      },
-      {
-        "name": "The Cathedral Church of St. John the Divine, Offices Redesign",
-        "number": "",
-        "client": "1920",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/E208C9D3-8588-4CD6-B3D6-A967B68962A1/the-cathedral-church-of-st-john-the-divine-offices-redesign"
-      },
-      {
-        "name": "The Cathedral Church of St. John the Divine, Tomb of Christ",
-        "number": "",
-        "client": "1910",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/24136CFF-8675-4073-89E0-2DA2462362E5/the-cathedral-church-of-st-john-the-divine-tomb-of-christ"
-      },
-      {
-        "name": "New York University. Grey Art Museum",
-        "number": "",
-        "client": "1942",
-        "role": "New York University",
-        "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum"
-      },
-      {
-        "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
-        "number": "",
-        "client": "1900",
-        "role": "New York University",
-        "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6"
-      },
-      {
-        "name": "Cathedral School of Saint John the Divine, Synod Hall",
-        "number": "",
-        "client": "1202",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/5176D192-74A1-414A-9726-A6835B2A8B76/cathedral-school-of-saint-john-the-divine-synod-hall"
-      },
-      {
-        "name": "Cathedral School of St. John the Divine, 2010 Summer Renovations",
-        "number": "",
-        "client": "0918",
-        "role": "The Cathedral School of St. John the Divine",
-        "url": "https://ei.ennead.com/project/DB3ED462-82BC-42F1-A531-171EF2E1667E/cathedral-school-of-st-john-the-divine-2010-summer-renovations"
-      },
-      {
-        "name": "Cathedral School of St. John the Divine, 2011 Summer Renovations",
-        "number": "",
-        "client": "1015",
-        "role": "The Cathedral Church of Saint John the Divine",
-        "url": "https://ei.ennead.com/project/CE017616-53C3-44EB-B1C4-7F4A94C18931/cathedral-school-of-st-john-the-divine-2011-summer-renovations"
-      },
-      {
-        "name": "Massachusetts College of Art and Design, Design and Media Center",
-        "number": "",
-        "client": "1020",
-        "role": "Division of Capital Asset Management and Maintenance",
-        "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center"
-      }
-    ],
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kseymour@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-12T13:34:09.868052",
-    "profile_id": "kevin-seymour"
-  },
-  {
-    "real_name": "Kori Camacho-Onal",
-    "email": "kori.camacho-onal@ennead.com",
-    "bio": null,
-    "phone": "(646) 437-1723",
-    "mobile": "(646) 437-1723",
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/4F9AB3FE-5D2B-495E-82E8-ADED253C9A83/kori-camacho-onal",
-    "image_url": "https://ei.ennead.com/api/image/356559b1-9c5e-4785-a883-af7a4f5a77c8/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Kori Camacho-Onal_profile.jpg",
-    "position": "Senior Associate",
-    "department": null,
-    "years_with_firm": 11,
-    "seat_assignment": null,
-    "computer": null,
-    "memberships": [
-      "CSI",
-      "AIA",
-      "NCARB",
-      "National Organization of Minority Architects"
-    ],
-    "education": [
-      {
-        "institution": "University of Arizona",
-        "degree": "Undergraduate",
-        "specialty": "Architecture"
-      }
-    ],
-    "licenses": [
-      {
-        "license": "Registered Architect",
-        "state": "NY",
-        "number": "",
-        "earned": ""
-      }
-    ],
-    "projects": [
-      {
-        "name": "Carnegie Hall Recital PA & Handrail",
-        "number": "1524",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/59CBAA41-975A-4C0B-9C6A-E3ECC512C670/carnegie-hall-recital-pa-handrail"
-      },
-      {
-        "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
-        "number": "1700",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council"
-      },
-      {
-        "name": "United States Consulate General, Lagos Nigeria (OBO)",
-        "number": "1807",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
-      },
-      {
-        "name": "Massachusetts College of Art and Design, Design and Media Center",
-        "number": "1020",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center"
-      },
-      {
-        "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-        "number": "1836",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
-      },
-      {
-        "name": "State University of New York Downstate, Health Science Center",
-        "number": "0917",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/3F1D9CB1-E586-47A4-ABCA-425CB04B8769/state-university-of-new-york-downstate-health-science-center"
-      },
-      {
-        "name": "United States Embassy, Ankara (OBO)",
-        "number": "1425",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
-      },
-      {
-        "name": "University of Michigan, Biological Science Building",
-        "number": "1315",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building"
-      }
-    ],
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kcamacho@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-12T13:34:26.703971",
-    "profile_id": "kori-camacho-onal"
-  },
-  {
-    "real_name": "Kristen Alexander",
-    "email": "kristen.alexander@ennead.com",
-    "bio": null,
-    "phone": "(212) 792-5887",
-    "mobile": "(212) 792-5887",
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/45737279-4EDA-40F3-9415-545EBA58AC39/kristen-alexander",
-    "image_url": "https://ei.ennead.com/api/image/b16fbe82-0a08-421c-9ed1-0f26dacf1ebc/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Kristen Alexander_profile.jpg",
-    "position": "Associate Principal",
-    "department": null,
-    "years_with_firm": 11,
-    "seat_assignment": null,
-    "computer": null,
-    "memberships": [
-      "AIA"
-    ],
-    "education": [
-      {
-        "institution": "University of Texas, Austin",
-        "degree": "Undergraduate",
-        "specialty": "Architecture"
-      }
-    ],
-    "licenses": [
-      {
-        "license": "Registered Architect",
-        "state": "NY",
-        "number": "",
-        "earned": ""
-      }
-    ],
-    "projects": [
-      {
-        "name": "University of North Carolina School of Law",
-        "number": "",
-        "client": "2243",
-        "role": "Moseley Architects",
-        "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law"
-      },
-      {
-        "name": "Barbados Archive: Temporary Facility (ELab)",
-        "number": "",
-        "client": "2234",
-        "role": "Government of Barbados",
-        "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab"
-      },
-      {
-        "name": "Children's Hospital at Montefiore",
-        "number": "",
-        "client": "1409",
-        "role": "",
-        "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore"
-      },
-      {
-        "name": "United States Consulate General, Nogales Mexico",
-        "number": "",
-        "client": "1608",
-        "role": "U.S. Department of State",
-        "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico"
-      },
-      {
-        "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
-        "number": "",
-        "client": "1700",
-        "role": "U.S. Department of State",
-        "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council"
-      },
-      {
-        "name": "United States Consulate General, Lagos Nigeria (OBO)",
-        "number": "",
-        "client": "1807",
-        "role": "U.S. Department of State",
-        "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
-      },
-      {
-        "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
-        "number": "",
-        "client": "1838",
-        "role": "U.S. Department of State",
-        "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo"
-      },
-      {
-        "name": "Huawei Wuhan Research and Development Campus",
-        "number": "",
-        "client": "1326",
-        "role": "Ennead Architects International LLP",
-        "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus"
-      },
-      {
-        "name": "R&F Shanghai Hongqiao Plot 5",
-        "number": "",
-        "client": "1327",
-        "role": "Ennead Architects International LLP",
-        "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5"
-      },
-      {
-        "name": "United States Embassy, Ankara (OBO)",
-        "number": "",
-        "client": "1425",
-        "role": "U.S. Department of State",
-        "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
-      },
-      {
-        "name": "Westmoreland Museum of American Art",
-        "number": "",
-        "client": "1105",
-        "role": "Westmoreland Museum of American Art",
-        "url": "https://ei.ennead.com/project/5BB168F2-21B3-42DE-B36D-C9AD21853342/westmoreland-museum-of-american-art"
-      }
-    ],
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kalexander@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-12T13:34:33.306959",
-    "profile_id": "kristen-alexander"
-  },
-  {
-    "real_name": "Kyo-Young Jin",
-    "email": "kyo.jin@ennead.com",
-    "bio": null,
-    "phone": "(212) 792-5942",
-    "mobile": "(212) 792-5942",
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/29EC5B97-3555-4437-8C85-5537FF90953B/kyo-young-jin",
-    "image_url": "https://ei.ennead.com/api/image/0a88eb2f-0fee-4078-b665-95abbe31020d/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Kyo-Young Jin_profile.jpg",
-    "position": "Architect",
-    "department": null,
-    "years_with_firm": 20,
-    "seat_assignment": null,
-    "computer": null,
-    "memberships": [
-      "NCARB"
-    ],
-    "education": [
-      {
-        "institution": "University of Illinois, Urbana Champaign",
-        "degree": "Undergraduate",
-        "specialty": "Architecture"
-      }
-    ],
-    "licenses": [],
-    "projects": [
-      {
-        "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
-        "number": "",
-        "client": "1911",
-        "role": "Perkins Eastman",
-        "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019"
-      },
-      {
-        "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
-        "number": "",
-        "client": "2002",
-        "role": "NYU Langone Health",
-        "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall"
-      },
-      {
-        "name": "City University of New York, Medgar Evers College, Academic Building I",
-        "number": "",
-        "client": "9929",
-        "role": "Dormitory Authority of the State of New York",
-        "url": "https://ei.ennead.com/project/FFA2FFA1-C895-4B10-8C72-F7E29F740641/city-university-of-new-york-medgar-evers-college-academic-building-i"
-      },
-      {
-        "name": "Natural History Museum of Utah",
-        "number": "",
-        "client": "0423",
-        "role": "GSBS Architects",
-        "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah"
-      },
-      {
-        "name": "New York City Public Schools, Intermediate / High School, District 43",
-        "number": "",
-        "client": "0404",
-        "role": "New York City School Construction Authority",
-        "url": "https://ei.ennead.com/project/01891292-1661-4DFC-B601-26702654B3FE/new-york-city-public-schools-intermediate-high-school-district-43"
-      },
-      {
-        "name": "New York University, Department of Journalism",
-        "number": "",
-        "client": "0509",
-        "role": "New York University",
-        "url": "https://ei.ennead.com/project/64722D05-9BA1-4F2B-8109-9545F58477A4/new-york-university-department-of-journalism"
-      },
-      {
-        "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
-        "number": "",
-        "client": "1407",
-        "role": "Northwestern University",
-        "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission"
-      },
-      {
-        "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
-        "number": "",
-        "client": "1004",
-        "role": "NYU Langone Health",
-        "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building"
-      },
-      {
-        "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
-        "number": "",
-        "client": "1013",
-        "role": "NYU Langone Health",
-        "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion"
-      },
-      {
-        "name": "NYU Langone Health, Tisch Hospital Elevator Tower and Lobby",
-        "number": "",
-        "client": "0916",
-        "role": "NYU Langone Health",
-        "url": "https://ei.ennead.com/project/B9543A56-1A01-4772-8B56-97B9A063BF08/nyu-langone-health-tisch-hospital-elevator-tower-and-lobby"
-      },
-      {
-        "name": "Peabody Essex Museum, Expansion and Renovation",
-        "number": "",
-        "client": "1319",
-        "role": "Blue Sky Third Avenue Management LLC",
-        "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation"
-      },
-      {
-        "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-        "number": "",
-        "client": "1836",
-        "role": "Princeton University",
-        "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
-      },
-      {
-        "name": "Riverhouse, One Rockefeller Park",
-        "number": "",
-        "client": "0401",
-        "role": "Sheldrake Organization, Inc",
-        "url": "https://ei.ennead.com/project/0D1904C4-C62B-4DE4-9103-75510202CAA6/riverhouse-one-rockefeller-park"
-      },
-      {
-        "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
-        "number": "",
-        "client": "1406",
-        "role": "Stanford University",
-        "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute"
-      },
-      {
-        "name": "The David H. Koch Center for Cancer Care at Memorial Sloan Kettering Cancer Center",
-        "number": "",
-        "client": "1212",
-        "role": "Perkins Eastman",
-        "url": "https://ei.ennead.com/project/0E550866-E034-4A49-A363-F69BAE4C5EC8/the-david-h-koch-center-for-cancer-care-at-memorial-sloan-kettering-cancer-center"
-      },
-      {
-        "name": "The Pennsylvania State University, Penn State Dickinson Law, Lewis Katz Hall",
-        "number": "",
-        "client": "0521",
-        "role": "The Pennsylvania State University",
-        "url": "https://ei.ennead.com/project/F0D3AFEF-5D61-4E28-8A48-C46BA7E7DC66/the-pennsylvania-state-university-penn-state-dickinson-law-lewis-katz-hall"
-      },
-      {
-        "name": "The Pennsylvania State University, Penn State Law, Lewis Katz Building",
-        "number": "",
-        "client": "0522",
-        "role": "The Pennsylvania State University",
-        "url": "https://ei.ennead.com/project/AB1E54E3-9541-48BF-861A-BEA87BE933C5/the-pennsylvania-state-university-penn-state-law-lewis-katz-building"
-      },
-      {
-        "name": "The Public Theater at Astor Place Facade Restoration Entry and Lobby Redesign",
-        "number": "",
-        "client": "0707",
-        "role": "New York City Department of Design and Construction",
-        "url": "https://ei.ennead.com/project/CC2E6701-F1B6-4F1C-BA24-D35723C8C53E/the-public-theater-at-astor-place-facade-restoration-entry-and-lobby-redesign"
-      },
-      {
-        "name": "United States Embassy, Ankara (OBO)",
-        "number": "",
-        "client": "1425",
-        "role": "U.S. Department of State",
-        "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
-      },
-      {
-        "name": "Vassar College, Integrated Science Commons",
-        "number": "",
-        "client": "0717",
-        "role": "Vassar College",
-        "url": "https://ei.ennead.com/project/43256F2E-323C-4C9C-A218-EE55FA7F35EB/vassar-college-integrated-science-commons"
-      },
-      {
-        "name": "Westchester Community College, Gateway Center for English as a Second Language",
-        "number": "",
-        "client": "0424",
-        "role": "Westchester Community College",
-        "url": "https://ei.ennead.com/project/859C8284-F8E2-498B-901D-DE29E9388878/westchester-community-college-gateway-center-for-english-as-a-second-language"
-      },
-      {
-        "name": "Stanford University, Bing Concert Hall",
-        "number": "",
-        "client": "0718",
-        "role": "Stanford University",
-        "url": "https://ei.ennead.com/project/19D3C710-6AD3-4BDA-AF5E-93E87954A185/stanford-university-bing-concert-hall"
-      }
-    ],
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kjin@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-12T13:34:51.693034",
-    "profile_id": "kyo-young-jin"
-  },
-  {
-    "real_name": "Kyung Min",
-    "email": "kyung.min@ennead.com",
-    "bio": null,
-    "phone": "(212) 792-5978",
-    "mobile": "(212) 792-5978",
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/6A3F30BF-0D4A-4CC3-8A3E-784DAAB74571/kyung-min",
-    "image_url": "https://ei.ennead.com/api/image/398b7ada-278f-495b-86c8-2296706c4694/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Kyung Min_profile.jpg",
-    "position": "Architect",
-    "department": null,
-    "years_with_firm": 11,
-    "seat_assignment": null,
-    "computer": null,
-    "memberships": [
-      "NCARB"
-    ],
-    "education": [
-      {
-        "institution": "Kyung Hee University",
-        "degree": "Undergraduate",
-        "specialty": "Architecture"
-      },
-      {
-        "institution": "Syracuse University",
-        "degree": "Graduate",
-        "specialty": "Architecture"
-      }
-    ],
-    "licenses": [],
-    "projects": [
-      {
-        "name": "Seoul Foreign School, New High School",
-        "number": "",
-        "client": "1211B",
-        "role": "",
-        "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school"
-      },
-      {
-        "name": "Genentech Bayview Campus Competition",
-        "number": "",
-        "client": "2249",
-        "role": "Genentech",
-        "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition"
-      },
-      {
-        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-        "number": "",
-        "client": "2151",
-        "role": "NYU Langone - Long Island",
-        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
-      },
-      {
-        "name": "Huzhou Vocational and Technical Campus Master Plan",
-        "number": "",
-        "client": "2227",
-        "role": "Huzhou Professional School",
-        "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
-      },
-      {
-        "name": "Hana Dream Square",
-        "number": "",
-        "client": "1432",
-        "role": "",
-        "url": "https://ei.ennead.com/project/AC2D7D1E-E60B-4E65-9FE1-84F826984E5B/hana-dream-square"
-      },
-      {
-        "name": "National Grid Gas Conditioning System at Newtown Creek",
-        "number": "",
-        "client": "1424",
-        "role": "",
-        "url": "https://ei.ennead.com/project/1E7A97BA-3008-4BE7-BA12-07DADB1D0004/national-grid-gas-conditioning-system-at-newtown-creek"
-      },
-      {
-        "name": "Zhengzhou Bairui Financial Center",
-        "number": "",
-        "client": "1330",
-        "role": "",
-        "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center"
-      },
-      {
-        "name": "Bilibili Shanghai Headquarters",
-        "number": "",
-        "client": "2135",
-        "role": "Bilibili Co.,Ltd.",
-        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
-      },
-      {
-        "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
-        "number": "",
-        "client": "2111",
-        "role": "Shanghai International Tendering Co., Ltd",
-        "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity"
-      },
-      {
-        "name": "Nanda Plot 111-01",
-        "number": "",
-        "client": "2103",
-        "role": "Lingang",
-        "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
-      },
-      {
-        "name": "ByteDance Houhai Center Project",
-        "number": "",
-        "client": "2018",
-        "role": "Shenzhen Toutiao Technology Co., Ltd.",
-        "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
-      },
-      {
-        "name": "New York Blood Center Applied Life Sciences Hub",
-        "number": "",
-        "client": "1852",
-        "role": "New York Blood Center",
-        "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub"
-      },
-      {
-        "name": "Divco West Cambridge Crossing: Parcel U",
-        "number": "",
-        "client": "1933",
-        "role": "Jacobs",
-        "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
-      },
-      {
-        "name": "Bao Steel Wusong Pilot District",
-        "number": "",
-        "client": "1919",
-        "role": "Lingang BaoWu Group",
-        "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district"
-      },
-      {
-        "name": "Shanghai Pujiang Oriental Smart Media City Project",
-        "number": "",
-        "client": "1913",
-        "role": "Shanghai Oriental Pearl Industrial Development Co., Ltd., & Shanghai Lingang Pujiang International T",
-        "url": "https://ei.ennead.com/project/CDB6A79F-F127-4D48-80F9-A8A8A53AF6F2/shanghai-pujiang-oriental-smart-media-city-project"
-      },
-      {
-        "name": "Lingang Fengxian Biopharm Office Park",
-        "number": "",
-        "client": "1740",
-        "role": "Shanghai Lingang Huaping Economic Development Co. Ltd.",
-        "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park"
-      },
-      {
-        "name": "Taopu Sci-Tech City Plot 606",
-        "number": "",
-        "client": "1735",
-        "role": "Shanghai Rongrong Real Estate Co., Ltd.",
-        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
-      },
-      {
-        "name": "China Resources Land MixC Park (CR Land)",
-        "number": "",
-        "client": "1741",
-        "role": "Shanghai Huaxi Real Estate Development Co., Ltd",
-        "url": "https://ei.ennead.com/project/EFDF0880-F722-4F44-AB9A-5FC86CDEF90B/china-resources-land-mixc-park-cr-land"
-      },
-      {
-        "name": "Huawei Wuhan Research and Development Campus",
-        "number": "",
-        "client": "1326",
-        "role": "Ennead Architects International LLP",
-        "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus"
-      },
-      {
-        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-        "number": "",
-        "client": "1643",
-        "role": "Northwell Health",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
-      },
-      {
-        "name": "Lingang Pujiang International Healthcare City",
-        "number": "",
-        "client": "1701",
-        "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
-        "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city"
-      },
-      {
-        "name": "NYU Langone Health, Science Building",
-        "number": "",
-        "client": "1101",
-        "role": "NYU Langone Health",
-        "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
-      },
-      {
-        "name": "Pujiang Phase II",
-        "number": "",
-        "client": "1817",
-        "role": "Shanghai Lingang Pujiang International Science and Technology City Development Co., Ltd.",
-        "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii"
-      },
-      {
-        "name": "R&F Shanghai Hongqiao Plot 5",
-        "number": "",
-        "client": "1327",
-        "role": "Ennead Architects International LLP",
-        "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5"
-      },
-      {
-        "name": "Seoul Foreign School, Facilities Master Plan (SFS)",
-        "number": "",
-        "client": "1211",
-        "role": "Ennead Architects International LLP",
-        "url": "https://ei.ennead.com/project/5C9CA77A-F708-4BCD-909B-985FEF17DFFD/seoul-foreign-school-facilities-master-plan-sfs"
-      },
-      {
-        "name": "Shanghai Children's Library Design Competition",
-        "number": "",
-        "client": "1742",
-        "role": "Shanghai Children's Library",
-        "url": "https://ei.ennead.com/project/0ACE6F00-9DD9-4839-9DA2-3BA9BDC0AC11/shanghai-children-s-library-design-competition"
-      },
-      {
-        "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
-        "number": "",
-        "client": "1406",
-        "role": "Stanford University",
-        "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute"
-      },
-      {
-        "name": "Stanford University, Bass Biology Building",
-        "number": "",
-        "client": "1434",
-        "role": "Flad Architects",
-        "url": "https://ei.ennead.com/project/EC3145A0-7E07-47F8-A90A-13EE36802DA9/stanford-university-bass-biology-building"
-      },
-      {
-        "name": "Taopu Master Plan and Urban Design (Big Taopu)",
-        "number": "",
-        "client": "1502",
-        "role": "Ennead Architects International LLP",
-        "url": "https://ei.ennead.com/project/AEA7479F-4093-43FE-AAF1-92F00E14AFBD/taopu-master-plan-and-urban-design-big-taopu"
-      },
-      {
-        "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
-        "number": "",
-        "client": "1416",
-        "role": "Ennead Architects International LLP",
-        "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city"
-      },
-      {
-        "name": "Taopu Smart City, Plot 603",
-        "number": "",
-        "client": "1763",
-        "role": "Taopu North",
-        "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
-      },
-      {
-        "name": "Tianjin Academy of Fine Arts Competition (TAFA)",
-        "number": "",
-        "client": "1516",
-        "role": "Tianjin",
-        "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa"
-      }
-    ],
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmin@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-12T13:35:09.144667",
-    "profile_id": "kyung-min"
-  },
-  {
-    "real_name": "L Fang",
-    "email": "Qirui.Fang@ennead.com",
-    "bio": null,
-    "phone": null,
-    "mobile": null,
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/E31357CC-ADFB-449C-81E9-579C26D33AA1/l-fang",
-    "image_url": "https://ei.ennead.com/api/image/0de15351-5f00-4bd2-b523-cafb22d6f7ee/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/L Fang_profile.jpg",
-    "position": "architect",
-    "department": null,
-    "years_with_firm": 0,
-    "seat_assignment": null,
-    "computer": null,
-    "memberships": [],
-    "education": [
-      {
-        "institution": "Pratt Institute School of Architecture",
-        "degree": "Undergraduate",
-        "specialty": "Architecture &  Sustainability"
-      }
-    ],
-    "licenses": [],
-    "projects": [],
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Qirui.Fang@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-12T13:35:26.563132",
-    "profile_id": "l-fang"
-  },
-  {
-    "real_name": "Lan Chen",
-    "email": "Lan.Chen@ennead.com",
-    "bio": null,
-    "phone": null,
-    "mobile": null,
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
-    "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Lan Chen_profile.jpg",
-    "position": "Architect",
-    "department": null,
-    "years_with_firm": 4,
-    "seat_assignment": null,
-    "computer": null,
-    "memberships": [],
-    "education": [],
-    "licenses": [],
-    "projects": [
-      {
-        "name": "Bilibili Shanghai Headquarters",
-        "number": "2135",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
-      }
-    ],
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-12T13:35:31.114135",
-    "profile_id": "lan-chen"
-  },
-  {
-    "real_name": "LaNee Carter",
-    "email": "lanee.carter@ennead.com",
-    "bio": null,
-    "phone": "2127925940",
-    "mobile": "2127925940",
-    "office_location": "California",
-    "profile_url": "https://ei.ennead.com/employee/8F3C11B9-4383-40DF-876A-A90BAE216435/lanee-carter",
-    "image_url": "https://ei.ennead.com/api/image/8511f767-80be-47fc-a86b-8fb663b30cb5/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/LaNee Carter_profile.jpg",
-    "position": "Architect",
-    "department": null,
-    "years_with_firm": 2,
-    "seat_assignment": null,
-    "computer": null,
-    "memberships": [
-      "AIA",
-      "National Organization of Minority Architects"
-    ],
-    "education": [
-      {
-        "institution": "Philadelphia University",
-        "degree": "Undergraduate",
-        "specialty": "Architecture"
-      }
-    ],
-    "licenses": [
-      {
-        "license": "Registered Architect",
-        "state": "NY",
-        "number": "",
-        "earned": ""
-      }
-    ],
-    "projects": [
-      {
-        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-        "number": "2151",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
-      },
-      {
-        "name": "NYULH Brooklyn Ambulatory Hub Building",
-        "number": "2224",
-        "client": "",
-        "role": "",
-        "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
-      }
-    ],
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lanee.carter@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-12T13:35:37.164150",
-    "profile_id": "lanee-carter"
   }
 ]

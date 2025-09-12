@@ -40,71 +40,71 @@
   "projects": [
     {
       "name": "New York University Kimmel Center Stair",
-      "number": "2414",
-      "client": "",
+      "number": "",
+      "client": "2414",
       "role": "",
       "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair"
     },
     {
       "name": "Roundabout Theatre Master Plan & Concept",
-      "number": "2330",
-      "client": "",
+      "number": "",
+      "client": "2330",
       "role": "",
       "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept"
     },
     {
       "name": "455 First Avenue",
-      "number": "2314",
-      "client": "",
+      "number": "",
+      "client": "2314",
       "role": "",
       "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue"
     },
     {
       "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-      "number": "2210",
-      "client": "",
+      "number": "",
+      "client": "2210",
       "role": "",
       "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
     },
     {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-      "number": "2128",
-      "client": "",
+      "number": "",
+      "client": "2128",
       "role": "",
       "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
     },
     {
       "name": "Jungle Plaza Mixed Use Development",
-      "number": "2102",
-      "client": "",
+      "number": "",
+      "client": "2102",
       "role": "",
       "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development"
     },
     {
       "name": "Divco West Cambridge Crossing: Parcel U",
-      "number": "1933",
-      "client": "",
+      "number": "",
+      "client": "1933",
       "role": "",
       "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
     },
     {
       "name": "Weill Cornell Medicine, Belfer Research Building, 8th Floor Fit-Out",
-      "number": "1918",
-      "client": "",
+      "number": "",
+      "client": "1918",
       "role": "",
       "url": "https://ei.ennead.com/project/5095F049-F058-484D-A9D3-F659D335FB34/weill-cornell-medicine-belfer-research-building-8th-floor-fit-out"
     },
     {
       "name": "The Cove, Crescent Park Jersey City",
-      "number": "1902",
-      "client": "",
+      "number": "",
+      "client": "1902",
       "role": "",
       "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city"
     },
     {
       "name": "Jefferson Health, Honickman Center",
-      "number": "1835",
-      "client": "",
+      "number": "",
+      "client": "1835",
       "role": "",
       "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center"
     }
@@ -113,6 +113,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tpeterson@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:46:43.445169",
+  "scraped_at": "2025-09-12T15:00:50.432786",
   "profile_id": "tzara-peterson"
 }

@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "2127925836",
   "mobile": "2127925836",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/22E212EC-D481-4F29-9817-D863AE939804/matt-ryan",
   "image_url": "https://ei.ennead.com/api/image/d3d01fad-7244-4060-ac27-a31ac5d934ab/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Matt Ryan_profile.jpg",
@@ -27,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=matthew.ryan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:39:15.395092",
+  "scraped_at": "2025-09-12T15:09:54.727221",
   "profile_id": "matt-ryan"
 }

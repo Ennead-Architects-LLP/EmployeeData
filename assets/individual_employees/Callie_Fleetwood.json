@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5881",
   "mobile": "212-792-5881",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/B1615BD3-2B40-429C-ACD8-2ADB03F75A9D/callie-fleetwood",
   "image_url": "https://ei.ennead.com/api/image/a7e87d5f-8b03-4606-ad8c-e0a0594d00eb/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Callie Fleetwood_profile.jpg",
@@ -30,64 +30,64 @@
   "projects": [
     {
       "name": "Shaoxing Textile Museum",
-      "number": "2418",
-      "client": "",
+      "number": "",
+      "client": "2418",
       "role": "",
       "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
     },
     {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
-      "number": "2322",
-      "client": "",
+      "number": "",
+      "client": "2322",
       "role": "",
       "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition"
     },
     {
       "name": "Genentech Bayview Campus Competition",
-      "number": "2249",
-      "client": "",
+      "number": "",
+      "client": "2249",
       "role": "",
       "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition"
     },
     {
       "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
-      "number": "2138",
-      "client": "",
+      "number": "",
+      "client": "2138",
       "role": "",
       "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus"
     },
     {
       "name": "Alibaba Cainiao Phase II",
-      "number": "2127",
-      "client": "",
+      "number": "",
+      "client": "2127",
       "role": "",
       "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii"
     },
     {
       "name": "Tencent Danchan Bay DY01-02 Neighborhood",
-      "number": "2133",
-      "client": "",
+      "number": "",
+      "client": "2133",
       "role": "",
       "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood"
     },
     {
       "name": "ByteDance Houhai Center Project",
-      "number": "2018",
-      "client": "",
+      "number": "",
+      "client": "2018",
       "role": "",
       "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
     },
     {
       "name": "Shenzhen Conservatory of Music",
-      "number": "2030",
-      "client": "",
+      "number": "",
+      "client": "2030",
       "role": "",
       "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music"
     },
     {
       "name": "United States Embassy, Ankara (OBO)",
-      "number": "1425",
-      "client": "",
+      "number": "",
+      "client": "1425",
       "role": "",
       "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
     }
@@ -96,6 +96,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cfleetwood@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:22:01.992442",
+  "scraped_at": "2025-09-12T15:35:16.188409",
   "profile_id": "callie-fleetwood"
 }

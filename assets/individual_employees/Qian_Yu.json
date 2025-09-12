@@ -1,0 +1,62 @@
+{
+  "real_name": "Qian Yu",
+  "email": "qian.yu@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/98061DC4-DD66-4073-8C0A-A2EB8CC696C8/qian-yu",
+  "image_url": "https://ei.ennead.com/api/image/af92e8f7-08a7-40db-8a9d-872a921402c9/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Qian Yu_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 3,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "number": "",
+      "client": "2401",
+      "role": "",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i"
+    },
+    {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "number": "",
+      "client": "2227",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan"
+    },
+    {
+      "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+      "number": "",
+      "client": "2220",
+      "role": "",
+      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "",
+      "client": "1735",
+      "role": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Qian.Yu@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:05:39.527811",
+  "profile_id": "qian-yu"
+}

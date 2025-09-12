@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5895",
   "mobile": "212-792-5895",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/DFC1F864-A592-4D80-AD8C-DDD653523917/melissa-hendrix",
   "image_url": "https://ei.ennead.com/api/image/3744b9b3-f012-413e-8722-a4701ec25e66/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Melissa Hendrix_profile.jpg",
@@ -38,8 +38,8 @@
   "projects": [
     {
       "name": "Inova Alexandria Hospital at Landmark",
-      "number": "2124",
-      "client": "",
+      "number": "",
+      "client": "2124",
       "role": "",
       "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
     }
@@ -48,6 +48,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=melissa.hendrix@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:39:53.361275",
+  "scraped_at": "2025-09-12T15:09:13.786306",
   "profile_id": "melissa-hendrix"
 }

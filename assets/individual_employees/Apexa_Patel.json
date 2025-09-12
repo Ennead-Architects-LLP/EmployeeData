@@ -4,7 +4,7 @@
   "bio": null,
   "phone": "212-792-5924",
   "mobile": "212-792-5924",
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/522CA247-CBAF-42D7-83E3-E76506ECA62C/apexa-patel",
   "image_url": "https://ei.ennead.com/api/image/5d096f30-11c7-402c-8be9-4bee2644a623/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Apexa Patel_profile.jpg",
@@ -134,6 +134,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=apatel@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:20:31.774604",
+  "scraped_at": "2025-09-12T15:36:14.954249",
   "profile_id": "apexa-patel"
 }

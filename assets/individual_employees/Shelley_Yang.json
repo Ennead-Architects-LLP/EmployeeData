@@ -35,50 +35,50 @@
   "projects": [
     {
       "name": "Mayo Clinic Executive Health Gonda",
-      "number": "2338",
-      "client": "",
+      "number": "",
+      "client": "2338",
       "role": "",
       "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda"
     },
     {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-      "number": "2128",
-      "client": "",
+      "number": "",
+      "client": "2128",
       "role": "",
       "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
     },
     {
       "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
-      "number": "2120",
-      "client": "",
+      "number": "",
+      "client": "2120",
       "role": "",
       "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2"
     },
     {
       "name": "Johns Hopkins University Bloomberg Center",
-      "number": "1845",
-      "client": "",
+      "number": "",
+      "client": "1845",
       "role": "",
       "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
     },
     {
       "name": "Nature & Culture Museum of Wisconsin",
-      "number": "2100",
-      "client": "",
+      "number": "",
+      "client": "2100",
       "role": "",
       "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
     },
     {
       "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
-      "number": "2001",
-      "client": "",
+      "number": "",
+      "client": "2001",
       "role": "",
       "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
     },
     {
       "name": "Kuwait University Health Sciences Campus",
-      "number": "1704",
-      "client": "",
+      "number": "",
+      "client": "1704",
       "role": "",
       "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus"
     }
@@ -87,6 +87,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=syang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:44:14.164181",
+  "scraped_at": "2025-09-12T15:03:32.976323",
   "profile_id": "shelley-yang"
 }

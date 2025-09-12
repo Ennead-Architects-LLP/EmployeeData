@@ -4,7 +4,7 @@
   "bio": null,
   "phone": null,
   "mobile": null,
-  "office_location": "California",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/3305CD7E-520C-4F6B-871E-039E77C96486/erik-berta",
   "image_url": "https://ei.ennead.com/api/image/c2c1aa94-2bee-4bb1-ae90-7fffb2d008a2/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Erik Berta_profile.jpg",
@@ -21,6 +21,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=erik.berta@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T13:26:39.794296",
+  "scraped_at": "2025-09-12T15:31:27.571031",
   "profile_id": "erik-berta"
 }

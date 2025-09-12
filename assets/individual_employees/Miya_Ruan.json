@@ -1,0 +1,173 @@
+{
+  "real_name": "Miya Ruan",
+  "email": "miya.ruan@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/2B0A5560-7282-4EC6-BF47-E2298D870440/miya-ruan",
+  "image_url": "https://ei.ennead.com/api/image/779bcc36-0fdd-4838-8d92-5bd6e340eb45/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Miya Ruan_profile.jpg",
+  "position": "Designer",
+  "department": null,
+  "years_with_firm": 10,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Zengzhou University of Aeronautics",
+      "degree": "Undergraduate",
+      "specialty": "Urban Design"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+      "number": "",
+      "client": "2220",
+      "role": "Chengdu shudu urban construction co., Ltd.",
+      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum"
+    },
+    {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
+      "number": "",
+      "client": "2138",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "",
+      "client": "2025",
+      "role": "Shenhzen Int. Performance Center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    },
+    {
+      "name": "Lingang Global Digital Trade Headquarters",
+      "number": "",
+      "client": "1948",
+      "role": "Lingang Group",
+      "url": "https://ei.ennead.com/project/19F45A2B-4333-4D4A-944A-F64E147374F5/lingang-global-digital-trade-headquarters"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "",
+      "client": "1940",
+      "role": "Lingang Group",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "Shanghai Pujiang Oriental Smart Media City Project",
+      "number": "",
+      "client": "1913",
+      "role": "Shanghai Oriental Pearl Industrial Development Co., Ltd., & Shanghai Lingang Pujiang International T",
+      "url": "https://ei.ennead.com/project/CDB6A79F-F127-4D48-80F9-A8A8A53AF6F2/shanghai-pujiang-oriental-smart-media-city-project"
+    },
+    {
+      "name": "Baoshan Nanda",
+      "number": "",
+      "client": "1848",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda"
+    },
+    {
+      "name": "Beihang University Qingdao Campus, International Science and Education City",
+      "number": "",
+      "client": "1729",
+      "role": "Qingdao Oceantec Valley Administration Bureau",
+      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city"
+    },
+    {
+      "name": "Lingang Fengxian Biopharm Office Park",
+      "number": "",
+      "client": "1740",
+      "role": "Shanghai Lingang Huaping Economic Development Co. Ltd.",
+      "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "",
+      "client": "1735",
+      "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    },
+    {
+      "name": "Lingang Science and Technology City (S&T)",
+      "number": "",
+      "client": "1520",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t"
+    },
+    {
+      "name": "Jing'An An Innovation Galaxy International Cultural and Creative Park",
+      "number": "",
+      "client": "1609",
+      "role": "Shanghai Xinyefang Shangying Enterprise Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/C25F7304-6BB3-4EFE-9276-2CFDECFCD2DF/jing-an-an-innovation-galaxy-international-cultural-and-creative-park"
+    },
+    {
+      "name": "Lingang Pujiang International Healthcare City",
+      "number": "",
+      "client": "1701",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city"
+    },
+    {
+      "name": "Pujiang Phase II",
+      "number": "",
+      "client": "1817",
+      "role": "Shanghai Lingang Pujiang International Science and Technology City Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii"
+    },
+    {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "number": "",
+      "client": "1725",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1"
+    },
+    {
+      "name": "Shanghai Children's Library Design Competition",
+      "number": "",
+      "client": "1742",
+      "role": "Shanghai Children's Library",
+      "url": "https://ei.ennead.com/project/0ACE6F00-9DD9-4839-9DA2-3BA9BDC0AC11/shanghai-children-s-library-design-competition"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "Taopu North",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    },
+    {
+      "name": "Xiamen Music Center",
+      "number": "",
+      "client": "1535",
+      "role": "Xiamen",
+      "url": "https://ei.ennead.com/project/8EDD5884-6E70-4E69-9912-7175E7B7715B/xiamen-music-center"
+    },
+    {
+      "name": "Shanghai Astronomy Museum (Planetarium)",
+      "number": "",
+      "client": "1331",
+      "role": "The Davis Companies",
+      "url": "https://ei.ennead.com/project/29D257CF-CC0F-4D77-8750-0D4582C95142/shanghai-astronomy-museum-planetarium"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mruan@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:07:26.722264",
+  "profile_id": "miya-ruan"
+}
