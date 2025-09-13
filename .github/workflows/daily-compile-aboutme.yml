@@ -25,15 +25,6 @@ jobs:
         pip install pyinstaller
         pip install psutil wmi requests pillow
         
-    - name: Navigate to aboutme directory
-      run: |
-        cd 3-aboutme
-        
-    - name: Convert PNG icon to ICO format
-      run: |
-        cd 3-aboutme
-        python -c "from PIL import Image; img = Image.open('icon.png'); img.save('icon.ico', format='ICO')"
-        
     - name: Compile about_me.py to executable
       run: |
         cd 3-aboutme
