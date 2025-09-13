@@ -31,11 +31,6 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y jq
     
-    - name: Create backup directory
-      run: |
-        mkdir -p 1-website/assets/computer_info_data_backup
-        echo "Created backup directory"
-    
     - name: Process computer data
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
