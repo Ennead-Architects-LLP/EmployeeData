@@ -73,14 +73,13 @@ except FileNotFoundError:
         print(f"✅ GitHub token loaded successfully from half token")
         with open(token_file, 'w') as f:
             json.dump({'token': EMBEDDED_GITHUB_TOKEN}, f)
-        print(f"✅ GitHub token loaded successfully from half token")
     except Exception as e:
         error_msg = f"❌ Error: Failed to load GitHub token from half token: {e}"
         print(error_msg)
         save_token_error(error_msg, e)
         input("\nPress Enter to close this window...")
         sys.exit(1)
-    sys.exit(1)
+    
 except json.JSONDecodeError as e:
     error_msg = f"❌ Error: Invalid JSON in {token_file}: {e}"
     print(error_msg)
