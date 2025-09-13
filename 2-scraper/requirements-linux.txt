@@ -1,0 +1,14 @@
+# Employee Data Scraper Dependencies - Linux/GitHub Actions Version
+
+# Web scraping and browser automation
+playwright>=1.40.0
+
+# HTTP requests for data transmission
+requests>=2.31.0
+
+# System information collection (Linux compatible)
+psutil>=5.9.0
+
+# Note: pyttsx3 and wmi are Windows-specific packages
+# They are not needed for the core scraping functionality
+# Voice announcements are disabled in headless mode anyway

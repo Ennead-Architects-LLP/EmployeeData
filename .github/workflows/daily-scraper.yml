@@ -36,7 +36,7 @@ jobs:
     - name: Install Python dependencies
       run: |
         cd 2-scraper
-        pip install -r requirements.txt
+        pip install -r requirements-linux.txt
         
     - name: Install Playwright browsers
       run: |
