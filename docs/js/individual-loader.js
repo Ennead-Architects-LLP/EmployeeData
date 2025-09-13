@@ -57,18 +57,14 @@ async function loadIndividualEmployeeData() {
         const files = await discoverEmployeeFiles();
         console.log(`Found ${files.length} individual employee files`);
         
-        // Load each individual employee file
+        // Load employee files in batches to avoid rate limiting
         allEmployees = [];
-        for (const filename of files) {
-            try {
-                const employeeResponse = await fetch(`${getBasePath()}assets/individual_employees/${filename}`);
-                if (employeeResponse.ok) {
-                    const employeeData = await employeeResponse.json();
-                    allEmployees.push(employeeData);
-                }
-            } catch (error) {
-                console.warn(`Failed to load ${filename}:`, error);
-            }
+        await loadEmployeeFilesInBatches(files);
+        
+        // If individual loading failed or loaded very few employees, try fallback
+        if (allEmployees.length < files.length * 0.5) {
+            console.warn(`Only loaded ${allEmployees.length}/${files.length} employees. Trying fallback method...`);
+            await loadEmployeeDataFallback();
         }
         
         filteredEmployees = [...allEmployees];
@@ -87,11 +83,18 @@ async function loadIndividualEmployeeData() {
         document.getElementById('generatedTime').textContent = `Generated: ${formattedTime}`;
         document.getElementById('dataTime').textContent = `Data: ${formattedTime}`;
         
-        console.log(`Successfully loaded ${allEmployees.length} employees from individual files`);
+        console.log(`Successfully loaded ${allEmployees.length} employees`);
         
     } catch (error) {
         console.error('Error loading individual employee data:', error);
-        throw new Error('Failed to load employee data');
+        console.log('Attempting fallback loading...');
+        try {
+            await loadEmployeeDataFallback();
+            filteredEmployees = [...allEmployees];
+        } catch (fallbackError) {
+            console.error('Fallback loading also failed:', fallbackError);
+            throw new Error('Failed to load employee data');
+        }
     }
 }
 
@@ -142,6 +145,106 @@ async function discoverEmployeeFiles() {
         console.warn('No file discovery method worked, returning empty array');
         return [];
     }
+}
+
+async function loadEmployeeFilesInBatches(files, batchSize = 10, delayBetweenBatches = 100) {
+    const basePath = getBasePath();
+    
+    for (let i = 0; i < files.length; i += batchSize) {
+        const batch = files.slice(i, i + batchSize);
+        console.log(`Loading batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(files.length / batchSize)} (${batch.length} files)`);
+        
+        // Load batch concurrently
+        const batchPromises = batch.map(async (filename) => {
+            try {
+                const employeeResponse = await fetch(`${basePath}assets/individual_employees/${filename}`, {
+                    // Add timeout to prevent hanging requests
+                    signal: AbortSignal.timeout(5000)
+                });
+                if (employeeResponse.ok) {
+                    const employeeData = await employeeResponse.json();
+                    return employeeData;
+                } else {
+                    console.warn(`Failed to load ${filename}: ${employeeResponse.status}`);
+                    return null;
+                }
+            } catch (error) {
+                console.warn(`Failed to load ${filename}:`, error.message);
+                return null;
+            }
+        });
+        
+        // Wait for batch to complete
+        const batchResults = await Promise.all(batchPromises);
+        
+        // Add successful results to allEmployees
+        batchResults.forEach(employee => {
+            if (employee) {
+                allEmployees.push(employee);
+            }
+        });
+        
+        // Add delay between batches to avoid rate limiting
+        if (i + batchSize < files.length) {
+            await new Promise(resolve => setTimeout(resolve, delayBetweenBatches));
+        }
+    }
+    
+    console.log(`Successfully loaded ${allEmployees.length}/${files.length} employee files`);
+}
+
+async function loadEmployeeDataFallback() {
+    console.log('Attempting fallback loading method...');
+    const basePath = getBasePath();
+    
+    // Try to load from a consolidated file if it exists
+    try {
+        // First try to load from a single consolidated JSON file
+        const consolidatedResponse = await fetch(`${basePath}assets/consolidated_employees.json`, {
+            signal: AbortSignal.timeout(10000)
+        });
+        
+        if (consolidatedResponse.ok) {
+            const consolidatedData = await consolidatedResponse.json();
+            allEmployees = consolidatedData.employees || consolidatedData;
+            console.log(`Loaded ${allEmployees.length} employees from consolidated file`);
+            return;
+        }
+    } catch (error) {
+        console.log('Consolidated file not available:', error.message);
+    }
+    
+    // Fallback: Load a smaller subset of critical employees
+    console.log('Loading critical employee subset...');
+    const criticalEmployees = [
+        'Adriana_Burton.json',
+        'Aidan_Kim.json',
+        'Aislinn_Weidele.json',
+        'Akil_Matthews.json',
+        'Alex_O\'Briant.json',
+        'Alfonso_Gorini.json',
+        'Amber_Kulikauskas.json',
+        'Amy_Mielke.json',
+        'Ana_Guillandeaux.json',
+        'Annie_Durden.json'
+    ];
+    
+    allEmployees = [];
+    for (const filename of criticalEmployees) {
+        try {
+            const response = await fetch(`${basePath}assets/individual_employees/${filename}`, {
+                signal: AbortSignal.timeout(3000)
+            });
+            if (response.ok) {
+                const employeeData = await response.json();
+                allEmployees.push(employeeData);
+            }
+        } catch (error) {
+            console.warn(`Failed to load critical employee ${filename}:`, error.message);
+        }
+    }
+    
+    console.log(`Fallback loaded ${allEmployees.length} critical employees`);
 }
 
 
