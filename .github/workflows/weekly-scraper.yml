@@ -61,5 +61,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git diff --staged --quiet || git commit -m "Weekly scraper update: $(date)"
+        git diff --staged --quiet || git commit -m "$$$_Action_Weekly_Scraper_Update: $(date)"
         git push

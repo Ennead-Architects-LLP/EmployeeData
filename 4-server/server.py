@@ -239,7 +239,7 @@ def commit_to_github(computer_data=None):
         
         # Commit changes
         human_name = computer_data.get('human_name', 'Unknown') if computer_data else 'Unknown'
-        commit_message = f"AutoUpdate Computer Data: {human_name} - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+        commit_message = f"$$$_Action_Computer_Data_Update: {human_name} - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         subprocess.run(['git', 'commit', '-m', commit_message], check=True)
         
         # Push changes
