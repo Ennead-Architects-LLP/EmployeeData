@@ -49,65 +49,17 @@ jobs:
           echo "In test mode, no actual data processing occurs"
           echo "✅ Test mode completed successfully"
         else
-          echo "Processing computer data from repository dispatch..."
+          echo "Processing computer data using server..."
           
-          # Extract computer data from the repository dispatch event
-          COMPUTER_DATA='${{ toJson(github.event.client_payload.computer_info) }}'
-          COMPUTER_NAME='${{ github.event.client_payload.computer_info.computer_name }}'
-          HUMAN_NAME='${{ github.event.client_payload.computer_info.human_name }}'
-          USERNAME='${{ github.event.client_payload.computer_info.username }}'
-          TIMESTAMP='${{ github.event.client_payload.timestamp }}'
-          
-          echo "Received data for: $HUMAN_NAME ($USERNAME) on $COMPUTER_NAME"
-          
-          # Create backup file with timestamp
-          BACKUP_FILE="1-website/assets/computer_info_data_backup/${COMPUTER_NAME}_$(date +%Y%m%d_%H%M%S).json"
-          
-          # Create the backup data structure (clean structure without duplicates)
-          # The computer_info already contains computer_name, human_name, username
-          cat > "$BACKUP_FILE" << EOF
-        {
-          "timestamp": "$TIMESTAMP",
-          "computer_info": $COMPUTER_DATA
-        }
-        EOF
-          
-          echo "Created backup file: $BACKUP_FILE"
-          
-          # Find and update the corresponding employee JSON file
-          EMPLOYEE_FILE=$(find 1-website/assets/individual_employees/ -name "*.json" -exec grep -l "\"human_name\": \"$HUMAN_NAME\"" {} \; | head -1)
-          
-          if [ -n "$EMPLOYEE_FILE" ]; then
-            echo "Found employee file: $EMPLOYEE_FILE"
-            
-            # Create a temporary file with updated computer info
-            TEMP_FILE=$(mktemp)
-            
-            # Use jq to update the computer field
-            jq --argjson computer_info "$COMPUTER_DATA" '.computer = $computer_info' "$EMPLOYEE_FILE" > "$TEMP_FILE"
-            
-            # Replace the original file
-            mv "$TEMP_FILE" "$EMPLOYEE_FILE"
-            
-            echo "Updated employee file with computer information"
-          else
-            echo "Warning: Could not find employee file for $HUMAN_NAME"
-          fi
+          # Run the server to process the computer data
+          cd 4-server
+          python server.py
           
           echo "✅ Computer data processing completed successfully"
         fi
     
-    - name: Update JSON data only (no website regeneration needed)
+    - name: Verify processing completed
       if: github.event.inputs.test_mode != 'true'
       run: |
-        echo "Computer data processed and JSON files updated"
-        echo "Website loads data dynamically - no regeneration needed"
-    
-    - name: Commit and push changes
-      if: github.event.inputs.test_mode != 'true'
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add 1-website/assets/individual_employees/ 1-website/assets/computer_info_data_backup/
-        git diff --staged --quiet || git commit -m "Update computer data from AboutMe app"
-        git push
+        echo "Computer data processing completed by server"
+        echo "Server handles all data updates and commits automatically"
