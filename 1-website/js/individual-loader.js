@@ -6,6 +6,12 @@ let allEmployees = [];
 let filteredEmployees = [];
 // Computer data is now embedded in individual employee data
 
+// Determine the base path for assets (GitHub Pages vs local)
+function getBasePath() {
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    return isGitHubPages ? '/EmployeeData/' : '';
+}
+
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
     initializeApp();
@@ -44,7 +50,7 @@ async function loadIndividualEmployeeData() {
         allEmployees = [];
         for (const filename of files) {
             try {
-                const employeeResponse = await fetch(`assets/individual_employees/${filename}`);
+                const employeeResponse = await fetch(`${getBasePath()}assets/individual_employees/${filename}`);
                 if (employeeResponse.ok) {
                     const employeeData = await employeeResponse.json();
                     allEmployees.push(employeeData);
@@ -83,7 +89,7 @@ async function discoverEmployeeFiles() {
     
     try {
         // Try to load from the generated JSON file
-        const response = await fetch('employee_json_dir.json');
+        const response = await fetch(`${getBasePath()}employee_json_dir.json`);
         
         if (response.ok) {
             const data = await response.json();
@@ -97,7 +103,7 @@ async function discoverEmployeeFiles() {
         
         // Fallback: try to load from old static file list
         try {
-            const response = await fetch('assets/employee_files_list.json');
+            const response = await fetch(`${getBasePath()}assets/employee_files_list.json`);
             if (response.ok) {
                 const files = await response.json();
                 console.log(`Loaded ${files.length} files from static list as fallback`);

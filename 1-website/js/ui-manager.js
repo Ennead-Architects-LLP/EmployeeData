@@ -31,8 +31,22 @@ function renderEmployees(employees = filteredEmployees) {
 }
 
 function createEmployeeCard(employee) {
+    // Determine the base path for assets (GitHub Pages vs local)
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const basePath = isGitHubPages ? '/EmployeeData/' : '';
+    
     // Use local image path if available, otherwise fall back to image_url or default
-    const imageUrl = employee.image_local_path || employee.image_url || `assets/images/${employee.human_name?.replace(/\s+/g, '_')}_profile.jpg`;
+    let imageUrl;
+    if (employee.image_local_path) {
+        // Adjust path for GitHub Pages
+        imageUrl = basePath + employee.image_local_path;
+    } else if (employee.image_url) {
+        // Use the remote image URL as-is
+        imageUrl = employee.image_url;
+    } else {
+        // Default fallback
+        imageUrl = basePath + `assets/images/${employee.human_name?.replace(/\s+/g, '_')}_profile.jpg`;
+    }
     const projects = employee.projects || [];
     const projectId = `projects_${employee.human_name?.replace(/\s+/g, '_')}`;
     
@@ -79,7 +93,7 @@ function createEmployeeCard(employee) {
                 ` : ''}
                 ${computers.length > 0 ? `
                     <div class="computer-section">
-                        <h4>🖥️ Computer Specifications (${computers.length})</h4>
+                        <h4>🖥️ ${computers.length === 1 ? 'Computer Specification' : 'Computer Specifications'}</h4>
                         ${computers.map((computer, index) => `
                             <div class="computer-details">
                                 ${computer.computername ? `<h5 class="computer-name">${computer.computername}</h5>` : ''}
