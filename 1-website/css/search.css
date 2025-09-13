@@ -2,8 +2,8 @@
 .search-section {
     background: rgba(0, 0, 0, 0.40);
     border-radius: 15px;
-    padding: 25px;
-    margin-bottom: 30px;
+    padding: 30px;
+    margin-bottom: 40px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     text-align: center;
 }
@@ -20,7 +20,7 @@
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    color: #ffffff;
+    color: #00bfff;
     outline: none;
     transition: all 0.3s ease;
 }
@@ -30,9 +30,9 @@
 }
 
 .search-input:focus {
-    border-color: #ffffff;
+    border-color: #00bfff;
     background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.2);
 }
 
 /* Search suggestions */
@@ -50,7 +50,7 @@
 }
 
 .suggestion-header {
-    color: #ffffff;
+    color: #00bfff;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -70,19 +70,19 @@
 }
 
 .suggestion-item {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    background: rgba(0, 191, 255, 0.1);
+    color: #00bfff;
     padding: 6px 12px;
     border-radius: 6px;
     font-size: 13px;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 191, 255, 0.3);
     transition: all 0.2s ease;
 }
 
 .suggestion-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #ffffff;
+    background: rgba(0, 191, 255, 0.2);
+    border-color: #00bfff;
     transform: translateY(-1px);
 }
 

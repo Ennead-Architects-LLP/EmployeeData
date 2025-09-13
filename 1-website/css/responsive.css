@@ -1,11 +1,11 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 20px;
     }
 
     .main-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .header-top {
@@ -34,6 +34,7 @@
 
     .employee-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .computer-stats {

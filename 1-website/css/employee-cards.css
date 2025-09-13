@@ -1,14 +1,15 @@
 /* Employee Cards Styles */
 .employee-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 .employee-card {
     background: rgba(0, 0, 0, 0.46);
     border-radius: 15px;
-    padding: 25px;
+    padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
@@ -18,7 +19,7 @@
 .employee-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.15);
-    border-color: #ffffff;
+    border-color: #00bfff;
 }
 
 .employee-image {
@@ -31,7 +32,7 @@
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ffffff;
+    border: 3px solid #00bfff;
 }
 
 .employee-info {
@@ -46,7 +47,7 @@
 }
 
 .employee-position {
-    color: #ffffff;
+    color: #00bfff;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -67,7 +68,7 @@
 }
 
 .contact-item a {
-    color: #ffffff;
+    color: #00bfff;
     text-decoration: none;
 }
 
@@ -82,15 +83,15 @@
 }
 
 .projects-section h4 {
-    color: #ffffff;
+    color: #00bfff;
     margin-bottom: 10px;
     font-size: 1rem;
 }
 
 .toggle-projects {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    background: rgba(0, 191, 255, 0.1);
+    color: #00bfff;
+    border: 1px solid #00bfff;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -99,7 +100,7 @@
 }
 
 .toggle-projects:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 191, 255, 0.2);
 }
 
 .projects-list {
@@ -114,7 +115,7 @@
 }
 
 .project-item strong {
-    color: #ffffff;
+    color: #00bfff;
     display: block;
     margin-bottom: 4px;
 }
@@ -160,13 +161,13 @@
 }
 
 .education-section h4 {
-    color: #ffffff;
+    color: #00bfff;
     margin-bottom: 10px;
     font-size: 1rem;
 }
 
 .education-item {
-    color: #ffffff;
+    color: #00bfff;
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
@@ -185,7 +186,7 @@
 }
 
 .project-link {
-    color: #ffffff;
+    color: #00bfff;
     text-decoration: none;
     font-size: 0.85rem;
     display: inline-block;
@@ -204,7 +205,7 @@
 }
 
 .computer-section h4 {
-    color: #ffffff;
+    color: #00bfff;
     margin-bottom: 10px;
     font-size: 1rem;
 }
@@ -214,11 +215,11 @@
     padding: 10px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
-    border-left: 3px solid #ffffff;
+    border-left: 3px solid #00bfff;
 }
 
 .computer-name {
-    color: #ffffff;
+    color: #00bfff;
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 8px;
@@ -240,4 +241,28 @@
 .computer-item strong {
     color: #888888;
     margin-right: 8px;
+}
+
+/* Contact Icons */
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.email-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300bfff"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>');
+}
+
+.phone-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300bfff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>');
+}
+
+.chat-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300bfff"><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>');
 }

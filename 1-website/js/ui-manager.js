@@ -78,9 +78,9 @@ function createEmployeeCard(employee) {
                 ${department ? `<p class="employee-department">Department: ${department}</p>` : ''}
                 ${yearsInfo ? `<p class="employee-years">${yearsInfo}</p>` : ''}
                 <div class="contact-info">
-                    ${employee.email ? `<p class="contact-item">📧 <a href="mailto:${employee.email}">${employee.email}</a></p>` : ''}
-                    ${phone ? `<p class="contact-item">📞 <a href="tel:${phone}">${phone}</a></p>` : ''}
-                    ${employee.teams_url ? `<p class="contact-item">💬 <a href="${employee.teams_url}" target="_blank">Microsoft Teams</a></p>` : ''}
+                    ${employee.email ? `<p class="contact-item"><span class="icon email-icon"></span> <a href="mailto:${employee.email}">${employee.email}</a></p>` : ''}
+                    ${phone ? `<p class="contact-item"><span class="icon phone-icon"></span> <a href="tel:${phone}">${phone}</a></p>` : ''}
+                    ${employee.teams_url ? `<p class="contact-item"><span class="icon chat-icon"></span> <a href="${employee.teams_url}" target="_blank">Microsoft Teams</a></p>` : ''}
                 </div>
                 ${education.length > 0 ? `
                     <div class="education-section">
