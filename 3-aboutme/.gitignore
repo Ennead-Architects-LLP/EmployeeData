@@ -1,0 +1,9 @@
+# PyInstaller build artifacts
+build/
+*.spec
+__pycache__/
+*.pyc
+*.pyo
+
+# Allow the compiled executable to be tracked
+!dist/AboutMe_ComputerInfo.exe

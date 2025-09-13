@@ -1,0 +1,60 @@
+name: Daily Compile AboutMe to Executable
+
+on:
+  schedule:
+    # Run daily at 2:00 AM EST (7:00 AM UTC)
+    - cron: '0 7 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  compile-aboutme:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyinstaller
+        pip install psutil wmi requests
+        
+    - name: Navigate to aboutme directory
+      run: |
+        cd 3-aboutme
+        
+    - name: Compile about_me.py to executable
+      run: |
+        cd 3-aboutme
+        python -m PyInstaller --onefile --name "AboutMe_ComputerInfo" --distpath "../dist" about_me.py
+        
+    - name: Create distribution directory if it doesn't exist
+      run: |
+        if (-not (Test-Path "dist")) { New-Item -ItemType Directory -Path "dist" }
+        
+    - name: Verify executable was created
+      run: |
+        if (Test-Path "dist/AboutMe_ComputerInfo.exe") {
+          Write-Host "✅ Executable created successfully"
+          Get-ChildItem "dist/AboutMe_ComputerInfo.exe" | Format-List Name, Length, LastWriteTime
+        } else {
+          Write-Host "❌ Executable not found"
+          Get-ChildItem "dist" -Recurse
+          exit 1
+        }
+        
+    - name: Commit and push executable
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add dist/
+        git diff --staged --quiet || git commit -m "$$$_Action_Daily_Compile_AboutMe: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+        git push
