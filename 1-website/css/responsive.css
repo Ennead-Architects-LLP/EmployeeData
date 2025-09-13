@@ -61,6 +61,42 @@
     .download-icon {
         font-size: 1rem;
     }
+}
+
+/* Download page responsive styles */
+@media (max-width: 768px) {
+    .download-container {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    
+    .download-title {
+        font-size: 2rem;
+    }
+    
+    .download-btn-large {
+        padding: 16px 32px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-container {
+        padding: 25px 15px;
+    }
+    
+    .download-title {
+        font-size: 1.8rem;
+    }
+    
+    .download-btn-large {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+    
+    .download-icon-large {
+        font-size: 1.3rem;
+    }
 
     .detail-row {
         flex-direction: column;

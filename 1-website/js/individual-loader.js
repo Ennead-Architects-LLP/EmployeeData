@@ -37,13 +37,8 @@ async function loadIndividualEmployeeData() {
     try {
         console.log('Loading individual employee data...');
         
-        // Get list of individual employee files from static JSON file
-        const response = await fetch('assets/employee_files_list.json');
-        if (!response.ok) {
-            throw new Error('Failed to load employee files list');
-        }
-        
-        const files = await response.json();
+        // Discover files dynamically by trying common patterns
+        const files = await discoverEmployeeFiles();
         console.log(`Found ${files.length} individual employee files`);
         
         // Load each individual employee file
@@ -82,6 +77,75 @@ async function loadIndividualEmployeeData() {
         console.error('Error loading individual employee data:', error);
         throw new Error('Failed to load employee data');
     }
+}
+
+async function discoverEmployeeFiles() {
+    console.log('Attempting to discover employee files dynamically...');
+    
+    try {
+        // Try to get directory listing from the individual_employees folder
+        const response = await fetch('assets/individual_employees/');
+        
+        if (response.ok) {
+            const html = await response.text();
+            console.log('Successfully got directory listing');
+            
+            // Parse HTML to extract JSON filenames
+            const files = extractJsonFilesFromHtml(html);
+            console.log(`Found ${files.length} JSON files in directory listing`);
+            return files;
+        } else {
+            throw new Error('Directory listing not available');
+        }
+    } catch (error) {
+        console.log('Directory listing failed, trying fallback method...');
+        
+        // Fallback: try to load from generated static file list
+        try {
+            const response = await fetch('assets/employee_files_list.json');
+            if (response.ok) {
+                const files = await response.json();
+                console.log(`Loaded ${files.length} files from static list as fallback`);
+                return files;
+            }
+        } catch (fallbackError) {
+            console.error('Both directory listing and static list failed');
+        }
+        
+        // Last resort: return empty array
+        console.warn('No file discovery method worked, returning empty array');
+        return [];
+    }
+}
+
+function extractJsonFilesFromHtml(html) {
+    // Parse HTML directory listing to extract .json filenames
+    const files = [];
+    
+    // Look for links to .json files in the HTML
+    const linkRegex = /<a[^>]*href="([^"]*\.json)"[^>]*>/gi;
+    let match;
+    
+    while ((match = linkRegex.exec(html)) !== null) {
+        const filename = match[1];
+        if (filename.endsWith('.json')) {
+            files.push(filename);
+        }
+    }
+    
+    // If no links found, try alternative patterns
+    if (files.length === 0) {
+        // Try to find filenames in other HTML patterns
+        const filenameRegex = /([A-Za-z_]+\.json)/g;
+        while ((match = filenameRegex.exec(html)) !== null) {
+            const filename = match[1];
+            if (filename.endsWith('.json') && !files.includes(filename)) {
+                files.push(filename);
+            }
+        }
+    }
+    
+    return files.sort();
 }
 
 
