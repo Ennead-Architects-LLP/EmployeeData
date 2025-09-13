@@ -28,6 +28,8 @@ jobs:
     - name: Install dependencies
       run: |
         pip install requests pyyaml flask
+        sudo apt-get update
+        sudo apt-get install -y jq
     
     - name: Create backup directory
       run: |
@@ -41,25 +43,60 @@ jobs:
       run: |
         set -e  # Exit on any error
         
-        echo "Current directory: $(pwd)"
-        echo "Files in current directory:"
-        ls -la
-        echo "Files in 4-server directory:"
-        ls -la 4-server/
-        echo "Files in 1-website/assets/individual_employees directory:"
-        ls -la 1-website/assets/individual_employees/ | head -10
-        
         echo "Processing computer data (test mode: $TEST_MODE)..."
         if [ "$TEST_MODE" = "true" ]; then
           echo "TEST MODE: Would process computer data here"
           echo "In test mode, no actual data processing occurs"
           echo "✅ Test mode completed successfully"
         else
-          echo "Processing computer data..."
-          # Add your data processing logic here instead of running the server
-          # For now, just simulate successful processing
-          echo "Computer data processing completed"
-          echo "✅ Data processing completed successfully"
+          echo "Processing computer data from repository dispatch..."
+          
+          # Extract computer data from the repository dispatch event
+          COMPUTER_DATA='${{ toJson(github.event.client_payload.computer_info) }}'
+          COMPUTER_NAME='${{ github.event.client_payload.computer_info.computer_name }}'
+          HUMAN_NAME='${{ github.event.client_payload.computer_info.human_name }}'
+          USERNAME='${{ github.event.client_payload.computer_info.username }}'
+          TIMESTAMP='${{ github.event.client_payload.timestamp }}'
+          
+          echo "Received data for: $HUMAN_NAME ($USERNAME) on $COMPUTER_NAME"
+          
+          # Create backup file with timestamp
+          BACKUP_FILE="1-website/assets/computer_info_data_backup/${COMPUTER_NAME}_$(date +%Y%m%d_%H%M%S).json"
+          
+          # Create the backup data structure
+          cat > "$BACKUP_FILE" << EOF
+        {
+          "timestamp": "$TIMESTAMP",
+          "computer_name": "$COMPUTER_NAME",
+          "user_name": "$HUMAN_NAME",
+          "username": "$USERNAME",
+          "computer_info": $COMPUTER_DATA
+        }
+        EOF
+          
+          echo "Created backup file: $BACKUP_FILE"
+          
+          # Find and update the corresponding employee JSON file
+          EMPLOYEE_FILE=$(find 1-website/assets/individual_employees/ -name "*.json" -exec grep -l "\"human_name\": \"$HUMAN_NAME\"" {} \; | head -1)
+          
+          if [ -n "$EMPLOYEE_FILE" ]; then
+            echo "Found employee file: $EMPLOYEE_FILE"
+            
+            # Create a temporary file with updated computer info
+            TEMP_FILE=$(mktemp)
+            
+            # Use jq to update the computer field
+            jq --argjson computer_info "$COMPUTER_DATA" '.computer = $computer_info' "$EMPLOYEE_FILE" > "$TEMP_FILE"
+            
+            # Replace the original file
+            mv "$TEMP_FILE" "$EMPLOYEE_FILE"
+            
+            echo "Updated employee file with computer information"
+          else
+            echo "Warning: Could not find employee file for $HUMAN_NAME"
+          fi
+          
+          echo "✅ Computer data processing completed successfully"
         fi
     
     - name: Update JSON data only (no website regeneration needed)
