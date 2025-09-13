@@ -1895,4 +1895,113 @@ class CompleteScraper:
         """
         
         try:
-            # Initialize Playwright without timeout protection
+            # Initialize Playwright
+            self.logger.info("[START] Initializing Playwright browser...")
+            playwright = await async_playwright().start()
+            
+            self.logger.info("[START] Launching browser...")
+            browser = await playwright.chromium.launch(
+                headless=self.config.HEADLESS,
+                channel='msedge',
+                args=self.config.BROWSER_ARGS
+            )
+            
+            # Create browser context
+            self.logger.info("[START] Creating browser context...")
+            context = await browser.new_context(
+                viewport={'width': self.config.VIEWPORT_WIDTH, 'height': self.config.VIEWPORT_HEIGHT},
+                user_agent=self.config.USER_AGENT
+            )
+            
+            page = await context.new_page()
+            page.set_default_timeout(self.config.TIMEOUT)
+            
+            # Login and get to main page
+            self.logger.info("[START] Attempting login...")
+            login_success = await self.auto_login.login(page, self.config.BASE_URL)
+            if not login_success:
+                self.logger.error("❌ Failed to login")
+                await browser.close()
+                return []
+            
+            # Wait for page to load completely
+            await page.wait_for_load_state('networkidle')
+            await asyncio.sleep(3)
+            
+            # Find employee profile links
+            employee_links = await self.find_employee_profile_links(page)
+            
+            if not employee_links:
+                self.logger.warning("No employee profile links found!")
+                await browser.close()
+                return []
+            
+            self.logger.info(f"Found {len(employee_links)} employees to scrape sequentially")
+            
+            # Initialize incremental saving
+            all_employees = []
+            batch_size = 10  # Save every 10 employees
+            current_batch = []
+            
+            for i, (profile_url, employee_name, office_location) in enumerate(employee_links, 1):
+                self.logger.info(f"[{i}/{len(employee_links)}] Processing: {employee_name}")
+                
+                employee = await self.scrape_employee_profile(page, profile_url, employee_name, office_location)
+                if employee:
+                    current_batch.append(employee)
+                    all_employees.append(employee)
+                
+                # Save incrementally every batch_size employees
+                if len(current_batch) >= batch_size or i == len(employee_links):
+                    await self._save_incremental_batch(current_batch, i, len(employee_links))
+                    current_batch = []  # Clear batch to free memory
+                
+                # Add small delay to be respectful
+                await asyncio.sleep(1)
+            
+            # Clean up browser resources
+            self.logger.info("[CLEANUP] Cleaning up browser resources...")
+            await browser.close()
+            await playwright.stop()
+            
+            self.logger.info(f"✅ Successfully scraped {len(all_employees)} employees sequentially")
+            return all_employees
+            
+        except Exception as e:
+            self.logger.error(f"❌ Error during sequential scraping: {e}")
+            return []
+    
+    async def _save_incremental_batch(self, batch: List[EmployeeData], current_count: int, total_count: int):
+        """
+        Save a batch of employees incrementally to manage memory.
+        
+        Args:
+            batch: List of EmployeeData objects to save
+            current_count: Current count of processed employees
+            total_count: Total number of employees to process
+        """
+        if not batch:
+            return
+        
+        try:
+            # Save each employee individually
+            for employee in batch:
+                if employee and hasattr(employee, 'to_dict'):
+                    # Save individual employee data
+                    employee_data = employee.to_dict()
+                    filename = f"{employee.name.replace(' ', '_')}.json"
+                    filepath = self.config.OUTPUT_DIR / "individual_employees" / filename
+                    
+                    # Ensure directory exists
+                    filepath.parent.mkdir(parents=True, exist_ok=True)
+                    
+                    # Save to file
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        json.dump(employee_data, f, indent=2, ensure_ascii=False)
+                    
+                    self.logger.debug(f"Saved {employee.name} to {filepath}")
+            
+            self.logger.info(f"✅ Saved batch of {len(batch)} employees ({current_count}/{total_count})")
+            
+        except Exception as e:
+            self.logger.error(f"❌ Error saving batch: {e}")
