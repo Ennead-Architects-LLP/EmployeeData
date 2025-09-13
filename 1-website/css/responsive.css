@@ -8,6 +8,22 @@
         font-size: 2rem;
     }
 
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .download-btn {
+        align-self: flex-end;
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+
+    .download-text {
+        display: none;
+    }
+
     .search-container {
         flex-direction: column;
     }
@@ -33,6 +49,17 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .download-icon {
+        font-size: 1rem;
     }
 
     .detail-row {
