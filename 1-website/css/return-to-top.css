@@ -28,7 +28,7 @@
 
 .return-to-top:hover {
     background: #33ccff;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(0, 191, 255, 0.4);
 }
 

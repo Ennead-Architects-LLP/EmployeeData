@@ -84,7 +84,7 @@
 .suggestion-item:hover {
     background: rgba(0, 191, 255, 0.2);
     border-color: #00bfff;
-    transform: translateY(-1px);
+    transform: translateY(-0.5px);
 }
 
 .no-suggestions {

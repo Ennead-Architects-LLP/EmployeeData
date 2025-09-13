@@ -17,7 +17,7 @@
 }
 
 .employee-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     background: rgba(255, 255, 255, 0.15);
     border-color: #00bfff;
 }
