@@ -48,12 +48,15 @@ jobs:
       env:
         SCRAPER_EMAIL: ${{ secrets.SCRAPER_EMAIL }}
         SCRAPER_PASSWORD: ${{ secrets.SCRAPER_PASSWORD }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         cd 2-scraper
         python weekly_scraper.py
         
     - name: Commit and push changes
       if: success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
