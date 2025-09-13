@@ -13,6 +13,11 @@ function getBasePath() {
         // Extract repository name from the current path
         const pathParts = window.location.pathname.split('/').filter(part => part);
         const repoName = pathParts[0]; // First part after the domain
+        
+        // Check if we're in a subdirectory (like 1-website)
+        if (pathParts.length > 1 && pathParts[1] === '1-website') {
+            return `/${repoName}/1-website/`;
+        }
         return `/${repoName}/`;
     }
     return '';

@@ -64,6 +64,14 @@ jobs:
         echo "Generated files:"
         ls -la *.json
         
+    - name: Copy JSON files to root for GitHub Pages access
+      run: |
+        # Copy files to root directory for GitHub Pages access
+        cp 1-website/employee_json_dir.json .
+        mkdir -p assets
+        cp 1-website/assets/employee_files_list.json assets/
+        echo "Copied JSON files to root directory"
+        
     - name: Commit and push changes
       if: success()
       env:
