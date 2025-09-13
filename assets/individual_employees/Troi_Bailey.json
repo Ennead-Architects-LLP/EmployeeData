@@ -1,0 +1,32 @@
+{
+  "human_name": "Troi Bailey",
+  "email": "troi.bailey@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/24CB71CD-49A2-403E-8B2F-B391B218BA9B/troi-bailey",
+  "image_url": "https://ei.ennead.com/api/image/986b3ec4-b541-43ad-96de-7c51cc4eb563/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Troi Bailey_profile.jpg",
+  "position": "Director",
+  "department": null,
+  "years_with_firm": 1,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Phoenix",
+      "degree": "Undergraduate",
+      "specialty": "Bachelor of Science in Management"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=troi.bailey@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:00:58.567676",
+  "profile_id": "troi-bailey"
+}

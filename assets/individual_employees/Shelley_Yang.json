@@ -1,0 +1,92 @@
+{
+  "human_name": "Shelley Yang",
+  "email": "shelley.yang@ennead.com",
+  "bio": null,
+  "phone": "6464371749",
+  "mobile": "6464371749",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/B322DA6F-6790-4D46-95E0-59F05C922D03/shelley-yang",
+  "image_url": "https://ei.ennead.com/api/image/18ea8eb3-007e-4c57-ad31-a737800412bc/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Shelley Yang_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 5,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA",
+    "National Organization of Minority Architects"
+  ],
+  "education": [
+    {
+      "institution": "Bernard and Anne Spitzer School of Architecture",
+      "degree": "Graduate",
+      "specialty": "Master of Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mayo Clinic Executive Health Gonda",
+      "number": "",
+      "client": "2338",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda"
+    },
+    {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "number": "",
+      "client": "2128",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+    },
+    {
+      "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
+      "number": "",
+      "client": "2120",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2"
+    },
+    {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "number": "",
+      "client": "1845",
+      "role": "",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
+    },
+    {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "number": "",
+      "client": "2100",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+    },
+    {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "number": "",
+      "client": "2001",
+      "role": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+    },
+    {
+      "name": "Kuwait University Health Sciences Campus",
+      "number": "",
+      "client": "1704",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=syang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:03:32.976323",
+  "profile_id": "shelley-yang"
+}

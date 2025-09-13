@@ -1,0 +1,257 @@
+{
+  "human_name": "Felicia Berger",
+  "email": "felicia.berger@ennead.com",
+  "bio": null,
+  "phone": "(646) 437-1713",
+  "mobile": "(646) 437-1713",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/71803F1A-156B-418A-B2B7-7FE1894C0360/felicia-berger",
+  "image_url": "https://ei.ennead.com/api/image/3e9f0076-4571-447b-88a7-6fffe04ced4f/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Felicia Berger_profile.jpg",
+  "position": "Principal",
+  "department": null,
+  "years_with_firm": 26,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA",
+    "LEED AP",
+    "NCARB"
+  ],
+  "education": [
+    {
+      "institution": "Princeton University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Virginia",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "DC",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "MI",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "University of North Carolina School of Law",
+      "number": "",
+      "client": "2243",
+      "role": "Moseley Architects",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law"
+    },
+    {
+      "name": "Colin Powell School for Civic and Global Leadership at The City College of New York",
+      "number": "",
+      "client": "1220",
+      "role": "City University of New York, City College",
+      "url": "https://ei.ennead.com/project/4EB6598F-1C37-451C-ACF8-155A62912C15/colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york"
+    },
+    {
+      "name": "Sherman Avenue Mixed Use Development",
+      "number": "",
+      "client": "1229",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A54AD7A9-0AB3-47C0-B668-2BC495B066B8/sherman-avenue-mixed-use-development"
+    },
+    {
+      "name": "United States Consulate General, Nogales Mexico (planning)",
+      "number": "",
+      "client": "1522",
+      "role": "",
+      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning"
+    },
+    {
+      "name": "City University of New York, City College, Colin L. Powell Hall",
+      "number": "",
+      "client": "1005",
+      "role": "City University of New York, City College",
+      "url": "https://ei.ennead.com/project/4001782E-0E09-4E75-B06A-1BB6AD33D5EF/city-university-of-new-york-city-college-colin-l-powell-hall"
+    },
+    {
+      "name": "GSP Arts Uberlandia",
+      "number": "",
+      "client": "1118",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DE89DED1-43D9-4AC1-B189-9FC26315137C/gsp-arts-uberlandia"
+    },
+    {
+      "name": "Memorial Sloan-Kettering Institute, Benjamin M. Rosen Student & Faculty Club",
+      "number": "",
+      "client": "9729",
+      "role": "",
+      "url": "https://ei.ennead.com/project/27F14926-F129-4B31-8EF5-8EE457B16FD7/memorial-sloan-kettering-institute-benjamin-m-rosen-student-faculty-club"
+    },
+    {
+      "name": "New York Academy of Medicine, Programming and Planning",
+      "number": "",
+      "client": "0125",
+      "role": "",
+      "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning"
+    },
+    {
+      "name": "United States Consulate General, Nogales Mexico",
+      "number": "",
+      "client": "1608",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico"
+    },
+    {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "number": "",
+      "client": "1845",
+      "role": "SmithGroup",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
+    },
+    {
+      "name": "Shenzhen Conservatory of Music",
+      "number": "",
+      "client": "2030",
+      "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music"
+    },
+    {
+      "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
+      "number": "",
+      "client": "1700",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council"
+    },
+    {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)",
+      "number": "",
+      "client": "1807",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
+    },
+    {
+      "name": "National Medal of Honor Museum",
+      "number": "",
+      "client": "2003",
+      "role": "The National Medal of Honor Museum Foundation",
+      "url": "https://ei.ennead.com/project/7CB3B33A-76A5-4B9F-AC30-F4148E8B5947/national-medal-of-honor-museum"
+    },
+    {
+      "name": "Project Darwin, Natural History Museum",
+      "number": "",
+      "client": "2004",
+      "role": "Miral Asset Management LLC",
+      "url": "https://ei.ennead.com/project/A33E7BEF-8C69-44C1-A92A-41138617A2B3/project-darwin-natural-history-museum"
+    },
+    {
+      "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
+      "number": "",
+      "client": "1838",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo"
+    },
+    {
+      "name": "Arizona State University, Beus Center for Law and Society (ASU)",
+      "number": "",
+      "client": "1314",
+      "role": "Arizona State University (ASU)",
+      "url": "https://ei.ennead.com/project/DC6D031D-D1E0-4D39-A43D-6188E2F15C4F/arizona-state-university-beus-center-for-law-and-society-asu"
+    },
+    {
+      "name": "Holland Performing Arts Center",
+      "number": "",
+      "client": "0038",
+      "role": "Henningson, Durham and Richardson Inc. (HDR)",
+      "url": "https://ei.ennead.com/project/305CAEA6-B33E-4D5C-9647-C3504794C724/holland-performing-arts-center"
+    },
+    {
+      "name": "Kansas State University, College of Architecture Planning and Design",
+      "number": "",
+      "client": "1414",
+      "role": "BNIM",
+      "url": "https://ei.ennead.com/project/254C84D8-F993-449A-9C67-BBD8B9BDF58E/kansas-state-university-college-of-architecture-planning-and-design"
+    },
+    {
+      "name": "Newseum / Freedom Forum Foundation World Headquarters",
+      "number": "",
+      "client": "0025",
+      "role": "The Freedom Forum",
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters"
+    },
+    {
+      "name": "The Pennsylvania State University, Penn State Dickinson Law, Lewis Katz Hall",
+      "number": "",
+      "client": "0521",
+      "role": "The Pennsylvania State University",
+      "url": "https://ei.ennead.com/project/F0D3AFEF-5D61-4E28-8A48-C46BA7E7DC66/the-pennsylvania-state-university-penn-state-dickinson-law-lewis-katz-hall"
+    },
+    {
+      "name": "The Pennsylvania State University, Penn State Law, Lewis Katz Building",
+      "number": "",
+      "client": "0522",
+      "role": "The Pennsylvania State University",
+      "url": "https://ei.ennead.com/project/AB1E54E3-9541-48BF-861A-BEA87BE933C5/the-pennsylvania-state-university-penn-state-law-lewis-katz-building"
+    },
+    {
+      "name": "TWA Flight Center (Standard Flight Center)",
+      "number": "",
+      "client": "1204",
+      "role": "Andre Balazs Properties",
+      "url": "https://ei.ennead.com/project/8FC7C89F-08F8-462F-BCB3-BF30EBC4BB41/twa-flight-center-standard-flight-center"
+    },
+    {
+      "name": "United States Embassy, Ankara (OBO)",
+      "number": "",
+      "client": "1425",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
+    },
+    {
+      "name": "University of Pennsylvania, School of Veterinary Medicine, Vernon and Shirley Hill Pavilion",
+      "number": "",
+      "client": "0301",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/B4AE6063-DC77-49BA-9585-713FB91D46F0/university-of-pennsylvania-school-of-veterinary-medicine-vernon-and-shirley-hill-pavilion"
+    },
+    {
+      "name": "University of Virginia, South Lawn Project Master Plan",
+      "number": "",
+      "client": "0132",
+      "role": "University of Virginia",
+      "url": "https://ei.ennead.com/project/BE6DF8FE-AC29-4D1A-AB08-3A69EF630C5F/university-of-virginia-south-lawn-project-master-plan"
+    },
+    {
+      "name": "William J. Clinton Presidential Center",
+      "number": "",
+      "client": "9908",
+      "role": "The Clinton Foundation",
+      "url": "https://ei.ennead.com/project/CB57D320-7490-4B2C-9F31-5A8BC0D42B96/william-j-clinton-presidential-center"
+    },
+    {
+      "name": "Yale University Art Gallery, Kahn Building Renovation",
+      "number": "",
+      "client": "0001",
+      "role": "Yale University",
+      "url": "https://ei.ennead.com/project/F9EFB3AC-7C19-4632-BEC2-DA3B3728B8C4/yale-university-art-gallery-kahn-building-renovation"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fberger@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:30:47.711780",
+  "profile_id": "felicia-berger"
+}

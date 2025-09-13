@@ -1,0 +1,75 @@
+{
+  "human_name": "Ingrid Evenson",
+  "email": "ingrid.evenson@ennead.com",
+  "bio": null,
+  "phone": "646-437-1726",
+  "mobile": "646-437-1726",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/47832C14-0186-4B81-A95C-CC7DF9DDD1FB/ingrid-evenson",
+  "image_url": "https://ei.ennead.com/api/image/bae4208c-1f64-4352-8de2-1214b858f3b1/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Ingrid Evenson_profile.jpg",
+  "position": "Architectural Designer",
+  "department": null,
+  "years_with_firm": 0,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture - Expected Graduation 2024"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Shaoxing Textile Museum",
+      "number": "",
+      "client": "2418",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+    },
+    {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+      "number": "",
+      "client": "2321",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition"
+    },
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "",
+      "client": "2151",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "American School in Japan Master Plan",
+      "number": "",
+      "client": "2231",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan"
+    },
+    {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "number": "",
+      "client": "2125",
+      "role": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ingrid.evenson@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:28:56.039291",
+  "profile_id": "ingrid-evenson"
+}

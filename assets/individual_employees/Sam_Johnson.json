@@ -1,0 +1,132 @@
+{
+  "human_name": "Sam Johnson",
+  "email": "sam.johnson@ennead.com",
+  "bio": null,
+  "phone": "2125846329",
+  "mobile": "2125846329",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/E2A1C95D-F439-417F-B3EE-7482855B7BA9/sam-johnson",
+  "image_url": "https://ei.ennead.com/api/image/1770c2eb-952c-44b7-a8f7-cc6f2703459c/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Sam Johnson_profile.jpg",
+  "position": "Associate",
+  "department": null,
+  "years_with_firm": 5,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA",
+    "LEED GA"
+  ],
+  "education": [
+    {
+      "institution": "University of Massachusetts, Amherst",
+      "degree": "Undergraduate",
+      "specialty": "Architecture & Design"
+    },
+    {
+      "institution": "University of Virginia",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "number": "",
+      "client": "2235",
+      "role": "Harvard University",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study"
+    },
+    {
+      "name": "Paso Cardenal Samore Border Station",
+      "number": "",
+      "client": "219053",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5487DB6D-C915-4D0A-ABD4-72006655BDBB/paso-cardenal-samore-border-station"
+    },
+    {
+      "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+      "number": "",
+      "client": "2111",
+      "role": "Shanghai International Tendering Co., Ltd",
+      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity"
+    },
+    {
+      "name": "The Westminster Schools, Love Hall",
+      "number": "",
+      "client": "2105",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall"
+    },
+    {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "number": "",
+      "client": "1724",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof"
+    },
+    {
+      "name": "Divco West Cambridge Crossing: Parcel U",
+      "number": "",
+      "client": "1933",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
+    },
+    {
+      "name": "New York University. Grey Art Museum",
+      "number": "",
+      "client": "1942",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum"
+    },
+    {
+      "name": "Westminster Schools - Blake Center",
+      "number": "",
+      "client": "1946",
+      "role": "The Westminster Schools",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
+    },
+    {
+      "name": "Capitol Crossing",
+      "number": "",
+      "client": "1850",
+      "role": "Capitol Crossing III LLC, and Capitol Crossing IV LLC",
+      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing"
+    },
+    {
+      "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
+      "number": "",
+      "client": "1900",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6"
+    },
+    {
+      "name": "Branksome Hall, Innovation and Performing Arts Centre",
+      "number": "",
+      "client": "1842",
+      "role": "MacLennan Jaunkalns Miller Architects",
+      "url": "https://ei.ennead.com/project/4A2C4E53-041E-46D8-8C74-86FFCB1F695F/branksome-hall-innovation-and-performing-arts-centre"
+    },
+    {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "number": "",
+      "client": "1841",
+      "role": "Huawei Technologies Co., Ltd.",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition"
+    },
+    {
+      "name": "Kuwait University Health Sciences Campus",
+      "number": "",
+      "client": "1704",
+      "role": "Perkins Eastman",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sjohnson@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:04:10.550376",
+  "profile_id": "sam-johnson"
+}

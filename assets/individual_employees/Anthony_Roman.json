@@ -1,0 +1,35 @@
+{
+  "human_name": "Anthony Roman",
+  "email": "anthony.roman@ennead.com",
+  "bio": null,
+  "phone": "212-792-5898",
+  "mobile": "212-792-5898",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/28B922DB-097C-4F7A-B0B6-88650654FBC9/anthony-roman",
+  "image_url": "https://ei.ennead.com/api/image/b409a022-1fd3-47cc-873c-bf1170c012b2/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Anthony Roman_profile.jpg",
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 26,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AICPA"
+  ],
+  "education": [],
+  "licenses": [
+    {
+      "license": "Certified Public Accountant",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=troman@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:36:37.136242",
+  "profile_id": "anthony-roman"
+}

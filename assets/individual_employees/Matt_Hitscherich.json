@@ -1,0 +1,180 @@
+{
+  "human_name": "Matt Hitscherich",
+  "email": "matt.hitscherich@ennead.com",
+  "bio": null,
+  "phone": "(646) 437-1733",
+  "mobile": "(646) 437-1733",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/BE640C28-CAAC-4973-AA24-3303C2289244/matt-hitscherich",
+  "image_url": "https://ei.ennead.com/api/image/970a4ca5-e807-40de-acb2-24f33366d27b/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Matt Hitscherich_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 7,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cooper Union",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "number": "",
+      "client": "2401",
+      "role": "Shenzhen Hong Kong Science and Technology Innovation Cooperation Zone Development Co., Ltd",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i"
+    },
+    {
+      "name": "Genentech Bayview Campus Competition",
+      "number": "",
+      "client": "2249",
+      "role": "Genentech",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition"
+    },
+    {
+      "name": "Ennead Architects, 1 World Trade Center",
+      "number": "",
+      "client": "1806",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A01D96E9-D4FA-4D9F-BDF0-4A017C7F07E0/ennead-architects-1-world-trade-center"
+    },
+    {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "number": "",
+      "client": "2210",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
+    },
+    {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "number": "",
+      "client": "2125",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "",
+      "client": "2103",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "number": "",
+      "client": "2100",
+      "role": "Milwaukee Public Museum",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+    },
+    {
+      "name": "DingTalk Competition",
+      "number": "",
+      "client": "2101",
+      "role": "",
+      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition"
+    },
+    {
+      "name": "Shenzhen Xiaomi Headquarters",
+      "number": "",
+      "client": "2016",
+      "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
+    },
+    {
+      "name": "Divco West Cambridge Crossing: Parcel U",
+      "number": "",
+      "client": "1933",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "",
+      "client": "1940",
+      "role": "Lingang Group",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "Bao Steel Wusong Pilot District",
+      "number": "",
+      "client": "1919",
+      "role": "Lingang BaoWu Group",
+      "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district"
+    },
+    {
+      "name": "The Cove, Crescent Park Jersey City",
+      "number": "",
+      "client": "1902",
+      "role": "AQ Liberty LLC (Argent Ventures)",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "",
+      "client": "1735",
+      "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    },
+    {
+      "name": "Hero Tandi Pen",
+      "number": "",
+      "client": "1621",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/A44ADE52-65BF-41A5-8CCB-D5C03ED01E77/hero-tandi-pen"
+    },
+    {
+      "name": "Concordia Pudong",
+      "number": "",
+      "client": "1805",
+      "role": "Concordia International School Shanghai",
+      "url": "https://ei.ennead.com/project/BAFEA2ED-630A-4C0F-8BB7-0B569EBDB7CB/concordia-pudong"
+    },
+    {
+      "name": "Hero South Plot",
+      "number": "",
+      "client": "1712",
+      "role": "Shanghai Rongyin Properties Co., Ltd.",
+      "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot"
+    },
+    {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "number": "",
+      "client": "1725",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1"
+    },
+    {
+      "name": "Taopu Sci-Tech Smart City Phase I (Taopu 605)",
+      "number": "",
+      "client": "1433",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/7C36DE44-B5F0-4051-B171-22A9BC33509B/taopu-sci-tech-smart-city-phase-i-taopu-605"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "Taopu North",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mhitscherich@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:10:06.869807",
+  "profile_id": "matt-hitscherich"
+}

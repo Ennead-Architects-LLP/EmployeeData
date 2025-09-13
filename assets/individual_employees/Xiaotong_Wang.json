@@ -1,0 +1,62 @@
+{
+  "human_name": "Xiaotong Wang",
+  "email": "xiaotong.wang@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/E24C73FF-3748-4BB8-A56D-47085BB60F92/xiaotong-wang",
+  "image_url": "https://ei.ennead.com/api/image/9bc8e797-9edf-415f-bc43-eee789c001ed/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Xiaotong Wang_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 4,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "number": "",
+      "client": "2322",
+      "role": "",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "",
+      "client": "2103",
+      "role": "",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "",
+      "client": "2025",
+      "role": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "",
+      "client": "1735",
+      "role": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xwang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T14:59:11.061244",
+  "profile_id": "xiaotong-wang"
+}

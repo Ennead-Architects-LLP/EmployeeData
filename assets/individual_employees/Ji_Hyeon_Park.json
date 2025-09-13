@@ -1,0 +1,63 @@
+{
+  "human_name": "Ji Hyeon Park",
+  "email": "JiHyeon.Park@ennead.com",
+  "bio": null,
+  "phone": "646-437-1711",
+  "mobile": "646-437-1711",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/8846087C-D9A7-45C8-9E69-7F607F76EC20/ji-hyeon-park",
+  "image_url": "https://ei.ennead.com/api/image/30999718-8597-454f-a7b9-a9f939c186a2/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Ji Hyeon Park_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 4,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "LEED AP BD+C",
+    "Fitwel Ambassador",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "M.S. in Advanced  Architectural Design"
+    },
+    {
+      "institution": "Pratt Institute",
+      "degree": "Undergraduate",
+      "specialty": "B.Arch"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "number": "",
+      "client": "2151",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+    },
+    {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "number": "",
+      "client": "2125",
+      "role": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=JiHyeon.Park@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:27:36.372102",
+  "profile_id": "ji-hyeon-park"
+}

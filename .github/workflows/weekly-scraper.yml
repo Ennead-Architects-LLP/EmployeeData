@@ -70,7 +70,9 @@ jobs:
         cp 1-website/employee_json_dir.json .
         mkdir -p assets
         cp 1-website/assets/employee_files_list.json assets/
-        echo "Copied JSON files to root directory"
+        # Copy individual employee files to root assets directory
+        cp -r 1-website/assets/individual_employees assets/
+        echo "Copied JSON files and individual employee data to root directory"
         
     - name: Commit and push changes
       if: success()
@@ -82,7 +84,9 @@ jobs:
         git add .
         git add 1-website/employee_json_dir.json
         git add 1-website/assets/employee_files_list.json
+        git add 1-website/assets/individual_employees/
         git add employee_json_dir.json
         git add assets/employee_files_list.json
+        git add assets/individual_employees/
         git diff --staged --quiet || git commit -m "$$$_Action_Weekly_Scraper_Update: $(date) - Updated employee data and JSON directory files"
         git push

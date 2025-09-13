@@ -1,0 +1,337 @@
+{
+  "human_name": "Kevin McClurkan",
+  "email": "kevin.mcclurkan@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5938",
+  "mobile": "(212) 792-5938",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5D528721-568B-47C1-8036-24B56D0F6FB6/kevin-mcclurkan",
+  "image_url": "https://ei.ennead.com/api/image/b1cea48c-4c99-4b12-87fd-be465ac83e6a/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Kevin McClurkan_profile.jpg",
+  "position": "Partner",
+  "department": null,
+  "years_with_firm": 38,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "LEED AP",
+    "NCARB",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "University of Arkansas",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "CA",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "DC",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "FL",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "IN",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "MO",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NC",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "TN",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Land Surveyor",
+      "state": "NV",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "number": "",
+      "client": "2401",
+      "role": "Shenzhen Hong Kong Science and Technology Innovation Cooperation Zone Development Co., Ltd",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i"
+    },
+    {
+      "name": "Roundabout Theatre Master Plan & Concept",
+      "number": "",
+      "client": "2330",
+      "role": "Roundabout Theater",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept"
+    },
+    {
+      "name": "Youth Ministries for Peace and Justice, Soundview Economic Hub",
+      "number": "",
+      "client": "2325",
+      "role": "Youth Ministries for Peace & Justice",
+      "url": "https://ei.ennead.com/project/5B9D7571-1400-4BE2-974E-06AB485D0F38/youth-ministries-for-peace-and-justice-soundview-economic-hub"
+    },
+    {
+      "name": "300 Lafayette",
+      "number": "",
+      "client": "0517",
+      "role": "As Realty Partners",
+      "url": "https://ei.ennead.com/project/B2895CED-85EB-4451-9BB4-555F00F32F48/300-lafayette"
+    },
+    {
+      "name": "455 First Avenue",
+      "number": "",
+      "client": "2314",
+      "role": "Taconic Partners LLC",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue"
+    },
+    {
+      "name": "The Standard, High Line New York Pizza Oven/Pergola",
+      "number": "",
+      "client": "1656",
+      "role": "MTFA Architecture, PLLC",
+      "url": "https://ei.ennead.com/project/E585E3AC-6426-49B3-AFF1-89389EC3A61E/the-standard-high-line-new-york-pizza-oven-pergola"
+    },
+    {
+      "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+      "number": "",
+      "client": "2220",
+      "role": "Chengdu shudu urban construction co., Ltd.",
+      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum"
+    },
+    {
+      "name": "American Museum of Natural History, Starr Natural Sciences Building",
+      "number": "",
+      "client": "9718",
+      "role": "American Museum of Natural History",
+      "url": "https://ei.ennead.com/project/CBC51CF1-ADE0-445E-B80B-B491CA0FCB8E/american-museum-of-natural-history-starr-natural-sciences-building"
+    },
+    {
+      "name": "Sherman Avenue Mixed Use Development",
+      "number": "",
+      "client": "1229",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A54AD7A9-0AB3-47C0-B668-2BC495B066B8/sherman-avenue-mixed-use-development"
+    },
+    {
+      "name": "United States Consulate General, Nogales Mexico (planning)",
+      "number": "",
+      "client": "1522",
+      "role": "",
+      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning"
+    },
+    {
+      "name": "Zhonghuan Investment Development – Hongqi Village Plot E3",
+      "number": "",
+      "client": "1644",
+      "role": "",
+      "url": "https://ei.ennead.com/project/48365B9C-5F8C-47BC-AEDE-CD44D20D897F/zhonghuan-investment-development-hongqi-village-plot-e3"
+    },
+    {
+      "name": "New York University, Faculty of Arts and Science, Humanities and Social Science Master Planning Study",
+      "number": "",
+      "client": "0324",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6134CA69-A4C3-4E0C-8A43-6C9601123F07/new-york-university-faculty-of-arts-and-science-humanities-and-social-science-master-planning-study"
+    },
+    {
+      "name": "New York University, Main Hall",
+      "number": "",
+      "client": "9428",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/881D9B37-7323-4B07-AD94-9C104AB0EC41/new-york-university-main-hall"
+    },
+    {
+      "name": "R&F Plaza Master Plan",
+      "number": "",
+      "client": "1224",
+      "role": "",
+      "url": "https://ei.ennead.com/project/33E657C4-802D-4D94-AF98-3B8158605F05/r-f-plaza-master-plan"
+    },
+    {
+      "name": "Smithsonian Institution, Cooper-Hewitt National Design Museum, Drue Heinz Study Center for Drawings & Prints and the Henry Luce Study Room for American Art",
+      "number": "",
+      "client": "9730",
+      "role": "",
+      "url": "https://ei.ennead.com/project/605D8853-C51B-49E6-9D16-7985E605EC3D/smithsonian-institution-cooper-hewitt-national-design-museum-drue-heinz-study-center-for-drawings-prints-and-the-henry-luce-study-room-for-american-art"
+    },
+    {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Master Plan Update and Energy Engineering Building Formation Study (EEB)",
+      "number": "",
+      "client": "1401",
+      "role": "",
+      "url": "https://ei.ennead.com/project/FEE7E605-5A5B-491E-8AA3-66CC42B85A4A/the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb"
+    },
+    {
+      "name": "University of North Texas Health Science Center Medical Education and Training (MET) Building",
+      "number": "",
+      "client": "0724",
+      "role": "",
+      "url": "https://ei.ennead.com/project/FAF789FA-3EC5-4490-9BC5-EC47B5B83AC8/university-of-north-texas-health-science-center-medical-education-and-training-met-building"
+    },
+    {
+      "name": "Zhengzhou Bairui Financial Center",
+      "number": "",
+      "client": "1330",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center"
+    },
+    {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "number": "",
+      "client": "2210",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
+    },
+    {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
+      "number": "",
+      "client": "2138",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus"
+    },
+    {
+      "name": "Alibaba Cainiao Phase II",
+      "number": "",
+      "client": "2127",
+      "role": "Shenzhen Toutiao Technology Co., Ltd.",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+      "number": "",
+      "client": "2133",
+      "role": "Tencent",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood"
+    },
+    {
+      "name": "Yidan Center",
+      "number": "",
+      "client": "2134",
+      "role": "Shenzhen Qianhai Yidan Educational, Scientific and Cultural Company",
+      "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    },
+    {
+      "name": "United States Consulate General, Nogales Mexico",
+      "number": "",
+      "client": "1608",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico"
+    },
+    {
+      "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+      "number": "",
+      "client": "2117",
+      "role": "University of Florida",
+      "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation"
+    },
+    {
+      "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+      "number": "",
+      "client": "2111",
+      "role": "Shanghai International Tendering Co., Ltd",
+      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity"
+    },
+    {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "number": "",
+      "client": "1845",
+      "role": "SmithGroup",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "",
+      "client": "2103",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "Jungle Plaza Mixed Use Development",
+      "number": "",
+      "client": "2102",
+      "role": "Jungle Plaza Associates",
+      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development"
+    },
+    {
+      "name": "DingTalk Competition",
+      "number": "",
+      "client": "2101",
+      "role": "",
+      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition"
+    },
+    {
+      "name": "ByteDance Houhai Center Project",
+      "number": "",
+      "client": "2018",
+      "role": "Shenzhen Toutiao Technology Co., Ltd.",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+    },
+    {
+      "name": "Inova Oakville at Potomac Yards Healthplex",
+      "number": "",
+      "client": "2029",
+      "role": "Inova Health System",
+      "url": "https://ei.ennead.com/project/7523ABE9-B271-4D5A-9DF9-898EF2044C01/inova-oakville-at-potomac-yards-healthplex"
+    },
+    {
+      "name": "Shenhzen International Performance Center",
+      "number": "",
+      "client": "2025",
+      "role": "Shenhzen Int. Performance Center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmcclurkan@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:25:01.735031",
+  "profile_id": "kevin-mcclurkan"
+}

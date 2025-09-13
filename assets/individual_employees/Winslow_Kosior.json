@@ -1,0 +1,138 @@
+{
+  "human_name": "Winslow Kosior",
+  "email": "winslow.kosior@ennead.com",
+  "bio": null,
+  "phone": "646-437-1716",
+  "mobile": "646-437-1716",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/10EE34F5-7B0F-4408-9358-D9850BB23429/winslow-kosior",
+  "image_url": "https://ei.ennead.com/api/image/2812004e-91a2-4c16-900c-6005341c49ae/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Winslow Kosior_profile.jpg",
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 5,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Syracuse University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Wentworth Institute of Technology",
+      "degree": "Associates",
+      "specialty": "Architectural Technology"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "455 First Avenue",
+      "number": "",
+      "client": "2314",
+      "role": "Taconic Partners LLC",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue"
+    },
+    {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "number": "",
+      "client": "2210",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Nanda Plot 111-01",
+      "number": "",
+      "client": "2103",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+    },
+    {
+      "name": "ByteDance Houhai Center Project",
+      "number": "",
+      "client": "2018",
+      "role": "Shenzhen Toutiao Technology Co., Ltd.",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+    },
+    {
+      "name": "Shenzhen Xiaomi Headquarters",
+      "number": "",
+      "client": "2016",
+      "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
+    },
+    {
+      "name": "Divco West Cambridge Crossing: Parcel U",
+      "number": "",
+      "client": "1933",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "",
+      "client": "1940",
+      "role": "Lingang Group",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "The Cove, Crescent Park Jersey City",
+      "number": "",
+      "client": "1902",
+      "role": "AQ Liberty LLC (Argent Ventures)",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "",
+      "client": "1735",
+      "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    },
+    {
+      "name": "Kuwait University Health Sciences Campus",
+      "number": "",
+      "client": "1704",
+      "role": "Perkins Eastman",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus"
+    },
+    {
+      "name": "Pujiang Phase II",
+      "number": "",
+      "client": "1817",
+      "role": "Shanghai Lingang Pujiang International Science and Technology City Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "Taopu North",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wkosior@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T14:59:23.753450",
+  "profile_id": "winslow-kosior"
+}

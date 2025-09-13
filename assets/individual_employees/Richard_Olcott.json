@@ -1,0 +1,312 @@
+{
+  "human_name": "Richard Olcott",
+  "email": "richard.olcott@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5946",
+  "mobile": "(212) 792-5946",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/A35D87DB-9328-4DAF-98B5-3F8D48B70404/richard-olcott",
+  "image_url": "https://ei.ennead.com/api/image/a32faef4-70c5-4285-a71d-82ac38999049/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Richard Olcott_profile.jpg",
+  "position": "Partner",
+  "department": null,
+  "years_with_firm": 45,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "NCARB",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "DC",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "FL",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "VA",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "VT",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Youth Ministries for Peace and Justice, Soundview Economic Hub",
+      "number": "",
+      "client": "2325",
+      "role": "Youth Ministries for Peace & Justice",
+      "url": "https://ei.ennead.com/project/5B9D7571-1400-4BE2-974E-06AB485D0F38/youth-ministries-for-peace-and-justice-soundview-economic-hub"
+    },
+    {
+      "name": "Working Waterfront: Water Wheels (New York Times)",
+      "number": "",
+      "client": "P09NYTM",
+      "role": "",
+      "url": "https://ei.ennead.com/project/2AF9D5D6-3EE8-4786-8FE6-4A110ADEFBF6/working-waterfront--water-wheels-new-york-times"
+    },
+    {
+      "name": "City University of New York, Hunter College, Roosevelt House Renovation, Upgrades",
+      "number": "",
+      "client": "1831",
+      "role": "City University of New York, Hunter College",
+      "url": "https://ei.ennead.com/project/0BFE4D02-0754-4154-A37B-89350E998772/city-university-of-new-york-hunter-college-roosevelt-house-renovation-upgrades"
+    },
+    {
+      "name": "Colin Powell School for Civic and Global Leadership at The City College of New York",
+      "number": "",
+      "client": "1220",
+      "role": "City University of New York, City College",
+      "url": "https://ei.ennead.com/project/4EB6598F-1C37-451C-ACF8-155A62912C15/colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york"
+    },
+    {
+      "name": "Haut-Savoie Government Office Building",
+      "number": "",
+      "client": "9120",
+      "role": "",
+      "url": "https://ei.ennead.com/project/23BC338B-8968-4001-82F0-C7C2F7165D16/haut-savoie-government-office-building"
+    },
+    {
+      "name": "Manhattan Supreme Court Criminal Term Building (80 centre street)",
+      "number": "",
+      "client": "9433",
+      "role": "",
+      "url": "https://ei.ennead.com/project/61C518FB-505D-401B-A5FA-1A459D1FCB5D/manhattan-supreme-court-criminal-term-building-80-centre-street"
+    },
+    {
+      "name": "United States Consulate General, Nogales Mexico (planning)",
+      "number": "",
+      "client": "1522",
+      "role": "",
+      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning"
+    },
+    {
+      "name": "City University of New York, City College, Colin L. Powell Hall",
+      "number": "",
+      "client": "1005",
+      "role": "City University of New York, City College",
+      "url": "https://ei.ennead.com/project/4001782E-0E09-4E75-B06A-1BB6AD33D5EF/city-university-of-new-york-city-college-colin-l-powell-hall"
+    },
+    {
+      "name": "International Center of Photography Feasibility Study",
+      "number": "",
+      "client": "9621",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3F515AA0-A83E-42DE-A94B-1A35F8203F77/international-center-of-photography-feasibility-study"
+    },
+    {
+      "name": "University of North Texas Health Science Center Medical Education and Training (MET) Building",
+      "number": "",
+      "client": "0724",
+      "role": "",
+      "url": "https://ei.ennead.com/project/FAF789FA-3EC5-4490-9BC5-EC47B5B83AC8/university-of-north-texas-health-science-center-medical-education-and-training-met-building"
+    },
+    {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
+      "number": "",
+      "client": "2138",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus"
+    },
+    {
+      "name": "Paso Cardenal Samore Border Station",
+      "number": "",
+      "client": "219053",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5487DB6D-C915-4D0A-ABD4-72006655BDBB/paso-cardenal-samore-border-station"
+    },
+    {
+      "name": "United States Consulate General, Nogales Mexico",
+      "number": "",
+      "client": "1608",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico"
+    },
+    {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "number": "",
+      "client": "1845",
+      "role": "SmithGroup",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
+    },
+    {
+      "name": "The Spence School, 412 E 90 Street Conversion Study",
+      "number": "",
+      "client": "2032",
+      "role": "Spence School",
+      "url": "https://ei.ennead.com/project/13B54F34-8325-4412-A565-A8F3BCB931E4/the-spence-school-412-e-90-street-conversion-study"
+    },
+    {
+      "name": "Shenzhen Conservatory of Music",
+      "number": "",
+      "client": "2030",
+      "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music"
+    },
+    {
+      "name": "Alta Community Center Feasibility Study (ELab)",
+      "number": "",
+      "client": "2010",
+      "role": "Town of Alta",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab"
+    },
+    {
+      "name": "San Diego Museum of Art Reimagined (Museum Plan)",
+      "number": "",
+      "client": "2006",
+      "role": "The San Diego Museum of Art",
+      "url": "https://ei.ennead.com/project/9F89D97F-F0CB-4484-AD84-A07C25AB1516/san-diego-museum-of-art-reimagined-museum-plan"
+    },
+    {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "number": "",
+      "client": "1724",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof"
+    },
+    {
+      "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
+      "number": "",
+      "client": "1700",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council"
+    },
+    {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)",
+      "number": "",
+      "client": "1807",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
+    },
+    {
+      "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
+      "number": "",
+      "client": "1838",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo"
+    },
+    {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "number": "",
+      "client": "2001",
+      "role": "University of California, Santa Cruz",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+    },
+    {
+      "name": "City Harvest, The Cohen Community Food Rescue Center",
+      "number": "",
+      "client": "1944",
+      "role": "City Harvest",
+      "url": "https://ei.ennead.com/project/153179FB-C946-4ED3-A2F3-06B30CF54961/city-harvest-the-cohen-community-food-rescue-center"
+    },
+    {
+      "name": "New York University. Grey Art Museum",
+      "number": "",
+      "client": "1942",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum"
+    },
+    {
+      "name": "500 Park Tower",
+      "number": "",
+      "client": "8112",
+      "role": "TEST",
+      "url": "https://ei.ennead.com/project/EC1CC29A-945D-4236-8F44-DFABDE01AB12/500-park-tower"
+    },
+    {
+      "name": "Anderson Collection at Stanford University",
+      "number": "",
+      "client": "1110",
+      "role": "Stanford University",
+      "url": "https://ei.ennead.com/project/65A0C468-9D20-4DD1-BD31-58B565C2EB75/anderson-collection-at-stanford-university"
+    },
+    {
+      "name": "Barnard College, Sulzberger Hall",
+      "number": "",
+      "client": "8624",
+      "role": "Barnard College",
+      "url": "https://ei.ennead.com/project/5A17BB64-3303-4A90-9DC3-F0ABD2949031/barnard-college-sulzberger-hall"
+    },
+    {
+      "name": "Bird-Friendly Glass Lab (Ennead Lab)",
+      "number": "",
+      "client": "1201",
+      "role": "",
+      "url": "https://ei.ennead.com/project/77201997-E726-4E2B-AF82-998624B1FD70/bird-friendly-glass-lab-ennead-lab"
+    },
+    {
+      "name": "Broadway: 1000 Steps (Ennead Lab)",
+      "number": "",
+      "client": "1112",
+      "role": "Unknown Client",
+      "url": "https://ei.ennead.com/project/AB094ED6-A669-4246-8E8A-29248DDD64CE/broadway--1000-steps-ennead-lab"
+    },
+    {
+      "name": "Carnegie Hall, Judy and Arthur Zankel Hall",
+      "number": "",
+      "client": "9726",
+      "role": "Carnegie Hall Corporation",
+      "url": "https://ei.ennead.com/project/FD6A3450-04D8-4735-9598-4ECFFA5581F3/carnegie-hall-judy-and-arthur-zankel-hall"
+    },
+    {
+      "name": "City University of New York, Hunter College, Roosevelt House Renovation",
+      "number": "",
+      "client": "0308",
+      "role": "Dormitory Authority of the State of New York",
+      "url": "https://ei.ennead.com/project/9F5BCAE8-61E6-4561-BA45-0885AD78C8BC/city-university-of-new-york-hunter-college-roosevelt-house-renovation"
+    },
+    {
+      "name": "Columbia University Law School, Jerome L. Greene Hall",
+      "number": "",
+      "client": "9314",
+      "role": "Columbia University",
+      "url": "https://ei.ennead.com/project/4A17E664-4F6E-427D-A25B-7B807DA22857/columbia-university-law-school-jerome-l-greene-hall"
+    },
+    {
+      "name": "Copia: The American Center for Wine, Food and the Arts",
+      "number": "",
+      "client": "9807",
+      "role": "Copia: The American Center for Wine, Food & the Arts",
+      "url": "https://ei.ennead.com/project/C82E0E3A-7E7D-4D13-A1B4-C2474C2F3B38/copia--the-american-center-for-wine-food-and-the-arts"
+    },
+    {
+      "name": "Fudan University, Handan Campus, China Economy & Cultural Research Center",
+      "number": "",
+      "client": "1646",
+      "role": "Oceanwide",
+      "url": "https://ei.ennead.com/project/3BF8EB37-CCD5-43A3-9A61-4CC3DBD2393B/fudan-university-handan-campus-china-economy-cultural-research-center"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=rolcott@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:04:51.534219",
+  "profile_id": "richard-olcott"
+}

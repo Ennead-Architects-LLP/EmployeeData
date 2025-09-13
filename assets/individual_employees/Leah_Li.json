@@ -1,0 +1,37 @@
+{
+  "human_name": "Leah Li",
+  "email": "leah.li@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/4F51B4E0-1A6E-4839-AC67-1D2D9553B6B1/leah-li",
+  "image_url": "https://ei.ennead.com/api/image/767ddf15-3a45-4d2c-ac58-c2bf894605a3/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Leah Li_profile.jpg",
+  "position": "Senior Associate",
+  "department": null,
+  "years_with_firm": 10,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Dalian Nationality University",
+      "degree": "Undergraduate",
+      "specialty": "English Literature"
+    },
+    {
+      "institution": "Shanghai University of Finance and Economics",
+      "degree": "Graduate",
+      "specialty": "Investment"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lli@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:12:11.746236",
+  "profile_id": "leah-li"
+}

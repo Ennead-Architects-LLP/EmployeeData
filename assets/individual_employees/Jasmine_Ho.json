@@ -1,0 +1,47 @@
+{
+  "human_name": "Jasmine Ho",
+  "email": "Jasmine.Ho@ennead.com",
+  "bio": null,
+  "phone": "(213) 855-3993",
+  "mobile": "(213) 855-3993",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/19B74845-956B-4B2E-B47E-2CD494008890/jasmine-ho",
+  "image_url": "https://ei.ennead.com/api/image/55b20c1b-bfe7-429f-aab1-40e61393d6d4/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Jasmine Ho_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 0,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Southern California",
+      "degree": "Graduate",
+      "specialty": "Bachelor of Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Mayo Clinic Executive Health Gonda",
+      "number": "",
+      "client": "2338",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda"
+    },
+    {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "number": "",
+      "client": "2224",
+      "role": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Jasmine.Ho@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:28:16.470583",
+  "profile_id": "jasmine-ho"
+}

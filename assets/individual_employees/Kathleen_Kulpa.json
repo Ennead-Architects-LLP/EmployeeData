@@ -1,0 +1,257 @@
+{
+  "human_name": "Kathleen Kulpa",
+  "email": "kate.kulpa@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5958",
+  "mobile": "(212) 792-5958",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/000553B1-D590-4FBD-BDA1-9D19B7197C92/kathleen-kulpa",
+  "image_url": "https://ei.ennead.com/api/image/3c60199a-cca0-4880-be9c-233fd2117482/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Kathleen Kulpa_profile.jpg",
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 22,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Northeasten University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Syracuse University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "number": "",
+      "client": "2412",
+      "role": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+    },
+    {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
+      "number": "",
+      "client": "0919",
+      "role": "",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion"
+    },
+    {
+      "name": "Columbia University Law School, Library Addition",
+      "number": "",
+      "client": "0808",
+      "role": "Columbia University",
+      "url": "https://ei.ennead.com/project/0B40D3E3-5BDA-46AB-B852-FA845E369EA9/columbia-university-law-school-library-addition"
+    },
+    {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "number": "",
+      "client": "2125",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+    },
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "Ballinger",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    },
+    {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "number": "",
+      "client": "2109",
+      "role": "Northwell Health",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
+    },
+    {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "number": "",
+      "client": "1845",
+      "role": "SmithGroup",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
+    },
+    {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "number": "",
+      "client": "2100",
+      "role": "Milwaukee Public Museum",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+    },
+    {
+      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
+      "number": "",
+      "client": "1727",
+      "role": "The University of Texas at Austin",
+      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building"
+    },
+    {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)",
+      "number": "",
+      "client": "1807",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
+    },
+    {
+      "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
+      "number": "",
+      "client": "1838",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo"
+    },
+    {
+      "name": "Bird-Friendly Glass Lab (Ennead Lab)",
+      "number": "",
+      "client": "1201",
+      "role": "",
+      "url": "https://ei.ennead.com/project/77201997-E726-4E2B-AF82-998624B1FD70/bird-friendly-glass-lab-ennead-lab"
+    },
+    {
+      "name": "Jefferson Health, Honickman Center",
+      "number": "",
+      "client": "1835",
+      "role": "National Real Estate Development",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center"
+    },
+    {
+      "name": "Lycée Français de New York Renovation and Expansion (Lycee Francais)",
+      "number": "",
+      "client": "1334",
+      "role": "Lycee Francais de New York",
+      "url": "https://ei.ennead.com/project/0AB247F6-39F9-4B46-ADC7-2AF458B2B544/lyc-e-fran-ais-de-new-york-renovation-and-expansion-lycee-francais"
+    },
+    {
+      "name": "Massachusetts College of Art and Design, Design and Media Center",
+      "number": "",
+      "client": "1020",
+      "role": "Division of Capital Asset Management and Maintenance",
+      "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center"
+    },
+    {
+      "name": "Mount Sinai Downtown Transformation",
+      "number": "",
+      "client": "1648",
+      "role": "ArchNexus",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation"
+    },
+    {
+      "name": "New York University, Gallatin School of Individualized Study",
+      "number": "",
+      "client": "0609",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/88100CBA-B5DE-47BD-BEE6-F0FA87C06370/new-york-university-gallatin-school-of-individualized-study"
+    },
+    {
+      "name": "Newseum / Freedom Forum Foundation World Headquarters",
+      "number": "",
+      "client": "0025",
+      "role": "The Freedom Forum",
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters"
+    },
+    {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "number": "",
+      "client": "1407",
+      "role": "Northwestern University",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission"
+    },
+    {
+      "name": "Stanford Law School, William H. Neukom Building",
+      "number": "",
+      "client": "0702",
+      "role": "Stanford University",
+      "url": "https://ei.ennead.com/project/FFE36D23-2AE6-47EC-8BF3-BE68C6DE7017/stanford-law-school-william-h-neukom-building"
+    },
+    {
+      "name": "Stanford University, Bass Biology Building",
+      "number": "",
+      "client": "1434",
+      "role": "Flad Architects",
+      "url": "https://ei.ennead.com/project/EC3145A0-7E07-47F8-A90A-13EE36802DA9/stanford-university-bass-biology-building"
+    },
+    {
+      "name": "The David H. Koch Center for Cancer Care at Memorial Sloan Kettering Cancer Center",
+      "number": "",
+      "client": "1212",
+      "role": "Perkins Eastman",
+      "url": "https://ei.ennead.com/project/0E550866-E034-4A49-A363-F69BAE4C5EC8/the-david-h-koch-center-for-cancer-care-at-memorial-sloan-kettering-cancer-center"
+    },
+    {
+      "name": "The Pennsylvania State University, Penn State Law, Lewis Katz Building",
+      "number": "",
+      "client": "0522",
+      "role": "The Pennsylvania State University",
+      "url": "https://ei.ennead.com/project/AB1E54E3-9541-48BF-861A-BEA87BE933C5/the-pennsylvania-state-university-penn-state-law-lewis-katz-building"
+    },
+    {
+      "name": "The Standard, High Line",
+      "number": "",
+      "client": "0417",
+      "role": "Andre Balazs Properties",
+      "url": "https://ei.ennead.com/project/EF6D393F-EC53-4C9B-A168-546C41EB470D/the-standard-high-line"
+    },
+    {
+      "name": "University of North Texas Denton Business Leadership Center",
+      "number": "",
+      "client": "0813",
+      "role": "Jacobs Carter Burgess",
+      "url": "https://ei.ennead.com/project/371988C1-F755-44C9-971A-426D93EE535B/university-of-north-texas-denton-business-leadership-center"
+    },
+    {
+      "name": "Vassar College, Integrated Science Commons",
+      "number": "",
+      "client": "0717",
+      "role": "Vassar College",
+      "url": "https://ei.ennead.com/project/43256F2E-323C-4C9C-A218-EE55FA7F35EB/vassar-college-integrated-science-commons"
+    },
+    {
+      "name": "Weitzman National Museum of American Jewish History",
+      "number": "",
+      "client": "0618",
+      "role": "Weitzman National Museum of American Jewish History",
+      "url": "https://ei.ennead.com/project/B95D7AD5-B82C-4744-B85E-B2E519878B42/weitzman-national-museum-of-american-jewish-history"
+    },
+    {
+      "name": "Westmoreland Museum of American Art",
+      "number": "",
+      "client": "1105",
+      "role": "Westmoreland Museum of American Art",
+      "url": "https://ei.ennead.com/project/5BB168F2-21B3-42DE-B36D-C9AD21853342/westmoreland-museum-of-american-art"
+    },
+    {
+      "name": "William J. Clinton Presidential Center",
+      "number": "",
+      "client": "9908",
+      "role": "The Clinton Foundation",
+      "url": "https://ei.ennead.com/project/CB57D320-7490-4B2C-9F31-5A8BC0D42B96/william-j-clinton-presidential-center"
+    },
+    {
+      "name": "York College Academic Village and Conference Center",
+      "number": "",
+      "client": "1011",
+      "role": "The City University Construction Fund",
+      "url": "https://ei.ennead.com/project/22D306CA-47EC-413E-8483-F5158CD1C5D7/york-college-academic-village-and-conference-center"
+    },
+    {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Engineering Education and Research Center (EERC)",
+      "number": "",
+      "client": "1012",
+      "role": "Jacobs",
+      "url": "https://ei.ennead.com/project/0240BEA5-3779-48E4-A600-E3DFCA2E31BB/the-university-of-texas-at-austin-cockrell-school-of-engineering-engineering-education-and-research-center-eerc"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkulpa@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:25:51.889493",
+  "profile_id": "kathleen-kulpa"
+}

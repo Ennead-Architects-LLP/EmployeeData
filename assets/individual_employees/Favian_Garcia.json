@@ -1,0 +1,32 @@
+{
+  "human_name": "Favian Garcia",
+  "email": "favian.garcia@ennead.com",
+  "bio": null,
+  "phone": "(646) 437-1780",
+  "mobile": "(646) 437-1780",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/7F2CE0E9-9DFF-449B-888B-00D3F621A7DC/favian-garcia",
+  "image_url": "https://ei.ennead.com/api/image/5b979377-53ec-45bd-9862-aedb0a1c85da/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Favian Garcia_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 10,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Fairleigh Dickinson University",
+      "degree": "Undergraduate",
+      "specialty": "Finance"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fgarcia@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:31:04.529149",
+  "profile_id": "favian-garcia"
+}

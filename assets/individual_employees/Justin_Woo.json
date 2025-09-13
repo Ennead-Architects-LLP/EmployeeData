@@ -1,0 +1,47 @@
+{
+  "human_name": "Justin Woo",
+  "email": "justin.woo@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5C1823CA-B80A-49BF-AC36-28367FC62032/justin-woo",
+  "image_url": "https://ei.ennead.com/api/image/4518078d-a056-4d1e-8132-2fd7ad7a1827/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Justin Woo_profile.jpg",
+  "position": "Associate",
+  "department": null,
+  "years_with_firm": 10,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Shanghai International Studies University",
+      "degree": "Undergraduate",
+      "specialty": "English Literature"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Tianjin Academy of Fine Arts Competition (TAFA)",
+      "number": "",
+      "client": "1516",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa"
+    },
+    {
+      "name": "Xiamen Music Center",
+      "number": "",
+      "client": "1535",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8EDD5884-6E70-4E69-9912-7175E7B7715B/xiamen-music-center"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jwoo@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:26:30.611350",
+  "profile_id": "justin-woo"
+}

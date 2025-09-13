@@ -1,0 +1,143 @@
+{
+  "human_name": "Weishan Lian",
+  "email": "weishan.lian@ennead.com",
+  "bio": null,
+  "phone": null,
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/655BC10F-9C6B-45E3-B3A7-F296CA51A51B/weishan-lian",
+  "image_url": "https://ei.ennead.com/api/image/95b67570-cf91-4fce-99ce-458150748b6e/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Weishan Lian_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 7,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Gottfried Wilhelm Leibniz Universitat Hannover",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Qingdao University of Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Shaoxing Textile Museum",
+      "number": "",
+      "client": "2418",
+      "role": "Zhejiang China Textile City Group",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+    },
+    {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+      "number": "",
+      "client": "2321",
+      "role": "VIP.com",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition"
+    },
+    {
+      "name": "Bilibili Shanghai Headquarters",
+      "number": "",
+      "client": "2135",
+      "role": "Bilibili Co.,Ltd.",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+    },
+    {
+      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+      "number": "",
+      "client": "2133",
+      "role": "Tencent",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood"
+    },
+    {
+      "name": "Yidan Center",
+      "number": "",
+      "client": "2134",
+      "role": "Shenzhen Qianhai Yidan Educational, Scientific and Cultural Company",
+      "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center"
+    },
+    {
+      "name": "COMAC Campus, New Headquarters",
+      "number": "",
+      "client": "2009",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters"
+    },
+    {
+      "name": "Shenzhen Xiaomi Headquarters",
+      "number": "",
+      "client": "2016",
+      "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
+    },
+    {
+      "name": "Lingang Fengxian Soccer Training Center",
+      "number": "",
+      "client": "2005",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "",
+      "client": "1940",
+      "role": "Lingang Group",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "Baoshan Nanda",
+      "number": "",
+      "client": "1848",
+      "role": "Lingang Economic Group",
+      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda"
+    },
+    {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "number": "",
+      "client": "1735",
+      "role": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+    },
+    {
+      "name": "Lingang Pujiang International Healthcare City",
+      "number": "",
+      "client": "1701",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city"
+    },
+    {
+      "name": "Pujiang Phase II",
+      "number": "",
+      "client": "1817",
+      "role": "Shanghai Lingang Pujiang International Science and Technology City Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii"
+    },
+    {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "number": "",
+      "client": "1725",
+      "role": "Shanghai Caohejing Hi-Tech Park (Pudong Area) Development Co., Ltd.",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "Taopu North",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wlian@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:00:26.383495",
+  "profile_id": "weishan-lian"
+}

@@ -1,0 +1,248 @@
+{
+  "human_name": "Guy Maxwell",
+  "email": "guy.maxwell@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5937",
+  "mobile": "(212) 792-5937",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/333159A4-F708-4F6E-863C-96421CD8C6EB/guy-maxwell",
+  "image_url": "https://ei.ennead.com/api/image/2630eb11-7b20-4b32-bb5b-d9b1a1e9496c/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Guy Maxwell_profile.jpg",
+  "position": "Partner",
+  "department": null,
+  "years_with_firm": 31,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "NCARB",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Virginia",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "DE",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NV",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": ""
+    },
+    {
+      "license": "Registered Architect",
+      "state": "VA",
+      "number": "",
+      "earned": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "The Cathedral School of St. John the Divine Addition",
+      "number": "",
+      "client": "1412B",
+      "role": "",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition"
+    },
+    {
+      "name": "Cathedral of St. John the Divine - Miscellaneous Projects 2004",
+      "number": "",
+      "client": "0410",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/055B2A77-AD0F-4C4E-8671-24F6DD7D5B54/cathedral-of-st-john-the-divine-miscellaneous-projects-2004"
+    },
+    {
+      "name": "The Cathedral Church of Saint John the Divine North Transept",
+      "number": "",
+      "client": "1312",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept"
+    },
+    {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "number": "",
+      "client": "1724",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Penn Station Light Fixtures",
+      "number": "",
+      "client": "1932",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/FFADB3D0-35A3-4810-9BC2-F5C9DEE544A4/the-cathedral-church-of-st-john-the-divine-penn-station-light-fixtures"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Diocesan Apartment",
+      "number": "",
+      "client": "1924",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D6BEAAA5-E16A-406D-A5AD-9CAC8A9328FC/the-cathedral-church-of-st-john-the-divine-diocesan-apartment"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, North Tower",
+      "number": "",
+      "client": "1925",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/99550CD6-67CB-4F2D-B620-1E5AD2FCC9D1/the-cathedral-church-of-st-john-the-divine-north-tower"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Offices Redesign",
+      "number": "",
+      "client": "1920",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/E208C9D3-8588-4CD6-B3D6-A967B68962A1/the-cathedral-church-of-st-john-the-divine-offices-redesign"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Tomb of Christ",
+      "number": "",
+      "client": "1910",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/24136CFF-8675-4073-89E0-2DA2462362E5/the-cathedral-church-of-st-john-the-divine-tomb-of-christ"
+    },
+    {
+      "name": "American Museum of Natural History, Rose Center for Earth and Space",
+      "number": "",
+      "client": "9501",
+      "role": "American Museum of Natural History",
+      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space"
+    },
+    {
+      "name": "Bird-Friendly Glass Lab (Ennead Lab)",
+      "number": "",
+      "client": "1201",
+      "role": "",
+      "url": "https://ei.ennead.com/project/77201997-E726-4E2B-AF82-998624B1FD70/bird-friendly-glass-lab-ennead-lab"
+    },
+    {
+      "name": "Cathedral of St. John the Divine, Crypt Arts Center and North Transept Renovation",
+      "number": "",
+      "client": "0721",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/5B2D696B-833B-453D-89BB-8587949D39D3/cathedral-of-st-john-the-divine-crypt-arts-center-and-north-transept-renovation"
+    },
+    {
+      "name": "Cathedral School of Saint John the Divine, Synod Hall",
+      "number": "",
+      "client": "1202",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/5176D192-74A1-414A-9726-A6835B2A8B76/cathedral-school-of-saint-john-the-divine-synod-hall"
+    },
+    {
+      "name": "Cathedral School of St. John the Divine, 2010 Summer Renovations",
+      "number": "",
+      "client": "0918",
+      "role": "The Cathedral School of St. John the Divine",
+      "url": "https://ei.ennead.com/project/DB3ED462-82BC-42F1-A531-171EF2E1667E/cathedral-school-of-st-john-the-divine-2010-summer-renovations"
+    },
+    {
+      "name": "Cathedral School of St. John the Divine, 2011 Summer Renovations",
+      "number": "",
+      "client": "1015",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/CE017616-53C3-44EB-B1C4-7F4A94C18931/cathedral-school-of-st-john-the-divine-2011-summer-renovations"
+    },
+    {
+      "name": "Department of Homeless Services, Prevention Assistance and Temporary Housing (PATH)",
+      "number": "",
+      "client": "0505",
+      "role": "New York City Department of Design and Construction",
+      "url": "https://ei.ennead.com/project/7DAE1159-AD72-43F3-9C26-98102E0AE6AF/department-of-homeless-services-prevention-assistance-and-temporary-housing-path"
+    },
+    {
+      "name": "Fire Department of the City of New York Rescue Company 3",
+      "number": "",
+      "client": "0515",
+      "role": "New York City Department of Design and Construction",
+      "url": "https://ei.ennead.com/project/E40E8E70-684A-4D39-8EB7-6FB28A06AB92/fire-department-of-the-city-of-new-york-rescue-company-3"
+    },
+    {
+      "name": "New York Hall of Science Expansion",
+      "number": "",
+      "client": "9825",
+      "role": "New York Hall of Science",
+      "url": "https://ei.ennead.com/project/31DF8D21-0364-4B77-AD16-D5857A0E2C8D/new-york-hall-of-science-expansion"
+    },
+    {
+      "name": "New York Hall of Science Great Hall Upgrades and Terrace Improvements",
+      "number": "",
+      "client": "0810",
+      "role": "New York Hall of Science",
+      "url": "https://ei.ennead.com/project/7DD086B3-436C-4215-AC53-BC344E2D3BD6/new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements"
+    },
+    {
+      "name": "New York Stem Cell Foundation, Research Institute Laboratory",
+      "number": "",
+      "client": "1538",
+      "role": "New York Stem Cell Foundation",
+      "url": "https://ei.ennead.com/project/E740ACA9-4A79-473B-8ECA-D376BCADB117/new-york-stem-cell-foundation-research-institute-laboratory"
+    },
+    {
+      "name": "NYU Langone Health, Master Plan",
+      "number": "",
+      "client": "0806",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan"
+    },
+    {
+      "name": "Seoul Foreign School, Facilities Master Plan (SFS)",
+      "number": "",
+      "client": "1211",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/5C9CA77A-F708-4BCD-909B-985FEF17DFFD/seoul-foreign-school-facilities-master-plan-sfs"
+    },
+    {
+      "name": "The Ohio State University, Peter L. and Clara M. Scott Laboratory",
+      "number": "",
+      "client": "0022",
+      "role": "BHDP Architecture",
+      "url": "https://ei.ennead.com/project/72C472C1-E8FB-468B-A234-66D90762300C/the-ohio-state-university-peter-l-and-clara-m-scott-laboratory"
+    },
+    {
+      "name": "University of Virginia, South Lawn Project Master Plan",
+      "number": "",
+      "client": "0132",
+      "role": "University of Virginia",
+      "url": "https://ei.ennead.com/project/BE6DF8FE-AC29-4D1A-AB08-3A69EF630C5F/university-of-virginia-south-lawn-project-master-plan"
+    },
+    {
+      "name": "Vassar College, Integrated Science Commons",
+      "number": "",
+      "client": "0717",
+      "role": "Vassar College",
+      "url": "https://ei.ennead.com/project/43256F2E-323C-4C9C-A218-EE55FA7F35EB/vassar-college-integrated-science-commons"
+    },
+    {
+      "name": "Shanghai Astronomy Museum (Planetarium)",
+      "number": "",
+      "client": "1331",
+      "role": "The Davis Companies",
+      "url": "https://ei.ennead.com/project/29D257CF-CC0F-4D77-8750-0D4582C95142/shanghai-astronomy-museum-planetarium"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=gmaxwell@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:29:23.768538",
+  "profile_id": "guy-maxwell"
+}

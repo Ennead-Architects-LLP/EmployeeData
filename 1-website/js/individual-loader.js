@@ -99,6 +99,8 @@ async function discoverEmployeeFiles() {
     console.log('Attempting to discover employee files dynamically...');
     const basePath = getBasePath();
     console.log('Base path:', basePath);
+    console.log('Current URL:', window.location.href);
+    console.log('Pathname:', window.location.pathname);
     
     try {
         // Try to load from the generated JSON file
@@ -112,6 +114,7 @@ async function discoverEmployeeFiles() {
             return data.employee_files;
         } else {
             console.error(`Failed to load employee_json_dir.json: ${response.status} ${response.statusText}`);
+            console.error('Response URL:', response.url);
             throw new Error('Employee JSON directory file not available');
         }
     } catch (error) {
@@ -128,6 +131,8 @@ async function discoverEmployeeFiles() {
                 return files;
             } else {
                 console.error(`Fallback also failed: ${response.status} ${response.statusText}`);
+                console.error('Fallback URL:', fallbackUrl);
+                console.error('Response URL:', response.url);
             }
         } catch (fallbackError) {
             console.error('Both JSON directory file and static list failed:', fallbackError);

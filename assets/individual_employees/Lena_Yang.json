@@ -1,0 +1,32 @@
+{
+  "human_name": "Lena Yang",
+  "email": "lena.yang@ennead.com",
+  "bio": null,
+  "phone": "2127925982",
+  "mobile": "2127925982",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/8D4A79E8-8C3C-4E2B-829F-626A1AF824A5/lena-yang",
+  "image_url": "https://ei.ennead.com/api/image/b88ca299-9e9c-475d-8d3a-5c88deb4aa41/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Lena Yang_profile.jpg",
+  "position": "Designer",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Michigan",
+      "degree": "Undergraduate",
+      "specialty": "Graphic Design"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lena.yang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:12:06.502191",
+  "profile_id": "lena-yang"
+}

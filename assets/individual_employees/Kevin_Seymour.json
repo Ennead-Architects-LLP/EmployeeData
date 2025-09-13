@@ -1,0 +1,211 @@
+{
+  "human_name": "Kevin Seymour",
+  "email": "kevin.seymour@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5921",
+  "mobile": "(212) 792-5921",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5A702A67-C369-45A9-B29D-381DF97C63FA/kevin-seymour",
+  "image_url": "https://ei.ennead.com/api/image/f7de9516-3bc0-49fb-8281-701c109a8632/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Kevin Seymour_profile.jpg",
+  "position": "Associate Principal",
+  "department": null,
+  "years_with_firm": 14,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA",
+    "LEED AP",
+    "ADP",
+    "NCARB"
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Texas, Austin",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "New York University Kimmel Center Stair",
+      "number": "",
+      "client": "2414",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair"
+    },
+    {
+      "name": "The Cathedral School of St. John the Divine Addition",
+      "number": "",
+      "client": "1412B",
+      "role": "",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition"
+    },
+    {
+      "name": "Cathedral of St. John the Divine - Miscellaneous Projects 2004",
+      "number": "",
+      "client": "0410",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/055B2A77-AD0F-4C4E-8671-24F6DD7D5B54/cathedral-of-st-john-the-divine-miscellaneous-projects-2004"
+    },
+    {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "number": "",
+      "client": "2235",
+      "role": "Harvard University",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study"
+    },
+    {
+      "name": "The Cathedral Church of Saint John the Divine North Transept",
+      "number": "",
+      "client": "1312",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept"
+    },
+    {
+      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+      "number": "",
+      "client": "2226",
+      "role": "University of Florida",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition"
+    },
+    {
+      "name": "Cincinnati Music Hall Revitalization",
+      "number": "",
+      "client": "1007",
+      "role": "",
+      "url": "https://ei.ennead.com/project/E64A9AA3-B607-446C-9BE2-1CB460070430/cincinnati-music-hall-revitalization"
+    },
+    {
+      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+      "number": "",
+      "client": "2206",
+      "role": "Lord, Aeck & Sargent, Inc.",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning"
+    },
+    {
+      "name": "ByteDance Houhai Center Project",
+      "number": "",
+      "client": "2018",
+      "role": "Shenzhen Toutiao Technology Co., Ltd.",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+    },
+    {
+      "name": "COMAC Campus, New Headquarters",
+      "number": "",
+      "client": "2009",
+      "role": "Lingang",
+      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters"
+    },
+    {
+      "name": "Shenzhen Xiaomi Headquarters",
+      "number": "",
+      "client": "2016",
+      "role": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
+    },
+    {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "number": "",
+      "client": "1724",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "",
+      "client": "1940",
+      "role": "Lingang Group",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Penn Station Light Fixtures",
+      "number": "",
+      "client": "1932",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/FFADB3D0-35A3-4810-9BC2-F5C9DEE544A4/the-cathedral-church-of-st-john-the-divine-penn-station-light-fixtures"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Diocesan Apartment",
+      "number": "",
+      "client": "1924",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D6BEAAA5-E16A-406D-A5AD-9CAC8A9328FC/the-cathedral-church-of-st-john-the-divine-diocesan-apartment"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, North Tower",
+      "number": "",
+      "client": "1925",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/99550CD6-67CB-4F2D-B620-1E5AD2FCC9D1/the-cathedral-church-of-st-john-the-divine-north-tower"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Offices Redesign",
+      "number": "",
+      "client": "1920",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/E208C9D3-8588-4CD6-B3D6-A967B68962A1/the-cathedral-church-of-st-john-the-divine-offices-redesign"
+    },
+    {
+      "name": "The Cathedral Church of St. John the Divine, Tomb of Christ",
+      "number": "",
+      "client": "1910",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/24136CFF-8675-4073-89E0-2DA2462362E5/the-cathedral-church-of-st-john-the-divine-tomb-of-christ"
+    },
+    {
+      "name": "New York University. Grey Art Museum",
+      "number": "",
+      "client": "1942",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum"
+    },
+    {
+      "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
+      "number": "",
+      "client": "1900",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6"
+    },
+    {
+      "name": "Cathedral School of Saint John the Divine, Synod Hall",
+      "number": "",
+      "client": "1202",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/5176D192-74A1-414A-9726-A6835B2A8B76/cathedral-school-of-saint-john-the-divine-synod-hall"
+    },
+    {
+      "name": "Cathedral School of St. John the Divine, 2010 Summer Renovations",
+      "number": "",
+      "client": "0918",
+      "role": "The Cathedral School of St. John the Divine",
+      "url": "https://ei.ennead.com/project/DB3ED462-82BC-42F1-A531-171EF2E1667E/cathedral-school-of-st-john-the-divine-2010-summer-renovations"
+    },
+    {
+      "name": "Cathedral School of St. John the Divine, 2011 Summer Renovations",
+      "number": "",
+      "client": "1015",
+      "role": "The Cathedral Church of Saint John the Divine",
+      "url": "https://ei.ennead.com/project/CE017616-53C3-44EB-B1C4-7F4A94C18931/cathedral-school-of-st-john-the-divine-2011-summer-renovations"
+    },
+    {
+      "name": "Massachusetts College of Art and Design, Design and Media Center",
+      "number": "",
+      "client": "1020",
+      "role": "Division of Capital Asset Management and Maintenance",
+      "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kseymour@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:24:44.656649",
+  "profile_id": "kevin-seymour"
+}

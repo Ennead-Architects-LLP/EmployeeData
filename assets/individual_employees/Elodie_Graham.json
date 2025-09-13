@@ -1,0 +1,103 @@
+{
+  "human_name": "Elodie Graham",
+  "email": "elodie.graham@ennead.com",
+  "bio": null,
+  "phone": "1-213-265-7654",
+  "mobile": "1-213-265-7654",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/0FB3D691-E384-4B4B-B70C-B1B05B904832/elodie-graham",
+  "image_url": "https://ei.ennead.com/api/image/70abaa48-0479-422e-a5b0-9786977c298e/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Elodie Graham_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 1,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Rice University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Rice University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "number": "",
+      "client": "2124",
+      "role": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+    },
+    {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "number": "",
+      "client": "2109",
+      "role": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
+    },
+    {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "number": "",
+      "client": "2100",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+    },
+    {
+      "name": "Alta Community Center Feasibility Study (ELab)",
+      "number": "",
+      "client": "2010",
+      "role": "",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab"
+    },
+    {
+      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+      "number": "",
+      "client": "1911",
+      "role": "",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019"
+    },
+    {
+      "name": "Lingang Science and Technology City (S&T)",
+      "number": "",
+      "client": "1520",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t"
+    },
+    {
+      "name": "Hongkun Edgewater",
+      "number": "",
+      "client": "1750",
+      "role": "",
+      "url": "https://ei.ennead.com/project/A3D371E7-B27A-4197-AE68-769A3D0FD928/hongkun-edgewater"
+    },
+    {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "number": "",
+      "client": "1643",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
+    },
+    {
+      "name": "Mount Sinai Downtown Transformation",
+      "number": "",
+      "client": "1648",
+      "role": "",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=egraham@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:31:48.517381",
+  "profile_id": "elodie-graham"
+}

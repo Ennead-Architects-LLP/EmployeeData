@@ -1,0 +1,61 @@
+{
+  "human_name": "Zeyi Xuan",
+  "email": "zeyi.xuan@ennead.com",
+  "bio": null,
+  "phone": "2127925823",
+  "mobile": "2127925823",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/716C5DB1-BE5D-46DE-B0F9-F77BBC3BB868/zeyi-xuan",
+  "image_url": "https://ei.ennead.com/api/image/4d423cf5-a4f5-439b-8e87-c0aa02cc06bc/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Zeyi Xuan_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 6,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "number": "",
+      "client": "2412",
+      "role": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+    },
+    {
+      "name": "Mayo Clinic Executive Health Gonda",
+      "number": "",
+      "client": "2338",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda"
+    },
+    {
+      "name": "University of North Carolina School of Law",
+      "number": "",
+      "client": "2243",
+      "role": "",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law"
+    },
+    {
+      "name": "Kuwait University Health Sciences Campus",
+      "number": "",
+      "client": "1704",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=zeyi.xuan@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T14:58:24.077724",
+  "profile_id": "zeyi-xuan"
+}

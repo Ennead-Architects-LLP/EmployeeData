@@ -1,0 +1,37 @@
+{
+  "human_name": "HsiaoChiao Peng",
+  "email": "hsiaochiao.peng@ennead.com",
+  "bio": null,
+  "phone": "1-213-787-6611",
+  "mobile": "1-213-787-6611",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/6F262923-6ABE-4D7D-967A-8C41ACA769E8/hsiaochiao-peng",
+  "image_url": "https://ei.ennead.com/api/image/f2dff332-b9bf-4767-ac7a-20f9fdf14f7a/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/HsiaoChiao Peng_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 0,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Southern California Institute",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Tunghai University, Taiwan",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=HsiaoChiao.Peng@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:29:12.970708",
+  "profile_id": "hsiaochiao-peng"
+}

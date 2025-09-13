@@ -1,0 +1,204 @@
+{
+  "human_name": "Stefan Abel",
+  "email": "stefan.abel@ennead.com",
+  "bio": null,
+  "phone": "(646) 437-1696",
+  "mobile": "(646) 437-1696",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/D79405D8-253E-466E-9D01-6A6B4DF3C220/stefan-abel",
+  "image_url": "https://ei.ennead.com/api/image/15acc832-132b-45ce-837c-f220a77e6119/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Stefan Abel_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 18,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "NCARB",
+    "LEED AP"
+  ],
+  "education": [
+    {
+      "institution": "New York Institute of Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "The Cathedral School of St. John the Divine Addition",
+      "number": "",
+      "client": "1412B",
+      "role": "",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition"
+    },
+    {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
+      "number": "",
+      "client": "0919",
+      "role": "",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion"
+    },
+    {
+      "name": "Qilin Science and Technology District, Plot 8 (R&F)",
+      "number": "",
+      "client": "1304",
+      "role": "",
+      "url": "https://ei.ennead.com/project/AFC52C21-5D64-4A55-8810-BC03FC515152/qilin-science-and-technology-district-plot-8-r-f"
+    },
+    {
+      "name": "Stanford in New York",
+      "number": "",
+      "client": "1430",
+      "role": "",
+      "url": "https://ei.ennead.com/project/89938168-43BD-41D3-9912-168E07B4412D/stanford-in-new-york"
+    },
+    {
+      "name": "Zhengzhou Bairui Financial Center",
+      "number": "",
+      "client": "1330",
+      "role": "",
+      "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center"
+    },
+    {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "number": "",
+      "client": "2128",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+    },
+    {
+      "name": "Brooklyn Museum, Great Hall",
+      "number": "",
+      "client": "1106",
+      "role": "Brooklyn Museum",
+      "url": "https://ei.ennead.com/project/DD4ACE57-C761-4267-BA9C-C63D66CB6504/brooklyn-museum-great-hall"
+    },
+    {
+      "name": "Cornell University Comprehensive Campus Master Plan",
+      "number": "",
+      "client": "0616",
+      "role": "Urban Strategies, Inc.",
+      "url": "https://ei.ennead.com/project/8CE3D791-A632-4DF9-BC75-65D54FC34F49/cornell-university-comprehensive-campus-master-plan"
+    },
+    {
+      "name": "Nanjing Qilin Technology Innovation Park (Plot 3)",
+      "number": "",
+      "client": "1303",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/706ECC86-72A7-4FD9-B7C9-EF75C03FF86A/nanjing-qilin-technology-innovation-park-plot-3"
+    },
+    {
+      "name": "New York University, Gallatin School of Individualized Study",
+      "number": "",
+      "client": "0609",
+      "role": "New York University",
+      "url": "https://ei.ennead.com/project/88100CBA-B5DE-47BD-BEE6-F0FA87C06370/new-york-university-gallatin-school-of-individualized-study"
+    },
+    {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "number": "",
+      "client": "1407",
+      "role": "Northwestern University",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission"
+    },
+    {
+      "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
+      "number": "",
+      "client": "1004",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building"
+    },
+    {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "number": "",
+      "client": "1013",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion"
+    },
+    {
+      "name": "NYU Langone Health, Science Building",
+      "number": "",
+      "client": "1101",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+    },
+    {
+      "name": "NYU Langone Health, Tisch Hospital Elevator Tower and Lobby",
+      "number": "",
+      "client": "0916",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/B9543A56-1A01-4772-8B56-97B9A063BF08/nyu-langone-health-tisch-hospital-elevator-tower-and-lobby"
+    },
+    {
+      "name": "NYU Langone Health, Tisch Hospital Renovations: Cafeteria",
+      "number": "",
+      "client": "1301",
+      "role": "NYU Langone Health",
+      "url": "https://ei.ennead.com/project/CD58B9F7-F686-4801-BCF4-831AB75C6074/nyu-langone-health-tisch-hospital-renovations--cafeteria"
+    },
+    {
+      "name": "R&F Shanghai Hongqiao Plot 5",
+      "number": "",
+      "client": "1327",
+      "role": "Ennead Architects International LLP",
+      "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5"
+    },
+    {
+      "name": "Stanford Law School, William H. Neukom Building",
+      "number": "",
+      "client": "0702",
+      "role": "Stanford University",
+      "url": "https://ei.ennead.com/project/FFE36D23-2AE6-47EC-8BF3-BE68C6DE7017/stanford-law-school-william-h-neukom-building"
+    },
+    {
+      "name": "Sylvia H. Rambo United States Courthouse (Harrisburg Federal Courthouse)",
+      "number": "",
+      "client": "1629",
+      "role": "U.S. General Services Administration",
+      "url": "https://ei.ennead.com/project/BE3AB8DD-D1A9-4C76-A8C0-7AC7DF83B4CF/sylvia-h-rambo-united-states-courthouse-harrisburg-federal-courthouse"
+    },
+    {
+      "name": "Syracuse University, S.I. Newhouse School of Public Communications III",
+      "number": "",
+      "client": "0325",
+      "role": "Syracuse University",
+      "url": "https://ei.ennead.com/project/84D9DEB5-5D80-4BB3-9F10-D9AA1A47428A/syracuse-university-s-i-newhouse-school-of-public-communications-iii"
+    },
+    {
+      "name": "The Public Theater at Astor Place Facade Restoration Entry and Lobby Redesign",
+      "number": "",
+      "client": "0707",
+      "role": "New York City Department of Design and Construction",
+      "url": "https://ei.ennead.com/project/CC2E6701-F1B6-4F1C-BA24-D35723C8C53E/the-public-theater-at-astor-place-facade-restoration-entry-and-lobby-redesign"
+    },
+    {
+      "name": "United States Embassy, Ankara (OBO)",
+      "number": "",
+      "client": "1425",
+      "role": "U.S. Department of State",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
+    },
+    {
+      "name": "University of Michigan, Biological Science Building",
+      "number": "",
+      "client": "1315",
+      "role": "University of Michigan",
+      "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building"
+    },
+    {
+      "name": "Vassar College, Integrated Science Commons",
+      "number": "",
+      "client": "0717",
+      "role": "Vassar College",
+      "url": "https://ei.ennead.com/project/43256F2E-323C-4C9C-A218-EE55FA7F35EB/vassar-college-integrated-science-commons"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sabel@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:03:09.305722",
+  "profile_id": "stefan-abel"
+}

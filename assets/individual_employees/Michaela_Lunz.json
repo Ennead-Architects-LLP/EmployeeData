@@ -1,0 +1,32 @@
+{
+  "human_name": "Michaela Lunz",
+  "email": "michaela.lunz@ennead.com",
+  "bio": null,
+  "phone": "2127925990",
+  "mobile": "2127925990",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/8556297A-F676-46C7-AC4E-61D2C86CBED2/michaela-lunz",
+  "image_url": "https://ei.ennead.com/api/image/34bce6f5-08e8-47a9-80c2-47ee313d396e/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Michaela Lunz_profile.jpg",
+  "position": "architect",
+  "department": null,
+  "years_with_firm": 2,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Sarah Lawrence College",
+      "degree": "Undergraduate",
+      "specialty": "Liberal Arts"
+    }
+  ],
+  "licenses": [],
+  "projects": [],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=michaela.lunz@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T15:08:26.521578",
+  "profile_id": "michaela-lunz"
+}

@@ -1,0 +1,103 @@
+{
+  "human_name": "Xiaoheng Hu",
+  "email": "xiaoheng.hu@ennead.com",
+  "bio": null,
+  "phone": "(212) 792-5948",
+  "mobile": "(212) 792-5948",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/2C3367F2-E428-4A96-84D4-F4D4A63FFD09/xiaoheng-hu",
+  "image_url": "https://ei.ennead.com/api/image/3b565652-666e-4dbb-9435-15b85e4d46b1/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Xiaoheng Hu_profile.jpg",
+  "position": "Architect",
+  "department": null,
+  "years_with_firm": 6,
+  "seat_assignment": null,
+  "computer": null,
+  "memberships": [
+    "GBCI"
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Advanced Architectural Design"
+    },
+    {
+      "institution": "Huazhong University of Science & Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": [
+    {
+      "name": "Mayo Clinic Executive Health Gonda",
+      "number": "",
+      "client": "2338",
+      "role": "",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda"
+    },
+    {
+      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+      "number": "",
+      "client": "2206",
+      "role": "",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning"
+    },
+    {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
+      "number": "",
+      "client": "2138",
+      "role": "",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus"
+    },
+    {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "number": "",
+      "client": "1845",
+      "role": "",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center"
+    },
+    {
+      "name": "JUNO, Capitol Hill",
+      "number": "",
+      "client": "2020",
+      "role": "",
+      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill"
+    },
+    {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "number": "",
+      "client": "1940",
+      "role": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+    },
+    {
+      "name": "Westminster Schools - Blake Center",
+      "number": "",
+      "client": "1946",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center"
+    },
+    {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "number": "",
+      "client": "1643",
+      "role": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
+    },
+    {
+      "name": "Taopu Smart City, Plot 603",
+      "number": "",
+      "client": "1763",
+      "role": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+    }
+  ],
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xhu@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-12T14:59:17.465174",
+  "profile_id": "xiaoheng-hu"
+}
