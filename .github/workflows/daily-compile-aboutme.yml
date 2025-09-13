@@ -37,20 +37,20 @@ jobs:
     - name: Compile about_me.py to executable
       run: |
         cd 3-aboutme
-        python -m PyInstaller --onefile --name "AboutMe_ComputerInfo" --icon "icon.ico" --distpath "../dist" about_me.py
+        python -m PyInstaller --onefile --name "AboutMe_ComputerInfo" --icon "icon.ico" --distpath "../1-website/assets/download" about_me.py
         
-    - name: Create distribution directory if it doesn't exist
+    - name: Create download directory if it doesn't exist
       run: |
-        if (-not (Test-Path "dist")) { New-Item -ItemType Directory -Path "dist" }
+        if (-not (Test-Path "1-website/assets/download")) { New-Item -ItemType Directory -Path "1-website/assets/download" -Force }
         
     - name: Verify executable was created
       run: |
-        if (Test-Path "dist/AboutMe_ComputerInfo.exe") {
+        if (Test-Path "1-website/assets/download/AboutMe_ComputerInfo.exe") {
           Write-Host "✅ Executable created successfully"
-          Get-ChildItem "dist/AboutMe_ComputerInfo.exe" | Format-List Name, Length, LastWriteTime
+          Get-ChildItem "1-website/assets/download/AboutMe_ComputerInfo.exe" | Format-List Name, Length, LastWriteTime
         } else {
           Write-Host "❌ Executable not found"
-          Get-ChildItem "dist" -Recurse
+          Get-ChildItem "1-website/assets/download" -Recurse
           exit 1
         }
         
@@ -60,7 +60,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add dist/
+        git add 1-website/assets/download/
         $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
         git diff --staged --quiet || git commit -m "$$$_Action_Daily_Compile_AboutMe: $timestamp"
         git push
