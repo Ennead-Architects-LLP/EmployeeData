@@ -20,9 +20,40 @@ app = Flask(__name__)
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 REPO_OWNER = os.environ.get('REPO_OWNER', 'Ennead-Architects-LLP')
 REPO_NAME = os.environ.get('REPO_NAME', 'EmployeeData')
+
+def get_repository_root():
+    """Smart function to get repository root for both local and GitHub environments"""
+    # Start from current working directory, not the file location
+    # This allows the function to work when the file is copied to different locations
+    current_dir = os.getcwd()
+    
+    # Walk up the directory tree to find the repository root
+    while current_dir != os.path.dirname(current_dir):  # Not at filesystem root
+        if os.path.exists(os.path.join(current_dir, '1-website')):
+            return current_dir
+        current_dir = os.path.dirname(current_dir)
+    
+    # Fallback: try using the file location as a last resort
+    current_file = os.path.abspath(__file__)
+    
+    # If running from 4-server directory (local development or GitHub Actions)
+    if os.path.basename(os.path.dirname(current_file)) == '4-server':
+        # Go up one level to get repository root
+        return os.path.dirname(os.path.dirname(current_file))
+    
+    # If running from repository root (direct execution)
+    elif os.path.exists(os.path.join(os.path.dirname(current_file), '1-website')):
+        return os.path.dirname(current_file)
+    
+    # Final fallback: assume we're in the repository root
+    return os.path.dirname(current_file)
+
+# Get the repository root directory using smart detection
+REPO_ROOT = get_repository_root()
+
 # Using individual JSON files only - direct updates to employee records
-INDIVIDUAL_EMPLOYEES_DIR = '1-website/assets/individual_employees'
-COMPUTER_BACKUP_DIR = '1-website/assets/computer_info_data_backup'
+INDIVIDUAL_EMPLOYEES_DIR = os.path.join(REPO_ROOT, '1-website', 'assets', 'individual_employees')
+COMPUTER_BACKUP_DIR = os.path.join(REPO_ROOT, '1-website', 'assets', 'computer_info_data_backup')
 
 def find_employee_file_by_user(computer_data):
     """Find the employee JSON file that matches the user from computer data"""
@@ -379,6 +410,21 @@ def main():
     """Main function"""
     print("🚀 Starting EmployeeData Server")
     print("=" * 50)
+    
+    # Debug information
+    print(f"📁 Current working directory: {os.getcwd()}")
+    print(f"📁 Server file location: {os.path.abspath(__file__)}")
+    print(f"📁 Repository root: {REPO_ROOT}")
+    print(f"📁 Individual employees dir: {INDIVIDUAL_EMPLOYEES_DIR}")
+    print(f"📁 Individual employees exists: {os.path.exists(INDIVIDUAL_EMPLOYEES_DIR)}")
+    print(f"📁 Computer backup dir: {COMPUTER_BACKUP_DIR}")
+    print(f"📁 Computer backup exists: {os.path.exists(COMPUTER_BACKUP_DIR)}")
+    
+    # Environment detection
+    if os.environ.get('GITHUB_ACTIONS'):
+        print("🔧 Running in GitHub Actions environment")
+    else:
+        print("💻 Running in local development environment")
     
     # Check if running in GitHub Actions (repository dispatch event)
     if os.environ.get('GITHUB_ACTIONS') and os.environ.get('GITHUB_EVENT_PATH'):
