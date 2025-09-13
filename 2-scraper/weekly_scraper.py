@@ -61,6 +61,7 @@ async def main():
         else:
             logger.error("Weekly scraper failed!")
             print("[ERROR] Weekly scraper failed!")
+            print("[ERROR] Check the logs above for detailed error information")
             return 1
             
     except Exception as e:

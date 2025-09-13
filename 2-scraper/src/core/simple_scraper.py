@@ -125,8 +125,56 @@ class SimpleEmployeeScraper:
         
         try:
             # Navigate to employee directory
+            self.logger.info(f"Navigating to: {self.base_url}")
             await self.page.goto(self.base_url)
             await self.page.wait_for_load_state('networkidle')
+            
+            # Check if we were redirected to a login page or unexpected page
+            current_url = self.page.url
+            page_title = await self.page.title()
+            
+            self.logger.info(f"Current URL: {current_url}")
+            self.logger.info(f"Page title: {page_title}")
+            
+            # Check if we're on the expected page
+            expected_url_indicators = ["employees", "directory", "staff", "people"]
+            is_expected_page = any(indicator in current_url.lower() for indicator in expected_url_indicators)
+            
+            if not is_expected_page:
+                self.logger.error(f"[ERROR] Redirected to unexpected page: {current_url}")
+                self.logger.error(f"[ERROR] Expected URL should contain: {expected_url_indicators}")
+                self.logger.error(f"[ERROR] Page title: {page_title}")
+                
+                # Check if it's a browser compatibility page
+                if "browsers" in current_url.lower():
+                    self.logger.error("[ERROR] Website redirected to browser compatibility page")
+                    self.logger.error("[ERROR] This may indicate the website requires a specific browser or has anti-bot protection")
+                
+                raise Exception(f"Website redirected to unexpected page: {current_url}")
+            
+            login_indicators = [
+                "sign in", "login", "authentication", "microsoft", "oauth",
+                "password", "username", "account"
+            ]
+            
+            is_login_page = any(indicator in page_title.lower() or indicator in current_url.lower() 
+                              for indicator in login_indicators)
+            
+            if is_login_page:
+                self.logger.error(f"[ERROR] Website requires authentication")
+                self.logger.error(f"[ERROR] Current URL: {current_url}")
+                self.logger.error(f"[ERROR] Page title: {page_title}")
+                self.logger.error("[ERROR] Cannot proceed without authentication credentials")
+                raise Exception("Website requires authentication - scraper cannot proceed without login credentials")
+            
+            # Also check for login page content indicators
+            page_content = await self.page.content()
+            if "microsoft" in page_content.lower() and ("sign in" in page_content.lower() or "login" in page_content.lower()):
+                self.logger.error(f"[ERROR] Detected Microsoft login page in content")
+                self.logger.error(f"[ERROR] Current URL: {current_url}")
+                self.logger.error(f"[ERROR] Page title: {page_title}")
+                self.logger.error("[ERROR] Cannot proceed without authentication credentials")
+                raise Exception("Website requires authentication - detected Microsoft login page")
             
             # Get all employee links
             employee_links = await self._get_employee_links()
@@ -134,6 +182,10 @@ class SimpleEmployeeScraper:
             
             if not employee_links:
                 self.logger.warning("No employee links found")
+                # Try to get more debugging information
+                page_content = await self.page.content()
+                self.logger.debug(f"Page content length: {len(page_content)}")
+                self.logger.debug(f"Page content preview: {page_content[:1000]}...")
                 return []
             
             # Scrape each employee sequentially
@@ -174,14 +226,49 @@ class SimpleEmployeeScraper:
     async def _get_employee_links(self) -> List[tuple]:
         """Get all employee profile links from the directory page"""
         try:
-            # Wait for employee cards to load using selector system
-            await self.page.wait_for_selector(self.selectors['employee_cards'], timeout=10000)
+            # First check if we're on a login page or if authentication is required
+            current_url = self.page.url
+            page_title = await self.page.title()
+            
+            # Check for common login page indicators
+            login_indicators = [
+                "sign in", "login", "authentication", "microsoft", "oauth",
+                "password", "username", "account"
+            ]
+            
+            is_login_page = any(indicator in page_title.lower() or indicator in current_url.lower() 
+                              for indicator in login_indicators)
+            
+            if is_login_page:
+                self.logger.error(f"[ERROR] Redirected to login page: {current_url}")
+                self.logger.error(f"[ERROR] Page title: {page_title}")
+                self.logger.error("[ERROR] Authentication required - scraper cannot proceed without credentials")
+                raise Exception("Authentication required - website redirected to login page")
+            
+            # Wait for employee cards to load using selector system with longer timeout
+            try:
+                await self.page.wait_for_selector(self.selectors['employee_cards'], timeout=15000)
+            except Exception as timeout_error:
+                # Check if we're still on the right page
+                current_url = self.page.url
+                page_title = await self.page.title()
+                
+                if any(indicator in page_title.lower() or indicator in current_url.lower() 
+                      for indicator in login_indicators):
+                    self.logger.error(f"[ERROR] Page redirected to login during wait: {current_url}")
+                    raise Exception("Page redirected to login during scraping")
+                
+                # If not a login redirect, it's a genuine timeout
+                self.logger.error(f"[ERROR] Timeout waiting for employee cards: {timeout_error}")
+                raise timeout_error
             
             # Extract employee links using selector system
             employee_links = await self.page.evaluate(f"""
                 () => {{
                     const links = [];
                     const cards = document.querySelectorAll('{self.selectors['employee_cards']}');
+                    
+                    console.log('Found', cards.length, 'employee cards');
                     
                     cards.forEach(card => {{
                         const nameElement = card.querySelector('{self.selectors['employee_name']}');
@@ -200,6 +287,23 @@ class SimpleEmployeeScraper:
                     return links;
                 }}
             """)
+            
+            if not employee_links:
+                self.logger.warning("[WARNING] No employee links found - checking page content")
+                # Get page content for debugging
+                page_content = await self.page.content()
+                self.logger.debug(f"Page content preview: {page_content[:500]}...")
+                
+                # Check for alternative selectors
+                alternative_selectors = [
+                    '.person-card', '.staff-card', '.team-member', 
+                    '[data-person]', '.card', 'li', '.list-item'
+                ]
+                
+                for selector in alternative_selectors:
+                    count = await self.page.evaluate(f"document.querySelectorAll('{selector}').length")
+                    if count > 0:
+                        self.logger.info(f"Found {count} elements with selector: {selector}")
             
             return employee_links
             

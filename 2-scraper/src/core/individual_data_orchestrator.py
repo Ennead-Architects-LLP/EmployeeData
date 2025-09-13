@@ -164,7 +164,16 @@ class IndividualDataOrchestrator:
             return employee_dicts
             
         except Exception as e:
+            error_message = str(e)
             self.logger.error(f"Error scraping employee data: {e}")
+            
+            # Check if this is an authentication error
+            if "authentication" in error_message.lower() or "login" in error_message.lower():
+                self.logger.error("[CRITICAL] Authentication required - website now requires login")
+                self.logger.error("[CRITICAL] The scraper cannot proceed without valid credentials")
+                self.logger.error("[CRITICAL] Please check if the website requires authentication")
+                raise Exception("Authentication required - website requires login credentials")
+            
             # Re-raise the exception to propagate the error up the call stack
             raise
     
