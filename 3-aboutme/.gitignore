@@ -5,5 +5,11 @@ __pycache__/
 *.pyc
 *.pyo
 
+# Log files
+logs/
+*.log
+aboutme_error_log.txt
+aboutme_token_error.txt
+
 # Allow the compiled executable to be tracked
 !dist/AboutMe_ComputerInfo.exe

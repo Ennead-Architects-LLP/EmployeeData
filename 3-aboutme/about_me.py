@@ -13,17 +13,151 @@ import psutil
 import wmi
 import requests
 import argparse
+import traceback
+import sys
+import logging
 from datetime import datetime
 
+# Load GitHub token with error handling
 token_file = "token.json"
-with open(token_file, 'r') as f:
-    token_data = json.load(f)
-    EMBEDDED_GITHUB_TOKEN = token_data['token']
+EMBEDDED_GITHUB_TOKEN = None
+
+def save_token_error(error_msg, exception=None):
+    """Save token loading error to file"""
+    try:
+        with open("aboutme_token_error.txt", 'w', encoding='utf-8') as f:
+            f.write("="*80 + "\n")
+            f.write("ABOUTME TOKEN LOADING ERROR\n")
+            f.write("="*80 + "\n")
+            f.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write(f"Error: {error_msg}\n")
+            if exception:
+                f.write(f"Exception: {str(exception)}\n")
+                f.write(f"Traceback:\n{traceback.format_exc()}\n")
+            f.write("="*80 + "\n")
+    except:
+        pass
+
+try:
+    with open(token_file, 'r') as f:
+        token_data = json.load(f)
+        EMBEDDED_GITHUB_TOKEN = token_data['token']
+    print(f"✅ GitHub token loaded successfully")
+except FileNotFoundError:
+    error_msg = f"❌ Error: {token_file} not found!"
+    print(error_msg)
+    print("   Please ensure the token.json file is in the same directory as the executable.")
+    save_token_error(error_msg)
+    input("\nPress Enter to close this window...")
+    sys.exit(1)
+except json.JSONDecodeError as e:
+    error_msg = f"❌ Error: Invalid JSON in {token_file}: {e}"
+    print(error_msg)
+    save_token_error(error_msg, e)
+    input("\nPress Enter to close this window...")
+    sys.exit(1)
+except KeyError:
+    error_msg = f"❌ Error: 'token' key not found in {token_file}"
+    print(error_msg)
+    save_token_error(error_msg)
+    input("\nPress Enter to close this window...")
+    sys.exit(1)
+except Exception as e:
+    error_msg = f"❌ Error loading token: {e}"
+    print(error_msg)
+    save_token_error(error_msg, e)
+    input("\nPress Enter to close this window...")
+    sys.exit(1)
 
 # EMBEDDED CONFIGURATION - Replace with your actual values
 EMBEDDED_REPO_OWNER = "Ennead-Architects-LLP"
 EMBEDDED_REPO_NAME = "EmployeeData"
 EMBEDDED_WEBSITE_URL = "https://ennead-architects-llp.github.io/EmployeeData"
+
+def setup_logging():
+    """Setup logging for error tracking"""
+    try:
+        # Create logs directory if it doesn't exist
+        log_dir = "logs"
+        if not os.path.exists(log_dir):
+            os.makedirs(log_dir)
+        
+        # Setup logging configuration
+        log_file = os.path.join(log_dir, f"aboutme_error_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
+        
+        # Clear any existing handlers
+        for handler in logging.root.handlers[:]:
+            logging.root.removeHandler(handler)
+        
+        logging.basicConfig(
+            level=logging.DEBUG,
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler(log_file, encoding='utf-8'),
+                logging.StreamHandler(sys.stdout)
+            ]
+        )
+        
+        return log_file
+    except Exception as e:
+        print(f"⚠️  Warning: Could not setup logging: {e}")
+        return None
+
+def save_error_to_file(error_msg, exception=None, log_file=None):
+    """Save error details to a file that will persist even if console closes"""
+    try:
+        # Create error log file in the same directory as the executable
+        error_file = "aboutme_error_log.txt"
+        
+        with open(error_file, 'w', encoding='utf-8') as f:
+            f.write("="*80 + "\n")
+            f.write("ABOUTME COMPUTER INFO COLLECTOR - ERROR REPORT\n")
+            f.write("="*80 + "\n")
+            f.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write(f"Error: {error_msg}\n")
+            f.write("\n")
+            
+            if exception:
+                f.write(f"Exception Type: {type(exception).__name__}\n")
+                f.write(f"Exception Message: {str(exception)}\n")
+                f.write("\n")
+                f.write("FULL TRACEBACK:\n")
+                f.write("-" * 40 + "\n")
+                f.write(traceback.format_exc())
+                f.write("\n")
+            
+            f.write("\n")
+            f.write("SYSTEM INFORMATION:\n")
+            f.write("-" * 40 + "\n")
+            f.write(f"Platform: {platform.platform()}\n")
+            f.write(f"Python Version: {sys.version}\n")
+            f.write(f"Executable: {sys.executable}\n")
+            f.write(f"Working Directory: {os.getcwd()}\n")
+            
+            if log_file:
+                f.write(f"Detailed Log File: {log_file}\n")
+            
+            f.write("="*80 + "\n")
+        
+        return error_file
+    except Exception as e:
+        print(f"❌ Failed to save error to file: {e}")
+        return None
+
+def log_error(error_msg, exception=None):
+    """Log error with traceback"""
+    try:
+        if exception:
+            logging.error(f"{error_msg}: {str(exception)}")
+            logging.error(f"Traceback: {traceback.format_exc()}")
+        else:
+            logging.error(error_msg)
+    except Exception as e:
+        print(f"❌ Error logging failed: {e}")
+        print(f"Original error: {error_msg}")
+        if exception:
+            print(f"Exception: {str(exception)}")
+            print(f"Traceback: {traceback.format_exc()}")
 
 class ComputerInfoCollector:
     def __init__(self, website_url=None):
@@ -300,29 +434,98 @@ class ComputerInfoCollector:
         print("="*50)
 
 def main():
-    """Main function - simplified for non-technical users"""
-    print("🔍 Collecting your computer information...")
-    print("   This may take a few seconds...")
+    """Main function - simplified for non-technical users with comprehensive error handling"""
+    log_file = None
+    try:
+        # Setup logging first
+        print("🔧 Setting up error logging...")
+        log_file = setup_logging()
+        if log_file:
+            print(f"   Error log will be saved to: {log_file}")
+        
+        print("\n🔍 Collecting your computer information...")
+        print("   This may take a few seconds...")
+        
+        # Initialize collector with error handling
+        try:
+            collector = ComputerInfoCollector()
+            logging.info("ComputerInfoCollector initialized successfully")
+        except Exception as e:
+            log_error("Failed to initialize ComputerInfoCollector", e)
+            raise
+        
+        # Collect information with error handling
+        try:
+            collector.collect_all_info()
+            logging.info("Computer information collection completed")
+        except Exception as e:
+            log_error("Failed to collect computer information", e)
+            raise
+        
+        # Print summary with error handling
+        try:
+            collector.print_summary()
+            logging.info("Summary printed successfully")
+        except Exception as e:
+            log_error("Failed to print summary", e)
+            print("⚠️  Warning: Could not display summary, but continuing...")
+        
+        # Send to GitHub with error handling
+        print("\n📤 Sending information to the server...")
+        try:
+            success = collector.send_to_github_repo()
+            if success:
+                logging.info("Data sent to GitHub successfully")
+                print("\n🎉 All done! Your computer information has been submitted successfully.")
+                print("   You can close this window now.")
+            else:
+                logging.error("Failed to send data to GitHub")
+                print("\n⚠️  There was a problem sending your information.")
+                print("   Please try again later or contact support.")
+        except Exception as e:
+            log_error("Failed to send data to GitHub", e)
+            print("\n❌ Error sending information to server.")
+            print("   Please check the error log for details.")
+            raise
     
-    collector = ComputerInfoCollector()
-    collector.collect_all_info()
+    except Exception as e:
+        # Comprehensive error handling
+        error_msg = f"❌ CRITICAL ERROR: {str(e)}"
+        print(f"\n{error_msg}")
+        print("="*60)
+        print("DETAILED ERROR INFORMATION:")
+        print("="*60)
+        print(f"Error Type: {type(e).__name__}")
+        print(f"Error Message: {str(e)}")
+        print(f"Traceback:")
+        print(traceback.format_exc())
+        print("="*60)
+        
+        # Log the error
+        log_error("Critical error in main function", e)
+        
+        # Save error to persistent file
+        error_file = save_error_to_file(error_msg, e, log_file)
+        
+        # Show log file locations
+        print(f"\n📝 ERROR LOG FILES CREATED:")
+        if error_file:
+            print(f"   📄 Main error log: {error_file}")
+        if log_file:
+            print(f"   📄 Detailed log: {log_file}")
+        
+        print("\n⚠️  The application encountered an error and cannot continue.")
+        print("   Please send the error log files to support for assistance.")
+        print("   The error log files are saved in the same folder as this program.")
     
-    # Print summary
-    collector.print_summary()
-    
-    # Send to GitHub
-    print("\n📤 Sending information to the server...")
-    success = collector.send_to_github_repo()
-    
-    if success:
-        print("\n🎉 All done! Your computer information has been submitted successfully.")
-        print("   You can close this window now.")
-    else:
-        print("\n⚠️  There was a problem sending your information.")
-        print("   Please try again later or contact support.")
-    
-    # Keep window open so user can see the result
-    input("\nPress Enter to close this window...")
+    finally:
+        # Keep window open so user can see the result
+        try:
+            input("\nPress Enter to close this window...")
+        except:
+            # If input fails, just wait a bit
+            import time
+            time.sleep(5)
 
 if __name__ == "__main__":
     main()
