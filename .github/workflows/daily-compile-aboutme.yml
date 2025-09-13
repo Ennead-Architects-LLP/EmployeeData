@@ -23,16 +23,21 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pyinstaller
-        pip install psutil wmi requests
+        pip install psutil wmi requests pillow
         
     - name: Navigate to aboutme directory
       run: |
         cd 3-aboutme
         
+    - name: Convert PNG icon to ICO format
+      run: |
+        cd 3-aboutme
+        python -c "from PIL import Image; img = Image.open('icon.png'); img.save('icon.ico', format='ICO')"
+        
     - name: Compile about_me.py to executable
       run: |
         cd 3-aboutme
-        python -m PyInstaller --onefile --name "AboutMe_ComputerInfo" --icon "icon.png" --distpath "../dist" about_me.py
+        python -m PyInstaller --onefile --name "AboutMe_ComputerInfo" --icon "icon.ico" --distpath "../dist" about_me.py
         
     - name: Create distribution directory if it doesn't exist
       run: |

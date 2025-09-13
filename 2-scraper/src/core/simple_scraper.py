@@ -79,17 +79,79 @@ class SimpleEmployeeScraper:
         try:
             self.logger.info("Starting browser...")
             playwright = await async_playwright().start()
+            
+            # Enhanced browser arguments to bypass anti-bot protection
+            browser_args = [
+                '--no-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-blink-features=AutomationControlled',
+                '--disable-features=VizDisplayCompositor',
+                '--disable-web-security',
+                '--disable-features=TranslateUI',
+                '--disable-ipc-flooding-protection',
+                '--no-first-run',
+                '--no-default-browser-check',
+                '--disable-default-apps',
+                '--disable-popup-blocking',
+                '--disable-extensions',
+                '--disable-plugins',
+                '--disable-images',  # Disable images for faster loading
+                '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            ]
+            
             self.browser = await playwright.chromium.launch(
                 headless=self.headless,
-                args=['--no-sandbox', '--disable-dev-shm-usage']
+                args=browser_args
             )
+            
+            # Enhanced context with more realistic browser settings
             self.context = await self.browser.new_context(
                 viewport={'width': 1920, 'height': 1080},
-                user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                locale='en-US',
+                timezone_id='America/New_York',
+                geolocation={'latitude': 40.7128, 'longitude': -74.0060},  # NYC coordinates
+                permissions=['geolocation'],
+                extra_http_headers={
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'DNT': '1',
+                    'Connection': 'keep-alive',
+                    'Upgrade-Insecure-Requests': '1',
+                }
             )
+            
             self.page = await self.context.new_page()
+            
+            # Add stealth measures to avoid detection
+            await self.page.add_init_script("""
+                // Remove webdriver property
+                Object.defineProperty(navigator, 'webdriver', {
+                    get: () => undefined,
+                });
+                
+                // Mock plugins
+                Object.defineProperty(navigator, 'plugins', {
+                    get: () => [1, 2, 3, 4, 5],
+                });
+                
+                // Mock languages
+                Object.defineProperty(navigator, 'languages', {
+                    get: () => ['en-US', 'en'],
+                });
+                
+                // Mock permissions
+                const originalQuery = window.navigator.permissions.query;
+                window.navigator.permissions.query = (parameters) => (
+                    parameters.name === 'notifications' ?
+                        Promise.resolve({ state: Notification.permission }) :
+                        originalQuery(parameters)
+                );
+            """)
+            
             self.page.set_default_timeout(self.timeout)
-            self.logger.info("[SUCCESS] Browser started successfully")
+            self.logger.info("[SUCCESS] Browser started successfully with anti-bot protection bypass")
         except Exception as e:
             self.logger.error(f"[ERROR] Failed to start browser: {e}")
             raise

@@ -37,17 +37,13 @@ async function loadIndividualEmployeeData() {
     try {
         console.log('Loading individual employee data...');
         
-        // Get list of individual employee files from assets directory
-        const response = await fetch('assets/individual_employees/');
+        // Get list of individual employee files from static JSON file
+        const response = await fetch('assets/employee_files_list.json');
         if (!response.ok) {
-            throw new Error('Failed to load employee directory');
+            throw new Error('Failed to load employee files list');
         }
         
-        // Parse directory listing (this is a simplified approach)
-        // In a real implementation, you might need a server-side endpoint to list files
-        const text = await response.text();
-        const files = extractJsonFiles(text);
-        
+        const files = await response.json();
         console.log(`Found ${files.length} individual employee files`);
         
         // Load each individual employee file
@@ -66,6 +62,11 @@ async function loadIndividualEmployeeData() {
         
         filteredEmployees = [...allEmployees];
         
+        // Initialize fuzzy search with employee data
+        if (typeof fuzzySearch !== 'undefined' && fuzzySearch.initialize) {
+            fuzzySearch.initialize(allEmployees);
+        }
+        
         // Update header with employee count
         document.getElementById('mainTitle').innerHTML = `Ennead's People <span class="employee-count">(${allEmployees.length} employees)</span>`;
         
@@ -79,61 +80,10 @@ async function loadIndividualEmployeeData() {
         
     } catch (error) {
         console.error('Error loading individual employee data:', error);
-        
-        // Fallback: try to load individual files directly from directory listing
-        try {
-            console.log('Trying fallback: loading individual files directly...');
-            // Try to get directory listing again for fallback
-            const fallbackResponse = await fetch('assets/individual_employees/');
-            if (fallbackResponse.ok) {
-                const fallbackText = await fallbackResponse.text();
-                const fallbackFiles = extractJsonFiles(fallbackText);
-                const employees = [];
-                
-                for (const filename of fallbackFiles) {
-                    try {
-                        const response = await fetch(`assets/individual_employees/${filename}`);
-                        if (response.ok) {
-                            const data = await response.json();
-                            if (Array.isArray(data)) {
-                                employees.push(...data);
-                            } else {
-                                employees.push(data);
-                            }
-                        }
-                    } catch (error) {
-                        console.warn(`Could not load fallback file ${filename}:`, error);
-                    }
-                }
-                
-                if (employees.length > 0) {
-                    allEmployees = employees;
-                    filteredEmployees = [...allEmployees];
-                    console.log('Fallback: Loaded from individual files');
-                } else {
-                    throw new Error('No fallback data available');
-                }
-            } else {
-                throw new Error('Could not access directory for fallback');
-            }
-        } catch (fallbackError) {
-            throw new Error('Failed to load employee data from any source');
-        }
+        throw new Error('Failed to load employee data');
     }
 }
 
-function extractJsonFiles(htmlText) {
-    // Simple regex to extract .json filenames from directory listing
-    const jsonFileRegex = /href="([^"]+\.json)"/g;
-    const files = [];
-    let match;
-    
-    while ((match = jsonFileRegex.exec(htmlText)) !== null) {
-        files.push(match[1]);
-    }
-    
-    return files;
-}
 
 async function loadComputerData() {
     try {
@@ -145,8 +95,7 @@ async function loadComputerData() {
         displayComputerData();
     } catch (error) {
         console.log('No computer data available yet');
-        document.getElementById('computerDataContainer').innerHTML = 
-            '<div class="no-data-message">No computer data available yet. Data will appear here when users submit their computer information.</div>';
+        // Computer data is now integrated into individual employee cards, so no separate container needed
     }
 }
 
