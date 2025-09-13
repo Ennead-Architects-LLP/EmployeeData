@@ -19,7 +19,7 @@ class DataOrchestrator:
         self.logger = logging.getLogger(__name__)
         
         # Set output paths
-        self.output_path = Path("../1-website/assets")
+        self.output_path = Path("../docs/assets")
         self.output_path.mkdir(parents=True, exist_ok=True)
         
         # Individual employee files directory

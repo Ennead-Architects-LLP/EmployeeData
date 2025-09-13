@@ -6,7 +6,7 @@ A comprehensive employee data management system with 5 distinct components for d
 
 ```
 EmployeeData/
-├── 1-website/           # 🌐 Main website (GitHub Pages)
+├── docs/           # 🌐 Main website (GitHub Pages)
 ├── 2-scraper/           # 🕛 Daily data collection
 ├── 3-aboutme/           # 💻 User computer data collection
 ├── 4-server/            # 🖥️ POST data handler
@@ -18,7 +18,7 @@ EmployeeData/
 
 ### 1. Website (Static Hosting)
 ```bash
-cd 1-website
+cd docs
 # Deploy to GitHub Pages - website loads data dynamically from JSON
 ```
 
@@ -45,7 +45,7 @@ python server.py
 
 ## 📋 Component Overview
 
-### 1. Website Component (`1-website/`)
+### 1. Website Component (`docs/`)
 - **Purpose**: Dynamic website hosted on GitHub Pages
 - **Features**: Employee directory, search/filter, computer data display
 - **Data Source**: Loads from `assets/employees_data.json`

@@ -14,9 +14,9 @@ function getBasePath() {
         const pathParts = window.location.pathname.split('/').filter(part => part);
         const repoName = pathParts[0]; // First part after the domain
         
-        // Check if we're in a subdirectory (like 1-website)
-        if (pathParts.length > 1 && pathParts[1] === '1-website') {
-            return `/${repoName}/1-website/`;
+        // Check if we're in a subdirectory (like docs)
+        if (pathParts.length > 1 && pathParts[1] === 'docs') {
+            return `/${repoName}/docs/`;
         }
         return `/${repoName}/`;
     }

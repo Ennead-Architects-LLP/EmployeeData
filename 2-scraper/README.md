@@ -80,7 +80,7 @@ The scraper runs automatically weekly on Tuesday at 3:14 AM EST (8:14 AM UTC) vi
 2. **Scrape New Data** - Collects employee info from EI website
 3. **Merge Data** - Updates existing records, preserves computer info
 4. **Download Images** - Updates profile images
-5. **Save Data** - Writes to individual files in `1-website/assets/individual_employees/`
+5. **Save Data** - Writes to individual files in `docs/assets/individual_employees/`
 
 ## 🔄 Data Merging Logic
 
@@ -99,8 +99,8 @@ The scraper intelligently merges data:
 - `TIMEOUT`: Page load timeout in milliseconds (default: 15000)
 
 ### Output
-- **Employee Data**: Individual JSON files in `1-website/assets/individual_employees/`
-- **Images**: `1-website/assets/images/`
+- **Employee Data**: Individual JSON files in `docs/assets/individual_employees/`
+- **Images**: `docs/assets/images/`
 - **Logs**: `weekly_scraper.log`
 
 ## 🧪 Testing

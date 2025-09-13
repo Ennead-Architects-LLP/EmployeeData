@@ -55,7 +55,7 @@ jobs:
         
     - name: Generate employee JSON directory file
       run: |
-        cd 1-website
+        cd docs
         echo "Current directory: $(pwd)"
         echo "Files in directory:"
         ls -la
@@ -67,11 +67,11 @@ jobs:
     - name: Copy JSON files to root for GitHub Pages access
       run: |
         # Copy files to root directory for GitHub Pages access
-        cp 1-website/employee_json_dir.json .
+        cp docs/employee_json_dir.json .
         mkdir -p assets
-        cp 1-website/assets/employee_files_list.json assets/
+        cp docs/assets/employee_files_list.json assets/
         # Copy individual employee files to root assets directory
-        cp -r 1-website/assets/individual_employees assets/
+        cp -r docs/assets/individual_employees assets/
         echo "Copied JSON files and individual employee data to root directory"
         
     - name: Commit and push changes
@@ -82,9 +82,9 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git add 1-website/employee_json_dir.json
-        git add 1-website/assets/employee_files_list.json
-        git add 1-website/assets/individual_employees/
+        git add docs/employee_json_dir.json
+        git add docs/assets/employee_files_list.json
+        git add docs/assets/individual_employees/
         git add employee_json_dir.json
         git add assets/employee_files_list.json
         git add assets/individual_employees/

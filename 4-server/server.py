@@ -29,7 +29,7 @@ def get_repository_root():
     
     # Walk up the directory tree to find the repository root
     while current_dir != os.path.dirname(current_dir):  # Not at filesystem root
-        if os.path.exists(os.path.join(current_dir, '1-website')):
+        if os.path.exists(os.path.join(current_dir, 'docs')):
             return current_dir
         current_dir = os.path.dirname(current_dir)
     
@@ -42,7 +42,7 @@ def get_repository_root():
         return os.path.dirname(os.path.dirname(current_file))
     
     # If running from repository root (direct execution)
-    elif os.path.exists(os.path.join(os.path.dirname(current_file), '1-website')):
+    elif os.path.exists(os.path.join(os.path.dirname(current_file), 'docs')):
         return os.path.dirname(current_file)
     
     # Final fallback: assume we're in the repository root
@@ -52,8 +52,8 @@ def get_repository_root():
 REPO_ROOT = get_repository_root()
 
 # Using individual JSON files only - direct updates to employee records
-INDIVIDUAL_EMPLOYEES_DIR = os.path.join(REPO_ROOT, '1-website', 'assets', 'individual_employees')
-COMPUTER_BACKUP_DIR = os.path.join(REPO_ROOT, '1-website', 'assets', 'computer_info_data_backup')
+INDIVIDUAL_EMPLOYEES_DIR = os.path.join(REPO_ROOT, 'docs', 'assets', 'individual_employees')
+COMPUTER_BACKUP_DIR = os.path.join(REPO_ROOT, 'docs', 'assets', 'computer_info_data_backup')
 
 def find_employee_file_by_user(computer_data):
     """Find the employee JSON file that matches the user from computer data"""
