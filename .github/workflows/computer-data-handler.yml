@@ -63,13 +63,11 @@ jobs:
           # Create backup file with timestamp
           BACKUP_FILE="1-website/assets/computer_info_data_backup/${COMPUTER_NAME}_$(date +%Y%m%d_%H%M%S).json"
           
-          # Create the backup data structure
+          # Create the backup data structure (clean structure without duplicates)
+          # The computer_info already contains computer_name, human_name, username
           cat > "$BACKUP_FILE" << EOF
         {
           "timestamp": "$TIMESTAMP",
-          "computer_name": "$COMPUTER_NAME",
-          "user_name": "$HUMAN_NAME",
-          "username": "$USERNAME",
           "computer_info": $COMPUTER_DATA
         }
         EOF
