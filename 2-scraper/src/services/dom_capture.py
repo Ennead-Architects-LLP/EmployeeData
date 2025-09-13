@@ -10,11 +10,12 @@ import os
 from datetime import datetime
 from playwright.async_api import async_playwright
 
+
 class DOMCapture:
     def __init__(self):
         self.browser = None
         self.page = None
-        self.capture_dir = "debug/dom_captures"
+        self.capture_dir = "../../debug/dom_captures"
         
     async def start_browser(self):
         """Start browser and navigate to employee directory"""
@@ -184,6 +185,7 @@ class DOMCapture:
             await self.browser.close()
             print("🔒 Browser closed")
 
+
 async def main():
     """Main function"""
     print("🔍 DOM Capture and Selector Recorder")
@@ -205,6 +207,7 @@ async def main():
         print(f"❌ Error: {e}")
     finally:
         await capture.close_browser()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

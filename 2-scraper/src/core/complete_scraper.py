@@ -1885,23 +1885,7 @@ class CompleteScraper:
             self.logger.error(f"    [ERROR] Error scraping profile: {e}")
             return None
     
-    # Parallel processing methods removed for stability - only sequential processing supported
-    # async def scrape_all_employees_parallel(self, max_parallel_workers: int = 3) -> List[EmployeeData]:
-        """
-        Scrape all employees from the directory with parallel processing and incremental saving.
-        
-        Args:
-            max_parallel_workers: Maximum number of parallel browser contexts to use
-            
-        Returns:
-            List of EmployeeData objects
-        """
-        operation_id = self.performance_monitor.start_operation("scrape_all_employees_parallel")
-        log_operation_start(self.logger, "Parallel Employee Scraping", workers=max_parallel_workers)
-        
-        try:
-            # Initialize Playwright without timeout protection
-            async with self.performance_monitor.track_operation("playwright_initialization", operation_id):
+    # All parallel and batch processing removed for reliability - only sequential processing supported
                 self.logger.info("[START] Initializing Playwright browser...")
                 playwright = await async_playwright().start()
                 
@@ -2143,7 +2127,8 @@ class CompleteScraper:
                 pass
             return []
     
-    async def _process_employees_parallel(self, browser, employee_links: List[Tuple[str, str, str]], max_workers: int) -> List[EmployeeData]:
+    # Parallel processing method removed for reliability
+    # async def _process_employees_parallel(self, browser, employee_links: List[Tuple[str, str, str]], max_workers: int) -> List[EmployeeData]:
         """
         Process employees in parallel using multiple browser contexts.
         
@@ -2264,7 +2249,8 @@ class CompleteScraper:
         
         # return all_employees
     
-    async def _save_incremental_batch(self, batch: List[EmployeeData], current_count: int, total_count: int):
+    # Batch processing method removed for reliability
+    # async def _save_incremental_batch(self, batch: List[EmployeeData], current_count: int, total_count: int):
         """
         Save a batch of employees incrementally to manage memory.
         

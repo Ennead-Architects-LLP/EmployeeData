@@ -22,11 +22,11 @@ cd 1-website
 # Deploy to GitHub Pages - website loads data dynamically from JSON
 ```
 
-### 2. Daily Scraper
+### 2. Weekly Scraper
 ```bash
 cd 2-scraper
 pip install -r requirements.txt
-python daily_scraper.py
+python weekly_scraper.py
 ```
 
 ### 3. AboutMe App (User Computer)
@@ -71,7 +71,7 @@ python server.py
 
 ## 🔄 Data Flow
 
-1. **Daily Scraper** → Updates `employees_data.json`
+1. **Weekly Scraper** → Updates `employees_data.json`
 2. **AboutMe App** → Sends computer data via POST
 3. **Server** → Merges data into employee records
 4. **Website** → Displays updated data dynamically

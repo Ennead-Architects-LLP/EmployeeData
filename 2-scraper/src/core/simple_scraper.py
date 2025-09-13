@@ -50,6 +50,20 @@ class SimpleEmployeeScraper:
         
         # Scraped data
         self.employees: List[EmployeeData] = []
+        
+        # Selectors (comprehensive selector system for better reliability)
+        self.selectors = {
+            'employee_cards': '.employee-card, .profile-card, [data-employee]',
+            'profile_image': 'img.profile-image, .employee-photo img, .avatar img',
+            'employee_name': '.employee-name, .profile-name, h3, h4',
+            'employee_title': '.employee-title, .profile-title, .position',
+            'profile_link': 'a[href*="/employee/"], a[href*="/profile/"]',
+            'email_link': 'a[href^="mailto:"]',
+            'phone_link': 'a[href^="tel:"]',
+            'bio_text': '.bio, .about, .description, .employee-bio',
+            'contact_info': '.contact-info, .employee-contact',
+            'department': '.department, .team, .division'
+        }
     
     async def __aenter__(self):
         """Async context manager entry"""
@@ -75,23 +89,32 @@ class SimpleEmployeeScraper:
             )
             self.page = await self.context.new_page()
             self.page.set_default_timeout(self.timeout)
-            self.logger.info("✅ Browser started successfully")
+            self.logger.info("[SUCCESS] Browser started successfully")
         except Exception as e:
-            self.logger.error(f"❌ Failed to start browser: {e}")
+            self.logger.error(f"[ERROR] Failed to start browser: {e}")
             raise
     
     async def close_browser(self):
         """Close the browser and cleanup"""
         try:
             if self.page:
-                await self.page.close()
+                try:
+                    await self.page.close()
+                except Exception as e:
+                    self.logger.debug(f"Page already closed: {e}")
             if self.context:
-                await self.context.close()
+                try:
+                    await self.context.close()
+                except Exception as e:
+                    self.logger.debug(f"Context already closed: {e}")
             if self.browser:
-                await self.browser.close()
-            self.logger.info("✅ Browser closed successfully")
+                try:
+                    await self.browser.close()
+                except Exception as e:
+                    self.logger.debug(f"Browser already closed: {e}")
+            self.logger.info("[SUCCESS] Browser closed successfully")
         except Exception as e:
-            self.logger.error(f"❌ Error closing browser: {e}")
+            self.logger.error(f"[ERROR] Error closing browser: {e}")
     
     async def scrape_all_employees(self) -> List[EmployeeData]:
         """
@@ -124,59 +147,69 @@ class SimpleEmployeeScraper:
                     
                     if employee:
                         self.employees.append(employee)
-                        self.logger.info(f"✅ Successfully scraped {name}")
+                        self.logger.info(f"[SUCCESS] Successfully scraped {name}")
                     else:
-                        self.logger.warning(f"⚠️  Failed to scrape {name}")
+                        self.logger.warning(f"[WARNING] Failed to scrape {name}")
                     
                     # Small delay between requests to be respectful
                     await asyncio.sleep(0.5)
                     
                 except Exception as e:
-                    self.logger.error(f"❌ Error scraping {name}: {e}")
+                    self.logger.error(f"[ERROR] Error scraping {name}: {e}")
                     continue
             
-            self.logger.info(f"✅ Scraping completed. Total employees: {len(self.employees)}")
+            # Check if we got any employees - this is a critical failure if we don't
+            if len(self.employees) == 0:
+                self.logger.error("[CRITICAL] Failed to get any employees - this indicates a complete scraping failure")
+                raise Exception("Failed to get any employees - this indicates a complete scraping failure")
+            
+            self.logger.info(f"[SUCCESS] Scraping completed. Total employees: {len(self.employees)}")
             return self.employees
             
         except Exception as e:
-            self.logger.error(f"❌ Error during scraping: {e}")
-            return []
+            self.logger.error(f"[ERROR] Error during scraping: {e}")
+            # Re-raise the exception to propagate the error up the call stack
+            raise
     
     async def _get_employee_links(self) -> List[tuple]:
         """Get all employee profile links from the directory page"""
         try:
-            # Wait for employee cards to load
-            await self.page.wait_for_selector('.employee-card, .person-card, [data-employee]', timeout=10000)
+            # Wait for employee cards to load using selector system
+            await self.page.wait_for_selector(self.selectors['employee_cards'], timeout=10000)
             
-            # Extract employee links
-            employee_links = await self.page.evaluate("""
-                () => {
+            # Extract employee links using selector system
+            employee_links = await self.page.evaluate(f"""
+                () => {{
                     const links = [];
-                    const cards = document.querySelectorAll('.employee-card, .person-card, [data-employee]');
+                    const cards = document.querySelectorAll('{self.selectors['employee_cards']}');
                     
-                    cards.forEach(card => {
-                        const nameElement = card.querySelector('h3, .name, .employee-name');
-                        const linkElement = card.querySelector('a[href*="/employees/"]');
-                        const imageElement = card.querySelector('img');
+                    cards.forEach(card => {{
+                        const nameElement = card.querySelector('{self.selectors['employee_name']}');
+                        const linkElement = card.querySelector('{self.selectors['profile_link']}');
+                        const imageElement = card.querySelector('{self.selectors['profile_image']}');
                         
-                        if (nameElement && linkElement) {
+                        if (nameElement && linkElement) {{
                             const name = nameElement.textContent.trim();
                             const profileUrl = linkElement.href;
                             const imageUrl = imageElement ? imageElement.src : '';
                             
                             links.push([name, profileUrl, imageUrl]);
-                        }
-                    });
+                        }}
+                    }});
                     
                     return links;
-                }
+                }}
             """)
             
             return employee_links
             
         except Exception as e:
-            self.logger.error(f"❌ Error getting employee links: {e}")
-            return []
+            self.logger.error(f"[ERROR] Error getting employee links: {e}")
+            # Check if this is a timeout error
+            if "Timeout" in str(e) or "timeout" in str(e).lower():
+                self.logger.error("[ERROR] Timeout waiting for employee cards to load - this indicates a critical scraping failure")
+            # Re-raise the exception to propagate the error up the call stack
+            raise
     
     async def _scrape_employee_profile(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
         """Scrape individual employee profile data"""
@@ -185,36 +218,41 @@ class SimpleEmployeeScraper:
             await self.page.goto(profile_url)
             await self.page.wait_for_load_state('networkidle')
             
-            # Extract employee data
-            employee_data = await self.page.evaluate("""
-                () => {
-                    const data = {};
+            # Extract employee data using selector system
+            employee_data = await self.page.evaluate(f"""
+                () => {{
+                    const data = {{}};
                     
                     // Basic information
-                    data.human_name = document.querySelector('h1, .employee-name, .profile-name')?.textContent?.trim() || '';
-                    data.email = document.querySelector('a[href^="mailto:"]')?.href?.replace('mailto:', '') || '';
-                    data.phone = document.querySelector('a[href^="tel:"]')?.href?.replace('tel:', '') || '';
+                    data.human_name = document.querySelector('{self.selectors['employee_name']}')?.textContent?.trim() || '';
+                    data.email = document.querySelector('{self.selectors['email_link']}')?.href?.replace('mailto:', '') || '';
+                    data.phone = document.querySelector('{self.selectors['phone_link']}')?.href?.replace('tel:', '') || '';
                     
                     // Position and department
-                    data.position = document.querySelector('.position, .job-title, .title')?.textContent?.trim() || '';
-                    data.department = document.querySelector('.department, .dept')?.textContent?.trim() || '';
+                    data.position = document.querySelector('{self.selectors['employee_title']}')?.textContent?.trim() || '';
+                    data.department = document.querySelector('{self.selectors['department']}')?.textContent?.trim() || '';
                     
                     // Bio
-                    data.bio = document.querySelector('.bio, .about, .description')?.textContent?.trim() || '';
+                    data.bio = document.querySelector('{self.selectors['bio_text']}')?.textContent?.trim() || '';
                     
                     // Office location
                     data.office_location = document.querySelector('.location, .office, .address')?.textContent?.trim() || '';
                     
                     // Profile image
-                    const img = document.querySelector('.profile-image img, .employee-photo img, .avatar img');
+                    const img = document.querySelector('{self.selectors['profile_image']}');
                     data.image_url = img ? img.src : '';
                     
                     // Additional info
                     data.profile_url = window.location.href;
                     
                     return data;
-                }
+                }}
             """)
+            
+            # Normalize office location if present
+            office_location = employee_data.get('office_location')
+            if office_location:
+                office_location = self._normalize_office_location(office_location)
             
             # Create EmployeeData object
             employee = EmployeeData(
@@ -224,7 +262,7 @@ class SimpleEmployeeScraper:
                 position=employee_data.get('position'),
                 department=employee_data.get('department'),
                 bio=employee_data.get('bio'),
-                office_location=employee_data.get('office_location'),
+                office_location=office_location,
                 profile_url=employee_data.get('profile_url') or profile_url,
                 image_url=employee_data.get('image_url') or image_url
             )
@@ -232,5 +270,43 @@ class SimpleEmployeeScraper:
             return employee
             
         except Exception as e:
-            self.logger.error(f"❌ Error scraping profile {profile_url}: {e}")
+            self.logger.error(f"[ERROR] Error scraping profile {profile_url}: {e}")
             return None
+    
+    def _normalize_office_location(self, location: str) -> str:
+        """
+        Normalize office location names to standard format.
+        
+        Args:
+            location: Raw location string
+            
+        Returns:
+            Normalized location string
+        """
+        location = location.strip().lower()
+        
+        # Map common variations to standard names
+        location_mapping = {
+            'new york': 'New York',
+            'ny': 'New York',
+            'nyc': 'New York',
+            'new york city': 'New York',
+            'shanghai': 'Shanghai',
+            'california': 'California',
+            'ca': 'California',
+            'los angeles': 'California',
+            'san francisco': 'California',
+            'sf': 'California'
+        }
+        
+        # Check for exact matches first
+        if location in location_mapping:
+            return location_mapping[location]
+        
+        # Check for partial matches
+        for key, value in location_mapping.items():
+            if key in location:
+                return value
+        
+        # Return original if no mapping found
+        return location.title()

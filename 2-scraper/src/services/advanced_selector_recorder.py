@@ -11,11 +11,12 @@ import time
 from datetime import datetime
 from playwright.async_api import async_playwright
 
+
 class AdvancedSelectorRecorder:
     def __init__(self):
         self.browser = None
         self.page = None
-        self.capture_dir = "debug/dom_captures"
+        self.capture_dir = "../../debug/dom_captures"
         self.employee_url = "https://ei.ennead.com/employee-directory"
         
     async def start_browser(self):
@@ -279,6 +280,7 @@ class AdvancedSelectorRecorder:
             await self.browser.close()
             print("🔒 Browser closed")
 
+
 async def main():
     """Main function"""
     print("🔍 Advanced Selector Recorder")
@@ -322,6 +324,7 @@ async def main():
         traceback.print_exc()
     finally:
         await recorder.close_browser()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

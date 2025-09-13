@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Daily Employee Data Scraper
+Weekly Employee Data Scraper
 Focuses only on data collection and JSON updates, no HTML generation
+Runs weekly on Tuesday at 3:14 AM EST
 """
 
 import asyncio
@@ -17,19 +18,20 @@ from src.core.individual_data_orchestrator import IndividualDataOrchestrator
 from src.config.settings import ScraperConfig
 
 def setup_logging():
-    """Setup logging for the daily scraper"""
+    """Setup logging for the weekly scraper"""
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         handlers=[
             logging.StreamHandler(),
-            logging.FileHandler('daily_scraper.log')
+            logging.FileHandler('weekly_scraper.log')
         ]
     )
 
 async def main():
-    """Main function for daily scraper"""
-    print("🚀 Daily Employee Data Scraper")
+    """Main function for weekly scraper"""
+    print("🚀 Weekly Employee Data Scraper")
+    print("Schedule: Tuesday at 3:14 AM EST")
     print("Focus: Data collection and JSON updates only")
     print("=" * 60)
     
@@ -48,22 +50,22 @@ async def main():
         orchestrator = IndividualDataOrchestrator(config)
         
         # Run data collection
-        logger.info(f"Starting daily scraper at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        logger.info("Credential priority: GitHub secrets → local credentials.json → GUI setup")
+        logger.info(f"Starting weekly scraper at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        logger.info("Credential priority: GitHub secrets -> local credentials.json -> GUI setup")
         success = await orchestrator.run()
         
         if success:
-            logger.info("Daily scraper completed successfully!")
-            print("✅ Daily scraper completed successfully!")
+            logger.info("Weekly scraper completed successfully!")
+            print("[SUCCESS] Weekly scraper completed successfully!")
             return 0
         else:
-            logger.error("Daily scraper failed!")
-            print("❌ Daily scraper failed!")
+            logger.error("Weekly scraper failed!")
+            print("[ERROR] Weekly scraper failed!")
             return 1
             
     except Exception as e:
-        logger.error(f"Daily scraper failed with exception: {e}")
-        print(f"❌ Daily scraper failed: {e}")
+        logger.error(f"Weekly scraper failed with exception: {e}")
+        print(f"[ERROR] Weekly scraper failed: {e}")
         return 1
 
 if __name__ == "__main__":

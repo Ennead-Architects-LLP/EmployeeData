@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Test script for the daily scraper
+Test script for the weekly scraper
 """
 
 import asyncio
@@ -8,14 +8,14 @@ import sys
 from pathlib import Path
 
 # Add src to path
-sys.path.append(str(Path(__file__).parent / 'src'))
+sys.path.append(str(Path(__file__).parent.parent))
 
 from src.core.individual_data_orchestrator import IndividualDataOrchestrator
 from src.config.settings import ScraperConfig
 
 async def test_scraper():
     """Test the scraper with a small number of employees"""
-    print("🧪 Testing Daily Scraper")
+    print("🧪 Testing Weekly Scraper")
     print("=" * 40)
     
     try:

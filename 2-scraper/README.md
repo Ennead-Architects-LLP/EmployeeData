@@ -1,10 +1,10 @@
-# Daily Employee Data Scraper
+# Weekly Employee Data Scraper
 
-This component handles daily data collection from the Ennead employee directory website.
+This component handles weekly data collection from the Ennead employee directory website.
 
 ## 🎯 Purpose
 
-- **Daily Data Collection**: Scrapes employee data from EI website
+- **Weekly Data Collection**: Scrapes employee data from EI website
 - **Image Download**: Downloads and updates profile images
 - **Data Merging**: Preserves existing computer data while updating employee info
 - **JSON Updates**: Saves data directly to website assets folder
@@ -15,24 +15,37 @@ This component handles daily data collection from the Ennead employee directory 
 - ✅ **Preserves Computer Data** - Keeps existing computer info intact
 - ✅ **Image Management** - Downloads and updates profile images
 - ✅ **Incremental Updates** - Only updates changed data
-- ✅ **Automated Scheduling** - Runs daily via GitHub Actions
+- ✅ **Automated Scheduling** - Runs weekly on Tuesday at 3:14 AM EST via GitHub Actions
 
 ## 📁 Structure
 
 ```
 2-scraper/
-├── daily_scraper.py          # Main daily scraper script
-├── test_scraper.py           # Test script
+├── weekly_scraper.py         # Main weekly scraper script
 ├── requirements.txt          # Dependencies
+├── debug/                    # Debug output directory
+│   ├── dom_captures/         # DOM capture files
+│   ├── screenshots/          # Debug screenshots
+│   └── seating_chart/        # Seating chart debug files
 ├── src/                      # Source code
 │   ├── core/
-│   │   ├── data_orchestrator.py  # Data-only orchestrator
-│   │   ├── scraper.py            # Employee scraper
-│   │   └── models.py             # Data models
+│   │   ├── data_orchestrator.py      # Data-only orchestrator
+│   │   ├── individual_data_orchestrator.py  # Individual employee processing
+│   │   ├── complete_scraper.py       # Complete scraper implementation
+│   │   ├── simple_scraper.py         # Simple scraper implementation
+│   │   └── models.py                 # Data models
 │   ├── services/
-│   │   └── image_downloader.py   # Image download service
+│   │   ├── dom_capture.py            # DOM capture and analysis
+│   │   ├── advanced_selector_recorder.py  # Advanced selector recording
+│   │   ├── debug_utilities.py        # Debug utilities
+│   │   ├── image_downloader.py       # Image download service
+│   │   ├── auth.py                   # Authentication service
+│   │   └── html_generator.py         # HTML generation service
+│   ├── tests/
+│   │   └── test_scraper.py           # Test script
 │   └── config/
-│       └── settings.py           # Configuration
+│       ├── settings.py               # Configuration
+│       └── credentials.py            # Credentials management
 └── README.md                # This file
 ```
 
@@ -42,17 +55,24 @@ This component handles daily data collection from the Ennead employee directory 
 ```bash
 cd 2-scraper
 pip install -r requirements.txt
-python daily_scraper.py
+python weekly_scraper.py
 ```
 
 ### Test Run
 ```bash
 cd 2-scraper
-python test_scraper.py
+python -m src.tests.test_scraper
+```
+
+### DOM Capture and Debugging
+```bash
+cd 2-scraper
+python -m src.services.dom_capture
+python -m src.services.advanced_selector_recorder
 ```
 
 ### GitHub Actions
-The scraper runs automatically daily at midnight UTC via GitHub Actions.
+The scraper runs automatically weekly on Tuesday at 3:14 AM EST (8:14 AM UTC) via GitHub Actions.
 
 ## 📊 Data Flow
 
@@ -81,7 +101,7 @@ The scraper intelligently merges data:
 ### Output
 - **Employee Data**: Individual JSON files in `1-website/assets/individual_employees/`
 - **Images**: `1-website/assets/images/`
-- **Logs**: `daily_scraper.log`
+- **Logs**: `weekly_scraper.log`
 
 ## 🧪 Testing
 
@@ -101,7 +121,7 @@ This will:
 
 The scraper creates detailed logs:
 - **Console Output**: Real-time progress
-- **Log File**: `daily_scraper.log`
+- **Log File**: `weekly_scraper.log`
 - **GitHub Actions**: Workflow logs
 
 ## 🔍 Troubleshooting

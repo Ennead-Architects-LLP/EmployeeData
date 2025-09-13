@@ -131,14 +131,14 @@ class IndividualDataOrchestrator:
             
             # Save individual employee file
             if self.save_individual_employee(merged_data):
-                self.logger.info(f"✅ Successfully processed {employee_name}")
+                self.logger.info(f"[SUCCESS] Successfully processed {employee_name}")
                 return True
             else:
-                self.logger.error(f"❌ Failed to save {employee_name}")
+                self.logger.error(f"[ERROR] Failed to save {employee_name}")
                 return False
                 
         except Exception as e:
-            self.logger.error(f"❌ Error processing employee {employee_data.get('human_name', 'Unknown')}: {e}")
+            self.logger.error(f"[ERROR] Error processing employee {employee_data.get('human_name', 'Unknown')}: {e}")
             return False
     
     async def scrape_employees(self) -> List[Dict[str, Any]]:
@@ -156,7 +156,7 @@ class IndividualDataOrchestrator:
             
             if not employees:
                 self.logger.error("No employees scraped")
-                return []
+                raise Exception("Failed to scrape any employees - this indicates a critical scraping failure")
             
             # Convert EmployeeData objects to dictionaries
             employee_dicts = [emp.to_dict() for emp in employees]
@@ -165,7 +165,8 @@ class IndividualDataOrchestrator:
             
         except Exception as e:
             self.logger.error(f"Error scraping employee data: {e}")
-            return []
+            # Re-raise the exception to propagate the error up the call stack
+            raise
     
     async def run(self) -> bool:
         """Run the complete data collection process for individual employees"""
@@ -176,8 +177,8 @@ class IndividualDataOrchestrator:
             employees = await self.scrape_employees()
             
             if not employees:
-                self.logger.warning("No employees scraped, keeping existing data")
-                return True
+                self.logger.error("No employees scraped, this indicates a critical failure")
+                return False
             
             # Process each employee individually
             processed_count = 0
