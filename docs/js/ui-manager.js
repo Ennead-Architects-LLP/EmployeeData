@@ -46,9 +46,8 @@ function createEmployeeCard(employee) {
         // Use the remote image URL as-is
         imageUrl = employee.image_url;
     } else {
-        // Default fallback - try to construct from name
-        const constructedPath = basePath + `assets/images/${employee.human_name?.replace(/\s+/g, '_')}_profile.jpg`;
-        imageUrl = constructedPath;
+        // Use default profile image when no image is specified
+        imageUrl = fallbackImageUrl;
     }
     const projects = employee.projects || [];
     const projectId = `projects_${employee.human_name?.replace(/\s+/g, '_')}`;
