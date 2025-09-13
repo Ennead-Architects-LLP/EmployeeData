@@ -82,5 +82,7 @@ jobs:
         git add .
         git add 1-website/employee_json_dir.json
         git add 1-website/assets/employee_files_list.json
+        git add employee_json_dir.json
+        git add assets/employee_files_list.json
         git diff --staged --quiet || git commit -m "$$$_Action_Weekly_Scraper_Update: $(date) - Updated employee data and JSON directory files"
         git push
