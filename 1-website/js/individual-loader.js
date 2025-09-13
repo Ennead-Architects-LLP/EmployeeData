@@ -83,24 +83,20 @@ async function discoverEmployeeFiles() {
     console.log('Attempting to discover employee files dynamically...');
     
     try {
-        // Try to get directory listing from the individual_employees folder
-        const response = await fetch('assets/individual_employees/');
+        // Try to load from the generated JSON file
+        const response = await fetch('employee_json_dir.json');
         
         if (response.ok) {
-            const html = await response.text();
-            console.log('Successfully got directory listing');
-            
-            // Parse HTML to extract JSON filenames
-            const files = extractJsonFilesFromHtml(html);
-            console.log(`Found ${files.length} JSON files in directory listing`);
-            return files;
+            const data = await response.json();
+            console.log(`Successfully loaded employee file list with ${data.total_count} files`);
+            return data.employee_files;
         } else {
-            throw new Error('Directory listing not available');
+            throw new Error('Employee JSON directory file not available');
         }
     } catch (error) {
-        console.log('Directory listing failed, trying fallback method...');
+        console.log('Employee JSON directory file failed, trying fallback method...');
         
-        // Fallback: try to load from generated static file list
+        // Fallback: try to load from old static file list
         try {
             const response = await fetch('assets/employee_files_list.json');
             if (response.ok) {
@@ -109,43 +105,13 @@ async function discoverEmployeeFiles() {
                 return files;
             }
         } catch (fallbackError) {
-            console.error('Both directory listing and static list failed');
+            console.error('Both JSON directory file and static list failed');
         }
         
         // Last resort: return empty array
         console.warn('No file discovery method worked, returning empty array');
         return [];
     }
-}
-
-function extractJsonFilesFromHtml(html) {
-    // Parse HTML directory listing to extract .json filenames
-    const files = [];
-    
-    // Look for links to .json files in the HTML
-    const linkRegex = /<a[^>]*href="([^"]*\.json)"[^>]*>/gi;
-    let match;
-    
-    while ((match = linkRegex.exec(html)) !== null) {
-        const filename = match[1];
-        if (filename.endsWith('.json')) {
-            files.push(filename);
-        }
-    }
-    
-    // If no links found, try alternative patterns
-    if (files.length === 0) {
-        // Try to find filenames in other HTML patterns
-        const filenameRegex = /([A-Za-z_]+\.json)/g;
-        while ((match = filenameRegex.exec(html)) !== null) {
-            const filename = match[1];
-            if (filename.endsWith('.json') && !files.includes(filename)) {
-                files.push(filename);
-            }
-        }
-    }
-    
-    return files.sort();
 }
 
 
