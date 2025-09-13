@@ -8,7 +8,7 @@
 .header {
     background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(10px);
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 40px;
     margin-bottom: 40px;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -44,7 +44,7 @@
     background: #00bfff;
     color: #1a1a1a;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 4px;
     font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.3s ease;
@@ -113,6 +113,6 @@
     font-size: 1.1rem;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-radius: 6px;
     margin: 20px 0;
 }

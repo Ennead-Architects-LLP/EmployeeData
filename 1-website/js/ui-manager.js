@@ -37,6 +37,8 @@ function createEmployeeCard(employee) {
     
     // Use local image path if available, otherwise fall back to image_url or default
     let imageUrl;
+    let fallbackImageUrl = basePath + 'assets/images/default_profile.jpg';
+    
     if (employee.image_local_path) {
         // Adjust path for GitHub Pages
         imageUrl = basePath + employee.image_local_path;
@@ -44,8 +46,9 @@ function createEmployeeCard(employee) {
         // Use the remote image URL as-is
         imageUrl = employee.image_url;
     } else {
-        // Default fallback
-        imageUrl = basePath + `assets/images/${employee.human_name?.replace(/\s+/g, '_')}_profile.jpg`;
+        // Default fallback - try to construct from name
+        const constructedPath = basePath + `assets/images/${employee.human_name?.replace(/\s+/g, '_')}_profile.jpg`;
+        imageUrl = constructedPath;
     }
     const projects = employee.projects || [];
     const projectId = `projects_${employee.human_name?.replace(/\s+/g, '_')}`;
@@ -69,7 +72,7 @@ function createEmployeeCard(employee) {
     return `
         <div class="employee-card">
             <div class="employee-image">
-                <img src="${imageUrl}" alt="${employee.human_name}" onerror="this.src='assets/images/default_profile.jpg'">
+                <img src="${imageUrl}" alt="${employee.human_name}" onerror="this.src='${fallbackImageUrl}'">
             </div>
             <div class="employee-info">
                 <h3 class="employee-name">${employee.human_name || 'Unknown'}</h3>

@@ -1,7 +1,7 @@
 /* Simple Search Section Styles */
 .search-section {
     background: rgba(0, 0, 0, 0.40);
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 30px;
     margin-bottom: 40px;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -9,8 +9,9 @@
 }
 
 .search-input-wrapper {
-    max-width: 500px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    position: relative;
 }
 
 .search-input {
@@ -19,7 +20,7 @@
     font-size: 16px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-radius: 6px;
     color: #00bfff;
     outline: none;
     transition: all 0.3s ease;
@@ -40,7 +41,7 @@
     margin-top: 15px;
     padding: 15px;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+    border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: none;
 }
@@ -73,7 +74,7 @@
     background: rgba(0, 191, 255, 0.1);
     color: #00bfff;
     padding: 6px 12px;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 13px;
     cursor: pointer;
     border: 1px solid rgba(0, 191, 255, 0.3);
@@ -90,4 +91,34 @@
     color: #888;
     font-style: italic;
     font-size: 13px;
+}
+
+/* Clear Search Button */
+.clear-search-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #888888;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 1;
+}
+
+.clear-search-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.clear-search-btn.show {
+    opacity: 1;
+    visibility: visible;
 }
