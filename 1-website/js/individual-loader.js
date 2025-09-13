@@ -9,7 +9,13 @@ let filteredEmployees = [];
 // Determine the base path for assets (GitHub Pages vs local)
 function getBasePath() {
     const isGitHubPages = window.location.hostname.includes('github.io');
-    return isGitHubPages ? '/EmployeeData/' : '';
+    if (isGitHubPages) {
+        // Extract repository name from the current path
+        const pathParts = window.location.pathname.split('/').filter(part => part);
+        const repoName = pathParts[0]; // First part after the domain
+        return `/${repoName}/`;
+    }
+    return '';
 }
 
 // Initialize the application
@@ -86,16 +92,21 @@ async function loadIndividualEmployeeData() {
 
 async function discoverEmployeeFiles() {
     console.log('Attempting to discover employee files dynamically...');
+    const basePath = getBasePath();
+    console.log('Base path:', basePath);
     
     try {
         // Try to load from the generated JSON file
-        const response = await fetch(`${getBasePath()}employee_json_dir.json`);
+        const url = `${basePath}employee_json_dir.json`;
+        console.log('Attempting to fetch:', url);
+        const response = await fetch(url);
         
         if (response.ok) {
             const data = await response.json();
             console.log(`Successfully loaded employee file list with ${data.total_count} files`);
             return data.employee_files;
         } else {
+            console.error(`Failed to load employee_json_dir.json: ${response.status} ${response.statusText}`);
             throw new Error('Employee JSON directory file not available');
         }
     } catch (error) {
@@ -103,14 +114,18 @@ async function discoverEmployeeFiles() {
         
         // Fallback: try to load from old static file list
         try {
-            const response = await fetch(`${getBasePath()}assets/employee_files_list.json`);
+            const fallbackUrl = `${basePath}assets/employee_files_list.json`;
+            console.log('Attempting fallback fetch:', fallbackUrl);
+            const response = await fetch(fallbackUrl);
             if (response.ok) {
                 const files = await response.json();
                 console.log(`Loaded ${files.length} files from static list as fallback`);
                 return files;
+            } else {
+                console.error(`Fallback also failed: ${response.status} ${response.statusText}`);
             }
         } catch (fallbackError) {
-            console.error('Both JSON directory file and static list failed');
+            console.error('Both JSON directory file and static list failed:', fallbackError);
         }
         
         // Last resort: return empty array

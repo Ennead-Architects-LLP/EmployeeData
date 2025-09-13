@@ -11,11 +11,12 @@ from pathlib import Path
 import sys
 
 def generate_employee_index():
-    """Generate employee_json_dir.json for the individual_employees directory."""
+    """Generate employee_json_dir.json and employee_files_list.json for the individual_employees directory."""
     # Get the script directory - the script is already in the website directory
     script_dir = Path(__file__).parent
     employees_dir = script_dir / "assets" / "individual_employees"
     json_file = script_dir / "employee_json_dir.json"
+    fallback_file = script_dir / "assets" / "employee_files_list.json"
     
     if not employees_dir.exists():
         print(f"Error: Directory {employees_dir} does not exist")
@@ -29,7 +30,7 @@ def generate_employee_index():
     # Sort the files for consistent ordering
     json_files.sort()
     
-    # Generate JSON content
+    # Generate JSON content for main file
     json_content = {
         "employee_files": json_files,
         "total_count": len(json_files),
@@ -37,11 +38,16 @@ def generate_employee_index():
         "description": "List of all employee JSON files in the individual_employees directory"
     }
     
-    # Write the JSON file
+    # Write the main JSON file
     with open(json_file, 'w', encoding='utf-8') as f:
         json.dump(json_content, f, indent=2)
     
+    # Write the fallback JSON file (simple array format)
+    with open(fallback_file, 'w', encoding='utf-8') as f:
+        json.dump(json_files, f, indent=2)
+    
     print(f"Generated employee_json_dir.json with {len(json_files)} employee files")
+    print(f"Generated employee_files_list.json fallback with {len(json_files)} employee files")
     return True
 
 if __name__ == "__main__":
