@@ -50,17 +50,5 @@
   "linkedin_url": null,
   "website_url": null,
   "scraped_at": "2025-09-12T15:39:03.687359",
-  "profile_id": "adriana-burton",
-  "computer_info": {
-    "computername": "TEST-COMPUTER",
-    "os": "Windows 11 Test",
-    "manufacturer": "Test Manufacturer",
-    "model": "Test Model",
-    "cpu": "Test CPU",
-    "gpu_name": "Test GPU",
-    "gpu_driver": "Test Driver",
-    "memory_bytes": 8589934592,
-    "serial_number": "TEST123456",
-    "last_updated": "2025-09-12T17:05:21.494107"
-  }
+  "profile_id": "adriana-burton"
 }

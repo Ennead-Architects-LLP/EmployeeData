@@ -2,7 +2,7 @@
 .footer {
     margin-top: 50px;
     text-align: center;
-    color: #b0b0b0;
+    color: #888888;
     font-size: 0.9rem;
 }
 
@@ -12,7 +12,7 @@
 
 .data-sources {
     font-size: 0.8rem;
-    color: #888;
+    color: #666666;
     font-style: italic;
     margin-top: 10px;
 }

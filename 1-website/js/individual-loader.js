@@ -4,7 +4,7 @@
 // Global variables
 let allEmployees = [];
 let filteredEmployees = [];
-let computerData = [];
+// Computer data is now embedded in individual employee data
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -16,8 +16,7 @@ async function initializeApp() {
         // Load employee data from individual files
         await loadIndividualEmployeeData();
         
-        // Load computer data
-        await loadComputerData();
+        // Computer data is now loaded with individual employee data
         
         // Initialize UI (handled by ui-manager.js)
         if (typeof initializeUI === 'function') {
@@ -115,97 +114,14 @@ async function discoverEmployeeFiles() {
 }
 
 
-async function loadComputerData() {
-    try {
-        const response = await fetch('assets/computer_data/all_computers.json');
-        if (!response.ok) {
-            throw new Error('Computer data not available');
-        }
-        computerData = await response.json();
-        displayComputerData();
-    } catch (error) {
-        console.log('No computer data available yet');
-        // Computer data is now integrated into individual employee cards, so no separate container needed
-    }
-}
+// Computer data is now loaded directly from individual employee files
+// No separate computer data loading needed
 
 // UI functions are handled by ui-manager.js and filters.js
 
 // Search, filter, and rendering functions are handled by other modules
 
-function displayComputerData() {
-    const container = document.getElementById('computerDataContainer');
-    
-    if (!computerData || computerData.length === 0) {
-        container.innerHTML = '<div class="no-data-message">No computer data available yet.</div>';
-        return;
-    }
-
-    // Sort by timestamp (newest first)
-    const sortedComputers = computerData.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-
-    let html = `
-        <div class="computer-stats">
-            <div class="stat-item">
-                <span class="stat-number">${computerData.length}</span>
-                <span class="stat-label">Total Submissions</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">${new Set(computerData.map(c => c.computer_name)).size}</span>
-                <span class="stat-label">Unique Computers</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">${new Set(computerData.map(c => c.user)).size}</span>
-                <span class="stat-label">Unique Users</span>
-            </div>
-        </div>
-        <div class="computer-list">
-    `;
-
-    // Show last 10 submissions
-    sortedComputers.slice(0, 10).forEach(computer => {
-        const data = computer.data;
-        const memoryGB = data['Total Physical Memory'] ? (data['Total Physical Memory'] / (1024**3)).toFixed(1) : 'Unknown';
-        
-        html += `
-            <div class="computer-card">
-                <div class="computer-header">
-                    <h3>${data.Computername || 'Unknown'}</h3>
-                    <span class="timestamp">${new Date(computer.timestamp).toLocaleString()}</span>
-                </div>
-                <div class="computer-details">
-                    <div class="detail-row">
-                        <span class="label">User:</span>
-                        <span class="value">${data.Name || 'Unknown'} (${data.Username || 'Unknown'})</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">OS:</span>
-                        <span class="value">${data.OS || 'Unknown'}</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">Hardware:</span>
-                        <span class="value">${data.Manufacturer || 'Unknown'} ${data.Model || 'Unknown'}</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">CPU:</span>
-                        <span class="value">${data.CPU || 'Unknown'}</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">GPU:</span>
-                        <span class="value">${data['GPU Name'] || 'Unknown'}</span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">Memory:</span>
-                        <span class="value">${memoryGB} GB</span>
-                    </div>
-                </div>
-            </div>
-        `;
-    });
-
-    html += '</div>';
-    container.innerHTML = html;
-}
+// Computer data display is now handled within individual employee cards
 
 // Utility functions
 function setSearchTerm(term) {
