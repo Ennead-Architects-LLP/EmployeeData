@@ -11,6 +11,7 @@ from playwright.async_api import async_playwright, Page, Browser, BrowserContext
 from urllib.parse import urljoin, urlparse
 import json
 from pathlib import Path
+from datetime import datetime
 
 from .models import EmployeeData
 from ..services.auth import AutoLogin
@@ -63,7 +64,7 @@ class UnifiedEmployeeScraper:
         
         # Selectors for comprehensive data extraction
         self.selectors = {
-            'employee_cards': '.employee-card, .profile-card, [data-employee]',
+            'employee_cards': '.employee-card, .profile-card, [data-employee], .directory_employees .content, .directory_employees [class*="card"], .directory_employees [class*="item"]',
             'profile_image': 'img.profile-image, .employee-photo img, .avatar img',
             'employee_name': '.employee-name, .profile-name, h3, h4',
             'employee_title': '.employee-title, .profile-title, .position',
@@ -264,8 +265,20 @@ class UnifiedEmployeeScraper:
     async def _get_employee_links(self) -> List[tuple]:
         """Get all employee profile links from the directory page"""
         try:
+            # Wait for page to fully load (SPA content)
+            self.logger.info("[INFO] Waiting for dynamic content to load...")
+            await self.page.wait_for_load_state("networkidle", timeout=30000)
+            await asyncio.sleep(3)  # Additional wait for dynamic content
+            
             # Wait for employee cards to load
-            await self.page.wait_for_selector(self.selectors['employee_cards'], timeout=15000)
+            try:
+                await self.page.wait_for_selector(self.selectors['employee_cards'], timeout=30000)
+            except Exception as e:
+                # If selector fails, capture DOM for debugging
+                self.logger.error(f"[ERROR] Selector failed: {e}")
+                if hasattr(self, 'config') and self.config.DEBUG_MODE:
+                    await self._capture_debug_info("selector_failed")
+                raise
             
             # Extract employee links
             employee_links = await self.page.evaluate(f"""
@@ -535,6 +548,124 @@ class UnifiedEmployeeScraper:
                 return value
         
         return location.title()
+    
+    async def _capture_debug_info(self, reason: str):
+        """Capture debug information when selectors fail"""
+        try:
+            # Create debug directory
+            debug_dir = Path(__file__).parent.parent.parent.parent / "debug" / "dom_captures"
+            debug_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Capture current page content
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            html_file = debug_dir / f"debug_{reason}_{timestamp}.html"
+            
+            html_content = await self.page.content()
+            with open(html_file, 'w', encoding='utf-8') as f:
+                f.write(html_content)
+            
+            self.logger.info(f"[DEBUG] Captured DOM for {reason} to {html_file}")
+            
+            # Also capture a screenshot
+            screenshot_file = debug_dir / f"debug_{reason}_{timestamp}.png"
+            await self.page.screenshot(path=str(screenshot_file))
+            self.logger.info(f"[DEBUG] Captured screenshot to {screenshot_file}")
+            
+            # Analyze what's actually on the page
+            await self._analyze_page_structure(debug_dir, timestamp)
+            
+        except Exception as e:
+            self.logger.error(f"[ERROR] Failed to capture debug info: {e}")
+    
+    async def _analyze_page_structure(self, debug_dir: Path, timestamp: str):
+        """Analyze the actual page structure to find correct selectors"""
+        try:
+            # Get all elements with common patterns
+            analysis = await self.page.evaluate("""
+                () => {
+                    const results = {
+                        allElements: [],
+                        links: [],
+                        cards: [],
+                        containers: [],
+                        textContent: []
+                    };
+                    
+                    // Find all elements with common patterns
+                    const allElements = document.querySelectorAll('*');
+                    allElements.forEach((el, index) => {
+                        if (index < 100) { // Limit to first 100 elements
+                            const tagName = el.tagName.toLowerCase();
+                            const className = el.className || '';
+                            const id = el.id || '';
+                            const href = el.href || '';
+                            const text = el.textContent?.trim().substring(0, 50) || '';
+                            
+                            results.allElements.push({
+                                tag: tagName,
+                                class: className,
+                                id: id,
+                                href: href,
+                                text: text
+                            });
+                            
+                            // Look for links
+                            if (tagName === 'a' && href) {
+                                results.links.push({
+                                    href: href,
+                                    text: text,
+                                    class: className
+                                });
+                            }
+                            
+                            // Look for card-like elements (fix className check)
+                            if (typeof className === 'string' && (className.includes('card') || className.includes('item') || 
+                                className.includes('employee') || className.includes('person'))) {
+                                results.cards.push({
+                                    tag: tagName,
+                                    class: className,
+                                    id: id,
+                                    text: text
+                                });
+                            }
+                            
+                            // Look for container elements
+                            if (typeof className === 'string' && (className.includes('container') || className.includes('wrapper') ||
+                                className.includes('content') || className.includes('main'))) {
+                                results.containers.push({
+                                    tag: tagName,
+                                    class: className,
+                                    id: id,
+                                    text: text
+                                });
+                            }
+                        }
+                    });
+                    
+                    return results;
+                }
+            """)
+            
+            # Save analysis
+            analysis_file = debug_dir / f"page_analysis_{timestamp}.json"
+            with open(analysis_file, 'w', encoding='utf-8') as f:
+                json.dump(analysis, f, indent=2)
+            
+            self.logger.info(f"[DEBUG] Page analysis saved to {analysis_file}")
+            
+            # Log key findings
+            self.logger.info(f"[DEBUG] Found {len(analysis['links'])} links")
+            self.logger.info(f"[DEBUG] Found {len(analysis['cards'])} card-like elements")
+            self.logger.info(f"[DEBUG] Found {len(analysis['containers'])} container elements")
+            
+            # Show sample links
+            if analysis['links']:
+                self.logger.info("[DEBUG] Sample links found:")
+                for link in analysis['links'][:5]:
+                    self.logger.info(f"  - {link['href']} ({link['text']})")
+            
+        except Exception as e:
+            self.logger.error(f"[ERROR] Failed to analyze page structure: {e}")
     
     def get_scraper_info(self) -> Dict[str, Any]:
         """Get information about the scraper configuration"""

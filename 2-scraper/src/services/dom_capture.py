@@ -9,6 +9,7 @@ import json
 import os
 from datetime import datetime
 from playwright.async_api import async_playwright
+from .auth import AutoLogin
 
 
 class DOMCapture:
@@ -30,7 +31,31 @@ class DOMCapture:
         await self.page.set_viewport_size({"width": 1920, "height": 1080})
         
         print("🌐 Navigating to employee directory...")
-        await self.page.goto("https://ei.ennead.com/employee-directory", wait_until="networkidle")
+        await self.page.goto("https://ei.ennead.com/employees/1/all-employees", wait_until="networkidle")
+        
+        # Check if authentication is required and use AutoLogin
+        current_url = self.page.url
+        page_title = await self.page.title()
+        
+        login_indicators = [
+            "sign in", "login", "authentication", "microsoft", "oauth",
+            "password", "username", "account"
+        ]
+        
+        is_login_page = any(indicator in page_title.lower() or indicator in current_url.lower() 
+                          for indicator in login_indicators)
+        
+        if is_login_page:
+            print("🔐 Authentication required - using AutoLogin...")
+            try:
+                auth = AutoLogin(self.page)
+                await auth.login()
+                print("✅ AutoLogin successful!")
+            except Exception as e:
+                print(f"❌ AutoLogin failed: {e}")
+                print("   Falling back to manual login...")
+                print("   Press Enter after logging in to continue...")
+                input()
         
     async def capture_dom_structure(self):
         """Capture DOM structure and analyze selectors"""

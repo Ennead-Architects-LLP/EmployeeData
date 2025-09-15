@@ -34,7 +34,7 @@ python weekly_scraper.py
 ### 3. AboutMe App (User Computer)
 ```bash
 cd 3-aboutme
-pip install requests psutil wmi
+pip install -r requirements_about_me.txt
 python about_me.py --send-to-github --github-token YOUR_TOKEN
 ```
 
@@ -112,7 +112,7 @@ This component handles weekly data collection from the Ennead employee directory
 ```
 2-scraper/
 ├── weekly_scraper.py         # Main weekly scraper script
-├── requirements.txt          # Dependencies
+├── requirements_scraper.txt  # Scraper dependencies
 ├── debug/                    # Debug output directory
 │   ├── dom_captures/         # DOM capture files
 │   ├── screenshots/          # Debug screenshots
