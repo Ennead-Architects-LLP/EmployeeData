@@ -46,5 +46,19 @@
   "linkedin_url": null,
   "website_url": null,
   "scraped_at": "2025-09-12T15:08:49.631127",
-  "profile_id": "mia-tsiamis"
+  "profile_id": "mia-tsiamis",
+  "computer_info": [
+    {
+      "computername": "EANY-BBMY233",
+      "os": "Windows 11",
+      "manufacturer": "Dell Inc.",
+      "model": "Precision 5820 Tower",
+      "cpu": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+      "gpu_name": "NVIDIA RTX A4000",
+      "gpu_driver": "32.0.15.7342",
+      "memory_bytes": 34027282432,
+      "serial_number": "BBMY233",
+      "last_updated": "2025-09-15T18:03:05.633435"
+    }
+  ]
 }

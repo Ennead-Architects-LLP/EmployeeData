@@ -1,0 +1,15 @@
+{
+  "computer_name": "EANY-BBMY233",
+  "human_name": "Mia Tsiamis",
+  "username": "mia.tsiamis",
+  "cpu": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+  "os": "Windows 11",
+  "manufacturer": "Dell Inc.",
+  "model": "Precision 5820 Tower",
+  "gpu_name": "NVIDIA RTX A4000",
+  "gpu_driver": "32.0.15.7342",
+  "gpu_memory": -1048576,
+  "memory_bytes": 34027282432,
+  "serial_number": "BBMY233",
+  "server_timestamp": "2025-09-15T18:03:05.633727"
+}
