@@ -19,8 +19,8 @@ class IndividualDataOrchestrator:
         self.config = config or ScraperConfig.from_env()
         self.logger = logging.getLogger(__name__)
         
-        # Set output paths
-        self.output_path = Path("../docs/assets")
+        # Set output paths - use absolute path to avoid issues
+        self.output_path = Path(__file__).parent.parent.parent.parent / "docs" / "assets"
         self.output_path.mkdir(parents=True, exist_ok=True)
         
         # Individual employee files directory
@@ -93,8 +93,7 @@ class IndividualDataOrchestrator:
         
         try:
             image_downloader = ImageDownloader(
-                output_dir=str(self.images_dir),
-                timeout=self.config.TIMEOUT
+                download_dir=str(self.images_dir)
             )
             
             name = employee_data.get('human_name', 'unknown').replace(' ', '_')
@@ -108,9 +107,11 @@ class IndividualDataOrchestrator:
             if success:
                 employee_data['image_local_path'] = f"assets/images/{local_path}"
                 self.logger.info(f"Downloaded image for {employee_data.get('human_name', 'Unknown')}")
+            else:
+                self.logger.warning(f"Failed to download image for {employee_data.get('human_name', 'Unknown')}")
             
         except Exception as e:
-            self.logger.warning(f"Error downloading image for {employee_data.get('human_name', 'Unknown')}: {e}")
+            self.logger.error(f"Error downloading image for {employee_data.get('human_name', 'Unknown')}: {e}")
         
         return employee_data
     
@@ -200,6 +201,12 @@ class IndividualDataOrchestrator:
                     failed_count += 1
             
             self.logger.info(f"Processing completed: {processed_count} successful, {failed_count} failed")
+            
+            # Validate that we have both JSON and image artifacts
+            json_files = list(self.individual_employees_dir.glob("*.json"))
+            image_files = list(self.images_dir.glob("*.jpg"))
+            
+            self.logger.info(f"Artifact validation: {len(json_files)} JSON files, {len(image_files)} images")
             
             if processed_count > 0:
                 self.logger.info("Individual employee data collection completed successfully")

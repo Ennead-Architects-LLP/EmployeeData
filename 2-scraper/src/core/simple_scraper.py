@@ -95,7 +95,7 @@ class SimpleEmployeeScraper:
                 '--disable-popup-blocking',
                 '--disable-extensions',
                 '--disable-plugins',
-                '--disable-images',  # Disable images for faster loading
+                # '--disable-images',  # Keep images enabled for profile photos
                 '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             ]
             
