@@ -3,7 +3,7 @@ import asyncio
 from typing import Optional
 
 from ..config.settings import ScraperConfig
-from .complete_scraper import CompleteScraper
+from .unified_scraper import UnifiedEmployeeScraper
 from ..services.voice_announcer import voice_announcer
 
 class Orchestrator:
@@ -21,12 +21,15 @@ class Orchestrator:
         # Start timing for voice announcement
         voice_announcer.start_timing()
 
-        scraper = CompleteScraper(self.config)
+        scraper = UnifiedEmployeeScraper(
+            mode=UnifiedEmployeeScraper.MODE_COMPLETE,
+            config=self.config
+        )
 
         try:
             # Step 1: Scrape employees (sequential only for stability)
             self.logger.info("[STEP 1] Scraping employees with incremental saving...")
-            employees = await scraper.scrape_all_employees_incremental()
+            employees = await scraper.scrape_all_employees()
             if not employees:
                 self.logger.error("[ERROR] No employees scraped. Aborting.")
                 voice_announcer.announce_error("No employees were scraped")

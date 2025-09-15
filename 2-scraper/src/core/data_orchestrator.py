@@ -10,7 +10,7 @@ from pathlib import Path
 import json
 
 from ..config.settings import ScraperConfig
-from .simple_scraper import SimpleEmployeeScraper
+from .unified_scraper import UnifiedEmployeeScraper
 from ..services.image_downloader import ImageDownloader
 
 class DataOrchestrator:
@@ -131,11 +131,13 @@ class DataOrchestrator:
         self.logger.info("Starting sequential employee data scraping...")
         
         try:
-            async with SimpleEmployeeScraper(
+            async with UnifiedEmployeeScraper(
+                mode=UnifiedEmployeeScraper.MODE_SIMPLE,
                 base_url=self.config.BASE_URL,
                 download_images=False,  # We'll handle images separately
                 headless=self.config.HEADLESS == "true",
-                timeout=self.config.TIMEOUT
+                timeout=self.config.TIMEOUT,
+                config=self.config
             ) as scraper:
                 employees = await scraper.scrape_all_employees()
             

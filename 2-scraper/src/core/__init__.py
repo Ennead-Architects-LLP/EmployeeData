@@ -16,7 +16,7 @@ def get_models():
     return EmployeeData
 
 def get_scraper():
-    from .simple_scraper import SimpleEmployeeScraper as EmployeeScraper
+    from .unified_scraper import UnifiedEmployeeScraper as EmployeeScraper
     return EmployeeScraper
 
 def get_orchestrator():
