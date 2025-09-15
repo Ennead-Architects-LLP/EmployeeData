@@ -19,13 +19,9 @@ def get_scraper():
     from .unified_scraper import UnifiedEmployeeScraper as EmployeeScraper
     return EmployeeScraper
 
-def get_development_orchestrator():
-    from .orchestrator import DevelopmentOrchestrator
-    return DevelopmentOrchestrator
-
-def get_production_orchestrator():
-    from .individual_data_orchestrator import ProductionOrchestrator
-    return ProductionOrchestrator
+def get_orchestrator():
+    from .orchestrator import ScraperOrchestrator
+    return ScraperOrchestrator
 
 def get_data_merger():
     from .data_merger import DataMerger

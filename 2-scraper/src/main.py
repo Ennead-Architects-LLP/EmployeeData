@@ -39,7 +39,7 @@ import signal
 from contextlib import asynccontextmanager
 
 from .config.settings import ScraperConfig
-from .core.orchestrator import DevelopmentOrchestrator
+from .core.orchestrator import ScraperOrchestrator
 from .config.credentials import show_credentials_gui
 
 
@@ -156,15 +156,15 @@ class TimeoutManager:
         self.logger.info("[STOP] All timers cancelled")
 
 
-async def run_without_timeout(orchestrator: DevelopmentOrchestrator, config: ScraperConfig):
+async def run_without_timeout(orchestrator: ScraperOrchestrator, config: ScraperConfig):
     """Run orchestrator without timeout protection."""
     try:
         # Step 1: Setup directories
         config.setup_directories()
         
         # Step 2: Run orchestrator
-        html_path = await orchestrator.run()
-        return html_path
+        success = await orchestrator.run()
+        return success
             
     except Exception as e:
         print(f"Operation failed: {e}")
@@ -283,14 +283,14 @@ async def main():
     try:
         # Use only sequential processing for stability
         # Delegate to orchestrator without timeout protection
-        orchestrator = DevelopmentOrchestrator(config, use_parallel=False, max_workers=1)
-        html_path = await run_without_timeout(orchestrator, config)
+        orchestrator = ScraperOrchestrator(config, use_parallel=False, max_workers=1)
+        success = await run_without_timeout(orchestrator, config)
         
-        if not html_path:
+        if not success:
             print("❌ Scraping failed or timed out.")
             return
         
-        print(f"✅ HTML report generated: {html_path}")
+        print(f"✅ Scraping completed successfully!")
         
         if config.DEBUG_MODE:
             debug_dir = config.get_debug_output_path()

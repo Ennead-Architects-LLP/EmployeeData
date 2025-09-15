@@ -10,7 +10,7 @@ from pathlib import Path
 # Add src to path
 sys.path.append(str(Path(__file__).parent.parent))
 
-from src.core.individual_data_orchestrator import ProductionOrchestrator
+from src.core.orchestrator import ScraperOrchestrator
 from src.config.settings import ScraperConfig
 
 async def test_scraper():
@@ -26,25 +26,16 @@ async def test_scraper():
         config.TIMEOUT = 10000
         
         # Create orchestrator
-        orchestrator = ProductionOrchestrator(config)
+        orchestrator = ScraperOrchestrator(config)
         
-        print("🕷️  Testing employee scraping...")
-        new_employees = await orchestrator.scrape_employees()
-        print(f"✅ Scraped {len(new_employees)} employees")
-        
-        if new_employees:
-            print("🔄 Testing individual employee processing...")
-            processed_count = 0
-            for employee in new_employees[:3]:  # Test with first 3 employees
-                if await orchestrator.process_employee(employee):
-                    processed_count += 1
-                    print(f"✅ Processed {employee.get('human_name', 'Unknown')}")
-                else:
-                    print(f"❌ Failed to process {employee.get('human_name', 'Unknown')}")
-            
-            print(f"✅ Successfully processed {processed_count} employees")
+        print("🕷️  Testing orchestrator...")
+        success = await orchestrator.run()
+        if success:
+            print(f"✅ Orchestrator completed successfully")
         else:
-            print("⚠️  No new employees scraped")
+            print(f"❌ Orchestrator failed")
+        
+        # Test completed - orchestrator handles everything internally
         
         print("🎉 Scraper test completed successfully!")
         return True

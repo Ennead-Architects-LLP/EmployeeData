@@ -1,21 +1,15 @@
 #!/usr/bin/env python3
 """
 Weekly Employee Data Scraper
-Focuses only on data collection and JSON updates, no HTML generation
+Wrapper around main.py for GitHub Actions
 Runs weekly on Tuesday at 3:14 AM EST
 """
 
-import asyncio
+import subprocess
 import sys
 import logging
 from datetime import datetime
 from pathlib import Path
-
-# Add src to path
-sys.path.append(str(Path(__file__).parent / 'src'))
-
-from src.core.individual_data_orchestrator import ProductionOrchestrator
-from src.config.settings import ScraperConfig
 
 def setup_logging():
     """Setup logging for the weekly scraper"""
@@ -28,8 +22,8 @@ def setup_logging():
         ]
     )
 
-async def main():
-    """Main function for weekly scraper"""
+def main():
+    """Main function for weekly scraper - just calls main.py"""
     print("🚀 Weekly Employee Data Scraper")
     print("Schedule: Tuesday at 3:14 AM EST")
     print("Focus: Data collection and JSON updates only")
@@ -40,28 +34,27 @@ async def main():
     logger = logging.getLogger(__name__)
     
     try:
-        # Configure scraper
-        config = ScraperConfig.from_env()
-        config.HEADLESS = "true"
-        config.DOWNLOAD_IMAGES = True
-        config.TIMEOUT = 15000
-        
-        # Create orchestrator
-        orchestrator = ProductionOrchestrator(config)
-        
-        # Run data collection
+        # Call main.py with appropriate flags for GitHub Actions
         logger.info(f"Starting weekly scraper at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         logger.info("Credential priority: GitHub secrets -> local credentials.json -> GUI setup")
-        success = await orchestrator.run()
         
-        if success:
+        # Run main.py with headless mode and image downloading
+        result = subprocess.run([
+            sys.executable, "-m", "src.main",
+            "--headless=true",
+            "--timeout=15000"
+        ], cwd=Path(__file__).parent, capture_output=True, text=True)
+        
+        if result.returncode == 0:
             logger.info("Weekly scraper completed successfully!")
             print("[SUCCESS] Weekly scraper completed successfully!")
+            print(result.stdout)
             return 0
         else:
             logger.error("Weekly scraper failed!")
             print("[ERROR] Weekly scraper failed!")
-            print("[ERROR] Check the logs above for detailed error information")
+            print("[ERROR] STDOUT:", result.stdout)
+            print("[ERROR] STDERR:", result.stderr)
             return 1
             
     except Exception as e:
@@ -70,4 +63,4 @@ async def main():
         return 1
 
 if __name__ == "__main__":
-    sys.exit(asyncio.run(main()))
+    sys.exit(main())

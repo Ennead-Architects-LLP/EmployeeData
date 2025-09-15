@@ -10,7 +10,7 @@ from pathlib import Path
 # Add src to path
 sys.path.append(str(Path(__file__).parent / 'src'))
 
-from src.core.individual_data_orchestrator import ProductionOrchestrator
+from src.core.orchestrator import ScraperOrchestrator
 from src.config.settings import ScraperConfig
 
 def test_paths():
@@ -22,11 +22,12 @@ def test_paths():
     try:
         # Create orchestrator
         config = ScraperConfig.from_env()
-        orchestrator = ProductionOrchestrator(config)
+        orchestrator = ScraperOrchestrator(config)
         
-        print(f"✅ Output path: {orchestrator.output_path}")
-        print(f"✅ Individual employees dir: {orchestrator.individual_employees_dir}")
-        print(f"✅ Images dir: {orchestrator.images_dir}")
+        # Test that the orchestrator can be created
+        print(f"✅ Orchestrator created successfully")
+        print(f"✅ Configuration: {orchestrator.config.BASE_URL}")
+        print(f"✅ Headless mode: {orchestrator.config.HEADLESS}")
         
         # Check if paths are relative to project root
         project_root = Path(__file__).parent.parent
