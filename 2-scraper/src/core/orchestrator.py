@@ -22,7 +22,6 @@ class Orchestrator:
         voice_announcer.start_timing()
 
         scraper = UnifiedEmployeeScraper(
-            mode=UnifiedEmployeeScraper.MODE_COMPLETE,
             config=self.config
         )
 

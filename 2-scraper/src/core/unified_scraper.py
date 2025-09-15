@@ -30,7 +30,7 @@ class UnifiedEmployeeScraper:
     MODE_COMPLETE = "complete"
     
     def __init__(self, 
-                 mode: str = MODE_SIMPLE,
+                 mode: str = MODE_COMPLETE,
                  base_url: str = "https://ei.ennead.com/employees/1/all-employees",
                  download_images: bool = True,
                  headless: bool = True,
@@ -99,7 +99,7 @@ class UnifiedEmployeeScraper:
             self.logger.info("Starting browser...")
             playwright = await async_playwright().start()
             
-            # Browser arguments based on mode
+            # Browser arguments for comprehensive scraping
             browser_args = [
                 '--no-sandbox',
                 '--disable-dev-shm-usage',
@@ -117,9 +117,8 @@ class UnifiedEmployeeScraper:
                 '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             ]
             
-            # In simple mode, disable images for faster loading
-            if self.mode == self.MODE_SIMPLE:
-                browser_args.append('--disable-images')
+            # Always enable images for comprehensive data extraction
+            # browser_args.append('--disable-images')  # Removed to enable image loading
             
             self.browser = await playwright.chromium.launch(
                 headless=self.headless,
@@ -211,11 +210,8 @@ class UnifiedEmployeeScraper:
                 try:
                     self.logger.info(f"Scraping employee {i}/{len(employee_links)}: {name}")
                     
-                    # Scrape employee data based on mode
-                    if self.mode == self.MODE_SIMPLE:
-                        employee = await self._scrape_employee_simple(profile_url, name, image_url)
-                    else:  # COMPLETE mode
-                        employee = await self._scrape_employee_complete(profile_url, name, image_url)
+                    # Scrape employee data (always use complete mode for comprehensive data)
+                    employee = await self._scrape_employee_complete(profile_url, name, image_url)
                     
                     if employee:
                         self.employees.append(employee)
@@ -385,12 +381,8 @@ class UnifiedEmployeeScraper:
             if not employee:
                 return None
             
-            # Add advanced data extraction for complete mode
-            # This is where you would add project extraction, education, etc.
-            # For now, we'll just add some additional fields
-            
-            # Extract additional contact info
-            additional_data = await self.page.evaluate("""
+            # Extract comprehensive data
+            comprehensive_data = await self.page.evaluate("""
                 () => {
                     const data = {};
                     
@@ -400,19 +392,122 @@ class UnifiedEmployeeScraper:
                     data.linkedin_url = document.querySelector('a[href*="linkedin.com"]')?.href || '';
                     data.website_url = document.querySelector('a[href*="http"]:not([href*="ennead.com"])')?.href || '';
                     
+                    // Years with firm
+                    const yearsText = document.querySelector('.years-with-firm, .tenure, .experience')?.textContent || '';
+                    const yearsMatch = yearsText.match(/(\d+)/);
+                    data.years_with_firm = yearsMatch ? parseInt(yearsMatch[1]) : null;
+                    
+                    // Seating assignment
+                    data.seat_assignment = document.querySelector('.seat, .desk, .location')?.textContent?.trim() || '';
+                    
+                    // Computer information
+                    data.computer = document.querySelector('.computer, .machine, .device')?.textContent?.trim() || '';
+                    
+                    // Professional memberships
+                    data.memberships = [];
+                    const membershipElements = document.querySelectorAll('.membership, .association, .organization');
+                    membershipElements.forEach(el => {
+                        const text = el.textContent?.trim();
+                        if (text) data.memberships.push(text);
+                    });
+                    
+                    // Education
+                    data.education = [];
+                    const educationElements = document.querySelectorAll('.education-item, .degree, .school');
+                    educationElements.forEach(el => {
+                        const degree = el.querySelector('.degree, .title')?.textContent?.trim() || '';
+                        const school = el.querySelector('.school, .institution')?.textContent?.trim() || '';
+                        const year = el.querySelector('.year, .date')?.textContent?.trim() || '';
+                        if (degree || school) {
+                            data.education.push({
+                                'degree': degree,
+                                'school': school,
+                                'year': year
+                            });
+                        }
+                    });
+                    
+                    // Licenses and registrations
+                    data.licenses = [];
+                    const licenseElements = document.querySelectorAll('.license, .certification, .registration');
+                    licenseElements.forEach(el => {
+                        const name = el.querySelector('.name, .title')?.textContent?.trim() || '';
+                        const number = el.querySelector('.number, .id')?.textContent?.trim() || '';
+                        const state = el.querySelector('.state, .jurisdiction')?.textContent?.trim() || '';
+                        const expiry = el.querySelector('.expiry, .expires')?.textContent?.trim() || '';
+                        if (name) {
+                            data.licenses.push({
+                                'name': name,
+                                'number': number,
+                                'state': state,
+                                'expiry': expiry
+                            });
+                        }
+                    });
+                    
+                    // Projects
+                    data.projects = [];
+                    const projectElements = document.querySelectorAll('.project, .work-item, .portfolio-item');
+                    projectElements.forEach(el => {
+                        const name = el.querySelector('.name, .title')?.textContent?.trim() || '';
+                        const description = el.querySelector('.description, .summary')?.textContent?.trim() || '';
+                        const role = el.querySelector('.role, .position')?.textContent?.trim() || '';
+                        const year = el.querySelector('.year, .date')?.textContent?.trim() || '';
+                        if (name) {
+                            data.projects.push({
+                                'name': name,
+                                'description': description,
+                                'role': role,
+                                'year': year
+                            });
+                        }
+                    });
+                    
+                    // Recent posts/activity
+                    data.recent_posts = [];
+                    const postElements = document.querySelectorAll('.post, .activity, .update');
+                    postElements.forEach(el => {
+                        const title = el.querySelector('.title, .subject')?.textContent?.trim() || '';
+                        const content = el.querySelector('.content, .text')?.textContent?.trim() || '';
+                        const date = el.querySelector('.date, .timestamp')?.textContent?.trim() || '';
+                        if (title || content) {
+                            data.recent_posts.push({
+                                'title': title,
+                                'content': content,
+                                'date': date
+                            });
+                        }
+                    });
+                    
                     return data;
                 }
             """)
             
-            # Update employee with additional data
-            if additional_data.get('mobile'):
-                employee.mobile = additional_data['mobile']
-            if additional_data.get('teams_url'):
-                employee.teams_url = additional_data['teams_url']
-            if additional_data.get('linkedin_url'):
-                employee.linkedin_url = additional_data['linkedin_url']
-            if additional_data.get('website_url'):
-                employee.website_url = additional_data['website_url']
+            # Update employee with comprehensive data
+            if comprehensive_data.get('mobile'):
+                employee.mobile = comprehensive_data['mobile']
+            if comprehensive_data.get('teams_url'):
+                employee.teams_url = comprehensive_data['teams_url']
+            if comprehensive_data.get('linkedin_url'):
+                employee.linkedin_url = comprehensive_data['linkedin_url']
+            if comprehensive_data.get('website_url'):
+                employee.website_url = comprehensive_data['website_url']
+            if comprehensive_data.get('years_with_firm'):
+                employee.years_with_firm = comprehensive_data['years_with_firm']
+            if comprehensive_data.get('seat_assignment'):
+                employee.seat_assignment = comprehensive_data['seat_assignment']
+            if comprehensive_data.get('computer'):
+                employee.computer = comprehensive_data['computer']
+            if comprehensive_data.get('memberships'):
+                employee.memberships = comprehensive_data['memberships']
+            if comprehensive_data.get('education'):
+                employee.education = comprehensive_data['education']
+            if comprehensive_data.get('licenses'):
+                employee.licenses = comprehensive_data['licenses']
+            if comprehensive_data.get('projects'):
+                employee.projects = comprehensive_data['projects']
+            if comprehensive_data.get('recent_posts'):
+                employee.recent_posts = comprehensive_data['recent_posts']
             
             return employee
             

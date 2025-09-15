@@ -162,7 +162,6 @@ class IndividualDataOrchestrator:
         
         try:
             async with UnifiedEmployeeScraper(
-                mode=UnifiedEmployeeScraper.MODE_SIMPLE,
                 base_url=self.config.BASE_URL,
                 download_images=False,  # We'll handle images separately
                 headless=self.config.HEADLESS == "true",
