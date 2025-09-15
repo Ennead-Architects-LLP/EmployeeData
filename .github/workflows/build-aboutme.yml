@@ -2,9 +2,14 @@ name: Build AboutMe App
 
 on:
   push:
+    branches:
+      - main
     paths:
-      - '3-aboutme/about_me.py'
-      - '3-aboutme/requirements.txt'
+      - '3-aboutme/**'
+      - '.github/workflows/build-aboutme.yml'
+  pull_request:
+    paths:
+      - '3-aboutme/**'
       - '.github/workflows/build-aboutme.yml'
   workflow_dispatch:
 
