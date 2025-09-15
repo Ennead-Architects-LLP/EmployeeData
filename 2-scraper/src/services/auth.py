@@ -27,6 +27,34 @@ class AutoLogin:
         self.logger = logging.getLogger(__name__)
         self.credentials: Optional[Dict[str, str]] = None
     
+    def create_credentials_file(self, email: str, password: str) -> bool:
+        """
+        Create a credentials file with the provided email and password.
+        
+        Args:
+            email: User email address
+            password: User password
+            
+        Returns:
+            True if file was created successfully, False otherwise
+        """
+        try:
+            credentials_data = {
+                "email": email,
+                "password": password
+            }
+            
+            with open(self.credentials_file, 'w', encoding='utf-8') as f:
+                json.dump(credentials_data, f, indent=2)
+            
+            self.logger.info(f"Credentials file created: {self.credentials_file}")
+            self.logger.info("Note: This file is NOT tracked in git for security reasons")
+            return True
+            
+        except Exception as e:
+            self.logger.error(f"Failed to create credentials file: {e}")
+            return False
+    
     def load_credentials(self) -> bool:
         """
         Load credentials with three-tier fallback system:
@@ -65,10 +93,25 @@ class AutoLogin:
         
         # Tier 3: Neither GitHub secrets nor local file available
         self.logger.warning("No credentials found. GitHub secrets and local credentials.json not available.")
-        self.logger.info("Please set up credentials using one of these methods:")
-        self.logger.info("1. Set GitHub secrets: SCRAPER_EMAIL and SCRAPER_PASSWORD")
-        self.logger.info("2. Run the credentials GUI to create local credentials.json")
-        return False
+        self.logger.info("Launching credentials GUI to create local credentials.json...")
+        self.logger.info("Note: This file will be stored locally and NOT tracked in git for security.")
+        
+        # Import and show the credentials GUI
+        try:
+            from ..config.credentials import show_credentials_gui
+            if show_credentials_gui():
+                self.logger.info("Credentials GUI completed successfully!")
+                # Try to load the newly created credentials
+                return self.load_credentials()
+            else:
+                self.logger.error("Credentials GUI was cancelled or failed")
+                return False
+        except Exception as e:
+            self.logger.error(f"Failed to launch credentials GUI: {e}")
+            self.logger.info("Please set up credentials manually:")
+            self.logger.info("1. Set GitHub secrets: SCRAPER_EMAIL and SCRAPER_PASSWORD")
+            self.logger.info("2. Run: python -m src.config.credentials")
+            return False
     
     async def login(self, page: Page, target_url: str) -> bool:
         """
