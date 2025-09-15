@@ -452,20 +452,29 @@ class UnifiedEmployeeScraper:
                         }
                     });
                     
-                    // Projects
+                    // Projects - look for project links and related elements
                     data.projects = [];
-                    const projectElements = document.querySelectorAll('.project, .work-item, .portfolio-item');
+                    const projectElements = document.querySelectorAll('a[href*="/project/"], .project-item, .work-item, .portfolio-item, [data-project]');
                     projectElements.forEach(el => {
-                        const name = el.querySelector('.name, .title')?.textContent?.trim() || '';
-                        const description = el.querySelector('.description, .summary')?.textContent?.trim() || '';
-                        const role = el.querySelector('.role, .position')?.textContent?.trim() || '';
-                        const year = el.querySelector('.year, .date')?.textContent?.trim() || '';
-                        if (name) {
+                        const link = el.querySelector('a[href*="/project/"]') || el;
+                        const href = link.href || '';
+                        const name = el.querySelector('.name, .title, .project-name, h3, h4')?.textContent?.trim() || 
+                                    link.textContent?.trim() || '';
+                        const description = el.querySelector('.description, .summary, .project-description')?.textContent?.trim() || '';
+                        const role = el.querySelector('.role, .position, .project-role')?.textContent?.trim() || '';
+                        const year = el.querySelector('.year, .date, .project-year')?.textContent?.trim() || '';
+                        const client = el.querySelector('.client, .project-client')?.textContent?.trim() || '';
+                        const number = el.querySelector('.number, .project-number')?.textContent?.trim() || '';
+                        
+                        if (name && href.includes('/project/')) {
                             data.projects.push({
                                 'name': name,
                                 'description': description,
                                 'role': role,
-                                'year': year
+                                'year': year,
+                                'client': client,
+                                'number': number,
+                                'url': href
                             });
                         }
                     });
