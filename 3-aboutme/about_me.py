@@ -18,6 +18,25 @@ import traceback
 import sys
 import logging
 from datetime import datetime
+import threading
+import queue
+try:
+    import tkinter as tk
+    from tkinter import ttk, messagebox
+except Exception:
+    # If tkinter isn't available, we'll fall back to CLI later
+    tk = None
+    ttk = None
+    messagebox = None
+
+# Optional Pillow for GIF animation and masking
+try:
+    from PIL import Image, ImageTk, ImageSequence, ImageDraw
+except Exception:
+    Image = None
+    ImageTk = None
+    ImageSequence = None
+    ImageDraw = None
 
 # Load GitHub token with error handling
 token_file = "token.json"
@@ -105,7 +124,7 @@ EMBEDDED_REPO_OWNER = "Ennead-Architects-LLP"
 EMBEDDED_REPO_NAME = "EmployeeData"
 EMBEDDED_WEBSITE_URL = "https://ennead-architects-llp.github.io/EmployeeData"
 
-def setup_logging():
+def setup_logging(silent=False):
     """Setup logging for error tracking"""
     try:
         # Create logs directory if it doesn't exist
@@ -120,13 +139,13 @@ def setup_logging():
         for handler in logging.root.handlers[:]:
             logging.root.removeHandler(handler)
         
+        handlers = [logging.FileHandler(log_file, encoding='utf-8')]
+        if not silent:
+            handlers.append(logging.StreamHandler(sys.stdout))
         logging.basicConfig(
             level=logging.DEBUG,
             format='%(asctime)s - %(levelname)s - %(message)s',
-            handlers=[
-                logging.FileHandler(log_file, encoding='utf-8'),
-                logging.StreamHandler(sys.stdout)
-            ]
+            handlers=handlers
         )
         
         return log_file
@@ -465,98 +484,400 @@ class ComputerInfoCollector:
         print("="*50)
 
 def main():
-    """Main function - simplified for non-technical users with comprehensive error handling"""
-    log_file = None
+    """GUI entrypoint with CLI fallback."""
+    # Forced silent via CLI flag or env
+    force_silent = False
     try:
-        # Setup logging first
-        print("🔧 Setting up error logging...")
-        log_file = setup_logging()
-        if log_file:
-            print(f"   Error log will be saved to: {log_file}")
-        
-        print("\n🔍 Collecting your computer information...")
-        print("   This may take a few seconds...")
-        
-        # Initialize collector with error handling
-        try:
-            collector = ComputerInfoCollector()
-            logging.info("ComputerInfoCollector initialized successfully")
-        except Exception as e:
-            log_error("Failed to initialize ComputerInfoCollector", e)
-            raise
-        
-        # Collect information with error handling
-        try:
-            collector.collect_all_info()
-            logging.info("Computer information collection completed")
-        except Exception as e:
-            log_error("Failed to collect computer information", e)
-            raise
-        
-        # Print summary with error handling
-        try:
-            collector.print_summary()
-            logging.info("Summary printed successfully")
-        except Exception as e:
-            log_error("Failed to print summary", e)
-            print("⚠️  Warning: Could not display summary, but continuing...")
-        
-        # Send to GitHub with error handling
-        print("\n📤 Sending information to the server...")
-        try:
-            success = collector.send_to_github_repo()
-            if success:
-                logging.info("Data sent to GitHub successfully")
-                print("\n🎉 All done! Your computer information has been submitted successfully.")
-                print("   You can close this window now.")
-            else:
-                logging.error("Failed to send data to GitHub")
-                print("\n⚠️  There was a problem sending your information.")
-                print("   Please try again later or contact support.")
-        except Exception as e:
-            log_error("Failed to send data to GitHub", e)
-            print("\n❌ Error sending information to server.")
-            print("   Please check the error log for details.")
-            raise
-    
+        parser = argparse.ArgumentParser(add_help=False)
+        parser.add_argument("--silent", action="store_true")
+        args, _ = parser.parse_known_args()
+        force_silent = bool(args.silent) or os.environ.get("ABOUTME_FORCE_SILENT") == "1"
+    except Exception:
+        pass
+
+    is_cli = force_silent or tk is None
+    log_file = setup_logging(silent=is_cli)
+    if is_cli:
+        return main_cli(log_file, silent=True)
+    try:
+        app = AboutMeApp(log_file=log_file)
+        app.run()
     except Exception as e:
-        # Comprehensive error handling
+        log_error("Critical error launching GUI", e)
+        return main_cli(log_file, silent=True)
+
+def main_cli(log_file=None, silent=True):
+    try:
+        # Silent CLI: no stdout printing or input prompts
+            collector = ComputerInfoCollector()
+        collector.collect_all_info()
+        # No console summary in silent mode
+        success = collector.send_to_github_repo()
+        # Log outcome only
+        logging.info("CLI send status: %s", "success" if success else "failed")
+        except Exception as e:
         error_msg = f"❌ CRITICAL ERROR: {str(e)}"
-        print(f"\n{error_msg}")
-        print("="*60)
-        print("DETAILED ERROR INFORMATION:")
-        print("="*60)
-        print(f"Error Type: {type(e).__name__}")
-        print(f"Error Message: {str(e)}")
-        print(f"Traceback:")
-        print(traceback.format_exc())
-        print("="*60)
-        
-        # Log the error
-        log_error("Critical error in main function", e)
-        
-        # Save error to persistent file
-        error_file = save_error_to_file(error_msg, e, log_file)
-        
-        # Show log file locations
-        print(f"\n📝 ERROR LOG FILES CREATED:")
-        if error_file:
-            print(f"   📄 Main error log: {error_file}")
-        if log_file:
-            print(f"   📄 Detailed log: {log_file}")
-        
-        print("\n⚠️  The application encountered an error and cannot continue.")
-        print("   Please send the error log files to support for assistance.")
-        print("   The error log files are saved in the same folder as this program.")
-    
+        log_error("Critical error in CLI", e)
+        save_error_to_file(error_msg, e, log_file)
     finally:
-        # Keep window open so user can see the result
+        # No blocking input in silent mode
+        pass
+
+class AboutMeApp:
+    """Minimal dark-themed Tkinter GUI wrapping the collector and sender."""
+    def __init__(self, log_file=None):
+        self.log_file = log_file
+        self.root = tk.Tk()
+        self.root.title("AboutMe")
+        self.root.geometry("720x520")
+        self.root.configure(bg="#121212")
+        self.root.protocol("WM_DELETE_WINDOW", self.on_close)
+        self._apply_dark_style()
+        self._set_window_icon()
+        self.collector = ComputerInfoCollector()
+        self.queue = queue.Queue()
+        self._build_loading_ui()
+        self._start_collection()
+
+    def _apply_dark_style(self):
+        style = ttk.Style()
         try:
-            input("\nPress Enter to close this window...")
-        except:
-            # If input fails, just wait a bit
-            import time
-            time.sleep(5)
+            style.theme_use("clam")
+        except Exception:
+            pass
+        style.configure("TLabel", background="#121212", foreground="#E0E0E0")
+        style.configure("TFrame", background="#121212")
+        style.configure("TButton", background="#1E1E1E", foreground="#E0E0E0", padding=8)
+        style.map("TButton", background=[("active", "#2A2A2A")])
+        style.configure("Treeview", background="#1E1E1E", foreground="#E0E0E0", fieldbackground="#1E1E1E")
+        style.configure("Treeview.Heading", background="#1E1E1E", foreground="#E0E0E0")
+
+    def _build_loading_ui(self):
+        for w in self.root.winfo_children():
+            w.destroy()
+        frame = ttk.Frame(self.root)
+        frame.pack(expand=True, fill="both", padx=24, pady=24)
+        title = ttk.Label(frame, text="AboutMe", font=("Segoe UI", 16, "bold"))
+        title.pack(pady=(40, 12))
+        subtitle = ttk.Label(frame, text="After the reimaging of computers we need to collect the current machine data. You just need to approve.")
+        subtitle.pack(pady=(0, 24))
+        self.progress = ttk.Progressbar(frame, mode="indeterminate")
+        self.progress.pack(fill="x")
+        self.progress.start(10)
+        self._add_footer(self.root)
+
+    def _build_review_ui(self):
+        for w in self.root.winfo_children():
+            w.destroy()
+
+        container = ttk.Frame(self.root)
+        container.pack(expand=True, fill="both", padx=16, pady=12)
+
+        # Content area (top)
+        content = ttk.Frame(container)
+        content.pack(side="top", fill="both", expand=True)
+
+        header = ttk.Label(content, text="AboutMe", font=("Segoe UI", 14, "bold"))
+        header.pack(anchor="w", pady=(0, 8))
+        note = ttk.Label(content, text="After the reimaging of computers we need to collect the current machine data. You just need to approve.")
+        note.pack(anchor="w", pady=(0, 12))
+
+        columns = ("Key", "Value")
+        tree = ttk.Treeview(content, columns=columns, show="headings", height=12)
+        tree.heading("Key", text="Key")
+        tree.heading("Value", text="Value")
+        tree.column("Key", width=220, anchor="w")
+        tree.column("Value", width=460, anchor="w")
+        vsb = ttk.Scrollbar(content, orient="vertical", command=tree.yview)
+        tree.configure(yscrollcommand=vsb.set)
+        tree.pack(side="left", fill="both", expand=True)
+        vsb.pack(side="right", fill="y")
+
+        display_keys = [
+            ("Computername", "Computername"),
+            ("Human Name", "human_name"),
+            ("Username", "Username"),
+            ("OS", "OS"),
+            ("Manufacturer", "Manufacturer"),
+            ("Model", "Model"),
+            ("CPU", "CPU"),
+            ("Total Physical Memory", "Total Physical Memory"),
+            ("GPU Name", "GPU Name"),
+            ("GPU Driver", "GPU Driver"),
+            ("GPU Memory", "GPU Memory"),
+            ("Serial Number", "Serial Number"),
+        ]
+        for label, key in display_keys:
+            value = self.collector.data.get(key, "Unknown")
+            if key == "Total Physical Memory" and isinstance(value, int):
+                value = f"{value / (1024**3):.1f} GB"
+            tree.insert("", "end", values=(label, value))
+
+        # Fixed bottom action bar
+        actions = ttk.Frame(container)
+        actions.pack(side="bottom", fill="x", pady=(8, 0))
+        self.send_btn = ttk.Button(actions, text="Allow Share", command=self.on_send_click)
+        self.cancel_btn = ttk.Button(actions, text="Disallow Share", command=self.on_close)
+        self.send_btn.pack(side="left")
+        self.cancel_btn.pack(side="right")
+        self._add_footer(self.root)
+
+    def _build_success_ui(self, success):
+        for w in self.root.winfo_children():
+            w.destroy()
+        frame = ttk.Frame(self.root)
+        frame.pack(expand=True, fill="both", padx=24, pady=24)
+        if success:
+            title = ttk.Label(frame, text="Data Shared", font=("Segoe UI", 18, "bold"))
+            title.pack(pady=(24, 8))
+            msg = ttk.Label(frame, text="Thank you and have a nice day.")
+            msg.pack(pady=(0, 16))
+            # Animated circular-masked GIF
+            size = 220
+            canvas = tk.Canvas(frame, width=size, height=size, bg="#121212", highlightthickness=0)
+            canvas.pack(pady=8)
+            canvas.create_oval(10, 10, size-10, size-10, fill="#FFFFFF", outline="#FFFFFF")
+
+            gif_path = self._find_duck_gif()
+            self._gif_animator = None
+            if gif_path and Image is not None:
+                try:
+                    self._gif_animator = _CircularGifAnimator(canvas, gif_path, diameter=size-20, bg="#121212")
+                    self._gif_animator.start()
+                except Exception:
+                    self._gif_animator = None
+            if self._gif_animator is None and tk is not None:
+                try:
+                    # Fallback to static image without animation if PIL unavailable
+                    static_img = tk.PhotoImage(file=gif_path) if gif_path and os.path.exists(gif_path) else None
+                    if static_img is not None:
+                        self._gif_image = static_img
+                        canvas.create_image(size//2, size//2, image=self._gif_image)
+                except Exception:
+                    pass
+
+            close = ttk.Button(frame, text="Close", command=self.on_close)
+            close.pack(pady=(24, 0))
+        else:
+            title = ttk.Label(frame, text="Unable to Send", font=("Segoe UI", 18, "bold"))
+            title.pack(pady=(24, 8))
+            msg = ttk.Label(frame, text="There was a problem sending your information. You can try again later.")
+            msg.pack(pady=(0, 16))
+            close = ttk.Button(frame, text="Close", command=self.on_close)
+            close.pack(pady=(24, 0))
+        self._add_footer(self.root)
+
+    def _resolve_asset(self, relative_path):
+        base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+        return os.path.join(base, relative_path)
+
+    def _find_duck_gif(self):
+        candidates = [
+            self._resolve_asset("assets/duck-dance.gif"),
+            self._resolve_asset("duck-dance.gif"),
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), "duck-dance.gif"),
+        ]
+        for p in candidates:
+            if p and os.path.exists(p):
+                return p
+        return None
+
+    def _start_collection(self):
+        def work():
+            try:
+                self.collector.collect_all_info()
+                self.queue.put(("done", None))
+        except Exception as e:
+                self.queue.put(("error", e))
+        threading.Thread(target=work, daemon=True).start()
+        self.root.after(100, self._poll_queue)
+
+    def _poll_queue(self):
+        try:
+            kind, payload = self.queue.get_nowait()
+        except queue.Empty:
+            self.root.after(100, self._poll_queue)
+            return
+        if kind == "done":
+            if hasattr(self, "progress"):
+                try:
+                    self.progress.stop()
+                except Exception:
+                    pass
+            self._build_review_ui()
+        elif kind == "error":
+            log_error("Failed during collection", payload)
+            messagebox.showerror("Error", "Failed to collect computer information.")
+            self.on_close()
+        else:
+            self.root.after(100, self._poll_queue)
+
+    def on_send_click(self):
+        self.send_btn.state(["disabled"]) if self.send_btn else None
+        self.cancel_btn.state(["disabled"]) if self.cancel_btn else None
+        def send_work():
+            try:
+                success = self.collector.send_to_github_repo()
+        except Exception as e:
+                log_error("Failed to send to GitHub", e)
+                success = False
+            self.queue.put(("sent", success))
+        threading.Thread(target=send_work, daemon=True).start()
+        self._show_sending_state()
+        self.root.after(100, self._poll_send_queue)
+
+    def _show_sending_state(self):
+        for w in self.root.winfo_children():
+            w.destroy()
+        frame = ttk.Frame(self.root)
+        frame.pack(expand=True, fill="both", padx=24, pady=24)
+        title = ttk.Label(frame, text="Sending...", font=("Segoe UI", 16, "bold"))
+        title.pack(pady=(40, 12))
+        self.progress = ttk.Progressbar(frame, mode="indeterminate")
+        self.progress.pack(fill="x")
+        self.progress.start(10)
+        self._add_footer(self.root)
+
+    def _poll_send_queue(self):
+        try:
+            kind, payload = self.queue.get_nowait()
+        except queue.Empty:
+            self.root.after(100, self._poll_send_queue)
+            return
+        if kind == "sent":
+            try:
+                self.progress.stop()
+            except Exception:
+                pass
+            self._build_success_ui(bool(payload))
+            else:
+            self.root.after(100, self._poll_send_queue)
+
+    def on_close(self):
+        try:
+            self.root.destroy()
+        except Exception:
+            pass
+
+    def run(self):
+        # Center window
+        self.root.update_idletasks()
+        w = self.root.winfo_width()
+        h = self.root.winfo_height()
+        x = (self.root.winfo_screenwidth() // 2) - (w // 2)
+        y = (self.root.winfo_screenheight() // 2) - (h // 2)
+        self.root.geometry(f"{w}x{h}+{x}+{y}")
+        self.root.mainloop()
+
+    def _set_window_icon(self):
+        try:
+            icon_path = self._resolve_asset("icon.ico")
+            if not os.path.exists(icon_path):
+                icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon.ico")
+            if os.path.exists(icon_path):
+                self.root.iconbitmap(default=icon_path)
+        except Exception:
+            pass
+
+    def _add_footer(self, parent):
+        try:
+            footer = ttk.Frame(parent)
+            footer.pack(side="bottom", fill="x", padx=8, pady=(8, 6))
+            lbl = ttk.Label(footer, text="Copright @ EnneadTab 2025")
+            lbl.pack(anchor="center")
+        except Exception:
+            pass
+
+
+class _CircularGifAnimator:
+    """Play an animated GIF masked to a circle on a Tk canvas using Pillow frames."""
+    def __init__(self, canvas: tk.Canvas, gif_path: str, diameter: int = 200, bg: str = "#121212"):
+        self.canvas = canvas
+        self.gif_path = gif_path
+        self.diameter = diameter
+        self.bg = bg
+        self.frames = []
+        self.durations = []
+        self._tk_frames = []
+        self._current = 0
+        self._item = None
+        self._load_frames()
+
+    def _load_frames(self):
+        img = Image.open(self.gif_path)
+        # Prepare circular mask
+        mask_size = (self.diameter, self.diameter)
+        circle_mask = Image.new("L", mask_size, 0)
+        draw = ImageDraw.Draw(circle_mask)
+        draw.ellipse((0, 0, self.diameter, self.diameter), fill=255)
+        white_bg = Image.new("RGBA", mask_size, (255, 255, 255, 255))
+
+        for frame in ImageSequence.Iterator(img):
+            frame_rgba = frame.convert("RGBA")
+            # Scale to fit within circle diameter preserving aspect
+            fw, fh = frame_rgba.size
+            scale = min(self.diameter / fw, self.diameter / fh)
+            new_size = (max(1, int(fw * scale)), max(1, int(fh * scale)))
+            frame_rgba = frame_rgba.resize(new_size, Image.LANCZOS)
+
+            # Center on canvas-sized transparent image
+            composed = Image.new("RGBA", mask_size, (0, 0, 0, 0))
+            x = (self.diameter - new_size[0]) // 2
+            y = (self.diameter - new_size[1]) // 2
+            composed.paste(frame_rgba, (x, y), frame_rgba)
+
+            # Apply circular mask to composed frame
+            masked = Image.composite(composed, Image.new("RGBA", mask_size, (0, 0, 0, 0)), circle_mask)
+            # Put on white circle background
+            final = white_bg.copy()
+            final.paste(masked, (0, 0), masked)
+
+            self.frames.append(final)
+            duration = getattr(frame, "info", {}).get("duration", 80)
+            self.durations.append(max(20, int(duration)))
+
+        # Convert to Tk frames
+        for fr in self.frames:
+            self._tk_frames.append(ImageTk.PhotoImage(fr))
+
+    def start(self):
+        if not self._tk_frames:
+            return
+        cx = int(self.canvas.cget("width")) // 2
+        cy = int(self.canvas.cget("height")) // 2
+        if self._item is None:
+            self._item = self.canvas.create_image(cx, cy, image=self._tk_frames[0])
+        self._animate()
+
+    def _animate(self):
+        if not self._tk_frames:
+            return
+        self.canvas.itemconfig(self._item, image=self._tk_frames[self._current])
+        delay = self.durations[self._current % len(self.durations)]
+        self._current = (self._current + 1) % len(self._tk_frames)
+        self.canvas.after(delay, self._animate)
+
+    def _set_window_icon(self):
+        try:
+            # Prefer packaged icon path when bundled
+            icon_path = self._resolve_asset("icon.ico")
+            if not os.path.exists(icon_path):
+                # Fallback to local directory
+                icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon.ico")
+            if os.path.exists(icon_path):
+                # On Windows, .ico is supported
+                self.root.iconbitmap(default=icon_path)
+        except Exception:
+            pass
+
+    def _add_footer(self, parent):
+        try:
+            footer = ttk.Frame(parent)
+            footer.pack(side="bottom", fill="x", padx=8, pady=(8, 6))
+            lbl = ttk.Label(footer, text="Copright @ EnneadTab 2025")
+            lbl.pack(anchor="center")
+        except Exception:
+            pass
 
 if __name__ == "__main__":
     main()

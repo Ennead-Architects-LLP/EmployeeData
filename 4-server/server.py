@@ -59,8 +59,7 @@ def find_employee_file_by_user(computer_data):
     """Find the employee JSON file that matches the user from computer data"""
     try:
         human_name = computer_data.get('human_name', '').strip()
-        # Check both 'username' and 'Username' for backward compatibility
-        username = computer_data.get('username', computer_data.get('Username', '')).strip()
+        username = computer_data.get('username', '').strip()
         
         if not human_name and not username:
             print("❌ No user name or username provided in computer data")
@@ -109,7 +108,7 @@ def _employee_matches_user(employee_data, human_name, username):
     try:
         # Try exact match first, then fuzzy match
         if human_name:
-            employee_name = employee_data.get('human_name', '').strip()
+            employee_name = employee_data.get('human_name', employee_data.get('Human Name', '')).strip()
             
             # Exact match (case insensitive)
             if employee_name.lower() == human_name.lower():
@@ -152,15 +151,15 @@ def update_employee_computer_info(employee_file_path, computer_data):
         
         # Create new computer info entry (handle both old and new field names)
         new_computer_info = {
-            'computername': computer_data.get('computer_name', computer_data.get('Computername')),
-            'os': computer_data.get('os', computer_data.get('OS')),
-            'manufacturer': computer_data.get('manufacturer', computer_data.get('Manufacturer')),
-            'model': computer_data.get('model', computer_data.get('Model')),
-            'cpu': computer_data.get('cpu', computer_data.get('CPU')),
-            'gpu_name': computer_data.get('gpu_name', computer_data.get('GPU Name')),
-            'gpu_driver': computer_data.get('gpu_driver', computer_data.get('GPU Driver')),
-            'memory_bytes': computer_data.get('memory_bytes', computer_data.get('Total Physical Memory')),
-            'serial_number': computer_data.get('serial_number', computer_data.get('Serial Number')),
+            'computername': computer_data.get('computer_name'),
+            'os': computer_data.get('os'),
+            'manufacturer': computer_data.get('manufacturer'),
+            'model': computer_data.get('model'),
+            'cpu': computer_data.get('cpu'),
+            'gpu_name': computer_data.get('gpu_name'),
+            'gpu_driver': computer_data.get('gpu_driver'),
+            'memory_bytes': computer_data.get('memory_bytes'),
+            'serial_number': computer_data.get('serial_number'),
             'last_updated': datetime.now().isoformat()
         }
         
@@ -205,31 +204,26 @@ def backup_computer_data(computer_data):
         os.makedirs(COMPUTER_BACKUP_DIR, exist_ok=True)
         
         # Generate filename with timestamp
-        computer_name = computer_data.get('computer_name', computer_data.get('Computername', 'unknown')).replace(' ', '_').replace('/', '_')
+        computer_name = computer_data.get('computer_name', 'unknown').replace(' ', '_').replace('/', '_')
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         filename = f"{computer_name}_{timestamp}.json"
         file_path = os.path.join(COMPUTER_BACKUP_DIR, filename)
         
-        # Create backup data structure (handle both flat and nested)
-        if 'computer_name' in computer_data:
-            # New nested structure - data is already in the right format
-            backup_data = computer_data.copy()
-        else:
-            # Old flat structure - convert to new format
-            backup_data = {
-                "computer_name": computer_data.get('Computername', 'Unknown'),
-                "human_name": computer_data.get('Name', computer_data.get('human_name', 'Unknown')),
-                "username": computer_data.get('Username', 'Unknown'),
-                "cpu": computer_data.get('CPU', 'Unknown'),
-                "os": computer_data.get('OS', 'Unknown'),
-                "manufacturer": computer_data.get('Manufacturer', 'Unknown'),
-                "model": computer_data.get('Model', 'Unknown'),
-                "gpu_name": computer_data.get('GPU Name', 'Unknown'),
-                "gpu_driver": computer_data.get('GPU Driver', 'Unknown'),
-                "gpu_memory": computer_data.get('GPU Memory'),
-                "memory_bytes": computer_data.get('Total Physical Memory'),
-                "serial_number": computer_data.get('Serial Number', 'Unknown')
-            }
+        # Clean snake_case schema
+        backup_data = {
+            "computer_name": computer_data.get('computer_name', 'Unknown'),
+            "human_name": computer_data.get('human_name', 'Unknown'),
+            "username": computer_data.get('username', 'Unknown'),
+            "cpu": computer_data.get('cpu', 'Unknown'),
+            "os": computer_data.get('os', 'Unknown'),
+            "manufacturer": computer_data.get('manufacturer', 'Unknown'),
+            "model": computer_data.get('model', 'Unknown'),
+            "gpu_name": computer_data.get('gpu_name', 'Unknown'),
+            "gpu_driver": computer_data.get('gpu_driver', 'Unknown'),
+            "gpu_memory": computer_data.get('gpu_memory'),
+            "memory_bytes": computer_data.get('memory_bytes'),
+            "serial_number": computer_data.get('serial_number', 'Unknown')
+        }
         
         # Add server timestamp
         backup_data["server_timestamp"] = datetime.now().isoformat()
