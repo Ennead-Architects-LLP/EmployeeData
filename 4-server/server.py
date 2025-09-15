@@ -164,28 +164,29 @@ def update_employee_computer_info(employee_file_path, computer_data):
             'last_updated': datetime.now().isoformat()
         }
         
-        # Handle computer_info as a list
+        # Handle computer_info as a dictionary with computername as key
         if 'computer_info' not in employee_data:
-            employee_data['computer_info'] = []
-        elif not isinstance(employee_data['computer_info'], list):
-            # Convert existing single dict to list if needed
-            employee_data['computer_info'] = [employee_data['computer_info']]
+            employee_data['computer_info'] = {}
+        elif isinstance(employee_data['computer_info'], list):
+            # Convert existing list to dictionary if needed
+            computer_dict = {}
+            for computer in employee_data['computer_info']:
+                computername = computer.get('computername', 'Unknown')
+                computer_dict[computername] = computer
+            employee_data['computer_info'] = computer_dict
         
-        # Check if this computer already exists (by computername and serial number)
-        computer_exists = False
-        for i, existing_computer in enumerate(employee_data['computer_info']):
-            if (existing_computer.get('computername') == new_computer_info.get('computername') and 
-                existing_computer.get('serial_number') == new_computer_info.get('serial_number')):
-                # Update existing entry
-                employee_data['computer_info'][i] = new_computer_info
-                computer_exists = True
-                print(f"✅ Updated existing computer entry for {new_computer_info.get('computername')}")
-                break
+        # Get computername as key
+        computername = new_computer_info.get('computername', 'Unknown')
         
-        if not computer_exists:
+        # Check if this computer already exists
+        if computername in employee_data['computer_info']:
+            # Update existing entry
+            employee_data['computer_info'][computername] = new_computer_info
+            print(f"✅ Updated existing computer entry for {computername}")
+        else:
             # Add new computer entry
-            employee_data['computer_info'].append(new_computer_info)
-            print(f"✅ Added new computer entry for {new_computer_info.get('computername')}")
+            employee_data['computer_info'][computername] = new_computer_info
+            print(f"✅ Added new computer entry for {computername}")
         
         # Save updated employee file
         with open(employee_file_path, 'w', encoding='utf-8') as f:

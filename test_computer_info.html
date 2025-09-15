@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Computer Info Loading</title>
+</head>
+<body>
+    <h1>Computer Info Test</h1>
+    <div id="test-results"></div>
+
+    <script>
+        // Test data with new dictionary format
+        const testEmployee = {
+            "human_name": "Sen Zhang",
+            "computer_info": {
+                "EA-25CWFS3": {
+                    "computername": "EA-25CWFS3",
+                    "os": "Windows 11",
+                    "manufacturer": "Dell Inc.",
+                    "model": "Latitude 5540",
+                    "cpu": "13th Gen Intel(R) Core(TM) i7-1370P",
+                    "gpu_name": "Intel(R) Iris(R) Xe Graphics",
+                    "gpu_driver": "32.0.101.6078",
+                    "memory_bytes": 16815702016,
+                    "serial_number": "1X5CKS3",
+                    "last_updated": "2025-09-13T01:20:39.397287"
+                },
+                "EANY-PW-0HJ97N": {
+                    "computername": "EANY-PW-0HJ97N",
+                    "os": "Windows 11",
+                    "manufacturer": "Unknown",
+                    "model": "Unknown",
+                    "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+                    "gpu_name": "Unknown",
+                    "gpu_driver": "Unknown",
+                    "memory_bytes": 33765298176,
+                    "serial_number": "Unknown",
+                    "last_updated": "2025-09-15T18:11:30.865797"
+                }
+            }
+        };
+
+        // Test the same logic as in ui-manager.js
+        function testComputerInfoLogic(employee) {
+            const computerInfo = employee.computer_info || employee.computer || employee.computer_specs;
+            let computers = [];
+            
+            if (computerInfo) {
+                if (Array.isArray(computerInfo)) {
+                    // Handle legacy array format
+                    computers = computerInfo;
+                } else if (typeof computerInfo === 'object') {
+                    // Handle new dictionary format - convert to array of computer objects
+                    computers = Object.values(computerInfo);
+                }
+            }
+            
+            return computers;
+        }
+
+        // Run the test
+        const result = testComputerInfoLogic(testEmployee);
+        
+        document.getElementById('test-results').innerHTML = `
+            <h2>Test Results:</h2>
+            <p><strong>Found ${result.length} computers</strong></p>
+            <ul>
+                ${result.map(computer => `
+                    <li>
+                        <strong>${computer.computername}</strong><br>
+                        OS: ${computer.os}<br>
+                        CPU: ${computer.cpu}<br>
+                        RAM: ${Math.round(computer.memory_bytes / (1024**3))} GB
+                    </li>
+                `).join('')}
+            </ul>
+        `;
+        
+        console.log('Computer info test result:', result);
+    </script>
+</body>
+</html>

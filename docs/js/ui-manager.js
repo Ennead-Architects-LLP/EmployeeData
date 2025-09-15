@@ -66,7 +66,17 @@ function createEmployeeCard(employee) {
     
     // Handle computer specifications if available
     const computerInfo = employee.computer_info || employee.computer || employee.computer_specs;
-    const computers = Array.isArray(computerInfo) ? computerInfo : (computerInfo ? [computerInfo] : []);
+    let computers = [];
+    
+    if (computerInfo) {
+        if (Array.isArray(computerInfo)) {
+            // Handle legacy array format
+            computers = computerInfo;
+        } else if (typeof computerInfo === 'object') {
+            // Handle new dictionary format - convert to array of computer objects
+            computers = Object.values(computerInfo);
+        }
+    }
     
     return `
         <div class="employee-card">
