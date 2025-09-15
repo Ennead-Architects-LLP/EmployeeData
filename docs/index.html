@@ -5,46 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ennead's People - Employee Directory</title>
     
-    <!-- TODO NOTE TO SELF -->
-    <style>
-        .todo-note {
-            background: #ff6b6b;
-            color: white;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 8px;
-            font-family: monospace;
-            font-size: 12px;
-            line-height: 1.4;
-            border-left: 4px solid #ff4757;
-            max-width: 1200px;
-            margin: 10px auto;
-        }
-        .todo-note h3 {
-            margin-top: 0;
-            color: #fff;
-        }
-        .todo-note ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        .todo-note li {
-            margin: 5px 0;
-        }
-        .todo-note .action-item {
-            background: rgba(255,255,255,0.1);
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 4px;
-        }
-        .todo-note .three-actions {
-            background: rgba(255,255,255,0.2);
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-    </style>
+    
     
     <!-- CSS Modules -->
     <link rel="stylesheet" href="css/reset.css">
@@ -57,40 +18,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- TODO NOTE TO SELF -->
-    <div class="todo-note">
-        <h3>🚨 TODO: SYSTEM ARCHITECTURE FIXES NEEDED 🚨</h3>
-        
-        <div class="action-item">
-            <strong>IMMEDIATE ISSUES:</strong>
-            <ul>
-                <li>HTML does not like loading individual JSON - causes timeout issues</li>
-                <li>Website needs to load using a complete single JSON</li>
-                <li>Need to wire workflow to update consolidated JSON</li>
-                <li>Check AboutMe path again and recompile</li>
-                <li>Storage VS usage: for image and for JSON and for backup, for employee data and computer data</li>
-            </ul>
-        </div>
-
-        <div class="action-item">
-            <strong>ACTION ITEMS:</strong>
-            <ul>
-                <li><strong>1.</strong> Resolve computer data storage issue - send out EXE for people to send data. Need to rewire server and sender workflow</li>
-                <li><strong>2.</strong> Server should backup computer data first, then merge data from two separate pools into solid JSON for docs to use</li>
-                <li><strong>3.</strong> Need TWO SEPARATE SERVERS: one for receiving (POST trigger), one for merging (daily). No race conditions, computer data and employee data stay untouched. Computer data is more precious - must protect.</li>
-                <li><strong>4.</strong> Keep scraper data pool and computer data pool separate in storage</li>
-                <li><strong>5.</strong> Redo scraper logic to send image and JSON</li>
-                <li><strong>6.</strong> BOTH employee data and computer data need individual storage. Scraper and POST server are structurally symmetrical to generate raw data. Daily server merges data to consolidated JSON</li>
-            </ul>
-        </div>
-
-        <div class="three-actions">
-            <strong>THE 3 ACTIONS:</strong><br>
-            <strong>1.</strong> By POST: AboutMe EXE and receiving server<br>
-            <strong>2.</strong> Daily: Merge all scattered data into one JSON for website<br>
-            <strong>3.</strong> Weekly: Scrape EI for stable data (employee detail, project detail, images, seat changes)
-        </div>
-    </div>
+    
 
     <!-- Background Slideshow -->
     <div class="slideshow-container">
