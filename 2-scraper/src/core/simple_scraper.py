@@ -12,6 +12,7 @@ from pathlib import Path
 
 from .models import EmployeeData
 from ..services.image_downloader import ImageDownloader
+from ..services.auth import AutoLogin
 
 
 class SimpleEmployeeScraper:
@@ -41,6 +42,7 @@ class SimpleEmployeeScraper:
         
         # Initialize components
         self.image_downloader = ImageDownloader() if download_images else None
+        self.auto_login = AutoLogin()
         self.logger = logging.getLogger(__name__)
         
         # Browser components
@@ -223,20 +225,50 @@ class SimpleEmployeeScraper:
                               for indicator in login_indicators)
             
             if is_login_page:
-                self.logger.error(f"[ERROR] Website requires authentication")
-                self.logger.error(f"[ERROR] Current URL: {current_url}")
-                self.logger.error(f"[ERROR] Page title: {page_title}")
-                self.logger.error("[ERROR] Cannot proceed without authentication credentials")
-                raise Exception("Website requires authentication - scraper cannot proceed without login credentials")
+                self.logger.info(f"[INFO] Website requires authentication - attempting auto-login")
+                self.logger.info(f"[INFO] Current URL: {current_url}")
+                self.logger.info(f"[INFO] Page title: {page_title}")
+                
+                # Try to load credentials and perform auto-login
+                if self.auto_login.load_credentials():
+                    self.logger.info("[INFO] Credentials loaded, attempting automatic login...")
+                    login_success = await self.auto_login.login(self.page, self.base_url)
+                    if login_success:
+                        self.logger.info("[SUCCESS] Automatic login successful, continuing with scraping...")
+                        # Re-navigate to the target URL after successful login
+                        await self.page.goto(self.base_url)
+                        await self.page.wait_for_load_state('networkidle')
+                    else:
+                        self.logger.error("[ERROR] Automatic login failed")
+                        raise Exception("Authentication required - automatic login failed")
+                else:
+                    self.logger.error("[ERROR] No credentials available for authentication")
+                    self.logger.error("[ERROR] Please set up credentials using GitHub secrets or local credentials.json")
+                    raise Exception("Authentication required - no credentials available")
             
             # Also check for login page content indicators
             page_content = await self.page.content()
             if "microsoft" in page_content.lower() and ("sign in" in page_content.lower() or "login" in page_content.lower()):
-                self.logger.error(f"[ERROR] Detected Microsoft login page in content")
-                self.logger.error(f"[ERROR] Current URL: {current_url}")
-                self.logger.error(f"[ERROR] Page title: {page_title}")
-                self.logger.error("[ERROR] Cannot proceed without authentication credentials")
-                raise Exception("Website requires authentication - detected Microsoft login page")
+                self.logger.info(f"[INFO] Detected Microsoft login page in content - attempting auto-login")
+                self.logger.info(f"[INFO] Current URL: {current_url}")
+                self.logger.info(f"[INFO] Page title: {page_title}")
+                
+                # Try to load credentials and perform auto-login
+                if self.auto_login.load_credentials():
+                    self.logger.info("[INFO] Credentials loaded, attempting automatic login...")
+                    login_success = await self.auto_login.login(self.page, self.base_url)
+                    if login_success:
+                        self.logger.info("[SUCCESS] Automatic login successful, continuing with scraping...")
+                        # Re-navigate to the target URL after successful login
+                        await self.page.goto(self.base_url)
+                        await self.page.wait_for_load_state('networkidle')
+                    else:
+                        self.logger.error("[ERROR] Automatic login failed")
+                        raise Exception("Authentication required - automatic login failed")
+                else:
+                    self.logger.error("[ERROR] No credentials available for authentication")
+                    self.logger.error("[ERROR] Please set up credentials using GitHub secrets or local credentials.json")
+                    raise Exception("Authentication required - no credentials available")
             
             # Get all employee links
             employee_links = await self._get_employee_links()
@@ -302,10 +334,26 @@ class SimpleEmployeeScraper:
                               for indicator in login_indicators)
             
             if is_login_page:
-                self.logger.error(f"[ERROR] Redirected to login page: {current_url}")
-                self.logger.error(f"[ERROR] Page title: {page_title}")
-                self.logger.error("[ERROR] Authentication required - scraper cannot proceed without credentials")
-                raise Exception("Authentication required - website redirected to login page")
+                self.logger.info(f"[INFO] Redirected to login page during scraping - attempting auto-login")
+                self.logger.info(f"[INFO] Current URL: {current_url}")
+                self.logger.info(f"[INFO] Page title: {page_title}")
+                
+                # Try to load credentials and perform auto-login
+                if self.auto_login.load_credentials():
+                    self.logger.info("[INFO] Credentials loaded, attempting automatic login...")
+                    login_success = await self.auto_login.login(self.page, self.base_url)
+                    if login_success:
+                        self.logger.info("[SUCCESS] Automatic login successful, continuing with scraping...")
+                        # Re-navigate to the target URL after successful login
+                        await self.page.goto(self.base_url)
+                        await self.page.wait_for_load_state('networkidle')
+                    else:
+                        self.logger.error("[ERROR] Automatic login failed")
+                        raise Exception("Authentication required - automatic login failed")
+                else:
+                    self.logger.error("[ERROR] No credentials available for authentication")
+                    self.logger.error("[ERROR] Please set up credentials using GitHub secrets or local credentials.json")
+                    raise Exception("Authentication required - no credentials available")
             
             # Wait for employee cards to load using selector system with longer timeout
             try:
