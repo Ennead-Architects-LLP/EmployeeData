@@ -464,11 +464,14 @@ class UnifiedEmployeeScraper:
                     // Education - find education section using the actual HTML structure
                     data.education = [];
                     const allH1s = document.querySelectorAll('h1.commonStyledComponents_BlockTitle');
+                    console.log('Found H1 elements:', allH1s.length);
                     let educationSection = null;
                     for (let h1 of allH1s) {
+                        console.log('H1 text:', h1.textContent?.trim());
                         if (h1.textContent?.trim() === 'Education') {
                             // Find the parent container with EntityFields class
                             educationSection = h1.closest('.EntityFields');
+                            console.log('Found education section:', educationSection);
                             break;
                         }
                     }
