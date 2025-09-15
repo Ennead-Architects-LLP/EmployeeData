@@ -1,6 +1,7 @@
 name: Weekly Employee Data Scraper
 
 on:
+  # Triggers: run on a weekly schedule and allow manual runs from the UI
   schedule:
     # Run weekly on Tuesday at 3:14 AM EST (8:14 AM UTC)
     - cron: '14 8 * * 2' # Tuesday at 3:14 AM EST
@@ -11,14 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    # 1) Pull the latest repository contents so the job works on current code/data
     - name: Checkout repository
       uses: actions/checkout@v4
       
+    # 2) Install a specific Python version used by the scraper
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
         
+    # 3) Install OS libraries required by Chromium/Playwright in headless CI
     - name: Install system dependencies
       run: |
         sudo apt-get update
@@ -33,17 +37,20 @@ jobs:
           libxss1 \
           libasound2t64
           
+    # 4) Install Python packages needed by the scraper
     - name: Install Python dependencies
       run: |
         cd 2-scraper
         pip install -r requirements-linux.txt
         
+    # 5) Install the Playwright browser and its dependencies for scraping
     - name: Install Playwright browsers
       run: |
         cd 2-scraper
         playwright install chromium
         playwright install-deps chromium
         
+    # 6) Run the weekly scraper with credentials from repo secrets
     - name: Run weekly scraper
       env:
         SCRAPER_EMAIL: ${{ secrets.SCRAPER_EMAIL }}
@@ -53,6 +60,7 @@ jobs:
         cd 2-scraper
         python weekly_scraper.py
         
+    # 7) Build the employee file indexes used by the website (writes to docs/)
     - name: Generate employee files list
       run: |
         echo "Running .github/scripts/generate_index_for_json.py..."
@@ -60,6 +68,8 @@ jobs:
         echo "Generated list in docs/assets/:"
         ls -la docs/assets/*.json || true
         
+    # 8) Copy generated lists and all individual employee JSONs to root/assets
+    #    so GitHub Pages (served from the repo root) can fetch them directly
     - name: Copy list and individual files to root for GitHub Pages access
       run: |
         mkdir -p assets
@@ -68,6 +78,7 @@ jobs:
         cp -r docs/assets/individual_employees assets/
         echo "Copied JSON files and individual employee data to root directory"
         
+    # 9) Commit any changes (new/updated JSONs) and push back to the repo
     - name: Commit and push changes
       if: success()
       env:
