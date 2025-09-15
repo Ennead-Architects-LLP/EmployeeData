@@ -8,6 +8,7 @@ This server is designed to run on GitHub Actions and handle repository dispatch 
 import json
 import os
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from flask import Flask, request, jsonify
@@ -249,6 +250,9 @@ def commit_to_github(computer_data=None):
     try:
         import subprocess
         
+        # Determine current branch (default to main)
+        branch = os.environ.get('GITHUB_REF_NAME') or os.environ.get('GITHUB_HEAD_REF') or 'main'
+        
         # Configure git
         subprocess.run(['git', 'config', '--local', 'user.email', 'action@github.com'], check=True)
         subprocess.run(['git', 'config', '--local', 'user.name', 'GitHub Action'], check=True)
@@ -267,11 +271,25 @@ def commit_to_github(computer_data=None):
         commit_message = f"$$$_Action_Computer_Data_Update: {human_name} - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         subprocess.run(['git', 'commit', '-m', commit_message], check=True)
         
-        # Push changes
-        subprocess.run(['git', 'push'], check=True)
+        # Push changes with rebase + retry to handle concurrent updates
+        max_attempts = 3
+        for attempt in range(1, max_attempts + 1):
+            try:
+                # Fetch and rebase before pushing to minimize conflicts
+                subprocess.run(['git', 'fetch', 'origin', branch], check=True)
+                subprocess.run(['git', 'rebase', f'origin/{branch}'], check=True)
+                subprocess.run(['git', 'push', 'origin', branch], check=True)
+                print("✅ Changes committed and pushed to GitHub")
+                return True
+            except subprocess.CalledProcessError as push_err:
+                print(f"⚠️  Push attempt {attempt} failed: {push_err}")
+                if attempt == max_attempts:
+                    raise
+                # Brief backoff before retrying
+                time.sleep(1.5 * attempt)
         
-        print("✅ Changes committed and pushed to GitHub")
-        return True
+        # Should not reach here
+        return False
         
     except subprocess.CalledProcessError as e:
         print(f"❌ Git command failed: {e}")

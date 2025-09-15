@@ -55,14 +55,10 @@ jobs:
         
     - name: Generate employee JSON directory file
       run: |
-        cd docs
-        echo "Current directory: $(pwd)"
-        echo "Files in directory:"
-        ls -la
-        echo "Running generate_index_for_json.py..."
-        python generate_index_for_json.py
-        echo "Generated files:"
-        ls -la *.json
+        echo "Running .github/scripts/generate_index_for_json.py..."
+        python .github/scripts/generate_index_for_json.py
+        echo "Generated files in docs/:"
+        ls -la docs/*.json || true
         
     - name: Copy JSON files to root for GitHub Pages access
       run: |
