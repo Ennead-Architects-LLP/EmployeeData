@@ -27,7 +27,7 @@ cd docs
 ### 2. Weekly Scraper
 ```bash
 cd 2-scraper
-pip install -r requirements.txt
+pip install -r requirements_scraper.txt
 python weekly_scraper.py
 ```
 
@@ -41,7 +41,7 @@ python about_me.py --send-to-github --github-token YOUR_TOKEN
 ### 4. Server (Data Handler)
 ```bash
 cd 4-server
-pip install -r requirements.txt
+pip install -r requirements_server.txt
 python server.py
 ```
 
@@ -144,7 +144,7 @@ This component handles weekly data collection from the Ennead employee directory
 ### Manual Run
 ```bash
 cd 2-scraper
-pip install -r requirements.txt
+pip install -r requirements_scraper.txt
 python weekly_scraper.py
 ```
 
@@ -394,7 +394,7 @@ This standalone script processes 3 Excel files and creates a composite JSON file
 ## Installation
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements_workfiles.txt
 ```
 
 ## Usage

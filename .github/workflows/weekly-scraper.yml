@@ -44,7 +44,7 @@ jobs:
     - name: Install Python dependencies
       run: |
         cd 2-scraper
-        pip install -r ../.github/scripts/requirements-linux.txt
+        pip install -r .github/scripts/requirements-linux.txt
         
     # 5) Install the Playwright browser and its dependencies for scraping
     - name: Install Playwright browsers
