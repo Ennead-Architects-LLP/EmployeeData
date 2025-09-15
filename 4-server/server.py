@@ -168,7 +168,7 @@ def update_employee_computer_info(employee_file_path, computer_data):
         if 'computer_info' not in employee_data:
             employee_data['computer_info'] = {}
         elif isinstance(employee_data['computer_info'], list):
-            # Convert existing list to dictionary if needed
+            # Convert existing list of dictionaries to dictionary of dictionaries if needed
             computer_dict = {}
             for computer in employee_data['computer_info']:
                 computername = computer.get('computername', 'Unknown')

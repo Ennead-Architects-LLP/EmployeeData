@@ -78,16 +78,16 @@ function createEmployeeCard(employee) {
     
     if (computerInfo) {
         if (Array.isArray(computerInfo)) {
-            // Handle legacy array format
+            // Handle list of dictionaries format: [{computername: "PC1", os: "Windows"}, ...]
             computers = computerInfo;
             if (employee.human_name && employee.human_name.includes('Sen')) {
-                console.log('Debug - Using array format, computers:', computers);
+                console.log('Debug - Using list of dict format, computers:', computers);
             }
         } else if (typeof computerInfo === 'object') {
-            // Handle new dictionary format - convert to array of computer objects
+            // Handle dictionary of dictionaries format: {"PC1": {computername: "PC1", os: "Windows"}, ...}
             computers = Object.values(computerInfo);
             if (employee.human_name && employee.human_name.includes('Sen')) {
-                console.log('Debug - Using dictionary format, computers:', computers);
+                console.log('Debug - Using dict of dict format, computers:', computers);
             }
         }
     }
