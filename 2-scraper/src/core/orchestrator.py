@@ -34,17 +34,14 @@ class ScraperOrchestrator:
                 self.logger.error("[ERROR] No employees scraped. Aborting.")
                 return False
             
-            # Step 2: Save individual JSON files
-            self.logger.info("[STEP 2] Saving individual JSON files...")
-            saved_count = await self._save_individual_employees(employees)
-            self.logger.info(f"[SUCCESS] Saved {saved_count} employee JSON files")
-
-            # Step 3: Save combined JSON file
-            self.logger.info("[STEP 3] Saving combined JSON file...")
+            # Individual JSON files are now saved by the scraper as it goes
+            # Only save the combined JSON file for backward compatibility
+            self.logger.info("[STEP 2] Saving combined JSON file...")
             combined_path = await self._save_combined_employees(employees)
             self.logger.info(f"[SUCCESS] Saved combined JSON to {combined_path}")
 
             self.logger.info(f"[SUCCESS] Scraper completed successfully - {len(employees)} employees processed")
+            self.logger.info(f"[INFO] Individual JSON files saved to: docs/assets/individual_employees/")
             return True
             
         except Exception as e:

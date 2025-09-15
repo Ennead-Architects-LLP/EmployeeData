@@ -39,7 +39,7 @@ import signal
 from contextlib import asynccontextmanager
 
 from .config.settings import ScraperConfig
-from .core.orchestrator import ScraperOrchestrator
+from .core.orchestrator import Orchestrator
 from .config.credentials import show_credentials_gui
 
 
@@ -54,7 +54,7 @@ number of employees and optional DOM capturing for analysis.
 
 DEBUG MODE OPTIONS:
   --debug                 Enable debug mode (limits employees and captures DOM)
-  --debug-employees N     Set number of employees to scrape (default: 3)
+  --debug-employees N     Set number of employees to scrape (default: 10)
   --debug-dom            Force DOM capturing on (overrides default)
   --debug-no-dom         Force DOM capturing off (faster execution)
   --debug-help           Show this help message
@@ -156,27 +156,19 @@ class TimeoutManager:
         self.logger.info("[STOP] All timers cancelled")
 
 
-async def run_without_timeout(orchestrator: ScraperOrchestrator, config: ScraperConfig):
+async def run_without_timeout(orchestrator: Orchestrator, config: ScraperConfig):
     """Run orchestrator without timeout protection."""
     try:
         # Step 1: Setup directories
         config.setup_directories()
         
         # Step 2: Run orchestrator
-        success = await orchestrator.run()
-        return success
+        html_path = await orchestrator.run()
+        return html_path
             
     except Exception as e:
         print(f"Operation failed: {e}")
         return None
-    finally:
-        # Ensure any remaining resources are cleaned up
-        try:
-            import asyncio
-            # Give a moment for any pending operations to complete
-            await asyncio.sleep(0.1)
-        except:
-            pass
 
 
 async def main():
@@ -198,8 +190,8 @@ async def main():
     # Debug mode options
     parser.add_argument("--debug", action="store_true",
                        help="Enable DEBUG mode (limits employees and captures DOM)")
-    parser.add_argument("--debug-employees", type=int, default=3,
-                       help="Number of employees to scrape in debug mode (default: 3)")
+    parser.add_argument("--debug-employees", type=int, default=10,
+                       help="Number of employees to scrape in debug mode (default: 10)")
     parser.add_argument("--debug-dom", action="store_true",
                        help="Capture DOM and screenshots for debugging")
     parser.add_argument("--debug-no-dom", action="store_true",
@@ -291,14 +283,14 @@ async def main():
     try:
         # Use only sequential processing for stability
         # Delegate to orchestrator without timeout protection
-        orchestrator = ScraperOrchestrator(config, use_parallel=False, max_workers=1)
-        success = await run_without_timeout(orchestrator, config)
+        orchestrator = Orchestrator(config, use_parallel=False, max_workers=1)
+        html_path = await run_without_timeout(orchestrator, config)
         
-        if not success:
+        if not html_path:
             print("❌ Scraping failed or timed out.")
             return
         
-        print(f"✅ Scraping completed successfully!")
+        print(f"✅ HTML report generated: {html_path}")
         
         if config.DEBUG_MODE:
             debug_dir = config.get_debug_output_path()
@@ -325,42 +317,5 @@ async def main():
 
 
 if __name__ == "__main__":
-    # Suppress asyncio warnings about unclosed transports
-    import warnings
-    import os
-    import sys
-    from contextlib import redirect_stderr
-    from io import StringIO
-    
-    # Suppress all ResourceWarnings from asyncio
-    warnings.filterwarnings("ignore", category=ResourceWarning)
-    warnings.filterwarnings("ignore", message="unclosed transport")
-    warnings.filterwarnings("ignore", message="unclosed file")
-    
-    # Set environment variable to suppress asyncio warnings
-    os.environ['PYTHONWARNINGS'] = 'ignore::ResourceWarning'
-    
-    # Run the async main function with proper cleanup
-    try:
-        # Redirect stderr to suppress asyncio warnings
-        with redirect_stderr(StringIO()):
-            asyncio.run(main())
-    except KeyboardInterrupt:
-        print("\n[INFO] Scraper interrupted by user")
-    except Exception as e:
-        print(f"[ERROR] Scraper failed: {e}")
-    finally:
-        # Ensure all asyncio tasks are properly cleaned up
-        try:
-            import asyncio
-            # Cancel any remaining tasks
-            tasks = [t for t in asyncio.all_tasks() if not t.done()]
-            if tasks:
-                for task in tasks:
-                    task.cancel()
-                # Wait for tasks to complete cancellation
-                asyncio.gather(*tasks, return_exceptions=True)
-            # Give a moment for cleanup
-            asyncio.sleep(0.1)
-        except:
-            pass
+    # Run the async main function
+    asyncio.run(main())

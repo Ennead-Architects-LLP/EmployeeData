@@ -9,20 +9,18 @@ import json
 import os
 from datetime import datetime
 from playwright.async_api import async_playwright
-from .auth import AutoLogin
 
 
 class DOMCapture:
     def __init__(self):
-        self.playwright = None
         self.browser = None
         self.page = None
         self.capture_dir = "../../debug/dom_captures"
         
     async def start_browser(self):
         """Start browser and navigate to employee directory"""
-        self.playwright = await async_playwright().start()
-        self.browser = await self.playwright.chromium.launch(
+        playwright = await async_playwright().start()
+        self.browser = await playwright.chromium.launch(
             headless=False,  # Keep visible for debugging
             slow_mo=1000     # Slow down for observation
         )
@@ -32,31 +30,7 @@ class DOMCapture:
         await self.page.set_viewport_size({"width": 1920, "height": 1080})
         
         print("🌐 Navigating to employee directory...")
-        await self.page.goto("https://ei.ennead.com/employees/1/all-employees", wait_until="networkidle")
-        
-        # Check if authentication is required and use AutoLogin
-        current_url = self.page.url
-        page_title = await self.page.title()
-        
-        login_indicators = [
-            "sign in", "login", "authentication", "microsoft", "oauth",
-            "password", "username", "account"
-        ]
-        
-        is_login_page = any(indicator in page_title.lower() or indicator in current_url.lower() 
-                          for indicator in login_indicators)
-        
-        if is_login_page:
-            print("🔐 Authentication required - using AutoLogin...")
-            try:
-                auth = AutoLogin(self.page)
-                await auth.login()
-                print("✅ AutoLogin successful!")
-            except Exception as e:
-                print(f"❌ AutoLogin failed: {e}")
-                print("   Falling back to manual login...")
-                print("   Press Enter after logging in to continue...")
-                input()
+        await self.page.goto("https://ei.ennead.com/employee-directory", wait_until="networkidle")
         
     async def capture_dom_structure(self):
         """Capture DOM structure and analyze selectors"""
@@ -206,13 +180,10 @@ class DOMCapture:
         return employee_links
     
     async def close_browser(self):
-        """Close browser and playwright"""
+        """Close browser"""
         if self.browser:
             await self.browser.close()
             print("🔒 Browser closed")
-        if self.playwright:
-            await self.playwright.stop()
-            print("🔒 Playwright stopped")
 
 
 async def main():

@@ -14,7 +14,6 @@ from playwright.async_api import async_playwright
 
 class AdvancedSelectorRecorder:
     def __init__(self):
-        self.playwright = None
         self.browser = None
         self.page = None
         self.capture_dir = "../../debug/dom_captures"
@@ -22,8 +21,8 @@ class AdvancedSelectorRecorder:
         
     async def start_browser(self):
         """Start browser with debugging options"""
-        self.playwright = await async_playwright().start()
-        self.browser = await self.playwright.chromium.launch(
+        playwright = await async_playwright().start()
+        self.browser = await playwright.chromium.launch(
             headless=False,  # Keep visible for debugging
             slow_mo=500,     # Slow down for observation
             devtools=True    # Open dev tools
@@ -276,13 +275,10 @@ class AdvancedSelectorRecorder:
         return employee_data
     
     async def close_browser(self):
-        """Close browser and playwright"""
+        """Close browser"""
         if self.browser:
             await self.browser.close()
             print("🔒 Browser closed")
-        if self.playwright:
-            await self.playwright.stop()
-            print("🔒 Playwright stopped")
 
 
 async def main():

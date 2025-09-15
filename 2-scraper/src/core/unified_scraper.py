@@ -51,7 +51,14 @@ class UnifiedEmployeeScraper:
         self.logger = logging.getLogger(__name__)
         
         # Initialize components
-        self.image_downloader = ImageDownloader() if download_images else None
+        if download_images:
+            # Set the correct path for images to be saved in docs/assets/images
+            from pathlib import Path
+            project_root = Path(__file__).parent.parent.parent.parent
+            images_dir = project_root / "docs" / "assets" / "images"
+            self.image_downloader = ImageDownloader(str(images_dir))
+        else:
+            self.image_downloader = None
         self.auto_login = AutoLogin()
         
         # Browser components
@@ -214,7 +221,16 @@ class UnifiedEmployeeScraper:
                     
                     if employee:
                         self.employees.append(employee)
-                        self.logger.info(f"[SUCCESS] Successfully scraped {name}")
+                        
+                        # Save individual JSON file immediately
+                        saved_path = await self._save_individual_employee(employee)
+                        
+                        if saved_path:
+                            print(f"✅ SUCCESS: {name} - JSON saved to {saved_path}")
+                        else:
+                            print(f"⚠️ WARNING: {name} - Failed to save JSON")
+                        
+                        self.logger.info(f"[SUCCESS] Successfully scraped and saved {name}")
                     else:
                         self.logger.warning(f"[WARNING] Failed to scrape {name}")
                     
@@ -331,8 +347,9 @@ class UnifiedEmployeeScraper:
                 () => {{
                     const data = {{}};
                     
-                    // Basic information - use profile page selectors
-                    data.human_name = document.querySelector('h1, .employee-name, .profile-name, .name')?.textContent?.trim() || '';
+                    // Basic information - use more specific selectors for employee name
+                    data.human_name = document.querySelector('h1[class*="EntityHeader"], .EntityHeader h1, h1:not([class*="section"])')?.textContent?.trim() || 
+                                     document.querySelector('h1')?.textContent?.trim() || '';
                     data.email = document.querySelector('a[href^="mailto:"]')?.href?.replace('mailto:', '') || '';
                     data.phone = document.querySelector('a[href^="tel:"]')?.href?.replace('tel:', '') || '';
                     
@@ -382,10 +399,36 @@ class UnifiedEmployeeScraper:
             await self.page.goto(profile_url)
             await self.page.wait_for_load_state('networkidle')
             
+            # Debug: Check if we're actually on the profile page
+            current_url = self.page.url
+            page_title = await self.page.title()
+            self.logger.info(f"    Current URL after navigation: {current_url}")
+            self.logger.info(f"    Page title: {page_title}")
+            
+            # Debug: Check what name is being extracted
+            debug_name = await self.page.evaluate("""
+                () => {
+                    const h1 = document.querySelector('h1');
+                    const entityHeader = document.querySelector('h1[class*="EntityHeader"]');
+                    const allH1s = document.querySelectorAll('h1');
+                    return {
+                        firstH1: h1?.textContent?.trim() || 'none',
+                        entityHeader: entityHeader?.textContent?.trim() || 'none',
+                        allH1s: Array.from(allH1s).map(h => h.textContent?.trim()).filter(t => t)
+                    };
+                }
+            """)
+            self.logger.info(f"    Debug name extraction: {debug_name}")
+            
             # Start with basic data
             employee = await self._scrape_employee_basic(profile_url, name, image_url)
             if not employee:
                 return None
+            
+            # Override the human_name with the name from the directory (more reliable)
+            if name and name.strip():
+                employee.human_name = name.strip()
+                self.logger.info(f"    Using directory name: {name}")
             
             # Extract comprehensive data
             comprehensive_data = await self.page.evaluate("""
@@ -398,9 +441,9 @@ class UnifiedEmployeeScraper:
                     data.linkedin_url = document.querySelector('a[href*="linkedin.com"]')?.href || '';
                     data.website_url = document.querySelector('a[href*="http"]:not([href*="ennead.com"])')?.href || '';
                     
-                    // Years with firm - look for specific patterns
-                    const yearsText = document.querySelector('.years-with-firm, .tenure, .experience, [data-years]')?.textContent || '';
-                    const yearsMatch = yearsText.match(/(\d+)/);
+                    // Years with firm - look for specific patterns in the text content
+                    const pageText = document.body.textContent || '';
+                    const yearsMatch = pageText.match(/Years With Firm\\s*(\\d+)/i);
                     data.years_with_firm = yearsMatch ? parseInt(yearsMatch[1]) : null;
                     
                     // Seating assignment
@@ -418,39 +461,85 @@ class UnifiedEmployeeScraper:
                         if (text) data.memberships.push(text);
                     });
                     
-                    // Education
+                    // Education - find education section using the actual HTML structure
                     data.education = [];
-                    const educationElements = document.querySelectorAll('.education-item, .degree, .school');
-                    educationElements.forEach(el => {
-                        const degree = el.querySelector('.degree, .title')?.textContent?.trim() || '';
-                        const school = el.querySelector('.school, .institution')?.textContent?.trim() || '';
-                        const year = el.querySelector('.year, .date')?.textContent?.trim() || '';
-                        if (degree || school) {
-                            data.education.push({
-                                'degree': degree,
-                                'school': school,
-                                'year': year
-                            });
+                    const allH1s = document.querySelectorAll('h1.commonStyledComponents_BlockTitle');
+                    let educationSection = null;
+                    for (let h1 of allH1s) {
+                        if (h1.textContent?.trim() === 'Education') {
+                            // Find the parent container with EntityFields class
+                            educationSection = h1.closest('.EntityFields');
+                            break;
                         }
-                    });
+                    }
                     
-                    // Licenses and registrations
+                    if (educationSection) {
+                        // Look for education data in the EntityFields_InfoFieldValue divs
+                        const educationItems = educationSection.querySelectorAll('[data-kafieldname], .EntityFields_InfoFieldValue');
+                        educationItems.forEach(item => {
+                            const text = item.textContent?.trim();
+                            if (text && (text.includes('University') || text.includes('College') || text.includes('Institute'))) {
+                                // Handle the concatenated text format: "InstitutionDegreeSpecialtyUniversity of MassachusettsUndergraduateArts in Classics"
+                                if (text.includes('InstitutionDegreeSpecialty')) {
+                                    // Split by the pattern and extract the actual data
+                                    const parts = text.split('InstitutionDegreeSpecialty');
+                                    if (parts.length > 1) {
+                                        const educationText = parts[1];
+                                        // Look for University/College/Institute followed by degree
+                                        const institutionMatch = educationText.match(/([A-Za-z\\s&]+University|[A-Za-z\\s&]+College|[A-Za-z\\s&]+Institute)/);
+                                        const degreeMatch = educationText.match(/(Undergraduate|Graduate|Bachelor|Master|PhD|Doctorate|Associate)/i);
+                                        if (institutionMatch) {
+                                            const specialty = educationText.replace(institutionMatch[1], '').replace(degreeMatch ? degreeMatch[1] : '', '').trim();
+                                            data.education.push({
+                                                'institution': institutionMatch[1].trim(),
+                                                'degree': degreeMatch ? degreeMatch[1].trim() : 'Unknown',
+                                                'specialty': specialty
+                                            });
+                                        }
+                                    }
+                                } else {
+                                    // Handle normal format
+                                    const institutionMatch = text.match(/([A-Za-z\\s&]+University|[A-Za-z\\s&]+College|[A-Za-z\\s&]+Institute)/);
+                                    const degreeMatch = text.match(/(Undergraduate|Graduate|Bachelor|Master|PhD|Doctorate|Associate)/i);
+                                    if (institutionMatch) {
+                                        data.education.push({
+                                            'institution': institutionMatch[1].trim(),
+                                            'degree': degreeMatch ? degreeMatch[1].trim() : 'Unknown',
+                                            'specialty': text.replace(institutionMatch[1], '').replace(degreeMatch ? degreeMatch[1] : '', '').trim()
+                                        });
+                                    }
+                                }
+                            }
+                        });
+                    }
+                    
+                    // Licenses and registrations - find licenses section using the actual HTML structure
                     data.licenses = [];
-                    const licenseElements = document.querySelectorAll('.license, .certification, .registration');
-                    licenseElements.forEach(el => {
-                        const name = el.querySelector('.name, .title')?.textContent?.trim() || '';
-                        const number = el.querySelector('.number, .id')?.textContent?.trim() || '';
-                        const state = el.querySelector('.state, .jurisdiction')?.textContent?.trim() || '';
-                        const expiry = el.querySelector('.expiry, .expires')?.textContent?.trim() || '';
-                        if (name) {
-                            data.licenses.push({
-                                'name': name,
-                                'number': number,
-                                'state': state,
-                                'expiry': expiry
-                            });
+                    const allH1sForLicenses = document.querySelectorAll('h1.commonStyledComponents_BlockTitle');
+                    let licensesSection = null;
+                    for (let h1 of allH1sForLicenses) {
+                        if (h1.textContent?.trim().includes('License')) {
+                            // Find the parent container with EntityFields class
+                            licensesSection = h1.closest('.EntityFields');
+                            break;
                         }
-                    });
+                    }
+                    
+                    if (licensesSection) {
+                        // Look for license data in the EntityFields_InfoFieldValue divs
+                        const licenseItems = licensesSection.querySelectorAll('[data-kafieldname], .EntityFields_InfoFieldValue');
+                        licenseItems.forEach(item => {
+                            const text = item.textContent?.trim();
+                            if (text && text.length > 3 && !text.includes('License') && !text.includes('State') && !text.includes('Number')) {
+                                data.licenses.push({
+                                    'name': text,
+                                    'number': '',
+                                    'state': '',
+                                    'expiry': ''
+                                });
+                            }
+                        });
+                    }
                     
                     // Projects - look for project links and related elements
                     data.projects = [];
@@ -531,7 +620,7 @@ class UnifiedEmployeeScraper:
                     local_path = await self.image_downloader.capture_preview_image(
                         self.page, 
                         name,
-                        image_selector='.profile-image img, .employee-image img, .avatar img, img[src*="/api/image/"]'
+                        image_selector='img[src*="/api/image/"]:not([src*="favicon"]):not([src*="logo"]):not([src*="icon"])'
                     )
                     if local_path:
                         employee.image_local_path = local_path
@@ -572,6 +661,48 @@ class UnifiedEmployeeScraper:
                 return value
         
         return location.title()
+    
+    async def _save_individual_employee(self, employee: EmployeeData) -> str:
+        """Save individual employee as JSON file immediately"""
+        try:
+            from pathlib import Path
+            import json
+            
+            # Set output paths - always use docs folder relative to project root
+            project_root = Path(__file__).parent.parent.parent.parent
+            output_path = project_root / "docs" / "assets"
+            individual_employees_dir = output_path / "individual_employees"
+            individual_employees_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Debug: Log the directory structure
+            self.logger.info(f"[DEBUG] Project root: {project_root}")
+            self.logger.info(f"[DEBUG] Output path: {output_path}")
+            self.logger.info(f"[DEBUG] Individual employees dir: {individual_employees_dir}")
+            self.logger.info(f"[DEBUG] Directory exists: {individual_employees_dir.exists()}")
+            
+            # Create filename from employee name
+            employee_name = employee.human_name or "unknown"
+            
+            # Validate that this looks like a real employee name (not a section header)
+            invalid_names = ['personal bio', 'the basics', 'education', 'contact info', 'recent posts', 'projects', 'i\'m a resource for']
+            if employee_name.lower() in invalid_names:
+                self.logger.warning(f"[SKIP] Skipping invalid employee name: {employee_name}")
+                return ""
+            
+            clean_name = employee_name.replace(' ', '_').replace('/', '_').replace('\\', '_')
+            filename = f"{clean_name}.json"
+            file_path = individual_employees_dir / filename
+            
+            # Save the employee data
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(employee.to_dict(), f, indent=2, ensure_ascii=False, default=str)
+            
+            self.logger.info(f"[SAVED] Individual JSON: {filename}")
+            return str(file_path)
+            
+        except Exception as e:
+            self.logger.error(f"[ERROR] Failed to save individual JSON for {employee.human_name}: {e}")
+            return ""
     
     async def _scroll_to_load_all_employees(self):
         """Scroll down to load all employees via infinite scroll"""
