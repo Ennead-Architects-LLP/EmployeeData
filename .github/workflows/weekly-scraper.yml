@@ -7,6 +7,9 @@ on:
     - cron: '14 8 * * 2' # Tuesday at 3:14 AM EST
   workflow_dispatch: # Allow manual triggering
 
+# This workflow ensures both images and JSON artifacts are consistently generated
+# and stored in docs/assets/ for GitHub Pages consumption
+
 jobs:
   scrape-employee-data:
     runs-on: ubuntu-latest
@@ -68,17 +71,37 @@ jobs:
         echo "Generated list in docs/assets/:"
         ls -la docs/assets/*.json || true
         
-    # 8) Copy generated lists and all individual employee JSONs to root/assets
-    #    so GitHub Pages (served from the repo root) can fetch them directly
-    - name: Copy list and individual files to root for GitHub Pages access
+    # 8) Verify both images and JSON artifacts are properly generated
+    - name: Verify artifacts generation
       run: |
-        mkdir -p assets
-        cp docs/assets/employee_files_list.json assets/
-        # Copy individual employee files to root assets directory
-        cp -r docs/assets/individual_employees assets/
-        echo "Copied JSON files and individual employee data to root directory"
+        echo "=== Verifying JSON artifacts ==="
+        echo "Employee files list:"
+        ls -la docs/assets/employee_files_list.json || echo "❌ employee_files_list.json not found"
+        echo "Individual employee files count:"
+        ls docs/assets/individual_employees/*.json | wc -l || echo "❌ No individual employee files found"
+        echo ""
+        echo "=== Verifying image artifacts ==="
+        echo "Images directory:"
+        ls -la docs/assets/images/ | head -10 || echo "❌ Images directory not found"
+        echo "Total images count:"
+        ls docs/assets/images/*.jpg | wc -l || echo "❌ No images found"
+        echo ""
+        echo "=== Artifact Summary ==="
+        echo "JSON files: $(ls docs/assets/individual_employees/*.json 2>/dev/null | wc -l) individual employee files"
+        echo "Images: $(ls docs/assets/images/*.jpg 2>/dev/null | wc -l) profile images"
         
-    # 9) Commit any changes (new/updated JSONs) and push back to the repo
+    # 9) Create GitHub Actions artifacts for both images and JSON
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: scraper-artifacts-${{ github.run_number }}
+        path: |
+          docs/assets/employee_files_list.json
+          docs/assets/individual_employees/
+          docs/assets/images/
+        retention-days: 30
+        
+    # 10) Commit any changes (new/updated JSONs and images) and push back to the repo
     - name: Commit and push changes
       if: success()
       env:
@@ -87,9 +110,10 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
+        # Add JSON artifacts
         git add docs/assets/employee_files_list.json
         git add docs/assets/individual_employees/
-        git add assets/employee_files_list.json
-        git add assets/individual_employees/
-        git diff --staged --quiet || git commit -m "$$$_Action_Weekly_Scraper_Update: $(date) - Updated employee data and employee_files_list.json"
+        # Add image artifacts
+        git add docs/assets/images/
+        git diff --staged --quiet || git commit -m "🔄 Weekly Scraper Update: $(date) - Updated employee data, JSON artifacts, and profile images"
         git push
