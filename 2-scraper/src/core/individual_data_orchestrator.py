@@ -19,9 +19,13 @@ class IndividualDataOrchestrator:
         self.config = config or ScraperConfig.from_env()
         self.logger = logging.getLogger(__name__)
         
-        # Set output paths - use absolute path to avoid issues
-        self.output_path = Path(__file__).parent.parent.parent.parent / "docs" / "assets"
+        # Set output paths - always use docs folder relative to project root
+        # This ensures consistency whether run locally or from GitHub Actions
+        project_root = Path(__file__).parent.parent.parent.parent
+        self.output_path = project_root / "docs" / "assets"
         self.output_path.mkdir(parents=True, exist_ok=True)
+        
+        self.logger.info(f"Output path set to: {self.output_path.absolute()}")
         
         # Individual employee files directory
         self.individual_employees_dir = self.output_path / "individual_employees"
@@ -29,6 +33,16 @@ class IndividualDataOrchestrator:
         
         self.images_dir = self.output_path / "images"
         self.images_dir.mkdir(exist_ok=True)
+        
+        # Validate paths are accessible
+        if not self.output_path.exists():
+            raise Exception(f"Output path does not exist: {self.output_path}")
+        if not self.individual_employees_dir.exists():
+            raise Exception(f"Individual employees directory does not exist: {self.individual_employees_dir}")
+        if not self.images_dir.exists():
+            raise Exception(f"Images directory does not exist: {self.images_dir}")
+        
+        self.logger.info(f"✅ All output directories validated and ready")
     
     def get_employee_filename(self, employee_name: str) -> str:
         """Generate filename for individual employee JSON file"""

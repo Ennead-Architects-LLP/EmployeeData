@@ -61,6 +61,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         cd 2-scraper
+        echo "Current directory: $(pwd)"
+        echo "Project root should be: $(pwd)/.."
+        echo "Docs directory should be: $(pwd)/../docs"
         python weekly_scraper.py
         
     # 7) Build the employee file indexes used by the website (writes to docs/)
@@ -89,6 +92,13 @@ jobs:
         echo "=== Artifact Summary ==="
         echo "JSON files: $(ls docs/assets/individual_employees/*.json 2>/dev/null | wc -l) individual employee files"
         echo "Images: $(ls docs/assets/images/*.jpg 2>/dev/null | wc -l) profile images"
+        echo ""
+        echo "=== Path Verification ==="
+        echo "Current working directory: $(pwd)"
+        echo "Docs directory exists: $(test -d docs && echo 'YES' || echo 'NO')"
+        echo "Assets directory exists: $(test -d docs/assets && echo 'YES' || echo 'NO')"
+        echo "Individual employees directory exists: $(test -d docs/assets/individual_employees && echo 'YES' || echo 'NO')"
+        echo "Images directory exists: $(test -d docs/assets/images && echo 'YES' || echo 'NO')"
         
     # 9) Create GitHub Actions artifacts for both images and JSON
     - name: Upload artifacts
