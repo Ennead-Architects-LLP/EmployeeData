@@ -1,5 +1,7 @@
 # EmployeeData - Multi-Component Architecture
 
+Live site: https://ennead-architects-llp.github.io/EmployeeData/
+
 A comprehensive employee data management system with 5 distinct components for data collection, processing, and display.
 
 ## 🏗️ Repository Structure
