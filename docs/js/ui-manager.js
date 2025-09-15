@@ -68,14 +68,32 @@ function createEmployeeCard(employee) {
     const computerInfo = employee.computer_info || employee.computer || employee.computer_specs;
     let computers = [];
     
+    // Debug logging
+    if (employee.human_name && employee.human_name.includes('Sen')) {
+        console.log('Debug - Employee:', employee.human_name);
+        console.log('Debug - Computer Info:', computerInfo);
+        console.log('Debug - Computer Info Type:', typeof computerInfo);
+        console.log('Debug - Is Array:', Array.isArray(computerInfo));
+    }
+    
     if (computerInfo) {
         if (Array.isArray(computerInfo)) {
             // Handle legacy array format
             computers = computerInfo;
+            if (employee.human_name && employee.human_name.includes('Sen')) {
+                console.log('Debug - Using array format, computers:', computers);
+            }
         } else if (typeof computerInfo === 'object') {
             // Handle new dictionary format - convert to array of computer objects
             computers = Object.values(computerInfo);
+            if (employee.human_name && employee.human_name.includes('Sen')) {
+                console.log('Debug - Using dictionary format, computers:', computers);
+            }
         }
+    }
+    
+    if (employee.human_name && employee.human_name.includes('Sen')) {
+        console.log('Debug - Final computers array:', computers);
     }
     
     return `
