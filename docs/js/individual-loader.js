@@ -106,45 +106,23 @@ async function discoverEmployeeFiles() {
     console.log('Pathname:', window.location.pathname);
     
     try {
-        // Try to load from the generated JSON file
-        const url = `${basePath}employee_json_dir.json`;
-        console.log('Attempting to fetch:', url);
+        // Load from the single canonical list file inside assets
+        const url = `${basePath}assets/employee_files_list.json`;
+        console.log('Fetching employee file list:', url);
         const response = await fetch(url);
-        
         if (response.ok) {
-            const data = await response.json();
-            console.log(`Successfully loaded employee file list with ${data.total_count} files`);
-            return data.employee_files;
-        } else {
-            console.error(`Failed to load employee_json_dir.json: ${response.status} ${response.statusText}`);
-            console.error('Response URL:', response.url);
-            throw new Error('Employee JSON directory file not available');
+            const files = await response.json();
+            console.log(`Loaded ${files.length} employee files`);
+            return files;
         }
+        console.error(`Failed to load employee_files_list.json: ${response.status} ${response.statusText}`);
     } catch (error) {
-        console.log('Employee JSON directory file failed, trying fallback method...');
-        
-        // Fallback: try to load from old static file list
-        try {
-            const fallbackUrl = `${basePath}assets/employee_files_list.json`;
-            console.log('Attempting fallback fetch:', fallbackUrl);
-            const response = await fetch(fallbackUrl);
-            if (response.ok) {
-                const files = await response.json();
-                console.log(`Loaded ${files.length} files from static list as fallback`);
-                return files;
-            } else {
-                console.error(`Fallback also failed: ${response.status} ${response.statusText}`);
-                console.error('Fallback URL:', fallbackUrl);
-                console.error('Response URL:', response.url);
-            }
-        } catch (fallbackError) {
-            console.error('Both JSON directory file and static list failed:', fallbackError);
-        }
-        
-        // Last resort: return empty array
-        console.warn('No file discovery method worked, returning empty array');
-        return [];
+        console.error('Error loading employee_files_list.json:', error);
     }
+
+    // Last resort: return empty array
+    console.warn('No file discovery method worked, returning empty array');
+    return [];
 }
 
 async function loadEmployeeFilesInBatches(files, batchSize = 10, delayBetweenBatches = 100) {

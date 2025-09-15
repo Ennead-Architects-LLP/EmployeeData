@@ -53,17 +53,15 @@ jobs:
         cd 2-scraper
         python weekly_scraper.py
         
-    - name: Generate employee JSON directory file
+    - name: Generate employee files list
       run: |
         echo "Running .github/scripts/generate_index_for_json.py..."
         python .github/scripts/generate_index_for_json.py
-        echo "Generated files in docs/:"
-        ls -la docs/*.json || true
+        echo "Generated list in docs/assets/:"
+        ls -la docs/assets/*.json || true
         
-    - name: Copy JSON files to root for GitHub Pages access
+    - name: Copy list and individual files to root for GitHub Pages access
       run: |
-        # Copy files to root directory for GitHub Pages access
-        cp docs/employee_json_dir.json .
         mkdir -p assets
         cp docs/assets/employee_files_list.json assets/
         # Copy individual employee files to root assets directory
@@ -78,11 +76,9 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git add docs/employee_json_dir.json
         git add docs/assets/employee_files_list.json
         git add docs/assets/individual_employees/
-        git add employee_json_dir.json
         git add assets/employee_files_list.json
         git add assets/individual_employees/
-        git diff --staged --quiet || git commit -m "$$$_Action_Weekly_Scraper_Update: $(date) - Updated employee data and JSON directory files"
+        git diff --staged --quiet || git commit -m "$$$_Action_Weekly_Scraper_Update: $(date) - Updated employee data and employee_files_list.json"
         git push
