@@ -14,7 +14,7 @@ from ..config.settings import ScraperConfig
 from .unified_scraper import UnifiedEmployeeScraper
 from ..services.image_downloader import ImageDownloader
 
-class IndividualDataOrchestrator:
+class ProductionOrchestrator:
     def __init__(self, config: Optional[ScraperConfig] = None):
         self.config = config or ScraperConfig.from_env()
         self.logger = logging.getLogger(__name__)

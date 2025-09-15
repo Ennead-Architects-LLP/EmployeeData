@@ -10,7 +10,7 @@ from pathlib import Path
 # Add src to path
 sys.path.append(str(Path(__file__).parent.parent))
 
-from src.core.individual_data_orchestrator import IndividualDataOrchestrator
+from src.core.individual_data_orchestrator import ProductionOrchestrator
 from src.config.settings import ScraperConfig
 
 async def test_scraper():
@@ -26,7 +26,7 @@ async def test_scraper():
         config.TIMEOUT = 10000
         
         # Create orchestrator
-        orchestrator = IndividualDataOrchestrator(config)
+        orchestrator = ProductionOrchestrator(config)
         
         print("🕷️  Testing employee scraping...")
         new_employees = await orchestrator.scrape_employees()

@@ -10,7 +10,7 @@ from pathlib import Path
 # Add src to path
 sys.path.append(str(Path(__file__).parent / 'src'))
 
-from src.core.individual_data_orchestrator import IndividualDataOrchestrator
+from src.core.individual_data_orchestrator import ProductionOrchestrator
 from src.config.settings import ScraperConfig
 
 def test_paths():
@@ -22,7 +22,7 @@ def test_paths():
     try:
         # Create orchestrator
         config = ScraperConfig.from_env()
-        orchestrator = IndividualDataOrchestrator(config)
+        orchestrator = ProductionOrchestrator(config)
         
         print(f"✅ Output path: {orchestrator.output_path}")
         print(f"✅ Individual employees dir: {orchestrator.individual_employees_dir}")

@@ -14,7 +14,7 @@ from pathlib import Path
 # Add src to path
 sys.path.append(str(Path(__file__).parent / 'src'))
 
-from src.core.individual_data_orchestrator import IndividualDataOrchestrator
+from src.core.individual_data_orchestrator import ProductionOrchestrator
 from src.config.settings import ScraperConfig
 
 def setup_logging():
@@ -47,7 +47,7 @@ async def main():
         config.TIMEOUT = 15000
         
         # Create orchestrator
-        orchestrator = IndividualDataOrchestrator(config)
+        orchestrator = ProductionOrchestrator(config)
         
         # Run data collection
         logger.info(f"Starting weekly scraper at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

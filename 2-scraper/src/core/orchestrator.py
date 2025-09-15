@@ -6,7 +6,7 @@ from ..config.settings import ScraperConfig
 from .unified_scraper import UnifiedEmployeeScraper
 from ..services.voice_announcer import voice_announcer
 
-class Orchestrator:
+class DevelopmentOrchestrator:
     def __init__(self, config: Optional[ScraperConfig] = None, use_parallel: bool = False, max_workers: int = 1):
         self.config = config or ScraperConfig.from_env()
         self.logger = logging.getLogger(__name__)
