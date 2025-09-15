@@ -22,9 +22,9 @@ async def test_unified_scraper():
     
     config = ScraperConfig.from_env()
     
-    # Test unified scraper (now always comprehensive)
-    print("\n1️⃣ Testing Unified Scraper (Comprehensive Mode)")
-    print("-" * 40)
+    # Test unified scraper (comprehensive by default)
+    print("\n1️⃣ Testing Unified Scraper (Comprehensive Data Extraction)")
+    print("-" * 50)
     
     try:
         async with UnifiedEmployeeScraper(
@@ -33,10 +33,9 @@ async def test_unified_scraper():
             timeout=10000,
             config=config
         ) as scraper:
-            print(f"   Mode: {scraper.mode}")
-            print(f"   Info: {scraper.get_mode_info()}")
+            print(f"   Info: {scraper.get_scraper_info()}")
             print("   ✅ Unified scraper initialized successfully")
-            print("   📊 Features: All comprehensive data extraction enabled")
+            print("   📊 Features: Comprehensive data extraction enabled")
             print("   🖼️  Images: Enabled for profile photos")
             print("   🔍 Data: Name, email, phone, position, department, bio,")
             print("           office location, years with firm, seat assignment,")

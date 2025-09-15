@@ -20,17 +20,12 @@ from ..config.settings import ScraperConfig
 
 class UnifiedEmployeeScraper:
     """
-    Unified scraper that can operate in different modes:
-    - SIMPLE: Fast, reliable, basic data only (for GitHub Actions)
-    - COMPLETE: Comprehensive data extraction (for development/analysis)
+    Unified scraper that provides comprehensive data extraction.
+    Extracts all available employee information including basic data,
+    professional information, projects, education, licenses, and more.
     """
     
-    # Scraper modes
-    MODE_SIMPLE = "simple"
-    MODE_COMPLETE = "complete"
-    
     def __init__(self, 
-                 mode: str = MODE_COMPLETE,
                  base_url: str = "https://ei.ennead.com/employees/1/all-employees",
                  download_images: bool = True,
                  headless: bool = True,
@@ -40,14 +35,12 @@ class UnifiedEmployeeScraper:
         Initialize the unified scraper.
         
         Args:
-            mode: Scraper mode - 'simple' or 'complete'
             base_url: Base URL of the employee directory page
             download_images: Whether to download profile images
             headless: Whether to run browser in headless mode
             timeout: Page load timeout in milliseconds
             config: Scraper configuration object
         """
-        self.mode = mode
         self.base_url = base_url
         self.download_images = download_images
         self.headless = headless
@@ -68,7 +61,7 @@ class UnifiedEmployeeScraper:
         # Scraped data
         self.employees: List[EmployeeData] = []
         
-        # Selectors for different modes
+        # Selectors for comprehensive data extraction
         self.selectors = {
             'employee_cards': '.employee-card, .profile-card, [data-employee]',
             'profile_image': 'img.profile-image, .employee-photo img, .avatar img',
@@ -82,7 +75,7 @@ class UnifiedEmployeeScraper:
             'department': '.department, .team, .division'
         }
         
-        self.logger.info(f"Unified scraper initialized in '{mode}' mode")
+        self.logger.info("Unified scraper initialized with comprehensive data extraction")
     
     async def __aenter__(self):
         """Async context manager entry"""
@@ -159,7 +152,7 @@ class UnifiedEmployeeScraper:
             """)
             
             self.page.set_default_timeout(self.timeout)
-            self.logger.info(f"[SUCCESS] Browser started in '{self.mode}' mode")
+            self.logger.info("[SUCCESS] Browser started with comprehensive data extraction")
             
         except Exception as e:
             self.logger.error(f"[ERROR] Failed to start browser: {e}")
@@ -180,12 +173,11 @@ class UnifiedEmployeeScraper:
     
     async def scrape_all_employees(self) -> List[EmployeeData]:
         """
-        Scrape all employees from the directory.
-        Behavior depends on the mode:
-        - SIMPLE: Fast, basic data only
-        - COMPLETE: Comprehensive data extraction
+        Scrape all employees from the directory with comprehensive data extraction.
+        Extracts all available employee information including basic data,
+        professional information, projects, education, licenses, and more.
         """
-        self.logger.info(f"Starting employee scraping in '{self.mode}' mode...")
+        self.logger.info("Starting comprehensive employee data scraping...")
         
         try:
             # Navigate to employee directory
@@ -210,8 +202,8 @@ class UnifiedEmployeeScraper:
                 try:
                     self.logger.info(f"Scraping employee {i}/{len(employee_links)}: {name}")
                     
-                    # Scrape employee data (always use complete mode for comprehensive data)
-                    employee = await self._scrape_employee_complete(profile_url, name, image_url)
+                    # Scrape employee data with comprehensive extraction
+                    employee = await self._scrape_employee_comprehensive(profile_url, name, image_url)
                     
                     if employee:
                         self.employees.append(employee)
@@ -305,8 +297,8 @@ class UnifiedEmployeeScraper:
             self.logger.error(f"[ERROR] Error getting employee links: {e}")
             raise
     
-    async def _scrape_employee_simple(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
-        """Scrape basic employee data (SIMPLE mode)"""
+    async def _scrape_employee_basic(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
+        """Scrape basic employee data"""
         try:
             await self.page.goto(profile_url)
             await self.page.wait_for_load_state('networkidle')
@@ -370,14 +362,14 @@ class UnifiedEmployeeScraper:
             self.logger.error(f"[ERROR] Error scraping profile {profile_url}: {e}")
             return None
     
-    async def _scrape_employee_complete(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
-        """Scrape comprehensive employee data (COMPLETE mode)"""
+    async def _scrape_employee_comprehensive(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
+        """Scrape comprehensive employee data with all available information"""
         try:
             await self.page.goto(profile_url)
             await self.page.wait_for_load_state('networkidle')
             
-            # Start with basic data (same as simple mode)
-            employee = await self._scrape_employee_simple(profile_url, name, image_url)
+            # Start with basic data
+            employee = await self._scrape_employee_basic(profile_url, name, image_url)
             if not employee:
                 return None
             
@@ -512,7 +504,7 @@ class UnifiedEmployeeScraper:
             return employee
             
         except Exception as e:
-            self.logger.error(f"[ERROR] Error scraping complete profile {profile_url}: {e}")
+            self.logger.error(f"[ERROR] Error scraping comprehensive profile {profile_url}: {e}")
             return None
     
     def _normalize_office_location(self, location: str) -> str:
@@ -544,13 +536,12 @@ class UnifiedEmployeeScraper:
         
         return location.title()
     
-    def get_mode_info(self) -> Dict[str, Any]:
-        """Get information about the current scraper mode"""
+    def get_scraper_info(self) -> Dict[str, Any]:
+        """Get information about the scraper configuration"""
         return {
-            'mode': self.mode,
-            'is_simple': self.mode == self.MODE_SIMPLE,
-            'is_complete': self.mode == self.MODE_COMPLETE,
+            'comprehensive_mode': True,
             'download_images': self.download_images,
             'headless': self.headless,
-            'timeout': self.timeout
+            'timeout': self.timeout,
+            'base_url': self.base_url
         }

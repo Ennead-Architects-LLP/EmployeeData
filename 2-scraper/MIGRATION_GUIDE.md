@@ -2,15 +2,16 @@
 
 ## 🎯 Overview
 
-The two separate scrapers (`SimpleEmployeeScraper` and `CompleteScraper`) have been consolidated into a single `UnifiedEmployeeScraper` that provides comprehensive data extraction by default.
+The two separate scrapers (`SimpleEmployeeScraper` and `CompleteScraper`) have been consolidated into a single `UnifiedEmployeeScraper` that provides comprehensive data extraction by default. No modes needed - just one complete scraper.
 
 ## ✅ Benefits
 
 - **Single codebase** - No more duplication
 - **Comprehensive data** - All features enabled by default
+- **No modes** - One scraper for all use cases
 - **Easier maintenance** - Changes in one place
 - **Consistent behavior** - Same comprehensive logic everywhere
-- **Same interface** - Drop-in replacement
+- **Simple interface** - Drop-in replacement
 
 ## 🔄 Migration Changes
 
