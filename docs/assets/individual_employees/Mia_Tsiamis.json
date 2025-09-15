@@ -47,8 +47,8 @@
   "website_url": null,
   "scraped_at": "2025-09-12T15:08:49.631127",
   "profile_id": "mia-tsiamis",
-  "computer_info": [
-    {
+  "computer_info": {
+    "EANY-BBMY233": {
       "computername": "EANY-BBMY233",
       "os": "Windows 11",
       "manufacturer": "Dell Inc.",
@@ -60,5 +60,5 @@
       "serial_number": "BBMY233",
       "last_updated": "2025-09-15T18:03:05.633435"
     }
-  ]
+  }
 }
