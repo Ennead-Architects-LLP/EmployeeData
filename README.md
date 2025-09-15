@@ -506,6 +506,60 @@ The script automatically monitors data quality and provides comprehensive alerts
 
 ---
 
+## 🏗️ Scraper Architecture
+
+The scraper system uses a **simplified, unified architecture** that works for both local development and GitHub Actions.
+
+### Architecture Overview
+
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   main.py       │    │ ScraperOrchestrator │    │ UnifiedScraper  │
+│ (Entry Point)   │───▶│   (Single Flow)   │───▶│ (Data Extraction)│
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+         │                        │                        │
+         ▼                        ▼                        ▼
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│ weekly_scraper.py│    │   JSON Files     │    │   Images        │
+│ (GitHub Actions)│    │   (Individual)   │    │   (Profile)     │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+```
+
+### Key Components
+
+1. **`main.py`** - Single entry point for both local and GitHub Actions
+2. **`ScraperOrchestrator`** - Orchestrates the entire scraping process
+3. **`UnifiedScraper`** - Core scraper with comprehensive data extraction
+4. **`weekly_scraper.py`** - GitHub Actions wrapper
+
+### Benefits
+
+- ✅ **Single Source of Truth**: One scraper, one orchestrator, one flow
+- ✅ **No Duplication**: Same logic for local and GitHub Actions
+- ✅ **Clear Separation**: Scraper only scrapes, no HTML generation
+- ✅ **Simple Maintenance**: Changes in one place affect everything
+- ✅ **Consistent Output**: Same JSON structure everywhere
+
+## 🔄 Migration History
+
+### Unified Scraper Migration
+
+The scraper system was refactored to eliminate code duplication by consolidating `SimpleEmployeeScraper` and `CompleteScraper` into a single `UnifiedEmployeeScraper`.
+
+**Benefits of Migration:**
+- **Single codebase** - No more duplication
+- **Comprehensive data** - All features enabled by default
+- **No modes** - One scraper for all use cases
+- **Easier maintenance** - Changes in one place
+- **Consistent behavior** - Same comprehensive logic everywhere
+
+**What Was Removed:**
+- ❌ **HTML Generation**: Moved to static framework in docs folder
+- ❌ **Voice Announcements**: Not needed for automated scraping
+- ❌ **Multiple Orchestrators**: Consolidated to single ScraperOrchestrator
+- ❌ **Development vs Production**: Single flow for all use cases
+- ❌ **Complex Mode Logic**: Simplified to single comprehensive scraper
+
 ## 📖 Documentation
 
 This comprehensive README covers all components of the EmployeeData system. Each component can be used independently or as part of the complete system.

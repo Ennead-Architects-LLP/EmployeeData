@@ -44,7 +44,7 @@ jobs:
     - name: Install Python dependencies
       run: |
         cd 2-scraper
-        pip install -r requirements-linux.txt
+        pip install -r ../.github/scripts/requirements-linux.txt
         
     # 5) Install the Playwright browser and its dependencies for scraping
     - name: Install Playwright browsers
@@ -64,7 +64,7 @@ jobs:
         echo "Current directory: $(pwd)"
         echo "Project root should be: $(pwd)/.."
         echo "Docs directory should be: $(pwd)/../docs"
-        python weekly_scraper.py
+        python ../.github/scripts/weekly_scraper.py
         
     # 7) Build the employee file indexes used by the website (writes to docs/)
     - name: Generate employee files list
