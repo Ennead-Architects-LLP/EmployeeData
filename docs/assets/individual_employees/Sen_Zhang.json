@@ -108,6 +108,18 @@
       "memory_bytes": 33765298176,
       "serial_number": "PW0HJ97N",
       "last_updated": "2025-09-15T14:47:40.265991"
+    },
+    {
+      "computername": "EANY-PW-0HJ97N",
+      "os": "Windows 11",
+      "manufacturer": "Unknown",
+      "model": "Unknown",
+      "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+      "gpu_name": "Unknown",
+      "gpu_driver": "Unknown",
+      "memory_bytes": 33765298176,
+      "serial_number": "Unknown",
+      "last_updated": "2025-09-15T15:25:28.143912"
     }
   ]
 }
