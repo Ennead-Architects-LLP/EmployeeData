@@ -1,0 +1,15 @@
+{
+  "computer_name": "EANY-PW-0HJ97N",
+  "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+  "gpu_driver": "17.12.55.198",
+  "gpu_memory": null,
+  "gpu_name": "Meta Virtual Monitor",
+  "human_name": "Sen Zhang",
+  "manufacturer": "LENOVO",
+  "memory_bytes": 33765298176,
+  "model": "21KV0001US",
+  "os": "Windows 11",
+  "serial_number": "PW0HJ97N",
+  "username": "szhang",
+  "server_timestamp": "2025-09-15T15:39:34.997521"
+}
