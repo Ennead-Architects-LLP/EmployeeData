@@ -96,6 +96,18 @@
       "memory_bytes": 16815702016,
       "serial_number": "1X5CKS3",
       "last_updated": "2025-09-13T01:20:39.397287"
+    },
+    {
+      "computername": "EANY-PW-0HJ97N",
+      "os": "Windows 11",
+      "manufacturer": "LENOVO",
+      "model": "21KV0001US",
+      "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+      "gpu_name": "Meta Virtual Monitor",
+      "gpu_driver": "17.12.55.198",
+      "memory_bytes": 33765298176,
+      "serial_number": "PW0HJ97N",
+      "last_updated": "2025-09-15T14:47:40.265991"
     }
   ]
 }
