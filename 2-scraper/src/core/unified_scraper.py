@@ -64,11 +64,11 @@ class UnifiedEmployeeScraper:
         
         # Selectors for comprehensive data extraction
         self.selectors = {
-            'employee_cards': '.employee-card, .profile-card, [data-employee], .directory_employees .content, .directory_employees [class*="card"], .directory_employees [class*="item"]',
-            'profile_image': 'img.profile-image, .employee-photo img, .avatar img',
-            'employee_name': '.employee-name, .profile-name, h3, h4',
-            'employee_title': '.employee-title, .profile-title, .position',
-            'profile_link': 'a[href*="/employee/"], a[href*="/profile/"]',
+            'employee_cards': '.gridViewCell, .ActivityBox-sc-ik8ilm-0, .gridViewStyles__Cell-sc-ipm8x5-2',
+            'profile_image': '.gridViewStyles__Img-sc-ipm8x5-8, .gridViewStyles__ImgBox-sc-ipm8x5-4 img',
+            'employee_name': '.gridViewStyles__Field-sc-ipm8x5-22.csVUxd.field.bold a, .gridViewStyles__Field-sc-ipm8x5-22.bold a',
+            'employee_title': '.gridViewStyles__Field-sc-ipm8x5-22.eVXxsE.field',
+            'profile_link': 'a[href*="/employee/"]',
             'email_link': 'a[href^="mailto:"]',
             'phone_link': 'a[href^="tel:"]',
             'bio_text': '.bio, .about, .description, .employee-bio',
@@ -197,6 +197,12 @@ class UnifiedEmployeeScraper:
                 self.logger.warning("No employee links found")
                 return []
             
+            # Apply debug limit if in debug mode
+            if hasattr(self.config, 'DEBUG_MODE') and self.config.DEBUG_MODE:
+                max_employees = getattr(self.config, 'DEBUG_MAX_EMPLOYEES', 10)
+                employee_links = employee_links[:max_employees]
+                self.logger.info(f"[DEBUG] Limited to {max_employees} employees for debugging")
+            
             # Scrape each employee
             self.employees = []
             for i, (name, profile_url, image_url) in enumerate(employee_links, 1):
@@ -280,6 +286,10 @@ class UnifiedEmployeeScraper:
                     await self._capture_debug_info("selector_failed")
                 raise
             
+            # Scroll to load all employees (infinite scroll)
+            self.logger.info("[INFO] Scrolling to load all employees...")
+            await self._scroll_to_load_all_employees()
+            
             # Extract employee links
             employee_links = await self.page.evaluate(f"""
                 () => {{
@@ -321,17 +331,18 @@ class UnifiedEmployeeScraper:
                 () => {{
                     const data = {{}};
                     
-                    // Basic information
-                    data.human_name = document.querySelector('{self.selectors['employee_name']}')?.textContent?.trim() || '';
-                    data.email = document.querySelector('{self.selectors['email_link']}')?.href?.replace('mailto:', '') || '';
-                    data.phone = document.querySelector('{self.selectors['phone_link']}')?.href?.replace('tel:', '') || '';
+                    // Basic information - use profile page selectors
+                    data.human_name = document.querySelector('h1, .employee-name, .profile-name, .name')?.textContent?.trim() || '';
+                    data.email = document.querySelector('a[href^="mailto:"]')?.href?.replace('mailto:', '') || '';
+                    data.phone = document.querySelector('a[href^="tel:"]')?.href?.replace('tel:', '') || '';
                     
-                    // Position and department
-                    data.position = document.querySelector('{self.selectors['employee_title']}')?.textContent?.trim() || '';
-                    data.department = document.querySelector('{self.selectors['department']}')?.textContent?.trim() || '';
+                    // Position and department - look for specific profile page elements
+                    data.position = document.querySelector('.position, .title, .job-title, .role')?.textContent?.trim() || '';
+                    data.department = document.querySelector('.department, .team, .division, .group')?.textContent?.trim() || '';
                     
-                    // Bio
-                    data.bio = document.querySelector('{self.selectors['bio_text']}')?.textContent?.trim() || '';
+                    // Bio - be more specific to avoid capturing page content
+                    const bioEl = document.querySelector('.bio-content, .about-content, .description-content, .employee-bio-content, [data-bio]');
+                    data.bio = bioEl ? bioEl.textContent?.trim() : null;
                     
                     // Office location
                     data.office_location = document.querySelector('.location, .office, .address')?.textContent?.trim() || '';
@@ -357,17 +368,7 @@ class UnifiedEmployeeScraper:
                 image_url=employee_data.get('image_url') or image_url
             )
             
-            # Download image if enabled
-            if self.download_images and employee.image_url and self.image_downloader:
-                try:
-                    local_path = await self.image_downloader.download_image(
-                        employee.image_url, 
-                        name.replace(' ', '_')
-                    )
-                    if local_path:
-                        employee.image_local_path = local_path
-                except Exception as e:
-                    self.logger.warning(f"Failed to download image for {name}: {e}")
+            # Note: Image capture is handled in the comprehensive method
             
             return employee
             
@@ -397,16 +398,17 @@ class UnifiedEmployeeScraper:
                     data.linkedin_url = document.querySelector('a[href*="linkedin.com"]')?.href || '';
                     data.website_url = document.querySelector('a[href*="http"]:not([href*="ennead.com"])')?.href || '';
                     
-                    // Years with firm
-                    const yearsText = document.querySelector('.years-with-firm, .tenure, .experience')?.textContent || '';
+                    // Years with firm - look for specific patterns
+                    const yearsText = document.querySelector('.years-with-firm, .tenure, .experience, [data-years]')?.textContent || '';
                     const yearsMatch = yearsText.match(/(\d+)/);
                     data.years_with_firm = yearsMatch ? parseInt(yearsMatch[1]) : null;
                     
                     // Seating assignment
                     data.seat_assignment = document.querySelector('.seat, .desk, .location')?.textContent?.trim() || '';
                     
-                    // Computer information
-                    data.computer = document.querySelector('.computer, .machine, .device')?.textContent?.trim() || '';
+                    // Computer information - be more specific to avoid capturing page content
+                    const computerEl = document.querySelector('.computer-info, .machine-info, .device-info, [data-computer]');
+                    data.computer = computerEl ? computerEl.textContent?.trim() : null;
                     
                     // Professional memberships
                     data.memberships = [];
@@ -514,6 +516,19 @@ class UnifiedEmployeeScraper:
             if comprehensive_data.get('recent_posts'):
                 employee.recent_posts = comprehensive_data['recent_posts']
             
+            # Capture preview image if enabled (avoid auth issues with full-resolution downloads)
+            if self.download_images and self.image_downloader:
+                try:
+                    local_path = await self.image_downloader.capture_preview_image(
+                        self.page, 
+                        name,
+                        image_selector='.profile-image img, .employee-image img, .avatar img, img[src*="/api/image/"]'
+                    )
+                    if local_path:
+                        employee.image_local_path = local_path
+                except Exception as e:
+                    self.logger.warning(f"Failed to capture preview image for {name}: {e}")
+            
             return employee
             
         except Exception as e:
@@ -548,6 +563,44 @@ class UnifiedEmployeeScraper:
                 return value
         
         return location.title()
+    
+    async def _scroll_to_load_all_employees(self):
+        """Scroll down to load all employees via infinite scroll"""
+        try:
+            previous_count = 0
+            scroll_attempts = 0
+            max_scroll_attempts = 20  # Prevent infinite scrolling
+            
+            while scroll_attempts < max_scroll_attempts:
+                # Count current employees
+                current_count = await self.page.evaluate(f"""
+                    () => {{
+                        return document.querySelectorAll('{self.selectors['employee_cards']}').length;
+                    }}
+                """)
+                
+                self.logger.info(f"[INFO] Found {current_count} employees so far...")
+                
+                # If no new employees loaded, we're done
+                if current_count == previous_count and scroll_attempts > 0:
+                    self.logger.info(f"[INFO] No new employees loaded after scroll. Total: {current_count}")
+                    break
+                
+                # Scroll to bottom
+                await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                
+                # Wait for new content to load
+                await asyncio.sleep(2)
+                await self.page.wait_for_load_state("networkidle", timeout=10000)
+                
+                previous_count = current_count
+                scroll_attempts += 1
+            
+            self.logger.info(f"[SUCCESS] Finished scrolling. Total employees found: {previous_count}")
+            
+        except Exception as e:
+            self.logger.warning(f"[WARNING] Error during scrolling: {e}")
+            # Continue anyway - we'll work with whatever employees we found
     
     async def _capture_debug_info(self, reason: str):
         """Capture debug information when selectors fail"""

@@ -39,11 +39,13 @@ def main():
         logger.info("Credential priority: GitHub secrets -> local credentials.json -> GUI setup")
         
         # Run main.py with headless mode and image downloading
+        # Change to 2-scraper directory where src.main is located
+        scraper_dir = Path(__file__).parent.parent.parent / "2-scraper"
         result = subprocess.run([
             sys.executable, "-m", "src.main",
             "--headless=true",
             "--timeout=15000"
-        ], cwd=Path(__file__).parent, capture_output=True, text=True)
+        ], cwd=scraper_dir, capture_output=True, text=True)
         
         if result.returncode == 0:
             logger.info("Weekly scraper completed successfully!")

@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Optional, List
 from urllib.parse import urlparse, unquote
 import logging
+from playwright.async_api import Page
 
 
 class ImageDownloader:
@@ -101,6 +102,44 @@ class ImageDownloader:
             filename = name[:95] + ext
         
         return filename
+    
+    async def capture_preview_image(self, page: Page, employee_name: str, image_selector: str = None) -> Optional[str]:
+        """
+        Capture the preview image directly from the page using screenshot.
+        This avoids authentication issues with downloading full-resolution images.
+        
+        Args:
+            page: Playwright page object
+            employee_name: Employee name for filename
+            image_selector: CSS selector for the image element
+            
+        Returns:
+            Path to saved image file, or None if failed
+        """
+        try:
+            # Default selector for employee profile images
+            if not image_selector:
+                image_selector = 'img[src*="/api/image/"], .profile-image img, .employee-image img, .avatar img'
+            
+            # Find the image element
+            image_element = await page.query_selector(image_selector)
+            if not image_element:
+                self.logger.warning(f"No image found for {employee_name}")
+                return None
+            
+            # Generate filename
+            filename = f"{employee_name.replace(' ', '_')}_profile.jpg"
+            file_path = self.images_dir / filename
+            
+            # Take screenshot of the image element
+            await image_element.screenshot(path=str(file_path))
+            
+            self.logger.info(f"Captured preview image for {employee_name}: {file_path}")
+            return str(file_path)
+            
+        except Exception as e:
+            self.logger.error(f"Failed to capture preview image for {employee_name}: {e}")
+            return None
     
     async def download_image(self, url: str, employee_name: str = None, page=None) -> Optional[str]:
         """
