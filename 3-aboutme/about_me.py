@@ -3,6 +3,7 @@
 Computer Information Collector - Embedded Token Version
 Generates a JSON file with comprehensive computer information
 Embedded with GitHub token for easy distribution to non-technical users
+Thie will work with the computer-data-handler.yml workflow
 """
 
 import json
