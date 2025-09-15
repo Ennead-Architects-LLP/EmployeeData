@@ -78,7 +78,7 @@ jobs:
           if (git diff --cached --quiet) {
             Write-Output "No changes to commit."
           } else {
-            git commit -m "chore(aboutme): update compiled AboutMe_ComputerInfo.exe"
+            git commit -m "%%%_Action_Rebuild AboutMe_ComputerInfo.exe"
             git push
           }
 
