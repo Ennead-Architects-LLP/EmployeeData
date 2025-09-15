@@ -79,15 +79,17 @@ function createEmployeeCard(employee) {
     if (computerInfo) {
         if (Array.isArray(computerInfo)) {
             // Handle list of dictionaries format: [{computername: "PC1", os: "Windows"}, ...]
+            // Note: Server prefers dict of dict format, but we support both for compatibility
             computers = computerInfo;
             if (employee.human_name && employee.human_name.includes('Sen')) {
                 console.log('Debug - Using list of dict format, computers:', computers);
             }
         } else if (typeof computerInfo === 'object') {
             // Handle dictionary of dictionaries format: {"PC1": {computername: "PC1", os: "Windows"}, ...}
+            // This is the preferred format used by the server to prevent duplicates
             computers = Object.values(computerInfo);
             if (employee.human_name && employee.human_name.includes('Sen')) {
-                console.log('Debug - Using dict of dict format, computers:', computers);
+                console.log('Debug - Using dict of dict format (preferred), computers:', computers);
             }
         }
     }

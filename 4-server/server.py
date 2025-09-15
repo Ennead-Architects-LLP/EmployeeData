@@ -164,16 +164,17 @@ def update_employee_computer_info(employee_file_path, computer_data):
             'last_updated': datetime.now().isoformat()
         }
         
-        # Handle computer_info as a dictionary with computername as key
+        # Handle computer_info as a dictionary with computername as key (preferred format)
         if 'computer_info' not in employee_data:
             employee_data['computer_info'] = {}
         elif isinstance(employee_data['computer_info'], list):
-            # Convert existing list of dictionaries to dictionary of dictionaries if needed
+            # Convert existing list of dictionaries to dictionary of dictionaries (preferred format)
             computer_dict = {}
             for computer in employee_data['computer_info']:
                 computername = computer.get('computername', 'Unknown')
                 computer_dict[computername] = computer
             employee_data['computer_info'] = computer_dict
+            print(f"🔄 Converted computer_info from list to dictionary format for {computername}")
         
         # Get computername as key
         computername = new_computer_info.get('computername', 'Unknown')
