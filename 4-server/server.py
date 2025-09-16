@@ -53,153 +53,10 @@ def get_repository_root():
 REPO_ROOT = get_repository_root()
 
 # Using individual JSON files only - direct updates to employee records
-INDIVIDUAL_EMPLOYEES_DIR = os.path.join(REPO_ROOT, 'docs', 'assets', 'individual_employees')
+
 COMPUTER_BACKUP_DIR = os.path.join(REPO_ROOT, 'docs', 'assets', 'computer_info_data_backup')
 INDIVIDUAL_COMPUTER_DATA_DIR = os.path.join(REPO_ROOT, 'docs', 'assets', 'individual_computer_data')
 
-def find_employee_file_by_user(computer_data):
-    """Find the employee JSON file that matches the user from computer data"""
-    try:
-        human_name = computer_data.get('human_name', '').strip()
-        username = computer_data.get('username', '').strip()
-        
-        if not human_name and not username:
-            print("❌ No user name or username provided in computer data")
-            return None
-        
-        # Scan the individual employees directory for all JSON files
-        if not os.path.exists(INDIVIDUAL_EMPLOYEES_DIR):
-            print(f"❌ Employee directory not found: {INDIVIDUAL_EMPLOYEES_DIR}")
-            return None
-        
-        # Get all JSON files in the directory
-        employee_files = []
-        for filename in os.listdir(INDIVIDUAL_EMPLOYEES_DIR):
-            if filename.endswith('.json') and filename != 'index.json':
-                employee_files.append(filename)
-        
-        if not employee_files:
-            print(f"⚠️  No employee JSON files found in {INDIVIDUAL_EMPLOYEES_DIR}")
-            return None
-        
-        # Search through each file to find matching user
-        for filename in employee_files:
-            try:
-                employee_path = os.path.join(INDIVIDUAL_EMPLOYEES_DIR, filename)
-                with open(employee_path, 'r', encoding='utf-8') as f:
-                    employee_data = json.load(f)
-                
-                # Check if this employee matches by name or username
-                if _employee_matches_user(employee_data, human_name, username):
-                    print(f"✅ Found matching employee in {filename}")
-                    return employee_path
-                    
-            except Exception as e:
-                print(f"⚠️  Warning: Could not read {filename}: {e}")
-                continue
-        
-        print(f"⚠️  No matching employee found for user: {human_name} ({username})")
-        return None
-        
-    except Exception as e:
-        print(f"❌ Error finding employee file: {e}")
-        return None
-
-def _employee_matches_user(employee_data, human_name, username):
-    """Check if employee data matches the user from computer data with fuzzy matching"""
-    try:
-        # Try exact match first, then fuzzy match
-        if human_name:
-            employee_name = employee_data.get('human_name', employee_data.get('Human Name', '')).strip()
-            
-            # Exact match (case insensitive)
-            if employee_name.lower() == human_name.lower():
-                return True
-            
-            # Fuzzy match with 80% similarity threshold
-            similarity = SequenceMatcher(None, employee_name.lower(), human_name.lower()).ratio()
-            if similarity >= 0.8:
-                print(f"✅ Fuzzy name match: '{employee_name}' ≈ '{human_name}' ({similarity:.1%})")
-                return True
-        
-        # Try to match by username (from email)
-        if username:
-            employee_email = employee_data.get('email', '')
-            if employee_email:
-                email_username = employee_email.split('@')[0].strip().lower()
-                
-                # Exact username match
-                if email_username == username.lower():
-                    return True
-                
-                # Fuzzy username match with 80% similarity threshold
-                similarity = SequenceMatcher(None, email_username, username.lower()).ratio()
-                if similarity >= 0.8:
-                    print(f"✅ Fuzzy username match: '{email_username}' ≈ '{username}' ({similarity:.1%})")
-                    return True
-        
-        return False
-        
-    except Exception as e:
-        print(f"⚠️  Error matching employee: {e}")
-        return False
-
-def update_employee_computer_info(employee_file_path, computer_data):
-    """Update the computer info in a specific employee JSON file"""
-    try:
-        # Read the employee file
-        with open(employee_file_path, 'r', encoding='utf-8') as f:
-            employee_data = json.load(f)
-        
-        # Create new computer info entry (handle both old and new field names)
-        new_computer_info = {
-            'computername': computer_data.get('computer_name'),
-            'os': computer_data.get('os'),
-            'manufacturer': computer_data.get('manufacturer'),
-            'model': computer_data.get('model'),
-            'cpu': computer_data.get('cpu'),
-            'gpu_name': computer_data.get('gpu_name'),
-            'gpu_driver': computer_data.get('gpu_driver'),
-            'memory_bytes': computer_data.get('memory_bytes'),
-            'serial_number': computer_data.get('serial_number'),
-            'last_updated': datetime.now().isoformat()
-        }
-        
-        # Handle computer_info as a dictionary with computername as key (preferred format)
-        if 'computer_info' not in employee_data:
-            employee_data['computer_info'] = {}
-        elif isinstance(employee_data['computer_info'], list):
-            # Convert existing list of dictionaries to dictionary of dictionaries (preferred format)
-            computer_dict = {}
-            for computer in employee_data['computer_info']:
-                computername = computer.get('computername', 'Unknown')
-                computer_dict[computername] = computer
-            employee_data['computer_info'] = computer_dict
-            print(f"🔄 Converted computer_info from list to dictionary format for {computername}")
-        
-        # Get computername as key
-        computername = new_computer_info.get('computername', 'Unknown')
-        
-        # Check if this computer already exists
-        if computername in employee_data['computer_info']:
-            # Update existing entry
-            employee_data['computer_info'][computername] = new_computer_info
-            print(f"✅ Updated existing computer entry for {computername}")
-        else:
-            # Add new computer entry
-            employee_data['computer_info'][computername] = new_computer_info
-            print(f"✅ Added new computer entry for {computername}")
-        
-        # Save updated employee file
-        with open(employee_file_path, 'w', encoding='utf-8') as f:
-            json.dump(employee_data, f, indent=2, ensure_ascii=False, default=str)
-        
-        print(f"✅ Updated employee file: {employee_file_path}")
-        return True
-        
-    except Exception as e:
-        print(f"❌ Error updating employee file: {e}")
-        return False
 
 def create_individual_computer_data_file(computer_data):
     """Create/update individual computer data JSON file for each employee"""
@@ -300,6 +157,33 @@ def backup_computer_data(computer_data):
         return False
 
 
+def process_computer_data_workflow(computer_data):
+    """Unified workflow for processing computer data - handles backup, individual files, and GitHub commit"""
+    success_count = 0
+    total_operations = 3  # backup, individual file, commit
+    
+    print(f"📥 Processing computer data for: {computer_data.get('computer_name', computer_data.get('Computername', 'Unknown'))}")
+    
+    # Create backup of computer data
+    if backup_computer_data(computer_data):
+        success_count += 1
+    else:
+        print("⚠️  Warning: Computer backup failed, but continuing with other operations")
+    
+    # Create/update individual computer data file
+    if create_individual_computer_data_file(computer_data):
+        success_count += 1
+    else:
+        print("⚠️  Warning: Individual computer data file creation failed, but continuing with other operations")
+    
+    # Commit to GitHub (if configured)
+    if commit_to_github(computer_data):
+        success_count += 1
+    else:
+        print("⚠️  Warning: GitHub commit failed, but data was saved locally")
+    
+    return success_count, total_operations
+
 def commit_to_github(computer_data=None):
     """Commit changes to GitHub repository using git commands"""
     if not GITHUB_TOKEN:
@@ -317,7 +201,7 @@ def commit_to_github(computer_data=None):
         subprocess.run(['git', 'config', '--local', 'user.name', 'GitHub Action'], check=True)
         
         # Add changes
-        subprocess.run(['git', 'add', INDIVIDUAL_EMPLOYEES_DIR, COMPUTER_BACKUP_DIR], check=True)
+        subprocess.run(['git', 'add', COMPUTER_BACKUP_DIR, INDIVIDUAL_COMPUTER_DATA_DIR], check=True)
         
         # Check if there are changes to commit
         result = subprocess.run(['git', 'diff', '--staged', '--quiet'], capture_output=True)
@@ -357,6 +241,18 @@ def commit_to_github(computer_data=None):
         print(f"❌ Error committing to GitHub: {e}")
         return False
 
+def extract_computer_data_from_request(data):
+    """Extract computer data from request payload, handling both old and new structures"""
+    # Handle both old and new payload structures
+    if 'computer_info' in data:
+        # New nested structure
+        computer_data = data.get('computer_info', {})
+    else:
+        # Old flat structure (for backward compatibility)
+        computer_data = data.get('computer_data', {})
+    
+    return computer_data
+
 @app.route('/api/computer-data', methods=['POST'])
 def handle_computer_data():
     """Handle POST request from AboutMe app"""
@@ -367,46 +263,32 @@ def handle_computer_data():
         if not data:
             return jsonify({'error': 'No data provided'}), 400
         
-        # Handle both old and new payload structures
-        if 'computer_info' in data:
-            # New nested structure
-            computer_data = data.get('computer_info', {})
-        else:
-            # Old flat structure (for backward compatibility)
-            computer_data = data.get('computer_data', {})
+        # Extract computer data using unified function
+        computer_data = extract_computer_data_from_request(data)
         
         if not computer_data:
             return jsonify({'error': 'No computer data provided'}), 400
         
-        print(f"📥 Received computer data for: {computer_data.get('computer_name', computer_data.get('Computername', 'Unknown'))}")
+        # Process computer data using unified workflow
+        success_count, total_operations = process_computer_data_workflow(computer_data)
         
-        # Find the employee file that matches this user
-        employee_file_path = find_employee_file_by_user(computer_data)
-        if not employee_file_path:
-            return jsonify({'error': 'No matching employee found'}), 404
-        
-        # Update the computer info in the employee's file
-        if not update_employee_computer_info(employee_file_path, computer_data):
-            return jsonify({'error': 'Failed to update employee computer info'}), 500
-        
-        # Create backup of computer data
-        if not backup_computer_data(computer_data):
-            print("⚠️  Warning: Computer backup failed, but employee update succeeded")
-        
-        # Create/update individual computer data file
-        if not create_individual_computer_data_file(computer_data):
-            print("⚠️  Warning: Individual computer data file creation failed, but employee update succeeded")
-        
-        updated_count = 1
-        
-        # Commit to GitHub (if configured)
-        commit_to_github(computer_data)
+        # Determine response based on success rate
+        if success_count == total_operations:
+            message = 'Computer data processed successfully'
+            status_code = 200
+        elif success_count > 0:
+            message = f'Computer data partially processed ({success_count}/{total_operations} operations succeeded)'
+            status_code = 200
+        else:
+            message = 'Computer data processing failed'
+            status_code = 500
         
         return jsonify({
-            'success': True,
-            'message': 'Computer data processed successfully',
-            'updated_employees': updated_count
-        }), 200
+            'success': success_count > 0,
+            'message': message,
+            'operations_completed': f'{success_count}/{total_operations}',
+            'updated_employees': 1 if success_count > 0 else 0
+        }), status_code
         
     except Exception as e:
         print(f"❌ Error processing computer data: {e}")
@@ -433,49 +315,47 @@ def index():
         }
     }), 200
 
+def extract_computer_data_from_event():
+    """Extract computer data from GitHub repository dispatch event"""
+    # Get event data from GitHub Actions environment
+    event_path = os.environ.get('GITHUB_EVENT_PATH')
+    if not event_path or not os.path.exists(event_path):
+        print("❌ No GitHub event data found")
+        return None
+    
+    with open(event_path, 'r', encoding='utf-8') as f:
+        event_data = json.load(f)
+    
+    # Extract nested data from repository dispatch event
+    client_payload = event_data.get('client_payload', {})
+    computer_data = client_payload.get('computer_info', {})
+    if not computer_data:
+        print("❌ No computer data found in event payload")
+        return None
+    
+    return computer_data
+
 def process_computer_data_from_event():
     """Process computer data from GitHub repository dispatch event"""
     try:
-        # Get event data from GitHub Actions environment
-        event_path = os.environ.get('GITHUB_EVENT_PATH')
-        if not event_path or not os.path.exists(event_path):
-            print("❌ No GitHub event data found")
-            return False
-        
-        with open(event_path, 'r', encoding='utf-8') as f:
-            event_data = json.load(f)
-        
-        # Extract nested data from repository dispatch event
-        client_payload = event_data.get('client_payload', {})
-        computer_data = client_payload.get('computer_info', {})
+        # Extract computer data using unified function
+        computer_data = extract_computer_data_from_event()
         if not computer_data:
-            print("❌ No computer data found in event payload")
             return False
         
-        print(f"📥 Processing computer data for: {computer_data.get('computer_name', 'Unknown')}")
+        # Process computer data using unified workflow
+        success_count, total_operations = process_computer_data_workflow(computer_data)
         
-        # Find the employee file that matches this user
-        employee_file_path = find_employee_file_by_user(computer_data)
-        if not employee_file_path:
-            print("❌ No matching employee found")
+        # Determine success based on operations completed
+        if success_count == total_operations:
+            print(f"✅ Successfully processed computer data. All {total_operations} operations completed.")
+            return True
+        elif success_count > 0:
+            print(f"⚠️  Partially processed computer data. {success_count}/{total_operations} operations completed.")
+            return True  # Still consider partial success as success
+        else:
+            print("❌ Failed to process computer data. No operations completed.")
             return False
-        
-        # Update the computer info in the employee's file
-        if not update_employee_computer_info(employee_file_path, computer_data):
-            print("❌ Failed to update employee computer info")
-            return False
-        
-        # Create backup of computer data
-        if not backup_computer_data(computer_data):
-            print("⚠️  Warning: Computer backup failed, but employee update succeeded")
-        
-        updated_count = 1
-        
-        # Commit to GitHub
-        commit_to_github(computer_data)
-        
-        print(f"✅ Successfully processed computer data. Updated {updated_count} employee(s)")
-        return True
         
     except Exception as e:
         print(f"❌ Error processing computer data from event: {e}")
@@ -490,8 +370,8 @@ def main():
     print(f"📁 Current working directory: {os.getcwd()}")
     print(f"📁 Server file location: {os.path.abspath(__file__)}")
     print(f"📁 Repository root: {REPO_ROOT}")
-    print(f"📁 Individual employees dir: {INDIVIDUAL_EMPLOYEES_DIR}")
-    print(f"📁 Individual employees exists: {os.path.exists(INDIVIDUAL_EMPLOYEES_DIR)}")
+    print(f"📁 Individual employees computer data dir: {INDIVIDUAL_COMPUTER_DATA_DIR}")
+    print(f"📁 Individual employees computer data exists: {os.path.exists(INDIVIDUAL_COMPUTER_DATA_DIR)}")
     print(f"📁 Computer backup dir: {COMPUTER_BACKUP_DIR}")
     print(f"📁 Computer backup exists: {os.path.exists(COMPUTER_BACKUP_DIR)}")
     
@@ -518,7 +398,7 @@ def main():
     if not GITHUB_TOKEN:
         print("⚠️  Warning: No GitHub token configured")
     
-    print(f"👥 Individual employees directory: {INDIVIDUAL_EMPLOYEES_DIR}")
+    print(f"👥 Individual computer data directory: {INDIVIDUAL_COMPUTER_DATA_DIR}")
     print(f"💾 Computer backup directory: {COMPUTER_BACKUP_DIR}")
     print(f"🌐 Server starting on port 5000")
     
