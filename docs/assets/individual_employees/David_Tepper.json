@@ -1,0 +1,144 @@
+{
+  "human_name": "David Tepper",
+  "email": "david.tepper@ennead.com",
+  "bio": "I’m a proud member of Ennead’s club of Midwest expatriates, having grown up in Champaign, Illinois. I came to New York City for college more than thirty years ago, and with short stints in Boston (to attend the GSD), Lesotho, and Rome, I have been here ever since. I live in Park Slope with my wife and two teenagers.I started at Ennead (I think!) on January 2, 2000, after working in a smaller office doing residential and commercial work. One of my first projects was the Brooklyn Museum entrance and plaza, which I suspect will remain a once-in-a-career opportunity to make that kind of contribution to my own community. Having apprenticed for ten years on the NYU Langone Campus Transformation, I now lead the Healthcare Center. I enjoy these jobs for their complexity and the strategic planning they involve and because healthcare is an area where better design can have a huge impact.",
+  "phone": "(212) 792-5974",
+  "mobile": "(212) 792-5974",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/B9FE4AC9-6B71-40F5-8783-2F24CBD14E80/david-tepper",
+  "image_url": "https://ei.ennead.com/api/image/1a06716a-06f9-4e1e-a7bd-a4c61163b171/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/David Tepper_profile.jpg",
+  "position": "Partner",
+  "department": "",
+  "years_with_firm": 25,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Harvard",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "NYU Langone Health Tish Hospital, 14 Unit Door",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9BA89CFD-5CB6-411D-BFB6-DFF9C3A3648D/nyu-langone-health-tish-hospital-14-unit-door",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "NYU Langone Health, Science Building, BERG Suite - CA services",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C995F383-6373-4FA0-8D2B-F33B68075A81/nyu-langone-health-science-building-berg-suite-ca-services",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Inova Central Region Emergency Department Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "New York Public Library for the Performing Arts (NYPL)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5F99AFFF-99E8-43DF-9B6E-D5354EB9DF29/new-york-public-library-for-the-performing-arts-nypl",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Weitzman National Museum of American Jewish History (first Site)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/40185FFF-5D97-4938-9184-BE011BA9D967/weitzman-national-museum-of-american-jewish-history-first-site",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "NYU Langone - Long Island, Foreman Site Mother-Baby",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E49FAF02-B10F-4199-89A6-DD2E8FDD3786/nyu-langone-long-island-foreman-site-mother-baby",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dtepper@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:34:11.250924",
+  "profile_id": null
+}

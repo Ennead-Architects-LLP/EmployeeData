@@ -1,0 +1,146 @@
+{
+  "human_name": "Charles Griffith",
+  "email": "charles.griffith@ennead.com",
+  "bio": "42",
+  "phone": "212-792-5893",
+  "mobile": "212-792-5893",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/24F77CC0-86A3-49ED-AE2F-8CA9FA5234E7/charles-griffith",
+  "image_url": "https://ei.ennead.com/api/image/ffcbc359-8d1c-4049-b637-a8a937a82479/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Charles Griffith_profile.jpg",
+  "position": "Associate Principal",
+  "department": "",
+  "years_with_firm": 42,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Arizona",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NJ",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Carnegie Hall Recital PA & Handrail",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/59CBAA41-975A-4C0B-9C6A-E3ECC512C670/carnegie-hall-recital-pa-handrail",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Vietnam Veterans Memorial Education Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Leighton House",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8BB43E0F-A177-4997-B8B2-FB746839706E/leighton-house",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Liberty House, Battery Park City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9EDE4188-2479-4EE3-9E3F-5BED11971F93/liberty-house-battery-park-city",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "New York Public Library for the Performing Arts (NYPL)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5F99AFFF-99E8-43DF-9B6E-D5354EB9DF29/new-york-public-library-for-the-performing-arts-nypl",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "New York City Center, Manhattan Theatre Club 2012 Renovations",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/487605D9-64ED-416A-B05F-3DDFD272E65E/new-york-city-center-manhattan-theatre-club-2012-renovations",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "University of California, San Diego, Biological and Physical Sciences Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/83D250EC-9231-4952-8837-2E0C2DB6CC0F/university-of-california-san-diego-biological-and-physical-sciences-building",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cgriffith@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:33:42.536941",
+  "profile_id": null
+}

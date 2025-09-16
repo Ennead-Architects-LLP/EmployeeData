@@ -1,0 +1,126 @@
+{
+  "human_name": "Elodie Graham",
+  "email": "elodie.graham@ennead.com",
+  "bio": "I was born in Tucson, AZ but quickly moved to a suburb of Paris at the age of 4. After 14 years in France  I decided to move back to the US for college and somehow ended up in Houston, Texas at Rice University.After four years at Rice, I came to Ennead to intern for 9 months and ended up staying two years! After a whirlwind 5th year of studying in Paris and Houston and (finally) graduating, I couldn't stand being away from Ennead any longer. Outside the office, I love to cook (the spicier the better), drink tea (pretty much only earl grey) and explore.",
+  "phone": "1-213-265-7654",
+  "mobile": "1-213-265-7654",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/0FB3D691-E384-4B4B-B70C-B1B05B904832/elodie-graham",
+  "image_url": "https://ei.ennead.com/api/image/70abaa48-0479-422e-a5b0-9786977c298e/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Elodie Graham_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 1,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Rice University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Rice University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Alta Community Center Feasibility Study (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Lingang Science and Technology City (S&T)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Hongkun Edgewater",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A3D371E7-B27A-4197-AE68-769A3D0FD928/hongkun-edgewater",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Mount Sinai Downtown Transformation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=egraham@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:35:17.740152",
+  "profile_id": null
+}

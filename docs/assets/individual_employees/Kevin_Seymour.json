@@ -1,0 +1,144 @@
+{
+  "human_name": "Kevin Seymour",
+  "email": "kevin.seymour@ennead.com",
+  "bio": "I was born in New Jersey, mostly grew up in Houston, and lived in Rome, Austin, Los Angeles, and San Francisco before settling in New York City.  I got my undergraduate architecture degree from the University of Texas at Austin and my masters degree in historic preservation from Columbia University.  I've taught at the New York Institute of Technology and served as the president of Preservation Alumni.Before joining Ennead in 2011, I worked at Gensler (both the San Francisco and New York offices) and was an associate at a small preservation-focused firm, Jan Hird Pokorny Associates.  At Ennead, I have worked on the Cincinnati Music Hall; the Cathedral School renovations and expansion; multiple projects for the Cathedral of Saint John the Divine, such as the North Transept; the Northwell 75 project; and NYU's renovation of 25 West 4th Street.I'm a member of the AIA's Historic Building Committee and the Association of Preservation Technology.",
+  "phone": "(212) 792-5921",
+  "mobile": "(212) 792-5921",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5A702A67-C369-45A9-B29D-381DF97C63FA/kevin-seymour",
+  "image_url": "https://ei.ennead.com/api/image/f7de9516-3bc0-49fb-8281-701c109a8632/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Kevin Seymour_profile.jpg",
+  "position": "Associate Principal",
+  "department": "",
+  "years_with_firm": 14,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Texas, Austin",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "New York University Kimmel Center Stair",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "The Cathedral School of St. John the Divine Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Cathedral of St. John the Divine - Miscellaneous Projects 2004",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/055B2A77-AD0F-4C4E-8671-24F6DD7D5B54/cathedral-of-st-john-the-divine-miscellaneous-projects-2004",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "The Cathedral Church of Saint John the Divine North Transept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Cincinnati Music Hall Revitalization",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E64A9AA3-B607-446C-9BE2-1CB460070430/cincinnati-music-hall-revitalization",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "ByteDance Houhai Center Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "COMAC Campus, New Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kseymour@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:40:59.220717",
+  "profile_id": null
+}

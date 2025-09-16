@@ -1,0 +1,136 @@
+{
+  "human_name": "Todd Van Varick",
+  "email": "todd.vanvarick@ennead.com",
+  "bio": "23",
+  "phone": "(212) 792-5897",
+  "mobile": "(212) 792-5897",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5F8177FA-175D-4522-A981-28FB640F18E6/todd-van-varick",
+  "image_url": "https://ei.ennead.com/api/image/705a9575-5345-420b-ae63-47f0fa601571/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Todd Van Varick_profile.jpg",
+  "position": "Principal",
+  "department": "",
+  "years_with_firm": 23,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Lehigh University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Rice University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Seoul Foreign School, New High School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "The Westminster Schools, Barge Commons (formerly Westminster Center Phase 1)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "The Westminster Schools, Thompson Stadium",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "NYU Langone Health Tish Hospital Facade Restoration Pre-Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/49682D09-9833-4A1C-8CD1-65E74F226783/nyu-langone-health-tish-hospital-facade-restoration-pre-design",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Cornell University, Computing and Information Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D2D5966C-16CE-4DD4-A900-19D24404D219/cornell-university-computing-and-information-science-building",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "University of North Texas Health Science Center Medical Education and Training (MET) Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FAF789FA-3EC5-4490-9BC5-EC47B5B83AC8/university-of-north-texas-health-science-center-medical-education-and-training-met-building",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "The Spence School, 412 E 90 Street Conversion Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13B54F34-8325-4412-A565-A8F3BCB931E4/the-spence-school-412-e-90-street-conversion-study",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Allegheny College, Vukovich Center for Communication Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tvanvarick@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:47:16.436245",
+  "profile_id": null
+}

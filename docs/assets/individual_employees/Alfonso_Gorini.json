@@ -1,0 +1,144 @@
+{
+  "human_name": "Alfonso Gorini",
+  "email": "alfonso.gorini@ennead.com",
+  "bio": "14",
+  "phone": "646-437-1747",
+  "mobile": "646-437-1747",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/1320E993-003D-4C70-81A6-938FF88AE832/alfonso-gorini",
+  "image_url": "https://ei.ennead.com/api/image/7cab69fb-7a8b-4e65-83da-866913487fe2/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Alfonso Gorini_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 14,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Universidad de Costa Rica",
+      "degree": "Undergraduate",
+      "specialty": "Civil/Structural Engineering"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Omaha Performing Arts, Tenaska Center for Arts Engagement",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/36CFEB84-F1C4-41CE-8C7B-A40DBE3A721F/omaha-performing-arts-tenaska-center-for-arts-engagement",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Roundabout Theatre Master Plan & Concept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Omaha Performing Arts, Steelhouse Omaha",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Lycee Francais de New York, Auditorium Stage Rigging -DUMMY-",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B127A138-60AD-47E9-8E9F-E12C4868824F/lycee-francais-de-new-york-auditorium-stage-rigging-dummy",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Lycee Francais de New York, 511 E75th Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D2E6506E-840B-49CD-B06F-F9D9823524BD/lycee-francais-de-new-york-511-e75th-feasibility-study",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Lycee Francais de New York, Summer 2019",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BC828438-A52F-4C85-8ED0-610A15CBB5D7/lycee-francais-de-new-york-summer-2019",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Omaha Performing Arts Campus Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=agorini@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:31:54.910407",
+  "profile_id": null
+}

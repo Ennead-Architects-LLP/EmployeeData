@@ -1,0 +1,35 @@
+{
+  "human_name": "Aislinn Weidele",
+  "email": "aislinn.weidele@ennead.com",
+  "bio": "22",
+  "phone": "212-792-5997",
+  "mobile": "212-792-5997",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/D5F71818-5957-4E06-A29B-BA46047A354B/aislinn-weidele",
+  "image_url": "https://ei.ennead.com/api/image/9c39af50-bf76-47c0-bdde-d9c6c8e4ad70/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Aislinn Weidele_profile.jpg",
+  "position": "Associate",
+  "department": "",
+  "years_with_firm": 22,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "City University of New York, Queens College",
+      "degree": "Graduate",
+      "specialty": "Sculpture/Photography"
+    },
+    {
+      "institution": "University of Maryland",
+      "degree": "Undergraduate",
+      "specialty": "Photography"
+    }
+  ],
+  "licenses": [],
+  "projects": {},
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aweidele@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:31:42.382396",
+  "profile_id": null
+}

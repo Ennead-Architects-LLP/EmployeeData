@@ -1,0 +1,144 @@
+{
+  "human_name": "James Sinks",
+  "email": "james.sinks@ennead.com",
+  "bio": "I'm a native Michigander (no bird jokes please), raised in the Detroit area, completing my undergraduate work at the University of Michigan's School of Business Administration.  After working for several years as a CPA for Arthur Andersen & Co., I concluded that financial security was an unseemly goal and left for New York City to become an architect. Graduating from Columbia University in 1984, I joined James Stewart Polshek and Partners and have been with Polshek/Ennead ever since.I serve as Technical Director of the firm and, as such, have been tasked with leading the effort in developing the office's technical resources and maintaining the quality of our work. Over my 35 years in the office, I've seen a lot and retained enough of it to be knowledgeable about much of what doesn't work and some of what does. Although my sporting days are rapidly fading from memory, I remain an avid, if more sedentary outdoorsman, engaged in gardening and photography mixed in with the occasional  hiking or kayaking expedition in the mistaken belief that I will recapture my youth.",
+  "phone": "(212) 792-5967",
+  "mobile": "(212) 792-5967",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/6DEFED4A-B3F6-43F9-BA28-51135DD13916/james-sinks",
+  "image_url": "https://ei.ennead.com/api/image/aff23cea-9e77-43b5-8077-d6d438cb5492/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/James Sinks_profile.jpg",
+  "position": "Associate Principal",
+  "department": "",
+  "years_with_firm": 41,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Michigan",
+      "degree": "Undergraduate",
+      "specialty": "Business"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "CODA Built",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/47199296-337D-40EB-950F-279696EF5A45/coda-built",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Allegheny College, Vukovich Center for Communication Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Breaking Ground, The Schermerhorn",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8DA1E600-965A-46C4-AB1A-221DE9FB1739/breaking-ground-the-schermerhorn",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Brooklyn Botanic Garden, Eastern Parkway Entrance",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2ABBEF3B-4F9B-4146-8224-A27125C6ECD2/brooklyn-botanic-garden-eastern-parkway-entrance",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Brooklyn Museum Entry Pavilion and Plaza",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A21C83BB-1D39-409F-AC4C-D67A6D920DFF/brooklyn-museum-entry-pavilion-and-plaza",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Carnegie Hall, Judy and Arthur Zankel Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FD6A3450-04D8-4735-9598-4ECFFA5581F3/carnegie-hall-judy-and-arthur-zankel-hall",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "City University of New York, Medgar Evers College, Academic Building I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFA2FFA1-C895-4B10-8C72-F7E29F740641/city-university-of-new-york-medgar-evers-college-academic-building-i",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Frank Sinatra School of the Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Lycée Français de New York",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/19554F98-DBB0-4730-AFE5-A33AEABBFBBB/lyc-e-fran-ais-de-new-york",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jsinks@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:37:19.157181",
+  "profile_id": null
+}

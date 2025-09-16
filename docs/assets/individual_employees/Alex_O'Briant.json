@@ -1,0 +1,144 @@
+{
+  "human_name": "Alex O'Briant",
+  "email": "alex.obriant@ennead.com",
+  "bio": "21",
+  "phone": "212-792-5996",
+  "mobile": "212-792-5996",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/0A2AE6B5-08BB-47EF-8273-287E958D6B1C/alex-o-briant",
+  "image_url": "https://ei.ennead.com/api/image/8a23e0c2-740b-4ee5-ba9d-90289d7d1111/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Alex O'Briant_profile.jpg",
+  "position": "Principal",
+  "department": "",
+  "years_with_firm": 21,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Birmingham-Southern College",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Rice University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Seoul Foreign School, New High School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "University of North Carolina School of Law",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "American School in Japan Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Master Plan Update and Energy Engineering Building Formation Study (EEB)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FEE7E605-5A5B-491E-8AA3-66CC42B85A4A/the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "The University of Texas at Austin, McCombs School of Business, Future Growth Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DF3441F3-B1AD-4A8F-B44B-0B6F561B391B/the-university-of-texas-at-austin-mccombs-school-of-business-future-growth-study",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aobriant@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:31:50.575327",
+  "profile_id": null
+}

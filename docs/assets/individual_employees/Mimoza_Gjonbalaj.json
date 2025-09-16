@@ -1,0 +1,131 @@
+{
+  "human_name": "Mimoza Gjonbalaj",
+  "email": "mimoza.gjonbalaj@ennead.com",
+  "bio": "11",
+  "phone": "(646) 437-1759",
+  "mobile": "(646) 437-1759",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/6970B111-F37B-41BF-A962-A2ED2B60DC6C/mimoza-gjonbalaj",
+  "image_url": "https://ei.ennead.com/api/image/11208012-2c74-4cb9-b868-02ad2025075e/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Mimoza Gjonbalaj_profile.jpg",
+  "position": "Associate",
+  "department": "",
+  "years_with_firm": 11,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Baruch College",
+      "degree": "Undergraduate",
+      "specialty": "Accounting"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Shaoxing Textile Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Mayo Clinic Executive Health Gonda",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Roundabout Theatre Master Plan & Concept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Shinsegae Town Mixed Use Development Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Youth Ministries for Peace and Justice, Soundview Economic Hub",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5B9D7571-1400-4BE2-974E-06AB485D0F38/youth-ministries-for-peace-and-justice-soundview-economic-hub",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Carnegie Hall Recital PA & Handrail",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/59CBAA41-975A-4C0B-9C6A-E3ECC512C670/carnegie-hall-recital-pa-handrail",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Chicago Symphony Orchestra, Outdoor Amphitheatre Concept Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B4E440D9-48CC-4C51-80A6-AEB2E81DBFC0/chicago-symphony-orchestra-outdoor-amphitheatre-concept-study",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mgjonbalaj@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:43:56.550041",
+  "profile_id": null
+}

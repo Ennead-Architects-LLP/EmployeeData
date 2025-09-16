@@ -1,0 +1,179 @@
+{
+  "human_name": "Peter Schubert",
+  "email": "peter.schubert@ennead.com",
+  "bio": "I have a history and a past prior to Ennead. I was at KPF for twenty years. As design principal there, my focus was on institutional as well as commercial buildings. I took that same interest to Hillier / RMJM, where I lead the Design in New York. When coming to Ennead, I was particularly enthused about bringing my interest in intersecting the institutional, cultural and educational into a more global practice for Ennead. I am particularly interested in the urban experience, how the commercial intersects with education and culture, and how aesthetic and urbanistic goals can mutually reinforce one another. I’m thrilled to be here.",
+  "phone": "(212) 584-6327",
+  "mobile": "(212) 584-6327",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/7AE093B0-5B41-40B2-AA27-460FBF278A43/peter-schubert",
+  "image_url": "https://ei.ennead.com/api/image/0f42d127-95de-4bb4-82d6-6b47f4bf2269/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Peter Schubert_profile.jpg",
+  "position": "Partner",
+  "department": "",
+  "years_with_firm": 13,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Ohio State University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "FL",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NJ",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NV",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "TX",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "UT",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Seoul Foreign School, New High School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "455 First Avenue",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Genentech Bayview Campus Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Qilin Science and Technology District, Plot 8 (R&F)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AFC52C21-5D64-4A55-8810-BC03FC515152/qilin-science-and-technology-district-plot-8-r-f",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Jungle Plaza Mixed Use Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "DingTalk Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "ByteDance Houhai Center Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Shenzhen Xiaomi Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "New York Blood Center Applied Life Sciences Hub",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=pschubert@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:44:33.680999",
+  "profile_id": null
+}

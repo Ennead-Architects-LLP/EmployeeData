@@ -1,0 +1,86 @@
+{
+  "human_name": "DaYeon Kim",
+  "email": "DaYeon.Kim@ennead.com",
+  "bio": "4",
+  "phone": "646-437-1761",
+  "mobile": "646-437-1761",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
+  "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
+  "position": "Senior Project Architect",
+  "department": "",
+  "years_with_firm": 4,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Dankook University",
+      "degree": "Undergraduate",
+      "specialty": "Architectural Engineering"
+    },
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Planning and Preservation M.Arch"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Kuwait University Health Sciences Campus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:34:15.256605",
+  "profile_id": null
+}

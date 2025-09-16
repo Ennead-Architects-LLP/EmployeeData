@@ -1,0 +1,30 @@
+{
+  "human_name": "Matt Ryan",
+  "email": "matthew.ryan@ennead.com",
+  "bio": "Hello all! My name is Matt and I am from New York but currently reside in Jersey City. I first started my studies at Rockland Community College and got an Associates in Accounting to then acquire my BBA in Economics from Baruch College with focuses in Physics and Data Analytics. Previously to Ennead I worked at Alvarez & Marsal as an Analyst in their Disputes & Investigations team. In my free time I like to go to concerts, enjoy parks, and go camping.",
+  "phone": "2127925836",
+  "mobile": "2127925836",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/22E212EC-D481-4F29-9817-D863AE939804/matt-ryan",
+  "image_url": "https://ei.ennead.com/api/image/d3d01fad-7244-4060-ac27-a31ac5d934ab/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Matt Ryan_profile.jpg",
+  "position": "Financial Analyst",
+  "department": "",
+  "years_with_firm": 2,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Baruch College",
+      "degree": "5 Year Professional",
+      "specialty": "Economics"
+    }
+  ],
+  "licenses": [],
+  "projects": {},
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=matthew.ryan@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:42:55.449834",
+  "profile_id": null
+}

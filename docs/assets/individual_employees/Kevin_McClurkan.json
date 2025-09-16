@@ -1,0 +1,265 @@
+{
+  "human_name": "Kevin McClurkan",
+  "email": "kevin.mcclurkan@ennead.com",
+  "bio": "Staffing, Project Management, AIA, History",
+  "phone": "(212) 792-5938",
+  "mobile": "(212) 792-5938",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5D528721-568B-47C1-8036-24B56D0F6FB6/kevin-mcclurkan",
+  "image_url": "https://ei.ennead.com/api/image/b1cea48c-4c99-4b12-87fd-be465ac83e6a/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Kevin McClurkan_profile.jpg",
+  "position": "Partner",
+  "department": "",
+  "years_with_firm": 38,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Arkansas",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "AR",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "AZ",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "CA",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "CO",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "DC",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "FL",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "IN",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "KS",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "MA",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "MO",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NC",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NM",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "OR",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "TN",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "TX",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "UT",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "WA",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Land Surveyor",
+      "state": "NV",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Roundabout Theatre Master Plan & Concept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Youth Ministries for Peace and Justice, Soundview Economic Hub",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5B9D7571-1400-4BE2-974E-06AB485D0F38/youth-ministries-for-peace-and-justice-soundview-economic-hub",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "300 Lafayette",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B2895CED-85EB-4451-9BB4-555F00F32F48/300-lafayette",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "455 First Avenue",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "The Standard, High Line New York Pizza Oven/Pergola",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E585E3AC-6426-49B3-AFF1-89389EC3A61E/the-standard-high-line-new-york-pizza-oven-pergola",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "American Museum of Natural History, Starr Natural Sciences Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CBC51CF1-ADE0-445E-B80B-B491CA0FCB8E/american-museum-of-natural-history-starr-natural-sciences-building",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Sherman Avenue Mixed Use Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A54AD7A9-0AB3-47C0-B668-2BC495B066B8/sherman-avenue-mixed-use-development",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "United States Consulate General, Nogales Mexico (planning)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmcclurkan@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:40:55.483161",
+  "profile_id": null
+}

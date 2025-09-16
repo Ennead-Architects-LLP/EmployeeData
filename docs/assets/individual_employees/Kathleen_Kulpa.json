@@ -1,0 +1,144 @@
+{
+  "human_name": "Kathleen Kulpa",
+  "email": "kate.kulpa@ennead.com",
+  "bio": "I was born and raised in central Connecticut and went to undergraduate school in Boston and graduate school in upstate New York. I spent a short time in Philadelphia after graduating before moving to New York to work as a exterior wall consultant at R.A. Heintges (Heintges and Associates).  Here I began focusing on exterior envelope detailing which continues to be my passion. I joined Ennead (Polshek Partership) in 2001 and have been working on the exterior of exciting projects ever since.Outside of work I enjoy hiking all year round, kayaking (just got a kayak!) and volunteering at the local animal shelter.",
+  "phone": "(212) 792-5958",
+  "mobile": "(212) 792-5958",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/000553B1-D590-4FBD-BDA1-9D19B7197C92/kathleen-kulpa",
+  "image_url": "https://ei.ennead.com/api/image/3c60199a-cca0-4880-be9c-233fd2117482/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Kathleen Kulpa_profile.jpg",
+  "position": "Associate Principal",
+  "department": "",
+  "years_with_firm": 22,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Northeasten University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Syracuse University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "PA",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Columbia University Law School, Library Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0B40D3E3-5BDA-46AB-B852-FA845E369EA9/columbia-university-law-school-library-addition",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkulpa@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:40:32.119325",
+  "profile_id": null
+}

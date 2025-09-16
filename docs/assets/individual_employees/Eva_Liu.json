@@ -1,0 +1,71 @@
+{
+  "human_name": "Eva Liu",
+  "email": "xinyue.liu@ennead.com",
+  "bio": "0",
+  "phone": "646-437-1727",
+  "mobile": "646-437-1727",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/7CC0B85D-6924-4208-AF39-C334B2F5B285/eva-liu",
+  "image_url": "https://ei.ennead.com/api/image/e68b15aa-67b7-4316-bb23-b6ee14f95c40/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Eva Liu_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Rice University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture - Expected Graduation 2024"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "American School in Japan Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xinyue.liu@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:35:44.017732",
+  "profile_id": null
+}

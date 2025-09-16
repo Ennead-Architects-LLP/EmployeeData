@@ -1,0 +1,136 @@
+{
+  "human_name": "Amber Kulikauskas",
+  "email": "amber.kulikauskas@ennead.com",
+  "bio": "Project Accountant",
+  "phone": "646-437-1714",
+  "mobile": "646-437-1714",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/B621E0C0-199C-4E96-A623-0B542077671E/amber-kulikauskas",
+  "image_url": "https://ei.ennead.com/api/image/125d27d0-70df-44b5-a8c3-45d96f451258/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Amber Kulikauskas_profile.jpg",
+  "position": "Project Accountant",
+  "department": "",
+  "years_with_firm": 7,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Kaunas University of Technology, Lithuania",
+      "degree": "Graduate",
+      "specialty": "Economics"
+    },
+    {
+      "institution": "Kaunas University of Technology, Lithuania",
+      "degree": "Undergraduate",
+      "specialty": "Accounting & Business Administration"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "New York University Kimmel Center Stair",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "455 First Avenue",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Universal Hydrogen 2 Manufacturing Facility",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Genentech Bayview Campus Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "University of North Carolina School of Law",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=akulikauskas@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:31:59.289172",
+  "profile_id": null
+}

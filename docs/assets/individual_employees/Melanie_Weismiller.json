@@ -1,0 +1,139 @@
+{
+  "human_name": "Melanie Weismiller",
+  "email": "melanie.weismiller@ennead.com",
+  "bio": "12",
+  "phone": "1-213-265-7592",
+  "mobile": "1-213-265-7592",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/84F91309-485A-4748-BCD7-C1D909ACF5C4/melanie-weismiller",
+  "image_url": "https://ei.ennead.com/api/image/4e0bf8dd-177f-41d8-98f2-b699b87a4951/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Melanie Weismiller_profile.jpg",
+  "position": "Associate Principal",
+  "department": "",
+  "years_with_firm": 12,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Universal Hydrogen 2 Manufacturing Facility",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "The Old Globe Concept Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "The Public Theater at Astor Place, Facilities Assessment and Planning Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0EBCF5D1-782D-4CD6-A0D7-3229001BF0FB/the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Arizona State University, Beus Center for Law and Society (ASU)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DC6D031D-D1E0-4D39-A43D-6188E2F15C4F/arizona-state-university-beus-center-for-law-and-society-asu",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Jones Hall Concept Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/57D5344B-D09F-4C82-A653-B0EA29C667CA/jones-hall-concept-design",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "New York Hall of Science Great Hall Upgrades and Terrace Improvements",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7DD086B3-436C-4215-AC53-BC344E2D3BD6/new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Peabody Essex Museum, Expansion and Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mweismiller@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:43:02.119356",
+  "profile_id": null
+}

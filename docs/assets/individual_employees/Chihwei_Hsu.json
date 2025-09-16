@@ -1,0 +1,144 @@
+{
+  "human_name": "Chihwei Hsu",
+  "email": "chihwei.hsu@ennead.com",
+  "bio": "9",
+  "phone": "212-792-5892",
+  "mobile": "212-792-5892",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5CF3F46F-0CE1-446C-9D41-BD51ED8B9B55/chihwei-hsu",
+  "image_url": "https://ei.ennead.com/api/image/4e084f95-1b96-43c4-8524-15550685bb76/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Chihwei Hsu_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 9,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cooper Union",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "National Cheng Kung University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Shaoxing Textile Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "455 First Avenue",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Capitol Crossing",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Beihang University Qingdao Campus, International Science and Education City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Lixin University of Finance and Accounting, Pudong New Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4E502D5D-B536-4D71-9162-8196605365D9/lixin-university-of-finance-and-accounting-pudong-new-campus-master-plan",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Chihwei.Hsu@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:33:46.607276",
+  "profile_id": null
+}

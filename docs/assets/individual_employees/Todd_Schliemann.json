@@ -1,0 +1,146 @@
+{
+  "human_name": "Todd Schliemann",
+  "email": "todd.schliemann@ennead.com",
+  "bio": "45",
+  "phone": "(212) 792-5965",
+  "mobile": "(212) 792-5965",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/D73A7D08-4C19-4E14-BE62-9E562C6E2201/todd-schliemann",
+  "image_url": "https://ei.ennead.com/api/image/51abf059-ba4a-4e9b-9d78-a927c798ff61/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Todd Schliemann_profile.jpg",
+  "position": "Partner",
+  "department": "",
+  "years_with_firm": 45,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "MI",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "American Museum of Natural History, Starr Natural Sciences Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CBC51CF1-ADE0-445E-B80B-B491CA0FCB8E/american-museum-of-natural-history-starr-natural-sciences-building",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "New York Public Library for the Performing Arts (NYPL)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5F99AFFF-99E8-43DF-9B6E-D5354EB9DF29/new-york-public-library-for-the-performing-arts-nypl",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Cornell University, Computing and Information Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D2D5966C-16CE-4DD4-A900-19D24404D219/cornell-university-computing-and-information-science-building",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Corning Incorporated, Houghton Park, C Building (Renovation)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/28247E7B-D3CE-4855-B9A8-7B95E05D56E1/corning-incorporated-houghton-park-c-building-renovation",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Master Plan Update and Energy Engineering Building Formation Study (EEB)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FEE7E605-5A5B-491E-8AA3-66CC42B85A4A/the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "University of California, San Diego, Biological and Physical Sciences Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/83D250EC-9231-4952-8837-2E0C2DB6CC0F/university-of-california-san-diego-biological-and-physical-sciences-building",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "York Avenue Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D19CC9CD-4756-4F8C-8402-F39ED058DCB4/york-avenue-development",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tschliemann@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:47:11.218445",
+  "profile_id": null
+}

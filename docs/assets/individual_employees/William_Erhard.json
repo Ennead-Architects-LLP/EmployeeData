@@ -1,0 +1,139 @@
+{
+  "human_name": "William Erhard",
+  "email": "billy.erhard@ennead.com",
+  "bio": "I’m a native Cape Codder. Cotuit, MA – basically the ‘bicep’ of the Cape.I received my B.Arch at Cornell in Ithaca, NY – closest ocean: 8 hours.  While there I got really into film making, mostly strange art films and animations, I also did architecture. Prior to Ennead, I worked in Buffalo, NY; volunteered in Port-au-Price, Haiti; competition-milled and lived the good life in Rome, Italy.While at Ennead, I have had the pleasure of working on a wide range of projects including a hospital pavilion, a neuro-science laboratory, a retail shop for the wealthiest corporation in the history of civilization, a very metropolitan performing arts venue and many, many competition pursuits and proposals.Recently, I have taken on the role of Project Designer which has been incredibly challenging and professionally rewarding in equal measure.Outside the office I enjoy cycling, all aquatic-related activities, classic cinema and attempting new recipes where I try and dirty every dish in the house.",
+  "phone": "(212) 792-5902",
+  "mobile": "(212) 792-5902",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/2F2F7379-3149-4224-9D47-CEE7C886A79E/william-erhard",
+  "image_url": "https://ei.ennead.com/api/image/6350e478-87ff-494c-a99f-3cb90251e3f3/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/William Erhard_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 13,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "The Westminster Schools, Barge Commons (formerly Westminster Center Phase 1)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "The Westminster Schools, Thompson Stadium",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Universal Hydrogen 2 Manufacturing Facility",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Chicago Symphony Orchestra, Outdoor Amphitheatre Concept Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B4E440D9-48CC-4C51-80A6-AEB2E81DBFC0/chicago-symphony-orchestra-outdoor-amphitheatre-concept-study",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "NYU Langone Health Tish Hospital Facade Restoration Pre-Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/49682D09-9833-4A1C-8CD1-65E74F226783/nyu-langone-health-tish-hospital-facade-restoration-pre-design",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Qilin Science and Technology District, Plot 8 (R&F)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AFC52C21-5D64-4A55-8810-BC03FC515152/qilin-science-and-technology-district-plot-8-r-f",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "R&F Plaza Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33E657C4-802D-4D94-AF98-3B8158605F05/r-f-plaza-master-plan",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Paso Cardenal Samore Border Station",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5487DB6D-C915-4D0A-ABD4-72006655BDBB/paso-cardenal-samore-border-station",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=berhard@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:48:12.423338",
+  "profile_id": null
+}

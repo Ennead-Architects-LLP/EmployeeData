@@ -1,0 +1,116 @@
+{
+  "human_name": "Yudou Huang",
+  "email": "yudou.huang@ennead.com",
+  "bio": "I was born and grew up in Zhuhai, a hot and humid small city in southern China. I spent four years in Taipei for my bachelor’s degree of architecture and urban design at the Chinese Culture University. After that, I continue pursuing my architecture career at the University of Virginia for Master of Architecture.I enjoy photographing, traveling and watching soccer(mostly watching Manchester United) in my leisure time.Excited to be an Enneadian!",
+  "phone": "2125846317",
+  "mobile": "2125846317",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/A3464BBA-D554-4521-8D28-EE50CEC641D0/yudou-huang",
+  "image_url": "https://ei.ennead.com/api/image/220613fa-0cdd-425e-985a-4f80b3adb496/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Yudou Huang_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 5,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Virginia",
+      "degree": "Graduate",
+      "specialty": "Architecture Pat 2.5 (Candidate 2019)"
+    },
+    {
+      "institution": "Chinese Culture University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture & Urban Design"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Shenhzen International Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "The Public, Delacorte Theater, Central Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Capitol Crossing",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Shenzhen Science and Technology Museum (S&T)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=yhuang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:49:10.613871",
+  "profile_id": null
+}

@@ -1,0 +1,86 @@
+{
+  "human_name": "Matt Mendicino",
+  "email": "matthew.mendicino@ennead.com",
+  "bio": "I graduated from Loyola Maryland in Baltimore and began working in the CRE industry as a leasing and sales representative for Colliers International in their NYC and FFLD/Westchester County offices. I am currently pursuing my M.Arch degree at Pratt Institute in Brooklyn, NY and really enjoying myself. I am joining Ennead as part of the Business Dev/Marketing Team and will be working closely with Eric Spencer.I grew up in Connecticut and spent the majority of my life there. I now live in Brooklyn with my Fiancé and hope to stay there for a while!",
+  "phone": "212-792-5822",
+  "mobile": "212-792-5822",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/0C266130-C393-4681-9C1D-33CE5610DA9E/matt-mendicino",
+  "image_url": "https://ei.ennead.com/api/image/f3677db0-704d-4e02-ace6-67364bf546c1/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Matt Mendicino_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 2,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Loyola university",
+      "degree": "Undergraduate",
+      "specialty": "Business Administration- Marketing"
+    },
+    {
+      "institution": "Pratt Institute",
+      "degree": "Graduate",
+      "specialty": "Master of Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "455 First Avenue",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Matthew.Mendicino@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:42:51.929379",
+  "profile_id": null
+}

@@ -1,0 +1,144 @@
+{
+  "human_name": "Charles Brainerd",
+  "email": "charles.brainerd@ennead.com",
+  "bio": "27",
+  "phone": "212-792-5907",
+  "mobile": "212-792-5907",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/C6B8EB65-350E-4974-9BC4-0877AFBBA190/charles-brainerd",
+  "image_url": "https://ei.ennead.com/api/image/8ca2edd3-61db-425e-a76f-24c37592defb/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Charles Brainerd_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 27,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Harvard",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Harvard",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "The Cathedral Church of Saint John the Divine North Transept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Lycée Français de New York, Ongoing Services (Lycee Francais)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0399CDA5-3D7D-4E02-B5CA-B3A24903E679/lyc-e-fran-ais-de-new-york-ongoing-services-lycee-francais",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "New York Academy of Medicine, Programming and Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "The Cathedral Church of St. John the Divine, North Tower",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/99550CD6-67CB-4F2D-B620-1E5AD2FCC9D1/the-cathedral-church-of-st-john-the-divine-north-tower",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "The Cathedral Church of St. John the Divine, Offices Redesign",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E208C9D3-8588-4CD6-B3D6-A967B68962A1/the-cathedral-church-of-st-john-the-divine-offices-redesign",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "The Cathedral Church of St. John the Divine, Tomb of Christ",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/24136CFF-8675-4073-89E0-2DA2462362E5/the-cathedral-church-of-st-john-the-divine-tomb-of-christ",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cbrainerd@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:33:38.256533",
+  "profile_id": null
+}

@@ -1,0 +1,91 @@
+{
+  "human_name": "Ingrid Evenson",
+  "email": "ingrid.evenson@ennead.com",
+  "bio": "0",
+  "phone": "646-437-1726",
+  "mobile": "646-437-1726",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/47832C14-0186-4B81-A95C-CC7DF9DDD1FB/ingrid-evenson",
+  "image_url": "https://ei.ennead.com/api/image/bae4208c-1f64-4352-8de2-1214b858f3b1/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Ingrid Evenson_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": null,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture - Expected Graduation 2024"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Shaoxing Textile Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "American School in Japan Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ingrid.evenson@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:37:15.310606",
+  "profile_id": null
+}

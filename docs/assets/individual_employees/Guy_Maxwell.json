@@ -1,0 +1,172 @@
+{
+  "human_name": "Guy Maxwell",
+  "email": "guy.maxwell@ennead.com",
+  "bio": "I am originally from Virginia—born and grew up in Richmond and later attended the University of Virginia in Charlottesville. The son of a school teacher and a contractor, I suppose that learning and building are in my blood. I came to New York in the early 90s for graduate school at Columbia—at the time I had no idea that I would stay here, but New York has a way of growing on you. I have spent almost my entire professional career at Ennead, having started working at Polshek right out of grad school. I have had the great pleasure of working with some incredibly talented architects on some amazing projects...science museums, colleges/universities, and New York City municipal buildings. I was initially attracted to the firm because of its excellence across all facets of the profession—design, management and technical execution—and continue to believe that this is our unique strength.In my spare time, I am a naturalist, birdwatcher, hiker, gardener, woodworker, sawyer, painter, handyman, tool restorer, dog and cat lover, photographer... Clearly too many hobbies for so little free time!",
+  "phone": "(212) 792-5937",
+  "mobile": "(212) 792-5937",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/333159A4-F708-4F6E-863C-96421CD8C6EB/guy-maxwell",
+  "image_url": "https://ei.ennead.com/api/image/2630eb11-7b20-4b32-bb5b-d9b1a1e9496c/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Guy Maxwell_profile.jpg",
+  "position": "Partner",
+  "department": "",
+  "years_with_firm": 31,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Virginia",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "DE",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NJ",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NV",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "VA",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "The Cathedral School of St. John the Divine Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Cathedral of St. John the Divine - Miscellaneous Projects 2004",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/055B2A77-AD0F-4C4E-8671-24F6DD7D5B54/cathedral-of-st-john-the-divine-miscellaneous-projects-2004",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "The Cathedral Church of Saint John the Divine North Transept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "The Cathedral Church of St. John the Divine, Penn Station Light Fixtures",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFADB3D0-35A3-4810-9BC2-F5C9DEE544A4/the-cathedral-church-of-st-john-the-divine-penn-station-light-fixtures",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "The Cathedral Church of St. John the Divine, Diocesan Apartment",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D6BEAAA5-E16A-406D-A5AD-9CAC8A9328FC/the-cathedral-church-of-st-john-the-divine-diocesan-apartment",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "The Cathedral Church of St. John the Divine, North Tower",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/99550CD6-67CB-4F2D-B620-1E5AD2FCC9D1/the-cathedral-church-of-st-john-the-divine-north-tower",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "The Cathedral Church of St. John the Divine, Offices Redesign",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E208C9D3-8588-4CD6-B3D6-A967B68962A1/the-cathedral-church-of-st-john-the-divine-offices-redesign",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "The Cathedral Church of St. John the Divine, Tomb of Christ",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/24136CFF-8675-4073-89E0-2DA2462362E5/the-cathedral-church-of-st-john-the-divine-tomb-of-christ",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "American Museum of Natural History, Rose Center for Earth and Space",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=gmaxwell@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:36:41.589285",
+  "profile_id": null
+}

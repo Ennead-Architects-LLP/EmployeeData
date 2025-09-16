@@ -1,0 +1,136 @@
+{
+  "human_name": "Kyung Min",
+  "email": "kyung.min@ennead.com",
+  "bio": "11",
+  "phone": "(212) 792-5978",
+  "mobile": "(212) 792-5978",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/6A3F30BF-0D4A-4CC3-8A3E-784DAAB74571/kyung-min",
+  "image_url": "https://ei.ennead.com/api/image/398b7ada-278f-495b-86c8-2296706c4694/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Kyung Min_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 11,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Kyung Hee University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Syracuse University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Seoul Foreign School, New High School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Genentech Bayview Campus Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Hana Dream Square",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AC2D7D1E-E60B-4E65-9FE1-84F826984E5B/hana-dream-square",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "National Grid Gas Conditioning System at Newtown Creek",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1E7A97BA-3008-4BE7-BA12-07DADB1D0004/national-grid-gas-conditioning-system-at-newtown-creek",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Zhengzhou Bairui Financial Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Nanda Plot 111-01",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmin@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:41:14.449266",
+  "profile_id": null
+}

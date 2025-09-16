@@ -1,0 +1,81 @@
+{
+  "human_name": "Paula Gronda",
+  "email": "Paula.Gronda@ennead.com",
+  "bio": "4",
+  "phone": "212-792-5834",
+  "mobile": "212-792-5834",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/2700EBA6-4AFA-45E9-B746-8A7D9512EDEA/paula-gronda",
+  "image_url": "https://ei.ennead.com/api/image/c3d4e2ef-8d30-41a7-980b-2da2546d00bf/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Paula Gronda_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 4,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Universidad Torcuato Di Tella",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Paula.Gronda@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:44:30.162923",
+  "profile_id": null
+}

@@ -1,0 +1,30 @@
+{
+  "human_name": "Feliks Peck",
+  "email": "feliks.peck@ennead.com",
+  "bio": "14",
+  "phone": "(212) 792-5930",
+  "mobile": "(212) 792-5930",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/0185613B-12B2-4AD2-98D4-59A91F4E9173/feliks-peck",
+  "image_url": "https://ei.ennead.com/api/image/f2efbcf0-524a-4bc2-8560-2652fc36899c/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Feliks Peck_profile.jpg",
+  "position": "Mail Clerk",
+  "department": "",
+  "years_with_firm": 14,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Moscow Printing Institute",
+      "degree": "Undergraduate",
+      "specialty": "Mechanical Engineering"
+    }
+  ],
+  "licenses": [],
+  "projects": {},
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fpeck@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:36:18.523178",
+  "profile_id": null
+}

@@ -1,0 +1,131 @@
+{
+  "human_name": "Miya Ruan",
+  "email": "miya.ruan@ennead.com",
+  "bio": "10",
+  "phone": "",
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/2B0A5560-7282-4EC6-BF47-E2298D870440/miya-ruan",
+  "image_url": "https://ei.ennead.com/api/image/779bcc36-0fdd-4838-8d92-5bd6e340eb45/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Miya Ruan_profile.jpg",
+  "position": "Designer",
+  "department": "",
+  "years_with_firm": 10,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Zengzhou University of Aeronautics",
+      "degree": "Undergraduate",
+      "specialty": "Urban Design"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Shenhzen International Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Lingang Global Digital Trade Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/19F45A2B-4333-4D4A-944A-F64E147374F5/lingang-global-digital-trade-headquarters",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Shanghai Pujiang Oriental Smart Media City Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CDB6A79F-F127-4D48-80F9-A8A8A53AF6F2/shanghai-pujiang-oriental-smart-media-city-project",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Baoshan Nanda",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Beihang University Qingdao Campus, International Science and Education City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Lingang Fengxian Biopharm Office Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mruan@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:44:05.455807",
+  "profile_id": null
+}

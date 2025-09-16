@@ -1,0 +1,144 @@
+{
+  "human_name": "Tzara Peterson",
+  "email": "tzara.peterson@ennead.com",
+  "bio": "I believe that an architect has a social responsibility to improve her profession and the communities she impacts as a whole; a project’s positive qualities are not dictated by its budget, scale, or location, but by the architect’s thoughtfulness, engagement and passion.",
+  "phone": "646-437-1725",
+  "mobile": "646-437-1725",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/CBB4F8BE-2F79-4A05-8ECD-2A34F5459F0A/tzara-peterson",
+  "image_url": "https://ei.ennead.com/api/image/659b240e-14ac-4469-a7fc-df7b6c5eeee7/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Tzara Peterson_profile.jpg",
+  "position": "Associate",
+  "department": "",
+  "years_with_firm": 5,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "Graduate",
+      "specialty": "Architecture Art & Planning"
+    },
+    {
+      "institution": "Cornell University",
+      "degree": "Undergraduate",
+      "specialty": "Human Ecology"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "New York University Kimmel Center Stair",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Roundabout Theatre Master Plan & Concept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "455 First Avenue",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Jungle Plaza Mixed Use Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Divco West Cambridge Crossing: Parcel U",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Weill Cornell Medicine, Belfer Research Building, 8th Floor Fit-Out",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5095F049-F058-484D-A9D3-F659D335FB34/weill-cornell-medicine-belfer-research-building-8th-floor-fit-out",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "The Cove, Crescent Park Jersey City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Jefferson Health, Honickman Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tpeterson@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:47:32.830299",
+  "profile_id": null
+}

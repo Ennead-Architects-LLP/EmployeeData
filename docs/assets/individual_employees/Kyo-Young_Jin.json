@@ -1,0 +1,131 @@
+{
+  "human_name": "Kyo-Young Jin",
+  "email": "kyo.jin@ennead.com",
+  "bio": "20",
+  "phone": "(212) 792-5942",
+  "mobile": "(212) 792-5942",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/29EC5B97-3555-4437-8C85-5537FF90953B/kyo-young-jin",
+  "image_url": "https://ei.ennead.com/api/image/0a88eb2f-0fee-4078-b665-95abbe31020d/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Kyo-Young Jin_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 20,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Illinois, Urbana Champaign",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "City University of New York, Medgar Evers College, Academic Building I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFA2FFA1-C895-4B10-8C72-F7E29F740641/city-university-of-new-york-medgar-evers-college-academic-building-i",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Natural History Museum of Utah",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "New York City Public Schools, Intermediate / High School, District 43",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/01891292-1661-4DFC-B601-26702654B3FE/new-york-city-public-schools-intermediate-high-school-district-43",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "New York University, Department of Journalism",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/64722D05-9BA1-4F2B-8109-9545F58477A4/new-york-university-department-of-journalism",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "NYU Langone Health, Tisch Hospital Elevator Tower and Lobby",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B9543A56-1A01-4772-8B56-97B9A063BF08/nyu-langone-health-tisch-hospital-elevator-tower-and-lobby",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kjin@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:41:10.953792",
+  "profile_id": null
+}

@@ -1,0 +1,131 @@
+{
+  "human_name": "Stefan Abel",
+  "email": "stefan.abel@ennead.com",
+  "bio": "18",
+  "phone": "(646) 437-1696",
+  "mobile": "(646) 437-1696",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/D79405D8-253E-466E-9D01-6A6B4DF3C220/stefan-abel",
+  "image_url": "https://ei.ennead.com/api/image/15acc832-132b-45ce-837c-f220a77e6119/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Stefan Abel_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 18,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "New York Institute of Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "The Cathedral School of St. John the Divine Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Qilin Science and Technology District, Plot 8 (R&F)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AFC52C21-5D64-4A55-8810-BC03FC515152/qilin-science-and-technology-district-plot-8-r-f",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Stanford in New York",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/89938168-43BD-41D3-9912-168E07B4412D/stanford-in-new-york",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Zhengzhou Bairui Financial Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Brooklyn Museum, Great Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD4ACE57-C761-4267-BA9C-C63D66CB6504/brooklyn-museum-great-hall",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Cornell University Comprehensive Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8CE3D791-A632-4DF9-BC75-65D54FC34F49/cornell-university-comprehensive-campus-master-plan",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Nanjing Qilin Technology Innovation Park (Plot 3)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/706ECC86-72A7-4FD9-B7C9-EF75C03FF86A/nanjing-qilin-technology-innovation-park-plot-3",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "New York University, Gallatin School of Individualized Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/88100CBA-B5DE-47BD-BEE6-F0FA87C06370/new-york-university-gallatin-school-of-individualized-study",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sabel@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:46:47.903834",
+  "profile_id": null
+}

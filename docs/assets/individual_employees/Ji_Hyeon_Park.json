@@ -1,0 +1,66 @@
+{
+  "human_name": "Ji Hyeon Park",
+  "email": "JiHyeon.Park@ennead.com",
+  "bio": "I was born and raised in Seoul, South Korea. After spending a year in Georgia as a high school exchange student, I returned home and graduated from foreign language high school where I majored in French; sadly, my French skill got rusted and I’d like to work on it again.  Then, I came back to the States for the college. I went to Pratt Institute for a B.Arch with construction management as a minor. Immediately after Pratt, I went to GSAPP at Columbia University for a MS. in advanced architectural design.I give credit to (or blame on) my sister for unintentionally brainwashing me into studying architecture as she always talked about it. She is still a great influence, sharing architectural news and translating the Japanese architecture magazines/books for me. Oh, she became a cool Japanese-to-Korean translator instead of an architect. Before joining Ennead, I’ve worked on the public schools and affordable housing restoration/rehabilitation, and a new ground-up community center in public interest design. My experience at architecture firms also includes the healthcare facilities, high-end residential condominiums and residential renovation.Outside of the office, I’m a traveler. I love traveling, trying different foods, learning new languages, and exploring the cultures. My favorite experience so far was lying down on Sahara Desert in Morocco and staring at the millions of stars all night.",
+  "phone": "646-437-1711",
+  "mobile": "646-437-1711",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/8846087C-D9A7-45C8-9E69-7F607F76EC20/ji-hyeon-park",
+  "image_url": "https://ei.ennead.com/api/image/30999718-8597-454f-a7b9-a9f939c186a2/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Ji Hyeon Park_profile.jpg",
+  "position": "Project Architect",
+  "department": "",
+  "years_with_firm": 4,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "M.S. in Advanced  Architectural Design"
+    },
+    {
+      "institution": "Pratt Institute",
+      "degree": "Undergraduate",
+      "specialty": "B.Arch"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=JiHyeon.Park@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:37:46.143942",
+  "profile_id": null
+}

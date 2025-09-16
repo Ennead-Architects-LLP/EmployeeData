@@ -1,0 +1,144 @@
+{
+  "human_name": "Lois Mate",
+  "email": "lois.mate@ennead.com",
+  "bio": "38",
+  "phone": "(212) 792-5934",
+  "mobile": "(212) 792-5934",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/0CAD5856-12CA-4985-BB72-F2B81FC54FC8/lois-mate",
+  "image_url": "https://ei.ennead.com/api/image/fb237f40-76cb-4748-bdc6-ff8636a36840/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Lois Mate_profile.jpg",
+  "position": "Associate Principal",
+  "department": "",
+  "years_with_firm": 38,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Virginia",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Union Theological Seminary Tower",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CD0C57D7-A22E-4995-925A-59924B0E4017/union-theological-seminary-tower",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Corning Incorporated, Houghton Park, C Building (Renovation)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/28247E7B-D3CE-4855-B9A8-7B95E05D56E1/corning-incorporated-houghton-park-c-building-renovation",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "New York Academy of Medicine, Programming and Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "York Avenue Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D19CC9CD-4756-4F8C-8402-F39ED058DCB4/york-avenue-development",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Purdue University Polytechnic Institute, College of Engineering, Dudley and Lambertus Halls (Gateway)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CC0FBA10-4F97-4086-83AC-C1A42862AA28/purdue-university-polytechnic-institute-college-of-engineering-dudley-and-lambertus-halls-gateway",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Weill Cornell Medicine, Belfer Research Building, 8th Floor Fit-Out",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5095F049-F058-484D-A9D3-F659D335FB34/weill-cornell-medicine-belfer-research-building-8th-floor-fit-out",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Massachusetts Institute of Technology, Stephen A. Schwarzman College of Computing (MIT)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7B410E83-8B38-4EC1-82B9-33793246428B/massachusetts-institute-of-technology-stephen-a-schwarzman-college-of-computing-mit",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lmate@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:42:16.536195",
+  "profile_id": null
+}

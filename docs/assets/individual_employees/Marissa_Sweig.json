@@ -1,0 +1,144 @@
+{
+  "human_name": "Marissa Sweig",
+  "email": "marissa.sweig@ennead.com",
+  "bio": "21",
+  "phone": "(212) 792-5913",
+  "mobile": "(212) 792-5913",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/BD7BBAB2-C1D9-415F-B578-6AEACCB12967/marissa-sweig",
+  "image_url": "https://ei.ennead.com/api/image/ac7fd1d3-da5a-49ef-b5ec-95d26f7c5e10/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Marissa Sweig_profile.jpg",
+  "position": "Associate  Principal",
+  "department": "",
+  "years_with_firm": 21,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Tulane University",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Yale University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "NYU Langone Health Tish Hospital Facade Restoration Pre-Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/49682D09-9833-4A1C-8CD1-65E74F226783/nyu-langone-health-tish-hospital-facade-restoration-pre-design",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "NYU Langone Health Tish Hospital, 14 Unit Door",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9BA89CFD-5CB6-411D-BFB6-DFF9C3A3648D/nyu-langone-health-tish-hospital-14-unit-door",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "NYU Langone Health, Science Building, BERG Suite - CA services",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C995F383-6373-4FA0-8D2B-F33B68075A81/nyu-langone-health-science-building-berg-suite-ca-services",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "NYU Langone Health, Medical Science Building Renovations: Student Library",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C171C9B-169D-4E28-B1CE-EC39DD07D79F/nyu-langone-health-medical-science-building-renovations--student-library",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "The Walters Art Museum Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/39740538-5E6D-42AC-9F7C-D2C4587B0701/the-walters-art-museum-master-plan",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "NYU Langone Health, Medical Science Building, Infrastructure, North 1",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/090F09E0-7CAC-4404-A674-B7534E589796/nyu-langone-health-medical-science-building-infrastructure-north-1",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Weitzman National Museum of American Jewish History (first Site)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/40185FFF-5D97-4938-9184-BE011BA9D967/weitzman-national-museum-of-american-jewish-history-first-site",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=msweig@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:42:35.967445",
+  "profile_id": null
+}

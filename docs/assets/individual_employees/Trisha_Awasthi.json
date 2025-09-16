@@ -1,0 +1,101 @@
+{
+  "human_name": "Trisha Awasthi",
+  "email": "trisha.awasthi@ennead.com",
+  "bio": "Interior Design & Space PlanningRestaurant & dessert spots in the city",
+  "phone": "2127925833",
+  "mobile": "2127925833",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/5C3F98C7-EFF6-4DA8-B33A-2F1099046242/trisha-awasthi",
+  "image_url": "https://ei.ennead.com/api/image/ab6d1317-13ec-4a0e-aecc-3c9a5682c99d/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Trisha Awasthi_profile.jpg",
+  "position": "Intermediate Interior Designer",
+  "department": "",
+  "years_with_firm": 2,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Harrisburg School of Science &",
+      "degree": "Graduate",
+      "specialty": "Project Management"
+    },
+    {
+      "institution": "Jawaharlal Nehru Architecture &",
+      "degree": "Undergraduate",
+      "specialty": "Architecture & Fine Arts"
+    },
+    {
+      "institution": "New England School of Art &",
+      "degree": "Graduate",
+      "specialty": "Art & Design"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "The Westminster Schools, Love Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Westminster Schools - Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=trisha.awasthi@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:47:24.119205",
+  "profile_id": null
+}

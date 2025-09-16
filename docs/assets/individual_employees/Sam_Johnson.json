@@ -1,0 +1,144 @@
+{
+  "human_name": "Sam Johnson",
+  "email": "sam.johnson@ennead.com",
+  "bio": "Originally from New Jersey, as an undergrad I attended the University of Massachusetts, Amherst, where I received my BFA in Architecture. Following this, I spent about 5 years working in NYC. First two at Midtown Preservation, a historic preservation & restoration firm, where I performed façade and roof inspections and managed projects on-site. The next three were at Building Studio Architects, a small office in midtown, where I worked on a range of projects including  a number of synagogues in South Brooklyn. If you have a project that is going to need a mikvah, come talk to me first! (or your rabbi)I recently graduated with my Master of Architecture from the University of Virginia. While there, I edited the school's design journal LUNCH, designed and fabricated an installation for the Smithsonian museum, spent a summer abroad in China, and chaired the graduate student government. My studio work was featured on the local news in Virginia, following which people said mean things about me on the internet. Such is life these days.With the little free time I have, I like to focus on music and comedy. I used to help run a small noise music label in Amherst, every release of which was utterly unlistenable, and have performed improv comedy in New York and Chicago. I have strong opinions about why architects should take comedy classes, which I am happy to discuss at length.",
+  "phone": "2125846329",
+  "mobile": "2125846329",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/E2A1C95D-F439-417F-B3EE-7482855B7BA9/sam-johnson",
+  "image_url": "https://ei.ennead.com/api/image/1770c2eb-952c-44b7-a8f7-cc6f2703459c/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Sam Johnson_profile.jpg",
+  "position": "Associate",
+  "department": "",
+  "years_with_firm": 5,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Massachusetts, Amherst",
+      "degree": "Undergraduate",
+      "specialty": "Architecture & Design"
+    },
+    {
+      "institution": "University of Virginia",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Harvard Yard Libraries Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Paso Cardenal Samore Border Station",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5487DB6D-C915-4D0A-ABD4-72006655BDBB/paso-cardenal-samore-border-station",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "The Westminster Schools, Love Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Divco West Cambridge Crossing: Parcel U",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "New York University. Grey Art Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Westminster Schools - Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Capitol Crossing",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sjohnson@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:46:14.743554",
+  "profile_id": null
+}

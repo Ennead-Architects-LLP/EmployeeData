@@ -1,0 +1,94 @@
+{
+  "human_name": "Clayton Kaul",
+  "email": "clayton.kaul@ennead.com",
+  "bio": "I was born in New Orleans and pretty much grew up on a construction site.  My house was always being renovated, mostly by my father, grandfather, and myself - wielding a hammer at a young age.   When we weren't working on our own house, we would walk through any job site in the neighborhood that we could sneak in to, trying to decipher what they were doing with the design, how they were constructing it, and if there was something we could learn.  I imagine I've probably walked through over 100 houses that were framed up that I had absolutely nothing to do with. It was an easy decision for me to go to architecture school.  I went to UVa for undergrad with a very hands-on architecture program.  I then followed a UVa professor back to New Orleans, when he became dean of Tulane, for grad school. I've lived in Houston, Dallas, and Shangahai, but finally moved to NYC in 2016 and started at Ennead when my wife matched to Mt. Sinai for residency.   Ironically, I've been working on Mt. Sinai's Downtown hospital for about as long as I've been here. I love living in NYC, but its difficult to get out and play golf and get into the wood shop, which are my main hobbies outside of sneaking onto residential construction sites (which is not something I've tried since moving here!)",
+  "phone": "(212) 792-5906",
+  "mobile": "(212) 792-5906",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/A3F00F64-D544-4FFE-8BEC-0E424BE2EC3A/clayton-kaul",
+  "image_url": "https://ei.ennead.com/api/image/215fcc9f-f794-41bb-b76d-d1817b471b9f/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Clayton Kaul_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 9,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Tulane University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Virginia",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "New York Blood Center Applied Life Sciences Hub",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Lingang Science and Technology City (S&T)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Mount Sinai Downtown Transformation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ckaul@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:34:01.778732",
+  "profile_id": null
+}

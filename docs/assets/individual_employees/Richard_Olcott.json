@@ -1,0 +1,188 @@
+{
+  "human_name": "Richard Olcott",
+  "email": "richard.olcott@ennead.com",
+  "bio": "I was born and raised near Princeton, NJ. As an undergraduate, I attended Cornell University and participated in a summer program at the Architectural Association School of Architecture in London. Upon graduating college, I was the 9th employee of James Stewart Polshek Architects, starting in November 1979 -- a few weeks after Todd, who was the 8th.  Since then, my work has encompassed projects as diverse as the headquarters for a public broadcasting station, a wastewater treatment plant, museums, performing arts centers, and a presidential library. I am particularly interested in the integration of new architecture with the historic urban fabric and served as a Commissioner of the New York City Landmarks Preservation Commission for 11 years. I was a recipient of the American Academy in Rome’s Founders Rome Prize Fellowship for 2003-04 and recently a Favrot Visiting Professor at Tulane University.Outside of work, I enjoy spending time with my wife and two daughters, ages 21 and 24. My interests: firearms and daytime television.",
+  "phone": "(212) 792-5946",
+  "mobile": "(212) 792-5946",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/A35D87DB-9328-4DAF-98B5-3F8D48B70404/richard-olcott",
+  "image_url": "https://ei.ennead.com/api/image/a32faef4-70c5-4285-a71d-82ac38999049/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Richard Olcott_profile.jpg",
+  "position": "Partner",
+  "department": "",
+  "years_with_firm": 45,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "5 Year Professional",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "CT",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "DC",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "FL",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "MA",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NJ",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "VA",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "VT",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Youth Ministries for Peace and Justice, Soundview Economic Hub",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5B9D7571-1400-4BE2-974E-06AB485D0F38/youth-ministries-for-peace-and-justice-soundview-economic-hub",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Working Waterfront: Water Wheels (New York Times)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2AF9D5D6-3EE8-4786-8FE6-4A110ADEFBF6/working-waterfront--water-wheels-new-york-times",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "City University of New York, Hunter College, Roosevelt House Renovation, Upgrades",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0BFE4D02-0754-4154-A37B-89350E998772/city-university-of-new-york-hunter-college-roosevelt-house-renovation-upgrades",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Colin Powell School for Civic and Global Leadership at The City College of New York",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4EB6598F-1C37-451C-ACF8-155A62912C15/colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Haut-Savoie Government Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/23BC338B-8968-4001-82F0-C7C2F7165D16/haut-savoie-government-office-building",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Manhattan Supreme Court Criminal Term Building (80 centre street)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/61C518FB-505D-401B-A5FA-1A459D1FCB5D/manhattan-supreme-court-criminal-term-building-80-centre-street",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "United States Consulate General, Nogales Mexico (planning)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "City University of New York, City College, Colin L. Powell Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4001782E-0E09-4E75-B06A-1BB6AD33D5EF/city-university-of-new-york-city-college-colin-l-powell-hall",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "International Center of Photography Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3F515AA0-A83E-42DE-A94B-1A35F8203F77/international-center-of-photography-feasibility-study",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "University of North Texas Health Science Center Medical Education and Training (MET) Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FAF789FA-3EC5-4490-9BC5-EC47B5B83AC8/university-of-north-texas-health-science-center-medical-education-and-training-met-building",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=rolcott@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:45:38.924107",
+  "profile_id": null
+}

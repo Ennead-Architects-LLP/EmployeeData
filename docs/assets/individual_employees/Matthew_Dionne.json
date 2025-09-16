@@ -1,0 +1,139 @@
+{
+  "human_name": "Matthew Dionne",
+  "email": "matthew.dionne@ennead.com",
+  "bio": "18",
+  "phone": "(212) 792-5870",
+  "mobile": "(212) 792-5870",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/7F89BFFA-3D6E-41B9-8B95-82A314B07226/matthew-dionne",
+  "image_url": "https://ei.ennead.com/api/image/c0a8b003-6fc2-4ad5-9514-9c1079baf016/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Matthew Dionne_profile.jpg",
+  "position": "Associate Principal",
+  "department": "",
+  "years_with_firm": 18,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Wentworth Institute of Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "NYU Langone Health, Medical Science Building Renovations: Student Library",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C171C9B-169D-4E28-B1CE-EC39DD07D79F/nyu-langone-health-medical-science-building-renovations--student-library",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Tower AB",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B5BC3DC5-67E3-4F4A-9177-ADB11747C10F/tower-ab",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "New York University. Grey Art Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Allegheny College, Vukovich Center for Communication Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Frank Sinatra School of the Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "New York University, StudentLink and Global Services Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/80A64965-D1A1-4A0D-B9F2-AA042AA0BC49/new-york-university-studentlink-and-global-services-center",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "NYU Langone Health, Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "NYU Langone Health, Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mdionne@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:42:58.769480",
+  "profile_id": null
+}

@@ -1,0 +1,136 @@
+{
+  "human_name": "Mat Strack",
+  "email": "mat.strack@ennead.com",
+  "bio": "7",
+  "phone": "(212) 792-5877",
+  "mobile": "(212) 792-5877",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/4578F5DB-EC75-48D2-9960-1D5DB97A2DD2/mat-strack",
+  "image_url": "https://ei.ennead.com/api/image/2683a95b-967f-418b-b58f-b19e87b1d631/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Mat Strack_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 7,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Illinois",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Illinois",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "The Westminster Schools, Barge Commons (formerly Westminster Center Phase 1)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "The Westminster Schools, Thompson Stadium",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "The Westminster Schools, Love Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Westminster Schools - Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Kuwait University Health Sciences Campus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Lingang Pujiang International Healthcare City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Metropolitan Opera, Lobby Renovation and Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/14D2CEEA-87F8-4534-BE0F-6B67EB376828/metropolitan-opera-lobby-renovation-and-expansion",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=MStrack@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:42:44.395505",
+  "profile_id": null
+}

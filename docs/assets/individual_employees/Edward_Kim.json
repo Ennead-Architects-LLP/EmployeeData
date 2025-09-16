@@ -1,0 +1,131 @@
+{
+  "human_name": "Edward Kim",
+  "email": "edward.kim@ennead.com",
+  "bio": "9",
+  "phone": "(212) 792-5931",
+  "mobile": "(212) 792-5931",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/3B7EAD98-FC0E-4332-90C4-F191C73D971A/edward-kim",
+  "image_url": "https://ei.ennead.com/api/image/b33c913f-595a-4ddd-bdeb-7482364aacb7/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Edward Kim_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 9,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "New York University Kimmel Center Stair",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Roundabout Theatre Master Plan & Concept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Omaha Performing Arts, Steelhouse Omaha",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "The Spence School, 412 E 90 Street Conversion Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13B54F34-8325-4412-A565-A8F3BCB931E4/the-spence-school-412-e-90-street-conversion-study",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Shenhzen International Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "The Public, Delacorte Theater, Central Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Project Darwin, Natural History Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A33E7BEF-8C69-44C1-A92A-41138617A2B3/project-darwin-natural-history-museum",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Westminster Schools - Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Omaha Performing Arts Campus Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Apple Scottsdale",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/62EAAD49-9D9B-406B-B5FA-FB6B61A3CE5D/apple-scottsdale",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ekim@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:34:54.351004",
+  "profile_id": null
+}

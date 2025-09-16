@@ -1,0 +1,144 @@
+{
+  "human_name": "Amy Mielke",
+  "email": "amy.mielke@ennead.com",
+  "bio": "I grew up in Oklahoma, the daughter of an episcopal priest, a banker, an electrical engineer and a creative digital asset manager. I went to Oklahoma State University  for a B.Arch where I learned that water runs down hill, *stuff stinks, stone is heavy, and composition matters.  In 2005 I moved to NYC and worked for Carlos Zapata Studio (formerly Wood + Zapata) and a+i. In 2011 I went to Yale for an M.Arch II degree. I learned that positioning a project is everything, active form is underrepresented, and form generated from material is by far the most interesting object form.",
+  "phone": "212-792-5989",
+  "mobile": "212-792-5989",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/4639B363-0950-46C9-ABEA-FEBA2B830B35/amy-mielke",
+  "image_url": "https://ei.ennead.com/api/image/8e1e8599-d523-47db-b1ae-e50287ecd47c/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Amy Mielke_profile.jpg",
+  "position": "Associate Principal",
+  "department": "",
+  "years_with_firm": 11,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Oklahoma State University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Yale University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "The Water Alert and Testing Resource (WALTER)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/24648BBC-6D57-442A-B702-17F824F96295/the-water-alert-and-testing-resource-walter",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Barbados Archive: Temporary Facility (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Children's Hospital at Montefiore",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "United States Consulate General, Nogales Mexico",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "JUNO, Capitol Hill",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "Alta Community Center Feasibility Study (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "Juno Austin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8E22BD56-6AA6-4805-B639-17C9F5F76BFD/juno-austin",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=amielke@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:32:03.273455",
+  "profile_id": null
+}

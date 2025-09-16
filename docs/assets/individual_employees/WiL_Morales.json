@@ -1,0 +1,43 @@
+{
+  "human_name": "WiL Morales",
+  "email": "wilmarie.morales@ennead.com",
+  "bio": "2",
+  "phone": "2127925863",
+  "mobile": "2127925863",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/9515BBD1-0CDA-4F70-9FF0-65E290CEC5AB/wil-morales",
+  "image_url": "https://ei.ennead.com/api/image/144d349a-4dae-4993-ac06-541d907a4911/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/WiL Morales_profile.jpg",
+  "position": "Human Resources Manager",
+  "department": "",
+  "years_with_firm": 2,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Bryant & Stratton College",
+      "degree": "Associates",
+      "specialty": "Human Resources Administration"
+    },
+    {
+      "institution": "Wood Tobe Coburn College",
+      "degree": "Associates",
+      "specialty": "Travel and Hospitality"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Notary Public",
+      "state": "NJ",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {},
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wilmarie.morales@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:48:08.368251",
+  "profile_id": null
+}

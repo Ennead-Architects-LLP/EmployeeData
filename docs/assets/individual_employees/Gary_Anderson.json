@@ -1,0 +1,139 @@
+{
+  "human_name": "Gary Anderson",
+  "email": "gary.anderson@ennead.com",
+  "bio": "29",
+  "phone": "(212) 792-5862",
+  "mobile": "(212) 792-5862",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/3DF5399F-CA60-4DEB-81F7-ED56C58D6A22/gary-anderson",
+  "image_url": "https://ei.ennead.com/api/image/6bdec633-99cd-4008-b246-685a22d00624/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Gary Anderson_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 29,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "New York Institute of Technology",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Omaha Performing Arts, Steelhouse Omaha",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Seoul Foreign School, New High School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "The Cathedral School of St. John the Divine Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "The Westminster Schools, Barge Commons (formerly Westminster Center Phase 1)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "The Westminster Schools, Thompson Stadium",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Vietnam Veterans Memorial Education Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "The Cathedral Church of Saint John the Divine North Transept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Children's Hospital at Montefiore",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ganderson@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:36:26.160496",
+  "profile_id": null
+}

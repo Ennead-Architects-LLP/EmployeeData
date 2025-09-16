@@ -1,0 +1,144 @@
+{
+  "human_name": "Francelle Lim",
+  "email": "francelle.lim@ennead.com",
+  "bio": "Cultural and Performing Arts",
+  "phone": "(212) 792-5944",
+  "mobile": "(212) 792-5944",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/D51B5411-C747-44E1-B177-78D083760D08/francelle-lim",
+  "image_url": "https://ei.ennead.com/api/image/87dfd4df-9fb4-4bde-8bb1-7734d32ff50e/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Francelle Lim_profile.jpg",
+  "position": "Principal",
+  "department": "",
+  "years_with_firm": 19,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "University of Michigan",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "University of Michigan",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Omaha Performing Arts, Tenaska Center for Arts Engagement",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/36CFEB84-F1C4-41CE-8C7B-A40DBE3A721F/omaha-performing-arts-tenaska-center-for-arts-engagement",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Roundabout Theatre Master Plan & Concept",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Omaha Performing Arts, Steelhouse Omaha",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Chicago Symphony Orchestra, Outdoor Amphitheatre Concept Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B4E440D9-48CC-4C51-80A6-AEB2E81DBFC0/chicago-symphony-orchestra-outdoor-amphitheatre-concept-study",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "City University of New York, Hunter College, Roosevelt House Renovation, Upgrades",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0BFE4D02-0754-4154-A37B-89350E998772/city-university-of-new-york-hunter-college-roosevelt-house-renovation-upgrades",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "The Old Globe Concept Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Cincinnati Music Hall Revitalization",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E64A9AA3-B607-446C-9BE2-1CB460070430/cincinnati-music-hall-revitalization",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "The Public Theater at Astor Place, Facilities Assessment and Planning Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0EBCF5D1-782D-4CD6-A0D7-3229001BF0FB/the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "United States Consulate General, Nogales Mexico (planning)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=flim@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:36:22.451568",
+  "profile_id": null
+}

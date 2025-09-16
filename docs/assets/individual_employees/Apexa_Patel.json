@@ -1,0 +1,144 @@
+{
+  "human_name": "Apexa Patel",
+  "email": "apexa.patel@ennead.com",
+  "bio": "8",
+  "phone": "212-792-5924",
+  "mobile": "212-792-5924",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/522CA247-CBAF-42D7-83E3-E76506ECA62C/apexa-patel",
+  "image_url": "https://ei.ennead.com/api/image/5d096f30-11c7-402c-8be9-4bee2644a623/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Apexa Patel_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 8,
+  "memberships": [],
+  "education": [
+    {
+      "institution": "Cornell University",
+      "degree": "Graduate",
+      "specialty": "Architecture"
+    },
+    {
+      "institution": "Nottingham Trent University",
+      "degree": "Undergraduate",
+      "specialty": "Architecture"
+    }
+  ],
+  "licenses": [
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
+    }
+  ],
+  "projects": {
+    "proj_1": {
+      "name": "Inova Central Region Emergency Department Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "NYU Langone Health, AH and Ancillary Projects Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D28DDF16-6817-4DB4-BE59-A48971A98F7C/nyu-langone-health-ah-and-ancillary-projects-planning",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "NYU Langone Health, Security Command Suite Basic Services",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BB0ABA33-B791-403B-A201-B4163AD36C12/nyu-langone-health-security-command-suite-basic-services",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Big Ideas for Small Lots NY (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7AA271AE-55E9-4B8E-B758-20DB4426A88E/big-ideas-for-small-lots-ny-elab",
+      "source": "fallback"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=apatel@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-16T12:32:50.415351",
+  "profile_id": null
+}
