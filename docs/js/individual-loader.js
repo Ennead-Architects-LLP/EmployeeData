@@ -30,200 +30,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function initializeApp() {
     try {
-        // Load employee data from individual files
-        await loadIndividualEmployeeData();
-        
-        // Computer data is now loaded with individual employee data
-        
+        // Only use merged employees.json; no fallbacks
+        const mergedLoaded = await tryLoadMergedEmployees();
+        if (!mergedLoaded) {
+            showError('Data not found');
+            return;
+        }
+
         // Initialize UI (handled by ui-manager.js)
         if (typeof initializeUI === 'function') {
             initializeUI();
         }
-        
+
         // Hide loading indicator
         document.getElementById('loadingIndicator').style.display = 'none';
-        
+
     } catch (error) {
         console.error('Error initializing app:', error);
-        showError('Failed to load data. Please refresh the page.');
+        showError('Data not found');
     }
 }
 
-async function loadIndividualEmployeeData() {
-    try {
-        console.log('Loading individual employee data...');
-        
-        // Discover files dynamically by trying common patterns
-        const files = await discoverEmployeeFiles();
-        console.log(`Found ${files.length} individual employee files`);
-        
-        // Load employee files in batches to avoid rate limiting
-        allEmployees = [];
-        await loadEmployeeFilesInBatches(files);
-        
-        // If individual loading failed or loaded very few employees, try fallback
-        if (allEmployees.length < files.length * 0.5) {
-            console.warn(`Only loaded ${allEmployees.length}/${files.length} employees. Trying fallback method...`);
-            await loadEmployeeDataFallback();
-        }
-        
-        filteredEmployees = [...allEmployees];
-        
-        // Initialize fuzzy search with employee data
-        if (typeof fuzzySearch !== 'undefined' && fuzzySearch.initialize) {
-            fuzzySearch.initialize(allEmployees);
-        }
-        
-        // Update header with employee count
-        document.getElementById('mainTitle').innerHTML = `Ennead's People <span class="employee-count">(${allEmployees.length} employees)</span>`;
-        
-        // Update generation time
-        const now = new Date();
-        const formattedTime = now.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, '').replace(/:/g, '-');
-        document.getElementById('generatedTime').textContent = `Generated: ${formattedTime}`;
-        document.getElementById('dataTime').textContent = `Data: ${formattedTime}`;
-        
-        console.log(`Successfully loaded ${allEmployees.length} employees`);
-        
-    } catch (error) {
-        console.error('Error loading individual employee data:', error);
-        console.log('Attempting fallback loading...');
-        try {
-            await loadEmployeeDataFallback();
-            filteredEmployees = [...allEmployees];
-        } catch (fallbackError) {
-            console.error('Fallback loading also failed:', fallbackError);
-            throw new Error('Failed to load employee data');
-        }
-    }
-}
+// Deprecated: individual loading and fallbacks removed by policy
 
-async function discoverEmployeeFiles() {
-    console.log('Attempting to discover employee files dynamically...');
+async function tryLoadMergedEmployees() {
     const basePath = getBasePath();
-    console.log('Base path:', basePath);
-    console.log('Current URL:', window.location.href);
-    console.log('Pathname:', window.location.pathname);
-    
     try {
-        // Load from the single canonical list file inside assets
-        const url = `${basePath}assets/employee_files_list.json`;
-        console.log('Fetching employee file list:', url);
-        const response = await fetch(url);
+        const url = `${basePath}assets/employees.json`;
+        console.log('Trying merged employees file:', url);
+        const response = await fetch(url, { signal: AbortSignal.timeout(10000) });
         if (response.ok) {
-            const files = await response.json();
-            console.log(`Loaded ${files.length} employee files`);
-            return files;
+            const data = await response.json();
+            if (Array.isArray(data) && data.length > 0) {
+                allEmployees = data;
+                filteredEmployees = [...allEmployees];
+                console.log(`Loaded ${allEmployees.length} employees from merged file`);
+                return true;
+            }
+        } else {
+            console.warn(`Merged employees.json not available: ${response.status} ${response.statusText}`);
         }
-        console.error(`Failed to load employee_files_list.json: ${response.status} ${response.statusText}`);
-    } catch (error) {
-        console.error('Error loading employee_files_list.json:', error);
+    } catch (e) {
+        console.warn('Failed to load merged employees.json:', e?.message || e);
     }
-
-    // Last resort: return empty array
-    console.warn('No file discovery method worked, returning empty array');
-    return [];
+    return false;
 }
 
-async function loadEmployeeFilesInBatches(files, batchSize = 10, delayBetweenBatches = 100) {
-    const basePath = getBasePath();
-    
-    for (let i = 0; i < files.length; i += batchSize) {
-        const batch = files.slice(i, i + batchSize);
-        console.log(`Loading batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(files.length / batchSize)} (${batch.length} files)`);
-        
-        // Load batch concurrently
-        const batchPromises = batch.map(async (filename) => {
-            try {
-                const employeeResponse = await fetch(`${basePath}assets/individual_employees/${filename}`, {
-                    // Add timeout to prevent hanging requests
-                    signal: AbortSignal.timeout(5000)
-                });
-                if (employeeResponse.ok) {
-                    const employeeData = await employeeResponse.json();
-                    return employeeData;
-                } else {
-                    console.warn(`Failed to load ${filename}: ${employeeResponse.status}`);
-                    return null;
-                }
-            } catch (error) {
-                console.warn(`Failed to load ${filename}:`, error.message);
-                return null;
-            }
-        });
-        
-        // Wait for batch to complete
-        const batchResults = await Promise.all(batchPromises);
-        
-        // Add successful results to allEmployees
-        batchResults.forEach(employee => {
-            if (employee) {
-                allEmployees.push(employee);
-            }
-        });
-        
-        // Add delay between batches to avoid rate limiting
-        if (i + batchSize < files.length) {
-            await new Promise(resolve => setTimeout(resolve, delayBetweenBatches));
-        }
-    }
-    
-    console.log(`Successfully loaded ${allEmployees.length}/${files.length} employee files`);
-}
+// Deprecated: legacy discovery removed by policy
 
-async function loadEmployeeDataFallback() {
-    console.log('Attempting fallback loading method...');
-    const basePath = getBasePath();
-    
-    // Try to load from a consolidated file if it exists
-    try {
-        // First try to load from a single consolidated JSON file
-        const consolidatedResponse = await fetch(`${basePath}assets/consolidated_employees.json`, {
-            signal: AbortSignal.timeout(10000)
-        });
-        
-        if (consolidatedResponse.ok) {
-            const consolidatedData = await consolidatedResponse.json();
-            allEmployees = consolidatedData.employees || consolidatedData;
-            console.log(`Loaded ${allEmployees.length} employees from consolidated file`);
-            return;
-        }
-    } catch (error) {
-        console.log('Consolidated file not available:', error.message);
-    }
-    
-    // Fallback: Load a smaller subset of critical employees
-    console.log('Loading critical employee subset...');
-    const criticalEmployees = [
-        'Adriana_Burton.json',
-        'Aidan_Kim.json',
-        'Aislinn_Weidele.json',
-        'Akil_Matthews.json',
-        'Alex_O\'Briant.json',
-        'Alfonso_Gorini.json',
-        'Amber_Kulikauskas.json',
-        'Amy_Mielke.json',
-        'Ana_Guillandeaux.json',
-        'Annie_Durden.json'
-    ];
-    
-    allEmployees = [];
-    for (const filename of criticalEmployees) {
-        try {
-            const response = await fetch(`${basePath}assets/individual_employees/${filename}`, {
-                signal: AbortSignal.timeout(3000)
-            });
-            if (response.ok) {
-                const employeeData = await response.json();
-                allEmployees.push(employeeData);
-            }
-        } catch (error) {
-            console.warn(`Failed to load critical employee ${filename}:`, error.message);
-        }
-    }
-    
-    console.log(`Fallback loaded ${allEmployees.length} critical employees`);
-}
+// Deprecated: batch individual loading removed by policy
+
+// Deprecated: all fallbacks removed by policy
 
 
 // Computer data is now loaded directly from individual employee files
