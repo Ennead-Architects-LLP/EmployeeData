@@ -99,6 +99,7 @@ jobs:
             Write-Output "No changes to commit."
           } else {
             git commit -m "%%%_Action_Rebuild AboutMe_ComputerInfo.exe"
+            git pull --rebase
             git push
           }
 
