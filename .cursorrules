@@ -1,0 +1,38 @@
+# Enforce local virtual environment for Python
+
+- Always use the project's local virtual environment at `.venv` for any Python-related actions.
+- Never use the system/global Python or `pip` directly.
+
+## Installing packages
+- Use the interpreter inside `.venv` and invoke pip as a module.
+- Windows:
+  - `.venv\Scripts\python.exe -m pip install <package>`
+  - `.venv\Scripts\python.exe -m pip install -r <requirements.txt>`
+- macOS/Linux:
+  - `.venv/bin/python -m pip install <package>`
+  - `.venv/bin/python -m pip install -r <requirements.txt>`
+
+## Running Python scripts
+- Windows: `.venv\Scripts\python.exe path\to\script.py [args...]`
+- macOS/Linux: `.venv/bin/python path/to/script.py [args...]`
+
+## Creating the virtual environment (if missing)
+- Prefer explicit creation if `.venv` does not exist:
+  - Windows: `py -3 -m venv .venv`
+  - macOS/Linux: `python3 -m venv .venv`
+- After creation, immediately upgrade pip using the local interpreter:
+  - Windows: `.venv\Scripts\python.exe -m pip install --upgrade pip`
+  - macOS/Linux: `.venv/bin/python -m pip install --upgrade pip`
+
+## Prohibited commands (anti-patterns)
+- Do not run `python`, `python3`, or `pip` without the `.venv` interpreter path.
+- Do not use `pip install ...` directly (must be `python -m pip ...` using the `.venv` interpreter).
+- Do not rely on shell activation (e.g., `source .venv/bin/activate` or `./.venv/Scripts/activate`). Use the explicit interpreter path instead.
+
+## Testing and tools
+- pytest: `.venv\\Scripts\\python.exe -m pytest` (Windows) or `.venv/bin/python -m pytest` (macOS/Linux).
+- Linters/formatters (flake8, black, ruff, mypy): run via `.venv` interpreter with `-m`.
+
+## General guidance
+- When proposing or running commands in this repository, default to the `.venv` interpreter path as above.
+- If a command fails due to missing environment, create `.venv` and retry using the rules above.
