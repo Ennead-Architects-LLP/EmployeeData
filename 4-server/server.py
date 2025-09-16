@@ -12,7 +12,6 @@ import time
 from datetime import datetime
 from pathlib import Path
 from flask import Flask, request, jsonify
-import requests
 from difflib import SequenceMatcher
 
 app = Flask(__name__)

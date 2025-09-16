@@ -3,5 +3,5 @@
 # ===============================================
 # This module provides a Flask web server to serve
 # the employee data and documentation
+# Minimal requirements - only packages actually used
 flask>=2.3.0
-requests>=2.31.0
