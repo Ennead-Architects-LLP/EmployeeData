@@ -1,7 +1,7 @@
 {
   "human_name": "Kevin Krudwig",
   "email": "kevin.krudwig@ennead.com",
-  "bio": null,
+  "bio": "I was raised in a small suburban town in northern Connecticut before moving on to Boston for undergraduate school. Afterward, I worked a few years for various architecture firms before attending graduate school in upstate New York. With my school days behind me, I came to the city and worked for Gran Associates where I managed their high school restructuring and renovation projects. In 2008, I joined Ennead Architects and began working on the Sinatra School, followed by the Yale Art Gallery renovation and the Kimmel Pavilion Hospital.I am particularly interested in saving the planet through environmentally responsive design and high performance healthcare buildings :-)Outside of work, I enjoy cycling and exploring the city with my son.",
   "phone": "(212) 792-5945",
   "mobile": "(212) 792-5945",
   "office_location": "",
@@ -9,14 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/1846fb8b-4d9f-464f-ac2d-879068d84820/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kevin Krudwig_profile.jpg",
   "position": "Associate Principal",
-  "department": null,
+  "department": "",
   "years_with_firm": 17,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "AIA",
-    "LEED AP BD+C"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "Rensselaer Polytechnic Institute",
@@ -29,83 +24,121 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [],
-  "projects": [
+  "licenses": [
     {
-      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "license": "Registered Architect",
+      "state": "NY",
       "number": "",
-      "client": "2151",
-      "role": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
-    },
-    {
-      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-      "number": "",
-      "client": "2128",
-      "role": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
-    },
-    {
-      "name": "Northwell, Third Avenue Medical Office Building",
-      "number": "",
-      "client": "2109",
-      "role": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
-    },
-    {
-      "name": "Nature & Culture Museum of Wisconsin",
-      "number": "",
-      "client": "2100",
-      "role": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
-    },
-    {
-      "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
-      "number": "",
-      "client": "1904",
-      "role": "",
-      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit"
-    },
-    {
-      "name": "Frank Sinatra School of the Arts",
-      "number": "",
-      "client": "0307",
-      "role": "",
-      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts"
-    },
-    {
-      "name": "Jefferson Health, Honickman Center",
-      "number": "",
-      "client": "1835",
-      "role": "",
-      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center"
-    },
-    {
-      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
-      "number": "",
-      "client": "1013",
-      "role": "",
-      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion"
-    },
-    {
-      "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
-      "number": "",
-      "client": "1228",
-      "role": "",
-      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update"
-    },
-    {
-      "name": "Yale University Art Gallery Renovation and Expansion",
-      "number": "",
-      "client": "0708",
-      "role": "",
-      "url": "https://ei.ennead.com/project/7D89837C-218E-48FE-8DE2-F0191F1DBBE3/yale-university-art-gallery-renovation-and-expansion"
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
+  "projects": {
+    "proj_1": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Frank Sinatra School of the Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Jefferson Health, Honickman Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
+      "source": "fallback"
+    },
+    "proj_8": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "fallback"
+    },
+    "proj_9": {
+      "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update",
+      "source": "fallback"
+    },
+    "proj_10": {
+      "name": "Yale University Art Gallery Renovation and Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7D89837C-218E-48FE-8DE2-F0191F1DBBE3/yale-university-art-gallery-renovation-and-expansion",
+      "source": "fallback"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkrudwig@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:25:19.090978",
-  "profile_id": "kevin-krudwig"
+  "scraped_at": "2025-09-16T16:08:32.718594",
+  "profile_id": null
 }

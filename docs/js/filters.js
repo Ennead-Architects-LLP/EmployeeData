@@ -17,36 +17,67 @@ function handleSearch() {
         showSuggestions(searchTerm, searchResult);
         filteredEmployees = [];
     } else {
-        // Use fuzzy results + regular text search for other fields
-        let fuzzyResults = searchResult.results;
-        
-        // Also do regular text search for non-name fields
-        const textSearchResults = allEmployees.filter(employee => {
-            const searchableText = [
-                employee.position,
-                employee.office_location,
-                employee.phone,
-                employee.mobile,
-                employee.email,
-                employee.department,
-                employee.team,
-                employee.division,
-                employee.bio,
-                ...(employee.projects || []).map(p => p.name || p.title || ''),
-                ...(employee.education || []).map(edu => edu.institution || ''),
-                ...(employee.memberships || [])
-            ].join(' ').toLowerCase();
+        // If there's a perfect match, only show that employee
+        if (searchResult.hasPerfectMatch) {
+            filteredEmployees = searchResult.results;
+            suggestionsContainer.classList.remove('show');
+        } else {
+            // Use fuzzy results + regular text search for other fields
+            let fuzzyResults = searchResult.results;
             
-            return searchableText.includes(searchTerm.toLowerCase());
-        });
-        
-        // Combine and deduplicate results
-        const combinedResults = [...fuzzyResults, ...textSearchResults];
-        filteredEmployees = combinedResults.filter((employee, index, self) => 
-            index === self.findIndex(emp => emp.human_name === employee.human_name)
-        );
-        
-        suggestionsContainer.classList.remove('show');
+            // Also do regular text search for non-name fields (very forgiving)
+            const textSearchResults = allEmployees.filter(employee => {
+                const searchableText = [
+                    employee.position,
+                    employee.office_location,
+                    employee.phone,
+                    employee.mobile,
+                    employee.email,
+                    employee.department,
+                    employee.team,
+                    employee.division,
+                    employee.bio,
+                    ...(employee.projects || []).map(p => p.name || p.title || ''),
+                    ...(employee.education || []).map(edu => edu.institution || ''),
+                    ...(employee.memberships || [])
+                ].join(' ').toLowerCase();
+                
+                // Very forgiving partial matching for all fields
+                const normalizedSearch = searchTerm.toLowerCase().trim();
+                const searchWords = normalizedSearch.split(/\s+/).filter(w => w.length > 0);
+                
+                // Check if search term is contained anywhere
+                if (searchableText.includes(normalizedSearch)) {
+                    return true;
+                }
+                
+                // Check if any individual word is contained
+                if (searchWords.some(word => 
+                    word.length > 1 && searchableText.includes(word)
+                )) {
+                    return true;
+                }
+                
+                // Check for partial word matches (even more forgiving)
+                if (searchWords.some(word => 
+                    word.length > 2 && searchableText.split(/\s+/).some(textWord => 
+                        textWord.includes(word) || word.includes(textWord)
+                    )
+                )) {
+                    return true;
+                }
+                
+                return false;
+            });
+            
+            // Combine and deduplicate results
+            const combinedResults = [...fuzzyResults, ...textSearchResults];
+            filteredEmployees = combinedResults.filter((employee, index, self) => 
+                index === self.findIndex(emp => emp.human_name === employee.human_name)
+            );
+            
+            suggestionsContainer.classList.remove('show');
+        }
     }
     
     applyFilters();
@@ -85,6 +116,7 @@ function showSuggestions(searchTerm, searchResult) {
 function selectSuggestion(suggestion) {
     document.getElementById('searchInput').value = suggestion;
     document.getElementById('searchSuggestions').classList.remove('show');
+    // Trigger search immediately - this should result in a perfect match
     handleSearch();
 }
 

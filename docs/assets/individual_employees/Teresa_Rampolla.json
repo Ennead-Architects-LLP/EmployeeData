@@ -1,7 +1,7 @@
 {
   "human_name": "Teresa Rampolla",
   "email": "teresa.rampolla@ennead.com",
-  "bio": null,
+  "bio": "2",
   "phone": "212-792-5890",
   "mobile": "212-792-5890",
   "office_location": "",
@@ -9,13 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/0bdaa2da-cebb-4df4-95aa-0fa6ba0cb337/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Teresa Rampolla_profile.jpg",
   "position": "Senior Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 2,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "AIA"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "University of Puerto Rico School of Architecture",
@@ -33,42 +29,53 @@
       "license": "Registered Architect",
       "state": "NY",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     },
     {
       "license": "Registered Architect",
       "state": "PR",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "Inova (Franconia) Springfield Hospital",
-      "number": "",
-      "client": "2125",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Inova Alexandria Hospital at Landmark",
-      "number": "",
-      "client": "2124",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-      "number": "",
-      "client": "1643",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=teresa.rampolla@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:02:43.890727",
-  "profile_id": "teresa-rampolla"
+  "scraped_at": "2025-09-16T16:12:48.941018",
+  "profile_id": null
 }

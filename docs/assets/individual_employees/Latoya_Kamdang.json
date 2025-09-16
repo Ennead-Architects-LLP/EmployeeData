@@ -1,7 +1,7 @@
 {
   "human_name": "Latoya Kamdang",
   "email": "latoya.kamdang@ennead.com",
-  "bio": null,
+  "bio": "I am from a small town outside of Memphis, TN in Desoto County, Mississippi.  I currently live in Bed-Stuy Brooklyn with my husband and daughter. I had an unconventional path to architecture and started my education in DC studying business administration, marketing, and sociology. While living in DC and working in an assistant buyer program, I started taking classes in the evening at a local community college. This eventually led me to an MFA program at GWU in Interior Architecture and Design. After working for several firms and the Overseas Buildings Operations, I left DC to further my education in Philadelphia at PennDesign. After completing my degree, I pivoted to teaching and have been a visiting professor at Pratt Institute since 2009. I have continued to balance a teaching while practicing - which became trickier when I had my daughter.  I was ultimately able to figure it out.  The completed project that I am most proud of is my work at the Smithsonian National Museum of African American History and Culture Slavery gallery. In recent years, the wheel has come full circle. I have been able to blend my business background foundation with my passion for architecture and design.",
   "phone": "2127925864",
   "mobile": "2127925864",
   "office_location": "",
@@ -9,16 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/2b0e46ab-6f48-40fa-8990-2627689ef653/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Latoya Kamdang_profile.jpg",
   "position": "Associate Principal",
-  "department": null,
+  "department": "",
   "years_with_firm": 2,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "AIA",
-    "LEED AP BD+C",
-    "Mass Timber",
-    "National Organization of Minority Architects"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "University of Pennsylvania",
@@ -41,14 +34,15 @@
       "license": "Registered Architect",
       "state": "NY",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
-  "projects": [],
+  "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=latoya.kamdang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:12:30.516641",
-  "profile_id": "latoya-kamdang"
+  "scraped_at": "2025-09-16T16:09:12.297151",
+  "profile_id": null
 }

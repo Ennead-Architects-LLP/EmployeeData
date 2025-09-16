@@ -39,8 +39,36 @@ import signal
 from contextlib import asynccontextmanager
 
 from .config.settings import ScraperConfig
-from .core.orchestrator import Orchestrator
+from .core.orchestrator import ScraperOrchestrator
 from .config.credentials import show_credentials_gui
+
+
+class ColoredFormatter(logging.Formatter):
+    """Custom formatter to add colors to log levels."""
+    
+    # ANSI color codes
+    COLORS = {
+        'DEBUG': '\033[36m',    # Cyan
+        'INFO': '\033[32m',     # Green
+        'WARNING': '\033[33m',  # Yellow
+        'ERROR': '\033[31m',    # Red
+        'CRITICAL': '\033[35m', # Magenta
+        'RESET': '\033[0m'      # Reset
+    }
+    
+    def format(self, record):
+        # Get the original formatted message
+        log_message = super().format(record)
+        
+        # Add color based on log level
+        color = self.COLORS.get(record.levelname, self.COLORS['RESET'])
+        reset = self.COLORS['RESET']
+        
+        # Only add colors for console output, not file output
+        if hasattr(record, 'is_console') and record.is_console:
+            return f"{color}{log_message}{reset}"
+        
+        return log_message
 
 
 def print_debug_help():
@@ -54,7 +82,7 @@ number of employees and optional DOM capturing for analysis.
 
 DEBUG MODE OPTIONS:
   --debug                 Enable debug mode (limits employees and captures DOM)
-  --debug-employees N     Set number of employees to scrape (default: 10)
+  --debug-employees N     Set number of employees to scrape (default: 3)
   --debug-dom            Force DOM capturing on (overrides default)
   --debug-no-dom         Force DOM capturing off (faster execution)
   --debug-help           Show this help message
@@ -90,15 +118,31 @@ BENEFITS:
 
 
 def setup_logging(config: ScraperConfig):
-    """Setup logging configuration."""
-    logging.basicConfig(
-        level=getattr(logging, config.LOG_LEVEL.upper()),
-        format=config.LOG_FORMAT,
-        handlers=[
-            logging.FileHandler(config.LOG_FILE),
-            logging.StreamHandler(sys.stdout)
-        ]
-    )
+    """Setup logging configuration with colored console output."""
+    # Create formatters
+    file_formatter = logging.Formatter(config.LOG_FORMAT)
+    console_formatter = ColoredFormatter(config.LOG_FORMAT)
+    
+    # Create handlers
+    file_handler = logging.FileHandler(config.LOG_FILE)
+    file_handler.setFormatter(file_formatter)
+    
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(console_formatter)
+    
+    # Configure root logger
+    root_logger = logging.getLogger()
+    root_logger.setLevel(getattr(logging, config.LOG_LEVEL.upper()))
+    root_logger.handlers.clear()  # Clear any existing handlers
+    root_logger.addHandler(file_handler)
+    root_logger.addHandler(console_handler)
+    
+    # Add a custom filter to mark console records
+    def add_console_marker(record):
+        record.is_console = True
+        return True
+    
+    console_handler.addFilter(add_console_marker)
 
 
 class TimeoutManager:
@@ -156,102 +200,67 @@ class TimeoutManager:
         self.logger.info("[STOP] All timers cancelled")
 
 
-async def run_without_timeout(orchestrator: Orchestrator, config: ScraperConfig):
+async def run_without_timeout(orchestrator: ScraperOrchestrator, config: ScraperConfig):
     """Run orchestrator without timeout protection."""
     try:
         # Step 1: Setup directories
         config.setup_directories()
         
         # Step 2: Run orchestrator
-        html_path = await orchestrator.run()
-        return html_path
+        success = await orchestrator.run()
+        return success
             
     except Exception as e:
         print(f"Operation failed: {e}")
         return None
+    finally:
+        # Ensure any remaining resources are cleaned up
+        try:
+            import asyncio
+            # Give a moment for any pending operations to complete
+            await asyncio.sleep(0.1)
+        except:
+            pass
 
 
 async def main():
     """Main function to run the employee scraper."""
-    parser = argparse.ArgumentParser(description="Scrape employee data from Ennead website (Sequential processing by default)")
-    parser.add_argument("--headless", type=str, default="true", 
-                       help="Run browser in headless mode (true/false)")
-    parser.add_argument("--no-images", action="store_true", 
-                       help="Skip downloading profile images")
-    parser.add_argument("--output", type=str, default="individual_files",
-                       help="Output mode (individual_files only)")
-    parser.add_argument("--timeout", type=int, default=15000,
-                       help="Page load timeout in milliseconds")
-    parser.add_argument("--base-url", type=str, 
-                       default="https://ei.ennead.com/employees/1/all-employees",
-                       help="Base URL of the employee directory")
-    parser.add_argument("--setup-credentials", action="store_true",
-                       help="Setup credentials interactively")
-    # Debug mode options
-    parser.add_argument("--debug", action="store_true",
-                       help="Enable DEBUG mode (limits employees and captures DOM)")
-    parser.add_argument("--debug-employees", type=int, default=10,
-                       help="Number of employees to scrape in debug mode (default: 10)")
-    parser.add_argument("--debug-dom", action="store_true",
-                       help="Capture DOM and screenshots for debugging")
-    parser.add_argument("--debug-no-dom", action="store_true",
-                       help="Disable DOM capturing even in debug mode")
-    parser.add_argument("--debug-help", action="store_true",
-                       help="Show detailed help for debug mode options")
-    parser.add_argument("--cleanup-debug", type=int, nargs='?', const=30, metavar='MAX_FILES',
-                       help="Clean up debug files keeping max files per folder (default: 30)")
+    parser = argparse.ArgumentParser(description="Scrape employee data from Ennead website")
+    # Minimal, mix-and-match flags per project policy
+    parser.add_argument("--headless", action="store_true", help="Run browser headless (no UI)")
+    parser.add_argument("--debug", action="store_true", help="Set logging level to DEBUG")
+    parser.add_argument("--limit", type=int, default=None, help="Limit number of employees to process")
+    parser.add_argument("--dom", action="store_true", help="Capture DOM/screenshots during scraping")
+    # Essentials retained
+    parser.add_argument("--timeout", type=int, default=15000, help="Page load timeout in milliseconds")
+    parser.add_argument("--base-url", type=str, default="https://ei.ennead.com/employees/1/all-employees", help="Base URL of the employee directory")
     # Parallel processing removed - only sequential processing supported for stability
     
     args = parser.parse_args()
     
-    # Show debug help if requested
-    if args.debug_help:
-        print_debug_help()
-        sys.exit(0)
-    
-    # Handle cleanup-only mode
-    if args.cleanup_debug is not None:
-        config = ScraperConfig.from_env()
-        config.setup_directories()
-        max_files = args.cleanup_debug
-        print(f"🧹 Cleaning up debug files, keeping max {max_files} files per folder...")
-        config.cleanup_debug_files(max_files_per_folder=max_files)
-        return
+    # Note: cleanup and debug-help modes removed per simplified CLI policy
     
     # Create configuration
     config = ScraperConfig.from_env()
-    config.HEADLESS = args.headless.lower() == "true"
-    config.DOWNLOAD_IMAGES = not args.no_images
-    config.JSON_FILENAME = args.output
+    config.HEADLESS = args.headless
+    # Images always on by default in simplified CLI
+    config.DOWNLOAD_IMAGES = True
     config.TIMEOUT = args.timeout
     config.BASE_URL = args.base_url
     
-    # Configure debug mode settings
+    # Configure simplified runtime flags
     config.DEBUG_MODE = args.debug
     if args.debug:
-        # Validate debug employee count
-        if args.debug_employees < 1:
-            print("Error: --debug-employees must be at least 1")
-            sys.exit(1)
-        if args.debug_employees > 100:
-            print("Warning: --debug-employees is set to a high value. Consider using a smaller number for faster debugging.")
-        
-        config.DEBUG_MAX_EMPLOYEES = args.debug_employees
-        
-        # DOM capturing logic
-        if args.debug_no_dom:
-            config.DEBUG_DOM_CAPTURE = False
-        elif args.debug_dom:
-            config.DEBUG_DOM_CAPTURE = True
-        # If neither --debug-dom nor --debug-no-dom is specified, use default from config
-        
-        # Validate conflicting options
-        if args.debug_dom and args.debug_no_dom:
-            print("Error: Cannot specify both --debug-dom and --debug-no-dom")
-            sys.exit(1)
+        # Set logging to DEBUG later via setup_logging
+        pass
+    config.LIMIT = args.limit
+    config.DOM_CAPTURE = args.dom
     
     # Setup directories and logging
     config.setup_directories()
+    # Adjust logging level if --debug
+    if args.debug:
+        config.LOG_LEVEL = "DEBUG"
     setup_logging(config)
     
     # Auto cleanup debug files older than 1 day
@@ -259,38 +268,29 @@ async def main():
     
     logger = logging.getLogger(__name__)
     
-    # Handle credentials setup
-    if args.setup_credentials:
-        print("Setting up credentials...")
-        if show_credentials_gui():
-            print("Credentials saved successfully!")
-        else:
-            print("Failed to save credentials!")
-            return
+    # Credentials setup via CLI removed in simplified interface
     
     logger.info("Starting Employee Data Scraper")
     logger.info(f"Configuration: headless={config.HEADLESS}, download_images={config.DOWNLOAD_IMAGES}, debug_mode={config.DEBUG_MODE}")
     logger.info(f"Target URL: {config.BASE_URL}")
     
     if config.DEBUG_MODE:
-        logger.info(f"DEBUG MODE ENABLED: Will limit to {config.DEBUG_MAX_EMPLOYEES} employees and capture DOM")
-        print(f"\nDEBUG MODE ENABLED")
-        print(f"   - Employee limit: {config.DEBUG_MAX_EMPLOYEES}")
-        print(f"   - DOM capturing: {'ON' if config.DEBUG_DOM_CAPTURE else 'OFF'}")
-        print(f"   - Debug output: {config.get_debug_output_path()}")
-        print("="*50)
+        logger.info("DEBUG logging enabled")
+    if config.LIMIT is not None:
+        logger.info(f"Limit set to {config.LIMIT} employees")
+    if config.DOM_CAPTURE:
+        logger.info("DOM capture enabled")
     
     try:
-        # Use only sequential processing for stability
-        # Delegate to orchestrator without timeout protection
-        orchestrator = Orchestrator(config, use_parallel=False, max_workers=1)
-        html_path = await run_without_timeout(orchestrator, config)
+        # Sequential processing only
+        orchestrator = ScraperOrchestrator(config, use_parallel=False, max_workers=1)
+        success = await run_without_timeout(orchestrator, config)
         
-        if not html_path:
+        if not success:
             print("❌ Scraping failed or timed out.")
             return
         
-        print(f"✅ HTML report generated: {html_path}")
+        print(f"✅ Scraping completed successfully!")
         
         if config.DEBUG_MODE:
             debug_dir = config.get_debug_output_path()
@@ -298,10 +298,10 @@ async def main():
             print(f"   Debug directory: {debug_dir}")
             print(f"   DOM captures: {debug_dir / 'dom_captures'}")
             print(f"   Screenshots: {debug_dir / 'screenshots'}")
-            print(f"   JSON output: {config.get_output_path()}")
+     
             # Helpful pointers
             print(f"   Log file: {config.LOG_FILE}")
-            print(f"   Selector report: {debug_dir / 'seating_chart' / 'selector_report.json'}")
+            # Seating chart selector report removed
             print(f"   (Limited to {config.DEBUG_MAX_EMPLOYEES} employees)")
         
         print("="*50)
@@ -317,5 +317,42 @@ async def main():
 
 
 if __name__ == "__main__":
-    # Run the async main function
-    asyncio.run(main())
+    # Suppress asyncio warnings about unclosed transports
+    import warnings
+    import os
+    import sys
+    from contextlib import redirect_stderr
+    from io import StringIO
+    
+    # Suppress all ResourceWarnings from asyncio
+    warnings.filterwarnings("ignore", category=ResourceWarning)
+    warnings.filterwarnings("ignore", message="unclosed transport")
+    warnings.filterwarnings("ignore", message="unclosed file")
+    
+    # Set environment variable to suppress asyncio warnings
+    os.environ['PYTHONWARNINGS'] = 'ignore::ResourceWarning'
+    
+    # Run the async main function with proper cleanup
+    try:
+        # Redirect stderr to suppress asyncio warnings
+        with redirect_stderr(StringIO()):
+            asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\n[INFO] Scraper interrupted by user")
+    except Exception as e:
+        print(f"[ERROR] Scraper failed: {e}")
+    finally:
+        # Ensure all asyncio tasks are properly cleaned up
+        try:
+            import asyncio
+            # Cancel any remaining tasks
+            tasks = [t for t in asyncio.all_tasks() if not t.done()]
+            if tasks:
+                for task in tasks:
+                    task.cancel()
+                # Wait for tasks to complete cancellation
+                asyncio.gather(*tasks, return_exceptions=True)
+            # Give a moment for cleanup
+            asyncio.sleep(0.1)
+        except:
+            pass

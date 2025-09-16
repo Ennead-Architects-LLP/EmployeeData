@@ -1,21 +1,17 @@
 {
   "human_name": "Julia Specht",
   "email": "julia.specht@ennead.com",
-  "bio": null,
+  "bio": "1",
   "phone": "2125846324",
   "mobile": "2125846324",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/2122E102-4776-4A63-864D-2BE688A1C1B2/julia-specht",
   "image_url": "https://ei.ennead.com/api/image/51a20e06-054e-4c65-aa23-6b08adf2d9fb/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Julia Specht_profile.jpg",
-  "position": "Architect",
-  "department": null,
+  "position": "Architectural Designer",
+  "department": "",
   "years_with_firm": 1,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "LEED AP BD+C"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "Technical University Dresden",
@@ -24,33 +20,42 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "455 First Avenue",
-      "number": "",
-      "client": "2314",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-      "number": "",
-      "client": "2210",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
-      "number": "",
-      "client": "2001",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=julia.specht@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:26:36.592315",
-  "profile_id": "julia-specht"
+  "scraped_at": "2025-09-16T16:07:55.756079",
+  "profile_id": null
 }

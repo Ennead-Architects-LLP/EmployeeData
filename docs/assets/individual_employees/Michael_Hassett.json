@@ -1,7 +1,7 @@
 {
   "human_name": "Michael Hassett",
   "email": "michael.hassett@ennead.com",
-  "bio": null,
+  "bio": "I have lived in Brooklyn, NY my entire life completing my B.A. in Art/Architecural History at Brooklyn College and Masters at Pratt Institute’s School of Library and Information Science. Before joining Ennead I was working at the  The Onassis Library for Hellenic and Roman Art at the Metropolitan Museum. During my free time I enjoying bike riding, golf and playing pool.",
   "phone": "(212) 792-5903",
   "mobile": "(212) 792-5903",
   "office_location": "",
@@ -9,10 +9,8 @@
   "image_url": "https://ei.ennead.com/api/image/ace22334-f9ba-4517-909c-21b26ba78697/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Michael Hassett_profile.jpg",
   "position": "Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 21,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -27,11 +25,11 @@
     }
   ],
   "licenses": [],
-  "projects": [],
+  "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mhassett@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:08:37.399429",
-  "profile_id": "michael-hassett"
+  "scraped_at": "2025-09-16T16:10:06.246560",
+  "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Jay Chang",
   "email": "jungin.chang@ennead.com",
-  "bio": null,
+  "bio": "I was born and raised in Seoul, South Korea, and I moved to New York City in 2011. I studied interior architecture, environmental design, and interior design throughout my academic years. My experience runs from workplace interiors, cultural spaces, and commercial development projects. I like to spend my weekends running, playing my favorite music playlist(loud), visiting art exhibits to see various forms of artwork, and finding one unique thing. It motivates me to think outside of the box.",
   "phone": "2127925981",
   "mobile": "2127925981",
   "office_location": "",
@@ -9,15 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/0d5a2c8c-3efc-447a-8b69-53a349f4c60d/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Jay Chang_profile.jpg",
   "position": "Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 2,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "GBCI",
-    "LEED GA",
-    "National Organization of Minority Architects"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "Pratt Institute",
@@ -26,40 +20,52 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "Roundabout Theatre Master Plan & Concept",
-      "number": "",
-      "client": "2330",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
-      "number": "",
-      "client": "2224",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-      "number": "",
-      "client": "2128",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-      "number": "",
-      "client": "1836",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jungin.chang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:28:05.268115",
-  "profile_id": "jay-chang"
+  "scraped_at": "2025-09-16T16:06:59.875408",
+  "profile_id": null
 }

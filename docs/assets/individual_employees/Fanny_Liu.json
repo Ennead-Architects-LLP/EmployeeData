@@ -1,22 +1,17 @@
 {
   "human_name": "Fanny Liu",
   "email": "fangzhou.liu@ennead.com",
-  "bio": null,
+  "bio": "I grew up in China. After completing my B.A in financial management I transferred my major to architecture. I spent my last three years learning and exploring architecture in Washington University in St.Louis.I'm interested in environmental friendly topics, including sustainable material and landscaper building. For further development I'd like to explore more about material and details in practical projects.During my free time I enjoy painting and playing piano, composing sometimes.",
   "phone": "646-437-1766",
   "mobile": "646-437-1766",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/B666C1B5-D9B5-4D53-B5A8-386943CC2BB9/fanny-liu",
   "image_url": "https://ei.ennead.com/api/image/87ffc025-a627-4c9a-8ea9-69e708614bcb/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Fanny Liu_profile.jpg",
-  "position": "Architect",
-  "department": null,
+  "position": "Architectural Designer",
+  "department": "",
   "years_with_firm": 2,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "NCARB",
-    "LEED AP BD+C"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "Washington University",
@@ -30,61 +25,82 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "Inova Central Region Emergency Department Expansion",
-      "number": "",
-      "client": "2223",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Inova Alexandria Hospital at Landmark",
-      "number": "",
-      "client": "2124",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
-      "number": "",
-      "client": "2111",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Nanda Plot 111-01",
-      "number": "",
-      "client": "2103",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "fallback"
     },
-    {
+    "proj_5": {
       "name": "Alta Community Center Feasibility Study (ELab)",
-      "number": "",
-      "client": "2010",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab",
+      "source": "fallback"
     },
-    {
+    "proj_6": {
       "name": "Divco West Cambridge Crossing: Parcel U",
-      "number": "",
-      "client": "1933",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "fallback"
     },
-    {
+    "proj_7": {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
-      "number": "",
-      "client": "1940",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fliu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:31:09.764413",
-  "profile_id": "fanny-liu"
+  "scraped_at": "2025-09-16T16:05:54.646365",
+  "profile_id": null
 }

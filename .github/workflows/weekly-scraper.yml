@@ -7,6 +7,9 @@ on:
     - cron: '14 8 * * 2' # Tuesday at 3:14 AM EST
   workflow_dispatch: # Allow manual triggering
 
+# This workflow ensures both images and JSON artifacts are consistently generated
+# and stored in docs/assets/ for GitHub Pages consumption
+
 jobs:
   scrape-employee-data:
     runs-on: ubuntu-latest
@@ -41,7 +44,7 @@ jobs:
     - name: Install Python dependencies
       run: |
         cd 2-scraper
-        pip install -r requirements-linux.txt
+        pip install -r .github/scripts/requirements-linux.txt
         
     # 5) Install the Playwright browser and its dependencies for scraping
     - name: Install Playwright browsers
@@ -58,27 +61,48 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         cd 2-scraper
-        python weekly_scraper.py
+        echo "Current directory: $(pwd)"
+        echo "Project root should be: $(pwd)/.."
+        echo "Docs directory should be: $(pwd)/../docs"
+        python ../.github/scripts/weekly_scraper.py
         
-    # 7) Build the employee file indexes used by the website (writes to docs/)
-    - name: Generate employee files list
+    # 7) Verify both images and JSON artifacts are properly generated
+    - name: Verify artifacts generation
       run: |
-        echo "Running .github/scripts/generate_index_for_json.py..."
-        python .github/scripts/generate_index_for_json.py
-        echo "Generated list in docs/assets/:"
-        ls -la docs/assets/*.json || true
+        echo "=== Verifying JSON artifacts ==="
+        echo "Individual employees (daily merge handles employees.json)"
+        echo "Individual employee files count:"
+        ls docs/assets/individual_employees/*.json | wc -l || echo "❌ No individual employee files found"
+        echo ""
+        echo "=== Verifying image artifacts ==="
+        echo "Images directory:"
+        ls -la docs/assets/images/ | head -10 || echo "❌ Images directory not found"
+        echo "Total images count:"
+        ls docs/assets/images/*.jpg | wc -l || echo "❌ No images found"
+        echo ""
+        echo "=== Artifact Summary ==="
+        echo "JSON files: $(ls docs/assets/individual_employees/*.json 2>/dev/null | wc -l) individual employee files"
+        echo "Images: $(ls docs/assets/images/*.jpg 2>/dev/null | wc -l) profile images"
+        echo ""
+        echo "=== Path Verification ==="
+        echo "Current working directory: $(pwd)"
+        echo "Docs directory exists: $(test -d docs && echo 'YES' || echo 'NO')"
+        echo "Assets directory exists: $(test -d docs/assets && echo 'YES' || echo 'NO')"
+        echo "Individual employees directory exists: $(test -d docs/assets/individual_employees && echo 'YES' || echo 'NO')"
+        echo "Images directory exists: $(test -d docs/assets/images && echo 'YES' || echo 'NO')"
         
-    # 8) Copy generated lists and all individual employee JSONs to root/assets
-    #    so GitHub Pages (served from the repo root) can fetch them directly
-    - name: Copy list and individual files to root for GitHub Pages access
-      run: |
-        mkdir -p assets
-        cp docs/assets/employee_files_list.json assets/
-        # Copy individual employee files to root assets directory
-        cp -r docs/assets/individual_employees assets/
-        echo "Copied JSON files and individual employee data to root directory"
+    # 9) Create GitHub Actions artifacts for both images and JSON
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: scraper-artifacts-${{ github.run_number }}
+        path: |
+          docs/assets/employees.json
+          docs/assets/individual_employees/
+          docs/assets/images/
+        retention-days: 30
         
-    # 9) Commit any changes (new/updated JSONs) and push back to the repo
+    # 10) Commit any changes (new/updated JSONs and images) and push back to the repo
     - name: Commit and push changes
       if: success()
       env:
@@ -87,9 +111,10 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
+        # Add JSON artifacts
         git add docs/assets/employee_files_list.json
         git add docs/assets/individual_employees/
-        git add assets/employee_files_list.json
-        git add assets/individual_employees/
-        git diff --staged --quiet || git commit -m "$$$_Action_Weekly_Scraper_Update: $(date) - Updated employee data and employee_files_list.json"
+        # Add image artifacts
+        git add docs/assets/images/
+        git diff --staged --quiet || git commit -m "🔄 Weekly Scraper Update: $(date) - Updated employee data, JSON artifacts, and profile images"
         git push

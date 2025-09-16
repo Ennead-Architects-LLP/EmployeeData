@@ -1,21 +1,17 @@
 {
   "human_name": "Anthony Guaraldo",
   "email": "anthony.guaraldo@ennead.com",
-  "bio": null,
+  "bio": "21",
   "phone": "212-792-5911",
   "mobile": "212-792-5911",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/11151DB9-750E-4094-ACEC-78CB9D141892/anthony-guaraldo",
   "image_url": "https://ei.ennead.com/api/image/379286e6-7e60-4a80-81c6-af50b353a071/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Anthony Guaraldo_profile.jpg",
-  "position": "Architect",
-  "department": null,
+  "position": "Architectural Designer",
+  "department": "",
   "years_with_firm": 21,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "LEED AP"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "California State Polytechnic University, Pamona",
@@ -29,173 +25,112 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "Shaoxing Textile Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "2418",
-      "role": "Zhejiang China Textile City Group",
-      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum"
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Universal Hydrogen 2 Manufacturing Facility",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "2306",
-      "role": "Universal Hydrogen",
-      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility"
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "2151",
-      "role": "NYU Langone - Long Island",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Vietnam Veterans Memorial Education Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "0922",
-      "role": "The Vietnam Veterans Memorial Fund",
-      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center"
+      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center",
+      "source": "fallback"
     },
-    {
+    "proj_5": {
       "name": "Lycée Français de New York, Ongoing Services (Lycee Francais)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "0603",
-      "role": "Lycee Francais de New York",
-      "url": "https://ei.ennead.com/project/0399CDA5-3D7D-4E02-B5CA-B3A24903E679/lyc-e-fran-ais-de-new-york-ongoing-services-lycee-francais"
+      "url": "https://ei.ennead.com/project/0399CDA5-3D7D-4E02-B5CA-B3A24903E679/lyc-e-fran-ais-de-new-york-ongoing-services-lycee-francais",
+      "source": "fallback"
     },
-    {
+    "proj_6": {
       "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "2124",
-      "role": "Ballinger",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
     },
-    {
+    "proj_7": {
       "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "2100",
-      "role": "Milwaukee Public Museum",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin"
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "fallback"
     },
-    {
+    "proj_8": {
       "name": "JUNO, Capitol Hill",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "2020",
-      "role": "Juno",
-      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill"
+      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill",
+      "source": "fallback"
     },
-    {
+    "proj_9": {
       "name": "Juno Austin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "2007",
-      "role": "CODA Built",
-      "url": "https://ei.ennead.com/project/8E22BD56-6AA6-4805-B639-17C9F5F76BFD/juno-austin"
+      "url": "https://ei.ennead.com/project/8E22BD56-6AA6-4805-B639-17C9F5F76BFD/juno-austin",
+      "source": "fallback"
     },
-    {
+    "proj_10": {
       "name": "United States Consulate General, Lagos Nigeria (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "client": "1807",
-      "role": "U.S. Department of State",
-      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
-    },
-    {
-      "name": "Branksome Hall, Innovation and Performing Arts Centre",
-      "number": "",
-      "client": "1842",
-      "role": "MacLennan Jaunkalns Miller Architects",
-      "url": "https://ei.ennead.com/project/4A2C4E53-041E-46D8-8C74-86FFCB1F695F/branksome-hall-innovation-and-performing-arts-centre"
-    },
-    {
-      "name": "Apple Scottsdale",
-      "number": "",
-      "client": "1600",
-      "role": "Apple Inc.",
-      "url": "https://ei.ennead.com/project/62EAAD49-9D9B-406B-B5FA-FB6B61A3CE5D/apple-scottsdale"
-    },
-    {
-      "name": "Department of Homeless Services, Prevention Assistance and Temporary Housing (PATH)",
-      "number": "",
-      "client": "0505",
-      "role": "New York City Department of Design and Construction",
-      "url": "https://ei.ennead.com/project/7DAE1159-AD72-43F3-9C26-98102E0AE6AF/department-of-homeless-services-prevention-assistance-and-temporary-housing-path"
-    },
-    {
-      "name": "Fire Department of the City of New York Rescue Company 3",
-      "number": "",
-      "client": "0515",
-      "role": "New York City Department of Design and Construction",
-      "url": "https://ei.ennead.com/project/E40E8E70-684A-4D39-8EB7-6FB28A06AB92/fire-department-of-the-city-of-new-york-rescue-company-3"
-    },
-    {
-      "name": "Museum of the City of New York, Phases I-III (MCNY)",
-      "number": "",
-      "client": "0323",
-      "role": "Museum of the City of New York",
-      "url": "https://ei.ennead.com/project/EA32AB62-43EF-45BD-9363-C8660919DA7D/museum-of-the-city-of-new-york-phases-i-iii-mcny"
-    },
-    {
-      "name": "State University of New York at Cobleskill, Center for Agriculture and Natural Resources",
-      "number": "",
-      "client": "0913",
-      "role": "State University Construction Fund",
-      "url": "https://ei.ennead.com/project/105F2E7D-5CC8-40A9-963B-A667A5AA232E/state-university-of-new-york-at-cobleskill-center-for-agriculture-and-natural-resources"
-    },
-    {
-      "name": "State University of New York Downstate, Health Science Center",
-      "number": "",
-      "client": "0917",
-      "role": "State University Construction Fund",
-      "url": "https://ei.ennead.com/project/3F1D9CB1-E586-47A4-ABCA-425CB04B8769/state-university-of-new-york-downstate-health-science-center"
-    },
-    {
-      "name": "The Mercersburg Academy, Burgin Center for the Arts",
-      "number": "",
-      "client": "0122",
-      "role": "Mercersburg Academy",
-      "url": "https://ei.ennead.com/project/F73C47A0-09CE-4865-BF64-6295194CB3E2/the-mercersburg-academy-burgin-center-for-the-arts"
-    },
-    {
-      "name": "United States Embassy, Ankara (OBO)",
-      "number": "",
-      "client": "1425",
-      "role": "U.S. Department of State",
-      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
-    },
-    {
-      "name": "University of Michigan School of Music, Theatre & Dance, Earl V. Moore Building Renovation and Brehm Pavilion",
-      "number": "",
-      "client": "1209",
-      "role": "University of Michigan",
-      "url": "https://ei.ennead.com/project/DE7F27EA-9AEA-4067-886B-46EAAC67B6EE/university-of-michigan-school-of-music-theatre-dance-earl-v-moore-building-renovation-and-brehm-pavilion"
-    },
-    {
-      "name": "Weill Cornell Medicine, Belfer Research Building",
-      "number": "",
-      "client": "0705",
-      "role": "Weill Cornell Medicine",
-      "url": "https://ei.ennead.com/project/DB19CFB5-F090-48CF-B1A5-F41E0C470039/weill-cornell-medicine-belfer-research-building"
-    },
-    {
-      "name": "Westchester Community College, Gateway Center for English as a Second Language",
-      "number": "",
-      "client": "0424",
-      "role": "Westchester Community College",
-      "url": "https://ei.ennead.com/project/859C8284-F8E2-498B-901D-DE29E9388878/westchester-community-college-gateway-center-for-english-as-a-second-language"
-    },
-    {
-      "name": "Shanghai Astronomy Museum (Planetarium)",
-      "number": "",
-      "client": "1331",
-      "role": "The Davis Companies",
-      "url": "https://ei.ennead.com/project/29D257CF-CC0F-4D77-8750-0D4582C95142/shanghai-astronomy-museum-planetarium"
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aguaraldo@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:36:42.636846",
-  "profile_id": "anthony-guaraldo"
+  "scraped_at": "2025-09-16T16:03:00.977879",
+  "profile_id": null
 }

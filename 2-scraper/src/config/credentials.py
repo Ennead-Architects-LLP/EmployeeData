@@ -33,7 +33,11 @@ class CredentialsGUI:
         
         # Create credentials file
         if self.auto_login.create_credentials_file(email, password):
-            messagebox.showinfo("Success", "Credentials saved successfully!")
+            messagebox.showinfo("Success", 
+                               "Credentials saved successfully!\n\n" +
+                               "File: credentials.json\n" +
+                               "Location: 2-scraper/\n" +
+                               "Status: NOT tracked in git (secure)")
             self.root.destroy()
             return True
         else:
@@ -45,7 +49,7 @@ class CredentialsGUI:
         # Create GUI
         self.root = tk.Tk()
         self.root.title("Employee Scraper - Setup Credentials")
-        self.root.geometry("400x200")
+        self.root.geometry("450x280")
         self.root.resizable(False, False)
         
         # Center the window
@@ -58,23 +62,30 @@ class CredentialsGUI:
         # Title
         title_label = ttk.Label(main_frame, text="Enter your Ennead credentials", 
                                font=("Arial", 12, "bold"))
-        title_label.grid(row=0, column=0, columnspan=2, pady=(0, 20))
+        title_label.grid(row=0, column=0, columnspan=2, pady=(0, 10))
+        
+        # Security notice
+        security_label = ttk.Label(main_frame, 
+                                  text="🔒 Credentials will be stored locally in credentials.json\n(This file is NOT tracked in git for security)",
+                                  font=("Arial", 9),
+                                  foreground="blue")
+        security_label.grid(row=1, column=0, columnspan=2, pady=(0, 15))
         
         # Email field
         email_label = ttk.Label(main_frame, text="Email:")
-        email_label.grid(row=1, column=0, sticky=tk.W, pady=5)
+        email_label.grid(row=2, column=0, sticky=tk.W, pady=5)
         self.email_entry = ttk.Entry(main_frame, width=30)
-        self.email_entry.grid(row=1, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
+        self.email_entry.grid(row=2, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         
         # Password field
         password_label = ttk.Label(main_frame, text="Password:")
-        password_label.grid(row=2, column=0, sticky=tk.W, pady=5)
+        password_label.grid(row=3, column=0, sticky=tk.W, pady=5)
         self.password_entry = ttk.Entry(main_frame, width=30, show="*")
-        self.password_entry.grid(row=2, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
+        self.password_entry.grid(row=3, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         
         # Buttons frame
         button_frame = ttk.Frame(main_frame)
-        button_frame.grid(row=3, column=0, columnspan=2, pady=(20, 0))
+        button_frame.grid(row=4, column=0, columnspan=2, pady=(20, 0))
         
         # Create credentials button
         create_btn = ttk.Button(button_frame, text="Save Credentials", 

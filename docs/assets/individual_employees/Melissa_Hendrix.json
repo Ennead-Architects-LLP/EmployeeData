@@ -1,7 +1,7 @@
 {
   "human_name": "Melissa Hendrix",
   "email": "Melissa.Hendrix@ennead.com",
-  "bio": null,
+  "bio": "4",
   "phone": "212-792-5895",
   "mobile": "212-792-5895",
   "office_location": "",
@@ -9,14 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/3744b9b3-f012-413e-8722-a4701ec25e66/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Melissa Hendrix_profile.jpg",
   "position": "Senior Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 4,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "AIA",
-    "LEED AP"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "University of Pennsylvania - Philadelphia",
@@ -34,20 +29,38 @@
       "specialty": "Art History"
     }
   ],
-  "licenses": [],
-  "projects": [
+  "licenses": [
     {
-      "name": "Inova Alexandria Hospital at Landmark",
+      "license": "Registered Architect",
+      "state": "NJ",
       "number": "",
-      "client": "2124",
-      "role": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark"
+      "earned": "",
+      "source": "container_1_approach_1"
+    },
+    {
+      "license": "Registered Architect",
+      "state": "NY",
+      "number": "",
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
+  "projects": {
+    "proj_1": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "fallback"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=melissa.hendrix@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:09:13.786306",
-  "profile_id": "melissa-hendrix"
+  "scraped_at": "2025-09-16T16:09:57.223131",
+  "profile_id": null
 }

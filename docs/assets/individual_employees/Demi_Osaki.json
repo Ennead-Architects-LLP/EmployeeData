@@ -1,18 +1,16 @@
 {
   "human_name": "Demi Osaki",
   "email": "Demi.Osaki@ennead.com",
-  "bio": null,
+  "bio": "0",
   "phone": "1-213-787-6612",
   "mobile": "1-213-787-6612",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/A23D36C3-03CF-451A-AA57-49DA76859895/demi-osaki",
   "image_url": "https://ei.ennead.com/api/image/39acde65-f703-4c82-ba60-e24f9f4fe42c/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Demi Osaki_profile.jpg",
-  "position": "Director",
-  "department": null,
-  "years_with_firm": 0,
-  "seat_assignment": null,
-  "computer": null,
+  "position": "Marketing Coordinator",
+  "department": "",
+  "years_with_firm": null,
   "memberships": [],
   "education": [
     {
@@ -27,11 +25,11 @@
     }
   ],
   "licenses": [],
-  "projects": [],
+  "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Demi.Osaki@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:32:59.476955",
-  "profile_id": "demi-osaki"
+  "scraped_at": "2025-09-16T16:04:23.643824",
+  "profile_id": null
 }

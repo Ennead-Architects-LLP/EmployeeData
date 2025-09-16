@@ -1,22 +1,17 @@
 {
   "human_name": "LaNee Carter",
   "email": "lanee.carter@ennead.com",
-  "bio": null,
+  "bio": "2",
   "phone": "2127925940",
   "mobile": "2127925940",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/8F3C11B9-4383-40DF-876A-A90BAE216435/lanee-carter",
   "image_url": "https://ei.ennead.com/api/image/8511f767-80be-47fc-a86b-8fb663b30cb5/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/LaNee Carter_profile.jpg",
-  "position": "Architect",
-  "department": null,
+  "position": "Senior Architectural Designer",
+  "department": "",
   "years_with_firm": 2,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "AIA",
-    "National Organization of Minority Architects"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "Philadelphia University",
@@ -29,29 +24,36 @@
       "license": "Registered Architect",
       "state": "NY",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "",
-      "client": "2151",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
-      "number": "",
-      "client": "2224",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lanee.carter@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:12:36.227524",
-  "profile_id": "lanee-carter"
+  "scraped_at": "2025-09-16T16:09:09.700137",
+  "profile_id": null
 }

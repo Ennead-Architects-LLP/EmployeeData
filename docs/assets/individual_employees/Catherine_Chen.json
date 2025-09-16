@@ -1,18 +1,16 @@
 {
   "human_name": "Catherine Chen",
   "email": "xiaohong.chen@ennead.com",
-  "bio": null,
-  "phone": null,
+  "bio": "7",
+  "phone": "",
   "mobile": null,
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/E8B0BC7C-A30F-405E-8883-E742D2CD0053/catherine-chen",
   "image_url": "https://ei.ennead.com/api/image/c0d842ad-574b-4536-afde-48b5ec889bbe/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Catherine Chen_profile.jpg",
   "position": "Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 7,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -27,61 +25,82 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
-      "number": "",
-      "client": "2138",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Bilibili Shanghai Headquarters",
-      "number": "",
-      "client": "2135",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "ByteDance Houhai Center Project",
-      "number": "",
-      "client": "2018",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Shenhzen International Performance Center",
-      "number": "",
-      "client": "2025",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "fallback"
     },
-    {
+    "proj_5": {
       "name": "Taopu Sci-Tech City Plot 606",
-      "number": "",
-      "client": "1735",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "fallback"
     },
-    {
+    "proj_6": {
       "name": "Hero South Plot",
-      "number": "",
-      "client": "1712",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot",
+      "source": "fallback"
     },
-    {
+    "proj_7": {
       "name": "Taopu Smart City, Plot 603",
-      "number": "",
-      "client": "1763",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xhchen@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:35:03.625334",
-  "profile_id": "catherine-chen"
+  "scraped_at": "2025-09-16T16:03:56.109115",
+  "profile_id": null
 }

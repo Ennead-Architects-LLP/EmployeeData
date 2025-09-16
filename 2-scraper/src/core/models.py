@@ -33,12 +33,7 @@ class EmployeeData:
     department: Optional[str] = None
     years_with_firm: Optional[int] = None
     
-    # Seating chart information
-    seat_assignment: Optional[str] = None
-    
-    # Computer information
-    computer: Optional[str] = None
-    
+
     # Professional memberships
     memberships: List[str] = field(default_factory=list)
     
@@ -49,7 +44,7 @@ class EmployeeData:
     licenses: List[Dict[str, str]] = field(default_factory=list)
     
     # Projects
-    projects: List[Dict[str, str]] = field(default_factory=list)
+    projects: Dict[str, Dict[str, str]] = field(default_factory=dict)
     
     # Recent posts/activity
     recent_posts: List[Dict[str, str]] = field(default_factory=list)
@@ -64,6 +59,8 @@ class EmployeeData:
     # Scraping metadata
     scraped_at: Optional[str] = None
     profile_id: Optional[str] = None
+    
+ 
     
     def __post_init__(self):
         """Set default values after initialization."""

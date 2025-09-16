@@ -1,0 +1,38 @@
+name: Daily Employees Data Merge
+
+on:
+  schedule:
+    # Run daily at 2:10 AM UTC
+    - cron: '10 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  merge-employees-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Merge all employee JSONs for website
+      run: |
+        echo "Running .github/scripts/merge_all_data_for_website.py..."
+        python .github/scripts/merge_all_data_for_website.py
+        echo "Generated merged data in docs/assets/:"
+        ls -la docs/assets/*.json || true
+
+    - name: Commit and push merged employees.json
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/assets/employees.json
+        git diff --staged --quiet || git commit -m "🔄 Daily merge: update employees.json"
+        git push
+

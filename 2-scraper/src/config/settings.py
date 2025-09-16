@@ -21,14 +21,14 @@ class ScraperConfig:
     
     # Download settings
     DOWNLOAD_IMAGES = True
-    IMAGE_DOWNLOAD_DIR = "assets/images"  # Keep in assets for GitHub Pages
+    IMAGE_DOWNLOAD_DIR = "docs/assets/images"  # Keep in docs/assets for GitHub Pages
     MAX_CONCURRENT_DOWNLOADS = 5
     
-    # Output settings
+    # Output settings - use absolute paths relative to project root
     # HTML (index.html) remains at OUTPUT_DIR (repo root)
     OUTPUT_DIR = "."
-    # JSON and individual JSON live under assets/ for GitHub Pages
-    ASSETS_DIR = "assets"
+    # JSON and individual JSON live under docs/assets/ for GitHub Pages
+    ASSETS_DIR = "docs/assets"
     # Debug and logs live under debug/ (can be gitignored)
     DEBUG_DIR = "debug"
     # No longer using compiled JSON file - individual files only
@@ -39,15 +39,15 @@ class ScraperConfig:
     MAX_RETRIES = 3
     RETRY_DELAY = 2  # seconds
     
-    # Debug settings
-    DEBUG_MODE = False
-    DEBUG_MAX_EMPLOYEES = 10  # Limit number of employees when in debug mode
-    DEBUG_DOM_CAPTURE = True  # Capture DOM for debugging when in debug mode
+    # Runtime flags (configured via CLI)
+    DEBUG_MODE = False  # Only affects logging level when true
+    LIMIT: int | None = None  # Limit how many employees to output when set
+    DOM_CAPTURE = False  # Capture DOM/screenshots when true
     
     # Logging settings
     LOG_LEVEL = "INFO"
     LOG_FILE = "debug/scraper.log"
-    LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    LOG_FORMAT = "[%(levelname)s] %(message)s"
     
     # User agent (Edge)
     USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0"
@@ -102,11 +102,7 @@ class ScraperConfig:
         # Debug directory
         Path(self.DEBUG_DIR).mkdir(parents=True, exist_ok=True)
     
-    def get_output_path(self, filename: str = None) -> Path:
-        """Get full output path for a file."""
-        if filename is None:
-            filename = self.JSON_FILENAME
-        return Path(self.ASSETS_DIR) / filename
+
     
     def cleanup_debug_files(self, max_files_per_folder: int = 30):
         """

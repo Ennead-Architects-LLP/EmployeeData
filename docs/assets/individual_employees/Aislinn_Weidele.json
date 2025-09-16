@@ -1,7 +1,7 @@
 {
   "human_name": "Aislinn Weidele",
   "email": "aislinn.weidele@ennead.com",
-  "bio": null,
+  "bio": "22",
   "phone": "212-792-5997",
   "mobile": "212-792-5997",
   "office_location": "",
@@ -9,10 +9,8 @@
   "image_url": "https://ei.ennead.com/api/image/9c39af50-bf76-47c0-bdde-d9c6c8e4ad70/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Aislinn Weidele_profile.jpg",
   "position": "Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 22,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -27,11 +25,11 @@
     }
   ],
   "licenses": [],
-  "projects": [],
+  "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aweidele@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:38:39.649829",
-  "profile_id": "aislinn-weidele"
+  "scraped_at": "2025-09-16T16:02:41.571273",
+  "profile_id": null
 }

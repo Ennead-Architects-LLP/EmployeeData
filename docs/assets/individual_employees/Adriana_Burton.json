@@ -1,7 +1,7 @@
 {
   "human_name": "Adriana Burton",
   "email": "adriana.burton@ennead.com",
-  "bio": null,
+  "bio": "I was born and raised in New Jersey and graduated from the University of Massachusetts Amherst. I still live in New Jersey where I foster dogs and do woodworking and weaving projects in my spare time.",
   "phone": "212-792-5964",
   "mobile": "212-792-5964",
   "office_location": "",
@@ -9,10 +9,8 @@
   "image_url": "https://ei.ennead.com/api/image/8d165831-ca65-4db1-bc85-81493022afa4/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Adriana Burton_profile.jpg",
   "position": "Project Coordinator",
-  "department": null,
+  "department": "",
   "years_with_firm": 3,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -22,33 +20,42 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
-      "number": "",
-      "client": "2412",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Northwell, Third Avenue Medical Office Building",
-      "number": "",
-      "client": "2109",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-      "number": "",
-      "client": "1836",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Adriana.Burton@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:39:03.687359",
-  "profile_id": "adriana-burton"
+  "scraped_at": "2025-09-16T16:02:36.424555",
+  "profile_id": null
 }

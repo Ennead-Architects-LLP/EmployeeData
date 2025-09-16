@@ -1,18 +1,16 @@
 {
   "human_name": "WiL Morales",
   "email": "wilmarie.morales@ennead.com",
-  "bio": null,
+  "bio": "2",
   "phone": "2127925863",
   "mobile": "2127925863",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/9515BBD1-0CDA-4F70-9FF0-65E290CEC5AB/wil-morales",
   "image_url": "https://ei.ennead.com/api/image/144d349a-4dae-4993-ac06-541d907a4911/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/WiL Morales_profile.jpg",
-  "position": "Director",
-  "department": null,
+  "position": "Human Resources Manager",
+  "department": "",
   "years_with_firm": 2,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -31,14 +29,15 @@
       "license": "Notary Public",
       "state": "NJ",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
-  "projects": [],
+  "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wilmarie.morales@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T14:59:57.263008",
-  "profile_id": "wil-morales"
+  "scraped_at": "2025-09-16T16:13:39.338522",
+  "profile_id": null
 }

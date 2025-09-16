@@ -1,7 +1,7 @@
 {
   "human_name": "Nicole Levine",
   "email": "nicole.levine@ennead.com",
-  "bio": null,
+  "bio": "2",
   "phone": "6464371735",
   "mobile": "6464371735",
   "office_location": "",
@@ -9,10 +9,8 @@
   "image_url": "https://ei.ennead.com/api/image/899a2af9-93d0-4cfb-99cf-1be78cc93a56/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Nicole Levine_profile.jpg",
   "position": "Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 2,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -26,22 +24,26 @@
       "license": "NCIDQ",
       "state": "NJ",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-      "number": "",
-      "client": "1836",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=nicole.levine@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:06:11.342406",
-  "profile_id": "nicole-levine"
+  "scraped_at": "2025-09-16T16:10:50.923490",
+  "profile_id": null
 }

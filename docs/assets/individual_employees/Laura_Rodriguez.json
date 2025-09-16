@@ -1,18 +1,16 @@
 {
   "human_name": "Laura Rodriguez",
   "email": "laura.rodriguez@ennead.com",
-  "bio": null,
+  "bio": "I was born in Bogota, Colombia and moved to the Orlando, Florida in 2001. After high school I moved to Gainesville, Florida to complete my Bachelor in Design and Architecture from the University of Florida and continued there to complete my Masters in Architecture. Upon completion of my graduate degree I moved to the city, where I began my career at Grimshaw Architects working on large scale transportation projects. I then transitioned to working in residential projects in Cabo, Mexico at a smaller architecture firm.",
   "phone": "2127925936",
   "mobile": "2127925936",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/1AA7790D-F9E5-4D03-8D1E-1898554338F6/laura-rodriguez",
   "image_url": "https://ei.ennead.com/api/image/e038898b-1fd0-44ba-a911-531351566e96/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Laura Rodriguez_profile.jpg",
-  "position": "Architect",
-  "department": null,
+  "position": "Intermediate Architect Designer",
+  "department": "",
   "years_with_firm": 3,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -22,54 +20,72 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "",
-      "client": "2151",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
-      "number": "",
-      "client": "2224",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "Inova Central Region Emergency Department Expansion",
-      "number": "",
-      "client": "2223",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Bilibili Shanghai Headquarters",
-      "number": "",
-      "client": "2135",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "fallback"
     },
-    {
+    "proj_5": {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-      "number": "",
-      "client": "2128",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "fallback"
     },
-    {
+    "proj_6": {
       "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
-      "number": "",
-      "client": "2001",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=laura.rodriguez@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:12:17.094965",
-  "profile_id": "laura-rodriguez"
+  "scraped_at": "2025-09-16T16:09:16.881890",
+  "profile_id": null
 }

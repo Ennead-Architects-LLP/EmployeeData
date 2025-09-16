@@ -1,21 +1,17 @@
 {
   "human_name": "Rick Michod",
   "email": "rick.michod@ennead.com",
-  "bio": null,
+  "bio": "I grew up in Chicago, sojourned in San Francisco selling hot dogs in union square and painting, before I ended up back in Chicago working for an Architect.  What came next was Los Angeles and Sci-Arc.  A project called HL23 with Neil Denari Architects brought me to NY where I stayed, got married, inheriting a Long-hair Chihuahua named Cheese and after 12 years of tlc, I still can't spell Chihuahua.  After a brief soiree into the world of Developer and Contracting, I joined Ennead.  It's been a pleasure working, learning and laughing with you guys!",
   "phone": "(646) 437-1719",
   "mobile": "(646) 437-1719",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/17E19AFA-8F7E-4A49-ABB8-3C5ABC2FA727/rick-michod",
   "image_url": "https://ei.ennead.com/api/image/5925e806-0f4a-48df-be25-89dc997a7294/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Rick Michod_profile.jpg",
-  "position": "Architect",
-  "department": null,
+  "position": "Architectural Designer",
+  "department": "",
   "years_with_firm": 9,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "NCARB"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "Southern California Institute of Architecture",
@@ -29,54 +25,72 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "The Westminster Schools, Love Hall",
-      "number": "",
-      "client": "2105",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "The Public, Delacorte Theater, Central Park",
-      "number": "",
-      "client": "2031",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
-      "number": "",
-      "client": "1904",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Mount Sinai Downtown Transformation",
-      "number": "",
-      "client": "1648",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
+      "source": "fallback"
     },
-    {
+    "proj_5": {
       "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
-      "number": "",
-      "client": "1013",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "fallback"
     },
-    {
+    "proj_6": {
       "name": "NYU Langone Health, Science Building",
-      "number": "",
-      "client": "1101",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=rmichod@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:04:38.638882",
-  "profile_id": "rick-michod"
+  "scraped_at": "2025-09-16T16:11:58.015258",
+  "profile_id": null
 }

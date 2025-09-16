@@ -1,7 +1,7 @@
 {
   "human_name": "Lisa Reese",
   "email": "lisa.reese@ennead.com",
-  "bio": null,
+  "bio": "I was born and raised in New York and have been a resident of the West Village for many years.  As the Office Manager, I help keep the Office running smoothly and oversees support services.  I enjoy working in creative environments and happy to be part of the Ennead team.  When I'm not working you’ll often find me in the kitchen cooking and exploring new recipes.  Other interests include gardening and painting.",
   "phone": "(212) 792-5876",
   "mobile": "(212) 792-5876",
   "office_location": "",
@@ -9,10 +9,8 @@
   "image_url": "https://ei.ennead.com/api/image/93e0f2b6-bace-4d28-85e7-ee7d165a3e5d/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Lisa Reese_profile.jpg",
   "position": "Senior Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 20,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -22,11 +20,11 @@
     }
   ],
   "licenses": [],
-  "projects": [],
+  "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lreese@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:12:01.272545",
-  "profile_id": "lisa-reese"
+  "scraped_at": "2025-09-16T16:09:24.102673",
+  "profile_id": null
 }

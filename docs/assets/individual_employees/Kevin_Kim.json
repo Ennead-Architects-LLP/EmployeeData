@@ -1,7 +1,7 @@
 {
   "human_name": "Kevin Kim",
   "email": "kevin.kim@ennead.com",
-  "bio": null,
+  "bio": "5",
   "phone": "646-437-1734",
   "mobile": "646-437-1734",
   "office_location": "",
@@ -9,15 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/fe8b0e5e-064e-46a4-af30-f2e5f6fe8c88/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kevin Kim_profile.jpg",
   "position": "Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 5,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "NCARB",
-    "AIA",
-    "LEED GA"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "Architectural Association School of Architecture",
@@ -30,62 +24,91 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [],
-  "projects": [
+  "licenses": [
     {
-      "name": "Shinsegae Town Mixed Use Development Competition",
+      "license": "Registered Architect",
+      "state": "MA",
       "number": "",
-      "client": "2320",
-      "role": "",
-      "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition"
-    },
-    {
-      "name": "Genentech Bayview Campus Competition",
-      "number": "",
-      "client": "2249",
-      "role": "",
-      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition"
-    },
-    {
-      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-      "number": "",
-      "client": "2210",
-      "role": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
-    },
-    {
-      "name": "Nanda Plot 111-01",
-      "number": "",
-      "client": "2103",
-      "role": "",
-      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
-    },
-    {
-      "name": "Shenzhen Xiaomi Headquarters",
-      "number": "",
-      "client": "2016",
-      "role": "",
-      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters"
-    },
-    {
-      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
-      "number": "",
-      "client": "1940",
-      "role": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
-    },
-    {
-      "name": "Shanghai Lingang WLA Conference Center",
-      "number": "",
-      "client": "1941",
-      "role": "",
-      "url": "https://ei.ennead.com/project/B1A8E4E7-3B91-44AE-AED2-042155E5469F/shanghai-lingang-wla-conference-center"
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
+  "projects": {
+    "proj_1": {
+      "name": "Shinsegae Town Mixed Use Development Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
+      "source": "fallback"
+    },
+    "proj_2": {
+      "name": "Genentech Bayview Campus Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+      "source": "fallback"
+    },
+    "proj_3": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "fallback"
+    },
+    "proj_4": {
+      "name": "Nanda Plot 111-01",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "fallback"
+    },
+    "proj_5": {
+      "name": "Shenzhen Xiaomi Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
+      "source": "fallback"
+    },
+    "proj_6": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "fallback"
+    },
+    "proj_7": {
+      "name": "Shanghai Lingang WLA Conference Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B1A8E4E7-3B91-44AE-AED2-042155E5469F/shanghai-lingang-wla-conference-center",
+      "source": "fallback"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kevin.kim@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:25:25.401683",
-  "profile_id": "kevin-kim"
+  "scraped_at": "2025-09-16T16:08:30.317012",
+  "profile_id": null
 }

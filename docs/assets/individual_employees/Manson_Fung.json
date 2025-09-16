@@ -1,7 +1,7 @@
 {
   "human_name": "Manson Fung",
   "email": "manson.fung@ennead.com",
-  "bio": null,
+  "bio": "6",
   "phone": "(212) 792-5866",
   "mobile": "(212) 792-5866",
   "office_location": "",
@@ -9,13 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/16452da3-085d-4ca3-af4a-ee11343a2b14/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Manson Fung_profile.jpg",
   "position": "Associate Principal",
-  "department": null,
+  "department": "",
   "years_with_firm": 6,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "AIA"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "University of British Columbia",
@@ -38,84 +34,113 @@
       "license": "Registered Architect",
       "state": "CA",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     },
     {
       "license": "Registered Architect",
       "state": "NY",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "",
-      "client": "2151",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-      "number": "",
-      "client": "2210",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "Nanda Plot 111-01",
-      "number": "",
-      "client": "2103",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "ByteDance Houhai Center Project",
-      "number": "",
-      "client": "2018",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "fallback"
     },
-    {
+    "proj_5": {
       "name": "Shanghai Lingang WLA Conference Center",
-      "number": "",
-      "client": "1941",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/B1A8E4E7-3B91-44AE-AED2-042155E5469F/shanghai-lingang-wla-conference-center"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B1A8E4E7-3B91-44AE-AED2-042155E5469F/shanghai-lingang-wla-conference-center",
+      "source": "fallback"
     },
-    {
+    "proj_6": {
       "name": "Wuhan PingAn Financial City",
-      "number": "",
-      "client": "1938",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/2BD3A222-BF9B-4283-85A8-F01A4C2324AB/wuhan-pingan-financial-city"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2BD3A222-BF9B-4283-85A8-F01A4C2324AB/wuhan-pingan-financial-city",
+      "source": "fallback"
     },
-    {
+    "proj_7": {
       "name": "Bao Steel Wusong Pilot District",
-      "number": "",
-      "client": "1919",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district",
+      "source": "fallback"
     },
-    {
+    "proj_8": {
       "name": "The Cove, Crescent Park Jersey City",
-      "number": "",
-      "client": "1902",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
+      "source": "fallback"
     },
-    {
+    "proj_9": {
       "name": "Taopu Sci-Tech City Plot 606",
-      "number": "",
-      "client": "1735",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mfung@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:11:03.998910",
-  "profile_id": "manson-fung"
+  "scraped_at": "2025-09-16T16:09:35.959257",
+  "profile_id": null
 }

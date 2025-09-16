@@ -1,7 +1,7 @@
 {
   "human_name": "Michael Saltzman",
   "email": "michael.saltzman@ennead.com",
-  "bio": null,
+  "bio": "1",
   "phone": "1-213-265-7655",
   "mobile": "1-213-265-7655",
   "office_location": "",
@@ -9,10 +9,8 @@
   "image_url": "https://ei.ennead.com/api/image/c48b66f7-2fa2-4012-b988-90a9e6880233/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Michael Saltzman_profile.jpg",
   "position": "Associate Principal",
-  "department": null,
+  "department": "",
   "years_with_firm": 1,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -32,11 +30,11 @@
     }
   ],
   "licenses": [],
-  "projects": [],
+  "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Michael.Saltzman@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:08:31.754939",
-  "profile_id": "michael-saltzman"
+  "scraped_at": "2025-09-16T16:10:08.125967",
+  "profile_id": null
 }

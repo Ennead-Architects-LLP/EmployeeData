@@ -1,7 +1,7 @@
 {
   "human_name": "Liz Shaban",
   "email": "Liz.Shaban@ennead.com",
-  "bio": null,
+  "bio": "After graduating from Washington University, I started my architecture career at a small firm in St. Louis where I worked on mainly multi-unit residential projects. Graduate study at the University of Virginia landed me in Charlottesville for three years then my job at Ennead brought me to NYC. Shortly before the pandemic I moved from Hell's Kitchen to my home state of New Jersey, and I currently reside in Jersey City with my husband and son. In our spare time you'll find us at a Red Bulls or Gotham FC soccer game or grilling in our backyard.",
   "phone": "(646) 437-1736",
   "mobile": "(646) 437-1736",
   "office_location": "",
@@ -9,14 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/7d479e0a-f89b-41b1-b022-bfaf5a5c6251/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Liz Shaban_profile.jpg",
   "position": "Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 12,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "LEED AP",
-    "AIA"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "University of Virginia",
@@ -34,43 +29,56 @@
       "license": "Registered Architect",
       "state": "NY",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "New York University, Renovations to Chemical Biology Buildings",
-      "number": "",
-      "client": "1847",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Connecticut College, Athey Center for Performance and Research at Palmer Auditorium",
-      "number": "",
-      "client": "1837",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "NYU Langone Health, Science Building",
-      "number": "",
-      "client": "1101",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-      "number": "",
-      "client": "1836",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=liz.shaban@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:11:54.378144",
-  "profile_id": "liz-shaban"
+  "scraped_at": "2025-09-16T16:09:26.993070",
+  "profile_id": null
 }

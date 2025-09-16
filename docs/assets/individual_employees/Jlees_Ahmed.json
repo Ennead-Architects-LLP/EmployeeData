@@ -1,18 +1,16 @@
 {
   "human_name": "Jlees Ahmed",
   "email": "Jlees.Ahmed@ennead.com",
-  "bio": null,
+  "bio": "0",
   "phone": "(212)792-5879",
   "mobile": "(212)792-5879",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/69602942-684D-4B09-B7FA-950CE3347DDE/jlees-ahmed",
   "image_url": "https://ei.ennead.com/api/image/96150d7d-7942-44d8-ab42-0a0f7de18572/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Jlees Ahmed_profile.jpg",
-  "position": "Architect",
-  "department": null,
-  "years_with_firm": 0,
-  "seat_assignment": null,
-  "computer": null,
+  "position": "Intern",
+  "department": "",
+  "years_with_firm": null,
   "memberships": [],
   "education": [
     {
@@ -22,11 +20,11 @@
     }
   ],
   "licenses": [],
-  "projects": [],
+  "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Jlees.Ahmed@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:27:31.614751",
-  "profile_id": "jlees-ahmed"
+  "scraped_at": "2025-09-16T16:07:10.894368",
+  "profile_id": null
 }

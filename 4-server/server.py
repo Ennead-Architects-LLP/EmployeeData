@@ -55,6 +55,7 @@ REPO_ROOT = get_repository_root()
 # Using individual JSON files only - direct updates to employee records
 INDIVIDUAL_EMPLOYEES_DIR = os.path.join(REPO_ROOT, 'docs', 'assets', 'individual_employees')
 COMPUTER_BACKUP_DIR = os.path.join(REPO_ROOT, 'docs', 'assets', 'computer_info_data_backup')
+INDIVIDUAL_COMPUTER_DATA_DIR = os.path.join(REPO_ROOT, 'docs', 'assets', 'individual_computer_data')
 
 def find_employee_file_by_user(computer_data):
     """Find the employee JSON file that matches the user from computer data"""
@@ -200,6 +201,62 @@ def update_employee_computer_info(employee_file_path, computer_data):
         print(f"❌ Error updating employee file: {e}")
         return False
 
+def create_individual_computer_data_file(computer_data):
+    """Create/update individual computer data JSON file for each employee"""
+    try:
+        # Ensure directory exists
+        os.makedirs(INDIVIDUAL_COMPUTER_DATA_DIR, exist_ok=True)
+        
+        # Get human name for filename
+        human_name = computer_data.get('human_name', 'Unknown').strip()
+        if not human_name or human_name == 'Unknown':
+            print("❌ No human_name provided for individual computer data file")
+            return False
+        
+        # Create safe filename
+        safe_name = human_name.replace(' ', '_').replace('/', '_').replace('\\', '_')
+        filename = f"{safe_name}_computer_info.json"
+        file_path = os.path.join(INDIVIDUAL_COMPUTER_DATA_DIR, filename)
+        
+        # Load existing data if file exists
+        existing_data = {}
+        if os.path.exists(file_path):
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+            except Exception as e:
+                print(f"⚠️  Warning: Could not load existing computer data file: {e}")
+                existing_data = {}
+        
+        # Create computer info entry
+        computer_name = computer_data.get('computer_name', 'Unknown')
+        computer_info = {
+            'computername': computer_name,
+            'os': computer_data.get('os'),
+            'manufacturer': computer_data.get('manufacturer'),
+            'model': computer_data.get('model'),
+            'cpu': computer_data.get('cpu'),
+            'gpu_name': computer_data.get('gpu_name'),
+            'gpu_driver': computer_data.get('gpu_driver'),
+            'memory_bytes': computer_data.get('memory_bytes'),
+            'serial_number': computer_data.get('serial_number'),
+            'last_updated': datetime.now().isoformat()
+        }
+        
+        # Update or add computer info (dict of dicts format)
+        existing_data[computer_name] = computer_info
+        
+        # Save updated file
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(existing_data, f, indent=2, ensure_ascii=False, default=str)
+        
+        print(f"✅ Individual computer data saved to {file_path}")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Error creating individual computer data file: {e}")
+        return False
+
 def backup_computer_data(computer_data):
     """Create a backup of computer data for archival purposes"""
     try:
@@ -335,6 +392,10 @@ def handle_computer_data():
         # Create backup of computer data
         if not backup_computer_data(computer_data):
             print("⚠️  Warning: Computer backup failed, but employee update succeeded")
+        
+        # Create/update individual computer data file
+        if not create_individual_computer_data_file(computer_data):
+            print("⚠️  Warning: Individual computer data file creation failed, but employee update succeeded")
         
         updated_count = 1
         

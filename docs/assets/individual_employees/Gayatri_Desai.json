@@ -1,7 +1,7 @@
 {
   "human_name": "Gayatri Desai",
   "email": "Gayatri.Desai@ennead.com",
-  "bio": null,
+  "bio": "4",
   "phone": "212-584-6131",
   "mobile": "212-584-6131",
   "office_location": "",
@@ -9,15 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/49b429e2-06ce-41d7-86af-696cdd41767a/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Gayatri Desai_profile.jpg",
   "position": "Senior Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 4,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "National Organization of Minority Architects",
-    "NCARB",
-    "LEED GA"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "New Jersey Institute of Technology",
@@ -31,19 +25,22 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "",
-      "client": "2151",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Gayatri.Desai@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:30:02.712914",
-  "profile_id": "gayatri-desai"
+  "scraped_at": "2025-09-16T16:06:11.574781",
+  "profile_id": null
 }

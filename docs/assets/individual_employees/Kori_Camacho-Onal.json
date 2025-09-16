@@ -1,7 +1,7 @@
 {
   "human_name": "Kori Camacho-Onal",
   "email": "kori.camacho-onal@ennead.com",
-  "bio": null,
+  "bio": "I grew up in Yuma, Arizona and graduated from The University of Arizona with a Bachelor of Architecture degree. I began my career working for a small firm, The Architecture Company (TAC), where I was given the responsibilities of completing State Historic Preservation Office (SHPO) forms and documentation, marketing, project archiving, and construction administration. I moved to New York City and joined Ennead Architects in the fall of 2013 where I continue to focus on construction administration and have been part of various projects including a higher education facility, an academic laboratory, a teaching and research healthcare center, and an Embassy. I became a member Construction Specifications Institute (CSI) in 2018. I hold a professional certification in Construction Documents Technologist (CDT) from CSI and am working toward becoming a Certified Construction Contract Administrator (CCCA).",
   "phone": "(646) 437-1723",
   "mobile": "(646) 437-1723",
   "office_location": "",
@@ -9,16 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/356559b1-9c5e-4785-a883-af7a4f5a77c8/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Kori Camacho-Onal_profile.jpg",
   "position": "Senior Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 11,
-  "seat_assignment": null,
-  "computer": null,
-  "memberships": [
-    "CSI",
-    "AIA",
-    "NCARB",
-    "National Organization of Minority Architects"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "University of Arizona",
@@ -31,71 +24,96 @@
       "license": "Registered Architect",
       "state": "NY",
       "number": "",
-      "earned": ""
+      "earned": "",
+      "source": "container_1_approach_1"
     }
   ],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "Carnegie Hall Recital PA & Handrail",
-      "number": "",
-      "client": "1524",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/59CBAA41-975A-4C0B-9C6A-E3ECC512C670/carnegie-hall-recital-pa-handrail"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/59CBAA41-975A-4C0B-9C6A-E3ECC512C670/carnegie-hall-recital-pa-handrail",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
-      "number": "",
-      "client": "1700",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "United States Consulate General, Lagos Nigeria (OBO)",
-      "number": "",
-      "client": "1807",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Massachusetts College of Art and Design, Design and Media Center",
-      "number": "",
-      "client": "1020",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center",
+      "source": "fallback"
     },
-    {
+    "proj_5": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
-      "number": "",
-      "client": "1836",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "fallback"
     },
-    {
+    "proj_6": {
       "name": "State University of New York Downstate, Health Science Center",
-      "number": "",
-      "client": "0917",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/3F1D9CB1-E586-47A4-ABCA-425CB04B8769/state-university-of-new-york-downstate-health-science-center"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3F1D9CB1-E586-47A4-ABCA-425CB04B8769/state-university-of-new-york-downstate-health-science-center",
+      "source": "fallback"
     },
-    {
+    "proj_7": {
       "name": "United States Embassy, Ankara (OBO)",
-      "number": "",
-      "client": "1425",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
+      "source": "fallback"
     },
-    {
+    "proj_8": {
       "name": "University of Michigan, Biological Science Building",
-      "number": "",
-      "client": "1315",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kcamacho@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:24:38.778004",
-  "profile_id": "kori-camacho-onal"
+  "scraped_at": "2025-09-16T16:08:40.199465",
+  "profile_id": null
 }

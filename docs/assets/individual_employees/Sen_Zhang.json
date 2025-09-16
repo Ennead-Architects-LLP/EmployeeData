@@ -1,7 +1,7 @@
 {
   "human_name": "Sen Zhang",
   "email": "sen.zhang@ennead.com",
-  "bio": null,
+  "bio": "Dyn,Revit,Rhino,Blender,pythonEnnead TabRock Climbing",
   "phone": "(212) 807-7171",
   "mobile": "(212) 807-7171",
   "office_location": "",
@@ -9,12 +9,9 @@
   "image_url": "https://ei.ennead.com/api/image/043875ea-6ef6-4ad3-9e47-b5b6e809526d/preview?size=300w300h_fxd&version=0",
   "image_local_path": "assets/images/Sen Zhang_profile.jpg",
   "position": "Associate",
-  "department": null,
+  "department": "",
   "years_with_firm": 5,
-  "seat_assignment": null,
-  "memberships": [
-    "AIA"
-  ],
+  "memberships": [],
   "education": [
     {
       "institution": "Columbia University",
@@ -28,98 +25,82 @@
     }
   ],
   "licenses": [],
-  "projects": [
-    {
+  "projects": {
+    "proj_1": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
-      "number": "",
-      "client": "2151",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "fallback"
     },
-    {
+    "proj_2": {
       "name": "Bilibili Shanghai Headquarters",
-      "number": "",
-      "client": "2135",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "fallback"
     },
-    {
+    "proj_3": {
       "name": "ByteDance Houhai Center Project",
-      "number": "",
-      "client": "2018",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "fallback"
     },
-    {
+    "proj_4": {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
-      "number": "",
-      "client": "1940",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "fallback"
     },
-    {
+    "proj_5": {
       "name": "Taopu Sci-Tech City Plot 606",
-      "number": "",
-      "client": "1735",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "fallback"
     },
-    {
+    "proj_6": {
       "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-      "number": "",
-      "client": "1643",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "fallback"
     },
-    {
+    "proj_7": {
       "name": "Taopu Smart City, Plot 603",
-      "number": "",
-      "client": "1763",
+      "description": "",
       "role": "",
-      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603"
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=szhang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-12T15:03:46.155093",
-  "computer_info": {
-    "EA-25CWFS3": {
-      "computername": "EA-25CWFS3",
-      "os": "Windows 11",
-      "manufacturer": "Dell Inc.",
-      "model": "Latitude 5540",
-      "cpu": "13th Gen Intel(R) Core(TM) i7-1370P",
-      "gpu_name": "Intel(R) Iris(R) Xe Graphics",
-      "gpu_driver": "32.0.101.6078",
-      "memory_bytes": 16815702016,
-      "serial_number": "1X5CKS3",
-      "last_updated": "2025-09-13T01:20:39.397287"
-    },
-    "EANY-PW-0HJ97N": {
-      "computername": "EANY-PW-0HJ97N",
-      "os": "Windows 11",
-      "manufacturer": "Unknown",
-      "model": "Unknown",
-      "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
-      "gpu_name": "Unknown",
-      "gpu_driver": "Unknown",
-      "memory_bytes": 33765298176,
-      "serial_number": "Unknown",
-      "last_updated": "2025-09-15T18:11:30.865797"
-    },
-    "MININT-5V26DTJ": {
-      "computername": "MININT-5V26DTJ",
-      "os": "Windows 11",
-      "manufacturer": "ASUS",
-      "model": "System Product Name",
-      "cpu": "Intel(R) Core(TM) Ultra 9 285",
-      "gpu_name": "NVIDIA RTX A2000 12GB",
-      "gpu_driver": "31.0.15.3742",
-      "memory_bytes": 67936788480,
-      "serial_number": "System Serial Number",
-      "last_updated": "2025-09-16T01:32:06.599636"
-    }
-  }
+  "scraped_at": "2025-09-16T16:12:29.393848",
+  "profile_id": null
 }
