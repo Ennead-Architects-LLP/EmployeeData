@@ -64,7 +64,9 @@ jobs:
         echo "Current directory: $(pwd)"
         echo "Project root should be: $(pwd)/.."
         echo "Docs directory should be: $(pwd)/../docs"
-        python ../.github/scripts/weekly_scraper.py
+
+        # Run the actual scraper with headless mode and proper environment
+        python -m src.main --headless
         
     # 7) Verify both images and JSON artifacts are properly generated
     - name: Verify artifacts generation
@@ -72,13 +74,13 @@ jobs:
         echo "=== Verifying JSON artifacts ==="
         echo "Individual employees (daily merge handles employees.json)"
         echo "Individual employee files count:"
-        ls docs/assets/individual_employees/*.json | wc -l || echo "❌ No individual employee files found"
+        ls docs/assets/individual_employees/*.json 2>/dev/null | wc -l || echo "❌ No individual employee files found"
         echo ""
         echo "=== Verifying image artifacts ==="
         echo "Images directory:"
-        ls -la docs/assets/images/ | head -10 || echo "❌ Images directory not found"
+        ls -la docs/assets/images/ 2>/dev/null | head -10 || echo "❌ Images directory not found"
         echo "Total images count:"
-        ls docs/assets/images/*.jpg | wc -l || echo "❌ No images found"
+        ls docs/assets/images/*.jpg 2>/dev/null | wc -l || echo "❌ No images found"
         echo ""
         echo "=== Artifact Summary ==="
         echo "JSON files: $(ls docs/assets/individual_employees/*.json 2>/dev/null | wc -l) individual employee files"
@@ -97,7 +99,7 @@ jobs:
       with:
         name: scraper-artifacts-${{ github.run_number }}
         path: |
-          docs/assets/employees.json
+          
           docs/assets/individual_employees/
           docs/assets/images/
         retention-days: 30
@@ -110,11 +112,15 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add .
-        # Add JSON artifacts
-        git add docs/assets/employee_files_list.json
-        git add docs/assets/individual_employees/
-        # Add image artifacts
-        git add docs/assets/images/
-        git diff --staged --quiet || git commit -m "🔄 Weekly Scraper Update: $(date) - Updated employee data, JSON artifacts, and profile images"
-        git push
+        
+        # Only add the specific folders we care about
+        git add docs/assets/individual_employees/ 2>/dev/null || true
+        git add docs/assets/images/ 2>/dev/null || true
+        
+        # Check if there are any changes to commit
+        if ! git diff --staged --quiet; then
+          git commit -m "🔄 Weekly Scraper Update: $(date) - Updated employee data, JSON artifacts, and profile images"
+          git push
+        else
+          echo "No changes to commit"
+        fi
