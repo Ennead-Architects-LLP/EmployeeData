@@ -35,10 +35,8 @@ class ScraperOrchestrator:
                 return False
             
             # Individual JSON files are now saved by the scraper as it goes
-            # Only save the combined JSON file for backward compatibility
-            self.logger.info("[STEP 2] Saving combined JSON file...")
-            combined_path = await self._save_combined_employees(employees)
-            self.logger.info(f"[SUCCESS] Saved combined JSON to {combined_path}")
+            # Do not generate the combined employee_files_list.json anymore (GH Pages uses individual files)
+            self.logger.info("[STEP 2] Skipping combined JSON generation per project policy")
 
             self.logger.info(f"[SUCCESS] Scraper completed successfully - {len(employees)} employees processed")
             self.logger.info(f"[INFO] Individual JSON files saved to: docs/assets/individual_employees/")
@@ -78,19 +76,8 @@ class ScraperOrchestrator:
         return saved_count
     
     async def _save_combined_employees(self, employees) -> str:
-        """Save all employees as combined JSON file"""
-        from pathlib import Path
-        project_root = Path(__file__).parent.parent.parent.parent
-        output_path = project_root / "docs" / "assets"
-        output_path.mkdir(parents=True, exist_ok=True)
-        
-        combined_path = output_path / "employee_files_list.json"
-        
-        # Convert to list of dictionaries
-        employees_data = [emp.to_dict() for emp in employees]
-        
-        with open(combined_path, 'w', encoding='utf-8') as f:
-            import json
-            json.dump(employees_data, f, indent=2, ensure_ascii=False, default=str)
-        
-        return str(combined_path)
+        """
+        Deprecated: Combined JSON generation has been disabled.
+        Kept for backward compatibility but now returns an empty string.
+        """
+        return ""
