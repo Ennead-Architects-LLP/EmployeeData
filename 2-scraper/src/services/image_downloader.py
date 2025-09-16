@@ -135,8 +135,8 @@ class ImageDownloader:
             await image_element.screenshot(path=str(file_path))
             
             self.logger.info(f"Captured preview image for {employee_name}: {file_path}")
-            # Return relative path from docs/assets for consistency
-            return f"images/{filename}"
+            # Return relative web path from docs root for GitHub Pages
+            return f"assets/images/{filename}"
             
         except Exception as e:
             self.logger.error(f"Failed to capture preview image for {employee_name}: {e}")
@@ -165,7 +165,8 @@ class ImageDownloader:
             # Skip if file already exists
             if file_path.exists():
                 self.logger.info(f"Image already exists: {file_path}")
-                return str(file_path)
+                # Return relative web path from docs root for GitHub Pages
+                return f"assets/images/{filename}"
             
             # Use authenticated browser session if available
             if page:
@@ -187,7 +188,8 @@ class ImageDownloader:
                             f.write(image_data)
                         
                         self.logger.info(f"Downloaded image: {file_path}")
-                        return str(file_path)
+                        # Return relative web path from docs root for GitHub Pages
+                        return f"assets/images/{filename}"
                     else:
                         self.logger.error(f"Failed to download image: {url} (Status: {response.status})")
                         return None
@@ -213,7 +215,8 @@ class ImageDownloader:
                                 f.write(image_data)
                             
                             self.logger.info(f"Downloaded image: {file_path}")
-                            return str(file_path)
+                            # Return relative web path from docs root for GitHub Pages
+                            return f"assets/images/{filename}"
                         else:
                             self.logger.error(f"Failed to download image: {url} (Status: {response.status})")
                             return None
