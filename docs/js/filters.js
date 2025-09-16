@@ -3,14 +3,18 @@ function handleSearch() {
     const searchTerm = document.getElementById('searchInput').value;
     const suggestionsContainer = document.getElementById('searchSuggestions');
     
+    console.log('Search triggered with term:', searchTerm);
+    
     if (searchTerm === '') {
         filteredEmployees = [...allEmployees];
         suggestionsContainer.classList.remove('show');
+        renderEmployees();
         return;
     }
     
     // Use fuzzy search for name matching
     const searchResult = fuzzySearch.search(searchTerm);
+    console.log('Search result:', searchResult);
     
     if (searchResult.isTypo && searchResult.results.length === 0) {
         // Show "Did you mean..." suggestions for typos
@@ -27,6 +31,29 @@ function handleSearch() {
             
             // Also do regular text search for non-name fields (very forgiving)
             const textSearchResults = allEmployees.filter(employee => {
+                // Safely handle projects - check if it's an array or object
+                let projectNames = [];
+                if (employee.projects) {
+                    if (Array.isArray(employee.projects)) {
+                        projectNames = employee.projects.map(p => p.name || p.title || '');
+                    } else if (typeof employee.projects === 'object') {
+                        // Handle object format like {proj_1: {name: "Project 1"}, proj_2: {name: "Project 2"}}
+                        projectNames = Object.values(employee.projects).map(p => p.name || p.title || '');
+                    }
+                }
+                
+                // Safely handle education
+                let educationNames = [];
+                if (employee.education && Array.isArray(employee.education)) {
+                    educationNames = employee.education.map(edu => edu.institution || '');
+                }
+                
+                // Safely handle memberships
+                let memberships = [];
+                if (employee.memberships && Array.isArray(employee.memberships)) {
+                    memberships = employee.memberships;
+                }
+                
                 const searchableText = [
                     employee.position,
                     employee.office_location,
@@ -37,9 +64,9 @@ function handleSearch() {
                     employee.team,
                     employee.division,
                     employee.bio,
-                    ...(employee.projects || []).map(p => p.name || p.title || ''),
-                    ...(employee.education || []).map(edu => edu.institution || ''),
-                    ...(employee.memberships || [])
+                    ...projectNames,
+                    ...educationNames,
+                    ...memberships
                 ].join(' ').toLowerCase();
                 
                 // Very forgiving partial matching for all fields
@@ -80,7 +107,7 @@ function handleSearch() {
         }
     }
     
-    applyFilters();
+    renderEmployees();
 }
 
 function showSuggestions(searchTerm, searchResult) {

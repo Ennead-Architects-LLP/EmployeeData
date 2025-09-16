@@ -37,11 +37,27 @@ async function initializeApp() {
             return;
         }
 
+        // Initialize fuzzy search with employee data
+        if (typeof fuzzySearch !== 'undefined' && fuzzySearch.initialize) {
+            fuzzySearch.initialize(allEmployees);
+            console.log('Fuzzy search initialized with', allEmployees.length, 'employees');
+        }
+        
         // Initialize UI (handled by ui-manager.js)
         if (typeof initializeUI === 'function') {
             initializeUI();
         }
+        
+        // Set up search event listener
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput && typeof handleSearch === 'function') {
+            searchInput.addEventListener('input', handleSearch);
+            console.log('Search event listener attached');
+        }
 
+        // Update header information
+        updateHeaderInfo();
+        
         // Hide loading indicator
         document.getElementById('loadingIndicator').style.display = 'none';
 
@@ -56,7 +72,9 @@ async function initializeApp() {
 async function tryLoadMergedEmployees() {
     const basePath = getBasePath();
     try {
-        const url = `${basePath}docs/assets/employees.json`;
+        // Since server serves from docs directory, we need to adjust the path
+        const isLocalServer = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const url = isLocalServer ? `${basePath}assets/employees.json` : `${basePath}docs/assets/employees.json`;
         console.log('Trying merged employees file:', url);
         const response = await fetch(url, { signal: AbortSignal.timeout(10000) });
         if (response.ok) {
@@ -131,3 +149,38 @@ window.addEventListener('scroll', function() {
         returnToTop.classList.remove('show');
     }
 });
+
+// Update header information
+function updateHeaderInfo() {
+    const now = new Date();
+    const generatedTime = now.toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZoneName: 'short'
+    });
+    
+    // Try to get the last modified time of the employees.json file
+    // For now, we'll use the current time as data time
+    const dataTime = now.toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+    
+    // Update the header elements
+    const generatedTimeElement = document.getElementById('generatedTime');
+    const dataTimeElement = document.getElementById('dataTime');
+    
+    if (generatedTimeElement) {
+        generatedTimeElement.textContent = `Generated: ${generatedTime}`;
+    }
+    
+    if (dataTimeElement) {
+        dataTimeElement.textContent = `Data: ${dataTime}`;
+    }
+}

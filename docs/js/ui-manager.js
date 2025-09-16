@@ -15,19 +15,34 @@ function populateFilters() {
 }
 
 function setupEventListeners() {
-    // Search input
-    document.getElementById('searchInput').addEventListener('input', handleSearch);
+    // Search input event listener is handled in employee_data_loader.js
+    // No need to duplicate here
 }
 
 function renderEmployees(employees = filteredEmployees) {
     const grid = document.getElementById('employeeGrid');
     
-    if (employees.length === 0) {
-        grid.innerHTML = '<div class="no-results">No employees found matching your search.</div>';
+    // Add debugging to prevent multiple renders
+    if (grid.dataset.rendering === 'true') {
+        console.log('Preventing duplicate render');
         return;
     }
     
-    grid.innerHTML = employees.map(employee => createEmployeeCard(employee)).join('');
+    grid.dataset.rendering = 'true';
+    
+    if (employees.length === 0) {
+        grid.innerHTML = '<div class="no-results">No employees found matching your search.</div>';
+    } else {
+        grid.innerHTML = employees.map(employee => createEmployeeCard(employee)).join('');
+        
+        // Set up image error handling after rendering
+        setupImageErrorHandling();
+    }
+    
+    // Reset the rendering flag after a short delay
+    setTimeout(() => {
+        grid.dataset.rendering = 'false';
+    }, 100);
 }
 
 function createEmployeeCard(employee) {
@@ -37,7 +52,7 @@ function createEmployeeCard(employee) {
     
     // Use local image path if available, otherwise fall back to image_url or default
     let imageUrl;
-    let fallbackImageUrl = basePath + 'assets/images/default_profile.jpg';
+    let fallbackImageUrl = basePath + 'assets/icons/default_profile_image.jpg';
     
     if (employee.image_local_path) {
         // Adjust path for GitHub Pages
@@ -49,7 +64,19 @@ function createEmployeeCard(employee) {
         // Use default profile image when no image is specified
         imageUrl = fallbackImageUrl;
     }
-    const projects = employee.projects || [];
+    
+    // Create a unique ID for this image to prevent conflicts
+    const imageId = `img_${employee.human_name?.replace(/\s+/g, '_')}_${Date.now()}`;
+    // Handle projects - they can be an object or array
+    let projects = [];
+    if (employee.projects) {
+        if (Array.isArray(employee.projects)) {
+            projects = employee.projects;
+        } else if (typeof employee.projects === 'object') {
+            // Convert object format to array
+            projects = Object.values(employee.projects);
+        }
+    }
     const projectId = `projects_${employee.human_name?.replace(/\s+/g, '_')}`;
     
     // Handle phone formatting - the phone is already formatted in the JSON
@@ -63,6 +90,12 @@ function createEmployeeCard(employee) {
     
     // Handle education
     const education = employee.education || [];
+    
+    // Handle licenses
+    const licenses = employee.licenses || [];
+    
+    // Handle memberships
+    const memberships = employee.memberships || [];
     
     // Handle computer specifications if available
     const computerInfo = employee.computer_info || employee.computer || employee.computer_specs;
@@ -101,12 +134,12 @@ function createEmployeeCard(employee) {
     return `
         <div class="employee-card">
             <div class="employee-image">
-                <img src="${imageUrl}" alt="${employee.human_name}" onerror="this.src='${fallbackImageUrl}'">
+                <img id="${imageId}" src="${imageUrl}" alt="${employee.human_name}">
             </div>
             <div class="employee-info">
                 <h3 class="employee-name">${employee.human_name || 'Unknown'}</h3>
                 <p class="employee-position">${employee.position || employee.title || 'Position not available'}</p>
-                <p class="employee-location">${employee.office_location || 'Location not available'}</p>
+                ${employee.office_location ? `<p class="employee-location">${employee.office_location}</p>` : ''}
                 ${department ? `<p class="employee-department">Department: ${department}</p>` : ''}
                 ${yearsInfo ? `<p class="employee-years">${yearsInfo}</p>` : ''}
                 <div class="contact-info">
@@ -120,6 +153,22 @@ function createEmployeeCard(employee) {
                         ${education.map(edu => `
                             <p class="education-item">${edu.institution} - ${edu.degree}</p>
                             ${edu.specialty ? `<p class="education-specialty">${edu.specialty}</p>` : ''}
+                        `).join('')}
+                    </div>
+                ` : ''}
+                ${licenses.length > 0 ? `
+                    <div class="licenses-section">
+                        <h4>Licenses & Certifications</h4>
+                        ${licenses.map(license => `
+                            <p class="license-item">${license}</p>
+                        `).join('')}
+                    </div>
+                ` : ''}
+                ${memberships.length > 0 ? `
+                    <div class="memberships-section">
+                        <h4>Memberships</h4>
+                        ${memberships.map(membership => `
+                            <p class="membership-item">${membership}</p>
                         `).join('')}
                     </div>
                 ` : ''}
@@ -165,3 +214,28 @@ function createEmployeeCard(employee) {
 }
 
 // Computer data is now integrated into individual employee cards
+
+// Set up image error handling for all images in the grid
+function setupImageErrorHandling() {
+    const images = document.querySelectorAll('.employee-image img');
+    images.forEach(img => {
+        // Remove any existing error handlers
+        img.onerror = null;
+        
+        // Add new error handler that tries fallback image first
+        img.addEventListener('error', function() {
+            if (!this.dataset.fallbackTried) {
+                this.dataset.fallbackTried = 'true';
+                // Try fallback image
+                const isGitHubPages = window.location.hostname.includes('github.io');
+                const basePath = isGitHubPages ? '/EmployeeData/' : '';
+                const fallbackUrl = basePath + 'assets/icons/default_profile_image.jpg';
+                this.src = fallbackUrl;
+            } else {
+                // If fallback also failed, show placeholder
+                this.style.display = 'none';
+                this.parentElement.innerHTML = '<div class="no-image-placeholder">📷</div>';
+            }
+        });
+    });
+}

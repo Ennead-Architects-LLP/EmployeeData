@@ -33,6 +33,16 @@
 - pytest: `.venv\\Scripts\\python.exe -m pytest` (Windows) or `.venv/bin/python -m pytest` (macOS/Linux).
 - Linters/formatters (flake8, black, ruff, mypy): run via `.venv` interpreter with `-m`.
 
+## Web Development and Testing
+- When starting a local HTTP server for testing web applications:
+  - Windows: `.venv\Scripts\python.exe -m http.server 8000 --directory docs`
+  - macOS/Linux: `.venv/bin/python -m http.server 8000 --directory docs`
+- After starting the server, automatically open the browser to test the application:
+  - Windows: `Start-Process "http://localhost:8000/index.html"`
+  - macOS: `open "http://localhost:8000/index.html"`
+  - Linux: `xdg-open "http://localhost:8000/index.html"`
+
 ## General guidance
 - When proposing or running commands in this repository, default to the `.venv` interpreter path as above.
 - If a command fails due to missing environment, create `.venv` and retry using the rules above.
+- Always open browser for web testing to verify functionality works correctly.

@@ -35,6 +35,20 @@
     border: 3px solid #00bfff;
 }
 
+.no-image-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00bfff;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #00bfff;
+    margin: 0 auto;
+}
+
 .employee-info {
     text-align: center;
 }
@@ -172,6 +186,46 @@
     margin-bottom: 5px;
 }
 
+/* Licenses section */
+.licenses-section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.licenses-section h4 {
+    color: #00bfff;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.license-item {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* Memberships section */
+.memberships-section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.memberships-section h4 {
+    color: #00bfff;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.membership-item {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
 .education-specialty {
     color: #888888;
     font-size: 0.85rem;
@@ -185,16 +239,29 @@
     margin: 2px 0;
 }
 
-.project-link {
-    color: #00bfff;
-    text-decoration: none;
+.employee-card .project-link {
+    color: #ffffff !important;
+    text-decoration: none !important;
     font-size: 0.85rem;
     display: inline-block;
     margin-top: 5px;
 }
 
-.project-link:hover {
-    text-decoration: underline;
+.employee-card .project-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+.employee-card .project-link:visited {
+    color: #ffffff !important;
+}
+
+.employee-card .project-link:active {
+    color: #ffffff !important;
+}
+
+.employee-card .project-link:focus {
+    color: #ffffff !important;
 }
 
 /* Computer specifications section */

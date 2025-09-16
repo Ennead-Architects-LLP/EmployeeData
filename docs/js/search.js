@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Add event listeners
+    // Add event listeners for clear button functionality only
     searchInput.addEventListener('input', toggleClearButton);
     searchInput.addEventListener('focus', toggleClearButton);
     searchInput.addEventListener('blur', toggleClearButton);
