@@ -43,6 +43,34 @@ from .core.orchestrator import ScraperOrchestrator
 from .config.credentials import show_credentials_gui
 
 
+class ColoredFormatter(logging.Formatter):
+    """Custom formatter to add colors to log levels."""
+    
+    # ANSI color codes
+    COLORS = {
+        'DEBUG': '\033[36m',    # Cyan
+        'INFO': '\033[32m',     # Green
+        'WARNING': '\033[33m',  # Yellow
+        'ERROR': '\033[31m',    # Red
+        'CRITICAL': '\033[35m', # Magenta
+        'RESET': '\033[0m'      # Reset
+    }
+    
+    def format(self, record):
+        # Get the original formatted message
+        log_message = super().format(record)
+        
+        # Add color based on log level
+        color = self.COLORS.get(record.levelname, self.COLORS['RESET'])
+        reset = self.COLORS['RESET']
+        
+        # Only add colors for console output, not file output
+        if hasattr(record, 'is_console') and record.is_console:
+            return f"{color}{log_message}{reset}"
+        
+        return log_message
+
+
 def print_debug_help():
     """Print detailed help for debug mode options."""
     print("""
@@ -90,15 +118,31 @@ BENEFITS:
 
 
 def setup_logging(config: ScraperConfig):
-    """Setup logging configuration."""
-    logging.basicConfig(
-        level=getattr(logging, config.LOG_LEVEL.upper()),
-        format=config.LOG_FORMAT,
-        handlers=[
-            logging.FileHandler(config.LOG_FILE),
-            logging.StreamHandler(sys.stdout)
-        ]
-    )
+    """Setup logging configuration with colored console output."""
+    # Create formatters
+    file_formatter = logging.Formatter(config.LOG_FORMAT)
+    console_formatter = ColoredFormatter(config.LOG_FORMAT)
+    
+    # Create handlers
+    file_handler = logging.FileHandler(config.LOG_FILE)
+    file_handler.setFormatter(file_formatter)
+    
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(console_formatter)
+    
+    # Configure root logger
+    root_logger = logging.getLogger()
+    root_logger.setLevel(getattr(logging, config.LOG_LEVEL.upper()))
+    root_logger.handlers.clear()  # Clear any existing handlers
+    root_logger.addHandler(file_handler)
+    root_logger.addHandler(console_handler)
+    
+    # Add a custom filter to mark console records
+    def add_console_marker(record):
+        record.is_console = True
+        return True
+    
+    console_handler.addFilter(add_console_marker)
 
 
 class TimeoutManager:
