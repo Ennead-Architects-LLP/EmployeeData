@@ -7,7 +7,7 @@ that can run in different modes for different use cases.
 import asyncio
 import logging
 from typing import List, Optional, Dict, Any
-from playwright.async_api import async_playwright, Page, Browser, BrowserContext
+from playwright.async_api import async_playwright, Page, Browser, BrowserContext, Playwright
 from urllib.parse import urljoin, urlparse
 import json
 from pathlib import Path
@@ -65,6 +65,7 @@ class UnifiedEmployeeScraper:
         self.browser: Optional[Browser] = None
         self.context: Optional[BrowserContext] = None
         self.page: Optional[Page] = None
+        self.playwright: Optional[Playwright] = None
         
         # Scraped data
         self.employees: List[EmployeeData] = []
@@ -98,7 +99,7 @@ class UnifiedEmployeeScraper:
         """Start the browser and create context"""
         try:
             self.logger.info("Starting browser...")
-            playwright = await async_playwright().start()
+            self.playwright = await async_playwright().start()
             
             # Browser arguments for comprehensive scraping
             browser_args = [
@@ -121,7 +122,7 @@ class UnifiedEmployeeScraper:
             # Always enable images for comprehensive data extraction
             # browser_args.append('--disable-images')  # Removed to enable image loading
             
-            self.browser = await playwright.chromium.launch(
+            self.browser = await self.playwright.chromium.launch(
                 headless=self.headless,
                 args=browser_args
             )
@@ -175,6 +176,8 @@ class UnifiedEmployeeScraper:
                 await self.context.close()
             if self.browser:
                 await self.browser.close()
+            if self.playwright:
+                await self.playwright.stop()
             self.logger.info("[SUCCESS] Browser closed successfully")
         except Exception as e:
             self.logger.error(f"[ERROR] Error closing browser: {e}")
