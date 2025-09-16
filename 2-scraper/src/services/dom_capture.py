@@ -17,7 +17,10 @@ class DOMCapture:
         self.playwright = None
         self.browser = None
         self.page = None
-        self.capture_dir = "../../debug/dom_captures"
+        # Set correct path to debug directory (3 levels up from services)
+        from pathlib import Path
+        project_root = Path(__file__).parent.parent.parent.parent
+        self.capture_dir = str(project_root / "debug" / "dom_captures")
         
     async def start_browser(self):
         """Start browser and navigate to employee directory"""

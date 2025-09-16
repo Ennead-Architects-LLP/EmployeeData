@@ -1,81 +1,83 @@
 {
   "human_name": "Adriana Burton",
   "email": "adriana.burton@ennead.com",
-  "bio": null,
+  "bio": "I was born and raised in New Jersey and graduated from the University of Massachusetts Amherst. I still live in New Jersey where I foster dogs and do woodworking and weaving projects in my spare time.",
   "phone": "212-792-5964",
   "mobile": "212-792-5964",
   "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/E8FAC548-D560-4BD6-9240-6CEB9899F377/adriana-burton",
-  "image_url": "https://ei.ennead.com/api/image/8db3d890-10a5-4fcf-a824-d20778e08249/preview?size=240w180h&version=0",
-  "image_local_path": "images/Adriana_Burton_profile.jpg",
-  "position": "",
+  "image_url": "https://ei.ennead.com/api/image/8d165831-ca65-4db1-bc85-81493022afa4/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "C:\\Users\\szhang\\github\\EmployeeData\\docs\\assets\\images\\Adriana Burton_profile.jpg",
+  "position": "Project Coordinator",
   "department": "",
   "years_with_firm": 3,
   "seat_assignment": null,
   "computer": null,
   "memberships": [],
-  "education": [],
-  "licenses": [],
-  "projects": [
+  "education": [
     {
+      "institution": "University of Massachusetts",
+      "degree": "Undergraduate",
+      "specialty": "Arts in Classics/Minor in Arabic Studies"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "fallback"
     },
-    {
-      "name": "2412",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay"
-    },
-    {
+    "proj_2": {
       "name": "Northwell, Third Avenue Medical Office Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "fallback"
     },
-    {
-      "name": "2109",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building"
-    },
-    {
+    "proj_3": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
-    },
-    {
-      "name": "1836",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design"
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "fallback"
     }
-  ],
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Adriana.Burton@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-15T19:56:15.562156",
-  "profile_id": null
+  "scraped_at": "2025-09-15T20:52:57.113886",
+  "profile_id": null,
+  "debug_all_kagridname": [
+    {
+      "kagridname": "employeeDegrees",
+      "text": "InstitutionDegreeSpecialtyUniversity of MassachusettsUndergraduateArts in Classics/Minor in Arabic S"
+    }
+  ],
+  "debug_education_container_found": true,
+  "debug_grid_container_found": null,
+  "debug_institution_found": null,
+  "debug_degree_found": null,
+  "debug_specialty_found": null,
+  "debug_education_h1_found": null,
+  "debug_education_parent_found": null,
+  "debug_education_text": null,
+  "debug_container_text": null,
+  "debug_education_rows_found": null,
+  "debug_licenses_rows_found": null,
+  "debug_licenses_containers_count": null,
+  "debug_working_selector": null,
+  "debug_show_all_found": null
 }

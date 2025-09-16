@@ -178,8 +178,8 @@ async def main():
                        help="Run browser in headless mode (true/false)")
     parser.add_argument("--no-images", action="store_true", 
                        help="Skip downloading profile images")
-    parser.add_argument("--output", type=str, default="individual_files",
-                       help="Output mode (individual_files only)")
+    parser.add_argument("--output", type=str, default="employees_data.json",
+                       help="Output JSON filename")
     parser.add_argument("--timeout", type=int, default=15000,
                        help="Page load timeout in milliseconds")
     parser.add_argument("--base-url", type=str, 

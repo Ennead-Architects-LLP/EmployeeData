@@ -31,7 +31,7 @@ class ScraperConfig:
     ASSETS_DIR = "assets"
     # Debug and logs live under debug/ (can be gitignored)
     DEBUG_DIR = "debug"
-    # No longer using compiled JSON file - individual files only
+    JSON_FILENAME = "employees_data.json"
     INDIVIDUAL_FILES = True
     
     # Scraping settings

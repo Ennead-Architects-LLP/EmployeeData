@@ -5,7 +5,6 @@ Auto-login module for handling Microsoft authentication.
 import asyncio
 import json
 import logging
-import os
 from pathlib import Path
 from typing import Optional, Dict, Any
 from playwright.async_api import Page
@@ -29,46 +28,29 @@ class AutoLogin:
     
     def load_credentials(self) -> bool:
         """
-        Load credentials with three-tier fallback system:
-        1. GitHub secrets (environment variables)
-        2. Local credentials.json file
-        3. If neither exists, prompt for credentials setup
+        Load credentials from the credentials file.
         
         Returns:
             True if credentials loaded successfully, False otherwise
         """
-        # Tier 1: Try to load from GitHub secrets (environment variables)
-        email_env = os.getenv('SCRAPER_EMAIL')
-        password_env = os.getenv('SCRAPER_PASSWORD')
+        if not self.credentials_file.exists():
+            self.logger.error(f"Credentials file not found: {self.credentials_file}")
+            return False
         
-        if email_env and password_env:
-            self.credentials = {
-                'email': email_env,
-                'password': password_env
-            }
-            self.logger.info(f"Credentials loaded from GitHub secrets for: {self.credentials['email']}")
+        try:
+            with open(self.credentials_file, 'r') as f:
+                self.credentials = json.load(f)
+            
+            if not self.credentials.get('email') or not self.credentials.get('password'):
+                self.logger.error("Credentials file is missing email or password")
+                return False
+            
+            self.logger.info(f"Credentials loaded for: {self.credentials['email']}")
             return True
-        
-        # Tier 2: Try to load from local credentials file
-        if self.credentials_file.exists():
-            try:
-                with open(self.credentials_file, 'r') as f:
-                    self.credentials = json.load(f)
-                
-                if self.credentials.get('email') and self.credentials.get('password'):
-                    self.logger.info(f"Credentials loaded from local file for: {self.credentials['email']}")
-                    return True
-                else:
-                    self.logger.warning("Local credentials file is missing email or password")
-            except Exception as e:
-                self.logger.error(f"Error loading local credentials file: {e}")
-        
-        # Tier 3: Neither GitHub secrets nor local file available
-        self.logger.warning("No credentials found. GitHub secrets and local credentials.json not available.")
-        self.logger.info("Please set up credentials using one of these methods:")
-        self.logger.info("1. Set GitHub secrets: SCRAPER_EMAIL and SCRAPER_PASSWORD")
-        self.logger.info("2. Run the credentials GUI to create local credentials.json")
-        return False
+            
+        except Exception as e:
+            self.logger.error(f"Error loading credentials: {e}")
+            return False
     
     async def login(self, page: Page, target_url: str) -> bool:
         """
@@ -82,7 +64,7 @@ class AutoLogin:
             True if login successful, False otherwise
         """
         if not self.credentials:
-            if not self.setup_credentials_if_needed():
+            if not self.load_credentials():
                 return False
         
         try:
@@ -177,29 +159,3 @@ class AutoLogin:
             Dictionary with credentials or None if not loaded
         """
         return self.credentials
-    
-    def setup_credentials_if_needed(self) -> bool:
-        """
-        Set up credentials if none are available.
-        This will show the GUI for credential setup.
-        
-        Returns:
-            True if credentials are now available, False otherwise
-        """
-        if self.credentials:
-            return True
-        
-        if not self.load_credentials():
-            self.logger.info("No credentials found. Starting credentials setup...")
-            try:
-                from ..config.credentials import show_credentials_gui
-                if show_credentials_gui():
-                    return self.load_credentials()
-                else:
-                    self.logger.error("Credentials setup was cancelled or failed")
-                    return False
-            except ImportError:
-                self.logger.error("Cannot import credentials GUI. Please set up credentials manually.")
-                return False
-        
-        return True

@@ -17,7 +17,10 @@ class AdvancedSelectorRecorder:
         self.playwright = None
         self.browser = None
         self.page = None
-        self.capture_dir = "../../debug/dom_captures"
+        # Set correct path to debug directory (3 levels up from services)
+        from pathlib import Path
+        project_root = Path(__file__).parent.parent.parent.parent
+        self.capture_dir = str(project_root / "debug" / "dom_captures")
         self.employee_url = "https://ei.ennead.com/employee-directory"
         
     async def start_browser(self):

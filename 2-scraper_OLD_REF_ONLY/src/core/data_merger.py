@@ -43,11 +43,11 @@ class DataMerger:
         
         merged_count = 0
         for employee in employees:
-            if not employee.human_name:
+            if not employee.real_name:
                 continue
                 
             # Try to find matching seating data
-            employee_name_variations = self._generate_name_variations(employee.human_name)
+            employee_name_variations = self._generate_name_variations(employee.real_name)
             
             for variation in employee_name_variations:
                 if variation.lower() in seating_lookup:
@@ -114,11 +114,11 @@ class DataMerger:
         matched_seating = set()
         
         for employee in employees:
-            if not employee.human_name:
+            if not employee.real_name:
                 unmatched_employees.append(employee)
                 continue
             
-            employee_name_variations = self._generate_name_variations(employee.human_name)
+            employee_name_variations = self._generate_name_variations(employee.real_name)
             matched = False
             
             for variation in employee_name_variations:

@@ -72,13 +72,13 @@ class UnifiedEmployeeScraper:
         # Selectors for comprehensive data extraction
         self.selectors = {
             'employee_cards': '.gridViewCell, .ActivityBox-sc-ik8ilm-0, .gridViewStyles__Cell-sc-ipm8x5-2',
-            'profile_image': '.gridViewStyles__Img-sc-ipm8x5-8, .gridViewStyles__ImgBox-sc-ipm8x5-4 img',
+            'profile_image': '.EntityHeader__HeaderPhoto-sc-1yar8fm-1, .gridViewStyles__Img-sc-ipm8x5-8, .gridViewStyles__ImgBox-sc-ipm8x5-4 img',
             'employee_name': '.gridViewStyles__Field-sc-ipm8x5-22.csVUxd.field.bold a, .gridViewStyles__Field-sc-ipm8x5-22.bold a',
-            'employee_title': '.gridViewStyles__Field-sc-ipm8x5-22.eVXxsE.field',
+            'employee_title': '.EntityHeader__NormalLine-sc-1yar8fm-0, .gridViewStyles__Field-sc-ipm8x5-22.eVXxsE.field',
             'profile_link': 'a[href*="/employee/"]',
             'email_link': 'a[href^="mailto:"]',
             'phone_link': 'a[href^="tel:"]',
-            'bio_text': '.bio, .about, .description, .employee-bio',
+            'bio_text': '.EntityFields__InfoFieldValue-sc-129sxys-5, .bio, .about, .description, .employee-bio',
             'contact_info': '.contact-info, .employee-contact',
             'department': '.department, .team, .division'
         }
@@ -353,12 +353,32 @@ class UnifiedEmployeeScraper:
                     data.email = document.querySelector('a[href^="mailto:"]')?.href?.replace('mailto:', '') || '';
                     data.phone = document.querySelector('a[href^="tel:"]')?.href?.replace('tel:', '') || '';
                     
-                    // Position and department - look for specific profile page elements
-                    data.position = document.querySelector('.position, .title, .job-title, .role')?.textContent?.trim() || '';
+                    // Position and department - be more specific to avoid picking up the name
+                    // Look for position/title elements that are NOT the main name
+                    const positionSelectors = [
+                        '.EntityHeader__NormalLine-sc-1yar8fm-0:not(:first-child)',
+                        '.position:not(:first-child)',
+                        '.title:not(:first-child)',
+                        '.job-title:not(:first-child)',
+                        '.role:not(:first-child)',
+                        '[data-kafieldname*="title"]',
+                        '[data-kafieldname*="position"]'
+                    ];
+                    
+                    let position = '';
+                    for (const selector of positionSelectors) {{
+                        const el = document.querySelector(selector);
+                        if (el && el.textContent?.trim() && el.textContent.trim() !== data.human_name) {{
+                            position = el.textContent.trim();
+                            break;
+                        }}
+                    }}
+                    data.position = position;
+                    
                     data.department = document.querySelector('.department, .team, .division, .group')?.textContent?.trim() || '';
                     
-                    // Bio - be more specific to avoid capturing page content
-                    const bioEl = document.querySelector('.bio-content, .about-content, .description-content, .employee-bio-content, [data-bio]');
+                    // Bio - use the correct class for bio content
+                    const bioEl = document.querySelector('.EntityFields__InfoFieldValue-sc-129sxys-5, .bio-content, .about-content, .description-content, .employee-bio-content, [data-bio]');
                     data.bio = bioEl ? bioEl.textContent?.trim() : null;
                     
                     // Office location
@@ -405,6 +425,10 @@ class UnifiedEmployeeScraper:
             self.logger.info(f"    Current URL after navigation: {current_url}")
             self.logger.info(f"    Page title: {page_title}")
             
+            # Capture DOM for debugging individual profile pages
+            if hasattr(self, 'config') and self.config.DEBUG_MODE:
+                await self._capture_debug_info(f"profile_page_{name.replace(' ', '_')}")
+            
             # Debug: Check what name is being extracted
             debug_name = await self.page.evaluate("""
                 () => {
@@ -430,7 +454,21 @@ class UnifiedEmployeeScraper:
                 employee.human_name = name.strip()
                 self.logger.info(f"    Using directory name: {name}")
             
+            # Wait for the page content to load (education section specifically)
+            try:
+                await self.page.wait_for_selector('[data-kagridname="employeeDegrees"]', timeout=10000)
+                self.logger.info("    Education section loaded")
+            except Exception as e:
+                self.logger.info(f"    Education section not found or timeout: {e}")
+                # Try waiting for any education-related element
+                try:
+                    await self.page.wait_for_selector('h1:has-text("Education")', timeout=5000)
+                    self.logger.info("    Education H1 found")
+                except:
+                    self.logger.info("    No education section found")
+            
             # Extract comprehensive data
+            self.logger.info("    Starting comprehensive data extraction...")
             comprehensive_data = await self.page.evaluate("""
                 () => {
                     const data = {};
@@ -461,113 +499,346 @@ class UnifiedEmployeeScraper:
                         if (text) data.memberships.push(text);
                     });
                     
-                    // Education - find education section using the actual HTML structure
+                    // Education - use the correct selectors based on actual HTML structure
                     data.education = [];
-                    const allH1s = document.querySelectorAll('h1.commonStyledComponents_BlockTitle');
-                    console.log('Found H1 elements:', allH1s.length);
-                    let educationSection = null;
-                    for (let h1 of allH1s) {
-                        console.log('H1 text:', h1.textContent?.trim());
-                        if (h1.textContent?.trim() === 'Education') {
-                            // Find the parent container with EntityFields class
-                            educationSection = h1.closest('.EntityFields');
-                            console.log('Found education section:', educationSection);
-                            break;
-                        }
-                    }
                     
-                    if (educationSection) {
-                        // Look for education data in the EntityFields_InfoFieldValue divs
-                        const educationItems = educationSection.querySelectorAll('[data-kafieldname], .EntityFields_InfoFieldValue');
-                        educationItems.forEach(item => {
-                            const text = item.textContent?.trim();
-                            if (text && (text.includes('University') || text.includes('College') || text.includes('Institute'))) {
-                                // Handle the concatenated text format: "InstitutionDegreeSpecialtyUniversity of MassachusettsUndergraduateArts in Classics"
-                                if (text.includes('InstitutionDegreeSpecialty')) {
-                                    // Split by the pattern and extract the actual data
-                                    const parts = text.split('InstitutionDegreeSpecialty');
+                    // Debug: Check what education-related elements exist
+                    const allDataKagridname = document.querySelectorAll('[data-kagridname]');
+                    data.debug_all_kagridname = Array.from(allDataKagridname).map(el => ({
+                        kagridname: el.getAttribute('data-kagridname'),
+                        text: el.textContent?.trim().substring(0, 100)
+                    }));
+                    
+                    // Find the education section using the data-kagridname attribute
+                    const educationContainer = document.querySelector('[data-kagridname="employeeDegrees"]');
+                    data.debug_education_container_found = !!educationContainer;
+                    
+                    if (educationContainer) {
+                        // Try multiple approaches to find education data
+                        
+                        // Approach 1: Try the old working selectors with various class name patterns
+                        const possibleSelectors = [
+                            '.EntityFields__InfoFieldValue-sc-129sxys-5',
+                            '.EntityFields_InfoFieldValue',
+                            '[class*="InfoFieldValue"]',
+                            '[class*="EntityFields"] [class*="Value"]',
+                            'div[data-kafieldname*="institution"]',
+                            'div[data-kafieldname*="degree"]',
+                            'div[data-kafieldname*="specialty"]'
+                        ];
+                        
+                        let educationRows = [];
+                        let workingSelector = '';
+                        
+                        for (const selector of possibleSelectors) {
+                            educationRows = educationContainer.querySelectorAll(selector);
+                            if (educationRows.length > 0) {
+                                workingSelector = selector;
+                                break;
+                            }
+                        }
+                        
+                        data.debug_education_rows_found = educationRows.length;
+                        data.debug_working_selector = workingSelector;
+                        
+                        if (educationRows.length > 0) {
+                            // Group by rows of 3 (institution, degree, specialty) - same as old scraper
+                            for (let i = 0; i < educationRows.length; i += 3) {
+                                if (i + 2 < educationRows.length) {
+                                    const institution = educationRows[i].textContent?.trim() || '';
+                                    const degree = educationRows[i + 1].textContent?.trim() || '';
+                                    const specialty = educationRows[i + 2].textContent?.trim() || '';
+                                    
+                                    if (institution) {
+                            data.education.push({
+                                            'institution': institution,
+                                            'degree': degree || 'Unknown',
+                                            'specialty': specialty || 'Unknown'
+                                        });
+                                    }
+                                }
+                            }
+                        } else {
+                            // Approach 2: Try data-kafieldname selectors (like the old scraper)
+                            const institutionEl = educationContainer.querySelector('[data-kafieldname="employeeDegrees|institution"]');
+                            const degreeEl = educationContainer.querySelector('[data-kafieldname="employeeDegrees|degree"]');
+                            const specialtyEl = educationContainer.querySelector('[data-kafieldname="employeeDegrees|specialty"]');
+                            
+                            data.debug_institution_found = !!institutionEl;
+                            data.debug_degree_found = !!degreeEl;
+                            data.debug_specialty_found = !!specialtyEl;
+                            
+                            if (institutionEl && degreeEl && specialtyEl) {
+                                const institution = institutionEl.textContent?.trim() || '';
+                                const degree = degreeEl.textContent?.trim() || '';
+                                const specialty = specialtyEl.textContent?.trim() || '';
+                                
+                                if (institution) {
+                                    data.education.push({
+                                        'institution': institution,
+                                        'degree': degree || 'Unknown',
+                                        'specialty': specialty || 'Unknown'
+                                    });
+                                }
+                            } else {
+                                // Approach 3: Fallback - parse the concatenated text directly from the container
+                                const containerText = educationContainer.textContent?.trim() || '';
+                                data.debug_container_text = containerText.substring(0, 200);
+                                
+                                // Parse the concatenated format: "InstitutionDegreeSpecialtyUniversity of MassachusettsUndergraduateArts in Classics/Minor in Arabic Studies"
+                                if (containerText.includes('InstitutionDegreeSpecialty')) {
+                                    const parts = containerText.split('InstitutionDegreeSpecialty');
                                     if (parts.length > 1) {
                                         const educationText = parts[1];
+                                        
                                         // Look for University/College/Institute followed by degree
                                         const institutionMatch = educationText.match(/([A-Za-z\\s&]+University|[A-Za-z\\s&]+College|[A-Za-z\\s&]+Institute)/);
                                         const degreeMatch = educationText.match(/(Undergraduate|Graduate|Bachelor|Master|PhD|Doctorate|Associate)/i);
+                                        
                                         if (institutionMatch) {
                                             const specialty = educationText.replace(institutionMatch[1], '').replace(degreeMatch ? degreeMatch[1] : '', '').trim();
                                             data.education.push({
                                                 'institution': institutionMatch[1].trim(),
                                                 'degree': degreeMatch ? degreeMatch[1].trim() : 'Unknown',
-                                                'specialty': specialty
+                                                'specialty': specialty || 'Unknown'
                                             });
                                         }
                                     }
-                                } else {
-                                    // Handle normal format
-                                    const institutionMatch = text.match(/([A-Za-z\\s&]+University|[A-Za-z\\s&]+College|[A-Za-z\\s&]+Institute)/);
-                                    const degreeMatch = text.match(/(Undergraduate|Graduate|Bachelor|Master|PhD|Doctorate|Associate)/i);
-                                    if (institutionMatch) {
-                                        data.education.push({
-                                            'institution': institutionMatch[1].trim(),
-                                            'degree': degreeMatch ? degreeMatch[1].trim() : 'Unknown',
-                                            'specialty': text.replace(institutionMatch[1], '').replace(degreeMatch ? degreeMatch[1] : '', '').trim()
-                                        });
-                                    }
                                 }
                             }
-                        });
-                    }
-                    
-                    // Licenses and registrations - find licenses section using the actual HTML structure
-                    data.licenses = [];
-                    const allH1sForLicenses = document.querySelectorAll('h1.commonStyledComponents_BlockTitle');
-                    let licensesSection = null;
-                    for (let h1 of allH1sForLicenses) {
-                        if (h1.textContent?.trim().includes('License')) {
-                            // Find the parent container with EntityFields class
-                            licensesSection = h1.closest('.EntityFields');
-                            break;
+                        }
+                    } else {
+                        // Fallback: look for any education-related elements
+                        const educationH1 = document.querySelector('h1:has-text("Education")');
+                        data.debug_education_h1_found = !!educationH1;
+                        
+                        if (educationH1) {
+                            const parentSection = educationH1.closest('.EntityFields');
+                            data.debug_education_parent_found = !!parentSection;
+                            
+                            if (parentSection) {
+                                const allText = parentSection.textContent?.trim() || '';
+                                data.debug_education_text = allText.substring(0, 500);
+                            }
                         }
                     }
                     
-                    if (licensesSection) {
-                        // Look for license data in the EntityFields_InfoFieldValue divs
-                        const licenseItems = licensesSection.querySelectorAll('[data-kafieldname], .EntityFields_InfoFieldValue');
-                        licenseItems.forEach(item => {
-                            const text = item.textContent?.trim();
-                            if (text && text.length > 3 && !text.includes('License') && !text.includes('State') && !text.includes('Number')) {
-                                data.licenses.push({
-                                    'name': text,
-                                    'number': '',
-                                    'state': '',
-                                    'expiry': ''
+                    // Licenses and registrations - handle multiple employeeRegistrations|stateRegistered classes
+                    data.licenses = [];
+                    
+                    // Look for all license containers using multiple selectors
+                    const licenseContainers = document.querySelectorAll('[data-kagridname="employeeRegistrations"], [data-kagridname="stateRegistered"], .employeeRegistrations, .stateRegistered');
+                    data.debug_licenses_container_found = licenseContainers.length > 0;
+                    data.debug_licenses_containers_count = licenseContainers.length;
+                    
+                    licenseContainers.forEach((container, containerIndex) => {
+                        // Try multiple approaches to extract license data
+                        const approaches = [
+                            // Approach 1: Look for field value elements and group by rows of 4
+                            () => {
+                                const licenseRows = container.querySelectorAll('.EntityFields__InfoFieldValue-sc-129sxys-5, .EntityFields_InfoFieldValue, [class*="InfoFieldValue"]');
+                                const licenses = [];
+                                for (let i = 0; i < licenseRows.length; i += 4) {
+                                    if (i + 3 < licenseRows.length) {
+                                        const licenseName = licenseRows[i].textContent?.trim() || '';
+                                        const state = licenseRows[i + 1].textContent?.trim() || '';
+                                        const number = licenseRows[i + 2].textContent?.trim() || '';
+                                        const earned = licenseRows[i + 3].textContent?.trim() || '';
+                                        
+                                        if (licenseName) {
+                                            licenses.push({
+                                                'license': licenseName,
+                                                'state': state || '',
+                                                'number': number || '',
+                                                'earned': earned || '',
+                                                'source': `container_${containerIndex + 1}_approach_1`
+                                            });
+                                        }
+                                    }
+                                }
+                                return licenses;
+                            },
+                            // Approach 2: Look for data-kafieldname attributes
+                            () => {
+                                const licenses = [];
+                                const licenseFields = container.querySelectorAll('[data-kafieldname*="license"], [data-kafieldname*="registration"], [data-kafieldname*="state"]');
+                                const fieldGroups = {};
+                                
+                                licenseFields.forEach(field => {
+                                    const fieldName = field.getAttribute('data-kafieldname') || '';
+                                    const fieldValue = field.textContent?.trim() || '';
+                                    
+                                    if (fieldValue) {
+                                        // Group fields by their row index or parent
+                                        const rowKey = field.closest('tr, .row, [class*="Row"]')?.textContent || 'default';
+                                        if (!fieldGroups[rowKey]) {
+                                            fieldGroups[rowKey] = {};
+                                        }
+                                        
+                                        if (fieldName.includes('license') || fieldName.includes('registration')) {
+                                            fieldGroups[rowKey].license = fieldValue;
+                                        } else if (fieldName.includes('state')) {
+                                            fieldGroups[rowKey].state = fieldValue;
+                                        } else if (fieldName.includes('number')) {
+                                            fieldGroups[rowKey].number = fieldValue;
+                                        } else if (fieldName.includes('earned') || fieldName.includes('date')) {
+                                            fieldGroups[rowKey].earned = fieldValue;
+                                        }
+                                    }
                                 });
+                                
+                                Object.values(fieldGroups).forEach(license => {
+                                    if (license.license) {
+                                        licenses.push({
+                                            'license': license.license,
+                                            'state': license.state || '',
+                                            'number': license.number || '',
+                                            'earned': license.earned || '',
+                                            'source': `container_${containerIndex + 1}_approach_2`
+                                        });
+                                    }
+                                });
+                                
+                                return licenses;
+                            },
+                            // Approach 3: Look for table rows or grid items
+                            () => {
+                                const licenses = [];
+                                const rows = container.querySelectorAll('tr, .row, [class*="Row"], [class*="GridItem"]');
+                                
+                                rows.forEach(row => {
+                                    const cells = row.querySelectorAll('td, .cell, [class*="Cell"], [class*="Field"]');
+                                    if (cells.length >= 2) {
+                                        const licenseName = cells[0]?.textContent?.trim() || '';
+                                        const state = cells[1]?.textContent?.trim() || '';
+                                        const number = cells[2]?.textContent?.trim() || '';
+                                        const earned = cells[3]?.textContent?.trim() || '';
+                                        
+                                        if (licenseName && licenseName.length > 1) {
+                                            licenses.push({
+                                                'license': licenseName,
+                                                'state': state || '',
+                                                'number': number || '',
+                                                'earned': earned || '',
+                                                'source': `container_${containerIndex + 1}_approach_3`
+                                            });
+                                        }
+                                    }
+                                });
+                                
+                                return licenses;
+                            }
+                        ];
+                        
+                        // Try each approach and collect results
+                        approaches.forEach((approach, approachIndex) => {
+                            try {
+                                const approachLicenses = approach();
+                                if (approachLicenses.length > 0) {
+                                    data.licenses.push(...approachLicenses);
+                                }
+                            } catch (e) {
+                                console.log(`Approach ${approachIndex + 1} failed for container ${containerIndex + 1}:`, e);
                             }
                         });
+                    });
+                    
+                    // Remove duplicates based on license name and state
+                    const uniqueLicenses = [];
+                    const seen = new Set();
+                    
+                    data.licenses.forEach(license => {
+                        const key = `${license.license}_${license.state}`.toLowerCase();
+                        if (!seen.has(key)) {
+                            seen.add(key);
+                            uniqueLicenses.push(license);
+                        }
+                    });
+                    
+                    data.licenses = uniqueLicenses;
+                    data.debug_licenses_rows_found = data.licenses.length;
+                    
+                    // Fallback: look for any section with "License" in the title
+                    if (data.licenses.length === 0) {
+                        const allH1sForLicenses = document.querySelectorAll('h1.commonStyledComponents_BlockTitle');
+                        let licensesSection = null;
+                        for (let h1 of allH1sForLicenses) {
+                            if (h1.textContent?.trim().includes('License')) {
+                                licensesSection = h1.closest('.EntityFields');
+                                break;
+                            }
+                        }
+                        
+                        if (licensesSection) {
+                            const licenseItems = licensesSection.querySelectorAll('.EntityFields_InfoFieldValue');
+                            licenseItems.forEach(item => {
+                                const text = item.textContent?.trim();
+                                if (text && text.length > 3 && !text.includes('License') && !text.includes('State') && !text.includes('Number')) {
+                            data.licenses.push({
+                                        'license': text,
+                                        'state': '',
+                                        'number': '',
+                                        'earned': ''
+                            });
+                        }
+                    });
+                        }
                     }
                     
-                    // Projects - look for project links and related elements
-                    data.projects = [];
-                    const projectElements = document.querySelectorAll('a[href*="/project/"], .project-item, .work-item, .portfolio-item, [data-project]');
-                    projectElements.forEach(el => {
-                        const link = el.querySelector('a[href*="/project/"]') || el;
-                        const href = link.href || '';
-                        const name = el.querySelector('.name, .title, .project-name, h3, h4')?.textContent?.trim() || 
-                                    link.textContent?.trim() || '';
-                        const description = el.querySelector('.description, .summary, .project-description')?.textContent?.trim() || '';
-                        const role = el.querySelector('.role, .position, .project-role')?.textContent?.trim() || '';
-                        const year = el.querySelector('.year, .date, .project-year')?.textContent?.trim() || '';
-                        const client = el.querySelector('.client, .project-client')?.textContent?.trim() || '';
-                        const number = el.querySelector('.number, .project-number')?.textContent?.trim() || '';
-                        
-                        if (name && href.includes('/project/')) {
-                            data.projects.push({
+                    // Projects - extract from both locations as dictionary
+                    data.projects = {};
+                    
+                    // Place 1: Direct project links under gridViewStyles__Field-sc-ipm8x5-22 bmVZMs field bold
+                    const directProjectElements = document.querySelectorAll('.gridViewStyles__Field-sc-ipm8x5-22.bmVZMs.field.bold a[href*="/project/"]');
+                    directProjectElements.forEach(el => {
+                        const name = el.textContent?.trim();
+                        const url = el.href;
+                        if (name && url && name.length > 1) {
+                            const projectKey = `proj_${Object.keys(data.projects).length + 1}`;
+                            data.projects[projectKey] = {
                                 'name': name,
-                                'description': description,
-                                'role': role,
-                                'year': year,
-                                'client': client,
-                                'number': number,
-                                'url': href
-                            });
+                                'description': '',
+                                'role': '',
+                                'year': '',
+                                'client': '',
+                                'number': '',
+                                'url': url,
+                                'source': 'direct'
+                            };
+                        }
+                    });
+                    
+                    // Place 2: Check for "Show All" button and navigate to detailed project table
+                    const showAllButton = document.querySelector('.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill');
+                    if (showAllButton && showAllButton.textContent?.trim().includes('Show All')) {
+                        data.debug_show_all_found = true;
+                        // Note: We'll handle the navigation to detailed project page in Python
+                        // For now, just mark that we found the Show All button
+                    } else {
+                        data.debug_show_all_found = false;
+                    }
+                    
+                    // Fallback: Look for other project links
+                    const fallbackProjectElements = document.querySelectorAll('a[href*="/project/"]:not(.gridViewStyles__Field-sc-ipm8x5-22.bmVZMs.field.bold a)');
+                    fallbackProjectElements.forEach(el => {
+                        const name = el.textContent?.trim();
+                        const url = el.href;
+                        if (name && url && name.length > 1) {
+                            // Check if we already have this project by URL
+                            const existingProject = Object.values(data.projects).find(p => p.url === url);
+                            if (!existingProject) {
+                                const projectKey = `proj_${Object.keys(data.projects).length + 1}`;
+                                data.projects[projectKey] = {
+                                    'name': name,
+                                    'description': '',
+                                    'role': '',
+                                    'year': '',
+                                    'client': '',
+                                    'number': '',
+                                    'url': url,
+                                    'source': 'fallback'
+                                };
+                            }
                         }
                     });
                     
@@ -590,6 +861,9 @@ class UnifiedEmployeeScraper:
                     return data;
                 }
             """)
+            
+            self.logger.info(f"    Comprehensive data extracted: {len(comprehensive_data)} fields")
+            self.logger.info(f"    Education debug fields: {[k for k in comprehensive_data.keys() if 'debug' in k]}")
             
             # Update employee with comprehensive data
             if comprehensive_data.get('mobile'):
@@ -617,24 +891,193 @@ class UnifiedEmployeeScraper:
             if comprehensive_data.get('recent_posts'):
                 employee.recent_posts = comprehensive_data['recent_posts']
             
-            # Capture preview image if enabled (avoid auth issues with full-resolution downloads)
-            if self.download_images and self.image_downloader:
+            # Add debug fields temporarily for troubleshooting
+            if comprehensive_data.get('debug_all_kagridname'):
+                employee.debug_all_kagridname = comprehensive_data['debug_all_kagridname']
+            if comprehensive_data.get('debug_education_container_found') is not None:
+                employee.debug_education_container_found = comprehensive_data['debug_education_container_found']
+            if comprehensive_data.get('debug_grid_container_found') is not None:
+                employee.debug_grid_container_found = comprehensive_data['debug_grid_container_found']
+            if comprehensive_data.get('debug_institution_found') is not None:
+                employee.debug_institution_found = comprehensive_data['debug_institution_found']
+            if comprehensive_data.get('debug_degree_found') is not None:
+                employee.debug_degree_found = comprehensive_data['debug_degree_found']
+            if comprehensive_data.get('debug_specialty_found') is not None:
+                employee.debug_specialty_found = comprehensive_data['debug_specialty_found']
+            if comprehensive_data.get('debug_education_h1_found') is not None:
+                employee.debug_education_h1_found = comprehensive_data['debug_education_h1_found']
+            if comprehensive_data.get('debug_education_parent_found') is not None:
+                employee.debug_education_parent_found = comprehensive_data['debug_education_parent_found']
+            if comprehensive_data.get('debug_education_text'):
+                employee.debug_education_text = comprehensive_data['debug_education_text']
+            
+            # Handle "Show All" projects button if found
+            if comprehensive_data.get('debug_show_all_found'):
                 try:
-                    local_path = await self.image_downloader.capture_preview_image(
-                        self.page, 
+                    self.logger.info(f"    Found 'Show All' projects button for {name}, navigating to detailed project table...")
+                    
+                    # Click the "Show All" button
+                    show_all_button = await self.page.query_selector('.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill')
+                    if show_all_button:
+                        await show_all_button.click()
+                        await self.page.wait_for_load_state('networkidle')
+                        
+                        # Extract projects from the detailed table
+                        detailed_projects = await self.page.evaluate("""
+                            () => {
+                                const projects = {};
+                                const tableCells = document.querySelectorAll('.tableViewStyles__StyledCell-sc-nfq3ae-1.hZvVqM.styledTableCell');
+                                
+                                tableCells.forEach(cell => {
+                                    const projectLink = cell.querySelector('a[href*="/project/"]');
+                                    if (projectLink) {
+                                        const name = projectLink.textContent?.trim();
+                                        const url = projectLink.href;
+                                        if (name && url && name.length > 1) {
+                                            const projectKey = `proj_${Object.keys(projects).length + 1}`;
+                                            projects[projectKey] = {
+                                                'name': name,
+                                                'description': '',
+                                                'role': '',
+                                                'year': '',
+                                                'client': '',
+                                                'number': '',
+                                                'url': url,
+                                                'source': 'detailed_table'
+                                            };
+                                        }
+                                    }
+                                });
+                                
+                                return projects;
+                            }
+                        """)
+                        
+                        # Add detailed projects to existing projects (avoid duplicates)
+                        for project_key, detailed_project in detailed_projects.items():
+                            # Check if we already have this project by URL
+                            existing_project = next((p for p in employee.projects.values() if p['url'] == detailed_project['url']), None)
+                            if not existing_project:
+                                employee.projects[project_key] = detailed_project
+                        
+                        self.logger.info(f"    Found {len(detailed_projects)} additional projects from detailed table")
+                        
+                        # Navigate back to the profile page
+                        await self.page.go_back()
+                        await self.page.wait_for_load_state('networkidle')
+                        
+                except Exception as e:
+                    self.logger.warning(f"    Failed to extract detailed projects for {name}: {e}")
+            
+            # Download the actual profile image using the extracted image URL
+            if self.download_images and self.image_downloader and employee.image_url:
+                try:
+                    local_path = await self.image_downloader.download_image(
+                        employee.image_url, 
                         name,
-                        image_selector='img[src*="/api/image/"]:not([src*="favicon"]):not([src*="logo"]):not([src*="icon"])'
+                        self.page  # Pass page for authenticated requests
                     )
                     if local_path:
                         employee.image_local_path = local_path
+                        self.logger.info(f"Downloaded profile image for {name}: {local_path}")
+                    else:
+                        # Fallback to screenshot if download fails
+                        local_path = await self.image_downloader.capture_preview_image(
+                            self.page, 
+                            name,
+                            image_selector='img[src*="/api/image/"]:not([src*="favicon"]):not([src*="logo"]):not([src*="icon"])'
+                        )
+                        if local_path:
+                            employee.image_local_path = local_path
+                            self.logger.info(f"Captured preview image for {name}: {local_path}")
                 except Exception as e:
-                    self.logger.warning(f"Failed to capture preview image for {name}: {e}")
+                    self.logger.error(f"Failed to download image for {name}: {e}")
+            
+            # Print detailed extracted data in blue after comprehensive extraction
+            self._print_extracted_data(employee, name)
             
             return employee
             
         except Exception as e:
             self.logger.error(f"[ERROR] Error scraping comprehensive profile {profile_url}: {e}")
             return None
+    
+    def _print_extracted_data(self, employee: EmployeeData, name: str):
+        """Print detailed extracted data in blue color"""
+        print(f"\n🔵 DETAILED EXTRACTED DATA FOR {name.upper()}:")
+        print(f"🔵 {'='*60}")
+        
+        # Basic Information
+        print(f"🔵 📋 BASIC INFORMATION:")
+        print(f"🔵   • Name: {employee.human_name}")
+        print(f"🔵   • Position: {employee.position}")
+        print(f"🔵   • Department: {employee.department}")
+        print(f"🔵   • Years with Firm: {employee.years_with_firm}")
+        print(f"🔵   • Office Location: {employee.office_location}")
+        
+        # Contact Information
+        print(f"🔵 📞 CONTACT INFORMATION:")
+        print(f"🔵   • Email: {employee.email}")
+        print(f"🔵   • Phone: {employee.phone}")
+        print(f"🔵   • Mobile: {employee.mobile}")
+        print(f"🔵   • Teams URL: {employee.teams_url}")
+        print(f"🔵   • LinkedIn URL: {employee.linkedin_url}")
+        print(f"🔵   • Website URL: {employee.website_url}")
+        
+        # Bio and Personal Information
+        print(f"🔵 📝 BIO & PERSONAL:")
+        bio_preview = employee.bio[:100] + "..." if employee.bio and len(employee.bio) > 100 else employee.bio
+        print(f"🔵   • Bio: {bio_preview}")
+        print(f"🔵   • Seat Assignment: {employee.seat_assignment}")
+        print(f"🔵   • Computer: {employee.computer}")
+        
+        # Education
+        print(f"🔵 🎓 EDUCATION:")
+        if employee.education:
+            for i, edu in enumerate(employee.education, 1):
+                print(f"🔵   • Education {i}: {edu.get('institution', 'N/A')} - {edu.get('degree', 'N/A')} - {edu.get('specialty', 'N/A')}")
+        else:
+            print(f"🔵   • No education data found")
+        
+        # Licenses
+        print(f"🔵 📜 LICENSES:")
+        if employee.licenses:
+            for i, license in enumerate(employee.licenses, 1):
+                print(f"🔵   • License {i}: {license.get('license', 'N/A')} - {license.get('state', 'N/A')} - {license.get('number', 'N/A')}")
+        else:
+            print(f"🔵   • No licenses data found")
+        
+        # Projects
+        print(f"🔵 🏗️ PROJECTS:")
+        if employee.projects:
+            project_items = list(employee.projects.items())
+            for i, (project_key, project) in enumerate(project_items[:3], 1):  # Show first 3 projects
+                source_info = f" ({project.get('source', 'unknown')})" if project.get('source') else ""
+                print(f"🔵   • Project {i}: {project.get('name', 'N/A')} - {project.get('role', 'N/A')}{source_info}")
+            if len(project_items) > 3:
+                print(f"🔵   • ... and {len(project_items) - 3} more projects")
+        else:
+            print(f"🔵   • No projects data found")
+        
+        # Memberships
+        print(f"🔵 👥 MEMBERSHIPS:")
+        if employee.memberships:
+            for i, membership in enumerate(employee.memberships, 1):
+                print(f"🔵   • Membership {i}: {membership}")
+        else:
+            print(f"🔵   • No memberships data found")
+        
+        # Image Information
+        print(f"🔵 🖼️ IMAGE INFORMATION:")
+        print(f"🔵   • Image URL: {employee.image_url}")
+        print(f"🔵   • Local Image Path: {employee.image_local_path}")
+        
+        # Profile Information
+        print(f"🔵 🔗 PROFILE INFORMATION:")
+        print(f"🔵   • Profile URL: {employee.profile_url}")
+        print(f"🔵   • Scraped At: {employee.scraped_at}")
+        
+        print(f"🔵 {'='*60}\n")
     
     def _normalize_office_location(self, location: str) -> str:
         """Normalize office location names to standard format"""

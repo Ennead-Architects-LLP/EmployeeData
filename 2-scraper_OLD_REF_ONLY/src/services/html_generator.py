@@ -230,7 +230,7 @@ class HTMLReportGenerator:
         
         # Handle image - prefer local image, fallback to remote URL with error handling
         image_html = ""
-        employee_name = employee.get("human_name", "Employee")
+        employee_name = employee.get("real_name", "Employee")
         
         if employee.get('image_local_path'):
             # Use local downloaded image
@@ -336,7 +336,7 @@ class HTMLReportGenerator:
         
         # Create searchable data attributes
         searchable_data = []
-        searchable_data.append(employee.get('human_name', ''))
+        searchable_data.append(employee.get('real_name', ''))
         searchable_data.append(employee.get('position', ''))
         searchable_data.append(employee.get('department', ''))
         searchable_data.append(employee.get('computer', ''))
@@ -372,7 +372,7 @@ class HTMLReportGenerator:
             <div class="card-header">
                 {image_html}
                 <div class="employee-info">
-                    <h3 class="employee-name">{employee.get('human_name', 'Unknown')}</h3>
+                    <h3 class="employee-name">{employee.get('real_name', 'Unknown')}</h3>
                     <div class="employee-position">{employee.get('position', 'Position not specified')}</div>
                     {f'<div class="employee-department">{employee["department"]}</div>' if employee.get('department') else ''}
                 </div>
