@@ -1,0 +1,11 @@
+# ===============================================
+# 3-ABOUTME: Computer Information Collector Dependencies
+# ===============================================
+# This module collects system information from computers
+# and generates executable files for data collection
+psutil>=5.9.0
+wmi>=1.5.0
+requests>=2.31.0
+pyinstaller>=6.0.0
+pywin32>=306
+Pillow>=10.0.0

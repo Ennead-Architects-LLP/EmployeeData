@@ -1,0 +1,13 @@
+# ===============================================
+# 5-WORKFILES: Data Processing Utilities Dependencies
+# ===============================================
+# This module contains utilities for processing Excel files,
+# merging data, and performing fuzzy matching operations
+
+# Data processing and Excel file handling
+pandas>=1.3.0
+openpyxl>=3.0.0
+
+# Fuzzy string matching for data merging
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.12.0

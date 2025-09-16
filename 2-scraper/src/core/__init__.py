@@ -16,12 +16,12 @@ def get_models():
     return EmployeeData
 
 def get_scraper():
-    from .simple_scraper import SimpleEmployeeScraper as EmployeeScraper
+    from .unified_scraper import UnifiedEmployeeScraper as EmployeeScraper
     return EmployeeScraper
 
 def get_orchestrator():
-    from .orchestrator import Orchestrator
-    return Orchestrator
+    from .orchestrator import ScraperOrchestrator
+    return ScraperOrchestrator
 
 def get_data_merger():
     from .data_merger import DataMerger

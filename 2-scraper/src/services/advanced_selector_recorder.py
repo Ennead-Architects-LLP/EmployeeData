@@ -14,15 +14,19 @@ from playwright.async_api import async_playwright
 
 class AdvancedSelectorRecorder:
     def __init__(self):
+        self.playwright = None
         self.browser = None
         self.page = None
-        self.capture_dir = "../../debug/dom_captures"
+        # Set correct path to debug directory (3 levels up from services)
+        from pathlib import Path
+        project_root = Path(__file__).parent.parent.parent.parent
+        self.capture_dir = str(project_root / "debug" / "dom_captures")
         self.employee_url = "https://ei.ennead.com/employee-directory"
         
     async def start_browser(self):
         """Start browser with debugging options"""
-        playwright = await async_playwright().start()
-        self.browser = await playwright.chromium.launch(
+        self.playwright = await async_playwright().start()
+        self.browser = await self.playwright.chromium.launch(
             headless=False,  # Keep visible for debugging
             slow_mo=500,     # Slow down for observation
             devtools=True    # Open dev tools
@@ -275,10 +279,13 @@ class AdvancedSelectorRecorder:
         return employee_data
     
     async def close_browser(self):
-        """Close browser"""
+        """Close browser and playwright"""
         if self.browser:
             await self.browser.close()
             print("🔒 Browser closed")
+        if self.playwright:
+            await self.playwright.stop()
+            print("🔒 Playwright stopped")
 
 
 async def main():

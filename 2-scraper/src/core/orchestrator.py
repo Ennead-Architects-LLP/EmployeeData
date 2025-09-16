@@ -3,10 +3,9 @@ import asyncio
 from typing import Optional
 
 from ..config.settings import ScraperConfig
-from .complete_scraper import CompleteScraper
-from ..services.voice_announcer import voice_announcer
+from .unified_scraper import UnifiedEmployeeScraper
 
-class Orchestrator:
+class ScraperOrchestrator:
     def __init__(self, config: Optional[ScraperConfig] = None, use_parallel: bool = False, max_workers: int = 1):
         self.config = config or ScraperConfig.from_env()
         self.logger = logging.getLogger(__name__)
@@ -14,51 +13,84 @@ class Orchestrator:
         self.use_parallel = False
         self.max_workers = 1
 
-    async def run(self) -> str:
-        self.logger.info("[START] Starting orchestrator")
+    async def run(self) -> bool:
+        """Run the scraper to collect employee data and save JSON files"""
+        self.logger.info("[START] Starting scraper orchestrator")
         self.config.setup_directories()
 
-        # Start timing for voice announcement
-        voice_announcer.start_timing()
-
-        scraper = CompleteScraper(self.config)
-
         try:
-            # Step 1: Scrape employees (sequential only for stability)
-            self.logger.info("[STEP 1] Scraping employees with incremental saving...")
-            employees = await scraper.scrape_all_employees_incremental()
+            # Step 1: Scrape employees
+            self.logger.info("[STEP 1] Scraping employees...")
+            async with UnifiedEmployeeScraper(
+                base_url=self.config.BASE_URL,
+                download_images=self.config.DOWNLOAD_IMAGES,
+                headless=self.config.HEADLESS,
+                timeout=self.config.TIMEOUT,
+                config=self.config
+            ) as scraper:
+                employees = await scraper.scrape_all_employees()
+            
             if not employees:
                 self.logger.error("[ERROR] No employees scraped. Aborting.")
-                voice_announcer.announce_error("No employees were scraped")
-                return ""
+                return False
             
-            # Step 1.5: Verify all research tasks are completed
-            self.logger.info("[STEP 1.5] Verifying task completion...")
-            verification_results = await scraper.verify_all_tasks_completed(140, employees)  # Expected 140 employees
-            if not verification_results['all_tasks_completed']:
-                self.logger.warning("[WARNING] Not all research tasks completed successfully")
-                voice_announcer.announce_error(f"Only {verification_results['completion_rate']:.1f}% of tasks completed")
-                # Continue anyway, but log the issues
+            # Individual JSON files are now saved by the scraper as it goes
+            # Only save the combined JSON file for backward compatibility
+            self.logger.info("[STEP 2] Saving combined JSON file...")
+            combined_path = await self._save_combined_employees(employees)
+            self.logger.info(f"[SUCCESS] Saved combined JSON to {combined_path}")
 
-            # Step 2: Save JSON without timeout
-            self.logger.info("[STEP 2] Saving JSON...")
-            json_path = await asyncio.to_thread(scraper.save_to_json, employees)
-            self.logger.info(f"[SUCCESS] Saved JSON to {json_path}")
-
-            # Step 3: Generate HTML without timeout
-            self.logger.info("[STEP 3] Generating HTML...")
-            html_path = await asyncio.to_thread(scraper.generate_html_report, json_path)
-            self.logger.info(f"[SUCCESS] Generated HTML at {html_path}")
-
-            # Step 4: Voice announcement - Independent step as requested
-            self.logger.info("[STEP 4] Voice announcement...")
-            employee_count = len(employees)
-            voice_announcer.announce_completion(employee_count)
-            self.logger.info(f"[SUCCESS] Voice announcement completed for {employee_count} employees")
-
-            return html_path
+            self.logger.info(f"[SUCCESS] Scraper completed successfully - {len(employees)} employees processed")
+            self.logger.info(f"[INFO] Individual JSON files saved to: docs/assets/individual_employees/")
+            return True
             
         except Exception as e:
-            self.logger.error(f"[ERROR] Orchestrator failed: {e}")
-            voice_announcer.announce_error(f"Pipeline failed: {str(e)}")
-            return ""
+            self.logger.error(f"[ERROR] Scraper failed: {e}")
+            return False
+    
+    async def _save_individual_employees(self, employees) -> int:
+        """Save each employee as individual JSON file"""
+        # Set output paths - always use docs folder relative to project root
+        from pathlib import Path
+        project_root = Path(__file__).parent.parent.parent.parent
+        output_path = project_root / "docs" / "assets"
+        individual_employees_dir = output_path / "individual_employees"
+        individual_employees_dir.mkdir(parents=True, exist_ok=True)
+        
+        saved_count = 0
+        for employee in employees:
+            try:
+                employee_name = employee.human_name or "unknown"
+                clean_name = employee_name.replace(' ', '_').replace('/', '_').replace('\\', '_')
+                filename = f"{clean_name}.json"
+                file_path = individual_employees_dir / filename
+                
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    import json
+                    json.dump(employee.to_dict(), f, indent=2, ensure_ascii=False, default=str)
+                
+                saved_count += 1
+                self.logger.debug(f"Saved individual file: {filename}")
+                
+            except Exception as e:
+                self.logger.error(f"Error saving individual file for {employee_name}: {e}")
+        
+        return saved_count
+    
+    async def _save_combined_employees(self, employees) -> str:
+        """Save all employees as combined JSON file"""
+        from pathlib import Path
+        project_root = Path(__file__).parent.parent.parent.parent
+        output_path = project_root / "docs" / "assets"
+        output_path.mkdir(parents=True, exist_ok=True)
+        
+        combined_path = output_path / "employee_files_list.json"
+        
+        # Convert to list of dictionaries
+        employees_data = [emp.to_dict() for emp in employees]
+        
+        with open(combined_path, 'w', encoding='utf-8') as f:
+            import json
+            json.dump(employees_data, f, indent=2, ensure_ascii=False, default=str)
+        
+        return str(combined_path)

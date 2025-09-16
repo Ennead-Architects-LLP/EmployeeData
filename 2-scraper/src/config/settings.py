@@ -21,14 +21,14 @@ class ScraperConfig:
     
     # Download settings
     DOWNLOAD_IMAGES = True
-    IMAGE_DOWNLOAD_DIR = "assets/images"  # Keep in assets for GitHub Pages
+    IMAGE_DOWNLOAD_DIR = "docs/assets/images"  # Keep in docs/assets for GitHub Pages
     MAX_CONCURRENT_DOWNLOADS = 5
     
-    # Output settings
+    # Output settings - use absolute paths relative to project root
     # HTML (index.html) remains at OUTPUT_DIR (repo root)
     OUTPUT_DIR = "."
-    # JSON and individual JSON live under assets/ for GitHub Pages
-    ASSETS_DIR = "assets"
+    # JSON and individual JSON live under docs/assets/ for GitHub Pages
+    ASSETS_DIR = "docs/assets"
     # Debug and logs live under debug/ (can be gitignored)
     DEBUG_DIR = "debug"
     # No longer using compiled JSON file - individual files only
@@ -47,7 +47,7 @@ class ScraperConfig:
     # Logging settings
     LOG_LEVEL = "INFO"
     LOG_FILE = "debug/scraper.log"
-    LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    LOG_FORMAT = "[%(levelname)s] %(message)s"
     
     # User agent (Edge)
     USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0"
