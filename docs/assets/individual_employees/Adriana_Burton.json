@@ -11,8 +11,6 @@
   "position": "Project Coordinator",
   "department": "",
   "years_with_firm": 3,
-  "seat_assignment": null,
-  "computer": null,
   "memberships": [],
   "education": [
     {
@@ -58,26 +56,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Adriana.Burton@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-15T20:52:57.113886",
-  "profile_id": null,
-  "debug_all_kagridname": [
-    {
-      "kagridname": "employeeDegrees",
-      "text": "InstitutionDegreeSpecialtyUniversity of MassachusettsUndergraduateArts in Classics/Minor in Arabic S"
-    }
-  ],
-  "debug_education_container_found": true,
-  "debug_grid_container_found": null,
-  "debug_institution_found": null,
-  "debug_degree_found": null,
-  "debug_specialty_found": null,
-  "debug_education_h1_found": null,
-  "debug_education_parent_found": null,
-  "debug_education_text": null,
-  "debug_container_text": null,
-  "debug_education_rows_found": null,
-  "debug_licenses_rows_found": null,
-  "debug_licenses_containers_count": null,
-  "debug_working_selector": null,
-  "debug_show_all_found": null
+  "scraped_at": "2025-09-15T21:20:44.583083",
+  "profile_id": null
 }

@@ -485,11 +485,7 @@ class UnifiedEmployeeScraper:
                     data.years_with_firm = yearsMatch ? parseInt(yearsMatch[1]) : null;
                     
                     // Seating assignment
-                    data.seat_assignment = document.querySelector('.seat, .desk, .location')?.textContent?.trim() || '';
                     
-                    // Computer information - be more specific to avoid capturing page content
-                    const computerEl = document.querySelector('.computer-info, .machine-info, .device-info, [data-computer]');
-                    data.computer = computerEl ? computerEl.textContent?.trim() : null;
                     
                     // Professional memberships
                     data.memberships = [];
@@ -502,16 +498,9 @@ class UnifiedEmployeeScraper:
                     // Education - use the correct selectors based on actual HTML structure
                     data.education = [];
                     
-                    // Debug: Check what education-related elements exist
-                    const allDataKagridname = document.querySelectorAll('[data-kagridname]');
-                    data.debug_all_kagridname = Array.from(allDataKagridname).map(el => ({
-                        kagridname: el.getAttribute('data-kagridname'),
-                        text: el.textContent?.trim().substring(0, 100)
-                    }));
                     
                     // Find the education section using the data-kagridname attribute
                     const educationContainer = document.querySelector('[data-kagridname="employeeDegrees"]');
-                    data.debug_education_container_found = !!educationContainer;
                     
                     if (educationContainer) {
                         // Try multiple approaches to find education data
@@ -538,8 +527,6 @@ class UnifiedEmployeeScraper:
                             }
                         }
                         
-                        data.debug_education_rows_found = educationRows.length;
-                        data.debug_working_selector = workingSelector;
                         
                         if (educationRows.length > 0) {
                             // Group by rows of 3 (institution, degree, specialty) - same as old scraper
@@ -564,9 +551,6 @@ class UnifiedEmployeeScraper:
                             const degreeEl = educationContainer.querySelector('[data-kafieldname="employeeDegrees|degree"]');
                             const specialtyEl = educationContainer.querySelector('[data-kafieldname="employeeDegrees|specialty"]');
                             
-                            data.debug_institution_found = !!institutionEl;
-                            data.debug_degree_found = !!degreeEl;
-                            data.debug_specialty_found = !!specialtyEl;
                             
                             if (institutionEl && degreeEl && specialtyEl) {
                                 const institution = institutionEl.textContent?.trim() || '';
@@ -583,7 +567,6 @@ class UnifiedEmployeeScraper:
                             } else {
                                 // Approach 3: Fallback - parse the concatenated text directly from the container
                                 const containerText = educationContainer.textContent?.trim() || '';
-                                data.debug_container_text = containerText.substring(0, 200);
                                 
                                 // Parse the concatenated format: "InstitutionDegreeSpecialtyUniversity of MassachusettsUndergraduateArts in Classics/Minor in Arabic Studies"
                                 if (containerText.includes('InstitutionDegreeSpecialty')) {
@@ -610,16 +593,8 @@ class UnifiedEmployeeScraper:
                     } else {
                         // Fallback: look for any education-related elements
                         const educationH1 = document.querySelector('h1:has-text("Education")');
-                        data.debug_education_h1_found = !!educationH1;
-                        
                         if (educationH1) {
                             const parentSection = educationH1.closest('.EntityFields');
-                            data.debug_education_parent_found = !!parentSection;
-                            
-                            if (parentSection) {
-                                const allText = parentSection.textContent?.trim() || '';
-                                data.debug_education_text = allText.substring(0, 500);
-                            }
                         }
                     }
                     
@@ -628,8 +603,6 @@ class UnifiedEmployeeScraper:
                     
                     // Look for all license containers using multiple selectors
                     const licenseContainers = document.querySelectorAll('[data-kagridname="employeeRegistrations"], [data-kagridname="stateRegistered"], .employeeRegistrations, .stateRegistered');
-                    data.debug_licenses_container_found = licenseContainers.length > 0;
-                    data.debug_licenses_containers_count = licenseContainers.length;
                     
                     licenseContainers.forEach((container, containerIndex) => {
                         // Try multiple approaches to extract license data
@@ -756,7 +729,6 @@ class UnifiedEmployeeScraper:
                     });
                     
                     data.licenses = uniqueLicenses;
-                    data.debug_licenses_rows_found = data.licenses.length;
                     
                     // Fallback: look for any section with "License" in the title
                     if (data.licenses.length === 0) {
@@ -811,11 +783,8 @@ class UnifiedEmployeeScraper:
                     // Place 2: Check for "Show All" button and navigate to detailed project table
                     const showAllButton = document.querySelector('.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill');
                     if (showAllButton && showAllButton.textContent?.trim().includes('Show All')) {
-                        data.debug_show_all_found = true;
                         // Note: We'll handle the navigation to detailed project page in Python
                         // For now, just mark that we found the Show All button
-                    } else {
-                        data.debug_show_all_found = false;
                     }
                     
                     // Fallback: Look for other project links
@@ -876,10 +845,6 @@ class UnifiedEmployeeScraper:
                 employee.website_url = comprehensive_data['website_url']
             if comprehensive_data.get('years_with_firm'):
                 employee.years_with_firm = comprehensive_data['years_with_firm']
-            if comprehensive_data.get('seat_assignment'):
-                employee.seat_assignment = comprehensive_data['seat_assignment']
-            if comprehensive_data.get('computer'):
-                employee.computer = comprehensive_data['computer']
             if comprehensive_data.get('memberships'):
                 employee.memberships = comprehensive_data['memberships']
             if comprehensive_data.get('education'):
@@ -891,28 +856,10 @@ class UnifiedEmployeeScraper:
             if comprehensive_data.get('recent_posts'):
                 employee.recent_posts = comprehensive_data['recent_posts']
             
-            # Add debug fields temporarily for troubleshooting
-            if comprehensive_data.get('debug_all_kagridname'):
-                employee.debug_all_kagridname = comprehensive_data['debug_all_kagridname']
-            if comprehensive_data.get('debug_education_container_found') is not None:
-                employee.debug_education_container_found = comprehensive_data['debug_education_container_found']
-            if comprehensive_data.get('debug_grid_container_found') is not None:
-                employee.debug_grid_container_found = comprehensive_data['debug_grid_container_found']
-            if comprehensive_data.get('debug_institution_found') is not None:
-                employee.debug_institution_found = comprehensive_data['debug_institution_found']
-            if comprehensive_data.get('debug_degree_found') is not None:
-                employee.debug_degree_found = comprehensive_data['debug_degree_found']
-            if comprehensive_data.get('debug_specialty_found') is not None:
-                employee.debug_specialty_found = comprehensive_data['debug_specialty_found']
-            if comprehensive_data.get('debug_education_h1_found') is not None:
-                employee.debug_education_h1_found = comprehensive_data['debug_education_h1_found']
-            if comprehensive_data.get('debug_education_parent_found') is not None:
-                employee.debug_education_parent_found = comprehensive_data['debug_education_parent_found']
-            if comprehensive_data.get('debug_education_text'):
-                employee.debug_education_text = comprehensive_data['debug_education_text']
             
             # Handle "Show All" projects button if found
-            if comprehensive_data.get('debug_show_all_found'):
+            show_all_button = await self.page.query_selector('.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill')
+            if show_all_button and await show_all_button.text_content() and 'Show All' in await show_all_button.text_content():
                 try:
                     self.logger.info(f"    Found 'Show All' projects button for {name}, navigating to detailed project table...")
                     
@@ -1028,8 +975,6 @@ class UnifiedEmployeeScraper:
         print(f"🔵 📝 BIO & PERSONAL:")
         bio_preview = employee.bio[:100] + "..." if employee.bio and len(employee.bio) > 100 else employee.bio
         print(f"🔵   • Bio: {bio_preview}")
-        print(f"🔵   • Seat Assignment: {employee.seat_assignment}")
-        print(f"🔵   • Computer: {employee.computer}")
         
         # Education
         print(f"🔵 🎓 EDUCATION:")

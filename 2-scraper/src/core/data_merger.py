@@ -85,9 +85,7 @@ class DataMerger:
         if seat_data.department and (not employee.department or len(seat_data.department) > len(employee.department)):
             employee.department = seat_data.department
         
-        # Add seat assignment
-        if seat_data.seat:
-            employee.seat_assignment = seat_data.seat
+        # Note: seat_assignment field has been removed from EmployeeData model
         
         # Update office location if not already set
         if seat_data.office_location and not employee.office_location:
