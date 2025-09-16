@@ -224,14 +224,7 @@ async def main():
     
     logger = logging.getLogger(__name__)
     
-    # Handle credentials setup
-    if args.setup_credentials:
-        print("Setting up credentials...")
-        if show_credentials_gui():
-            print("Credentials saved successfully!")
-        else:
-            print("Failed to save credentials!")
-            return
+    # Credentials setup via CLI removed in simplified interface
     
     logger.info("Starting Employee Data Scraper")
     logger.info(f"Configuration: headless={config.HEADLESS}, download_images={config.DOWNLOAD_IMAGES}, debug_mode={config.DEBUG_MODE}")
