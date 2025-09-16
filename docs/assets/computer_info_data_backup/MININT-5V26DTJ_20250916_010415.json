@@ -1,0 +1,15 @@
+{
+  "computer_name": "MININT-5V26DTJ",
+  "human_name": "Sen Zhang",
+  "username": "szhang",
+  "cpu": "Intel(R) Core(TM) Ultra 9 285",
+  "os": "Windows 11",
+  "manufacturer": "ASUS",
+  "model": "System Product Name",
+  "gpu_name": "NVIDIA RTX A2000 12GB",
+  "gpu_driver": "31.0.15.3742",
+  "gpu_memory": -1048576,
+  "memory_bytes": 67936788480,
+  "serial_number": "System Serial Number",
+  "server_timestamp": "2025-09-16T01:04:15.128876"
+}
