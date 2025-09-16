@@ -43,8 +43,8 @@ def main():
         scraper_dir = Path(__file__).parent.parent.parent / "2-scraper"
         result = subprocess.run([
             sys.executable, "-m", "src.main",
-            "--headless=true",
-            "--timeout=15000"
+            "--headless",
+            "--timeout=150000"
         ], cwd=scraper_dir, capture_output=True, text=True)
         
         if result.returncode == 0:

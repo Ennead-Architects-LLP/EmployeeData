@@ -66,7 +66,7 @@ jobs:
         echo "Docs directory should be: $(pwd)/../docs"
         python ../.github/scripts/weekly_scraper.py
         
-    # 7) Build the employee file indexes used by the website (writes to docs/)
+    # 7) Build the merged employee data used by the website (writes to docs/)
     - name: Merge all employee JSONs for website
       run: |
         echo "Running .github/scripts/merge_all_data_for_website.py..."
@@ -78,8 +78,8 @@ jobs:
     - name: Verify artifacts generation
       run: |
         echo "=== Verifying JSON artifacts ==="
-        echo "Employee files list:"
-        ls -la docs/assets/employee_files_list.json || echo "❌ employee_files_list.json not found"
+        echo "Merged employees.json:"
+        ls -la docs/assets/employees.json || echo "❌ employees.json not found"
         echo "Individual employee files count:"
         ls docs/assets/individual_employees/*.json | wc -l || echo "❌ No individual employee files found"
         echo ""
@@ -106,7 +106,7 @@ jobs:
       with:
         name: scraper-artifacts-${{ github.run_number }}
         path: |
-          docs/assets/employee_files_list.json
+          docs/assets/employees.json
           docs/assets/individual_employees/
           docs/assets/images/
         retention-days: 30

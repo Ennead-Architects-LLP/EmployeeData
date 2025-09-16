@@ -207,11 +207,11 @@ class UnifiedEmployeeScraper:
                 self.logger.warning("No employee links found")
                 return []
             
-            # Apply debug limit if in debug mode
-            if hasattr(self.config, 'DEBUG_MODE') and self.config.DEBUG_MODE:
-                max_employees = getattr(self.config, 'DEBUG_MAX_EMPLOYEES', 10)
-                employee_links = employee_links[:max_employees]
-                self.logger.info(f"[DEBUG] Limited to {max_employees} employees for debugging")
+            # Apply explicit limit if provided
+            if hasattr(self.config, 'LIMIT') and self.config.LIMIT is not None:
+                limit_count = int(self.config.LIMIT)
+                employee_links = employee_links[:limit_count]
+                self.logger.info(f"[INFO] Limiting to first {limit_count} employees per --limit")
             
             # Scrape each employee
             self.employees = []

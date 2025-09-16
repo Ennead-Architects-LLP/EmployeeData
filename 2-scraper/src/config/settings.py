@@ -39,10 +39,10 @@ class ScraperConfig:
     MAX_RETRIES = 3
     RETRY_DELAY = 2  # seconds
     
-    # Debug settings
-    DEBUG_MODE = False
-    DEBUG_MAX_EMPLOYEES = 10  # Limit number of employees when in debug mode
-    DEBUG_DOM_CAPTURE = True  # Capture DOM for debugging when in debug mode
+    # Runtime flags (configured via CLI)
+    DEBUG_MODE = False  # Only affects logging level when true
+    LIMIT: int | None = None  # Limit how many employees to output when set
+    DOM_CAPTURE = False  # Capture DOM/screenshots when true
     
     # Logging settings
     LOG_LEVEL = "INFO"

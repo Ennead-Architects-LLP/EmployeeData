@@ -181,85 +181,42 @@ async def run_without_timeout(orchestrator: ScraperOrchestrator, config: Scraper
 
 async def main():
     """Main function to run the employee scraper."""
-    parser = argparse.ArgumentParser(description="Scrape employee data from Ennead website (Sequential processing by default)")
-    parser.add_argument("--headless", type=str, default="true", 
-                       help="Run browser in headless mode (true/false)")
-    parser.add_argument("--no-images", action="store_true", 
-                       help="Skip downloading profile images")
-    parser.add_argument("--output", type=str, default="individual_files",
-                       help="Output mode (individual_files only)")
-    parser.add_argument("--timeout", type=int, default=15000,
-                       help="Page load timeout in milliseconds")
-    parser.add_argument("--base-url", type=str, 
-                       default="https://ei.ennead.com/employees/1/all-employees",
-                       help="Base URL of the employee directory")
-    parser.add_argument("--setup-credentials", action="store_true",
-                       help="Setup credentials interactively")
-    # Debug mode options
-    parser.add_argument("--debug", action="store_true",
-                       help="Enable DEBUG mode (limits employees and captures DOM)")
-    parser.add_argument("--debug-employees", type=int, default=3,
-                       help="Number of employees to scrape in debug mode (default: 3)")
-    parser.add_argument("--debug-dom", action="store_true",
-                       help="Capture DOM and screenshots for debugging")
-    parser.add_argument("--debug-no-dom", action="store_true",
-                       help="Disable DOM capturing even in debug mode")
-    parser.add_argument("--debug-help", action="store_true",
-                       help="Show detailed help for debug mode options")
-    parser.add_argument("--cleanup-debug", type=int, nargs='?', const=30, metavar='MAX_FILES',
-                       help="Clean up debug files keeping max files per folder (default: 30)")
+    parser = argparse.ArgumentParser(description="Scrape employee data from Ennead website")
+    # Minimal, mix-and-match flags per project policy
+    parser.add_argument("--headless", action="store_true", help="Run browser headless (no UI)")
+    parser.add_argument("--debug", action="store_true", help="Set logging level to DEBUG")
+    parser.add_argument("--limit", type=int, default=None, help="Limit number of employees to process")
+    parser.add_argument("--dom", action="store_true", help="Capture DOM/screenshots during scraping")
+    # Essentials retained
+    parser.add_argument("--timeout", type=int, default=15000, help="Page load timeout in milliseconds")
+    parser.add_argument("--base-url", type=str, default="https://ei.ennead.com/employees/1/all-employees", help="Base URL of the employee directory")
     # Parallel processing removed - only sequential processing supported for stability
     
     args = parser.parse_args()
     
-    # Show debug help if requested
-    if args.debug_help:
-        print_debug_help()
-        sys.exit(0)
-    
-    # Handle cleanup-only mode
-    if args.cleanup_debug is not None:
-        config = ScraperConfig.from_env()
-        config.setup_directories()
-        max_files = args.cleanup_debug
-        print(f"🧹 Cleaning up debug files, keeping max {max_files} files per folder...")
-        config.cleanup_debug_files(max_files_per_folder=max_files)
-        return
+    # Note: cleanup and debug-help modes removed per simplified CLI policy
     
     # Create configuration
     config = ScraperConfig.from_env()
-    config.HEADLESS = args.headless.lower() == "true"
-    config.DOWNLOAD_IMAGES = not args.no_images
-    config.JSON_FILENAME = args.output
+    config.HEADLESS = args.headless
+    # Images always on by default in simplified CLI
+    config.DOWNLOAD_IMAGES = True
     config.TIMEOUT = args.timeout
     config.BASE_URL = args.base_url
     
-    # Configure debug mode settings
+    # Configure simplified runtime flags
     config.DEBUG_MODE = args.debug
     if args.debug:
-        # Validate debug employee count
-        if args.debug_employees < 1:
-            print("Error: --debug-employees must be at least 1")
-            sys.exit(1)
-        if args.debug_employees > 100:
-            print("Warning: --debug-employees is set to a high value. Consider using a smaller number for faster debugging.")
-        
-        config.DEBUG_MAX_EMPLOYEES = args.debug_employees
-        
-        # DOM capturing logic
-        if args.debug_no_dom:
-            config.DEBUG_DOM_CAPTURE = False
-        elif args.debug_dom:
-            config.DEBUG_DOM_CAPTURE = True
-        # If neither --debug-dom nor --debug-no-dom is specified, use default from config
-        
-        # Validate conflicting options
-        if args.debug_dom and args.debug_no_dom:
-            print("Error: Cannot specify both --debug-dom and --debug-no-dom")
-            sys.exit(1)
+        # Set logging to DEBUG later via setup_logging
+        pass
+    config.LIMIT = args.limit
+    config.DOM_CAPTURE = args.dom
     
     # Setup directories and logging
     config.setup_directories()
+    # Adjust logging level if --debug
+    if args.debug:
+        config.LOG_LEVEL = "DEBUG"
     setup_logging(config)
     
     # Auto cleanup debug files older than 1 day
@@ -281,12 +238,11 @@ async def main():
     logger.info(f"Target URL: {config.BASE_URL}")
     
     if config.DEBUG_MODE:
-        logger.info(f"DEBUG MODE ENABLED: Will limit to {config.DEBUG_MAX_EMPLOYEES} employees and capture DOM")
-        print(f"\nDEBUG MODE ENABLED")
-        print(f"   - Employee limit: {config.DEBUG_MAX_EMPLOYEES}")
-        print(f"   - DOM capturing: {'ON' if config.DEBUG_DOM_CAPTURE else 'OFF'}")
-        print(f"   - Debug output: {config.get_debug_output_path()}")
-        print("="*50)
+        logger.info("DEBUG logging enabled")
+    if config.LIMIT is not None:
+        logger.info(f"Limit set to {config.LIMIT} employees")
+    if config.DOM_CAPTURE:
+        logger.info("DOM capture enabled")
     
     try:
         # Use only sequential processing for stability
