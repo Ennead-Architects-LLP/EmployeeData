@@ -79,10 +79,18 @@ async function tryLoadMergedEmployees() {
         const response = await fetch(url, { signal: AbortSignal.timeout(10000) });
         if (response.ok) {
             const data = await response.json();
+            // Handle both old array format and new dictionary format
             if (Array.isArray(data) && data.length > 0) {
+                // Old format: array of employees
                 allEmployees = data;
                 filteredEmployees = [...allEmployees];
-                console.log(`Loaded ${allEmployees.length} employees from merged file`);
+                console.log(`Loaded ${allEmployees.length} employees from merged file (array format)`);
+                return true;
+            } else if (typeof data === 'object' && data !== null && !Array.isArray(data)) {
+                // New format: dictionary of employees
+                allEmployees = Object.values(data);
+                filteredEmployees = [...allEmployees];
+                console.log(`Loaded ${allEmployees.length} employees from merged file (dictionary format)`);
                 return true;
             }
         } else {
