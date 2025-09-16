@@ -67,11 +67,11 @@ jobs:
         python ../.github/scripts/weekly_scraper.py
         
     # 7) Build the employee file indexes used by the website (writes to docs/)
-    - name: Generate employee files list
+    - name: Merge all employee JSONs for website
       run: |
-        echo "Running .github/scripts/generate_index_for_json.py..."
-        python .github/scripts/generate_index_for_json.py
-        echo "Generated list in docs/assets/:"
+        echo "Running .github/scripts/merge_all_data_for_website.py..."
+        python .github/scripts/merge_all_data_for_website.py
+        echo "Generated merged data in docs/assets/:"
         ls -la docs/assets/*.json || true
         
     # 8) Verify both images and JSON artifacts are properly generated
