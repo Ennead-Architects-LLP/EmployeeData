@@ -238,8 +238,7 @@ async def main():
         logger.info("DOM capture enabled")
     
     try:
-        # Use only sequential processing for stability
-        # Delegate to orchestrator without timeout protection
+        # Sequential processing only
         orchestrator = ScraperOrchestrator(config, use_parallel=False, max_workers=1)
         success = await run_without_timeout(orchestrator, config)
         
@@ -255,10 +254,10 @@ async def main():
             print(f"   Debug directory: {debug_dir}")
             print(f"   DOM captures: {debug_dir / 'dom_captures'}")
             print(f"   Screenshots: {debug_dir / 'screenshots'}")
-            print(f"   JSON output: {config.get_output_path()}")
+     
             # Helpful pointers
             print(f"   Log file: {config.LOG_FILE}")
-            print(f"   Selector report: {debug_dir / 'seating_chart' / 'selector_report.json'}")
+            # Seating chart selector report removed
             print(f"   (Limited to {config.DEBUG_MAX_EMPLOYEES} employees)")
         
         print("="*50)

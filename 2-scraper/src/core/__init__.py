@@ -22,10 +22,7 @@ def get_scraper():
 def get_orchestrator():
     from .orchestrator import ScraperOrchestrator
     return ScraperOrchestrator
-
-def get_data_merger():
-    from .data_merger import DataMerger
-    return DataMerger
+ 
 
 def get_complete_scraper():
     from .complete_scraper import CompleteScraper

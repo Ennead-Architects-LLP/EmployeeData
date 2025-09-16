@@ -342,8 +342,9 @@ class UnifiedEmployeeScraper:
     async def _scrape_employee_basic(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
         """Scrape basic employee data"""
         try:
-            await self.page.goto(profile_url)
-            await self.page.wait_for_load_state('networkidle')
+            if self.page.url != profile_url:
+                await self.page.goto(profile_url)
+                await self.page.wait_for_load_state('networkidle')
             
             # Extract basic data
             employee_data = await self.page.evaluate(f"""
@@ -403,7 +404,7 @@ class UnifiedEmployeeScraper:
                 position=employee_data.get('position'),
                 department=employee_data.get('department'),
                 bio=employee_data.get('bio'),
-                office_location=self._normalize_office_location(employee_data.get('office_location', '')),
+                office_location=employee_data.get('office_location', ''),
                 profile_url=profile_url,
                 image_url=employee_data.get('image_url') or image_url
             )
@@ -870,7 +871,8 @@ class UnifiedEmployeeScraper:
                     show_all_button = await self.page.query_selector('.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill')
                     if show_all_button:
                         await show_all_button.click()
-                        await self.page.wait_for_load_state('networkidle')
+                        # Prefer a targeted wait to reduce full page flashes
+                        await self.page.wait_for_selector('table, .project, .projects, .k-grid', state='visible', timeout=5000)
                         
                         # Extract projects from the detailed table
                         detailed_projects = await self.page.evaluate("""
@@ -912,9 +914,7 @@ class UnifiedEmployeeScraper:
                         
                         self.logger.info(f"    Found {len(detailed_projects)} additional projects from detailed table")
                         
-                        # Navigate back to the profile page
-                        await self.page.go_back()
-                        await self.page.wait_for_load_state('networkidle')
+                        # Avoid go_back; stay on page and continue
                         
                 except Exception as e:
                     self.logger.warning(f"    Failed to extract detailed projects for {name}: {e}")
@@ -1027,34 +1027,7 @@ class UnifiedEmployeeScraper:
         
         print(f"🔵 {'='*60}\n")
     
-    def _normalize_office_location(self, location: str) -> str:
-        """Normalize office location names to standard format"""
-        if not location:
-            return ""
-            
-        location = location.strip().lower()
-        
-        location_mapping = {
-            'new york': 'New York',
-            'ny': 'New York',
-            'nyc': 'New York',
-            'new york city': 'New York',
-            'shanghai': 'Shanghai',
-            'california': 'California',
-            'ca': 'California',
-            'los angeles': 'California',
-            'san francisco': 'California',
-            'sf': 'California'
-        }
-        
-        if location in location_mapping:
-            return location_mapping[location]
-        
-        for key, value in location_mapping.items():
-            if key in location:
-                return value
-        
-        return location.title()
+    # Removed office location normalization; use raw data only
     
     async def _save_individual_employee(self, employee: EmployeeData) -> str:
         """Save individual employee as JSON file immediately"""

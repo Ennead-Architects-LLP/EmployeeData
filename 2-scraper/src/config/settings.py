@@ -105,7 +105,8 @@ class ScraperConfig:
     def get_output_path(self, filename: str = None) -> Path:
         """Get full output path for a file."""
         if filename is None:
-            filename = self.JSON_FILENAME
+            # Default to individual_employees directory; callers should pass explicit filenames now
+            filename = "employees.json"
         return Path(self.ASSETS_DIR) / filename
     
     def cleanup_debug_files(self, max_files_per_folder: int = 30):

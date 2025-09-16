@@ -9,7 +9,7 @@ class ScraperOrchestrator:
     def __init__(self, config: Optional[ScraperConfig] = None, use_parallel: bool = False, max_workers: int = 1):
         self.config = config or ScraperConfig.from_env()
         self.logger = logging.getLogger(__name__)
-        # Only sequential processing supported for stability
+        # Parallel processing removed by policy
         self.use_parallel = False
         self.max_workers = 1
 
