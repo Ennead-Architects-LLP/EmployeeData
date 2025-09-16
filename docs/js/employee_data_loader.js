@@ -56,7 +56,7 @@ async function initializeApp() {
 async function tryLoadMergedEmployees() {
     const basePath = getBasePath();
     try {
-        const url = `${basePath}assets/employees.json`;
+        const url = `${basePath}docs/assets/employees.json`;
         console.log('Trying merged employees file:', url);
         const response = await fetch(url, { signal: AbortSignal.timeout(10000) });
         if (response.ok) {
