@@ -339,15 +339,40 @@ class UnifiedEmployeeScraper:
             self.logger.error(f"[ERROR] Error getting employee links: {e}")
             raise
     
-    async def _scrape_employee_basic(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
-        """Scrape basic employee data"""
+    
+    async def _scrape_employee_comprehensive(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
+        """Scrape comprehensive employee data with all available information"""
         try:
-            if self.page.url != profile_url:
-                await self.page.goto(profile_url)
-                await self.page.wait_for_load_state('networkidle')
+            await self.page.goto(profile_url)
+            await self.page.wait_for_load_state('networkidle')
             
-            # Extract basic data
-            employee_data = await self.page.evaluate(f"""
+            # Debug: Check if we're actually on the profile page
+            current_url = self.page.url
+            page_title = await self.page.title()
+            self.logger.info(f"    Current URL after navigation: {current_url}")
+            self.logger.info(f"    Page title: {page_title}")
+            
+            # Capture DOM for debugging individual profile pages
+            if hasattr(self, 'config') and self.config.DEBUG_MODE:
+                await self._capture_debug_info(f"profile_page_{name.replace(' ', '_')}")
+            
+            # Debug: Check what name is being extracted
+            debug_name = await self.page.evaluate("""
+                () => {
+                    const h1 = document.querySelector('h1');
+                    const entityHeader = document.querySelector('h1[class*="EntityHeader"]');
+                    const allH1s = document.querySelectorAll('h1');
+                    return {
+                        firstH1: h1?.textContent?.trim() || 'none',
+                        entityHeader: entityHeader?.textContent?.trim() || 'none',
+                        allH1s: Array.from(allH1s).map(h => h.textContent?.trim()).filter(t => t)
+                    };
+                }
+            """)
+            self.logger.info(f"    Debug name extraction: {debug_name}")
+            
+            # Extract basic employee data inline
+            basic_data = await self.page.evaluate(f"""
                 () => {{
                     const data = {{}};
                     
@@ -396,62 +421,18 @@ class UnifiedEmployeeScraper:
                 }}
             """)
             
-            # Create EmployeeData object
+            # Create EmployeeData object with basic data
             employee = EmployeeData(
-                human_name=employee_data.get('human_name') or name,
-                email=employee_data.get('email'),
-                phone=employee_data.get('phone'),
-                position=employee_data.get('position'),
-                department=employee_data.get('department'),
-                bio=employee_data.get('bio'),
-                office_location=employee_data.get('office_location', ''),
+                human_name=basic_data.get('human_name') or name,
+                email=basic_data.get('email'),
+                phone=basic_data.get('phone'),
+                position=basic_data.get('position'),
+                department=basic_data.get('department'),
+                bio=basic_data.get('bio'),
+                office_location=basic_data.get('office_location', ''),
                 profile_url=profile_url,
-                image_url=employee_data.get('image_url') or image_url
+                image_url=basic_data.get('image_url') or image_url
             )
-            
-            # Note: Image capture is handled in the comprehensive method
-            
-            return employee
-            
-        except Exception as e:
-            self.logger.error(f"[ERROR] Error scraping profile {profile_url}: {e}")
-            return None
-    
-    async def _scrape_employee_comprehensive(self, profile_url: str, name: str, image_url: str) -> Optional[EmployeeData]:
-        """Scrape comprehensive employee data with all available information"""
-        try:
-            await self.page.goto(profile_url)
-            await self.page.wait_for_load_state('networkidle')
-            
-            # Debug: Check if we're actually on the profile page
-            current_url = self.page.url
-            page_title = await self.page.title()
-            self.logger.info(f"    Current URL after navigation: {current_url}")
-            self.logger.info(f"    Page title: {page_title}")
-            
-            # Capture DOM for debugging individual profile pages
-            if hasattr(self, 'config') and self.config.DEBUG_MODE:
-                await self._capture_debug_info(f"profile_page_{name.replace(' ', '_')}")
-            
-            # Debug: Check what name is being extracted
-            debug_name = await self.page.evaluate("""
-                () => {
-                    const h1 = document.querySelector('h1');
-                    const entityHeader = document.querySelector('h1[class*="EntityHeader"]');
-                    const allH1s = document.querySelectorAll('h1');
-                    return {
-                        firstH1: h1?.textContent?.trim() || 'none',
-                        entityHeader: entityHeader?.textContent?.trim() || 'none',
-                        allH1s: Array.from(allH1s).map(h => h.textContent?.trim()).filter(t => t)
-                    };
-                }
-            """)
-            self.logger.info(f"    Debug name extraction: {debug_name}")
-            
-            # Start with basic data
-            employee = await self._scrape_employee_basic(profile_url, name, image_url)
-            if not employee:
-                return None
             
             # Override the human_name with the name from the directory (more reliable)
             if name and name.strip():
@@ -851,9 +832,20 @@ class UnifiedEmployeeScraper:
                 employee.years_with_firm = comprehensive_data['years_with_firm']
             if comprehensive_data.get('memberships'):
                 employee.memberships = comprehensive_data['memberships']
-            if comprehensive_data.get('education'):
+            # Extract education and licenses using the new text-based parser
+            self.logger.info("    Extracting education data using text-based parser...")
+            employee.education = await self._extract_education_data()
+            
+            self.logger.info("    Extracting licenses data using text-based parser...")
+            employee.licenses = await self._extract_licenses_data()
+            
+            # Fallback to old method if new parser didn't find anything
+            if not employee.education and comprehensive_data.get('education'):
+                self.logger.info("    Fallback: Using old education extraction method")
                 employee.education = comprehensive_data['education']
-            if comprehensive_data.get('licenses'):
+            
+            if not employee.licenses and comprehensive_data.get('licenses'):
+                self.logger.info("    Fallback: Using old licenses extraction method")
                 employee.licenses = comprehensive_data['licenses']
             if comprehensive_data.get('projects'):
                 employee.projects = comprehensive_data['projects']
@@ -862,62 +854,126 @@ class UnifiedEmployeeScraper:
             
             
             # Handle "Show All" projects button if found
-            show_all_button = await self.page.query_selector('.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill')
-            if show_all_button and await show_all_button.text_content() and 'Show All' in await show_all_button.text_content():
+            self.logger.info(f"    Looking for 'Show All' projects button for {name}...")
+            
+            # Debug: Check what buttons/links are available on the page
+            if hasattr(self, 'config') and self.config.DEBUG_MODE:
+                available_buttons = await self.page.evaluate("""
+                    () => {
+                        const buttons = [];
+                        const allButtons = document.querySelectorAll('button, a, [role="button"]');
+                        allButtons.forEach((btn, index) => {
+                            const text = btn.textContent?.trim() || '';
+                            const classes = btn.className || '';
+                            const href = btn.href || '';
+                            if (text.toLowerCase().includes('show') || classes.toLowerCase().includes('show') || classes.toLowerCase().includes('pill')) {
+                                buttons.push({
+                                    index: index,
+                                    tag: btn.tagName,
+                                    text: text,
+                                    classes: classes,
+                                    href: href
+                                });
+                            }
+                        });
+                        return buttons;
+                    }
+                """)
+                self.logger.info(f"    Available Show/Pill buttons for {name}: {available_buttons}")
+            
+            # Try multiple selectors for the Show All button
+            show_all_selectors = [
+                '.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill',  # Original specific selector
+                'button:has-text("Show All")',  # More generic text-based selector
+                'a:has-text("Show All")',       # Link-based selector
+                '[class*="pill"]:has-text("Show All")',  # Class-based selector
+                'button[class*="Show"]',        # Button with "Show" in class
+                'a[class*="Show"]',             # Link with "Show" in class
+                'button:has-text("Show")',      # Any button with "Show" text
+                'a:has-text("Show")'            # Any link with "Show" text
+            ]
+            
+            show_all_button = None
+            working_selector = None
+            
+            for selector in show_all_selectors:
                 try:
-                    self.logger.info(f"    Found 'Show All' projects button for {name}, navigating to detailed project table...")
+                    show_all_button = await self.page.query_selector(selector)
+                    if show_all_button:
+                        button_text = await show_all_button.text_content()
+                        self.logger.info(f"    Found button with selector '{selector}': '{button_text}'")
+                        if button_text and 'Show All' in button_text:
+                            working_selector = selector
+                            break
+                        else:
+                            show_all_button = None
+                except Exception as e:
+                    self.logger.debug(f"    Selector '{selector}' failed: {e}")
+                    continue
+            
+            if show_all_button and working_selector:
+                try:
+                    self.logger.info(f"    Found 'Show All' projects button for {name} using selector: {working_selector}")
+                    self.logger.info(f"    Button text: '{await show_all_button.text_content()}'")
                     
                     # Click the "Show All" button
-                    show_all_button = await self.page.query_selector('.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill')
-                    if show_all_button:
-                        await show_all_button.click()
-                        # Prefer a targeted wait to reduce full page flashes
-                        await self.page.wait_for_selector('table, .project, .projects, .k-grid', state='visible', timeout=5000)
-                        
-                        # Extract projects from the detailed table
-                        detailed_projects = await self.page.evaluate("""
-                            () => {
-                                const projects = {};
-                                const tableCells = document.querySelectorAll('.tableViewStyles__StyledCell-sc-nfq3ae-1.hZvVqM.styledTableCell');
-                                
-                                tableCells.forEach(cell => {
-                                    const projectLink = cell.querySelector('a[href*="/project/"]');
-                                    if (projectLink) {
-                                        const name = projectLink.textContent?.trim();
-                                        const url = projectLink.href;
-                                        if (name && url && name.length > 1) {
-                                            const projectKey = `proj_${Object.keys(projects).length + 1}`;
-                                            projects[projectKey] = {
-                                                'name': name,
-                                                'description': '',
-                                                'role': '',
-                                                'year': '',
-                                                'client': '',
-                                                'number': '',
-                                                'url': url,
-                                                'source': 'detailed_table'
-                                            };
-                                        }
+                    await show_all_button.click()
+                    self.logger.info(f"    Clicked 'Show All' button for {name}")
+                    
+                    # Wait for the detailed project table to load
+                    try:
+                        await self.page.wait_for_selector('table, .project, .projects, .k-grid', state='visible', timeout=10000)
+                        self.logger.info(f"    Project table loaded for {name}")
+                    except Exception as e:
+                        self.logger.warning(f"    Project table not found after clicking Show All for {name}: {e}")
+                        # Continue anyway - we might still find projects
+                    
+                    # Extract projects from the detailed table
+                    detailed_projects = await self.page.evaluate("""
+                        () => {
+                            const projects = {};
+                            const tableCells = document.querySelectorAll('.tableViewStyles__StyledCell-sc-nfq3ae-1.hZvVqM.styledTableCell');
+                            
+                            tableCells.forEach(cell => {
+                                const projectLink = cell.querySelector('a[href*="/project/"]');
+                                if (projectLink) {
+                                    const name = projectLink.textContent?.trim();
+                                    const url = projectLink.href;
+                                    if (name && url && name.length > 1) {
+                                        const projectKey = `proj_${Object.keys(projects).length + 1}`;
+                                        projects[projectKey] = {
+                                            'name': name,
+                                            'description': '',
+                                            'role': '',
+                                            'year': '',
+                                            'client': '',
+                                            'number': '',
+                                            'url': url,
+                                            'source': 'detailed_table'
+                                        };
                                     }
-                                });
-                                
-                                return projects;
-                            }
-                        """)
-                        
-                        # Add detailed projects to existing projects (avoid duplicates)
-                        for project_key, detailed_project in detailed_projects.items():
-                            # Check if we already have this project by URL
-                            existing_project = next((p for p in employee.projects.values() if p['url'] == detailed_project['url']), None)
-                            if not existing_project:
-                                employee.projects[project_key] = detailed_project
-                        
-                        self.logger.info(f"    Found {len(detailed_projects)} additional projects from detailed table")
-                        
-                        # Avoid go_back; stay on page and continue
-                        
+                                }
+                            });
+                            
+                            return projects;
+                        }
+                    """)
+                    
+                    # Add detailed projects to existing projects (avoid duplicates)
+                    for project_key, detailed_project in detailed_projects.items():
+                        # Check if we already have this project by URL
+                        existing_project = next((p for p in employee.projects.values() if p['url'] == detailed_project['url']), None)
+                        if not existing_project:
+                            employee.projects[project_key] = detailed_project
+                    
+                    self.logger.info(f"    Found {len(detailed_projects)} additional projects from detailed table")
+                    
+                    # Avoid go_back; stay on page and continue
+                    
                 except Exception as e:
                     self.logger.warning(f"    Failed to extract detailed projects for {name}: {e}")
+            else:
+                self.logger.info(f"    No 'Show All' button found for {name}")
             
             # Download the actual profile image using the extracted image URL
             if self.download_images and self.image_downloader and employee.image_url:
@@ -1227,6 +1283,294 @@ class UnifiedEmployeeScraper:
         except Exception as e:
             self.logger.error(f"[ERROR] Failed to analyze page structure: {e}")
     
+    async def _parse_section_by_text(self, section_name: str) -> Dict[str, Any]:
+        """
+        Parse a section by finding its header text, then extracting data below it.
+        Handles both simple values and table structures.
+        
+        Args:
+            section_name: The text to look for in headers (e.g., "Education", "Contact Info")
+            
+        Returns:
+            Dict containing the parsed data:
+            - For simple sections: {'value': 'extracted_text'}
+            - For table sections: {'row_key': {'header1': 'value1', 'header2': 'value2'}}
+        """
+        try:
+            # Find the section header by text
+            section_data = await self.page.evaluate(f"""
+                () => {{
+                    const sectionName = '{section_name}';
+                    const results = {{
+                        found: false,
+                        sectionType: 'none',
+                        data: {{}},
+                        rawText: ''
+                    }};
+                    
+                    // Look for section headers (h1, h2, h3, h4, h5, h6, or elements with common header classes)
+                    const headerSelectors = [
+                        'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+                        '[class*="header"]', '[class*="title"]', '[class*="section"]',
+                        '[class*="block"]', '[class*="field"]'
+                    ];
+                    
+                    let sectionHeader = null;
+                    let sectionContainer = null;
+                    
+                    // Try to find the section header
+                    for (const selector of headerSelectors) {{
+                        const headers = document.querySelectorAll(selector);
+                        for (const header of headers) {{
+                            const text = header.textContent?.trim().toLowerCase() || '';
+                            if (text.includes(sectionName.toLowerCase())) {{
+                                sectionHeader = header;
+                                sectionContainer = header.closest('.EntityFields, .section, .block, .field, .container, div');
+                                break;
+                            }}
+                        }}
+                        if (sectionHeader) break;
+                    }}
+                    
+                    if (!sectionHeader) {{
+                        return results;
+                    }}
+                    
+                    results.found = true;
+                    results.rawText = sectionContainer ? sectionContainer.textContent : '';
+                    
+                    // Determine if this is a table or simple section
+                    const tableElements = sectionContainer ? sectionContainer.querySelectorAll('table, .table, .grid, .k-grid, [class*="table"], [class*="grid"]') : [];
+                    const rowElements = sectionContainer ? sectionContainer.querySelectorAll('tr, .row, [class*="row"], [class*="Row"]') : [];
+                    
+                    if (tableElements.length > 0 || rowElements.length > 0) {{
+                        // This is a table section
+                        results.sectionType = 'table';
+                        
+                        // Try to extract table data
+                        const table = tableElements[0] || sectionContainer;
+                        const rows = table.querySelectorAll('tr, .row, [class*="row"], [class*="Row"]');
+                        
+                        if (rows.length > 0) {{
+                            // Extract headers from first row
+                            const firstRow = rows[0];
+                            const headers = [];
+                            const headerCells = firstRow.querySelectorAll('th, td, .cell, [class*="cell"], [class*="Cell"], [class*="header"]');
+                            
+                            headerCells.forEach(cell => {{
+                                const text = cell.textContent?.trim();
+                                if (text) headers.push(text);
+                            }});
+                            
+                            // If no headers found, try to infer from data rows
+                            if (headers.length === 0 && rows.length > 1) {{
+                                const dataRow = rows[1];
+                                const dataCells = dataRow.querySelectorAll('td, .cell, [class*="cell"], [class*="Cell"]');
+                                headers.length = dataCells.length;
+                                headers.fill('column');
+                                headers.forEach((_, i) => headers[i] = `column_${{i + 1}}`);
+                            }}
+                            
+                            // Extract data rows
+                            for (let i = 1; i < rows.length; i++) {{
+                                const row = rows[i];
+                                const cells = row.querySelectorAll('td, .cell, [class*="cell"], [class*="Cell"]');
+                                const rowData = {{}};
+                                let rowKey = '';
+                                
+                                cells.forEach((cell, cellIndex) => {{
+                                    const text = cell.textContent?.trim();
+                                    if (text) {{
+                                        const header = headers[cellIndex] || `column_${{cellIndex + 1}}`;
+                                        rowData[header] = text;
+                                        
+                                        // Use first column as row key
+                                        if (cellIndex === 0) {{
+                                            rowKey = text;
+                                        }}
+                                    }}
+                                }});
+                                
+                                if (rowKey && Object.keys(rowData).length > 0) {{
+                                    results.data[rowKey] = rowData;
+                                }}
+                            }}
+                        }} else {{
+                            // No clear table structure, try to parse as key-value pairs
+                            const fieldElements = sectionContainer.querySelectorAll('[class*="field"], [class*="Field"], [data-kafieldname]');
+                            fieldElements.forEach(field => {{
+                                const text = field.textContent?.trim();
+                                if (text && text.length > 1) {{
+                                    // Try to split on common separators
+                                    const parts = text.split(/[:\\-\\|]/);
+                                    if (parts.length >= 2) {{
+                                        const key = parts[0].trim();
+                                        const value = parts.slice(1).join(':').trim();
+                                        if (key && value) {{
+                                            results.data[key] = value;
+                                        }}
+                                    }} else {{
+                                        // Single value, use as key
+                                        results.data[text] = text;
+                                    }}
+                                }}
+                            }});
+                        }}
+                    }} else {{
+                        // This is a simple section
+                        results.sectionType = 'simple';
+                        
+                        // Extract simple text content
+                        const textElements = sectionContainer.querySelectorAll('p, span, div, [class*="value"], [class*="text"]');
+                        const texts = [];
+                        
+                        textElements.forEach(el => {{
+                            const text = el.textContent?.trim();
+                            if (text && text.length > 1 && !text.includes(sectionName)) {{
+                                texts.push(text);
+                            }}
+                        }});
+                        
+                        if (texts.length > 0) {{
+                            results.data['value'] = texts.join(' ').trim();
+                        }} else {{
+                            // Fallback: use raw text content
+                            const rawText = sectionContainer.textContent?.trim() || '';
+                            if (rawText && !rawText.includes(sectionName)) {{
+                                results.data['value'] = rawText;
+                            }}
+                        }}
+                    }}
+                    
+                    return results;
+                }}
+            """)
+            
+            self.logger.info(f"    Section '{section_name}' parsing result: found={section_data['found']}, type={section_data['sectionType']}, data_keys={list(section_data['data'].keys())}")
+            
+            return section_data['data'] if section_data['found'] else {}
+            
+        except Exception as e:
+            self.logger.error(f"    Error parsing section '{section_name}': {e}")
+            return {}
+    
+    async def _extract_education_data(self) -> List[Dict[str, str]]:
+        """Extract education data using text-based section parsing"""
+        try:
+            education_data = await self._parse_section_by_text("Education")
+            
+            if not education_data:
+                return []
+            
+            # Convert the parsed data to the expected format
+            education_list = []
+            
+            if 'value' in education_data:
+                # Simple text format - try to parse it
+                text = education_data['value']
+                # Look for patterns like "University - Degree - Specialty"
+                import re
+                parts = re.split(r'\s*-\s*|\s*\|\s*', text)
+                if len(parts) >= 2:
+                    education_list.append({
+                        'institution': parts[0].strip(),
+                        'degree': parts[1].strip() if len(parts) > 1 else 'Unknown',
+                        'specialty': parts[2].strip() if len(parts) > 2 else 'Unknown'
+                    })
+            else:
+                # Table format - convert to education list
+                for row_key, row_data in education_data.items():
+                    education_list.append({
+                        'institution': row_data.get('institution', row_data.get('Institution', row_data.get('column_1', row_key))),
+                        'degree': row_data.get('degree', row_data.get('Degree', row_data.get('column_2', 'Unknown'))),
+                        'specialty': row_data.get('specialty', row_data.get('Specialty', row_data.get('column_3', 'Unknown')))
+                    })
+            
+            return education_list
+            
+        except Exception as e:
+            self.logger.error(f"    Error extracting education data: {e}")
+            return []
+    
+    async def _extract_licenses_data(self) -> List[Dict[str, str]]:
+        """Extract licenses data using text-based section parsing"""
+        try:
+            licenses_data = await self._parse_section_by_text("License")
+            
+            if not licenses_data:
+                return []
+            
+            licenses_list = []
+            
+            if 'value' in licenses_data:
+                # Simple text format
+                text = licenses_data['value']
+                # Try to parse license information
+                licenses_list.append({
+                    'license': text,
+                    'state': '',
+                    'number': '',
+                    'earned': ''
+                })
+            else:
+                # Table format
+                for row_key, row_data in licenses_data.items():
+                    licenses_list.append({
+                        'license': row_data.get('license', row_data.get('License', row_data.get('column_1', row_key))),
+                        'state': row_data.get('state', row_data.get('State', row_data.get('column_2', ''))),
+                        'number': row_data.get('number', row_data.get('Number', row_data.get('column_3', ''))),
+                        'earned': row_data.get('earned', row_data.get('Earned', row_data.get('column_4', '')))
+                    })
+            
+            return licenses_list
+            
+        except Exception as e:
+            self.logger.error(f"    Error extracting licenses data: {e}")
+            return []
+    
+    async def _extract_section_data(self, section_name: str, field_mapping: Dict[str, str] = None) -> Dict[str, Any]:
+        """
+        Extract data from any section using text-based parsing.
+        
+        Args:
+            section_name: The section header text to look for
+            field_mapping: Optional mapping of field names (e.g., {'column_1': 'institution', 'column_2': 'degree'})
+            
+        Returns:
+            Dict containing the parsed data
+        """
+        try:
+            section_data = await self._parse_section_by_text(section_name)
+            
+            if not section_data:
+                return {}
+            
+            # Apply field mapping if provided
+            if field_mapping and 'value' not in section_data:
+                mapped_data = {}
+                for row_key, row_data in section_data.items():
+                    mapped_row = {}
+                    for old_key, new_key in field_mapping.items():
+                        if old_key in row_data:
+                            mapped_row[new_key] = row_data[old_key]
+                        else:
+                            # Try case variations
+                            for key in row_data.keys():
+                                if key.lower() == old_key.lower():
+                                    mapped_row[new_key] = row_data[key]
+                                    break
+                    if mapped_row:
+                        mapped_data[row_key] = mapped_row
+                    else:
+                        mapped_data[row_key] = row_data
+                return mapped_data
+            
+            return section_data
+            
+        except Exception as e:
+            self.logger.error(f"    Error extracting section '{section_name}': {e}")
+            return {}
+
     def get_scraper_info(self) -> Dict[str, Any]:
         """Get information about the scraper configuration"""
         return {
