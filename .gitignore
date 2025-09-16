@@ -80,6 +80,9 @@ individual_employees/
 employee_data.json
 employees_data.json
 
+# Allow the merged website data to be tracked
+!docs/assets/employees.json
+
 # Browser automation
 screenshots/
 dom_captures/
