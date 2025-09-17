@@ -1,18 +1,6 @@
 (function(){
 	const apiBase = (window.CHAT_API_BASE || 'http://localhost:8000');
-	const repoOwner = (window.GH_OWNER || '');
-	const repoName = (window.GH_REPO || '');
-
-	function openGithubIssue(q){
-		if(!repoOwner || !repoName){
-			alert('GitHub issue fallback not configured.');
-			return;
-		}
-		const title = encodeURIComponent('[Chatbot] ' + (q.slice(0, 60)));
-		const body = encodeURIComponent('/ask ' + q + '\n\n(Submitted from website chatbot)');
-		const url = `https://github.com/${repoOwner}/${repoName}/issues/new?title=${title}&body=${body}`;
-		window.open(url, '_blank');
-	}
+	const useGitHubAPI = window.USE_GITHUB_API || false;
 
 	function createWidget(){
 		const btn = document.createElement('button');
@@ -80,23 +68,61 @@
 			you.style.color = '#9be9a8';
 			log.appendChild(you);
 			log.scrollTop = log.scrollHeight;
-			try{
-				const url = apiBase + '/ask?q=' + encodeURIComponent(q);
-				const res = await fetch(url);
-				if(!res.ok) throw new Error('API error ' + res.status);
-				const data = await res.json();
-				const bot = document.createElement('div');
-				bot.textContent = 'Bot: ' + (data.answer || '(no answer)');
-				log.appendChild(bot);
-				log.scrollTop = log.scrollHeight;
-			}catch(err){
-				const errDiv = document.createElement('div');
-				errDiv.innerHTML = 'API unavailable. <a href="#" style="color:#00bfff;">Ask via GitHub</a>';
-				errDiv.style.color = '#ffcc66';
-				const link = errDiv.querySelector('a');
-				link.addEventListener('click', (ev)=>{ ev.preventDefault(); openGithubIssue(q); });
-				log.appendChild(errDiv);
-				log.scrollTop = log.scrollHeight;
+
+			// Show loading indicator
+			const loading = document.createElement('div');
+			loading.textContent = 'Bot: Thinking...';
+			loading.style.color = '#ffcc66';
+			loading.style.fontStyle = 'italic';
+			log.appendChild(loading);
+			log.scrollTop = log.scrollHeight;
+
+			if(useGitHubAPI && window.GitHubAssistant){
+				// Use GitHub API approach
+				window.GitHubAssistant.askQuestion(q, 
+					(answer) => {
+						loading.remove();
+						const bot = document.createElement('div');
+						bot.textContent = 'Bot: ' + answer;
+						log.appendChild(bot);
+						log.scrollTop = log.scrollHeight;
+					},
+					(error) => {
+						loading.remove();
+						const errDiv = document.createElement('div');
+						errDiv.textContent = 'Error: ' + error;
+						errDiv.style.color = '#ff8a8a';
+						log.appendChild(errDiv);
+						log.scrollTop = log.scrollHeight;
+					}
+				);
+			} else {
+				// Try local API first, fallback to GitHub issue
+				try{
+					const url = apiBase + '/ask?q=' + encodeURIComponent(q);
+					const res = await fetch(url);
+					if(!res.ok) throw new Error('API error ' + res.status);
+					const data = await res.json();
+					loading.remove();
+					const bot = document.createElement('div');
+					bot.textContent = 'Bot: ' + (data.answer || '(no answer)');
+					log.appendChild(bot);
+					log.scrollTop = log.scrollHeight;
+				}catch(err){
+					loading.remove();
+					const errDiv = document.createElement('div');
+					errDiv.innerHTML = 'API unavailable. <a href="#" style="color:#00bfff;">Ask via GitHub</a>';
+					errDiv.style.color = '#ffcc66';
+					const link = errDiv.querySelector('a');
+					link.addEventListener('click', (ev)=>{ 
+						ev.preventDefault(); 
+						const title = encodeURIComponent('[Assistant] ' + q.substring(0, 50));
+						const body = encodeURIComponent('/ask ' + q + '\n\n(Submitted from website)');
+						window.open(`https://github.com/Ennead-Architects-LLP/EmployeeData/issues/new?title=${title}&body=${body}`, '_blank');
+					});
+					log.appendChild(errDiv);
+					log.scrollTop = log.scrollHeight;
+				}
 			}
 		});
 	}

@@ -70,3 +70,10 @@ jobs:
             🤖 Assistant reply:
 
             ${{ steps.answer.outputs.text }}
+
+      - name: Auto-close trigger issues
+        if: contains(github.event.issue.labels.*.name, 'assistant-trigger')
+        run: |
+          gh issue close ${{ github.event.issue.number }} --comment "✅ Question answered - closing trigger issue"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
