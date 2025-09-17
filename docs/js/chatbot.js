@@ -4,10 +4,10 @@
 
 	function createWidget(){
 		const btn = document.createElement('button');
-		btn.textContent = '💬 Ask';
+		btn.innerHTML = '<img src="assets/icons/ask.png" alt="Ask" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;">Ask';
 		btn.style.position = 'fixed';
 		btn.style.right = '16px';
-		btn.style.bottom = '16px';
+		btn.style.bottom = '96px';
 		btn.style.zIndex = '9999';
 		btn.style.padding = '10px 14px';
 		btn.style.background = '#00bfff';
@@ -19,7 +19,7 @@
 		const panel = document.createElement('div');
 		panel.style.position = 'fixed';
 		panel.style.right = '16px';
-		panel.style.bottom = '60px';
+		panel.style.bottom = '140px';
 		panel.style.width = '320px';
 		panel.style.maxHeight = '50vh';
 		panel.style.display = 'none';
