@@ -62,18 +62,41 @@ jobs:
           echo $out >> $env:GITHUB_OUTPUT
           echo "EOF" >> $env:GITHUB_OUTPUT
 
-      - name: Post comment
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ github.event.issue.number || github.event.pull_request.number || github.event.number }}
-          body: |
-            🤖 Assistant reply:
-
-            ${{ steps.answer.outputs.text }}
-
-      - name: Auto-close trigger issues
-        if: contains(github.event.issue.labels.*.name, 'assistant-trigger')
+      - name: Determine issue number
+        id: issue
+        shell: pwsh
         run: |
-          gh issue close ${{ github.event.issue.number }} --comment "✅ Question answered - closing trigger issue"
+          if ('${{ github.event_name }}' -eq 'issue_comment') {
+            $num = '${{ github.event.issue.number }}'
+          } elseif ('${{ github.event_name }}' -eq 'issues') {
+            $num = '${{ github.event.issue.number }}'
+          } else {
+            $num = '${{ github.event.number }}'
+          }
+          echo "number=$num" >> $env:GITHUB_OUTPUT
+
+      - name: Post comment (GitHub API)
+        shell: pwsh
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $repo = '${{ github.repository }}'
+          $num = '${{ steps.issue.outputs.number }}'
+          $body = "`uD83E`uDD16 Assistant reply:`n`n${{ steps.answer.outputs.text }}"
+          $json = @{ body = $body } | ConvertTo-Json -Depth 5
+          $headers = @{ Authorization = "Bearer $env:GITHUB_TOKEN"; 'User-Agent' = 'gh-actions'; Accept = 'application/vnd.github+json' }
+          $uri = "https://api.github.com/repos/$repo/issues/$num/comments"
+          Invoke-RestMethod -Method POST -Uri $uri -Headers $headers -Body $json -ContentType 'application/json'
+
+      - name: Auto-close trigger issues (GitHub API)
+        if: contains(join(github.event.issue.labels.*.name, ','), 'assistant-trigger')
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $repo = '${{ github.repository }}'
+          $num = '${{ steps.issue.outputs.number }}'
+          $json = @{ state = 'closed' } | ConvertTo-Json
+          $headers = @{ Authorization = "Bearer $env:GITHUB_TOKEN"; 'User-Agent' = 'gh-actions'; Accept = 'application/vnd.github+json' }
+          $uri = "https://api.github.com/repos/$repo/issues/$num"
+          Invoke-RestMethod -Method PATCH -Uri $uri -Headers $headers -Body $json -ContentType 'application/json'
