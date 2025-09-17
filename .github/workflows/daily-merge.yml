@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -33,6 +35,12 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add docs/assets/employees.json
-        git diff --staged --quiet || git commit -m "🔄 Daily merge: update employees.json"
-        git push
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "🔄 Daily merge: update employees.json"
+          echo "Pulling latest changes before push..."
+          git pull --rebase origin main || git pull origin main
+          git push origin HEAD:main
+        fi
 

@@ -1,0 +1,79 @@
+name: Assistant - Issues
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  reply:
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'issues' ||
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '/ask'))
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Create venv and install deps
+        run: |
+          py -3 -m venv .venv
+          .venv\Scripts\python.exe -m pip install --upgrade pip
+          .venv\Scripts\python.exe -m pip install -r 5-assistant\requirements_assistant.txt
+
+      - name: Ensure vectorstore exists
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+        run: |
+          if (Test-Path "5-assistant\\vectorstore\\embeddings.npy") { echo "Vector store exists" } else { .venv\Scripts\python.exe 5-assistant\build_vectorstore.py }
+
+      - name: Determine question text
+        id: q
+        shell: pwsh
+        run: |
+          if ('${{ github.event_name }}' -eq 'issue_comment') {
+            $body = "${{ github.event.comment.body }}"
+            if ($body.StartsWith('/ask')) { $q = $body.Substring(4).Trim() } else { $q = $body }
+          } else {
+            $q = "${{ github.event.issue.title }}" + " `n`n" + "${{ github.event.issue.body }}"
+          }
+          echo "question=$q" >> $env:GITHUB_OUTPUT
+
+      - name: Run answer
+        id: answer
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+        run: |
+          $out = .venv\Scripts\python.exe 5-assistant\answer_cli.py --q "${{ steps.q.outputs.question }}"
+          echo "text<<EOF" >> $env:GITHUB_OUTPUT
+          echo $out >> $env:GITHUB_OUTPUT
+          echo "EOF" >> $env:GITHUB_OUTPUT
+
+      - name: Post comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number || github.event.pull_request.number || github.event.number }}
+          body: |
+            🤖 Assistant reply:
+
+            ${{ steps.answer.outputs.text }}
+
+      - name: Auto-close trigger issues
+        if: contains(github.event.issue.labels.*.name, 'assistant-trigger')
+        run: |
+          gh issue close ${{ github.event.issue.number }} --comment "✅ Question answered - closing trigger issue"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

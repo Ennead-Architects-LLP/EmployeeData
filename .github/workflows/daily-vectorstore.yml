@@ -1,0 +1,49 @@
+name: Daily Vectorstore Update
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-vectorstore:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Create venv
+        run: |
+          py -3 -m venv .venv
+          .venv\Scripts\python.exe -m pip install --upgrade pip
+
+      - name: Install dependencies
+        run: |
+          .venv\Scripts\python.exe -m pip install -r 5-assistant\requirements_assistant.txt
+
+      - name: Build vectorstore
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+        run: |
+          .venv\Scripts\python.exe 5-assistant\build_vectorstore.py
+
+      - name: Commit vectorstore
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add 5-assistant/vectorstore
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "chore: update vectorstore [skip ci]"
+          echo "Pulling latest changes before push..."
+          git pull --rebase origin main || git pull origin main
+          git push origin HEAD:main
