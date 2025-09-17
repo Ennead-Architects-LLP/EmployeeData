@@ -1,0 +1,14 @@
+{
+  "EANY-8DN5KD3": {
+    "computername": "EANY-8DN5KD3",
+    "os": "Windows 11",
+    "manufacturer": "Dell Inc.",
+    "model": "Precision 5820 Tower",
+    "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+    "gpu_name": "NVIDIA Quadro RTX 4000",
+    "gpu_driver": "32.0.15.7342",
+    "memory_bytes": 68386164736,
+    "serial_number": "8DN5KD3",
+    "last_updated": "2025-09-17T20:36:08.544224"
+  }
+}
