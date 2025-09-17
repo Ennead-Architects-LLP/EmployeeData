@@ -1,5 +1,18 @@
 (function(){
 	const apiBase = (window.CHAT_API_BASE || 'http://localhost:8000');
+	const repoOwner = (window.GH_OWNER || '');
+	const repoName = (window.GH_REPO || '');
+
+	function openGithubIssue(q){
+		if(!repoOwner || !repoName){
+			alert('GitHub issue fallback not configured.');
+			return;
+		}
+		const title = encodeURIComponent('[Chatbot] ' + (q.slice(0, 60)));
+		const body = encodeURIComponent('/ask ' + q + '\n\n(Submitted from website chatbot)');
+		const url = `https://github.com/${repoOwner}/${repoName}/issues/new?title=${title}&body=${body}`;
+		window.open(url, '_blank');
+	}
 
 	function createWidget(){
 		const btn = document.createElement('button');
@@ -78,8 +91,10 @@
 				log.scrollTop = log.scrollHeight;
 			}catch(err){
 				const errDiv = document.createElement('div');
-				errDiv.textContent = 'Error: ' + err.message;
-				errDiv.style.color = '#ff8a8a';
+				errDiv.innerHTML = 'API unavailable. <a href="#" style="color:#00bfff;">Ask via GitHub</a>';
+				errDiv.style.color = '#ffcc66';
+				const link = errDiv.querySelector('a');
+				link.addEventListener('click', (ev)=>{ ev.preventDefault(); openGithubIssue(q); });
 				log.appendChild(errDiv);
 				log.scrollTop = log.scrollHeight;
 			}
