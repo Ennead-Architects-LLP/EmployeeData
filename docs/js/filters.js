@@ -189,7 +189,7 @@ function getEmployeesAfterNonSearchFilters(employees) {
         });
     }
 
-    // Project filter (AND logic)
+    // Project filter (AND logic) - only apply when user has selected some projects
     if (window.selectedProjects instanceof Set) {
         if (window.selectedProjects.size === 0) {
             return [];
@@ -335,16 +335,18 @@ function buildProjectFilter(employees) {
     });
     const projects = Array.from(seenLowerToDisplay.values()).sort((a, b) => a.localeCompare(b));
 
-    // Default: none selected until user picks (so page shows all via search; we define behavior: when none selected -> show none as in applyFilters)
-    // But likely better UX: default to all selected. We'll follow user: dropdown with checks; if none selected via Select None -> show none.
-    window.selectedProjects = new Set(projects); // default select all
+    // Default: do not apply any project filter until user interacts
+    window.selectedProjects = null; // null => no project filter applied
 
     container.innerHTML = projects.map(name => `
-        <label class="pretty-check"><input type="checkbox" class="project-option" value="${name.replace(/"/g, '&quot;')}" checked> <span>${name}</span></label>
+        <label class="pretty-check"><input type="checkbox" class="project-option" value="${name.replace(/"/g, '&quot;')}"> <span>${name}</span></label>
     `).join('');
 
     container.querySelectorAll('.project-option').forEach(cb => {
         cb.addEventListener('change', () => {
+            if (!(window.selectedProjects instanceof Set)) {
+                window.selectedProjects = new Set();
+            }
             if (cb.checked) {
                 window.selectedProjects.add(cb.value);
             } else {
