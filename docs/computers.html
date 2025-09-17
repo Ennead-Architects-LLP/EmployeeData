@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Specifications Overview</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .charts-container { max-width: 1200px; margin: 0 auto; padding: 20px 30px; }
+        .charts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 24px; }
+        .chart-card { background: rgba(0,0,0,0.46); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 16px; box-shadow: 0 6px 24px rgba(0,0,0,0.35); }
+        .chart-card h3 { margin: 0 0 10px 0; color: #00bfff; font-size: 1.05rem; }
+        .page-header { background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 24px; margin: 20px auto; max-width: 1200px; }
+        .page-header h1 { color: #fff; margin: 0 0 6px 0; }
+        .back-link { color: #00bfff; text-decoration: none; font-weight: 600; }
+        .back-link:hover { color: #33ccff; }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h1>Computer Specifications Overview</h1>
+        <p class="meta-text">Aggregate charts across all employee computers</p>
+        <p style="margin-top:8px"><a class="back-link" href="index.html">← Back to Employee Directory</a></p>
+    </div>
+    <div class="charts-container">
+        <div id="charts" class="charts-grid"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="js/computer_charts.js"></script>
+</body>
+</html>
+
+

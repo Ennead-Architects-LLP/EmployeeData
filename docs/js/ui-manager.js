@@ -141,13 +141,14 @@ function createEmployeeCard(employee) {
                 <p class="employee-position">${employee.position || employee.title || 'Position not available'}</p>
                 ${employee.office_location ? `<p class="employee-location">${employee.office_location}</p>` : ''}
                 ${department ? `<p class="employee-department">Department: ${department}</p>` : ''}
-                ${yearsInfo ? `<p class="employee-years">${yearsInfo}</p>` : ''}
+                ${yearsInfo && (window.sectionToggles?.years ?? true) ? `<p class="employee-years">${yearsInfo}</p>` : ''}
+                ${employee.bio && (window.sectionToggles?.bio ?? true) ? `<div class=\"bio-section\"><p class=\"employee-bio\">${employee.bio}</p></div>` : ''}
                 <div class="contact-info">
                     ${employee.email ? `<p class="contact-item"><span class="icon email-icon"></span> <a href="mailto:${employee.email}">${employee.email}</a></p>` : ''}
                     ${phone ? `<p class="contact-item"><span class="icon phone-icon"></span> <a href="tel:${phone}">${phone}</a></p>` : ''}
                     ${employee.teams_url ? `<p class="contact-item"><span class="icon chat-icon"></span> <a href="${employee.teams_url}" target="_blank">Microsoft Teams</a></p>` : ''}
                 </div>
-                ${education.length > 0 ? `
+                ${education.length > 0 && (window.sectionToggles?.education ?? true) ? `
                     <div class="education-section">
                         <h4>Education</h4>
                         ${education.map(edu => `
@@ -156,15 +157,34 @@ function createEmployeeCard(employee) {
                         `).join('')}
                     </div>
                 ` : ''}
-                ${licenses.length > 0 ? `
+                ${licenses.length > 0 && (window.sectionToggles?.licenses ?? true) ? `
                     <div class="licenses-section">
                         <h4>Licenses & Certifications</h4>
-                        ${licenses.map(license => `
-                            <p class="license-item">${license}</p>
-                        `).join('')}
+                        ${licenses.map(item => {
+                            if (item == null) {
+                                return '';
+                            }
+                            if (typeof item === 'string') {
+                                return `<p class="license-item">${item}</p>`;
+                            }
+                            if (typeof item === 'object') {
+                                const parts = [];
+                                const title = item.license || item.name || item.title;
+                                if (title) parts.push(title);
+                                const state = item.state || item.region;
+                                if (state) parts.push(state);
+                                const number = item.number || item.id;
+                                if (number) parts.push(`#${number}`);
+                                const earned = item.earned || item.year || item.date;
+                                if (earned) parts.push(`${earned}`);
+                                const text = parts.length > 0 ? parts.join(' — ') : '[license]';
+                                return `<p class="license-item">${text}</p>`;
+                            }
+                            return '';
+                        }).join('')}
                     </div>
                 ` : ''}
-                ${memberships.length > 0 ? `
+                ${memberships.length > 0 && (window.sectionToggles?.memberships ?? true) ? `
                     <div class="memberships-section">
                         <h4>Memberships</h4>
                         ${memberships.map(membership => `
@@ -172,9 +192,12 @@ function createEmployeeCard(employee) {
                         `).join('')}
                     </div>
                 ` : ''}
-                ${computers.length > 0 ? `
+                ${computers.length > 0 && (window.sectionToggles?.computer ?? true) ? `
                     <div class="computer-section">
-                        <h4>🖥️ ${computers.length === 1 ? 'Computer Specification' : 'Computer Specifications'}</h4>
+                        <h4>
+                            <img class="computer-icon" src="${(window.location.hostname.includes('github.io') ? '/EmployeeData/' : '')}assets/icons/computer.png" alt="Computer icon">
+                            ${computers.length === 1 ? 'Computer Specification' : 'Computer Specifications'}
+                        </h4>
                         ${computers.map((computer, index) => `
                             <div class="computer-details">
                                 ${computer.computername ? `<h5 class="computer-name">${computer.computername}</h5>` : ''}
@@ -190,7 +213,7 @@ function createEmployeeCard(employee) {
                         `).join('')}
                     </div>
                 ` : ''}
-                ${projects.length > 0 ? `
+                ${projects.length > 0 && (window.sectionToggles?.projects ?? true) ? `
                     <div class="projects-section">
                         <h4>Projects (${projects.length})</h4>
                         <div class="projects-list" id="${projectId}" style="display: none;">

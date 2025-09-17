@@ -43,6 +43,13 @@ async function initializeApp() {
             console.log('Fuzzy search initialized with', allEmployees.length, 'employees');
         }
         
+        // Notify listeners that employees data is ready (filters can build dynamic options)
+        try {
+            window.dispatchEvent(new CustomEvent('EmployeesLoaded', { detail: { count: allEmployees.length } }));
+        } catch (e) {
+            console.warn('Failed to dispatch EmployeesLoaded event', e);
+        }
+
         // Initialize UI (handled by ui-manager.js)
         if (typeof initializeUI === 'function') {
             initializeUI();
@@ -70,12 +77,26 @@ async function initializeApp() {
 // Deprecated: individual loading and fallbacks removed by policy
 
 async function tryLoadMergedEmployees() {
-    // Always use a relative path from docs root so it works locally and on GitHub Pages
-    // docs/index.html -> assets/employees.json
-    const url = 'assets/employees.json';
+    // Build URL that works for: GitHub Pages, local server, and IDE file preview
+    const url = (function buildEmployeesUrl() {
+        const { protocol, hostname, pathname } = window.location;
+        // If opened directly from filesystem (IDE preview without server)
+        if (protocol === 'file:') {
+            // Relative path from docs/index.html
+            return 'assets/employees.json';
+        }
+        // GitHub Pages: https://<org>.github.io/<repo>/...
+        if (hostname.includes('github.io')) {
+            const parts = pathname.split('/').filter(Boolean);
+            const repo = parts[0] || 'EmployeeData';
+            return `/${repo}/assets/employees.json`;
+        }
+        // Default: local http server serving from docs/
+        return 'assets/employees.json';
+    })();
     try {
         console.log('Trying merged employees file:', url);
-        const response = await fetch(url, { signal: AbortSignal.timeout(10000) });
+        const response = await fetch(url, { cache: 'no-store', signal: AbortSignal.timeout(10000) });
         if (response.ok) {
             const data = await response.json();
             // Handle both old array format and new dictionary format

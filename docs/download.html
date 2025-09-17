@@ -120,6 +120,22 @@
             font-size: 0.9rem;
             color: #888888;
         }
+
+        .preview-wrapper {
+            margin: 24px 0 6px 0;
+        }
+        .preview-img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+        }
+        .preview-caption {
+            color: #aaaaaa;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
     </style>
 </head>
 <body>
@@ -135,34 +151,27 @@
     <div class="download-page">
         <div class="download-container">
             <h1 class="download-title">Submit Computer Info</h1>
-            
-            <p class="download-description">
-                Get the AboutMe tool to automatically collect and submit your computer information to the employee directory.
-            </p>
-            
+
             <div class="download-instructions">
-                <h2 class="instruction-title">How to Use</h2>
                 <p class="instruction-text">
-                    <strong>Download and run this exe anywhere on your computer.</strong><br>
-                    There will be no output window - the tool runs silently in the background, 
-                    collects your computer information, and automatically submits it to our system.
+                    Use the AboutMe tool to automatically collect and submit your computer information to the employee directory. 
+                    Download the app and run it—no setup required. You can choose not to share and close the app at any time.
                 </p>
+                <div class="preview-wrapper">
+                    <img class="preview-img" src="assets/icons/AboutMe_Sample.png" alt="AboutMe sample preview">
+                    <div class="preview-caption">This is what you will see after you run the exe</div>
+                </div>
             </div>
-            
+
             <a href="assets/download/AboutMe_ComputerInfo.exe" class="download-btn-large" download="AboutMe_ComputerInfo.exe">
                 <span class="download-icon-large">⬇</span>
                 <span>Submit Computer Info</span>
             </a>
-            
-            <div class="file-info">
-                <strong>File:</strong> AboutMe_ComputerInfo.exe<br>
-                <strong>Size:</strong> ~13.5 MB<br>
-                <strong>Updated:</strong> Daily via automated build
-            </div>
-            
-            <p style="margin-top: 30px;">
-                <a href="index_dynamic.html" class="back-link">← Back to Employee Directory</a>
+
+            <p style="margin-top: 24px;">
+                <a href="index.html" class="back-link">← Back to Employee Directory</a>
             </p>
+
         </div>
     </div>
 

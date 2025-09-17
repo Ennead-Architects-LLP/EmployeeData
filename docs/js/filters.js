@@ -148,6 +148,99 @@ function selectSuggestion(suggestion) {
 }
 
 function applyFilters() {
-    // Simple search - just render the filtered results
-    renderEmployees(filteredEmployees);
+    // Section visibility toggles
+    window.sectionToggles = {
+        bio: document.getElementById('toggle_bio')?.checked !== false,
+        computer: document.getElementById('toggle_computer')?.checked !== false,
+        memberships: document.getElementById('toggle_memberships')?.checked !== false,
+        licenses: document.getElementById('toggle_licenses')?.checked !== false,
+        years: document.getElementById('toggle_years')?.checked !== false,
+        projects: document.getElementById('toggle_projects')?.checked !== false,
+        education: document.getElementById('toggle_education')?.checked !== false,
+    };
+
+    // Apply position filter if built
+    let toRender = filteredEmployees;
+    if (window.selectedPositions instanceof Set && window.selectedPositions.size > 0) {
+        toRender = filteredEmployees.filter(emp => {
+            const pos = (emp.position || emp.title || '').trim();
+            return pos === '' || window.selectedPositions.has(pos); // if missing, allow through
+        });
+    }
+
+    renderEmployees(toRender);
+}
+
+// Wire checkbox changes to re-render
+document.addEventListener('DOMContentLoaded', function() {
+    const ids = ['toggle_bio','toggle_computer','toggle_memberships','toggle_licenses','toggle_years','toggle_projects','toggle_education'];
+    ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.addEventListener('change', applyFilters);
+        }
+    });
+    // Initialize default
+    window.sectionToggles = {
+        bio: true,
+        computer: true,
+        memberships: true,
+        licenses: true,
+        years: true,
+        projects: true,
+        education: true,
+    };
+
+    // Build dynamic position filters when data is loaded
+    if (typeof allEmployees !== 'undefined' && Array.isArray(allEmployees) && allEmployees.length > 0) {
+        buildPositionFilter(allEmployees);
+    }
+    window.addEventListener('EmployeesLoaded', () => {
+        if (typeof allEmployees !== 'undefined' && Array.isArray(allEmployees) && allEmployees.length > 0) {
+            buildPositionFilter(allEmployees);
+            applyFilters();
+        }
+    });
+});
+
+function buildPositionFilter(employees) {
+    const container = document.getElementById('positionFilterOptions');
+    const selectAll = document.getElementById('positionSelectAll');
+    if (!container) return;
+
+    const positions = Array.from(new Set(
+        employees
+            .map(e => (e.position || e.title || '').trim())
+            .filter(Boolean)
+    )).sort((a, b) => a.localeCompare(b));
+
+    window.selectedPositions = new Set(positions); // default: all selected
+
+    container.innerHTML = positions.map(pos => `
+        <label class="pretty-check"><input type="checkbox" class="position-option" value="${pos.replace(/"/g, '&quot;')}" checked> <span>${pos}</span></label>
+    `).join('');
+
+    container.querySelectorAll('.position-option').forEach(cb => {
+        cb.addEventListener('change', () => {
+            if (cb.checked) {
+                window.selectedPositions.add(cb.value);
+            } else {
+                window.selectedPositions.delete(cb.value);
+            }
+            // Update select all state
+            if (selectAll) {
+                selectAll.checked = window.selectedPositions.size === positions.length;
+            }
+            applyFilters();
+        });
+    });
+
+    if (selectAll) {
+        selectAll.addEventListener('change', () => {
+            const check = !!selectAll.checked;
+            window.selectedPositions = new Set(check ? positions : []);
+            container.querySelectorAll('.position-option').forEach(cb => { cb.checked = check; });
+            applyFilters();
+        });
+    }
 }

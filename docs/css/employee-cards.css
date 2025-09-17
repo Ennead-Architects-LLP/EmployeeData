@@ -168,6 +168,17 @@
     margin-bottom: 10px;
 }
 
+.bio-section {
+    margin: 10px 0;
+}
+
+.employee-bio {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+}
+
 .education-section {
     margin-top: 15px;
     padding-top: 15px;
@@ -275,6 +286,13 @@
     color: #00bfff;
     margin-bottom: 10px;
     font-size: 1rem;
+}
+
+.computer-section h4 .computer-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+    margin-right: 6px;
 }
 
 .computer-details {
