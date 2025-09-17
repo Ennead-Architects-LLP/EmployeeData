@@ -1,0 +1,15 @@
+{
+  "computer_name": "EANY-8DN5KD3",
+  "human_name": "Nicholas Jeffway",
+  "username": "NJeffway",
+  "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+  "os": "Windows 11",
+  "manufacturer": "Dell Inc.",
+  "model": "Precision 5820 Tower",
+  "gpu_name": "NVIDIA Quadro RTX 4000",
+  "gpu_driver": "32.0.15.7342",
+  "gpu_memory": -1048576,
+  "memory_bytes": 68386164736,
+  "serial_number": "8DN5KD3",
+  "server_timestamp": "2025-09-17T20:41:33.099390"
+}
