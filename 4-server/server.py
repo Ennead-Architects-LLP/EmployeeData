@@ -84,20 +84,18 @@ def create_individual_computer_data_file(computer_data):
                 print(f"⚠️  Warning: Could not load existing computer data file: {e}")
                 existing_data = {}
         
-        # Create computer info entry
-        computer_name = computer_data.get('computer_name', 'Unknown')
-        computer_info = {
-            'computername': computer_name,
-            'os': computer_data.get('os'),
-            'manufacturer': computer_data.get('manufacturer'),
-            'model': computer_data.get('model'),
-            'cpu': computer_data.get('cpu'),
-            'gpu_name': computer_data.get('gpu_name'),
-            'gpu_driver': computer_data.get('gpu_driver'),
-            'memory_bytes': computer_data.get('memory_bytes'),
-            'serial_number': computer_data.get('serial_number'),
-            'last_updated': datetime.now().isoformat()
-        }
+        # Create computer info entry using ALL available data from ComputerInfo class
+        computer_name = computer_data.get('Computername', computer_data.get('computer_name', 'Unknown'))
+        
+        # Start with all the data from the payload (rich data from ComputerInfo.to_dict())
+        computer_info = computer_data.copy()
+        
+        # Add metadata
+        computer_info['last_updated'] = datetime.now().isoformat()
+        
+        # Ensure computername is set correctly
+        if 'computername' not in computer_info and 'Computername' in computer_info:
+            computer_info['computername'] = computer_info['Computername']
         
         # Update or add computer info (dict of dicts format)
         existing_data[computer_name] = computer_info
@@ -120,26 +118,21 @@ def backup_computer_data(computer_data):
         os.makedirs(COMPUTER_BACKUP_DIR, exist_ok=True)
         
         # Generate filename with timestamp
-        computer_name = computer_data.get('computer_name', 'unknown').replace(' ', '_').replace('/', '_')
+        # Create safe filename from computer name (handle both old and new field names)
+        computer_name = (computer_data.get('Computername', computer_data.get('computer_name', 'unknown'))
+                        .replace(' ', '_').replace('/', '_'))
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         filename = f"{computer_name}_{timestamp}.json"
         file_path = os.path.join(COMPUTER_BACKUP_DIR, filename)
         
-        # Clean snake_case schema
-        backup_data = {
-            "computer_name": computer_data.get('computer_name', 'Unknown'),
-            "human_name": computer_data.get('human_name', 'Unknown'),
-            "username": computer_data.get('username', 'Unknown'),
-            "cpu": computer_data.get('cpu', 'Unknown'),
-            "os": computer_data.get('os', 'Unknown'),
-            "manufacturer": computer_data.get('manufacturer', 'Unknown'),
-            "model": computer_data.get('model', 'Unknown'),
-            "gpu_name": computer_data.get('gpu_name', 'Unknown'),
-            "gpu_driver": computer_data.get('gpu_driver', 'Unknown'),
-            "gpu_memory": computer_data.get('gpu_memory'),
-            "memory_bytes": computer_data.get('memory_bytes'),
-            "serial_number": computer_data.get('serial_number', 'Unknown')
-        }
+        # Use ALL available data from ComputerInfo class (rich data structure)
+        backup_data = computer_data.copy()
+        
+        # Ensure backward compatibility with expected field names
+        if 'Computername' in backup_data and 'computer_name' not in backup_data:
+            backup_data['computer_name'] = backup_data['Computername']
+        if 'Total Physical Memory' in backup_data and 'memory_bytes' not in backup_data:
+            backup_data['memory_bytes'] = backup_data['Total Physical Memory']
         
         # Add server timestamp
         backup_data["server_timestamp"] = datetime.now().isoformat()
@@ -242,13 +235,31 @@ def commit_to_github(computer_data=None):
 
 def extract_computer_data_from_request(data):
     """Extract computer data from request payload, handling both old and new structures"""
+    from datetime import datetime, date
+    
+    # Backward compatibility deadline: 2025-10-15
+    COMPATIBILITY_DEADLINE = date(2025, 10, 15)
+    current_date = date.today()
+    
     # Handle both old and new payload structures
     if 'computer_info' in data:
-        # New nested structure
+        # New nested structure from ComputerInfo.to_dict()
         computer_data = data.get('computer_info', {})
+        print("✅ Using new ComputerInfo payload structure")
     else:
         # Old flat structure (for backward compatibility)
-        computer_data = data.get('computer_data', {})
+        if current_date <= COMPATIBILITY_DEADLINE:
+            computer_data = data.get('computer_data', {})
+            print(f"⚠️  Using legacy payload structure (backward compatibility expires {COMPATIBILITY_DEADLINE})")
+        else:
+            print(f"❌ Legacy payload structure no longer supported after {COMPATIBILITY_DEADLINE}")
+            raise ValueError(f"Legacy payload structure is no longer supported. Please update to use the new ComputerInfo format.")
+    
+    # Filter out fields that should be calculated on website side
+    fields_to_remove = ['GPU Age ', 'GPU Age', 'gpu_age']
+    for field in fields_to_remove:
+        if field in computer_data:
+            del computer_data[field]
     
     return computer_data
 
@@ -263,10 +274,22 @@ def handle_computer_data():
             return jsonify({'error': 'No data provided'}), 400
         
         # Extract computer data using unified function
-        computer_data = extract_computer_data_from_request(data)
+        try:
+            computer_data = extract_computer_data_from_request(data)
+        except ValueError as e:
+            # Handle backward compatibility deadline errors
+            return jsonify({'error': str(e)}), 400
         
         if not computer_data:
             return jsonify({'error': 'No computer data provided'}), 400
+        
+        # Log received data structure for debugging
+        print(f"📥 Received computer data with {len(computer_data)} fields:")
+        for key, value in computer_data.items():
+            if isinstance(value, str) and len(value) > 50:
+                print(f"  {key}: {value[:50]}...")
+            else:
+                print(f"  {key}: {value}")
         
         # Process computer data using unified workflow
         success_count, total_operations = process_computer_data_workflow(computer_data)
@@ -331,6 +354,10 @@ def extract_computer_data_from_event():
     if not computer_data:
         print("❌ No computer data found in event payload")
         return None
+    
+    # Filter out GPU Age field since it should be calculated on website side
+    if 'gpu_age' in computer_data:
+        del computer_data['gpu_age']
     
     return computer_data
 
@@ -400,6 +427,19 @@ def main():
     print(f"👥 Individual computer data directory: {INDIVIDUAL_COMPUTER_DATA_DIR}")
     print(f"💾 Computer backup directory: {COMPUTER_BACKUP_DIR}")
     print(f"🌐 Server starting on port 5000")
+    
+    # Check backward compatibility deadline
+    from datetime import date
+    COMPATIBILITY_DEADLINE = date(2025, 10, 15)
+    current_date = date.today()
+    days_remaining = (COMPATIBILITY_DEADLINE - current_date).days
+    
+    if days_remaining > 0:
+        print(f"⚠️  Backward compatibility expires in {days_remaining} days ({COMPATIBILITY_DEADLINE})")
+        print("   Legacy payload structures will be rejected after this date")
+    else:
+        print(f"✅ Backward compatibility has expired ({COMPATIBILITY_DEADLINE})")
+        print("   Only new ComputerInfo payload structures are accepted")
     
     # Start Flask server
     app.run(host='0.0.0.0', port=5000, debug=False)

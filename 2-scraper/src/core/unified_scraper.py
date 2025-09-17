@@ -262,24 +262,53 @@ class UnifiedEmployeeScraper:
                     
                     if employee:
                         self.employees.append(employee)
-                        
-                        # Save individual JSON file immediately
-                        saved_path = await self._save_individual_employee(employee)
-                        
-                        if saved_path:
-                            print(f"✅ SUCCESS: {name} - JSON saved to {saved_path}")
-                        else:
-                            print(f"⚠️ WARNING: {name} - Failed to save JSON")
-                        
-                        self.logger.info(f"[SUCCESS] Successfully scraped and saved {name}")
+                        self.logger.info(f"[SUCCESS] Successfully scraped {name}")
                     else:
-                        self.logger.warning(f"[WARNING] Failed to scrape {name}")
+                        # Create basic employee data even if detailed scraping failed
+                        employee = EmployeeData(
+                            human_name=name,
+                            profile_url=profile_url,
+                            image_url=image_url,
+                            scraped_at=datetime.now().isoformat()
+                        )
+                        self.employees.append(employee)
+                        self.logger.warning(f"[WARNING] Failed to scrape detailed data for {name}, created basic entry")
+                    
+                    # Always save individual JSON file (regardless of scraping success)
+                    saved_path = await self._save_individual_employee(employee)
+                    
+                    if saved_path:
+                        print(f"✅ SUCCESS: {name} - JSON saved to {saved_path}")
+                        self.logger.info(f"[SUCCESS] Individual JSON saved for {name}")
+                    else:
+                        print(f"⚠️ WARNING: {name} - Failed to save JSON")
+                        self.logger.error(f"[ERROR] Failed to save individual JSON for {name}")
                     
                     # Delay between requests
                     await asyncio.sleep(0.5)
                     
                 except Exception as e:
                     self.logger.error(f"[ERROR] Error scraping {name}: {e}")
+                    
+                    # Even if there's an exception, create basic employee data and save individual file
+                    try:
+                        employee = EmployeeData(
+                            human_name=name,
+                            profile_url=profile_url if 'profile_url' in locals() else None,
+                            image_url=image_url if 'image_url' in locals() else None,
+                            scraped_at=datetime.now().isoformat()
+                        )
+                        self.employees.append(employee)
+                        
+                        # Save individual JSON file even after exception
+                        saved_path = await self._save_individual_employee(employee)
+                        if saved_path:
+                            print(f"✅ RECOVERY: {name} - Basic JSON saved after error")
+                            self.logger.info(f"[RECOVERY] Created basic entry for {name} after error")
+                        
+                    except Exception as save_error:
+                        self.logger.error(f"[CRITICAL] Failed to create basic entry for {name}: {save_error}")
+                    
                     continue
             
             # Validate results

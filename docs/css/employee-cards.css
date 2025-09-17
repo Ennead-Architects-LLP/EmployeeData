@@ -286,13 +286,58 @@
     color: #00bfff;
     margin-bottom: 10px;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .computer-section h4 .computer-icon {
     width: 16px;
     height: 16px;
     vertical-align: text-bottom;
-    margin-right: 6px;
+}
+
+/* Individual Computer Data section styling */
+.computer-section.individual-computer-data {
+    border-left: 4px solid #00ff88;
+    padding-left: 12px;
+    background: rgba(0, 255, 136, 0.05);
+}
+
+.computer-section.individual-computer-data h4 {
+    color: #00ff88;
+}
+
+/* Static GPU Master List section styling */
+.computer-section.static-gpu-master-list {
+    border-left: 4px solid #ff6b35;
+    padding-left: 12px;
+    background: rgba(255, 107, 53, 0.05);
+}
+
+.computer-section.static-gpu-master-list h4 {
+    color: #ff6b35;
+}
+
+/* Data source badges */
+.data-source-badge {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.data-source-badge.confidential {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+    border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.data-source-badge.static {
+    background: rgba(255, 107, 53, 0.2);
+    color: #ff6b35;
+    border: 1px solid rgba(255, 107, 53, 0.3);
 }
 
 .computer-details {
@@ -350,4 +395,22 @@
 
 .chat-icon {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300bfff"><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>');
+}
+
+/* Source indicators for employee data origin */
+.source-indicator {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 12px;
+    cursor: help;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.source-indicator.gpu-master {
+    color: #28a745; /* Green dot for GPU master list */
+}
+
+.source-indicator.individual-computer {
+    color: #ff8c00; /* Orange dot for individual computer data */
 }

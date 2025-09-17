@@ -31,7 +31,7 @@
             { key: 'gpu_processor', label: 'GPU Processor', altKey: 'GPU Processor' },
             { key: 'manufacturer', label: 'Manufacturer', altKey: 'Manufacturer' },
             { key: 'model', label: 'Model', altKey: 'Model' },
-            { key: 'memory_bytes', label: 'RAM (GB)', altKey: 'Total Physical Memory', transform: v => v ? `${Math.round(Number(v) / (1024**3))} GB` : undefined },
+                    { key: 'memory_bytes', label: 'RAM (GB)', altKey: 'Total Physical Memory', transform: v => v ? `${Math.round(Number(v) / (1024 * 1024 * 1024) * 10) / 10} GB` : undefined },
         ];
 
         const chartsContainer = document.getElementById('charts');
