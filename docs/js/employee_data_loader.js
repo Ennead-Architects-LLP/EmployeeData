@@ -70,11 +70,10 @@ async function initializeApp() {
 // Deprecated: individual loading and fallbacks removed by policy
 
 async function tryLoadMergedEmployees() {
-    const basePath = getBasePath();
+    // Always use a relative path from docs root so it works locally and on GitHub Pages
+    // docs/index.html -> assets/employees.json
+    const url = 'assets/employees.json';
     try {
-        // Since server serves from docs directory, we need to adjust the path
-        const isLocalServer = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        const url = isLocalServer ? `${basePath}assets/employees.json` : `${basePath}docs/assets/employees.json`;
         console.log('Trying merged employees file:', url);
         const response = await fetch(url, { signal: AbortSignal.timeout(10000) });
         if (response.ok) {
