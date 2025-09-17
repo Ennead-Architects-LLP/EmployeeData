@@ -85,6 +85,44 @@ class UnifiedEmployeeScraper:
         }
         
         self.logger.info("Unified scraper initialized with comprehensive data extraction")
+
+    # --- Normalization helpers -------------------------------------------------
+    def _normalize_position(self, position: Optional[str]) -> str:
+        """Return a usable position string for UI.
+
+        Empty/whitespace/None becomes the literal "Position not available" so
+        downstream consumers can always display a consistent label.
+        """
+        try:
+            if position and isinstance(position, str) and position.strip():
+                return position.strip()
+        except Exception:
+            pass
+        return "Position not available"
+
+    def _sanitize_bio(self, bio: Optional[str]) -> Optional[str]:
+        """Discard bios that look numeric-only or not meaningful.
+
+        If the extracted bio is composed only of digits, punctuation, or
+        trivial tokens (e.g., a lone year like "2022"), treat it as missing
+        and return None.
+        """
+        if not bio:
+            return None
+        if not isinstance(bio, str):
+            return None
+        text = bio.strip()
+        if not text:
+            return None
+        import re
+        # If after removing common separators there are no letters, drop it
+        letters = re.findall(r"[A-Za-z]", text)
+        if len(letters) == 0:
+            return None
+        # Extremely short bios (<= 3 chars) are likely noise
+        if len(text) <= 3:
+            return None
+        return text
     
     async def __aenter__(self):
         """Async context manager entry"""
@@ -435,9 +473,9 @@ class UnifiedEmployeeScraper:
                 human_name=basic_data.get('human_name') or name,
                 email=basic_data.get('email'),
                 phone=basic_data.get('phone'),
-                position=basic_data.get('position'),
+                position=self._normalize_position(basic_data.get('position')),
                 department=basic_data.get('department'),
-                bio=basic_data.get('bio'),
+                bio=self._sanitize_bio(basic_data.get('bio')),
                 office_location=basic_data.get('office_location', ''),
                 profile_url=profile_url,
                 image_url=basic_data.get('image_url') or image_url
@@ -490,7 +528,7 @@ class UnifiedEmployeeScraper:
             self.logger.info("    Extracting Personal Bio using text-based parser...")
             bio_data = await self._parse_section_by_text("Personal Bio")
             if bio_data and 'value' in bio_data:
-                employee.bio = bio_data['value']
+                employee.bio = self._sanitize_bio(bio_data['value'])
                 self.logger.info(f"    Found Personal Bio: {len(employee.bio)} characters")
             
             # Extract Years with Firm using text-based parsing
