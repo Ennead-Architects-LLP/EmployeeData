@@ -243,4 +243,14 @@ function buildPositionFilter(employees) {
             applyFilters();
         });
     }
+
+    const selectNoneBtn = document.getElementById('positionSelectNone');
+    if (selectNoneBtn) {
+        selectNoneBtn.addEventListener('click', () => {
+            window.selectedPositions = new Set();
+            container.querySelectorAll('.position-option').forEach(cb => { cb.checked = false; });
+            if (selectAll) selectAll.checked = false;
+            applyFilters();
+        });
+    }
 }
