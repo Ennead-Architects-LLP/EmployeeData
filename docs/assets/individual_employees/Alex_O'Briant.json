@@ -11,134 +11,373 @@
   "position": "Principal",
   "department": "",
   "years_with_firm": 21,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Birmingham-Southern College",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Rice University",
       "degree": "Graduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay2412",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-park-and-research-campus-sparc-kips-bay",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Seoul Foreign School, New High School1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "seoul-foreign-school-new-high-school",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "text_parsing"
+    },
+    "proj_4": {
       "name": "Seoul Foreign School, New High School",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
-      "name": "University of North Carolina School of Law",
+    "proj_5": {
+      "name": "1211B",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_6": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-north-carolina-school-of-law",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Moseley Architects",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Harvard Yard Libraries Feasibility StudyHarvard University2235",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "harvard-yard-libraries-feasibility-study",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Harvard Yard Libraries Feasibility Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "American School in Japan Master Plan",
+    "proj_11": {
+      "name": "Georgia Institute of Technology, Expansion of Tech Square, Phase III",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/C55995DD-58C1-46A4-8485-629AE35411F1/georgia-institute-of-technology-expansion-of-tech-square-phase-iii",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "The University of Texas at Austin Cockrell School of Engineering, Master Plan Update and Energy Engineering Building Formation Study (EEB)",
+    "proj_12": {
+      "name": "Purdue University Polytechnic Institute, College of Engineering, Dudley and Lambertus Halls (Gateway)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/FEE7E605-5A5B-491E-8AA3-66CC42B85A4A/the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/CC0FBA10-4F97-4086-83AC-C1A42862AA28/purdue-university-polytechnic-institute-college-of-engineering-dudley-and-lambertus-halls-gateway",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
+    "proj_13": {
+      "name": "The University of Texas at Austin, McCombs Study 2",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/4660584B-46DC-49BC-BE60-380B34723EF9/the-university-of-texas-at-austin-mccombs-study-2",
+      "source": "detailed_table"
     },
-    "proj_8": {
-      "name": "Johns Hopkins University Bloomberg Center",
+    "proj_14": {
+      "name": "Lingang Science and Technology City (S&T)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
+      "source": "detailed_table"
     },
-    "proj_9": {
-      "name": "The University of Texas at Austin, McCombs School of Business, Future Growth Study",
+    "proj_15": {
+      "name": "Purdue University, Chaney-Hale Hall of Science",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DF3441F3-B1AD-4A8F-B44B-0B6F561B391B/the-university-of-texas-at-austin-mccombs-school-of-business-future-growth-study",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/96366A47-615C-4561-94A0-00542D865A88/purdue-university-chaney-hale-hall-of-science",
+      "source": "detailed_table"
     },
-    "proj_10": {
-      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
+    "proj_16": {
+      "name": "Modern Meadow",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/2775EDA5-9E5B-4A48-BD68-A05BA3AA838C/modern-meadow",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Asheville Art Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9021C1CD-5B57-4D12-846B-CD99B26A6922/asheville-art-museum",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Barnes Foundation Programming and Site Analysis Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE80F846-9CAD-46FC-8260-507B102A0227/barnes-foundation-programming-and-site-analysis-study",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Brooklyn Museum, Beaux Arts Court",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/58755527-E616-4DB5-BC5A-02608CB9F1BE/brooklyn-museum-beaux-arts-court",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "City University of New York, Medgar Evers College, Academic Building I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFA2FFA1-C895-4B10-8C72-F7E29F740641/city-university-of-new-york-medgar-evers-college-academic-building-i",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Concordia Pudong",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BAFEA2ED-630A-4C0F-8BB7-0B569EBDB7CB/concordia-pudong",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Frank Sinatra School of the Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Indiana University, Global and International Studies Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D83C623A-17E3-438B-9182-2A22D2595F56/indiana-university-global-and-international-studies-building",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Marina Bay Integrated Resort Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE7B93CE-3E9F-4B09-BFD1-F0B3D136F425/marina-bay-integrated-resort-competition",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Natural History Museum of Utah",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "New York City Public Schools, Intermediate / High School, District 43",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/01891292-1661-4DFC-B601-26702654B3FE/new-york-city-public-schools-intermediate-high-school-district-43",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "New York Hall of Science Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/31DF8D21-0364-4B77-AD16-D5857A0E2C8D/new-york-hall-of-science-expansion",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "NYU Langone Health, Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "NYU Langone Health, Tisch Hospital Elevator Tower and Lobby",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B9543A56-1A01-4772-8B56-97B9A063BF08/nyu-langone-health-tisch-hospital-elevator-tower-and-lobby",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Purdue University, College of Science, Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/609538FA-9D29-4370-9CF8-AD732A2D22FC/purdue-university-college-of-science-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Purdue University, Flex Lab Facility",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91CB6710-C515-442E-8C4D-C3CC788C3D00/purdue-university-flex-lab-facility",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Riverhouse, One Rockefeller Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0D1904C4-C62B-4DE4-9103-75510202CAA6/riverhouse-one-rockefeller-park",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "Seoul Foreign School, Facilities Master Plan (SFS)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5C9CA77A-F708-4BCD-909B-985FEF17DFFD/seoul-foreign-school-facilities-master-plan-sfs",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "Stanford NYC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D15FDF3D-263A-4A21-B382-CE2B1A38D438/stanford-nyc",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "Stanford University, Bass Biology Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EC3145A0-7E07-47F8-A90A-13EE36802DA9/stanford-university-bass-biology-building",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aobriant@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:02:46.528003",
+  "scraped_at": "2025-09-16T18:48:48.231590",
   "profile_id": null
 }

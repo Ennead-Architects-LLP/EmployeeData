@@ -352,15 +352,24 @@ class UnifiedEmployeeScraper:
             self.logger.info(f"    Current URL after navigation: {current_url}")
             self.logger.info(f"    Page title: {page_title}")
             
-            # Capture DOM for debugging individual profile pages
+            # Capture DOM for debugging individual profile pages - wait for content to load first
             if hasattr(self, 'config') and self.config.DEBUG_MODE:
+                # Wait for the actual profile content to be visible
+                try:
+                    await self.page.wait_for_selector('h1:has-text("Personal Bio"), h1:has-text("Education"), h1:has-text("Projects")', timeout=10000)
+                    self.logger.info("    Profile content is visible, capturing DOM...")
+                    await asyncio.sleep(2)  # Additional wait for full rendering
+                    await self._capture_debug_info(f"profile_page_{name.replace(' ', '_')}")
+                except Exception as e:
+                    self.logger.warning(f"    Could not wait for profile content: {e}")
+                    # Capture anyway
                 await self._capture_debug_info(f"profile_page_{name.replace(' ', '_')}")
             
             # Debug: Check what name is being extracted
             debug_name = await self.page.evaluate("""
                 () => {
                     const h1 = document.querySelector('h1');
-                    const entityHeader = document.querySelector('h1[class*="EntityHeader"]');
+                    const entityHeader = document.querySelector('h1[class*="EntityHeader"], h1[class*="entityHeader"], h1[class*="header"], h1[class*="Header"]');
                     const allH1s = document.querySelectorAll('h1');
                     return {
                         firstH1: h1?.textContent?.trim() || 'none',
@@ -377,7 +386,7 @@ class UnifiedEmployeeScraper:
                     const data = {{}};
                     
                     // Basic information - use more specific selectors for employee name
-                    data.human_name = document.querySelector('h1[class*="EntityHeader"], .EntityHeader h1, h1:not([class*="section"])')?.textContent?.trim() || 
+                    data.human_name = document.querySelector('h1[class*="EntityHeader"], h1[class*="entityHeader"], h1[class*="header"], h1[class*="Header"], h1:not([class*="section"])')?.textContent?.trim() || 
                                      document.querySelector('h1')?.textContent?.trim() || '';
                     data.email = document.querySelector('a[href^="mailto:"]')?.href?.replace('mailto:', '') || '';
                     data.phone = document.querySelector('a[href^="tel:"]')?.href?.replace('tel:', '') || '';
@@ -439,387 +448,115 @@ class UnifiedEmployeeScraper:
                 employee.human_name = name.strip()
                 self.logger.info(f"    Using directory name: {name}")
             
-            # Wait for the page content to load (education section specifically)
+            # Wait for the page content to load - wait for profile content to appear
             try:
-                await self.page.wait_for_selector('[data-kagridname="employeeDegrees"]', timeout=10000)
-                self.logger.info("    Education section loaded")
-            except Exception as e:
-                self.logger.info(f"    Education section not found or timeout: {e}")
-                # Try waiting for any education-related element
+                # Wait for the main profile content to load
+                await self.page.wait_for_selector('h1:has-text("Personal Bio"), h1:has-text("Education"), h1:has-text("Projects")', timeout=15000)
+                self.logger.info("    Profile content loaded")
+                
+                # Additional wait for dynamic content to fully render
+                await asyncio.sleep(3)
+                
+                # Try to wait for specific sections
                 try:
-                    await self.page.wait_for_selector('h1:has-text("Education")', timeout=5000)
-                    self.logger.info("    Education H1 found")
+                    await self.page.wait_for_selector('[data-kagridname="employeeDegrees"]', timeout=5000)
+                    self.logger.info("    Education section loaded")
                 except:
-                    self.logger.info("    No education section found")
+                    self.logger.info("    Education section not found")
+                    
+            except Exception as e:
+                self.logger.info(f"    Profile content loading timeout: {e}")
+                # Continue anyway - we'll try to extract what we can
             
-            # Extract comprehensive data
-            self.logger.info("    Starting comprehensive data extraction...")
-            comprehensive_data = await self.page.evaluate("""
+            # Extract comprehensive data using text-based parsing
+            self.logger.info("    Starting comprehensive data extraction using text-based parsing...")
+            
+            # Extract basic contact information using JavaScript (still reliable)
+            basic_contact_data = await self.page.evaluate("""
                 () => {
                     const data = {};
-                    
-                    // Additional contact methods
                     data.mobile = document.querySelector('a[href^="tel:"]')?.href?.replace('tel:', '') || '';
                     data.teams_url = document.querySelector('a[href*="teams.microsoft.com"]')?.href || '';
                     data.linkedin_url = document.querySelector('a[href*="linkedin.com"]')?.href || '';
                     data.website_url = document.querySelector('a[href*="http"]:not([href*="ennead.com"])')?.href || '';
-                    
-                    // Years with firm - look for specific patterns in the text content
-                    const pageText = document.body.textContent || '';
-                    const yearsMatch = pageText.match(/Years With Firm\\s*(\\d+)/i);
-                    data.years_with_firm = yearsMatch ? parseInt(yearsMatch[1]) : null;
-                    
-                    // Seating assignment
-                    
-                    
-                    // Professional memberships
-                    data.memberships = [];
-                    const membershipElements = document.querySelectorAll('.membership, .association, .organization');
-                    membershipElements.forEach(el => {
-                        const text = el.textContent?.trim();
-                        if (text) data.memberships.push(text);
-                    });
-                    
-                    // Education - use the correct selectors based on actual HTML structure
-                    data.education = [];
-                    
-                    
-                    // Find the education section using the data-kagridname attribute
-                    const educationContainer = document.querySelector('[data-kagridname="employeeDegrees"]');
-                    
-                    if (educationContainer) {
-                        // Try multiple approaches to find education data
-                        
-                        // Approach 1: Try the old working selectors with various class name patterns
-                        const possibleSelectors = [
-                            '.EntityFields__InfoFieldValue-sc-129sxys-5',
-                            '.EntityFields_InfoFieldValue',
-                            '[class*="InfoFieldValue"]',
-                            '[class*="EntityFields"] [class*="Value"]',
-                            'div[data-kafieldname*="institution"]',
-                            'div[data-kafieldname*="degree"]',
-                            'div[data-kafieldname*="specialty"]'
-                        ];
-                        
-                        let educationRows = [];
-                        let workingSelector = '';
-                        
-                        for (const selector of possibleSelectors) {
-                            educationRows = educationContainer.querySelectorAll(selector);
-                            if (educationRows.length > 0) {
-                                workingSelector = selector;
-                                break;
-                            }
-                        }
-                        
-                        
-                        if (educationRows.length > 0) {
-                            // Group by rows of 3 (institution, degree, specialty) - same as old scraper
-                            for (let i = 0; i < educationRows.length; i += 3) {
-                                if (i + 2 < educationRows.length) {
-                                    const institution = educationRows[i].textContent?.trim() || '';
-                                    const degree = educationRows[i + 1].textContent?.trim() || '';
-                                    const specialty = educationRows[i + 2].textContent?.trim() || '';
-                                    
-                                    if (institution) {
-                            data.education.push({
-                                            'institution': institution,
-                                            'degree': degree || 'Unknown',
-                                            'specialty': specialty || 'Unknown'
-                                        });
-                                    }
-                                }
-                            }
-                        } else {
-                            // Approach 2: Try data-kafieldname selectors (like the old scraper)
-                            const institutionEl = educationContainer.querySelector('[data-kafieldname="employeeDegrees|institution"]');
-                            const degreeEl = educationContainer.querySelector('[data-kafieldname="employeeDegrees|degree"]');
-                            const specialtyEl = educationContainer.querySelector('[data-kafieldname="employeeDegrees|specialty"]');
-                            
-                            
-                            if (institutionEl && degreeEl && specialtyEl) {
-                                const institution = institutionEl.textContent?.trim() || '';
-                                const degree = degreeEl.textContent?.trim() || '';
-                                const specialty = specialtyEl.textContent?.trim() || '';
-                                
-                                if (institution) {
-                                    data.education.push({
-                                        'institution': institution,
-                                        'degree': degree || 'Unknown',
-                                        'specialty': specialty || 'Unknown'
-                                    });
-                                }
-                            } else {
-                                // Approach 3: Fallback - parse the concatenated text directly from the container
-                                const containerText = educationContainer.textContent?.trim() || '';
-                                
-                                // Parse the concatenated format: "InstitutionDegreeSpecialtyUniversity of MassachusettsUndergraduateArts in Classics/Minor in Arabic Studies"
-                                if (containerText.includes('InstitutionDegreeSpecialty')) {
-                                    const parts = containerText.split('InstitutionDegreeSpecialty');
-                                    if (parts.length > 1) {
-                                        const educationText = parts[1];
-                                        
-                                        // Look for University/College/Institute followed by degree
-                                        const institutionMatch = educationText.match(/([A-Za-z\\s&]+University|[A-Za-z\\s&]+College|[A-Za-z\\s&]+Institute)/);
-                                        const degreeMatch = educationText.match(/(Undergraduate|Graduate|Bachelor|Master|PhD|Doctorate|Associate)/i);
-                                        
-                                        if (institutionMatch) {
-                                            const specialty = educationText.replace(institutionMatch[1], '').replace(degreeMatch ? degreeMatch[1] : '', '').trim();
-                                            data.education.push({
-                                                'institution': institutionMatch[1].trim(),
-                                                'degree': degreeMatch ? degreeMatch[1].trim() : 'Unknown',
-                                                'specialty': specialty || 'Unknown'
-                                            });
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    } else {
-                        // Fallback: look for any education-related elements
-                        const educationH1 = document.querySelector('h1:has-text("Education")');
-                        if (educationH1) {
-                            const parentSection = educationH1.closest('.EntityFields');
-                        }
-                    }
-                    
-                    // Licenses and registrations - handle multiple employeeRegistrations|stateRegistered classes
-                    data.licenses = [];
-                    
-                    // Look for all license containers using multiple selectors
-                    const licenseContainers = document.querySelectorAll('[data-kagridname="employeeRegistrations"], [data-kagridname="stateRegistered"], .employeeRegistrations, .stateRegistered');
-                    
-                    licenseContainers.forEach((container, containerIndex) => {
-                        // Try multiple approaches to extract license data
-                        const approaches = [
-                            // Approach 1: Look for field value elements and group by rows of 4
-                            () => {
-                                const licenseRows = container.querySelectorAll('.EntityFields__InfoFieldValue-sc-129sxys-5, .EntityFields_InfoFieldValue, [class*="InfoFieldValue"]');
-                                const licenses = [];
-                                for (let i = 0; i < licenseRows.length; i += 4) {
-                                    if (i + 3 < licenseRows.length) {
-                                        const licenseName = licenseRows[i].textContent?.trim() || '';
-                                        const state = licenseRows[i + 1].textContent?.trim() || '';
-                                        const number = licenseRows[i + 2].textContent?.trim() || '';
-                                        const earned = licenseRows[i + 3].textContent?.trim() || '';
-                                        
-                                        if (licenseName) {
-                                            licenses.push({
-                                                'license': licenseName,
-                                                'state': state || '',
-                                                'number': number || '',
-                                                'earned': earned || '',
-                                                'source': `container_${containerIndex + 1}_approach_1`
-                                            });
-                                        }
-                                    }
-                                }
-                                return licenses;
-                            },
-                            // Approach 2: Look for data-kafieldname attributes
-                            () => {
-                                const licenses = [];
-                                const licenseFields = container.querySelectorAll('[data-kafieldname*="license"], [data-kafieldname*="registration"], [data-kafieldname*="state"]');
-                                const fieldGroups = {};
-                                
-                                licenseFields.forEach(field => {
-                                    const fieldName = field.getAttribute('data-kafieldname') || '';
-                                    const fieldValue = field.textContent?.trim() || '';
-                                    
-                                    if (fieldValue) {
-                                        // Group fields by their row index or parent
-                                        const rowKey = field.closest('tr, .row, [class*="Row"]')?.textContent || 'default';
-                                        if (!fieldGroups[rowKey]) {
-                                            fieldGroups[rowKey] = {};
-                                        }
-                                        
-                                        if (fieldName.includes('license') || fieldName.includes('registration')) {
-                                            fieldGroups[rowKey].license = fieldValue;
-                                        } else if (fieldName.includes('state')) {
-                                            fieldGroups[rowKey].state = fieldValue;
-                                        } else if (fieldName.includes('number')) {
-                                            fieldGroups[rowKey].number = fieldValue;
-                                        } else if (fieldName.includes('earned') || fieldName.includes('date')) {
-                                            fieldGroups[rowKey].earned = fieldValue;
-                                        }
-                                    }
-                                });
-                                
-                                Object.values(fieldGroups).forEach(license => {
-                                    if (license.license) {
-                                        licenses.push({
-                                            'license': license.license,
-                                            'state': license.state || '',
-                                            'number': license.number || '',
-                                            'earned': license.earned || '',
-                                            'source': `container_${containerIndex + 1}_approach_2`
-                                        });
-                                    }
-                                });
-                                
-                                return licenses;
-                            },
-                            // Approach 3: Look for table rows or grid items
-                            () => {
-                                const licenses = [];
-                                const rows = container.querySelectorAll('tr, .row, [class*="Row"], [class*="GridItem"]');
-                                
-                                rows.forEach(row => {
-                                    const cells = row.querySelectorAll('td, .cell, [class*="Cell"], [class*="Field"]');
-                                    if (cells.length >= 2) {
-                                        const licenseName = cells[0]?.textContent?.trim() || '';
-                                        const state = cells[1]?.textContent?.trim() || '';
-                                        const number = cells[2]?.textContent?.trim() || '';
-                                        const earned = cells[3]?.textContent?.trim() || '';
-                                        
-                                        if (licenseName && licenseName.length > 1) {
-                                            licenses.push({
-                                                'license': licenseName,
-                                                'state': state || '',
-                                                'number': number || '',
-                                                'earned': earned || '',
-                                                'source': `container_${containerIndex + 1}_approach_3`
-                                            });
-                                        }
-                                    }
-                                });
-                                
-                                return licenses;
-                            }
-                        ];
-                        
-                        // Try each approach and collect results
-                        approaches.forEach((approach, approachIndex) => {
-                            try {
-                                const approachLicenses = approach();
-                                if (approachLicenses.length > 0) {
-                                    data.licenses.push(...approachLicenses);
-                                }
-                            } catch (e) {
-                                console.log(`Approach ${approachIndex + 1} failed for container ${containerIndex + 1}:`, e);
-                            }
-                        });
-                    });
-                    
-                    // Remove duplicates based on license name and state
-                    const uniqueLicenses = [];
-                    const seen = new Set();
-                    
-                    data.licenses.forEach(license => {
-                        const key = `${license.license}_${license.state}`.toLowerCase();
-                        if (!seen.has(key)) {
-                            seen.add(key);
-                            uniqueLicenses.push(license);
-                        }
-                    });
-                    
-                    data.licenses = uniqueLicenses;
-                    
-                    // Fallback: look for any section with "License" in the title
-                    if (data.licenses.length === 0) {
-                        const allH1sForLicenses = document.querySelectorAll('h1.commonStyledComponents_BlockTitle');
-                        let licensesSection = null;
-                        for (let h1 of allH1sForLicenses) {
-                            if (h1.textContent?.trim().includes('License')) {
-                                licensesSection = h1.closest('.EntityFields');
-                                break;
-                            }
-                        }
-                        
-                        if (licensesSection) {
-                            const licenseItems = licensesSection.querySelectorAll('.EntityFields_InfoFieldValue');
-                            licenseItems.forEach(item => {
-                                const text = item.textContent?.trim();
-                                if (text && text.length > 3 && !text.includes('License') && !text.includes('State') && !text.includes('Number')) {
-                            data.licenses.push({
-                                        'license': text,
-                                        'state': '',
-                                        'number': '',
-                                        'earned': ''
-                            });
-                        }
-                    });
-                        }
-                    }
-                    
-                    // Projects - extract from both locations as dictionary
-                    data.projects = {};
-                    
-                    // Place 1: Direct project links under gridViewStyles__Field-sc-ipm8x5-22 bmVZMs field bold
-                    const directProjectElements = document.querySelectorAll('.gridViewStyles__Field-sc-ipm8x5-22.bmVZMs.field.bold a[href*="/project/"]');
-                    directProjectElements.forEach(el => {
-                        const name = el.textContent?.trim();
-                        const url = el.href;
-                        if (name && url && name.length > 1) {
-                            const projectKey = `proj_${Object.keys(data.projects).length + 1}`;
-                            data.projects[projectKey] = {
-                                'name': name,
-                                'description': '',
-                                'role': '',
-                                'year': '',
-                                'client': '',
-                                'number': '',
-                                'url': url,
-                                'source': 'direct'
-                            };
-                        }
-                    });
-                    
-                    // Place 2: Check for "Show All" button and navigate to detailed project table
-                    const showAllButton = document.querySelector('.RoundedBox-sc-1nzfcbz-0.PillBox-sc-p125c4-0.fQdvmA.driLso.pill');
-                    if (showAllButton && showAllButton.textContent?.trim().includes('Show All')) {
-                        // Note: We'll handle the navigation to detailed project page in Python
-                        // For now, just mark that we found the Show All button
-                    }
-                    
-                    // Fallback: Look for other project links
-                    const fallbackProjectElements = document.querySelectorAll('a[href*="/project/"]:not(.gridViewStyles__Field-sc-ipm8x5-22.bmVZMs.field.bold a)');
-                    fallbackProjectElements.forEach(el => {
-                        const name = el.textContent?.trim();
-                        const url = el.href;
-                        if (name && url && name.length > 1) {
-                            // Check if we already have this project by URL
-                            const existingProject = Object.values(data.projects).find(p => p.url === url);
-                            if (!existingProject) {
-                                const projectKey = `proj_${Object.keys(data.projects).length + 1}`;
-                                data.projects[projectKey] = {
-                                    'name': name,
-                                    'description': '',
-                                    'role': '',
-                                    'year': '',
-                                    'client': '',
-                                    'number': '',
-                                    'url': url,
-                                    'source': 'fallback'
-                                };
-                            }
-                        }
-                    });
-                    
-                    // Recent posts/activity
-                    data.recent_posts = [];
-                    const postElements = document.querySelectorAll('.post, .activity, .update');
-                    postElements.forEach(el => {
-                        const title = el.querySelector('.title, .subject')?.textContent?.trim() || '';
-                        const content = el.querySelector('.content, .text')?.textContent?.trim() || '';
-                        const date = el.querySelector('.date, .timestamp')?.textContent?.trim() || '';
-                        if (title || content) {
-                            data.recent_posts.push({
-                                'title': title,
-                                'content': content,
-                                'date': date
-                            });
-                        }
-                    });
-                    
                     return data;
                 }
             """)
             
-            self.logger.info(f"    Comprehensive data extracted: {len(comprehensive_data)} fields")
-            self.logger.info(f"    Education debug fields: {[k for k in comprehensive_data.keys() if 'debug' in k]}")
+            # Initialize comprehensive_data with basic contact info
+            comprehensive_data = basic_contact_data
             
-            # Update employee with comprehensive data
+            # Extract Personal Bio using text-based parsing
+            self.logger.info("    Extracting Personal Bio using text-based parser...")
+            bio_data = await self._parse_section_by_text("Personal Bio")
+            if bio_data and 'value' in bio_data:
+                employee.bio = bio_data['value']
+                self.logger.info(f"    Found Personal Bio: {len(employee.bio)} characters")
+            
+            # Extract Years with Firm using text-based parsing
+            self.logger.info("    Extracting Years with Firm using text-based parser...")
+            years_data = await self._parse_section_by_text("The Basics")
+            if years_data:
+                self.logger.info(f"    Years data keys: {list(years_data.keys())}")
+                
+                # Look for "Years With Firm" in the data
+                for key, value in years_data.items():
+                    if 'years' in key.lower() or 'firm' in key.lower():
+                        try:
+                            # Handle concatenated data like "Years With Firm3"
+                            import re
+                            if isinstance(value, str):
+                                # Extract number from concatenated string
+                                number_match = re.search(r'(\d+)', str(value))
+                                if number_match:
+                                    employee.years_with_firm = int(number_match.group(1))
+                                    self.logger.info(f"    Found Years with Firm: {employee.years_with_firm}")
+                                    break
+                            else:
+                                employee.years_with_firm = int(value)
+                                self.logger.info(f"    Found Years with Firm: {employee.years_with_firm}")
+                                break
+                        except (ValueError, TypeError):
+                            pass
+                
+                # Also check if there's a direct value
+                if 'value' in years_data and 'Years With Firm' in years_data['value']:
+                    import re
+                    years_match = re.search(r'Years With Firm\s*(\d+)', years_data['value'])
+                    if years_match:
+                        employee.years_with_firm = int(years_match.group(1))
+                        self.logger.info(f"    Found Years with Firm from text: {employee.years_with_firm}")
+                
+                # If still not found, try to extract from any value that contains a number
+                if not employee.years_with_firm:
+                    for key, value in years_data.items():
+                        if isinstance(value, str) and re.search(r'\d+', value):
+                            number_match = re.search(r'(\d+)', value)
+                            if number_match:
+                                employee.years_with_firm = int(number_match.group(1))
+                                self.logger.info(f"    Found Years with Firm from number in '{key}': {employee.years_with_firm}")
+                                break
+            
+            # Extract Memberships using text-based parsing
+            self.logger.info("    Extracting Memberships using text-based parser...")
+            memberships_data = await self._parse_section_by_text("Memberships")
+            if memberships_data:
+                if 'value' in memberships_data:
+                    # Simple text format - split by common separators
+                    text = memberships_data['value']
+                    memberships = [m.strip() for m in text.split(',') if m.strip()]
+                    employee.memberships = memberships
+                    self.logger.info(f"    Found Memberships: {memberships}")
+                else:
+                    # Table format - extract membership names
+                    memberships = []
+                    for key, value in memberships_data.items():
+                        if value and str(value).strip():
+                            memberships.append(str(value).strip())
+                    employee.memberships = memberships
+                    self.logger.info(f"    Found Memberships: {memberships}")
+            
+            # Update employee with basic contact data
             if comprehensive_data.get('mobile'):
                 employee.mobile = comprehensive_data['mobile']
             if comprehensive_data.get('teams_url'):
@@ -828,16 +565,16 @@ class UnifiedEmployeeScraper:
                 employee.linkedin_url = comprehensive_data['linkedin_url']
             if comprehensive_data.get('website_url'):
                 employee.website_url = comprehensive_data['website_url']
-            if comprehensive_data.get('years_with_firm'):
-                employee.years_with_firm = comprehensive_data['years_with_firm']
-            if comprehensive_data.get('memberships'):
-                employee.memberships = comprehensive_data['memberships']
             # Extract education and licenses using the new text-based parser
             self.logger.info("    Extracting education data using text-based parser...")
             employee.education = await self._extract_education_data()
             
             self.logger.info("    Extracting licenses data using text-based parser...")
             employee.licenses = await self._extract_licenses_data()
+            
+            # Extract projects using text-based parser
+            self.logger.info("    Extracting projects data using text-based parser...")
+            employee.projects = await self._extract_projects_data()
             
             # Fallback to old method if new parser didn't find anything
             if not employee.education and comprehensive_data.get('education'):
@@ -847,7 +584,9 @@ class UnifiedEmployeeScraper:
             if not employee.licenses and comprehensive_data.get('licenses'):
                 self.logger.info("    Fallback: Using old licenses extraction method")
                 employee.licenses = comprehensive_data['licenses']
-            if comprehensive_data.get('projects'):
+            
+            if not employee.projects and comprehensive_data.get('projects'):
+                self.logger.info("    Fallback: Using old projects extraction method")
                 employee.projects = comprehensive_data['projects']
             if comprehensive_data.get('recent_posts'):
                 employee.recent_posts = comprehensive_data['recent_posts']
@@ -1128,11 +867,13 @@ class UnifiedEmployeeScraper:
             return ""
     
     async def _scroll_to_load_all_employees(self):
-        """Scroll down to load all employees via infinite scroll"""
+        """Scroll down to load all employees via infinite scroll with overlap"""
         try:
             previous_count = 0
             scroll_attempts = 0
-            max_scroll_attempts = 20  # Prevent infinite scrolling
+            max_scroll_attempts = 30  # Increased to allow more thorough scrolling
+            no_new_content_count = 0  # Track consecutive attempts with no new content
+            max_no_new_content = 3  # Stop after 3 consecutive attempts with no new content
             
             while scroll_attempts < max_scroll_attempts:
                 # Count current employees
@@ -1144,22 +885,62 @@ class UnifiedEmployeeScraper:
                 
                 self.logger.info(f"[INFO] Found {current_count} employees so far...")
                 
-                # If no new employees loaded, we're done
+                # If no new employees loaded, increment counter
                 if current_count == previous_count and scroll_attempts > 0:
-                    self.logger.info(f"[INFO] No new employees loaded after scroll. Total: {current_count}")
+                    no_new_content_count += 1
+                    self.logger.info(f"[INFO] No new employees loaded after scroll {scroll_attempts}. Count: {no_new_content_count}/{max_no_new_content}")
+                    
+                    # If we've had no new content for several attempts, we're done
+                    if no_new_content_count >= max_no_new_content:
+                        self.logger.info(f"[INFO] No new employees loaded for {max_no_new_content} consecutive attempts. Total: {current_count}")
                     break
+                else:
+                    # Reset counter if we found new content
+                    no_new_content_count = 0
                 
-                # Scroll to bottom
-                await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                # Scroll with overlap - scroll to 80% of current height instead of 100%
+                current_height = await self.page.evaluate("document.body.scrollHeight")
+                scroll_position = int(current_height * 0.8)  # Scroll to 80% of current height
                 
-                # Wait for new content to load
+                self.logger.info(f"[INFO] Scrolling to position {scroll_position} (80% of {current_height})")
+                await self.page.evaluate(f"window.scrollTo(0, {scroll_position})")
+                
+                # Wait for content to load with longer delays
+                await asyncio.sleep(3)  # Increased from 2 to 3 seconds
+                
+                # Wait for network to be idle
+                try:
+                    await self.page.wait_for_load_state("networkidle", timeout=15000)  # Increased timeout
+                except Exception as e:
+                    self.logger.info(f"[INFO] Network idle timeout, continuing...")
+                
+                # Additional wait to ensure all content is loaded
                 await asyncio.sleep(2)
-                await self.page.wait_for_load_state("networkidle", timeout=10000)
+                
+                # Verify that we actually scrolled and content loaded
+                new_height = await self.page.evaluate("document.body.scrollHeight")
+                if new_height > current_height:
+                    self.logger.info(f"[INFO] Page height increased from {current_height} to {new_height}")
+                else:
+                    self.logger.info(f"[INFO] Page height unchanged at {current_height}")
                 
                 previous_count = current_count
                 scroll_attempts += 1
             
-            self.logger.info(f"[SUCCESS] Finished scrolling. Total employees found: {previous_count}")
+            # Final scroll to bottom to ensure we get everything
+            self.logger.info(f"[INFO] Performing final scroll to bottom...")
+            await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            await asyncio.sleep(3)
+            await self.page.wait_for_load_state("networkidle", timeout=10000)
+            
+            # Get final count
+            final_count = await self.page.evaluate(f"""
+                () => {{
+                    return document.querySelectorAll('{self.selectors['employee_cards']}').length;
+                }}
+            """)
+            
+            self.logger.info(f"[SUCCESS] Finished scrolling. Total employees found: {final_count}")
             
         except Exception as e:
             self.logger.warning(f"[WARNING] Error during scrolling: {e}")
@@ -1172,15 +953,48 @@ class UnifiedEmployeeScraper:
             debug_dir = Path(__file__).parent.parent.parent.parent / "debug" / "dom_captures"
             debug_dir.mkdir(parents=True, exist_ok=True)
             
+            # Wait a bit more for content to fully render
+            await asyncio.sleep(1)
+            
             # Capture current page content
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             html_file = debug_dir / f"debug_{reason}_{timestamp}.html"
             
+            # Get the full HTML content after JavaScript has rendered
             html_content = await self.page.content()
-            with open(html_file, 'w', encoding='utf-8') as f:
-                f.write(html_content)
             
-            self.logger.info(f"[DEBUG] Captured DOM for {reason} to {html_file}")
+            # Try to get a more readable version by evaluating the DOM structure
+            try:
+                readable_dom = await self.page.evaluate("""
+                    () => {
+                        // Get the main content area
+                        const mainContent = document.querySelector('#page-content, [class*="profile"], [class*="Profile"], [class*="employee"], [class*="Employee"], [class*="content"], [class*="Content"], [class*="main"], [class*="Main"]');
+                        if (mainContent) {
+                            return mainContent.outerHTML;
+                        }
+                        // Fallback to body
+                        return document.body.outerHTML;
+                    }
+                """)
+                
+                if readable_dom and len(readable_dom) > 1000:  # Make sure we got substantial content
+                    with open(html_file, 'w', encoding='utf-8') as f:
+                        f.write(f"<!-- Captured at {datetime.now().isoformat()} -->\n")
+                        f.write(f"<!-- Reason: {reason} -->\n")
+                        f.write("<!DOCTYPE html>\n<html><head><title>Profile Content</title></head><body>\n")
+                        f.write(readable_dom)
+                        f.write("\n</body></html>")
+                    self.logger.info(f"[DEBUG] Captured readable DOM for {reason} to {html_file}")
+                else:
+                    # Fallback to full page content
+                    with open(html_file, 'w', encoding='utf-8') as f:
+                        f.write(html_content)
+                    self.logger.info(f"[DEBUG] Captured full DOM for {reason} to {html_file}")
+            except Exception as e:
+                # Fallback to full page content
+                with open(html_file, 'w', encoding='utf-8') as f:
+                    f.write(html_content)
+                self.logger.info(f"[DEBUG] Captured full DOM for {reason} to {html_file} (fallback)")
             
             # Also capture a screenshot
             screenshot_file = debug_dir / f"debug_{reason}_{timestamp}.png"
@@ -1340,8 +1154,8 @@ class UnifiedEmployeeScraper:
                     results.rawText = sectionContainer ? sectionContainer.textContent : '';
                     
                     // Determine if this is a table or simple section
-                    const tableElements = sectionContainer ? sectionContainer.querySelectorAll('table, .table, .grid, .k-grid, [class*="table"], [class*="grid"]') : [];
-                    const rowElements = sectionContainer ? sectionContainer.querySelectorAll('tr, .row, [class*="row"], [class*="Row"]') : [];
+                    const tableElements = sectionContainer ? sectionContainer.querySelectorAll('table, [class*="table"], [class*="grid"], [class*="Table"], [class*="Grid"]') : [];
+                    const rowElements = sectionContainer ? sectionContainer.querySelectorAll('tr, [class*="row"], [class*="Row"], [class*="tr"], [class*="Tr"]') : [];
                     
                     if (tableElements.length > 0 || rowElements.length > 0) {{
                         // This is a table section
@@ -1349,13 +1163,13 @@ class UnifiedEmployeeScraper:
                         
                         // Try to extract table data
                         const table = tableElements[0] || sectionContainer;
-                        const rows = table.querySelectorAll('tr, .row, [class*="row"], [class*="Row"]');
+                        const rows = table.querySelectorAll('tr, [class*="row"], [class*="Row"], [class*="tr"], [class*="Tr"]');
                         
                         if (rows.length > 0) {{
                             // Extract headers from first row
                             const firstRow = rows[0];
                             const headers = [];
-                            const headerCells = firstRow.querySelectorAll('th, td, .cell, [class*="cell"], [class*="Cell"], [class*="header"]');
+                            const headerCells = firstRow.querySelectorAll('th, td, [class*="cell"], [class*="Cell"], [class*="header"], [class*="Header"], [class*="th"], [class*="Th"], [class*="td"], [class*="Td"]');
                             
                             headerCells.forEach(cell => {{
                                 const text = cell.textContent?.trim();
@@ -1365,7 +1179,7 @@ class UnifiedEmployeeScraper:
                             // If no headers found, try to infer from data rows
                             if (headers.length === 0 && rows.length > 1) {{
                                 const dataRow = rows[1];
-                                const dataCells = dataRow.querySelectorAll('td, .cell, [class*="cell"], [class*="Cell"]');
+                                const dataCells = dataRow.querySelectorAll('td, [class*="cell"], [class*="Cell"], [class*="td"], [class*="Td"]');
                                 headers.length = dataCells.length;
                                 headers.fill('column');
                                 headers.forEach((_, i) => headers[i] = `column_${{i + 1}}`);
@@ -1374,7 +1188,7 @@ class UnifiedEmployeeScraper:
                             // Extract data rows
                             for (let i = 1; i < rows.length; i++) {{
                                 const row = rows[i];
-                                const cells = row.querySelectorAll('td, .cell, [class*="cell"], [class*="Cell"]');
+                                const cells = row.querySelectorAll('td, [class*="cell"], [class*="Cell"], [class*="td"], [class*="Td"]');
                                 const rowData = {{}};
                                 let rowKey = '';
                                 
@@ -1397,7 +1211,7 @@ class UnifiedEmployeeScraper:
                             }}
                         }} else {{
                             // No clear table structure, try to parse as key-value pairs
-                            const fieldElements = sectionContainer.querySelectorAll('[class*="field"], [class*="Field"], [data-kafieldname]');
+                            const fieldElements = sectionContainer.querySelectorAll('[class*="field"], [class*="Field"], [data-kafieldname], [class*="value"], [class*="Value"], [class*="text"], [class*="Text"]');
                             fieldElements.forEach(field => {{
                                 const text = field.textContent?.trim();
                                 if (text && text.length > 1) {{
@@ -1421,7 +1235,7 @@ class UnifiedEmployeeScraper:
                         results.sectionType = 'simple';
                         
                         // Extract simple text content
-                        const textElements = sectionContainer.querySelectorAll('p, span, div, [class*="value"], [class*="text"]');
+                        const textElements = sectionContainer.querySelectorAll('p, span, div, [class*="value"], [class*="Value"], [class*="text"], [class*="Text"], [class*="content"], [class*="Content"]');
                         const texts = [];
                         
                         textElements.forEach(el => {{
@@ -1457,9 +1271,18 @@ class UnifiedEmployeeScraper:
     async def _extract_education_data(self) -> List[Dict[str, str]]:
         """Extract education data using text-based section parsing"""
         try:
-            education_data = await self._parse_section_by_text("Education")
+            # Try multiple section names for education
+            education_section_names = ["Education", "Educational Background", "Academic Background", "Degrees"]
+            education_data = {}
+            
+            for section_name in education_section_names:
+                education_data = await self._parse_section_by_text(section_name)
+                if education_data:
+                    self.logger.info(f"    Found education section: {section_name}")
+                    break
             
             if not education_data:
+                self.logger.info("    No education section found")
                 return []
             
             # Convert the parsed data to the expected format
@@ -1468,24 +1291,150 @@ class UnifiedEmployeeScraper:
             if 'value' in education_data:
                 # Simple text format - try to parse it
                 text = education_data['value']
-                # Look for patterns like "University - Degree - Specialty"
+                self.logger.info(f"    Education text content: {text[:200]}...")
+                
+                # Handle concatenated table data like "InstitutionDegreeSpecialtyUniversity of MassachusettsUndergraduateArts in Classics"
                 import re
-                parts = re.split(r'\s*-\s*|\s*\|\s*', text)
+                
+                # First try to split by common patterns
+                if 'Institution' in text and 'Degree' in text and 'Specialty' in text:
+                    # This looks like concatenated table data
+                    # Try to find the actual data after the headers
+                    data_start = text.find('University')  # Look for first university name
+                    if data_start > 0:
+                        data_text = text[data_start:]
+                        # Try to split by capital letters that start new words
+                        parts = re.split(r'(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])', data_text)
+                        
+                        # Look for university, degree, specialty pattern
+                        university_idx = -1
+                        degree_idx = -1
+                        specialty_idx = -1
+                        
+                        for i, part in enumerate(parts):
+                            if 'University' in part or 'College' in part:
+                                university_idx = i
+                            elif part in ['Undergraduate', 'Graduate', 'Bachelor', 'Master', 'PhD', 'Doctorate']:
+                                degree_idx = i
+                            elif i > degree_idx and degree_idx > 0:
+                                specialty_idx = i
+                                break
+                        
+                        if university_idx >= 0:
+                            institution = ' '.join(parts[university_idx:degree_idx]) if degree_idx > university_idx else parts[university_idx]
+                            degree = ' '.join(parts[degree_idx:specialty_idx]) if specialty_idx > degree_idx else (parts[degree_idx] if degree_idx >= 0 else 'Unknown')
+                            specialty = ' '.join(parts[specialty_idx:]) if specialty_idx >= 0 else 'Unknown'
+                            
+                            education_list.append({
+                                'institution': institution.strip(),
+                                'degree': degree.strip(),
+                                'specialty': specialty.strip()
+                            })
+                        else:
+                            # Fallback: try to find university names
+                            university_matches = re.findall(r'([A-Z][^.!?]*(?:University|College|Institute|School)[^.!?]*)', text, re.IGNORECASE)
+                            for university in university_matches:
+                                education_list.append({
+                                    'institution': university.strip(),
+                                    'degree': 'Unknown',
+                                    'specialty': 'Unknown'
+                                })
+                    else:
+                        # No university found, try other patterns
+                        parts = re.split(r'\s*-\s*|\s*\|\s*', text)
                 if len(parts) >= 2:
                     education_list.append({
                         'institution': parts[0].strip(),
                         'degree': parts[1].strip() if len(parts) > 1 else 'Unknown',
                         'specialty': parts[2].strip() if len(parts) > 2 else 'Unknown'
                     })
+                else:
+                    # Try other patterns like "University - Degree - Specialty"
+                    parts = re.split(r'\s*-\s*|\s*\|\s*', text)
+                    if len(parts) >= 2:
+                        education_list.append({
+                            'institution': parts[0].strip(),
+                            'degree': parts[1].strip() if len(parts) > 1 else 'Unknown',
+                            'specialty': parts[2].strip() if len(parts) > 2 else 'Unknown'
+                        })
+                    else:
+                        # Try to find university/college names in the text
+                        university_matches = re.findall(r'([A-Z][^.!?]*(?:University|College|Institute|School)[^.!?]*)', text, re.IGNORECASE)
+                        for university in university_matches:
+                            education_list.append({
+                                'institution': university.strip(),
+                                'degree': 'Unknown',
+                                'specialty': 'Unknown'
+                            })
             else:
                 # Table format - convert to education list
+                self.logger.info(f"    Education table data keys: {list(education_data.keys())}")
+                
+                # Filter out header rows and concatenated data
+                filtered_data = {}
                 for row_key, row_data in education_data.items():
+                    # Skip header rows
+                    if row_key.lower() in ['institution', 'degree', 'specialty']:
+                        continue
+                    # Skip concatenated data that contains all headers
+                    if isinstance(row_data, str) and 'InstitutionDegreeSpecialty' in row_data:
+                        continue
+                    filtered_data[row_key] = row_data
+                
+                self.logger.info(f"    Filtered education data keys: {list(filtered_data.keys())}")
+                
+                # Try to find proper education records
+                institution = None
+                degree = None
+                specialty = None
+                
+                for row_key, row_data in filtered_data.items():
+                    if isinstance(row_data, dict):
+                        # This is a proper row with structured data
+                        institution = row_data.get('institution', row_data.get('Institution', row_data.get('column_1', '')))
+                        degree = row_data.get('degree', row_data.get('Degree', row_data.get('column_2', '')))
+                        specialty = row_data.get('specialty', row_data.get('Specialty', row_data.get('column_3', '')))
+                        
+                        if institution and institution.strip():
+                            education_list.append({
+                                'institution': institution.strip(),
+                                'degree': degree.strip() if degree else 'Unknown',
+                                'specialty': specialty.strip() if specialty else 'Unknown'
+                            })
+                    else:
+                        # Handle string data - try to identify what type it is
+                        text = str(row_data).strip()
+                        if text and len(text) > 3:
+                            # Check if this looks like an institution name
+                            if any(word in text.lower() for word in ['university', 'college', 'institute', 'school']):
+                                institution = text
+                            elif text.lower() in ['undergraduate', 'graduate', 'bachelor', 'master', 'phd', 'doctorate']:
+                                degree = text
+                            elif text and not any(word in text.lower() for word in ['institution', 'degree', 'specialty']):
+                                # This might be a specialty or degree
+                                if not degree:
+                                    degree = text
+                                elif not specialty:
+                                    specialty = text
+                
+                # If we found individual pieces, combine them
+                if institution and (degree or specialty):
                     education_list.append({
-                        'institution': row_data.get('institution', row_data.get('Institution', row_data.get('column_1', row_key))),
-                        'degree': row_data.get('degree', row_data.get('Degree', row_data.get('column_2', 'Unknown'))),
-                        'specialty': row_data.get('specialty', row_data.get('Specialty', row_data.get('column_3', 'Unknown')))
+                        'institution': institution.strip(),
+                        'degree': degree.strip() if degree else 'Unknown',
+                        'specialty': specialty.strip() if specialty else 'Unknown'
                     })
+                elif not education_list:
+                    # Fallback: add any substantial text as institution
+                    for row_key, row_data in filtered_data.items():
+                        if isinstance(row_data, str) and len(row_data.strip()) > 5:
+                            education_list.append({
+                                'institution': row_data.strip(),
+                                'degree': 'Unknown',
+                                'specialty': 'Unknown'
+                            })
             
+            self.logger.info(f"    Extracted {len(education_list)} education records")
             return education_list
             
         except Exception as e:
@@ -1527,6 +1476,460 @@ class UnifiedEmployeeScraper:
         except Exception as e:
             self.logger.error(f"    Error extracting licenses data: {e}")
             return []
+    
+    async def _extract_projects_data(self) -> Dict[str, Dict[str, str]]:
+        """Extract projects data using text-based parsing and merge with detailed table data"""
+        try:
+            self.logger.info("    Extracting projects data using text-based parser...")
+            
+            # Try different section names for projects
+            section_names = ["Projects", "Project", "Work", "Portfolio", "Experience"]
+            projects_data = None
+            section_found = None
+            
+            for section_name in section_names:
+                projects_data = await self._parse_section_by_text(section_name)
+                # Check if we got the structured result or raw data
+                if projects_data and 'found' in projects_data:
+                    # Structured result from _parse_section_by_text
+                    found_value = projects_data.get('found')
+                    self.logger.info(f"    Section '{section_name}': found={found_value}, type={projects_data.get('sectionType', 'none')}")
+                    if found_value:
+                        section_found = section_name
+                        self.logger.info(f"    Breaking on section: {section_name}")
+                        break
+                elif projects_data and len(projects_data) > 0:
+                    # Raw data - assume it's found if we have data
+                    self.logger.info(f"    Section '{section_name}': found=True (raw data), keys={list(projects_data.keys())}")
+                    section_found = section_name
+                    self.logger.info(f"    Breaking on section: {section_name}")
+                    break
+                else:
+                    self.logger.info(f"    Section '{section_name}': found=False")
+            
+            if not projects_data or (not projects_data.get('found') and len(projects_data) == 0):
+                self.logger.info("    No projects section found")
+                return {}
+            
+            self.logger.info(f"    Found projects section: {section_found}")
+            
+            # Extract projects from text-based parsing
+            text_projects = await self._parse_text_based_projects(projects_data)
+            
+            # Note: Detailed table projects are handled separately in the main scraping flow
+            # to avoid clicking the "Show All" button twice and changing page state
+            
+            # Add project links directly from the page
+            project_links = await self.page.evaluate("""
+                () => {
+                    const projectLinks = [];
+                    // Look for project links anywhere on the page (more robust)
+                    const allLinks = document.querySelectorAll('a[href*="/project/"]');
+                    allLinks.forEach(link => {
+                        const href = link.getAttribute('href');
+                        const text = link.textContent?.trim();
+                        if (href && text && text.length > 3) {
+                            projectLinks.push({
+                                url: href.startsWith('http') ? href : 'https://ei.ennead.com' + href,
+                                name: text,
+                                project_number: href.split('/').pop() || ''
+                            });
+                        }
+                    });
+                    return projectLinks;
+                }
+            """)
+            
+            self.logger.info(f"    Found {len(project_links)} project links directly from page")
+            
+            # Try to match project links with existing projects
+            for link in project_links:
+                link_name = link.get('name', '')
+                link_url = link.get('url', '')
+                link_number = link.get('project_number', '')
+                
+                # Try to find a matching project in our dict
+                matched = False
+                for proj_key, proj_data in text_projects.items():
+                    if self._are_projects_similar(proj_data['name'], link_name):
+                        # Update with URL and number if we found a match
+                        if not proj_data['url']:
+                            proj_data['url'] = link_url
+                        if not proj_data['number']:
+                            proj_data['number'] = link_number
+                        matched = True
+                        break
+                
+                # If no match found, add as new project
+                if not matched and link_name:
+                    project_counter = len(text_projects) + 1
+                    text_projects[f"proj_{project_counter}"] = {
+                        'name': link_name,
+                        'description': '',
+                        'role': '',
+                        'year': '',
+                        'client': '',
+                        'number': link_number,
+                        'url': link_url,
+                        'source': 'text_parsing'
+                    }
+            
+            merged_projects = text_projects
+            
+            self.logger.info(f"    Extracted {len(merged_projects)} unique projects after merging and deduplication")
+            return merged_projects
+            
+        except Exception as e:
+            self.logger.error(f"    Error extracting projects data: {e}")
+            return {}
+    
+    async def _parse_text_based_projects(self, projects_data):
+        """Parse projects from text-based data"""
+        projects_dict = {}
+        
+        if projects_data.get('type') == 'simple':
+            # Simple text format - try to extract project names
+            text_content = projects_data.get('value', '')
+            if text_content:
+                # Look for project names in the text
+                import re
+                # Simple regex to find potential project names (capitalized words)
+                project_matches = re.findall(r'[A-Z][a-zA-Z\s&,.-]+(?:Project|Building|Center|Museum|School|University|Hospital|Library|Campus|Development|Design|Study|Plan|Master|Complex|Facility|Institute|Center|Office|Park|Tower|Hall|Theater|Theatre|Arena|Stadium|Gallery|Museum|Library|School|University|Hospital|Center|Building|Development|Design|Study|Plan|Master|Complex|Facility|Institute|Office|Park|Tower|Hall|Theater|Theatre|Arena|Stadium|Gallery)', text_content)
+                
+                for i, project_name in enumerate(project_matches, 1):
+                    if len(project_name.strip()) > 5:  # Filter out very short matches
+                        projects_dict[f"proj_{i}"] = {
+                            'name': project_name.strip(),
+                            'description': '',
+                            'role': '',
+                            'year': '',
+                            'client': '',
+                            'number': '',
+                            'url': '',
+                            'source': 'text_parsing'
+                        }
+        
+        else:
+            # Table format - convert to projects list
+            self.logger.info(f"    Projects table data keys: {list(projects_data.keys())}")
+            
+            # Filter out header rows and concatenated data
+            filtered_data = {}
+            for row_key, row_data in projects_data.items():
+                # Skip header rows
+                if row_key.lower() in ['project', 'name', 'title', 'description', 'role', 'year', 'client', 'number', 'url']:
+                    continue
+                # Skip concatenated data that contains all headers
+                if isinstance(row_data, str) and any(header in row_data for header in ['ProjectName', 'ProjectTitle', 'ProjectDescription']):
+                    continue
+                filtered_data[row_key] = row_data
+            
+            self.logger.info(f"    Filtered projects data keys: {list(filtered_data.keys())}")
+            
+            # Try to find proper project records
+            project_counter = 1
+            
+            for row_key, row_data in filtered_data.items():
+                if isinstance(row_data, dict):
+                    # This is a proper row with structured data
+                    project_name = row_data.get('project', row_data.get('name', row_data.get('title', row_data.get('column_1', ''))))
+                    project_description = row_data.get('description', row_data.get('column_2', ''))
+                    project_role = row_data.get('role', row_data.get('column_3', ''))
+                    project_year = row_data.get('year', row_data.get('column_4', ''))
+                    project_client = row_data.get('client', row_data.get('column_5', ''))
+                    project_number = row_data.get('number', row_data.get('column_6', ''))
+                    project_url = row_data.get('url', row_data.get('column_7', ''))
+                    
+                    if project_name and project_name.strip():
+                        projects_dict[f"proj_{project_counter}"] = {
+                            'name': project_name.strip(),
+                            'description': project_description.strip() if project_description else '',
+                            'role': project_role.strip() if project_role else '',
+                            'year': project_year.strip() if project_year else '',
+                            'client': project_client.strip() if project_client else '',
+                            'number': project_number.strip() if project_number else '',
+                            'url': project_url.strip() if project_url else '',
+                            'source': 'text_parsing'
+                        }
+                        project_counter += 1
+                else:
+                    # Handle string data - try to identify what type it is
+                    text = str(row_data).strip()
+                    if text and len(text) > 3:
+                        # Check if this looks like a project name (not just a number)
+                        if not text.isdigit() and not text.startswith('proj_'):
+                            # Clean up concatenated project names
+                            cleaned_name = self._clean_project_name(text)
+                            
+                            projects_dict[f"proj_{project_counter}"] = {
+                                'name': cleaned_name,
+                                'description': '',
+                                'role': '',
+                                'year': '',
+                                'client': '',
+                                'number': '',
+                                'url': '',
+                                'source': 'text_parsing'
+                            }
+                            project_counter += 1
+            
+            # If we found individual pieces, combine them
+            if not projects_dict:
+                # Fallback: add any substantial text as project name
+                for row_key, row_data in filtered_data.items():
+                    if isinstance(row_data, str) and len(row_data.strip()) > 5:
+                        projects_dict[f"proj_{project_counter}"] = {
+                            'name': row_data.strip(),
+                            'description': '',
+                            'role': '',
+                            'year': '',
+                            'client': '',
+                            'number': '',
+                            'url': '',
+                            'source': 'text_parsing'
+                        }
+                        project_counter += 1
+        
+        return projects_dict
+    
+    async def _extract_detailed_table_projects(self):
+        """Extract projects from detailed table (Show All page)"""
+        try:
+            # Look for 'Show All' button and click it
+            show_all_button = await self.page.query_selector('a:has-text("Show All")')
+            if not show_all_button:
+                self.logger.info("    No 'Show All' button found for detailed projects")
+                return {}
+            
+            self.logger.info("    Found 'Show All' button, clicking to get detailed projects...")
+            await show_all_button.click()
+            
+            # Wait for the detailed table to load
+            try:
+                await self.page.wait_for_selector('table, .project, .projects, .k-grid', timeout=10000)
+                self.logger.info("    Detailed projects table loaded")
+            except Exception as e:
+                self.logger.warning(f"    Project table not found after clicking Show All: {e}")
+                return {}
+            
+            # Extract projects from the detailed table
+            detailed_projects = await self.page.evaluate("""
+                () => {
+                    const projects = [];
+                    
+                    // Look for various table structures
+                    const tables = document.querySelectorAll('table, .k-grid, .project-grid, .projects-table');
+                    
+                    tables.forEach(table => {
+                        const rows = table.querySelectorAll('tr, .project-row, .k-grid-row');
+                        
+                        rows.forEach((row, index) => {
+                            // Skip header rows
+                            if (index === 0) return;
+                            
+                            const cells = row.querySelectorAll('td, .project-cell, .k-grid-cell');
+                            if (cells.length >= 2) {
+                                const project = {
+                                    name: cells[0]?.textContent?.trim() || '',
+                                    description: cells[1]?.textContent?.trim() || '',
+                                    role: cells[2]?.textContent?.trim() || '',
+                                    year: cells[3]?.textContent?.trim() || '',
+                                    client: cells[4]?.textContent?.trim() || '',
+                                    number: cells[5]?.textContent?.trim() || '',
+                                    url: ''
+                                };
+                                
+                                // Try to find project link
+                                const link = row.querySelector('a[href*="/project/"]');
+                                if (link) {
+                                    project.url = link.href;
+                                    project.number = link.href.split('/').pop() || '';
+                                }
+                                
+                                if (project.name && project.name.length > 3) {
+                                    projects.push(project);
+                                }
+                            }
+                        });
+                    });
+                    
+                    return projects;
+                }
+            """)
+            
+            # Convert to projects dict
+            projects_dict = {}
+            for i, project in enumerate(detailed_projects, 1):
+                if project.get('name'):
+                    projects_dict[f"proj_{i}"] = {
+                        'name': project['name'],
+                        'description': project.get('description', ''),
+                        'role': project.get('role', ''),
+                        'year': project.get('year', ''),
+                        'client': project.get('client', ''),
+                        'number': project.get('number', ''),
+                        'url': project.get('url', ''),
+                        'source': 'detailed_table'
+                    }
+            
+            self.logger.info(f"    Found {len(projects_dict)} projects from detailed table")
+            return projects_dict
+            
+        except Exception as e:
+            self.logger.error(f"    Error extracting detailed table projects: {e}")
+            return {}
+    
+    def _clean_project_name(self, text):
+        """Clean up concatenated project names"""
+        cleaned_name = text
+        
+        # Remove common suffixes that might be concatenated
+        for suffix in ['Project', 'Building', 'Center', 'Museum', 'School', 'University', 'Hospital', 'Library', 'Campus', 'Development', 'Design', 'Study', 'Plan', 'Master', 'Complex', 'Facility', 'Institute', 'Office', 'Park', 'Tower', 'Hall', 'Theater', 'Theatre', 'Arena', 'Stadium', 'Gallery']:
+            if text.endswith(suffix + suffix):
+                cleaned_name = text.replace(suffix + suffix, suffix)
+                break
+        
+        # Remove client names that might be concatenated
+        # Look for patterns like "Project NameClient Name" or "Project NameClient"
+        import re
+        # Pattern to find where project name ends and client name begins
+        pattern = r'([A-Z][a-zA-Z\s&,.-]+?)([A-Z][a-zA-Z\s&,.-]+?)(?:\d+|$)'
+        match = re.search(pattern, cleaned_name)
+        if match and len(match.group(1)) > 10:  # First group is likely the project name
+            cleaned_name = match.group(1).strip()
+        
+        return cleaned_name
+    
+    async def _merge_and_deduplicate_projects(self, text_projects, detailed_projects):
+        """Merge text-based and detailed table projects, removing duplicates"""
+        merged_projects = {}
+        project_counter = 1
+        
+        # First, add all text-based projects
+        for proj_key, proj_data in text_projects.items():
+            merged_projects[f"proj_{project_counter}"] = proj_data
+            project_counter += 1
+        
+        # Then add detailed table projects, checking for duplicates
+        for proj_key, proj_data in detailed_projects.items():
+            # Check if this project already exists (by name similarity)
+            is_duplicate = False
+            for existing_key, existing_data in merged_projects.items():
+                if self._are_projects_similar(proj_data['name'], existing_data['name']):
+                    # Update existing project with more complete data
+                    if not existing_data['url'] and proj_data['url']:
+                        existing_data['url'] = proj_data['url']
+                    if not existing_data['number'] and proj_data['number']:
+                        existing_data['number'] = proj_data['number']
+                    if not existing_data['description'] and proj_data['description']:
+                        existing_data['description'] = proj_data['description']
+                    if not existing_data['role'] and proj_data['role']:
+                        existing_data['role'] = proj_data['role']
+                    if not existing_data['year'] and proj_data['year']:
+                        existing_data['year'] = proj_data['year']
+                    if not existing_data['client'] and proj_data['client']:
+                        existing_data['client'] = proj_data['client']
+                    existing_data['source'] = 'merged'
+                    is_duplicate = True
+                    break
+            
+            if not is_duplicate:
+                merged_projects[f"proj_{project_counter}"] = proj_data
+                project_counter += 1
+        
+        # Also try to get project links directly from the page
+        project_links = await self.page.evaluate("""
+            () => {
+                const projectLinks = [];
+                // Look for project links anywhere on the page (more robust)
+                const allLinks = document.querySelectorAll('a[href*="/project/"]');
+                allLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    const text = link.textContent?.trim();
+                    if (href && text && text.length > 3) {
+                        projectLinks.push({
+                            url: href.startsWith('http') ? href : 'https://ei.ennead.com' + href,
+                            name: text,
+                            project_number: href.split('/').pop() || ''
+                        });
+                    }
+                });
+                return projectLinks;
+            }
+        """)
+        
+        self.logger.info(f"    Found {len(project_links)} project links directly from page")
+        
+        # Try to match project links with existing projects
+        for link in project_links:
+            link_name = link.get('name', '')
+            link_url = link.get('url', '')
+            link_number = link.get('project_number', '')
+            
+            # Try to find a matching project in our dict
+            matched = False
+            for proj_key, proj_data in merged_projects.items():
+                if self._are_projects_similar(proj_data['name'], link_name):
+                    # Update with URL and number if we found a match
+                    if not proj_data['url']:
+                        proj_data['url'] = link_url
+                    if not proj_data['number']:
+                        proj_data['number'] = link_number
+                    matched = True
+                    break
+            
+            # If no match found, add as new project
+            if not matched and link_name:
+                merged_projects[f"proj_{project_counter}"] = {
+                    'name': link_name,
+                    'description': '',
+                    'role': '',
+                    'year': '',
+                    'client': '',
+                    'number': link_number,
+                    'url': link_url,
+                    'source': 'text_parsing'
+                }
+                project_counter += 1
+        
+        return merged_projects
+    
+    def _are_projects_similar(self, name1, name2):
+        """Check if two project names are similar (to detect duplicates)"""
+        if not name1 or not name2:
+            return False
+        
+        # Normalize names for comparison
+        norm1 = name1.lower().strip()
+        norm2 = name2.lower().strip()
+        
+        # Exact match
+        if norm1 == norm2:
+            return True
+        
+        # One name contains the other
+        if norm1 in norm2 or norm2 in norm1:
+            return True
+        
+        # Check for significant word overlap
+        words1 = set(norm1.split())
+        words2 = set(norm2.split())
+        
+        # Remove common words that don't help with matching
+        common_words = {'the', 'a', 'an', 'and', 'or', 'of', 'in', 'on', 'at', 'to', 'for', 'with', 'by', 'from', 'up', 'about', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'between', 'among', 'project', 'building', 'center', 'museum', 'school', 'university', 'hospital', 'library', 'campus', 'development', 'design', 'study', 'plan', 'master', 'complex', 'facility', 'institute', 'office', 'park', 'tower', 'hall', 'theater', 'theatre', 'arena', 'stadium', 'gallery'}
+        
+        words1 = words1 - common_words
+        words2 = words2 - common_words
+        
+        if not words1 or not words2:
+            return False
+        
+        # Calculate overlap
+        overlap = len(words1.intersection(words2))
+        total_words = len(words1.union(words2))
+        
+        # If more than 50% of words overlap, consider them similar
+        return overlap / total_words > 0.5
     
     async def _extract_section_data(self, section_name: str, field_mapping: Dict[str, str] = None) -> Dict[str, Any]:
         """

@@ -35,8 +35,7 @@ class ScraperOrchestrator:
                 return False
             
             # Individual JSON files are now saved by the scraper as it goes
-            # Do not generate the combined employee_files_list.json anymore (GH Pages uses individual files)
-            self.logger.info("[STEP 2] Skipping combined JSON generation per project policy")
+
 
             self.logger.info(f"[SUCCESS] Scraper completed successfully - {len(employees)} employees processed")
             self.logger.info(f"[INFO] Individual JSON files saved to: docs/assets/individual_employees/")

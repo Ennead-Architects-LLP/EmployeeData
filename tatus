@@ -1,0 +1,10 @@
+[33m3277eb8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge branch 'main' of https://github.com/Ennead-Architects-LLP/EmployeeData
+[33med65283[m chore: remove weekly scraper script and update workflow
+[33mfe93828[m %%%_Action_Rebuild AboutMe_ComputerInfo.exe
+[33m2f2f7d7[m Merge branch 'main' of https://github.com/Ennead-Architects-LLP/EmployeeData
+[33m8022410[m chore: simplify requirements for scraper module
+[33mbb57090[m %%%_Action_Rebuild AboutMe_ComputerInfo.exe
+[33m3810403[m 🔄 Daily merge: update employees.json
+[33m513f4fc[m fix: update GitHub Actions workflows for better dependency management and commit handling
+[33m601671d[m chore: remove obsolete test files and Linux requirements
+[33md66082e[m fix: update Python dependency installation in GitHub Actions workflow

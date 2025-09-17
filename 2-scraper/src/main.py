@@ -302,7 +302,7 @@ async def main():
             # Helpful pointers
             print(f"   Log file: {config.LOG_FILE}")
             # Seating chart selector report removed
-            print(f"   (Limited to {config.DEBUG_MAX_EMPLOYEES} employees)")
+            print(f"   (Limited to {config.LIMIT or 3} employees)")
         
         print("="*50)
     

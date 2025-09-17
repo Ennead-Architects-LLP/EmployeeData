@@ -14,14 +14,9 @@
   "memberships": [],
   "education": [
     {
-      "institution": "City University of New York, Queens College",
-      "degree": "Graduate",
-      "specialty": "Sculpture/Photography"
-    },
-    {
       "institution": "University of Maryland",
       "degree": "Undergraduate",
-      "specialty": "Photography"
+      "specialty": "Sculpture/Photography"
     }
   ],
   "licenses": [],
@@ -30,6 +25,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aweidele@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:02:41.571273",
+  "scraped_at": "2025-09-16T18:48:18.300427",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Akil Matthews",
   "email": "akil.matthews@ennead.com",
-  "bio": "I am originally from the twin island of Trinidad and Tobago, a place in the Caribbean known for having a vibrant and diverse culture of music, food and people. My journey in the U.S. began when I moved to Baltimore, MD, where I would spend most of my time as a young adult gaining a different perspective on history and culture, as well as architecture and design. I was fortunate enough to attend Howard University in Washington, DC where I received a Bachelor's degree in Architecture. After spending some years developing my skills, I found my way to New York City intrigued by the idea of exploring architectural solutions that address both current and future issues urban environments will face at a local and global scale. When I’m not immersing myself in design, I spend most of my time attending, hosting and planning whisky events through my company @WhiskyArch. I’m constantly looking to learn new things and share my experiences, so feel free to reach out anytime. Cheers!",
+  "bio": "I am originally from the twin island of Trinidad and Tobago, a place in the Caribbean known for having a vibrant and diverse culture of music, food and people. My journey in the U.S. began when I moved to Baltimore, MD, where I would spend most of my time as a young adult gaining a different perspective on history and culture, as well as architecture and design. I was fortunate enough to attend Howard University in Washington, DC where I received a Bachelor's degree in Architecture. After spending some years developing my skills, I found my way to New York City intrigued by the idea of exploring architectural solutions that address both current and future issues urban environments will face at a local and global scale. When I’m not immersing myself in design, I spend most of my time attending, hosting and planning whisky events through my company @WhiskyArch. I’m constantly looking to learn new things and share my experiences, so feel free to reach out anytime. Cheers! I am originally from the twin island of Trinidad and Tobago, a place in the Caribbean known for having a vibrant and diverse culture of music, food and people. My journey in the U.S. began when I moved to Baltimore, MD, where I would spend most of my time as a young adult gaining a different perspective on history and culture, as well as architecture and design. I was fortunate enough to attend Howard University in Washington, DC where I received a Bachelor's degree in Architecture. After spending some years developing my skills, I found my way to New York City intrigued by the idea of exploring architectural solutions that address both current and future issues urban environments will face at a local and global scale. When I’m not immersing myself in design, I spend most of my time attending, hosting and planning whisky events through my company @WhiskyArch. I’m constantly looking to learn new things and share my experiences, so feel free to reach out anytime. Cheers!",
   "phone": "212-792-5821",
   "mobile": "212-792-5821",
   "office_location": "",
@@ -11,13 +11,12 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 9,
-  "memberships": [],
+  "memberships": [
+    "NCARBNational Organization of Minority Architects",
+    "NCARB",
+    "National Organization of Minority Architects"
+  ],
   "education": [
-    {
-      "institution": "Columbia University",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Howard University",
       "degree": "Undergraduate",
@@ -27,110 +26,300 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "The Cathedral School of St. John the Divine Addition1412B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-cathedral-school-of-st-john-the-divine-addition",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "The Cathedral School of St. John the Divine Addition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "1412B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Huzhou Vocational and Technical Campus Master PlanHuzhou Professional School2227",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huzhou-vocational-and-technical-campus-master-plan",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Huzhou Vocational and Technical Campus Master Plan",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Huzhou Professional School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "The Public Theater at Astor Place, Facilities Assessment and Planning StudyThe Public Theater1529",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
+      "url": "https://ei.ennead.com/project/0EBCF5D1-782D-4CD6-A0D7-3229001BF0FB/the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "The Public Theater at Astor Place, Facilities Assessment and Planning Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/0EBCF5D1-782D-4CD6-A0D7-3229001BF0FB/the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "Northwell, Third Avenue Medical Office Building",
+    "proj_9": {
+      "name": "The Public Theater",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Northwell,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
       "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "COMAC Campus, New Headquarters",
+    "proj_11": {
+      "name": "Taopu Sci-Tech City Plot 606",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+    "proj_12": {
+      "name": "Apple Scottsdale",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/62EAAD49-9D9B-406B-B5FA-FB6B61A3CE5D/apple-scottsdale",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+    "proj_13": {
+      "name": "Husu Dafeng Industrial Park",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/443B00F1-7DFB-4506-AFBB-DA09A4D98467/husu-dafeng-industrial-park",
+      "source": "detailed_table"
     },
-    "proj_8": {
+    "proj_14": {
+      "name": "Kuwait University Health Sciences Campus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Lingang Pujiang International Healthcare City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Mount Sinai Downtown Transformation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Peabody Essex Museum, Expansion and Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Pujiang Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Taopu Smart City Plot 615/616",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/208EEB2F-05ED-407C-9CC8-67F5937024D1/taopu-smart-city-plot-615-616",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "New York University. Grey Art MuseumNew York University1942",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-grey-art-museum",
+      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum",
+      "source": "text_parsing"
+    },
+    "proj_23": {
       "name": "New York University. Grey Art Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/38A12831-7F5D-4D05-9431-B02F18ABA426/new-york-university-grey-art-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
-      "name": "New York University, College of Arts and Science, 25 West 4th Street, Floors 2-6",
+    "proj_24": {
+      "name": "New York University",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6",
       "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_25": {
+      "name": "Baoshan NandaLingang Economic Group1848",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "baoshan-nanda",
+      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda",
+      "source": "text_parsing"
+    },
+    "proj_26": {
       "name": "Baoshan Nanda",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "Lingang Economic Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "2109",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "1900",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6",
+      "url": "https://ei.ennead.com/project/245314A9-7257-44C9-B2E4-AA3C374B72EC/new-york-university-college-of-arts-and-science-25-west-4th-street-floors-2-6",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=amatthews@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:02:44.116892",
+  "scraped_at": "2025-09-16T18:48:28.372624",
   "profile_id": null
 }
