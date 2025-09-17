@@ -5,8 +5,12 @@ function handleSearch() {
     
     console.log('Search triggered with term:', searchTerm);
     
+    // Limit search universe to currently filtered (position + project) employees
+    const baseCandidates = getEmployeesAfterNonSearchFilters(allEmployees);
+    const baseSet = new Set(baseCandidates.map(e => e.human_name));
+
     if (searchTerm === '') {
-        filteredEmployees = [...allEmployees];
+        filteredEmployees = baseCandidates;
         suggestionsContainer.classList.remove('show');
         renderEmployees();
         return;
@@ -23,14 +27,14 @@ function handleSearch() {
     } else {
         // If there's a perfect match, only show that employee
         if (searchResult.hasPerfectMatch) {
-            filteredEmployees = searchResult.results;
+            filteredEmployees = searchResult.results.filter(emp => baseSet.has(emp.human_name));
             suggestionsContainer.classList.remove('show');
         } else {
             // Use fuzzy results + regular text search for other fields
             let fuzzyResults = searchResult.results;
             
             // Also do regular text search for non-name fields (very forgiving)
-            const textSearchResults = allEmployees.filter(employee => {
+            const textSearchResults = baseCandidates.filter(employee => {
                 // Safely handle projects - check if it's an array or object
                 let projectNames = [];
                 if (employee.projects) {
@@ -98,7 +102,8 @@ function handleSearch() {
             });
             
             // Combine and deduplicate results
-            const combinedResults = [...fuzzyResults, ...textSearchResults];
+            // Restrict fuzzy results to base set as well
+            const combinedResults = [...fuzzyResults.filter(emp => baseSet.has(emp.human_name)), ...textSearchResults];
             filteredEmployees = combinedResults.filter((employee, index, self) => 
                 index === self.findIndex(emp => emp.human_name === employee.human_name)
             );
@@ -159,16 +164,53 @@ function applyFilters() {
         education: document.getElementById('toggle_education')?.checked !== false,
     };
 
-    // Apply position filter if built
-    let toRender = filteredEmployees;
-    if (window.selectedPositions instanceof Set && window.selectedPositions.size > 0) {
-        toRender = filteredEmployees.filter(emp => {
+    // Delegate rendering through the search pipeline so search operates on narrowed set
+    if (typeof handleSearch === 'function') {
+        handleSearch();
+    } else {
+        // Fallback: render the base filtered set
+        const narrowed = getEmployeesAfterNonSearchFilters(allEmployees);
+        filteredEmployees = narrowed;
+        renderEmployees(narrowed);
+    }
+}
+
+function getEmployeesAfterNonSearchFilters(employees) {
+    let results = Array.isArray(employees) ? employees.slice() : [];
+
+    // Position filter
+    if (window.selectedPositions instanceof Set) {
+        if (window.selectedPositions.size === 0) {
+            return [];
+        }
+        results = results.filter(emp => {
             const pos = (emp.position || emp.title || '').trim();
-            return pos === '' || window.selectedPositions.has(pos); // if missing, allow through
+            return pos === '' || window.selectedPositions.has(pos);
         });
     }
 
-    renderEmployees(toRender);
+    // Project filter (AND logic)
+    if (window.selectedProjects instanceof Set) {
+        if (window.selectedProjects.size === 0) {
+            return [];
+        }
+        const required = Array.from(window.selectedProjects);
+        results = results.filter(emp => {
+            let projectNames = [];
+            if (emp.projects) {
+                if (Array.isArray(emp.projects)) {
+                    projectNames = emp.projects.map(p => (p && (p.name || p.title)) ? (p.name || p.title) : '').filter(Boolean);
+                } else if (typeof emp.projects === 'object') {
+                    projectNames = Object.values(emp.projects).map(p => (p && (p.name || p.title)) ? (p.name || p.title) : '').filter(Boolean);
+                }
+            }
+            if (projectNames.length === 0) return false;
+            const lowerSet = new Set(projectNames.map(n => n.toLowerCase()));
+            return required.every(req => lowerSet.has(req.toLowerCase()));
+        });
+    }
+
+    return results;
 }
 
 // Wire checkbox changes to re-render
@@ -194,10 +236,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Build dynamic position filters when data is loaded
     if (typeof allEmployees !== 'undefined' && Array.isArray(allEmployees) && allEmployees.length > 0) {
         buildPositionFilter(allEmployees);
+        buildProjectFilter(allEmployees);
     }
     window.addEventListener('EmployeesLoaded', () => {
         if (typeof allEmployees !== 'undefined' && Array.isArray(allEmployees) && allEmployees.length > 0) {
             buildPositionFilter(allEmployees);
+            buildProjectFilter(allEmployees);
             applyFilters();
         }
     });
@@ -208,13 +252,20 @@ function buildPositionFilter(employees) {
     const selectAll = document.getElementById('positionSelectAll');
     if (!container) return;
 
-    const positions = Array.from(new Set(
-        employees
-            .map(e => (e.position || e.title || '').trim())
-            .filter(Boolean)
-    )).sort((a, b) => a.localeCompare(b));
+    // Collect unique positions from employees.json (position or title), case-insensitive
+    const seenLowerToDisplay = new Map();
+    employees.forEach(e => {
+        const raw = (e && (e.position || e.title) || '').trim();
+        if (!raw) return;
+        const lower = raw.toLowerCase();
+        if (!seenLowerToDisplay.has(lower)) {
+            seenLowerToDisplay.set(lower, raw);
+        }
+    });
+    const positions = Array.from(seenLowerToDisplay.values()).sort((a, b) => a.localeCompare(b));
 
-    window.selectedPositions = new Set(positions); // default: all selected
+    // Default: all positions selected
+    window.selectedPositions = new Set(positions);
 
     container.innerHTML = positions.map(pos => `
         <label class="pretty-check"><input type="checkbox" class="position-option" value="${pos.replace(/"/g, '&quot;')}" checked> <span>${pos}</span></label>
@@ -236,6 +287,7 @@ function buildPositionFilter(employees) {
     });
 
     if (selectAll) {
+        selectAll.checked = true;
         selectAll.addEventListener('change', () => {
             const check = !!selectAll.checked;
             window.selectedPositions = new Set(check ? positions : []);
@@ -247,9 +299,65 @@ function buildPositionFilter(employees) {
     const selectNoneBtn = document.getElementById('positionSelectNone');
     if (selectNoneBtn) {
         selectNoneBtn.addEventListener('click', () => {
+            // Uncheck all and hide all employees
             window.selectedPositions = new Set();
             container.querySelectorAll('.position-option').forEach(cb => { cb.checked = false; });
             if (selectAll) selectAll.checked = false;
+            applyFilters();
+        });
+    }
+}
+
+function buildProjectFilter(employees) {
+    const container = document.getElementById('projectFilterOptions');
+    const selectNoneBtn = document.getElementById('projectSelectNone');
+    if (!container) return;
+
+    // Collect unique project names across all employees (support array or object shape),
+    // dedupe case-insensitively while preserving original display casing
+    const seenLowerToDisplay = new Map();
+    employees.forEach(e => {
+        if (!e || !e.projects) return;
+        const pushName = (val) => {
+            if (!val) return;
+            const trimmed = String(val).trim();
+            if (!trimmed) return;
+            const lower = trimmed.toLowerCase();
+            if (!seenLowerToDisplay.has(lower)) {
+                seenLowerToDisplay.set(lower, trimmed);
+            }
+        };
+        if (Array.isArray(e.projects)) {
+            e.projects.forEach(p => pushName(p && (p.name || p.title)));
+        } else if (typeof e.projects === 'object') {
+            Object.values(e.projects).forEach(p => pushName(p && (p.name || p.title)));
+        }
+    });
+    const projects = Array.from(seenLowerToDisplay.values()).sort((a, b) => a.localeCompare(b));
+
+    // Default: none selected until user picks (so page shows all via search; we define behavior: when none selected -> show none as in applyFilters)
+    // But likely better UX: default to all selected. We'll follow user: dropdown with checks; if none selected via Select None -> show none.
+    window.selectedProjects = new Set(projects); // default select all
+
+    container.innerHTML = projects.map(name => `
+        <label class="pretty-check"><input type="checkbox" class="project-option" value="${name.replace(/"/g, '&quot;')}" checked> <span>${name}</span></label>
+    `).join('');
+
+    container.querySelectorAll('.project-option').forEach(cb => {
+        cb.addEventListener('change', () => {
+            if (cb.checked) {
+                window.selectedProjects.add(cb.value);
+            } else {
+                window.selectedProjects.delete(cb.value);
+            }
+            applyFilters();
+        });
+    });
+
+    if (selectNoneBtn) {
+        selectNoneBtn.addEventListener('click', () => {
+            window.selectedProjects = new Set();
+            container.querySelectorAll('.project-option').forEach(cb => { cb.checked = false; });
             applyFilters();
         });
     }
