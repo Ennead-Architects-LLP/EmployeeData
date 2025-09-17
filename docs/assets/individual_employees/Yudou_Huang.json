@@ -1,7 +1,7 @@
 {
   "human_name": "Yudou Huang",
   "email": "yudou.huang@ennead.com",
-  "bio": "I was born and grew up in Zhuhai, a hot and humid small city in southern China. I spent four years in Taipei for my bachelor’s degree of architecture and urban design at the Chinese Culture University. After that, I continue pursuing my architecture career at the University of Virginia for Master of Architecture.I enjoy photographing, traveling and watching soccer(mostly watching Manchester United) in my leisure time.Excited to be an Enneadian!",
+  "bio": "I was born and grew up in Zhuhai, a hot and humid small city in southern China. I spent four years in Taipei for my bachelor’s degree of architecture and urban design at the Chinese Culture University. After that, I continue pursuing my architecture career at the University of Virginia for Master of Architecture.I enjoy photographing, traveling and watching soccer(mostly watching Manchester United) in my leisure time.Excited to be an Enneadian! I was born and grew up in Zhuhai, a hot and humid small city in southern China. I spent four years in Taipei for my bachelor’s degree of architecture and urban design at the Chinese Culture University. After that, I continue pursuing my architecture career at the University of Virginia for Master of Architecture.I enjoy photographing, traveling and watching soccer(mostly watching Manchester United) in my leisure time.Excited to be an Enneadian!",
   "phone": "2125846317",
   "mobile": "2125846317",
   "office_location": "",
@@ -11,106 +11,263 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 5,
-  "memberships": [],
+  "memberships": [
+    "LEED GA"
+  ],
   "education": [
-    {
-      "institution": "University of Virginia",
-      "degree": "Graduate",
-      "specialty": "Architecture Pat 2.5 (Candidate 2019)"
-    },
     {
       "institution": "Chinese Culture University",
       "degree": "Undergraduate",
-      "specialty": "Architecture & Urban Design"
+      "specialty": "Architecture Pat 2.5 (Candidate 2019)"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative CompetitionVIP.com2321",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
-      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+    "proj_6": {
+      "name": "VIP.com",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_7": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Long Island",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Shenhzen International Performance CenterShenhzen Int. Performance Center2025",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenhzen-international-performance-center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Shenhzen International Performance Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_12": {
+      "name": "Shenhzen Int. Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "The Public, Delacorte Theater, Central ParkThe Public Theater2031",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-public-delacorte-theater-central-park",
+      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
+      "source": "text_parsing"
+    },
+    "proj_14": {
       "name": "The Public, Delacorte Theater, Central Park",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_15": {
+      "name": "The Public Theater",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Capitol CrossingCapitol Crossing III LLC, and Capitol Crossing IV LLC1850",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "capitol-crossing",
+      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing",
+      "source": "text_parsing"
+    },
+    "proj_17": {
       "name": "Capitol Crossing",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_18": {
+      "name": "Capitol Crossing III LLC, and Capitol Crossing IV LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "Shenzhen Science and Technology Museum (S&T)Shenzhen Toutiao Technology Co., Ltd.1923",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-science-and-technology-museum-s-t",
+      "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t",
+      "source": "text_parsing"
+    },
+    "proj_20": {
       "name": "Shenzhen Science and Technology Museum (S&T)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_21": {
+      "name": "Shenzhen Toutiao Technology Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "Huawei Qingpu R&D Design CompetitionHuawei Technologies Co., Ltd.1841",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huawei-qingpu-r-d-design-competition",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
+      "source": "text_parsing"
+    },
+    "proj_23": {
       "name": "Huawei Qingpu R&D Design Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Huawei Technologies Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=yhuang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:14:29.022864",
+  "scraped_at": "2025-09-17T22:55:58.214429",
   "profile_id": null
 }
