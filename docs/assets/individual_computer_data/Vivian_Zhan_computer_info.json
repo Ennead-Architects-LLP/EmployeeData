@@ -1,0 +1,14 @@
+{
+  "EANY-HW8MWP3": {
+    "computername": "EANY-HW8MWP3",
+    "os": "Windows 11",
+    "manufacturer": "Dell Inc.",
+    "model": "Precision 5820 Tower",
+    "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+    "gpu_name": "NVIDIA RTX A4000",
+    "gpu_driver": "32.0.15.8097",
+    "memory_bytes": 137107308544,
+    "serial_number": "HW8MWP3",
+    "last_updated": "2025-09-17T21:32:30.496653"
+  }
+}
