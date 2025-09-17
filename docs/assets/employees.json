@@ -3799,6 +3799,114 @@
       }
     }
   },
+  "DaYeon Kim": {
+    "human_name": "DaYeon Kim",
+    "email": "DaYeon.Kim@ennead.com",
+    "bio": "4",
+    "phone": "646-437-1761",
+    "mobile": "646-437-1761",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
+    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
+    "position": "Senior Project Architect",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Dankook University",
+        "degree": "Undergraduate",
+        "specialty": "Architectural Engineering"
+      },
+      {
+        "institution": "Columbia University",
+        "degree": "Graduate",
+        "specialty": "Planning and Preservation M.Arch"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+        "source": "fallback"
+      },
+      "proj_2": {
+        "name": "Northwell, Third Avenue Medical Office Building",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "fallback"
+      },
+      "proj_3": {
+        "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "fallback"
+      },
+      "proj_4": {
+        "name": "Kuwait University Health Sciences Campus",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+        "source": "fallback"
+      },
+      "proj_5": {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "fallback"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-16T16:04:21.276526",
+    "profile_id": null,
+    "computer_info": {
+      "EANY-3WSPSZ2": {
+        "Computername": "EANY-3WSPSZ2",
+        "Username": "dayeon.kim",
+        "Last Name": "Kim",
+        "First Name": "Dayeon",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772084,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WSPSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T16:49:00"
+      }
+    }
+  },
   "David Appel": {
     "human_name": "David Appel",
     "email": "david.appel@ennead.com",
@@ -4014,114 +4122,6 @@
         "GPU Driver": "32.0.15.7159",
         "GPU Memory": 4193280.0,
         "Date": "2025-06-27T19:00:00"
-      }
-    }
-  },
-  "DaYeon Kim": {
-    "human_name": "DaYeon Kim",
-    "email": "DaYeon.Kim@ennead.com",
-    "bio": "4",
-    "phone": "646-437-1761",
-    "mobile": "646-437-1761",
-    "office_location": "",
-    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
-    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
-    "position": "Senior Project Architect",
-    "department": "",
-    "years_with_firm": 4,
-    "memberships": [],
-    "education": [
-      {
-        "institution": "Dankook University",
-        "degree": "Undergraduate",
-        "specialty": "Architectural Engineering"
-      },
-      {
-        "institution": "Columbia University",
-        "degree": "Graduate",
-        "specialty": "Planning and Preservation M.Arch"
-      }
-    ],
-    "licenses": [],
-    "projects": {
-      "proj_1": {
-        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-        "source": "fallback"
-      },
-      "proj_2": {
-        "name": "Northwell, Third Avenue Medical Office Building",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-        "source": "fallback"
-      },
-      "proj_3": {
-        "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "source": "fallback"
-      },
-      "proj_4": {
-        "name": "Kuwait University Health Sciences Campus",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
-        "source": "fallback"
-      },
-      "proj_5": {
-        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-        "source": "fallback"
-      }
-    },
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-16T16:04:21.276526",
-    "profile_id": null,
-    "computer_info": {
-      "EANY-3WSPSZ2": {
-        "Computername": "EANY-3WSPSZ2",
-        "Username": "dayeon.kim",
-        "Last Name": "Kim",
-        "First Name": "Dayeon",
-        "OS": "Microsoft Windows NT Workstation 10.0",
-        "Manufacturer": "Dell Inc.",
-        "Model": "Precision 5820 Tower",
-        "Total Physical Memory": 66772084,
-        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
-        "Serial Number": "3WSPSZ2",
-        "GPU Name": "NVIDIA Quadro RTX 4000",
-        "GPU Date": "2018-11-13T00:00:00",
-        "GPU Age ": "7 years",
-        "GPU Processor": "Quadro RTX 4000",
-        "Replacement Piroirty ": 2,
-        "GPU Driver": "32.0.15.7159",
-        "GPU Memory": 4193280.0,
-        "Date": "2025-07-01T16:49:00"
       }
     }
   },
@@ -6321,18 +6321,6 @@
     "profile_id": null,
     "computer_info": {
       "EANY-8DW8KD3": {
-<<<<<<< HEAD
-        "computername": "EANY-8DW8KD3",
-        "os": "Windows 11",
-        "manufacturer": "Dell Inc.",
-        "model": "Precision 5820 Tower",
-        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
-        "gpu_name": "DisplayLink USB Device",
-        "gpu_driver": "9.3.3324.0",
-        "memory_bytes": 119925776384,
-        "serial_number": "8DW8KD3",
-        "last_updated": "2025-09-17T15:54:24.602154"
-=======
         "Computername": "EANY-8DW8KD3",
         "Username": "Han.Isozen",
         "Last Name": "Isozen",
@@ -6351,7 +6339,6 @@
         "GPU Driver": "31.0.15.2886",
         "GPU Memory": 4193280.0,
         "Date": "2025-07-14T11:18:00"
->>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   },
@@ -13878,21 +13865,7 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:48.435129",
-    "profile_id": null,
-    "computer_info": {
-      "EANY-8DN5KD3": {
-        "computername": "EANY-8DN5KD3",
-        "os": "Windows 11",
-        "manufacturer": "Dell Inc.",
-        "model": "Precision 5820 Tower",
-        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
-        "gpu_name": "NVIDIA Quadro RTX 4000",
-        "gpu_driver": "32.0.15.7342",
-        "memory_bytes": 68386164736,
-        "serial_number": "8DN5KD3",
-        "last_updated": "2025-09-17T20:41:33.099575"
-      }
-    }
+    "profile_id": null
   },
   "Nicole Levine": {
     "human_name": "Nicole Levine",
@@ -14047,18 +14020,6 @@
     "profile_id": null,
     "computer_info": {
       "EANY-8DP1KD3": {
-<<<<<<< HEAD
-        "computername": "EANY-8DP1KD3",
-        "os": "Windows 11",
-        "manufacturer": "Dell Inc.",
-        "model": "Precision 5820 Tower",
-        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
-        "gpu_name": "NVIDIA Quadro RTX 4000",
-        "gpu_driver": "32.0.15.8097",
-        "memory_bytes": 68386164736,
-        "serial_number": "8DP1KD3",
-        "last_updated": "2025-09-17T18:34:13.859102"
-=======
         "Computername": "EANY-8DP1KD3",
         "Username": "paula.gronda",
         "Last Name": "Gronda",
@@ -14077,7 +14038,6 @@
         "GPU Driver": "32.0.15.8097",
         "GPU Memory": 4193280.0,
         "Date": "2025-07-07T09:56:00"
->>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   },
@@ -14798,18 +14758,6 @@
     "profile_id": null,
     "computer_info": {
       "EANY-8DN6KD3": {
-<<<<<<< HEAD
-        "computername": "EANY-8DN6KD3",
-        "os": "Windows 11",
-        "manufacturer": "Dell Inc.",
-        "model": "Precision 5820 Tower",
-        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
-        "gpu_name": "NVIDIA Quadro RTX 4000",
-        "gpu_driver": "32.0.15.7159",
-        "memory_bytes": 137105645568,
-        "serial_number": "8DN6KD3",
-        "last_updated": "2025-09-17T18:50:47.706922"
-=======
         "Computername": "EANY-8DN6KD3",
         "Username": "robinson.strong",
         "Last Name": "Strong",
@@ -14828,7 +14776,6 @@
         "GPU Driver": "32.0.15.7159",
         "GPU Memory": 4193280.0,
         "Date": "2025-07-07T11:24:00"
->>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   },
@@ -15398,23 +15345,7 @@
         "gpu_driver": "17.12.55.198",
         "memory_bytes": 33765298176,
         "serial_number": "PW0HJ97N",
-<<<<<<< HEAD
-        "last_updated": "2025-09-16T21:10:10.079918"
-      },
-      "MININT-5V26DTJ": {
-        "computername": "MININT-5V26DTJ",
-        "os": "Windows 11",
-        "manufacturer": "ASUS",
-        "model": "System Product Name",
-        "cpu": "Intel(R) Core(TM) Ultra 9 285",
-        "gpu_name": "NVIDIA RTX A2000 12GB",
-        "gpu_driver": "31.0.15.3742",
-        "memory_bytes": 67936788480,
-        "serial_number": "System Serial Number",
-        "last_updated": "2025-09-17T20:18:54.133701"
-=======
         "last_updated": "2025-09-16T20:56:13.083928"
->>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   },
@@ -18699,18 +18630,6 @@
     "profile_id": null,
     "computer_info": {
       "EANY-9W8MWP3": {
-<<<<<<< HEAD
-        "computername": "EANY-9W8MWP3",
-        "os": "Windows 11",
-        "manufacturer": "Dell Inc.",
-        "model": "Precision 5820 Tower",
-        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
-        "gpu_name": "NVIDIA RTX A4000",
-        "gpu_driver": "32.0.15.7342",
-        "memory_bytes": 137107308544,
-        "serial_number": "9W8MWP3",
-        "last_updated": "2025-09-17T18:32:52.475161"
-=======
         "Computername": "EANY-9W8MWP3",
         "Username": "zeyi.xuan",
         "Last Name": "Xuan",
@@ -18729,7 +18648,6 @@
         "GPU Driver": "32.0.15.7342",
         "GPU Memory": 4193280.0,
         "Date": "2025-06-30T22:05:00"
->>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   }
