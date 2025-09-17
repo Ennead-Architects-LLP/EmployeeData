@@ -15,122 +15,367 @@
   "education": [
     {
       "institution": "Kaunas University of Technology, Lithuania",
-      "degree": "Graduate",
-      "specialty": "Economics"
-    },
-    {
-      "institution": "Kaunas University of Technology, Lithuania",
       "degree": "Undergraduate",
-      "specialty": "Accounting & Business Administration"
+      "specialty": "Economics"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "New York University Kimmel Center StairNew York University2414",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-kimmel-center-stair",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "New York University Kimmel Center Stair",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "New York University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay2412",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-park-and-research-campus-sparc-kips-bay",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "455 First AvenueTaconic Partners LLC2314",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "455-first-avenue",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "text_parsing"
+    },
+    "proj_7": {
       "name": "455 First Avenue",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_8": {
+      "name": "Taconic Partners LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Universal Hydrogen 2 Manufacturing FacilityUniversal Hydrogen2306",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "universal-hydrogen-2-manufacturing-facility",
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Universal Hydrogen 2 Manufacturing Facility",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "Genentech Bayview Campus Competition",
+    "proj_11": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "University of North Carolina School of Law",
+    "proj_12": {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+    "proj_13": {
+      "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2",
+      "source": "detailed_table"
     },
-    "proj_8": {
-      "name": "Harvard Yard Libraries Feasibility Study",
+    "proj_14": {
+      "name": "United States Consulate General, Nogales Mexico",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
+      "source": "detailed_table"
     },
-    "proj_9": {
-      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+    "proj_15": {
+      "name": "Johns Hopkins University Bloomberg Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
+      "source": "detailed_table"
     },
-    "proj_10": {
-      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+    "proj_16": {
+      "name": "Jungle Plaza Mixed Use Development",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "The Spence School, 412 E 90 Street Conversion Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13B54F34-8325-4412-A565-A8F3BCB931E4/the-spence-school-412-e-90-street-conversion-study",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "The University of Texas at Austin, McCombs School of Business, Future Growth Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DF3441F3-B1AD-4A8F-B44B-0B6F561B391B/the-university-of-texas-at-austin-mccombs-school-of-business-future-growth-study",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Cathedral Church of Saint John the Divine Dome Roof",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7F1FCDE1-1A7B-4EDA-8235-0E9E567E1975/cathedral-church-of-saint-john-the-divine-dome-roof",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "New York Blood Center Applied Life Sciences Hub",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "National Medal of Honor Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7CB3B33A-76A5-4B9F-AC30-F4148E8B5947/national-medal-of-honor-museum",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Project Darwin, Natural History Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A33E7BEF-8C69-44C1-A92A-41138617A2B3/project-darwin-natural-history-museum",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "Divco West Cambridge Crossing: Parcel U",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "The Cathedral Church of St. John the Divine, Penn Station Light Fixtures",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFADB3D0-35A3-4810-9BC2-F5C9DEE544A4/the-cathedral-church-of-st-john-the-divine-penn-station-light-fixtures",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "The University of Texas at Austin, McCombs Study 3",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D042924F-5792-4135-8526-70BF9D075008/the-university-of-texas-at-austin-mccombs-study-3",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Tower AB",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B5BC3DC5-67E3-4F4A-9177-ADB11747C10F/tower-ab",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Purdue University Polytechnic Institute, College of Engineering, Dudley and Lambertus Halls (Gateway)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CC0FBA10-4F97-4086-83AC-C1A42862AA28/purdue-university-polytechnic-institute-college-of-engineering-dudley-and-lambertus-halls-gateway",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "The Cathedral Church of St. John the Divine, North Tower",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/99550CD6-67CB-4F2D-B620-1E5AD2FCC9D1/the-cathedral-church-of-st-john-the-divine-north-tower",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "The Cathedral Church of St. John the Divine, Offices Redesign",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E208C9D3-8588-4CD6-B3D6-A967B68962A1/the-cathedral-church-of-st-john-the-divine-offices-redesign",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "The Cathedral Church of St. John the Divine, Tomb of Christ",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/24136CFF-8675-4073-89E0-2DA2462362E5/the-cathedral-church-of-st-john-the-divine-tomb-of-christ",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "The University of Texas at Austin, McCombs Study 2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4660584B-46DC-49BC-BE60-380B34723EF9/the-university-of-texas-at-austin-mccombs-study-2",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=akulikauskas@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:02:51.373355",
+  "scraped_at": "2025-09-17T20:47:36.596369",
   "profile_id": null
 }

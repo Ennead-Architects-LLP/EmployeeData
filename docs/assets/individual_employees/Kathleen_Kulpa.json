@@ -1,7 +1,7 @@
 {
   "human_name": "Kathleen Kulpa",
   "email": "kate.kulpa@ennead.com",
-  "bio": "I was born and raised in central Connecticut and went to undergraduate school in Boston and graduate school in upstate New York. I spent a short time in Philadelphia after graduating before moving to New York to work as a exterior wall consultant at R.A. Heintges (Heintges and Associates).  Here I began focusing on exterior envelope detailing which continues to be my passion. I joined Ennead (Polshek Partership) in 2001 and have been working on the exterior of exciting projects ever since.Outside of work I enjoy hiking all year round, kayaking (just got a kayak!) and volunteering at the local animal shelter.",
+  "bio": "I was born and raised in central Connecticut and went to undergraduate school in Boston and graduate school in upstate New York. I spent a short time in Philadelphia after graduating before moving to New York to work as a exterior wall consultant at R.A. Heintges (Heintges and Associates).  Here I began focusing on exterior envelope detailing which continues to be my passion. I joined Ennead (Polshek Partership) in 2001 and have been working on the exterior of exciting projects ever since.Outside of work I enjoy hiking all year round, kayaking (just got a kayak!) and volunteering at the local animal shelter. I was born and raised in central Connecticut and went to undergraduate school in Boston and graduate school in upstate New York. I spent a short time in Philadelphia after graduating before moving to New York to work as a exterior wall consultant at R.A. Heintges (Heintges and Associates).  Here I began focusing on exterior envelope detailing which continues to be my passion. I joined Ennead (Polshek Partership) in 2001 and have been working on the exterior of exciting projects ever since.Outside of work I enjoy hiking all year round, kayaking (just got a kayak!) and volunteering at the local animal shelter.",
   "phone": "(212) 792-5958",
   "mobile": "(212) 792-5958",
   "office_location": "",
@@ -11,134 +11,333 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 22,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Northeasten University",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Syracuse University",
       "degree": "Graduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "PA",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay2412",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-park-and-research-campus-sparc-kips-bay",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion0919",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
+      "source": "text_parsing"
+    },
+    "proj_4": {
       "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_5": {
+      "name": "Columbia University Law School, Library AdditionColumbia University0808",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "columbia-university-law-school-library-addition",
+      "url": "https://ei.ennead.com/project/0B40D3E3-5BDA-46AB-B852-FA845E369EA9/columbia-university-law-school-library-addition",
+      "source": "text_parsing"
+    },
+    "proj_6": {
       "name": "Columbia University Law School, Library Addition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/0B40D3E3-5BDA-46AB-B852-FA845E369EA9/columbia-university-law-school-library-addition",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Inova (Franconia) Springfield Hospital",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Inova Alexandria Hospital at Landmark",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "Northwell, Third Avenue Medical Office Building",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_7": {
-      "name": "Johns Hopkins University Bloomberg Center",
+      "name": "Columbia University",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_8": {
-      "name": "Nature & Culture Museum of Wisconsin",
+      "name": "Springfield",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
-      "source": "fallback"
+      "number": "inova-franconia-springfield-hospital",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "text_parsing"
     },
     "proj_9": {
-      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
+      "name": "Springfield",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "United States Consulate General, Lagos Nigeria (OBO)",
+      "name": "Ballinger",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Bird-Friendly Glass Lab (Ennead Lab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/77201997-E726-4E2B-AF82-998624B1FD70/bird-friendly-glass-lab-ennead-lab",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Jefferson Health, Honickman Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Lycée Français de New York Renovation and Expansion (Lycee Francais)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0AB247F6-39F9-4B46-ADC7-2AF458B2B544/lyc-e-fran-ais-de-new-york-renovation-and-expansion-lycee-francais",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Massachusetts College of Art and Design, Design and Media Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Mount Sinai Downtown Transformation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "New York University, Gallatin School of Individualized Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/88100CBA-B5DE-47BD-BEE6-F0FA87C06370/new-york-university-gallatin-school-of-individualized-study",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Newseum / Freedom Forum Foundation World Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Stanford Law School, William H. Neukom Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFE36D23-2AE6-47EC-8BF3-BE68C6DE7017/stanford-law-school-william-h-neukom-building",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Stanford University, Bass Biology Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EC3145A0-7E07-47F8-A90A-13EE36802DA9/stanford-university-bass-biology-building",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "The David H. Koch Center for Cancer Care at Memorial Sloan Kettering Cancer Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0E550866-E034-4A49-A363-F69BAE4C5EC8/the-david-h-koch-center-for-cancer-care-at-memorial-sloan-kettering-cancer-center",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "The Pennsylvania State University, Penn State Law, Lewis Katz Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AB1E54E3-9541-48BF-861A-BEA87BE933C5/the-pennsylvania-state-university-penn-state-law-lewis-katz-building",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "The Standard, High Line",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EF6D393F-EC53-4C9B-A168-546C41EB470D/the-standard-high-line",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "University of North Texas Denton Business Leadership Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/371988C1-F755-44C9-971A-426D93EE535B/university-of-north-texas-denton-business-leadership-center",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Vassar College, Integrated Science Commons",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/43256F2E-323C-4C9C-A218-EE55FA7F35EB/vassar-college-integrated-science-commons",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "Weitzman National Museum of American Jewish History",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B95D7AD5-B82C-4744-B85E-B2E519878B42/weitzman-national-museum-of-american-jewish-history",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Westmoreland Museum of American Art",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5BB168F2-21B3-42DE-B36D-C9AD21853342/westmoreland-museum-of-american-art",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "William J. Clinton Presidential Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CB57D320-7490-4B2C-9F31-5A8BC0D42B96/william-j-clinton-presidential-center",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "York College Academic Village and Conference Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/22D306CA-47EC-413E-8483-F5158CD1C5D7/york-college-academic-village-and-conference-center",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Engineering Education and Research Center (EERC)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0240BEA5-3779-48E4-A600-E3DFCA2E31BB/the-university-of-texas-at-austin-cockrell-school-of-engineering-engineering-education-and-research-center-eerc",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkulpa@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:08:20.776398",
+  "scraped_at": "2025-09-17T20:59:39.987550",
   "profile_id": null
 }

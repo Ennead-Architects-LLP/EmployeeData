@@ -11,33 +11,51 @@
   "position": "Legal Administrator",
   "department": "",
   "years_with_firm": 9,
-  "memberships": [],
+  "memberships": [
+    "Joanna LisiakLegal Administrator",
+    "Joanna Lisiak",
+    "Legal Administrator",
+    "I'm a Resource ForLobbying efforts and filing, Consultant Agreements, AIA memberships, AIA agreement templates, Certificate of Insurance, NDAs, Vendor contracts, Firm State registrations, AIA Education credits, State licenses and renewals, Prime Agreements, intranet",
+    "Lobbying efforts and filing, Consultant Agreements, AIA memberships, AIA agreement templates, Certificate of Insurance, NDAs, Vendor contracts, Firm State registrations, AIA Education credits, State licenses and renewals, Prime Agreements, intranet",
+    "The BasicsYears With Firm9",
+    "Years With Firm9",
+    "Years With Firm",
+    "EducationInstitutionDegreeSpecialtyNYUUndergraduateBusiness FinanceSouth New Hampshire UniversityUndergraduateBusiness Finance",
+    "InstitutionDegreeSpecialtyNYUUndergraduateBusiness FinanceSouth New Hampshire UniversityUndergraduateBusiness Finance",
+    "Institution",
+    "Degree",
+    "Specialty",
+    "NYU",
+    "Undergraduate",
+    "Business Finance",
+    "South New Hampshire University",
+    "LicensesLicenseStateNumberEarnedNotary PublicNY",
+    "LicenseStateNumberEarnedNotary PublicNY",
+    "License",
+    "State",
+    "Number",
+    "Earned",
+    "Notary Public",
+    "NY",
+    "SkillsDeltek VisionMS ExcelMS Word",
+    "Deltek VisionMS ExcelMS Word",
+    "Deltek Vision",
+    "MS Excel",
+    "MS Word"
+  ],
   "education": [
-    {
-      "institution": "NYU",
-      "degree": "Undergraduate",
-      "specialty": "Business Finance"
-    },
     {
       "institution": "South New Hampshire University",
       "degree": "Undergraduate",
       "specialty": "Business Finance"
     }
   ],
-  "licenses": [
-    {
-      "license": "Notary Public",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jlisiak@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:07:13.462703",
+  "scraped_at": "2025-09-17T20:58:04.826274",
   "profile_id": null
 }

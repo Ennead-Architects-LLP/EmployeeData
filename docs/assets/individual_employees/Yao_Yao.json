@@ -1,0 +1,205 @@
+{
+  "human_name": "Yao Yao",
+  "email": "yao.yao@ennead.com",
+  "bio": null,
+  "phone": "",
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/238D13F9-E7EB-4A32-9F50-984D5F1B4D48/yao-yao",
+  "image_url": "https://ei.ennead.com/api/image/f76017b0-87d1-4b13-9464-e662dd2b0baa/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Yao Yao_profile.jpg",
+  "position": "Architect",
+  "department": "",
+  "years_with_firm": 5,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Shenzhen Hong Kong Science and Technology Innovation Cooperation Zone Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Alibaba Cainiao Phase IIShenzhen Toutiao Technology Co., Ltd.2127",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "alibaba-cainiao-phase-ii",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Alibaba Cainiao Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Shenzhen Toutiao Technology Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Shenhzen International Performance CenterShenhzen Int. Performance Center2025",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenhzen-international-performance-center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Shenhzen International Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Shenhzen Int. Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Lingang Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "Huawei Qingpu R&D Design CompetitionHuawei Technologies Co., Ltd.1841",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huawei-qingpu-r-d-design-competition",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Huawei Technologies Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "2401",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "text_parsing"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=yyao@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-17T21:15:53.347329",
+  "profile_id": null
+}

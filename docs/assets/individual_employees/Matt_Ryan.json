@@ -1,7 +1,7 @@
 {
   "human_name": "Matt Ryan",
   "email": "matthew.ryan@ennead.com",
-  "bio": "Hello all! My name is Matt and I am from New York but currently reside in Jersey City. I first started my studies at Rockland Community College and got an Associates in Accounting to then acquire my BBA in Economics from Baruch College with focuses in Physics and Data Analytics. Previously to Ennead I worked at Alvarez & Marsal as an Analyst in their Disputes & Investigations team. In my free time I like to go to concerts, enjoy parks, and go camping.",
+  "bio": "Hello all! My name is Matt and I am from New York but currently reside in Jersey City. I first started my studies at Rockland Community College and got an Associates in Accounting to then acquire my BBA in Economics from Baruch College with focuses in Physics and Data Analytics. Previously to Ennead I worked at Alvarez & Marsal as an Analyst in their Disputes & Investigations team. In my free time I like to go to concerts, enjoy parks, and go camping. Hello all! My name is Matt and I am from New York but currently reside in Jersey City. I first started my studies at Rockland Community College and got an Associates in Accounting to then acquire my BBA in Economics from Baruch College with focuses in Physics and Data Analytics. Previously to Ennead I worked at Alvarez & Marsal as an Analyst in their Disputes & Investigations team. In my free time I like to go to concerts, enjoy parks, and go camping.",
   "phone": "2127925836",
   "mobile": "2127925836",
   "office_location": "",
@@ -20,11 +20,172 @@
     }
   ],
   "licenses": [],
-  "projects": {},
+  "projects": {
+    "proj_1": {
+      "name": "Matt RyanFinancial Analyst",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Matt Ryan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Financial Analyst",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "My name is",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "My name is",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "The BasicsYears With Firm2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Years With Firm2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Years With Firm",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "EducationInstitutionDegreeSpecialtyBaruch College5 Year ProfessionalEconomics",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Degree",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Specialty",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Baruch College",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "5 Year Professional",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Economics",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=matthew.ryan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:49.846466",
+  "scraped_at": "2025-09-17T21:04:27.861332",
   "profile_id": null
 }

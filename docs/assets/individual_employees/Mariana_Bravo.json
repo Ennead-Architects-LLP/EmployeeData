@@ -1,7 +1,7 @@
 {
   "human_name": "Mariana Bravo",
   "email": "mariana.bravo@ennead.com",
-  "bio": "2",
+  "bio": null,
   "phone": "646-437-1708",
   "mobile": "646-437-1708",
   "office_location": "",
@@ -22,80 +22,220 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-textile-museum",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Textile Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Zhejiang China Textile City Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay2412",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-park-and-research-campus-sparc-kips-bay",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Mayo Clinic Executive Health GondaBWBR Architects, Inc.2338",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mayo-clinic-executive-health-gonda",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
+      "source": "text_parsing"
+    },
+    "proj_7": {
       "name": "Mayo Clinic Executive Health Gonda",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_8": {
+      "name": "BWBR Architects, Inc.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_11": {
+      "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "The Old Globe Concept DesignThe Old Globe Ampitheatre2230",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-old-globe-concept-design",
+      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
+      "source": "text_parsing"
+    },
+    "proj_13": {
       "name": "The Old Globe Concept Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
+    "proj_14": {
+      "name": "The Old Globe Ampitheatre",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_15": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_20": {
+      "name": "Jacobs",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "2226",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mariana.bravo@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:38.140173",
+  "scraped_at": "2025-09-17T21:03:32.378549",
   "profile_id": null
 }

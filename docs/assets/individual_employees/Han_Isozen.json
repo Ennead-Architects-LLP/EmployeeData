@@ -1,7 +1,7 @@
 {
   "human_name": "Han Isozen",
   "email": "Han.Isozen@ennead.com",
-  "bio": "0",
+  "bio": null,
   "phone": "212-792-5941",
   "mobile": "212-792-5941",
   "office_location": "",
@@ -10,7 +10,7 @@
   "image_local_path": null,
   "position": "Architectural Designer",
   "department": "",
-  "years_with_firm": null,
+  "years_with_firm": 0,
   "memberships": [],
   "education": [
     {
@@ -25,6 +25,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Han.Isozen@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:06:21.690245",
+  "scraped_at": "2025-09-17T20:56:08.586964",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Clayton Kaul",
   "email": "clayton.kaul@ennead.com",
-  "bio": "I was born in New Orleans and pretty much grew up on a construction site.  My house was always being renovated, mostly by my father, grandfather, and myself - wielding a hammer at a young age.   When we weren't working on our own house, we would walk through any job site in the neighborhood that we could sneak in to, trying to decipher what they were doing with the design, how they were constructing it, and if there was something we could learn.  I imagine I've probably walked through over 100 houses that were framed up that I had absolutely nothing to do with. It was an easy decision for me to go to architecture school.  I went to UVa for undergrad with a very hands-on architecture program.  I then followed a UVa professor back to New Orleans, when he became dean of Tulane, for grad school. I've lived in Houston, Dallas, and Shangahai, but finally moved to NYC in 2016 and started at Ennead when my wife matched to Mt. Sinai for residency.   Ironically, I've been working on Mt. Sinai's Downtown hospital for about as long as I've been here. I love living in NYC, but its difficult to get out and play golf and get into the wood shop, which are my main hobbies outside of sneaking onto residential construction sites (which is not something I've tried since moving here!)",
+  "bio": "I was born in New Orleans and pretty much grew up on a construction site.  My house was always being renovated, mostly by my father, grandfather, and myself - wielding a hammer at a young age.   When we weren't working on our own house, we would walk through any job site in the neighborhood that we could sneak in to, trying to decipher what they were doing with the design, how they were constructing it, and if there was something we could learn.  I imagine I've probably walked through over 100 houses that were framed up that I had absolutely nothing to do with. It was an easy decision for me to go to architecture school.  I went to UVa for undergrad with a very hands-on architecture program.  I then followed a UVa professor back to New Orleans, when he became dean of Tulane, for grad school. I've lived in Houston, Dallas, and Shangahai, but finally moved to NYC in 2016 and started at Ennead when my wife matched to Mt. Sinai for residency.   Ironically, I've been working on Mt. Sinai's Downtown hospital for about as long as I've been here. I love living in NYC, but its difficult to get out and play golf and get into the wood shop, which are my main hobbies outside of sneaking onto residential construction sites (which is not something I've tried since moving here!) I was born in New Orleans and pretty much grew up on a construction site.  My house was always being renovated, mostly by my father, grandfather, and myself - wielding a hammer at a young age.   When we weren't working on our own house, we would walk through any job site in the neighborhood that we could sneak in to, trying to decipher what they were doing with the design, how they were constructing it, and if there was something we could learn.  I imagine I've probably walked through over 100 houses that were framed up that I had absolutely nothing to do with. It was an easy decision for me to go to architecture school.  I went to UVa for undergrad with a very hands-on architecture program.  I then followed a UVa professor back to New Orleans, when he became dean of Tulane, for grad school. I've lived in Houston, Dallas, and Shangahai, but finally moved to NYC in 2016 and started at Ennead when my wife matched to Mt. Sinai for residency.   Ironically, I've been working on Mt. Sinai's Downtown hospital for about as long as I've been here. I love living in NYC, but its difficult to get out and play golf and get into the wood shop, which are my main hobbies outside of sneaking onto residential construction sites (which is not something I've tried since moving here!)",
   "phone": "(212) 792-5906",
   "mobile": "(212) 792-5906",
   "office_location": "",
@@ -11,84 +11,183 @@
   "position": "Senior Associate",
   "department": "",
   "years_with_firm": 9,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Tulane University",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "University of Virginia",
       "degree": "Undergraduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
-      "name": "Inova (Franconia) Springfield Hospital",
+      "name": "Springfield",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-franconia-springfield-hospital",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Springfield",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Ballinger",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "New York Blood Center Applied Life Sciences HubNew York Blood Center1852",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-blood-center-applied-life-sciences-hub",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "New York Blood Center Applied Life Sciences Hub",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
-      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+    "proj_6": {
+      "name": "New York Blood Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_7": {
+      "name": "Renovation and",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mount-sinai-beth-israel-renovation-and-addition-2019",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Perkins Eastman",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Lingang Science and Technology City (S&T)Lingang Economic Group1520",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-science-and-technology-city-s-t",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Lingang Science and Technology City (S&T)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_11": {
+      "name": "Lingang Economic Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Mount Sinai Downtown TransformationArchNexus1648",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mount-sinai-downtown-transformation",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
+      "source": "text_parsing"
+    },
+    "proj_13": {
       "name": "Mount Sinai Downtown Transformation",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "ArchNexus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "2125",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-franconia-springfield-hospital",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "1911",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mount-sinai-beth-israel-renovation-and-addition-2019",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ckaul@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:04:14.053387",
+  "scraped_at": "2025-09-17T20:51:30.231455",
   "profile_id": null
 }

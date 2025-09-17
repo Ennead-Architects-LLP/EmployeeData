@@ -1,0 +1,165 @@
+{
+  "human_name": "John Huang",
+  "email": "zhengjohn.huang@ennead.com",
+  "bio": null,
+  "phone": "",
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/D819A3E8-A452-4932-BBAD-FA2B5E7D0922/john-huang",
+  "image_url": "https://ei.ennead.com/api/image/2d448b57-28eb-40a3-9eb1-d4a4104b4bbc/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/John Huang_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 5,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Huzhou Vocational and Technical Campus Master PlanHuzhou Professional School2227",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huzhou-vocational-and-technical-campus-master-plan",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Huzhou Professional School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bilibili-shanghai-headquarters",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Bilibili Co.,Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Lingang",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-fengxian-soccer-training-center",
+      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Lingang Fengxian Soccer Training CenterLingang2005",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-fengxian-soccer-training-center",
+      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Lingang Fengxian Soccer Training Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Lingang Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Nanda Plot 111-01",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nanda-plot-111-01",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "2103",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nanda-plot-111-01",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "text_parsing"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=zjhuang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-17T20:58:10.315200",
+  "profile_id": null
+}

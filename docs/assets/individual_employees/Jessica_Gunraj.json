@@ -11,7 +11,9 @@
   "position": "Associate",
   "department": "",
   "years_with_firm": 5,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
     {
       "institution": "University of Oregon",
@@ -19,61 +21,133 @@
       "specialty": "M.Arch"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "NYULH Brooklyn Ambulatory Hub BuildingNYU Langone Health2224",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyulh-brooklyn-ambulatory-hub-building",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "NYU Langone Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "ByteDance Houhai Center ProjectShenzhen Toutiao Technology Co., Ltd.2018",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bytedance-houhai-center-project",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "ByteDance Houhai Center Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Shenzhen Toutiao Technology Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Shenzhen Xiaomi HeadquartersShenzhen Xiaomi Technology Co. Ltd.2016",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-xiaomi-headquarters",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Shenzhen Xiaomi Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Lingang Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jgunraj@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:07:06.026278",
+  "scraped_at": "2025-09-17T20:57:48.387167",
   "profile_id": null
 }

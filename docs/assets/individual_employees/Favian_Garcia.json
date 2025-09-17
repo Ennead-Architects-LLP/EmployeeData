@@ -1,7 +1,7 @@
 {
   "human_name": "Favian Garcia",
   "email": "favian.garcia@ennead.com",
-  "bio": "Hello! I was born and raised in New Jersey in the New York Metropolitan area.I focused my studies in Finance and Accounting, as well as some programming. After graduating from Fairleigh Dickinson University, I worked primarily in Accounting for 6 years before joining Ennead in 2014. Outside of work, I enjoy traveling, jogging, yoga, fitbit challenges, hiking, films, art, museums, live music, and technology.",
+  "bio": "Hello! I was born and raised in New Jersey in the New York Metropolitan area.I focused my studies in Finance and Accounting, as well as some programming. After graduating from Fairleigh Dickinson University, I worked primarily in Accounting for 6 years before joining Ennead in 2014. Outside of work, I enjoy traveling, jogging, yoga, fitbit challenges, hiking, films, art, museums, live music, and technology. Hello! I was born and raised in New Jersey in the New York Metropolitan area.I focused my studies in Finance and Accounting, as well as some programming. After graduating from Fairleigh Dickinson University, I worked primarily in Accounting for 6 years before joining Ennead in 2014. Outside of work, I enjoy traveling, jogging, yoga, fitbit challenges, hiking, films, art, museums, live music, and technology.",
   "phone": "(646) 437-1780",
   "mobile": "(646) 437-1780",
   "office_location": "",
@@ -20,11 +20,262 @@
     }
   ],
   "licenses": [],
-  "projects": {},
+  "projects": {
+    "proj_1": {
+      "name": "Favian GarciaFinancial Analyst",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Favian Garcia",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Financial Analyst",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "I was born and raised in",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "I was born and raised in",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "I'm a Resource ForDeltek Vision, Timesheets, Excel, Databases",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Deltek Vision, Timesheets, Excel, Databases",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "The BasicsYears With Firm10",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Years With Firm10",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Years With Firm",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "EducationInstitutionDegreeSpecialtyFairleigh Dickinson UniversityUndergraduateFinance",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Degree",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "Specialty",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Fairleigh Dickinson University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Undergraduate",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Finance",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "SkillsDeltek VisionMS ExcelMS WordPhotoshopSQLTableauVBA",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_20": {
+      "name": "Deltek VisionMS ExcelMS WordPhotoshopSQLTableauVBA",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Deltek Vision",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "MS Excel",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "MS Word",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Photoshop",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "Tableau",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fgarcia@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:05:57.508786",
+  "scraped_at": "2025-09-17T20:54:30.914874",
   "profile_id": null
 }

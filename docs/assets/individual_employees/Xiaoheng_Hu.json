@@ -1,7 +1,7 @@
 {
   "human_name": "Xiaoheng Hu",
   "email": "xiaoheng.hu@ennead.com",
-  "bio": "I was born and grow up in Beijing, China. Stayed couple yeas in Wuhan for the college before the senior year in Arizona. Started my journey in New York City since 2015 at Columbia University. My first built architectural project is a high end residential building on 72nd st Broadway, which make there one of my favorite areas.",
+  "bio": "I was born and grow up in Beijing, China. Stayed couple yeas in Wuhan for the college before the senior year in Arizona. Started my journey in New York City since 2015 at Columbia University. My first built architectural project is a high end residential building on 72nd st Broadway, which make there one of my favorite areas. I was born and grow up in Beijing, China. Stayed couple yeas in Wuhan for the college before the senior year in Arizona. Started my journey in New York City since 2015 at Columbia University. My first built architectural project is a high end residential building on 72nd st Broadway, which make there one of my favorite areas.",
   "phone": "(212) 792-5948",
   "mobile": "(212) 792-5948",
   "office_location": "",
@@ -11,116 +11,303 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 6,
-  "memberships": [],
+  "memberships": [
+    "GBCI"
+  ],
   "education": [
-    {
-      "institution": "Columbia University",
-      "degree": "Graduate",
-      "specialty": "Advanced Architectural Design"
-    },
     {
       "institution": "Huazhong University of Science & Technology",
       "degree": "Undergraduate",
-      "specialty": "Architecture"
+      "specialty": "Advanced Architectural Design"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Mayo Clinic Executive Health GondaBWBR Architects, Inc.2338",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mayo-clinic-executive-health-gonda",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Mayo Clinic Executive Health Gonda",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+    "proj_3": {
+      "name": "BWBR Architects, Inc.",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_4": {
+      "name": "Architectural",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Architectural",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Lord, Aeck & Sargent, Inc.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)Bilibili Co.,Ltd.2138",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "cheung-kong-graduate-school-of-business-beijing-campus",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "Bilibili Co.,Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Johns Hopkins University Bloomberg CenterSmithGroup1845",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "johns-hopkins-university-bloomberg-center",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Johns Hopkins University Bloomberg Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_12": {
+      "name": "SmithGroup",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "JUNO, Capitol HillJuno2020",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "juno-capitol-hill",
+      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill",
+      "source": "text_parsing"
+    },
+    "proj_14": {
       "name": "JUNO, Capitol Hill",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_15": {
+      "name": "Juno",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_17": {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
-      "name": "Westminster Schools - Blake Center",
+    "proj_18": {
+      "name": "Lingang Group",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_19": {
+      "name": "Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "text_parsing"
+    },
+    "proj_20": {
+      "name": "The Westminster Schools",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lenox-hill-hospital-northwell-health-redevelopment",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_23": {
+      "name": "Northwell Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Taopu Smart City, Plot 603Taopu North1763",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-smart-city-plot-603",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "text_parsing"
+    },
+    "proj_25": {
       "name": "Taopu Smart City, Plot 603",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "Taopu North",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "2206",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "1946",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xhu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:13:46.999673",
+  "scraped_at": "2025-09-17T21:15:19.283805",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Callie Fleetwood",
   "email": "callie.fleetwood@ennead.com",
-  "bio": "5",
+  "bio": null,
   "phone": "212-792-5881",
   "mobile": "212-792-5881",
   "office_location": "",
@@ -14,121 +14,278 @@
   "memberships": [],
   "education": [
     {
-      "institution": "Cottey College",
-      "degree": "Associates",
-      "specialty": "Science"
-    },
-    {
       "institution": "University of Arkansas",
       "degree": "Undergraduate",
-      "specialty": "Architecture"
+      "specialty": "Science"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-textile-museum",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Textile Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Zhejiang China Textile City Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Genentech Bayview Campus CompetitionGenentech2249",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "genentech-bayview-campus-competition",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Genentech Bayview Campus Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "Genentech",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)Bilibili Co.,Ltd.2138",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "cheung-kong-graduate-school-of-business-beijing-campus",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_12": {
+      "name": "Bilibili Co.,Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Alibaba Cainiao Phase IIShenzhen Toutiao Technology Co., Ltd.2127",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "alibaba-cainiao-phase-ii",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii",
+      "source": "text_parsing"
+    },
+    "proj_14": {
       "name": "Alibaba Cainiao Phase II",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+    "proj_15": {
+      "name": "Shenzhen Toutiao Technology Co., Ltd.",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_16": {
+      "name": "02 Neighborhood",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "tencent-danchan-bay-dy01-02-neighborhood",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Tencent",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "ByteDance Houhai Center ProjectShenzhen Toutiao Technology Co., Ltd.2018",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bytedance-houhai-center-project",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "ByteDance Houhai Center Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_20": {
+      "name": "Shenzhen Conservatory of MusicShenzhen Xiaomi Technology Co. Ltd.2030",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-conservatory-of-music",
+      "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music",
+      "source": "text_parsing"
+    },
+    "proj_21": {
       "name": "Shenzhen Conservatory of Music",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_22": {
+      "name": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "United States Embassy, Ankara (OBO)U.S. Department of State1425",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-embassy-ankara-obo",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
+      "source": "text_parsing"
+    },
+    "proj_24": {
       "name": "United States Embassy, Ankara (OBO)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "U.S. Department of State",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "2133",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "tencent-danchan-bay-dy01-02-neighborhood",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cfleetwood@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:03:51.255895",
+  "scraped_at": "2025-09-17T20:49:57.670280",
   "profile_id": null
 }

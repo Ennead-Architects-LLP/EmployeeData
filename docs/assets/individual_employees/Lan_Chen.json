@@ -1,0 +1,55 @@
+{
+  "human_name": "Lan Chen",
+  "email": "Lan.Chen@ennead.com",
+  "bio": null,
+  "phone": "",
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
+  "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Lan Chen_profile.jpg",
+  "position": "Project Architect",
+  "department": "",
+  "years_with_firm": 4,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bilibili-shanghai-headquarters",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Bilibili Co.,Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-17T21:01:56.769366",
+  "profile_id": null
+}

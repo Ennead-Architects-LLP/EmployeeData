@@ -1,7 +1,7 @@
 {
   "human_name": "Sha Li",
   "email": "Sha.Li@ennead.com",
-  "bio": "4",
+  "bio": null,
   "phone": "646-437-1694",
   "mobile": "646-437-1694",
   "office_location": "",
@@ -11,59 +11,125 @@
   "position": "Associate",
   "department": "",
   "years_with_firm": 4,
-  "memberships": [],
+  "memberships": [
+    "GBCIAIA",
+    "GBCI",
+    "AIA"
+  ],
   "education": [
     {
       "institution": "Columbia",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    }
-  ],
-  "licenses": [
+      "degree": "Unknown",
+      "specialty": "Unknown"
+    },
     {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
+      "institution": "Undergraduate",
+      "degree": "Unknown",
+      "specialty": "Unknown"
+    },
+    {
+      "institution": "Architecture",
+      "degree": "Unknown",
+      "specialty": "Unknown"
     }
   ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Long Island",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bilibili-shanghai-headquarters",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Bilibili Shanghai Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Bilibili Co.,Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Inova Alexandria Hospital at LandmarkBallinger2124",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-alexandria-hospital-at-landmark",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Inova Alexandria Hospital at Landmark",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Ballinger",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Sha.Li@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:31.428740",
+  "scraped_at": "2025-09-17T21:10:47.404443",
   "profile_id": null
 }

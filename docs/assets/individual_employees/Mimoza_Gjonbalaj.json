@@ -1,7 +1,7 @@
 {
   "human_name": "Mimoza Gjonbalaj",
   "email": "mimoza.gjonbalaj@ennead.com",
-  "bio": "11",
+  "bio": null,
   "phone": "(646) 437-1759",
   "mobile": "(646) 437-1759",
   "office_location": "",
@@ -22,110 +22,360 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-textile-museum",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Textile Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+    "proj_3": {
+      "name": "Zhejiang China Textile City Group",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_4": {
+      "name": "Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Shenzhen Hong Kong Science and Technology Innovation Cooperation Zone Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Mayo Clinic Executive Health GondaBWBR Architects, Inc.2338",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mayo-clinic-executive-health-gonda",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
+      "source": "text_parsing"
+    },
+    "proj_7": {
       "name": "Mayo Clinic Executive Health Gonda",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Roundabout Theatre Master Plan & Concept",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Shaoxing Cao'e River Culture and Art Center Competition",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "Shinsegae Town Mixed Use Development Competition",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_8": {
-      "name": "Youth Ministries for Peace and Justice, Soundview Economic Hub",
+      "name": "BWBR Architects, Inc.",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5B9D7571-1400-4BE2-974E-06AB485D0F38/youth-ministries-for-peace-and-justice-soundview-economic-hub",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_9": {
-      "name": "Carnegie Hall Recital PA & Handrail",
+      "name": "Roundabout",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/59CBAA41-975A-4C0B-9C6A-E3ECC512C670/carnegie-hall-recital-pa-handrail",
-      "source": "fallback"
+      "number": "roundabout-theatre-master-plan-concept",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "Chicago Symphony Orchestra, Outdoor Amphitheatre Concept Study",
+      "name": "Roundabout",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/B4E440D9-48CC-4C51-80A6-AEB2E81DBFC0/chicago-symphony-orchestra-outdoor-amphitheatre-concept-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "City University of New York, Hunter College, Roosevelt House Renovation, Upgrades",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0BFE4D02-0754-4154-A37B-89350E998772/city-university-of-new-york-hunter-college-roosevelt-house-renovation-upgrades",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "National Grid Digester Gas Conditioning System",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ACD5E3F8-C49B-45E4-A2E1-EC98E35B065A/national-grid-digester-gas-conditioning-system",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "NYU Langone Health Tish Hospital Facade Restoration Pre-Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/49682D09-9833-4A1C-8CD1-65E74F226783/nyu-langone-health-tish-hospital-facade-restoration-pre-design",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "NYU Langone Health Tish Hospital, 14 Unit Door",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9BA89CFD-5CB6-411D-BFB6-DFF9C3A3648D/nyu-langone-health-tish-hospital-14-unit-door",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "NYU Langone Health, Science Building, BERG Suite - CA services",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C995F383-6373-4FA0-8D2B-F33B68075A81/nyu-langone-health-science-building-berg-suite-ca-services",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "The Standard, High Line New York Pizza Oven/Pergola",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E585E3AC-6426-49B3-AFF1-89389EC3A61E/the-standard-high-line-new-york-pizza-oven-pergola",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Vietnam Veterans Memorial Education Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Barbados Archive: Temporary Facility (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "American School in Japan Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "The Old Globe Concept Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "NYULH Brooklyn Ambulatory Hub Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Inova Central Region Emergency Department Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Alibaba Cainiao Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Yidan Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "NYU Langone - Long Island, Foreman Site Mother-Baby",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E49FAF02-B10F-4199-89A6-DD2E8FDD3786/nyu-langone-long-island-foreman-site-mother-baby",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mgjonbalaj@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:10:30.622666",
+  "scraped_at": "2025-09-17T21:06:08.122488",
   "profile_id": null
 }

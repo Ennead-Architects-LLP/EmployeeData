@@ -1,7 +1,7 @@
 {
   "human_name": "Winslow Kosior",
   "email": "winslow.kosior@ennead.com",
-  "bio": "5",
+  "bio": null,
   "phone": "646-437-1716",
   "mobile": "646-437-1716",
   "office_location": "",
@@ -11,134 +11,313 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 5,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
     {
-      "institution": "Syracuse University",
+      "institution": "Wentworth Institute of Technology",
       "degree": "Undergraduate",
       "specialty": "Architecture"
-    },
-    {
-      "institution": "Wentworth Institute of Technology",
-      "degree": "Associates",
-      "specialty": "Architectural Technology"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "455 First AvenueTaconic Partners LLC2314",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "455-first-avenue",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "455 First Avenue",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Taconic Partners LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Jacobs",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bilibili-shanghai-headquarters",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Bilibili Shanghai Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "Nanda Plot 111-01",
+    "proj_9": {
+      "name": "Bilibili Co.,Ltd.",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "ByteDance Houhai Center Project",
+    "proj_10": {
+      "name": "Lingang",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Kuwait University Health Sciences Campus",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+      "source": "detailed_table"
     },
-    "proj_6": {
+    "proj_12": {
+      "name": "Pujiang Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Taopu Smart City, Plot 603",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Shenzhen Xiaomi HeadquartersShenzhen Xiaomi Technology Co. Ltd.2016",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-xiaomi-headquarters",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_15": {
       "name": "Shenzhen Xiaomi Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
-      "name": "Divco West Cambridge Crossing: Parcel U",
+    "proj_16": {
+      "name": "Shenzhen Xiaomi Technology Co. Ltd.",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_17": {
+      "name": "Parcel U",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "divco-west-cambridge-crossing--parcel-u",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_20": {
+      "name": "Lingang Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "The Cove, Crescent Park Jersey CityAQ Liberty LLC (Argent Ventures)1902",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-cove-crescent-park-jersey-city",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "The Cove, Crescent Park Jersey City",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
-      "name": "Taopu Sci-Tech City Plot 606",
+    "proj_23": {
+      "name": "AQ Liberty LLC (Argent Ventures)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Tech City Plot 606",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-plot-606",
       "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
-      "source": "fallback"
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "Nanda Plot 111-01",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nanda-plot-111-01",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "2103",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nanda-plot-111-01",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "1933",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "divco-west-cambridge-crossing--parcel-u",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "1735",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-plot-606",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wkosior@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:13:44.621520",
+  "scraped_at": "2025-09-17T21:15:03.779543",
   "profile_id": null
 }

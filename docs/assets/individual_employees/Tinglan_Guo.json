@@ -1,7 +1,7 @@
 {
   "human_name": "Tinglan Guo",
   "email": "tinglan.guo@ennead.com",
-  "bio": "1",
+  "bio": null,
   "phone": "212-792-5905",
   "mobile": "212-792-5905",
   "office_location": "",
@@ -11,64 +11,115 @@
   "position": "Associate",
   "department": "",
   "years_with_firm": 1,
-  "memberships": [],
+  "memberships": [
+    "AIALEED AP BD+C",
+    "AIA",
+    "LEED AP BD+C"
+  ],
   "education": [
-    {
-      "institution": "Columbia University",
-      "degree": "Graduate",
-      "specialty": "Architectural Design"
-    },
     {
       "institution": "Huazhong University",
       "degree": "Undergraduate",
-      "specialty": "Science & Technical"
+      "specialty": "Architectural Design"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Long Island",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Nature & Culture Museum of WisconsinMilwaukee Public Museum2100",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nature-culture-museum-of-wisconsin",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Nature & Culture Museum of Wisconsin",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Milwaukee Public Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lenox-hill-hospital-northwell-health-redevelopment",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Northwell Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tinglan.guo@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:56.159877",
+  "scraped_at": "2025-09-17T21:12:42.136996",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Lena Yang",
   "email": "lena.yang@ennead.com",
-  "bio": "I grew up in Grand Blanc, Michigan, a small suburban town. My family owned a restaurant in Flint, Michigan for 30 years and I spent my first two years of college working with and getting to know the Flint community during the water crisis, which is still ongoing. I then attended the University of Michigan in Ann Arbor where I received my BFA in Graphic Design with interests in environmental studies. I have a lot of personal and professional interest in the topics of sustainability, community, and gender/cultural identity.In my free time, I like reading, live music, people watching, knick knacks of any kind and drafting up my own designs on my sewing machine. Food is an important part of my life, and I will always happily accept restaurant recommendations!",
+  "bio": "I grew up in Grand Blanc, Michigan, a small suburban town. My family owned a restaurant in Flint, Michigan for 30 years and I spent my first two years of college working with and getting to know the Flint community during the water crisis, which is still ongoing. I then attended the University of Michigan in Ann Arbor where I received my BFA in Graphic Design with interests in environmental studies. I have a lot of personal and professional interest in the topics of sustainability, community, and gender/cultural identity.In my free time, I like reading, live music, people watching, knick knacks of any kind and drafting up my own designs on my sewing machine. Food is an important part of my life, and I will always happily accept restaurant recommendations! I grew up in Grand Blanc, Michigan, a small suburban town. My family owned a restaurant in Flint, Michigan for 30 years and I spent my first two years of college working with and getting to know the Flint community during the water crisis, which is still ongoing. I then attended the University of Michigan in Ann Arbor where I received my BFA in Graphic Design with interests in environmental studies. I have a lot of personal and professional interest in the topics of sustainability, community, and gender/cultural identity.In my free time, I like reading, live music, people watching, knick knacks of any kind and drafting up my own designs on my sewing machine. Food is an important part of my life, and I will always happily accept restaurant recommendations!",
   "phone": "2127925982",
   "mobile": "2127925982",
   "office_location": "",
@@ -20,11 +20,232 @@
     }
   ],
   "licenses": [],
-  "projects": {},
+  "projects": {
+    "proj_1": {
+      "name": "Lena YangGraphic Designer & Marketing Coordinator",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Lena Yang",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Graphic Designer & Marketing Coordinator",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Personal BioI grew up in Grand Blanc, Michigan, a small suburban town. My family owned a restaurant in Flint, Michigan for 30 years and I spent my first two years of college working with and getting to know the Flint community during the water crisis, which is still ongoing. I then attended the University of Michigan in Ann Arbor where I received my BFA in Graphic Design with interests in environmental studies. I have a lot of personal and professional interest in the topics of sustainability, community, and gender/cultural identity.In my free time, I like reading, live music, people watching, knick knacks of any kind and drafting up my own designs on my sewing machine. Food is an important part of my life, and I will always happily accept restaurant recommendations!",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "I grew up in",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "I'm a Resource ForIndesignIllustratorVisual DesignBranding",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "IndesignIllustratorVisual DesignBranding",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "The BasicsYears With Firm2Committees CustomProgramming and Outreach",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Years With Firm2Committees CustomProgramming and Outreach",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Years With Firm2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Years With Firm",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Committees",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Committees",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Programming and",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "EducationInstitutionDegreeSpecialtyUniversity of MichiganUndergraduateGraphic Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Degree",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "Specialty",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_20": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Undergraduate",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "Graphic Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lena.yang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:21.617724",
+  "scraped_at": "2025-09-17T21:02:34.817240",
   "profile_id": null
 }

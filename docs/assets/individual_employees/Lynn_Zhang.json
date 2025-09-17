@@ -1,7 +1,7 @@
 {
   "human_name": "Lynn Zhang",
   "email": "lynn.zhang@ennead.com",
-  "bio": "10",
+  "bio": null,
   "phone": "",
   "mobile": null,
   "office_location": "",
@@ -19,121 +19,303 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "PRC Class 1 Registered Architect",
-      "state": "Shanghai",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-textile-museum",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Textile Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Zhejiang China Textile City Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Chengdu shudu urban construction co.,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
       "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_3": {
-      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+    "proj_6": {
+      "name": "Chengdu shudu urban construction co.,",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_7": {
+      "name": "02 Neighborhood",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "tencent-danchan-bay-dy01-02-neighborhood",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Tencent",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Lingang",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-global-digital-trade-headquarters",
+      "url": "https://ei.ennead.com/project/19F45A2B-4333-4D4A-944A-F64E147374F5/lingang-global-digital-trade-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "DingTalk Competition2101",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "dingtalk-competition",
+      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Baoshan Nanda",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Beihang University Qingdao Campus, International Science and Education City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Lixin University of Finance and Accounting, Pudong New Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4E502D5D-B536-4D71-9162-8196605365D9/lixin-university-of-finance-and-accounting-pudong-new-campus-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Hero Tandi Pen",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A44ADE52-65BF-41A5-8CCB-D5C03ED01E77/hero-tandi-pen",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Lingang Science and Technology City (S&T)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Hero South Plot",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Huawei Wuhan Research and Development Campus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Husu Dafeng Industrial Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/443B00F1-7DFB-4506-AFBB-DA09A4D98467/husu-dafeng-industrial-park",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "NYU Langone Health, Medical Science Building, HVAC Equipment Removal Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C80C7C2D-4F19-43A6-8F29-B2736785C088/nyu-langone-health-medical-science-building-hvac-equipment-removal-feasibility-study",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Pujiang Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Taopu East",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7C0CDDCE-9D9D-40AB-A5FD-E99343CCBCA6/taopu-east",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Taopu Sci-Tech Smart City Phase I (Taopu 605)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7C36DE44-B5F0-4051-B171-22A9BC33509B/taopu-sci-tech-smart-city-phase-i-taopu-605",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Taopu Smart City Plot 615/616",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/208EEB2F-05ED-407C-9CC8-67F5937024D1/taopu-smart-city-plot-615-616",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Taopu Smart City, Plot 603",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "detailed_table"
+    },
+    "proj_27": {
       "name": "Nanda Plot 111-01",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nanda-plot-111-01",
       "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "DingTalk Competition",
+    "proj_28": {
+      "name": "2103",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition",
-      "source": "fallback"
+      "number": "nanda-plot-111-01",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "Shenzhen Conservatory of Music",
+    "proj_29": {
+      "name": "1906",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "COMAC Campus, New Headquarters",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters",
-      "source": "fallback"
-    },
-    "proj_8": {
-      "name": "Lingang Global Digital Trade Headquarters",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/19F45A2B-4333-4D4A-944A-F64E147374F5/lingang-global-digital-trade-headquarters",
-      "source": "fallback"
-    },
-    "proj_9": {
-      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
-      "source": "fallback"
-    },
-    "proj_10": {
-      "name": "Lingang Kangqiao Phase III",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
+      "number": "lingang-kangqiao-phase-iii",
       "url": "https://ei.ennead.com/project/DA87A9E3-0110-4374-B3DC-9460BAAF96A2/lingang-kangqiao-phase-iii",
-      "source": "fallback"
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lzhang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:31.562664",
+  "scraped_at": "2025-09-17T21:03:05.880108",
   "profile_id": null
 }

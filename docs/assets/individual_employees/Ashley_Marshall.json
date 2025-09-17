@@ -1,7 +1,7 @@
 {
   "human_name": "Ashley Marshall",
   "email": "Ashley.Marshall@ennead.com",
-  "bio": "Howdy! I hail from the Lone Star State, and now reside in Brooklyn.  I made a pit stop at Syracuse University where I received my Bachelor's of Architecture in 2014.  I've since worked in multi-family residential firms like Whitehall Interiors/Hill West Architects, and later transitioned to civic and institutional at Beyer Blinder Belle Architects and Planners.  I'm a dutiful cat & plant mom; catch me on my off time listening to disco and roller skating.",
+  "bio": "Howdy! I hail from the Lone Star State, and now reside in Brooklyn.  I made a pit stop at Syracuse University where I received my Bachelor's of Architecture in 2014.  I've since worked in multi-family residential firms like Whitehall Interiors/Hill West Architects, and later transitioned to civic and institutional at Beyer Blinder Belle Architects and Planners.  I'm a dutiful cat & plant mom; catch me on my off time listening to disco and roller skating. Howdy! I hail from the Lone Star State, and now reside in Brooklyn.  I made a pit stop at Syracuse University where I received my Bachelor's of Architecture in 2014.  I've since worked in multi-family residential firms like Whitehall Interiors/Hill West Architects, and later transitioned to civic and institutional at Beyer Blinder Belle Architects and Planners.  I'm a dutiful cat & plant mom; catch me on my off time listening to disco and roller skating.",
   "phone": "646-437-1691",
   "mobile": "646-437-1691",
   "office_location": "",
@@ -11,7 +11,9 @@
   "position": "Project Architect/ Architectural Designer",
   "department": "",
   "years_with_firm": 4,
-  "memberships": [],
+  "memberships": [
+    "National Organization of Minority Architects"
+  ],
   "education": [
     {
       "institution": "Syracuse University",
@@ -22,30 +24,80 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Mayo Clinic Executive Health GondaBWBR Architects, Inc.2338",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mayo-clinic-executive-health-gonda",
+      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Mayo Clinic Executive Health Gonda",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Northwell, Third Avenue Medical Office Building",
+    "proj_3": {
+      "name": "BWBR Architects, Inc.",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Northwell,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
       "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-      "source": "fallback"
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Northwell,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Northwell Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "2109",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Ashley.Marshall@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:03:26.485778",
+  "scraped_at": "2025-09-17T20:49:11.381127",
   "profile_id": null
 }

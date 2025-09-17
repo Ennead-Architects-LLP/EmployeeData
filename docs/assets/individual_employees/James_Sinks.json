@@ -1,7 +1,7 @@
 {
   "human_name": "James Sinks",
   "email": "james.sinks@ennead.com",
-  "bio": "I'm a native Michigander (no bird jokes please), raised in the Detroit area, completing my undergraduate work at the University of Michigan's School of Business Administration.  After working for several years as a CPA for Arthur Andersen & Co., I concluded that financial security was an unseemly goal and left for New York City to become an architect. Graduating from Columbia University in 1984, I joined James Stewart Polshek and Partners and have been with Polshek/Ennead ever since.I serve as Technical Director of the firm and, as such, have been tasked with leading the effort in developing the office's technical resources and maintaining the quality of our work. Over my 35 years in the office, I've seen a lot and retained enough of it to be knowledgeable about much of what doesn't work and some of what does. Although my sporting days are rapidly fading from memory, I remain an avid, if more sedentary outdoorsman, engaged in gardening and photography mixed in with the occasional  hiking or kayaking expedition in the mistaken belief that I will recapture my youth.",
+  "bio": "I'm a native Michigander (no bird jokes please), raised in the Detroit area, completing my undergraduate work at the University of Michigan's School of Business Administration.  After working for several years as a CPA for Arthur Andersen & Co., I concluded that financial security was an unseemly goal and left for New York City to become an architect. Graduating from Columbia University in 1984, I joined James Stewart Polshek and Partners and have been with Polshek/Ennead ever since.I serve as Technical Director of the firm and, as such, have been tasked with leading the effort in developing the office's technical resources and maintaining the quality of our work. Over my 35 years in the office, I've seen a lot and retained enough of it to be knowledgeable about much of what doesn't work and some of what does. Although my sporting days are rapidly fading from memory, I remain an avid, if more sedentary outdoorsman, engaged in gardening and photography mixed in with the occasional  hiking or kayaking expedition in the mistaken belief that I will recapture my youth. I'm a native Michigander (no bird jokes please), raised in the Detroit area, completing my undergraduate work at the University of Michigan's School of Business Administration.  After working for several years as a CPA for Arthur Andersen & Co., I concluded that financial security was an unseemly goal and left for New York City to become an architect. Graduating from Columbia University in 1984, I joined James Stewart Polshek and Partners and have been with Polshek/Ennead ever since.I serve as Technical Director of the firm and, as such, have been tasked with leading the effort in developing the office's technical resources and maintaining the quality of our work. Over my 35 years in the office, I've seen a lot and retained enough of it to be knowledgeable about much of what doesn't work and some of what does. Although my sporting days are rapidly fading from memory, I remain an avid, if more sedentary outdoorsman, engaged in gardening and photography mixed in with the occasional  hiking or kayaking expedition in the mistaken belief that I will recapture my youth.",
   "phone": "(212) 792-5967",
   "mobile": "(212) 792-5967",
   "office_location": "",
@@ -11,134 +11,315 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 41,
-  "memberships": [],
+  "memberships": [
+    "LEED APAIA",
+    "LEED AP",
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Columbia University",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "University of Michigan",
       "degree": "Undergraduate",
-      "specialty": "Business"
+      "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "CODA BuiltCODA Built1929",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "coda-built",
+      "url": "https://ei.ennead.com/project/47199296-337D-40EB-950F-279696EF5A45/coda-built",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "CODA Built",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/47199296-337D-40EB-950F-279696EF5A45/coda-built",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Allegheny College, Vukovich Center for Communication ArtsAllegheny College0512",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "allegheny-college-vukovich-center-for-communication-arts",
+      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
+      "source": "text_parsing"
+    },
+    "proj_4": {
       "name": "Allegheny College, Vukovich Center for Communication Arts",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_5": {
+      "name": "Allegheny College",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Breaking Ground, The SchermerhornBreaking Ground0317",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "breaking-ground-the-schermerhorn",
+      "url": "https://ei.ennead.com/project/8DA1E600-965A-46C4-AB1A-221DE9FB1739/breaking-ground-the-schermerhorn",
+      "source": "text_parsing"
+    },
+    "proj_7": {
       "name": "Breaking Ground, The Schermerhorn",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8DA1E600-965A-46C4-AB1A-221DE9FB1739/breaking-ground-the-schermerhorn",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_8": {
+      "name": "Breaking Ground",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Brooklyn Botanic Garden, Eastern Parkway EntranceBrooklyn Botanic Garden0101",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "brooklyn-botanic-garden-eastern-parkway-entrance",
+      "url": "https://ei.ennead.com/project/2ABBEF3B-4F9B-4146-8224-A27125C6ECD2/brooklyn-botanic-garden-eastern-parkway-entrance",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Brooklyn Botanic Garden, Eastern Parkway Entrance",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2ABBEF3B-4F9B-4146-8224-A27125C6ECD2/brooklyn-botanic-garden-eastern-parkway-entrance",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "Brooklyn Museum Entry Pavilion and Plaza",
+    "proj_11": {
+      "name": "Mashantucket Pequot Museum and Research Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A21C83BB-1D39-409F-AC4C-D67A6D920DFF/brooklyn-museum-entry-pavilion-and-plaza",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/11768C10-A522-416E-9769-F9B42E36B840/mashantucket-pequot-museum-and-research-center",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "Carnegie Hall, Judy and Arthur Zankel Hall",
+    "proj_12": {
+      "name": "New York City Center Renovation",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/FD6A3450-04D8-4735-9598-4ECFFA5581F3/carnegie-hall-judy-and-arthur-zankel-hall",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/ADC0C6E6-C2F0-4AAE-A660-F7B1DFA00231/new-york-city-center-renovation",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "City University of New York, Medgar Evers College, Academic Building I",
+    "proj_13": {
+      "name": "New York Hall of Science Expansion",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/FFA2FFA1-C895-4B10-8C72-F7E29F740641/city-university-of-new-york-medgar-evers-college-academic-building-i",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/31DF8D21-0364-4B77-AD16-D5857A0E2C8D/new-york-hall-of-science-expansion",
+      "source": "detailed_table"
     },
-    "proj_8": {
-      "name": "Frank Sinatra School of the Arts",
+    "proj_14": {
+      "name": "Newseum / Freedom Forum Foundation World Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters",
+      "source": "detailed_table"
     },
-    "proj_9": {
-      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+    "proj_15": {
+      "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building",
+      "source": "detailed_table"
     },
-    "proj_10": {
+    "proj_16": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "NYU Langone Health, Skirball Institute for Biomolecular Medicine and Residence Tower",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C68AED36-E85D-4C82-A0F9-F556C045D954/nyu-langone-health-skirball-institute-for-biomolecular-medicine-and-residence-tower",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Sarah Lawrence College Monika A. and Charles A. Heimbold Jr. Visual Arts Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C96327E7-E32C-40DF-9184-D71926C6F9EB/sarah-lawrence-college-monika-a-and-charles-a-heimbold-jr-visual-arts-center",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Seamen's Church Institute",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6DBED7A2-BA2D-4394-BB86-1F86361D5150/seamen-s-church-institute",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "The Ed Sullivan Theater",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/390D7AA6-C7C9-48F0-A29B-CE9105A1E6DE/the-ed-sullivan-theater",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "The Mercersburg Academy, Burgin Center for the Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F73C47A0-09CE-4865-BF64-6295194CB3E2/the-mercersburg-academy-burgin-center-for-the-arts",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "The New York Botanical Garden, Pfizer Plant Research Laboratory",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CE890B18-9B85-4C17-9D03-98D7DB4E1E54/the-new-york-botanical-garden-pfizer-plant-research-laboratory",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Weill Cornell Medicine, Weill Greenberg Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C2FB767E-4966-4EEF-B1EE-2B973C64242F/weill-cornell-medicine-weill-greenberg-center",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Yale University Art Gallery, Kahn Building Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F9EFB3AC-7C19-4632-BEC2-DA3B3728B8C4/yale-university-art-gallery-kahn-building-renovation",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Northwell Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "Lycée Français de New YorkLycee Francais de New York0033",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lyc-e-fran-ais-de-new-york",
+      "url": "https://ei.ennead.com/project/19554F98-DBB0-4730-AFE5-A33AEABBFBBB/lyc-e-fran-ais-de-new-york",
+      "source": "text_parsing"
+    },
+    "proj_28": {
       "name": "Lycée Français de New York",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/19554F98-DBB0-4730-AFE5-A33AEABBFBBB/lyc-e-fran-ais-de-new-york",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "Lycee Francais de New York",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jsinks@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:06:50.204956",
+  "scraped_at": "2025-09-17T20:56:46.664965",
   "profile_id": null
 }

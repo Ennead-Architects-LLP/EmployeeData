@@ -1,7 +1,7 @@
 {
   "human_name": "John Jordan",
   "email": "john.jordan@ennead.com",
-  "bio": "29",
+  "bio": null,
   "phone": "(212) 792-5908",
   "mobile": "(212) 792-5908",
   "office_location": "",
@@ -11,7 +11,12 @@
   "position": "Senior Associate",
   "department": "",
   "years_with_firm": 29,
-  "memberships": [],
+  "memberships": [
+    "GBCILEED APAIA",
+    "GBCI",
+    "LEED AP",
+    "AIA"
+  ],
   "education": [
     {
       "institution": "Tulane University",
@@ -19,121 +24,313 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "American Museum of Natural History, Hall of Ocean LifeAmerican Museum of Natural History9926",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "american-museum-of-natural-history-hall-of-ocean-life",
+      "url": "https://ei.ennead.com/project/CF386AFD-6743-445A-92B6-CC5B8DA615D2/american-museum-of-natural-history-hall-of-ocean-life",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "American Museum of Natural History, Hall of Ocean Life",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CF386AFD-6743-445A-92B6-CC5B8DA615D2/american-museum-of-natural-history-hall-of-ocean-life",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "American Museum of Natural History",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "american-museum-of-natural-history-rose-center-for-earth-and-space",
+      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Johns Hopkins University Bloomberg CenterSmithGroup1845",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "johns-hopkins-university-bloomberg-center",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Johns Hopkins University Bloomberg Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "SmithGroup",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Shenhzen International Performance CenterShenhzen Int. Performance Center2025",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenhzen-international-performance-center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Shenhzen International Performance Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+    "proj_9": {
+      "name": "Shenhzen Int. Performance Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
       "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "American Museum of Natural History, Rose Center for Earth and Space",
+    "proj_11": {
+      "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "American Museum of Natural History, Samuel J. & Ethel LeFrak IMAX Theater",
+    "proj_12": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/687709A7-4B03-469E-9552-FEBA5162CF1D/american-museum-of-natural-history-samuel-j-ethel-lefrak-imax-theater",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "Cathedral of St. John the Divine, Crypt Arts Center and North Transept Renovation",
+    "proj_13": {
+      "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5B2D696B-833B-453D-89BB-8587949D39D3/cathedral-of-st-john-the-divine-crypt-arts-center-and-north-transept-renovation",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update",
+      "source": "detailed_table"
     },
-    "proj_8": {
+    "proj_14": {
+      "name": "NYU Langone Health, Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Public Theater Annex - 440 Lafayette",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/236880BF-3BC5-49C1-8CA0-44EE7D268CC2/public-theater-annex-440-lafayette",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Weill Cornell Medicine, Belfer Research Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DB19CFB5-F090-48CF-B1A5-F41E0C470039/weill-cornell-medicine-belfer-research-building",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Cathedral of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "The Cathedral Church of Saint John the Divine",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_20": {
+      "name": "Natural History Museum of UtahGSBS Architects0423",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "natural-history-museum-of-utah",
+      "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah",
+      "source": "text_parsing"
+    },
+    "proj_21": {
       "name": "Natural History Museum of Utah",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_22": {
+      "name": "GSBS Architects",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "New York Hall of Science Great Hall Upgrades and Terrace ImprovementsNew York Hall of Science0810",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements",
+      "url": "https://ei.ennead.com/project/7DD086B3-436C-4215-AC53-BC344E2D3BD6/new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements",
+      "source": "text_parsing"
+    },
+    "proj_24": {
       "name": "New York Hall of Science Great Hall Upgrades and Terrace Improvements",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/7DD086B3-436C-4215-AC53-BC344E2D3BD6/new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_25": {
+      "name": "New York Hall of Science",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "Newseum / Freedom Forum Foundation World HeadquartersThe Freedom Forum0025",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "newseum-freedom-forum-foundation-world-headquarters",
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_27": {
       "name": "Newseum / Freedom Forum Foundation World Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "The Freedom Forum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "2001",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "text_parsing"
+    },
+    "proj_30": {
+      "name": "0721",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "cathedral-of-st-john-the-divine-crypt-arts-center-and-north-transept-renovation",
+      "url": "https://ei.ennead.com/project/5B2D696B-833B-453D-89BB-8587949D39D3/cathedral-of-st-john-the-divine-crypt-arts-center-and-north-transept-renovation",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jjordan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:07:33.309282",
+  "scraped_at": "2025-09-17T20:58:21.803549",
   "profile_id": null
 }

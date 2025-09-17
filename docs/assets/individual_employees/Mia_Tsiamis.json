@@ -1,7 +1,7 @@
 {
   "human_name": "Mia Tsiamis",
   "email": "Mia.Tsiamis@ennead.com",
-  "bio": "0",
+  "bio": null,
   "phone": "646-437-1744",
   "mobile": "646-437-1744",
   "office_location": "",
@@ -10,42 +10,42 @@
   "image_local_path": "assets/images/Mia Tsiamis_profile.jpg",
   "position": "BIM Manager",
   "department": "",
-  "years_with_firm": null,
+  "years_with_firm": 0,
   "memberships": [],
   "education": [
     {
-      "institution": "Technical Univerisity of Delft, The Netherlands",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
-    {
       "institution": "Columbia University",
-      "degree": "Undergraduate",
-      "specialty": "Civil and Structural Engineering"
-    },
-    {
-      "institution": "The Cooper Union for the Advancement of Science and Art",
       "degree": "Graduate",
-      "specialty": "Civil Engineering"
+      "specialty": "Architecture"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay2412",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-park-and-research-campus-sparc-kips-bay",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Mia.Tsiamis@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:10:01.765230",
+  "scraped_at": "2025-09-17T21:05:24.549944",
   "profile_id": null
 }

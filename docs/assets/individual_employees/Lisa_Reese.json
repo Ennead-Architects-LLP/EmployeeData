@@ -1,7 +1,7 @@
 {
   "human_name": "Lisa Reese",
   "email": "lisa.reese@ennead.com",
-  "bio": "I was born and raised in New York and have been a resident of the West Village for many years.  As the Office Manager, I help keep the Office running smoothly and oversees support services.  I enjoy working in creative environments and happy to be part of the Ennead team.  When I'm not working you’ll often find me in the kitchen cooking and exploring new recipes.  Other interests include gardening and painting.",
+  "bio": "I was born and raised in New York and have been a resident of the West Village for many years.  As the Office Manager, I help keep the Office running smoothly and oversees support services.  I enjoy working in creative environments and happy to be part of the Ennead team.  When I'm not working you’ll often find me in the kitchen cooking and exploring new recipes.  Other interests include gardening and painting. I was born and raised in New York and have been a resident of the West Village for many years.  As the Office Manager, I help keep the Office running smoothly and oversees support services.  I enjoy working in creative environments and happy to be part of the Ennead team.  When I'm not working you’ll often find me in the kitchen cooking and exploring new recipes.  Other interests include gardening and painting.",
   "phone": "(212) 792-5876",
   "mobile": "(212) 792-5876",
   "office_location": "",
@@ -14,17 +14,203 @@
   "memberships": [],
   "education": [
     {
-      "institution": "FIT",
-      "degree": "Associates",
-      "specialty": "Applied Sciences"
+      "institution": "Associates",
+      "degree": "Unknown",
+      "specialty": "Unknown"
+    },
+    {
+      "institution": "Applied Sciences",
+      "degree": "Unknown",
+      "specialty": "Unknown"
     }
   ],
   "licenses": [],
-  "projects": {},
+  "projects": {
+    "proj_1": {
+      "name": "Lisa ReeseSenior AssociateOffice Manager",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Lisa Reese",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Senior Associate",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Office Manager",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Personal BioI was born and raised in New York and have been a resident of the West Village for many years.  As the Office Manager, I help keep the Office running smoothly and oversees support services.  I enjoy working in creative environments and happy to be part of the Ennead team.  When I'm not working you’ll often find me in the kitchen cooking and exploring new recipes.  Other interests include gardening and painting.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "I was born and raised in New York and have been a resident of the West Village for many years.  As the Office Manager, I help keep the Office running smoothly and oversees support services.  I enjoy working in creative environments and happy to be part of the Ennead team.  When I'm not working you’ll often find me in the kitchen cooking and exploring new recipes.  Other interests include gardening and painting.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "I'm a Resource Forseating chart, phone list, archive requests, mailroom, shipping, messenger, FedEx, UPS, food requests, office van, supplies, maintenance.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "seating chart, phone list, archive requests, mailroom, shipping, messenger, FedEx, UPS, food requests, office van, supplies, maintenance.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "The BasicsYears With Firm20",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Years With Firm20",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Years With Firm",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "EducationInstitutionDegreeSpecialtyFITAssociatesApplied Sciences",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "Degree",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Specialty",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Associates",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Applied Sciences",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lreese@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:24.102673",
+  "scraped_at": "2025-09-17T21:02:40.172154",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Brian Masuda",
   "email": "brian.masuda@ennead.com",
-  "bio": "24",
+  "bio": null,
   "phone": "212-792-5986",
   "mobile": "212-792-5986",
   "office_location": "",
@@ -11,7 +11,16 @@
   "position": "Principal",
   "department": "",
   "years_with_firm": 24,
-  "memberships": [],
+  "memberships": [
+    "LEED GAAIANational Organization of Minority ArchitectsLEED AP BD+CNCARBWELLGBCI",
+    "LEED GA",
+    "AIA",
+    "National Organization of Minority Architects",
+    "LEED AP BD+C",
+    "NCARB",
+    "WELL",
+    "GBCI"
+  ],
   "education": [
     {
       "institution": "University of Hawaii, Manoa",
@@ -19,121 +28,363 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-textile-museum",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Textile Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Zhejiang China Textile City Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Shinsegae Town Mixed Use Development CompetitionShinsegae Inc.2320",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shinsegae-town-mixed-use-development-competition",
+      "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Shinsegae Town Mixed Use Development Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
-      "name": "Working Waterfront: Water Wheels (New York Times)",
+    "proj_6": {
+      "name": "Shinsegae Inc.",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2AF9D5D6-3EE8-4786-8FE6-4A110ADEFBF6/working-waterfront--water-wheels-new-york-times",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_7": {
+      "name": "Water Wheels (New York Times)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "working-waterfront--water-wheels-new-york-times",
+      "url": "https://ei.ennead.com/project/2AF9D5D6-3EE8-4786-8FE6-4A110ADEFBF6/working-waterfront--water-wheels-new-york-times",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "P09NYTM",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "working-waterfront--water-wheels-new-york-times",
+      "url": "https://ei.ennead.com/project/2AF9D5D6-3EE8-4786-8FE6-4A110ADEFBF6/working-waterfront--water-wheels-new-york-times",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Huzhou Vocational and Technical Campus Master PlanHuzhou Professional School2227",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huzhou-vocational-and-technical-campus-master-plan",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Huzhou Vocational and Technical Campus Master Plan",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
+    "proj_11": {
+      "name": "Bilibili Shanghai Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "Sherman Avenue Mixed Use Development",
+    "proj_12": {
+      "name": "University of Florida Phillips Center Feasibility Study and Renovation",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A54AD7A9-0AB3-47C0-B668-2BC495B066B8/sherman-avenue-mixed-use-development",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "515 West 57th Street Residential Tower",
+    "proj_13": {
+      "name": "Northwell, Third Avenue Medical Office Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/57F87B6A-009D-44E8-8EE6-FE1AF12F4047/515-west-57th-street-residential-tower",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "detailed_table"
     },
-    "proj_8": {
-      "name": "Henry Street Settlement Residential Tower and Arts Center",
+    "proj_14": {
+      "name": "Wuxi Art Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/1C8F454C-3632-45EA-84D8-E5ACEFF3E874/henry-street-settlement-residential-tower-and-arts-center",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/3D1D6BFF-2B0A-4B7A-9D3B-B84AA3DCF71A/wuxi-art-museum",
+      "source": "detailed_table"
     },
-    "proj_9": {
-      "name": "The Hispanic Society Museum/Hispanic Society",
+    "proj_15": {
+      "name": "Sing Sing Prison Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/009E2EEC-FB25-4F3C-A72F-64128F0E6EC8/the-hispanic-society-museum-hispanic-society",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/DF537E06-2132-4FC7-995B-66D7BDC8A943/sing-sing-prison-museum",
+      "source": "detailed_table"
     },
-    "proj_10": {
-      "name": "Columbia University Law School, Library Addition",
+    "proj_16": {
+      "name": "Connecticut College, Athey Center for Performance and Research at Palmer Auditorium",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/0B40D3E3-5BDA-46AB-B852-FA845E369EA9/columbia-university-law-school-library-addition",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Capitol Crossing",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Allegheny College, Vukovich Center for Communication Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Apple Scottsdale",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/62EAAD49-9D9B-406B-B5FA-FB6B61A3CE5D/apple-scottsdale",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Arizona State University, Beus Center for Law and Society (ASU)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DC6D031D-D1E0-4D39-A43D-6188E2F15C4F/arizona-state-university-beus-center-for-law-and-society-asu",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Cornell University Comprehensive Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8CE3D791-A632-4DF9-BC75-65D54FC34F49/cornell-university-comprehensive-campus-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Frank Sinatra School of the Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Goh Keng Swee Centre for Education",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D217F60E-C2D1-4B98-A079-299B4B07C88D/goh-keng-swee-centre-for-education",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Kansas State University, College of Architecture Planning and Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/254C84D8-F993-449A-9C67-BBD8B9BDF58E/kansas-state-university-college-of-architecture-planning-and-design",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Marina Bay Integrated Resort Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE7B93CE-3E9F-4B09-BFD1-F0B3D136F425/marina-bay-integrated-resort-competition",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "Massachusetts College of Art and Design, Design and Media Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Museum of the City of New York, Phases I-III (MCNY)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EA32AB62-43EF-45BD-9363-C8660919DA7D/museum-of-the-city-of-new-york-phases-i-iii-mcny",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "New York University, Tisch School of the Arts, Institute of Performing Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0975B49C-6C4B-424C-A09A-D4F493370DBF/new-york-university-tisch-school-of-the-arts-institute-of-performing-arts",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Newseum / Freedom Forum Foundation World Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Northwell Health, Inpatient Care Center (Phase II)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6EE19E91-45FB-4B7B-91FC-C0F630CD0D58/northwell-health-inpatient-care-center-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "NYU Langone Health, Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "NYU Langone Health, Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "Samuel J. Friedman Theatre for Manhattan Theatre Club (Biltmore)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/45024801-8442-4299-83C2-4E4CB3DDA91E/samuel-j-friedman-theatre-for-manhattan-theatre-club-biltmore",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=bmasuda@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:03:48.716182",
+  "scraped_at": "2025-09-17T20:49:42.276906",
   "profile_id": null
 }

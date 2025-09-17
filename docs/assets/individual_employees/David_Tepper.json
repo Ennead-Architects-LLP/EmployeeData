@@ -1,7 +1,7 @@
 {
   "human_name": "David Tepper",
   "email": "david.tepper@ennead.com",
-  "bio": "I’m a proud member of Ennead’s club of Midwest expatriates, having grown up in Champaign, Illinois. I came to New York City for college more than thirty years ago, and with short stints in Boston (to attend the GSD), Lesotho, and Rome, I have been here ever since. I live in Park Slope with my wife and two teenagers.I started at Ennead (I think!) on January 2, 2000, after working in a smaller office doing residential and commercial work. One of my first projects was the Brooklyn Museum entrance and plaza, which I suspect will remain a once-in-a-career opportunity to make that kind of contribution to my own community. Having apprenticed for ten years on the NYU Langone Campus Transformation, I now lead the Healthcare Center. I enjoy these jobs for their complexity and the strategic planning they involve and because healthcare is an area where better design can have a huge impact.",
+  "bio": "I’m a proud member of Ennead’s club of Midwest expatriates, having grown up in Champaign, Illinois. I came to New York City for college more than thirty years ago, and with short stints in Boston (to attend the GSD), Lesotho, and Rome, I have been here ever since. I live in Park Slope with my wife and two teenagers.I started at Ennead (I think!) on January 2, 2000, after working in a smaller office doing residential and commercial work. One of my first projects was the Brooklyn Museum entrance and plaza, which I suspect will remain a once-in-a-career opportunity to make that kind of contribution to my own community. Having apprenticed for ten years on the NYU Langone Campus Transformation, I now lead the Healthcare Center. I enjoy these jobs for their complexity and the strategic planning they involve and because healthcare is an area where better design can have a huge impact. I’m a proud member of Ennead’s club of Midwest expatriates, having grown up in Champaign, Illinois. I came to New York City for college more than thirty years ago, and with short stints in Boston (to attend the GSD), Lesotho, and Rome, I have been here ever since. I live in Park Slope with my wife and two teenagers.I started at Ennead (I think!) on January 2, 2000, after working in a smaller office doing residential and commercial work. One of my first projects was the Brooklyn Museum entrance and plaza, which I suspect will remain a once-in-a-career opportunity to make that kind of contribution to my own community. Having apprenticed for ten years on the NYU Langone Campus Transformation, I now lead the Healthcare Center. I enjoy these jobs for their complexity and the strategic planning they involve and because healthcare is an area where better design can have a huge impact.",
   "phone": "(212) 792-5974",
   "mobile": "(212) 792-5974",
   "office_location": "",
@@ -11,134 +11,376 @@
   "position": "Partner",
   "department": "",
   "years_with_firm": 25,
-  "memberships": [],
+  "memberships": [
+    "LEED GAAIANCARB",
+    "LEED GA",
+    "AIA",
+    "NCARB"
+  ],
   "education": [
     {
       "institution": "Columbia University",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
-    {
-      "institution": "Harvard",
       "degree": "Graduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "NYU Langone Health Tish Hospital, 14 Unit DoorNYU Langone Health1626",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-tish-hospital-14-unit-door",
+      "url": "https://ei.ennead.com/project/9BA89CFD-5CB6-411D-BFB6-DFF9C3A3648D/nyu-langone-health-tish-hospital-14-unit-door",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "NYU Langone Health Tish Hospital, 14 Unit Door",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/9BA89CFD-5CB6-411D-BFB6-DFF9C3A3648D/nyu-langone-health-tish-hospital-14-unit-door",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "NYU Langone Health, Science Building, BERG Suite - CA services",
+    "proj_3": {
+      "name": "NYU Langone Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-science-building-berg-suite-ca-services",
+      "url": "https://ei.ennead.com/project/C995F383-6373-4FA0-8D2B-F33B68075A81/nyu-langone-health-science-building-berg-suite-ca-services",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "CA services",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C995F383-6373-4FA0-8D2B-F33B68075A81/nyu-langone-health-science-building-berg-suite-ca-services",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_5": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_6": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_7": {
+      "name": "Long Island",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "NYULH Brooklyn Ambulatory Hub BuildingNYU Langone Health2224",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyulh-brooklyn-ambulatory-hub-building",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "text_parsing"
+    },
+    "proj_9": {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Inova Central Region Emergency Department Expansion",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "New York Public Library for the Performing Arts (NYPL)",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/5F99AFFF-99E8-43DF-9B6E-D5354EB9DF29/new-york-public-library-for-the-performing-arts-nypl",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "Weitzman National Museum of American Jewish History (first Site)",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/40185FFF-5D97-4938-9184-BE011BA9D967/weitzman-national-museum-of-american-jewish-history-first-site",
-      "source": "fallback"
-    },
-    "proj_8": {
-      "name": "Inova (Franconia) Springfield Hospital",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
-      "source": "fallback"
-    },
-    "proj_9": {
-      "name": "Inova Alexandria Hospital at Landmark",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "NYU Langone - Long Island, Foreman Site Mother-Baby",
+      "name": "Inova Central Region Emergency Department ExpansionBallinger2223",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-central-region-emergency-department-expansion",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Inova Oakville at Potomac Yards Healthplex",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E49FAF02-B10F-4199-89A6-DD2E8FDD3786/nyu-langone-long-island-foreman-site-mother-baby",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/7523ABE9-B271-4D5A-9DF9-898EF2044C01/inova-oakville-at-potomac-yards-healthplex",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Junshi Suzhou Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/00078518-CA25-4C56-996E-3E7B94A33C52/junshi-suzhou-hospital",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "NYU Langone Health, AH and Ancillary Projects Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D28DDF16-6817-4DB4-BE59-A48971A98F7C/nyu-langone-health-ah-and-ancillary-projects-planning",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "NYU Langone Health, Security Command Suite Basic Services",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BB0ABA33-B791-403B-A201-B4163AD36C12/nyu-langone-health-security-command-suite-basic-services",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "NYU Langone Health, Tisch and LOH Studies",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A6935F5C-C223-4332-B913-9C9FBBF05AD0/nyu-langone-health-tisch-and-loh-studies",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Barnes Foundation Programming and Site Analysis Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE80F846-9CAD-46FC-8260-507B102A0227/barnes-foundation-programming-and-site-analysis-study",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Brooklyn Botanic Garden, Eastern Parkway Entrance",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2ABBEF3B-4F9B-4146-8224-A27125C6ECD2/brooklyn-botanic-garden-eastern-parkway-entrance",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Brooklyn Museum Entry Pavilion and Plaza",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A21C83BB-1D39-409F-AC4C-D67A6D920DFF/brooklyn-museum-entry-pavilion-and-plaza",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Brooklyn Museum, Beaux Arts Court",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/58755527-E616-4DB5-BC5A-02608CB9F1BE/brooklyn-museum-beaux-arts-court",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Elizabeth A. Sackler Center for Feminist Art, Brooklyn Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F11CE8C6-4C04-41A9-8129-8DECD67EB896/elizabeth-a-sackler-center-for-feminist-art-brooklyn-museum",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Fostering Resilient Ecological Design (Far Roc) Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6639C149-02CA-41EC-B352-C7967B105A6A/fostering-resilient-ecological-design-far-roc-competition",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Fudan Qingpu Branch OBGYN Hospital Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/070F6DE7-EF63-4CB8-B3FC-4352C9046D9F/fudan-qingpu-branch-obgyn-hospital-competition",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Harvard University, Faculty of Arts and Sciences, Music Department Precinct Programming and Planning Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/654CB725-69F5-4415-A17B-9ED5FB1E5443/harvard-university-faculty-of-arts-and-sciences-music-department-precinct-programming-and-planning-study",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "NYU Langone Health, Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "NYU Langone Health, Tisch Courtyard",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/15C84276-BE82-4847-BB00-2C582C6138F2/nyu-langone-health-tisch-courtyard",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "NYU Langone Health, Tisch Hospital Elevator Tower and Lobby",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B9543A56-1A01-4772-8B56-97B9A063BF08/nyu-langone-health-tisch-hospital-elevator-tower-and-lobby",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "NYU Langone Health, Tisch Hospital Renovations: Cafeteria",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CD58B9F7-F686-4801-BCF4-831AB75C6074/nyu-langone-health-tisch-hospital-renovations--cafeteria",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "University of Michigan, Museum of Art Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/61CE7FC4-3739-4EA0-B07A-FDB15F8F6BFC/university-of-michigan-museum-of-art-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "University of Pennsylvania, School of Veterinary Medicine, Vernon and Shirley Hill Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B4AE6063-DC77-49BA-9585-713FB91D46F0/university-of-pennsylvania-school-of-veterinary-medicine-vernon-and-shirley-hill-pavilion",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dtepper@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:04:18.964807",
+  "scraped_at": "2025-09-17T20:51:41.042081",
   "profile_id": null
 }

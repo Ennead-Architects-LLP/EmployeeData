@@ -1,7 +1,7 @@
 {
   "human_name": "Kyung Min",
   "email": "kyung.min@ennead.com",
-  "bio": "11",
+  "bio": null,
   "phone": "(212) 792-5978",
   "mobile": "(212) 792-5978",
   "office_location": "",
@@ -11,13 +11,10 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 11,
-  "memberships": [],
+  "memberships": [
+    "NCARB"
+  ],
   "education": [
-    {
-      "institution": "Kyung Hee University",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Syracuse University",
       "degree": "Graduate",
@@ -27,110 +24,330 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Seoul Foreign School, New High School1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "seoul-foreign-school-new-high-school",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Seoul Foreign School, New High School",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Genentech Bayview Campus CompetitionGenentech2249",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "genentech-bayview-campus-competition",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Genentech Bayview Campus Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Genentech",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Huzhou Vocational and Technical Campus Master Plan",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Hana Dream Square",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/AC2D7D1E-E60B-4E65-9FE1-84F826984E5B/hana-dream-square",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "National Grid Gas Conditioning System at Newtown Creek",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/1E7A97BA-3008-4BE7-BA12-07DADB1D0004/national-grid-gas-conditioning-system-at-newtown-creek",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "Zhengzhou Bairui Financial Center",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center",
-      "source": "fallback"
-    },
-    "proj_8": {
-      "name": "Bilibili Shanghai Headquarters",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
-      "source": "fallback"
+      "source": "text_parsing"
     },
     "proj_9": {
-      "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+      "name": "Long Island",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "Nanda Plot 111-01",
+      "name": "Huzhou Vocational and Technical Campus Master PlanHuzhou Professional School2227",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huzhou-vocational-and-technical-campus-master-plan",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "ByteDance Houhai Center Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "New York Blood Center Applied Life Sciences Hub",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Divco West Cambridge Crossing: Parcel U",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Bao Steel Wusong Pilot District",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Shanghai Pujiang Oriental Smart Media City Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CDB6A79F-F127-4D48-80F9-A8A8A53AF6F2/shanghai-pujiang-oriental-smart-media-city-project",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Lingang Fengxian Biopharm Office Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "China Resources Land MixC Park (CR Land)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EFDF0880-F722-4F44-AB9A-5FC86CDEF90B/china-resources-land-mixc-park-cr-land",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Huawei Wuhan Research and Development Campus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Lingang Pujiang International Healthcare City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "NYU Langone Health, Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Pujiang Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "R&F Shanghai Hongqiao Plot 5",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Seoul Foreign School, Facilities Master Plan (SFS)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5C9CA77A-F708-4BCD-909B-985FEF17DFFD/seoul-foreign-school-facilities-master-plan-sfs",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Shanghai Children's Library Design Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0ACE6F00-9DD9-4839-9DA2-3BA9BDC0AC11/shanghai-children-s-library-design-competition",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Stanford University, Bass Biology Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EC3145A0-7E07-47F8-A90A-13EE36802DA9/stanford-university-bass-biology-building",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "Taopu Master Plan and Urban Design (Big Taopu)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AEA7479F-4093-43FE-AAF1-92F00E14AFBD/taopu-master-plan-and-urban-design-big-taopu",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Taopu Smart City, Plot 603",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Tianjin Academy of Fine Arts Competition (TAFA)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmin@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:08:47.214246",
+  "scraped_at": "2025-09-17T21:01:35.617571",
   "profile_id": null
 }

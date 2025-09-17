@@ -1,7 +1,7 @@
 {
   "human_name": "HyunJoo Lee",
   "email": "hyunjoo.lee@ennead.com",
-  "bio": "6",
+  "bio": null,
   "phone": "(212) 792-5923",
   "mobile": "(212) 792-5923",
   "office_location": "",
@@ -14,93 +14,208 @@
   "memberships": [],
   "education": [
     {
-      "institution": "Rhode Island School of Design",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
-    {
       "institution": "Seoul National University",
       "degree": "Undergraduate",
-      "specialty": "Arts"
+      "specialty": "Architecture"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "New York University Kimmel Center StairNew York University2414",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-kimmel-center-stair",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "New York University Kimmel Center Stair",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "New York University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "New Nanchang Library Design Competition229124",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-nanchang-library-design-competition",
+      "url": "https://ei.ennead.com/project/C48ECFB9-4228-4EF5-843F-89A8F972D80C/new-nanchang-library-design-competition",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "New Nanchang Library Design Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C48ECFB9-4228-4EF5-843F-89A8F972D80C/new-nanchang-library-design-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Inova Alexandria Hospital at LandmarkBallinger2124",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-alexandria-hospital-at-landmark",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "text_parsing"
+    },
+    "proj_7": {
       "name": "Inova Alexandria Hospital at Landmark",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_8": {
+      "name": "Ballinger",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Johns Hopkins University Bloomberg CenterSmithGroup1845",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "johns-hopkins-university-bloomberg-center",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Johns Hopkins University Bloomberg Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "Westminster Schools - Blake Center",
+    "proj_11": {
+      "name": "SmithGroup",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_12": {
+      "name": "Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "The Westminster Schools",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-campus-master-plan",
+      "url": "https://ei.ennead.com/project/89DFBE62-29BC-4E54-851B-2F252F27FEC8/the-westminster-schools-campus-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "kuwait-university-health-sciences-campus",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+      "source": "text_parsing"
+    },
+    "proj_15": {
       "name": "Kuwait University Health Sciences Campus",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_16": {
+      "name": "Perkins Eastman",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "The Westminster Schools, Campus Master PlanThe Westminster Schools1761",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-campus-master-plan",
+      "url": "https://ei.ennead.com/project/89DFBE62-29BC-4E54-851B-2F252F27FEC8/the-westminster-schools-campus-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_18": {
       "name": "The Westminster Schools, Campus Master Plan",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/89DFBE62-29BC-4E54-851B-2F252F27FEC8/the-westminster-schools-campus-master-plan",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "1946",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=hjlee@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:06:43.826778",
+  "scraped_at": "2025-09-17T20:56:36.237061",
   "profile_id": null
 }

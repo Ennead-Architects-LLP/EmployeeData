@@ -1,7 +1,7 @@
 {
   "human_name": "Scott Eno",
   "email": "scott.eno@ennead.com",
-  "bio": "0",
+  "bio": null,
   "phone": "",
   "mobile": null,
   "office_location": "",
@@ -10,7 +10,7 @@
   "image_local_path": "assets/images/Scott Eno_profile.jpg",
   "position": "Cloud Solutions Architect",
   "department": "",
-  "years_with_firm": null,
+  "years_with_firm": 0,
   "memberships": [],
   "education": [
     {
@@ -25,6 +25,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=scott.eno@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:26.918449",
+  "scraped_at": "2025-09-17T21:10:33.167006",
   "profile_id": null
 }

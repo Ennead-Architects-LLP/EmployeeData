@@ -1,7 +1,7 @@
 {
   "human_name": "Don Weinreich",
   "email": "don.weinreich@ennead.com",
-  "bio": "I was born and raised in NYC, a child of academic parents, attending Columbia University three times – pre-K, college and graduate school.  Summers in Maine gave me an education in the value of small communities based on individualism, interdependency and service - much like our office!  In Maine I learned to build houses, repair wooden boats, fight fires, and earned a commercial boat captain’s license (which I still have).My first architecture job was here at Ennead (then Polshek) when I was in charge of ordering supplies and running prints.  After graduate school and a short stint at a now-defunct firm called Proposition: Architecture, I returned to this office and sampled pretty much every role: junior designer, job captain, project architect, project manager, etc.  Along the way I led the implementation first of CAD and later BIM.  My 30+ years here continue to give me boundless satisfaction – because of the people I get to work with and because the architecture and research the firm produces makes a difference in the world.When I have free time I like to spend it renovating our house, shooting photos and visiting strange new places.",
+  "bio": "I was born and raised in NYC, a child of academic parents, attending Columbia University three times – pre-K, college and graduate school.  Summers in Maine gave me an education in the value of small communities based on individualism, interdependency and service - much like our office!  In Maine I learned to build houses, repair wooden boats, fight fires, and earned a commercial boat captain’s license (which I still have).My first architecture job was here at Ennead (then Polshek) when I was in charge of ordering supplies and running prints.  After graduate school and a short stint at a now-defunct firm called Proposition: Architecture, I returned to this office and sampled pretty much every role: junior designer, job captain, project architect, project manager, etc.  Along the way I led the implementation first of CAD and later BIM.  My 30+ years here continue to give me boundless satisfaction – because of the people I get to work with and because the architecture and research the firm produces makes a difference in the world.When I have free time I like to spend it renovating our house, shooting photos and visiting strange new places. I was born and raised in NYC, a child of academic parents, attending Columbia University three times – pre-K, college and graduate school.  Summers in Maine gave me an education in the value of small communities based on individualism, interdependency and service - much like our office!  In Maine I learned to build houses, repair wooden boats, fight fires, and earned a commercial boat captain’s license (which I still have).My first architecture job was here at Ennead (then Polshek) when I was in charge of ordering supplies and running prints.  After graduate school and a short stint at a now-defunct firm called Proposition: Architecture, I returned to this office and sampled pretty much every role: junior designer, job captain, project architect, project manager, etc.  Along the way I led the implementation first of CAD and later BIM.  My 30+ years here continue to give me boundless satisfaction – because of the people I get to work with and because the architecture and research the firm produces makes a difference in the world.When I have free time I like to spend it renovating our house, shooting photos and visiting strange new places.",
   "phone": "(212) 792-5979",
   "mobile": "(212) 792-5979",
   "office_location": "",
@@ -11,197 +11,377 @@
   "position": "Partner",
   "department": "",
   "years_with_firm": 38,
-  "memberships": [],
+  "memberships": [
+    "NCARBLEED APAIAGBCI",
+    "NCARB",
+    "LEED AP",
+    "AIA",
+    "GBCI"
+  ],
   "education": [
-    {
-      "institution": "Columbia University",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Columbia University",
       "degree": "Undergraduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "CA",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "CO",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "IL",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "MD",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "MI",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "OH",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "UT",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "WA",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "WI",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shinsegae Town Mixed Use Development CompetitionShinsegae Inc.2320",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shinsegae-town-mixed-use-development-competition",
+      "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shinsegae Town Mixed Use Development Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Shinsegae Inc.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Seoul Foreign School, New High School1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "seoul-foreign-school-new-high-school",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Seoul Foreign School, New High School",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "455 First AvenueTaconic Partners LLC2314",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "455-first-avenue",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "455 First Avenue",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Universal Hydrogen 2 Manufacturing Facility",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Genentech Bayview Campus Competition",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "Barbados Archive: Temporary Facility (ELab)",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "American School in Japan Master Plan",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
-      "source": "fallback"
-    },
-    "proj_8": {
-      "name": "Children's Hospital at Montefiore",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_9": {
-      "name": "New York Academy of Medicine, Programming and Planning",
+      "name": "Taconic Partners LLC",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "New York Philharmonic Summer Festival Study",
+      "name": "Universal Hydrogen 2 Manufacturing FacilityUniversal Hydrogen2306",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "universal-hydrogen-2-manufacturing-facility",
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Weitzman National Museum of American Jewish History (first Site)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3F922FD3-08B1-4227-9D43-457275F4C7E9/new-york-philharmonic-summer-festival-study",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/40185FFF-5D97-4938-9184-BE011BA9D967/weitzman-national-museum-of-american-jewish-history-first-site",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Northwell, Third Avenue Medical Office Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Nature & Culture Museum of Wisconsin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Alta Community Center Feasibility Study (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Hastings-on-Hudson Waterfront Vision Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D5BF0BFE-8EEC-4F7D-951D-7910DE203467/hastings-on-hudson-waterfront-vision-study",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "New York Blood Center Applied Life Sciences Hub",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Project Darwin, Natural History Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A33E7BEF-8C69-44C1-A92A-41138617A2B3/project-darwin-natural-history-museum",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "City Harvest, The Cohen Community Food Rescue Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/153179FB-C946-4ED3-A2F3-06B30CF54961/city-harvest-the-cohen-community-food-rescue-center",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Massachusetts Institute of Technology, Stephen A. Schwarzman College of Computing (MIT)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7B410E83-8B38-4EC1-82B9-33793246428B/massachusetts-institute-of-technology-stephen-a-schwarzman-college-of-computing-mit",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "The Cove, Crescent Park Jersey City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Edelman Fossil Museum of Rowan University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/08F1108D-F92B-429F-89E7-6DF373F0CCA8/edelman-fossil-museum-of-rowan-university",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Sing Sing Prison Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DF537E06-2132-4FC7-995B-66D7BDC8A943/sing-sing-prison-museum",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Brooklyn Museum, Great Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD4ACE57-C761-4267-BA9C-C63D66CB6504/brooklyn-museum-great-hall",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "American Museum of Natural History, Rose Center for Earth and Space",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Broadway: 1000 Steps (Ennead Lab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AB094ED6-A669-4246-8E8A-29248DDD64CE/broadway--1000-steps-ennead-lab",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "Brooklyn Museum Entry Pavilion and Plaza",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A21C83BB-1D39-409F-AC4C-D67A6D920DFF/brooklyn-museum-entry-pavilion-and-plaza",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Brooklyn Museum, Beaux Arts Court",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/58755527-E616-4DB5-BC5A-02608CB9F1BE/brooklyn-museum-beaux-arts-court",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Brooklyn Museum, Kevorkian Gallery and Beaux Arts Court Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2D41C51A-6E28-4E4A-8CBA-D36D146E34B6/brooklyn-museum-kevorkian-gallery-and-beaux-arts-court-renovation",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Concordia Pudong",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BAFEA2ED-630A-4C0F-8BB7-0B569EBDB7CB/concordia-pudong",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "Elizabeth A. Sackler Center for Feminist Art, Brooklyn Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F11CE8C6-4C04-41A9-8129-8DECD67EB896/elizabeth-a-sackler-center-for-feminist-art-brooklyn-museum",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "Goh Keng Swee Centre for Education",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D217F60E-C2D1-4B98-A079-299B4B07C88D/goh-keng-swee-centre-for-education",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "Indiana University Art Museum Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D5456E1D-F1B6-451E-A47B-CFC987A154FC/indiana-university-art-museum-renovation",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dweinreich@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:04:28.993664",
+  "scraped_at": "2025-09-17T20:52:23.330177",
   "profile_id": null
 }

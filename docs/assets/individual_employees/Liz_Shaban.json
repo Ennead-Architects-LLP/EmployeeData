@@ -1,7 +1,7 @@
 {
   "human_name": "Liz Shaban",
   "email": "Liz.Shaban@ennead.com",
-  "bio": "After graduating from Washington University, I started my architecture career at a small firm in St. Louis where I worked on mainly multi-unit residential projects. Graduate study at the University of Virginia landed me in Charlottesville for three years then my job at Ennead brought me to NYC. Shortly before the pandemic I moved from Hell's Kitchen to my home state of New Jersey, and I currently reside in Jersey City with my husband and son. In our spare time you'll find us at a Red Bulls or Gotham FC soccer game or grilling in our backyard.",
+  "bio": "After graduating from Washington University, I started my architecture career at a small firm in St. Louis where I worked on mainly multi-unit residential projects. Graduate study at the University of Virginia landed me in Charlottesville for three years then my job at Ennead brought me to NYC. Shortly before the pandemic I moved from Hell's Kitchen to my home state of New Jersey, and I currently reside in Jersey City with my husband and son. In our spare time you'll find us at a Red Bulls or Gotham FC soccer game or grilling in our backyard. After graduating from Washington University, I started my architecture career at a small firm in St. Louis where I worked on mainly multi-unit residential projects. Graduate study at the University of Virginia landed me in Charlottesville for three years then my job at Ennead brought me to NYC. Shortly before the pandemic I moved from Hell's Kitchen to my home state of New Jersey, and I currently reside in Jersey City with my husband and son. In our spare time you'll find us at a Red Bulls or Gotham FC soccer game or grilling in our backyard.",
   "phone": "(646) 437-1736",
   "mobile": "(646) 437-1736",
   "office_location": "",
@@ -11,74 +11,155 @@
   "position": "Associate",
   "department": "",
   "years_with_firm": 12,
-  "memberships": [],
+  "memberships": [
+    "LEED APAIA",
+    "LEED AP",
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "University of Virginia",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Washington University, St. Louis",
       "degree": "Undergraduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "New York University, Renovations to Chemical Biology BuildingsNew York University1847",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-renovations-to-chemical-biology-buildings",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "New York University, Renovations to Chemical Biology Buildings",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Connecticut College, Athey Center for Performance and Research at Palmer Auditorium",
+    "proj_3": {
+      "name": "New York University",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_4": {
+      "name": "Connecticut",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Connecticut",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Connecticut",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "NYU Langone Health, Science BuildingNYU Langone Health1101",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-science-building",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "NYU Langone Health, Science Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "NYU Langone Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & DesignPrinceton University1836",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Princeton University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "1837",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=liz.shaban@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:26.993070",
+  "scraped_at": "2025-09-17T21:02:45.496101",
   "profile_id": null
 }

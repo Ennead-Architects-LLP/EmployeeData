@@ -1,7 +1,7 @@
 {
   "human_name": "Amy Mielke",
   "email": "amy.mielke@ennead.com",
-  "bio": "I grew up in Oklahoma, the daughter of an episcopal priest, a banker, an electrical engineer and a creative digital asset manager. I went to Oklahoma State University  for a B.Arch where I learned that water runs down hill, *stuff stinks, stone is heavy, and composition matters.  In 2005 I moved to NYC and worked for Carlos Zapata Studio (formerly Wood + Zapata) and a+i. In 2011 I went to Yale for an M.Arch II degree. I learned that positioning a project is everything, active form is underrepresented, and form generated from material is by far the most interesting object form.",
+  "bio": "I grew up in Oklahoma, the daughter of an episcopal priest, a banker, an electrical engineer and a creative digital asset manager. I went to Oklahoma State University  for a B.Arch where I learned that water runs down hill, *stuff stinks, stone is heavy, and composition matters.  In 2005 I moved to NYC and worked for Carlos Zapata Studio (formerly Wood + Zapata) and a+i. In 2011 I went to Yale for an M.Arch II degree. I learned that positioning a project is everything, active form is underrepresented, and form generated from material is by far the most interesting object form. I grew up in Oklahoma, the daughter of an episcopal priest, a banker, an electrical engineer and a creative digital asset manager. I went to Oklahoma State University  for a B.Arch where I learned that water runs down hill, *stuff stinks, stone is heavy, and composition matters.  In 2005 I moved to NYC and worked for Carlos Zapata Studio (formerly Wood + Zapata) and a+i. In 2011 I went to Yale for an M.Arch II degree. I learned that positioning a project is everything, active form is underrepresented, and form generated from material is by far the most interesting object form.",
   "phone": "212-792-5989",
   "mobile": "212-792-5989",
   "office_location": "",
@@ -11,134 +11,316 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 11,
-  "memberships": [],
+  "memberships": [
+    "LEED GAGBCIAIA",
+    "LEED GA",
+    "GBCI",
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Oklahoma State University",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Yale University",
       "degree": "Graduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "The Water Alert and Testing Resource (WALTER)ELWALTER",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-water-alert-and-testing-resource-walter",
+      "url": "https://ei.ennead.com/project/24648BBC-6D57-442A-B702-17F824F96295/the-water-alert-and-testing-resource-walter",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "The Water Alert and Testing Resource (WALTER)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/24648BBC-6D57-442A-B702-17F824F96295/the-water-alert-and-testing-resource-walter",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "ELWALTER",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
-    },
-    "proj_3": {
-      "name": "Barbados Archive: Temporary Facility (ELab)",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Children's Hospital at Montefiore",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Inova Alexandria Hospital at Landmark",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
-      "source": "fallback"
+      "source": "text_parsing"
     },
     "proj_6": {
-      "name": "United States Consulate General, Nogales Mexico",
+      "name": "Long Island",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_7": {
+      "name": "Temporary Facility (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "barbados-archive--temporary-facility-elab",
+      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Government of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Hospital at",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "children-s-hospital-at-montefiore",
+      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Hospital at",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "CODA Built",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/47199296-337D-40EB-950F-279696EF5A45/coda-built",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Big Ideas for Small Lots NY (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7AA271AE-55E9-4B8E-B758-20DB4426A88E/big-ideas-for-small-lots-ny-elab",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Shenzhen Science and Technology Museum (S&T)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Tianjin Academy of Fine Arts Competition (TAFA)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "United States Embassy, Ankara (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "U.S. Department of State",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "JUNO, Capitol HillJuno2020",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "juno-capitol-hill",
+      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill",
+      "source": "text_parsing"
+    },
+    "proj_18": {
       "name": "JUNO, Capitol Hill",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/392AE16F-7F53-4026-8ACB-EBFBC8AB3A93/juno-capitol-hill",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_19": {
+      "name": "Juno",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "juno-austin",
+      "url": "https://ei.ennead.com/project/8E22BD56-6AA6-4805-B639-17C9F5F76BFD/juno-austin",
+      "source": "text_parsing"
+    },
+    "proj_20": {
+      "name": "Alta Community Center Feasibility Study (ELab)Town of Alta2010",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "alta-community-center-feasibility-study-elab",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab",
+      "source": "text_parsing"
+    },
+    "proj_21": {
       "name": "Alta Community Center Feasibility Study (ELab)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_22": {
+      "name": "Town of Alta",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "Juno AustinCODA Built2007",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "juno-austin",
+      "url": "https://ei.ennead.com/project/8E22BD56-6AA6-4805-B639-17C9F5F76BFD/juno-austin",
+      "source": "text_parsing"
+    },
+    "proj_24": {
       "name": "Juno Austin",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8E22BD56-6AA6-4805-B639-17C9F5F76BFD/juno-austin",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
-      "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
+    "proj_25": {
+      "name": "CODA Built",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "Nassau, Bahamas National Economic Council",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
       "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
-      "source": "fallback"
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "2234",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "barbados-archive--temporary-facility-elab",
+      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "1409",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "children-s-hospital-at-montefiore",
+      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "1700",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
+      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=amielke@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:02:53.678404",
+  "scraped_at": "2025-09-17T20:47:52.082063",
   "profile_id": null
 }

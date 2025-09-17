@@ -1,7 +1,7 @@
 {
   "human_name": "Ana Guillandeaux",
   "email": "ana.guillandeaux@ennead.com",
-  "bio": "5",
+  "bio": null,
   "phone": "646-437-1760",
   "mobile": "646-437-1760",
   "office_location": "",
@@ -14,30 +14,17 @@
   "memberships": [],
   "education": [
     {
-      "institution": "Simon Business School, University of Rochester, Rochester NY",
-      "degree": "Graduate",
-      "specialty": "Business Administration"
-    },
-    {
       "institution": "Syracuse University, NY",
       "degree": "Undergraduate",
-      "specialty": "Public Health"
+      "specialty": "Business Administration"
     }
   ],
-  "licenses": [
-    {
-      "license": "Certified Public Accountant",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {},
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=aguillandeaux@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:02:56.081401",
+  "scraped_at": "2025-09-17T20:48:07.491488",
   "profile_id": null
 }

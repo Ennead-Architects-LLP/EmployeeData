@@ -1,7 +1,7 @@
 {
   "human_name": "Jason Ojeda",
   "email": "Jason.Ojeda@ennead.com",
-  "bio": "0",
+  "bio": null,
   "phone": "646-437-1732",
   "mobile": "646-437-1732",
   "office_location": "",
@@ -10,7 +10,7 @@
   "image_local_path": null,
   "position": "Marketing Manager",
   "department": "",
-  "years_with_firm": null,
+  "years_with_firm": 0,
   "memberships": [],
   "education": [
     {
@@ -25,6 +25,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Jason.Ojeda@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:06:57.504341",
+  "scraped_at": "2025-09-17T20:57:22.851607",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Michaela Lunz",
   "email": "michaela.lunz@ennead.com",
-  "bio": "Born in San Francisco, CA, I was raised in Washington, D.C, but I have lived in the Tristate area for 12 years now. I attended Sarah Lawrence College, graduating with a concentration in art history and theater in 2020. Prior to joining Ennead, I worked in the art world, in art galleries and arts communications firms. My interests encompass the intersection of visual culture and storytelling, and how innovative storytelling modalities can engage the public in the history of art and architecture. In my free time, I design and conduct accessible, storytelling-based museum tours!Outside of my professional interests, I love Pilates, museums, theater, pop culture, travel, and fashion history! I also am an advocate for \"women's\" and reproductive health advocacy and inequality, as well as healthcare systems justice.",
+  "bio": "Born in San Francisco, CA, I was raised in Washington, D.C, but I have lived in the Tristate area for 12 years now. I attended Sarah Lawrence College, graduating with a concentration in art history and theater in 2020. Prior to joining Ennead, I worked in the art world, in art galleries and arts communications firms. My interests encompass the intersection of visual culture and storytelling, and how innovative storytelling modalities can engage the public in the history of art and architecture. In my free time, I design and conduct accessible, storytelling-based museum tours!Outside of my professional interests, I love Pilates, museums, theater, pop culture, travel, and fashion history! I also am an advocate for \"women's\" and reproductive health advocacy and inequality, as well as healthcare systems justice. Born in San Francisco, CA, I was raised in Washington, D.C, but I have lived in the Tristate area for 12 years now. I attended Sarah Lawrence College, graduating with a concentration in art history and theater in 2020. Prior to joining Ennead, I worked in the art world, in art galleries and arts communications firms. My interests encompass the intersection of visual culture and storytelling, and how innovative storytelling modalities can engage the public in the history of art and architecture. In my free time, I design and conduct accessible, storytelling-based museum tours!Outside of my professional interests, I love Pilates, museums, theater, pop culture, travel, and fashion history! I also am an advocate for \"women's\" and reproductive health advocacy and inequality, as well as healthcare systems justice.",
   "phone": "2127925990",
   "mobile": "2127925990",
   "office_location": "",
@@ -20,11 +20,192 @@
     }
   ],
   "licenses": [],
-  "projects": {},
+  "projects": {
+    "proj_1": {
+      "name": "Michaela LunzMarketing Coordinator",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Michaela Lunz",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Marketing Coordinator",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "based museum tours!Outside of my professional interests, I love Pilates, museums, theater, pop culture, travel, and fashion history! I also am an advocate for \"women's\" and reproductive health advocacy and inequality, as well as healthcare systems justice.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "based museum tours!Outside of my professional interests, I love Pilates, museums, theater, pop culture, travel, and fashion history! I also am an advocate for \"women's\" and reproductive health advocacy and inequality, as well as healthcare systems justice.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "I'm a Resource ForCommunications, written and verbal content, resumes, project data and stats, swedish duvets",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Communications, written and verbal content, resumes, project data and stats, swedish duvets",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "The BasicsYears With Firm2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Years With Firm2",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Years With Firm",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "EducationInstitutionDegreeSpecialtySarah Lawrence CollegeUndergraduateLiberal Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Degree",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "Specialty",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Sarah Lawrence College",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Undergraduate",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Liberal Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=michaela.lunz@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:10:10.859723",
+  "scraped_at": "2025-09-17T21:05:44.982677",
   "profile_id": null
 }

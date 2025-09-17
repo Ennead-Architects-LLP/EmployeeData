@@ -1,7 +1,7 @@
 {
   "human_name": "Elodie Graham",
   "email": "elodie.graham@ennead.com",
-  "bio": "I was born in Tucson, AZ but quickly moved to a suburb of Paris at the age of 4. After 14 years in France  I decided to move back to the US for college and somehow ended up in Houston, Texas at Rice University.After four years at Rice, I came to Ennead to intern for 9 months and ended up staying two years! After a whirlwind 5th year of studying in Paris and Houston and (finally) graduating, I couldn't stand being away from Ennead any longer. Outside the office, I love to cook (the spicier the better), drink tea (pretty much only earl grey) and explore.",
+  "bio": "I was born in Tucson, AZ but quickly moved to a suburb of Paris at the age of 4. After 14 years in France  I decided to move back to the US for college and somehow ended up in Houston, Texas at Rice University.After four years at Rice, I came to Ennead to intern for 9 months and ended up staying two years! After a whirlwind 5th year of studying in Paris and Houston and (finally) graduating, I couldn't stand being away from Ennead any longer. Outside the office, I love to cook (the spicier the better), drink tea (pretty much only earl grey) and explore. I was born in Tucson, AZ but quickly moved to a suburb of Paris at the age of 4. After 14 years in France  I decided to move back to the US for college and somehow ended up in Houston, Texas at Rice University.After four years at Rice, I came to Ennead to intern for 9 months and ended up staying two years! After a whirlwind 5th year of studying in Paris and Houston and (finally) graduating, I couldn't stand being away from Ennead any longer. Outside the office, I love to cook (the spicier the better), drink tea (pretty much only earl grey) and explore.",
   "phone": "1-213-265-7654",
   "mobile": "1-213-265-7654",
   "office_location": "",
@@ -11,13 +11,10 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 1,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Rice University",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Rice University",
       "degree": "Undergraduate",
@@ -27,100 +24,280 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Inova Alexandria Hospital at LandmarkBallinger2124",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-alexandria-hospital-at-landmark",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Inova Alexandria Hospital at Landmark",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Northwell, Third Avenue Medical Office Building",
+    "proj_3": {
+      "name": "Ballinger",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_4": {
+      "name": "Northwell,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Northwell,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Northwell Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lenox-hill-hospital-northwell-health-redevelopment",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Nature & Culture Museum of WisconsinMilwaukee Public Museum2100",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nature-culture-museum-of-wisconsin",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Nature & Culture Museum of Wisconsin",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "Milwaukee Public Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Alta Community Center Feasibility Study (ELab)Town of Alta2010",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "alta-community-center-feasibility-study-elab",
+      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Alta Community Center Feasibility Study (ELab)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/46CE47FB-6814-4D20-B654-9AAB24938EE9/alta-community-center-feasibility-study-elab",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+    "proj_12": {
+      "name": "Town of Alta",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_13": {
+      "name": "Renovation and",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mount-sinai-beth-israel-renovation-and-addition-2019",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Perkins Eastman",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "Lingang Science and Technology City (S&T)Lingang Economic Group1520",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-science-and-technology-city-s-t",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
+      "source": "text_parsing"
+    },
+    "proj_16": {
       "name": "Lingang Science and Technology City (S&T)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_17": {
+      "name": "Lingang Economic Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Hongkun EdgewaterHongkun USA1750",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "hongkun-edgewater",
+      "url": "https://ei.ennead.com/project/A3D371E7-B27A-4197-AE68-769A3D0FD928/hongkun-edgewater",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "Hongkun Edgewater",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A3D371E7-B27A-4197-AE68-769A3D0FD928/hongkun-edgewater",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_20": {
+      "name": "Hongkun USA",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lenox-hill-hospital-northwell-health-redevelopment",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_23": {
+      "name": "Mount Sinai Downtown TransformationArchNexus1648",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mount-sinai-downtown-transformation",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
+      "source": "text_parsing"
+    },
+    "proj_24": {
       "name": "Mount Sinai Downtown Transformation",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "ArchNexus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "2109",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "1911",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "mount-sinai-beth-israel-renovation-and-addition-2019",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=egraham@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:05:11.652346",
+  "scraped_at": "2025-09-17T20:53:32.006415",
   "profile_id": null
 }

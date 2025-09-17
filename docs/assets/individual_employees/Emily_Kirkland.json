@@ -11,7 +11,12 @@
   "position": "Principal",
   "department": "",
   "years_with_firm": 14,
-  "memberships": [],
+  "memberships": [
+    "LEED GANational Organization of Minority ArchitectsAIA",
+    "LEED GA",
+    "National Organization of Minority Architects",
+    "AIA"
+  ],
   "education": [
     {
       "institution": "Rice University",
@@ -19,121 +24,263 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay2412",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-park-and-research-campus-sparc-kips-bay",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Master Plan Update and Energy Engineering Building Formation Study (EEB)1401",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb",
+      "url": "https://ei.ennead.com/project/FEE7E605-5A5B-491E-8AA3-66CC42B85A4A/the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb",
+      "source": "text_parsing"
+    },
+    "proj_4": {
       "name": "The University of Texas at Austin Cockrell School of Engineering, Master Plan Update and Energy Engineering Building Formation Study (EEB)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/FEE7E605-5A5B-491E-8AA3-66CC42B85A4A/the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_5": {
+      "name": "The University of Texas at Austin, McCombs School of Business, Future Growth StudyJacobs2017",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-university-of-texas-at-austin-mccombs-school-of-business-future-growth-study",
+      "url": "https://ei.ennead.com/project/DF3441F3-B1AD-4A8F-B44B-0B6F561B391B/the-university-of-texas-at-austin-mccombs-school-of-business-future-growth-study",
+      "source": "text_parsing"
+    },
+    "proj_6": {
       "name": "The University of Texas at Austin, McCombs School of Business, Future Growth Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DF3441F3-B1AD-4A8F-B44B-0B6F561B391B/the-university-of-texas-at-austin-mccombs-school-of-business-future-growth-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_7": {
+      "name": "Jacobs",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering BuildingThe University of Texas at Austin1727",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
+      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
+      "source": "text_parsing"
+    },
+    "proj_9": {
       "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "The University of Texas at Austin, McCombs Study 3",
+    "proj_10": {
+      "name": "The University of Texas at Austin",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "the-university-of-texas-at-austin-mccombs-study-3",
       "url": "https://ei.ennead.com/project/D042924F-5792-4135-8526-70BF9D075008/the-university-of-texas-at-austin-mccombs-study-3",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "Purdue University Polytechnic Institute, College of Engineering, Dudley and Lambertus Halls (Gateway)",
+    "proj_11": {
+      "name": "Purdue University, College of Science, Master Plan",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CC0FBA10-4F97-4086-83AC-C1A42862AA28/purdue-university-polytechnic-institute-college-of-engineering-dudley-and-lambertus-halls-gateway",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/609538FA-9D29-4370-9CF8-AD732A2D22FC/purdue-university-college-of-science-master-plan",
+      "source": "detailed_table"
     },
-    "proj_7": {
+    "proj_12": {
+      "name": "Purdue University, Flex Lab Facility",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91CB6710-C515-442E-8C4D-C3CC788C3D00/purdue-university-flex-lab-facility",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Stanford University, Bass Biology Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EC3145A0-7E07-47F8-A90A-13EE36802DA9/stanford-university-bass-biology-building",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Stanford University, Denning House",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1AE1E92E-5E2C-465A-8FA7-F5EBA5291E06/stanford-university-denning-house",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "The University of Texas at Austin, McCombs School of Business, Robert B. Rowling Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/75809F78-4F70-42FB-B40F-68B3B5660253/the-university-of-texas-at-austin-mccombs-school-of-business-robert-b-rowling-hall",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Engineering Education and Research Center (EERC)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0240BEA5-3779-48E4-A600-E3DFCA2E31BB/the-university-of-texas-at-austin-cockrell-school-of-engineering-engineering-education-and-research-center-eerc",
+      "source": "detailed_table"
+    },
+    "proj_17": {
       "name": "The University of Texas at Austin, McCombs Study 2",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4660584B-46DC-49BC-BE60-380B34723EF9/the-university-of-texas-at-austin-mccombs-study-2",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
-      "name": "Purdue University, Chaney-Hale Hall of Science",
+    "proj_18": {
+      "name": "Hale Hall of Science",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "purdue-university-chaney-hale-hall-of-science",
       "url": "https://ei.ennead.com/project/96366A47-615C-4561-94A0-00542D865A88/purdue-university-chaney-hale-hall-of-science",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_19": {
+      "name": "Heroic Food Farm School Master PlanTEST1420",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "heroic-food-farm-school-master-plan",
+      "url": "https://ei.ennead.com/project/CE4D0B6B-5180-48B4-B779-222D5996884C/heroic-food-farm-school-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_20": {
       "name": "Heroic Food Farm School Master Plan",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CE4D0B6B-5180-48B4-B779-222D5996884C/heroic-food-farm-school-master-plan",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_21": {
+      "name": "TEST",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & DesignPrinceton University1836",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "text_parsing"
+    },
+    "proj_23": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Princeton University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "1766",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "purdue-university-chaney-hale-hall-of-science",
+      "url": "https://ei.ennead.com/project/96366A47-615C-4561-94A0-00542D865A88/purdue-university-chaney-hale-hall-of-science",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ekirkland@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:05:14.357718",
+  "scraped_at": "2025-09-17T20:53:37.293812",
   "profile_id": null
 }

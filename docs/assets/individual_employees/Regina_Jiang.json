@@ -1,0 +1,295 @@
+{
+  "human_name": "Regina Jiang",
+  "email": "regina.jiang@ennead.com",
+  "bio": null,
+  "phone": "",
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/BC0122D7-B529-4A5A-82FA-A02D17659AF6/regina-jiang",
+  "image_url": "https://ei.ennead.com/api/image/0a402bcc-a218-4670-b34f-cde09e1985c5/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Regina Jiang_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 5,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Huzhou Vocational and Technical Campus Master PlanHuzhou Professional School2227",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huzhou-vocational-and-technical-campus-master-plan",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Huzhou Professional School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)Bilibili Co.,Ltd.2138",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "cheung-kong-graduate-school-of-business-beijing-campus",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Bilibili Co.,Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Alibaba Cainiao Phase IIShenzhen Toutiao Technology Co., Ltd.2127",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "alibaba-cainiao-phase-ii",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Alibaba Cainiao Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Shenzhen Toutiao Technology Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bilibili-shanghai-headquarters",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Peabody Essex Museum, Expansion and Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Phil and Penny Knight Campus for Accelerating Scientific Impact at University of Oregon",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/71B181F2-EDBC-42B9-A856-0078C8571EDC/phil-and-penny-knight-campus-for-accelerating-scientific-impact-at-university-of-oregon",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Shanghai Astronomy Museum (Planetarium)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/29D257CF-CC0F-4D77-8750-0D4582C95142/shanghai-astronomy-museum-planetarium",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "ByteDance Houhai Center ProjectShenzhen Toutiao Technology Co., Ltd.2018",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bytedance-houhai-center-project",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "ByteDance Houhai Center Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "COMAC Campus, New HeadquartersLingang2009",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "comac-campus-new-headquarters",
+      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "COMAC Campus, New Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Lingang",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-science-and-technology-city-s-t",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "Shenzhen Xiaomi HeadquartersShenzhen Xiaomi Technology Co. Ltd.2016",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-xiaomi-headquarters",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_20": {
+      "name": "Shenzhen Xiaomi Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "Lingang Science and Technology City (S&T)Lingang Economic Group1520",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-science-and-technology-city-s-t",
+      "url": "https://ei.ennead.com/project/A1566E5C-D684-46E9-8104-12FD4A6C4736/lingang-science-and-technology-city-s-t",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "Lingang Science and Technology City (S&T)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Lingang Economic Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "Huawei Wuhan Research and Development CampusEnnead Architects International LLP1326",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huawei-wuhan-research-and-development-campus",
+      "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "Huawei Wuhan Research and Development Campus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "Ennead Architects International LLP",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=rjiang@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-17T21:08:56.688003",
+  "profile_id": null
+}

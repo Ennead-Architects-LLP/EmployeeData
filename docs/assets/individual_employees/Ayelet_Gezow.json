@@ -1,7 +1,7 @@
 {
   "human_name": "Ayelet Gezow",
   "email": "ayelet.gezow@ennead.com",
-  "bio": "Born and raised on a kibbutz in Israel to a family of archaeologists, I  opted for another archetype, one I thought would keep my hands cleaner. I have lived in the US  much longer than I wish to admit even to myself, surviving Buffalo and finding NY to offer a great, albeit noisy home. My love for nature and the outdoors eventually took me upstate to the Catskills where I now call home. Any spare time you can find me on the trail.",
+  "bio": "Born and raised on a kibbutz in Israel to a family of archaeologists, I  opted for another archetype, one I thought would keep my hands cleaner. I have lived in the US  much longer than I wish to admit even to myself, surviving Buffalo and finding NY to offer a great, albeit noisy home. My love for nature and the outdoors eventually took me upstate to the Catskills where I now call home. Any spare time you can find me on the trail. Born and raised on a kibbutz in Israel to a family of archaeologists, I  opted for another archetype, one I thought would keep my hands cleaner. I have lived in the US  much longer than I wish to admit even to myself, surviving Buffalo and finding NY to offer a great, albeit noisy home. My love for nature and the outdoors eventually took me upstate to the Catskills where I now call home. Any spare time you can find me on the trail.",
   "phone": "646-437-1770",
   "mobile": "646-437-1770",
   "office_location": "",
@@ -11,126 +11,323 @@
   "position": "Senior Associate",
   "department": "",
   "years_with_firm": 5,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Columbia University",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "State University of New York at Buffalo",
       "degree": "Undergraduate",
-      "specialty": "B.P.S."
+      "specialty": "Architecture"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Inova Alexandria Hospital at LandmarkBallinger2124",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-alexandria-hospital-at-landmark",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Inova Alexandria Hospital at Landmark",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Ballinger",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "ByteDance Houhai Center ProjectShenzhen Toutiao Technology Co., Ltd.2018",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bytedance-houhai-center-project",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "ByteDance Houhai Center Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Shenzhen Toutiao Technology Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Shenhzen International Performance CenterShenhzen Int. Performance Center2025",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenhzen-international-performance-center",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Shenhzen International Performance Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "Shenzhen Xiaomi Headquarters",
+    "proj_9": {
+      "name": "Shenhzen Int. Performance Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_10": {
+      "name": "Shenzhen Xiaomi HeadquartersShenzhen Xiaomi Technology Co. Ltd.2016",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-xiaomi-headquarters",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Taopu Smart City, Plot 603",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Lingang Fengxian Soccer Training CenterLingang2005",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-fengxian-soccer-training-center",
+      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center",
+      "source": "text_parsing"
+    },
+    "proj_14": {
       "name": "Lingang Fengxian Soccer Training Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "Divco West Cambridge Crossing: Parcel U",
+    "proj_15": {
+      "name": "Lingang",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Parcel U",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "divco-west-cambridge-crossing--parcel-u",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Jacobs",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_18": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
-      "name": "Taopu Sci-Tech City Plot 606",
+    "proj_20": {
+      "name": "Lingang Group",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_21": {
+      "name": "Tech City Plot 606",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-plot-606",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "kuwait-university-health-sciences-campus",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+      "source": "text_parsing"
+    },
+    "proj_24": {
       "name": "Kuwait University Health Sciences Campus",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_25": {
+      "name": "Perkins Eastman",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & DesignPrinceton University1836",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "text_parsing"
+    },
+    "proj_27": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "Princeton University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "1933",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "divco-west-cambridge-crossing--parcel-u",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "text_parsing"
+    },
+    "proj_30": {
+      "name": "1735",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-plot-606",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=agezow@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:03:28.336913",
+  "scraped_at": "2025-09-17T20:49:16.181627",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Chuck Wolf",
   "email": "charles.wolf@ennead.com",
-  "bio": "11",
+  "bio": null,
   "phone": "646-437-1718",
   "mobile": "646-437-1718",
   "office_location": "",
@@ -11,134 +11,313 @@
   "position": "Senior Associate",
   "department": "",
   "years_with_firm": 11,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "University of Oregon",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Washington University",
       "degree": "Undergraduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Omaha Performing Arts, Steelhouse OmahaOmaha Performing Arts1843B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "omaha-performing-arts-steelhouse-omaha",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Omaha Performing Arts, Steelhouse Omaha",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Omaha Performing Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "omaha-performing-arts-campus-expansion",
+      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "1843B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "GSP Arts Uberlandia1118",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "gsp-arts-uberlandia",
+      "url": "https://ei.ennead.com/project/DE89DED1-43D9-4AC1-B189-9FC26315137C/gsp-arts-uberlandia",
+      "source": "text_parsing"
+    },
+    "proj_9": {
       "name": "GSP Arts Uberlandia",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DE89DED1-43D9-4AC1-B189-9FC26315137C/gsp-arts-uberlandia",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "Yidan Center",
+    "proj_10": {
+      "name": "Yidan CenterShenzhen Qianhai Yidan Educational, Scientific and Cultural Company2134",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "yidan-center",
       "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "Shenhzen International Performance Center",
+    "proj_11": {
+      "name": "Huawei Wuhan Research and Development Campus",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "Omaha Performing Arts Campus Expansion",
+    "proj_12": {
+      "name": "Nanjing Qilin Technology Innovation Park (Plot 3)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/706ECC86-72A7-4FD9-B7C9-EF75C03FF86A/nanjing-qilin-technology-innovation-park-plot-3",
+      "source": "detailed_table"
     },
-    "proj_7": {
+    "proj_13": {
+      "name": "Shanghai Lingang Innovation and Entrepreneurship Zone",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/121E4D74-C03B-4A24-B59E-8C93D8A49195/shanghai-lingang-innovation-and-entrepreneurship-zone",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Stanford University, Denning House",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1AE1E92E-5E2C-465A-8FA7-F5EBA5291E06/stanford-university-denning-house",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "The National Inventors Hall of Fame",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CF5576DF-D822-437F-BC39-CCAE17C47157/the-national-inventors-hall-of-fame",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Xiamen Music Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8EDD5884-6E70-4E69-9912-7175E7B7715B/xiamen-music-center",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Shanghai Astronomy Museum (Planetarium)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/29D257CF-CC0F-4D77-8750-0D4582C95142/shanghai-astronomy-museum-planetarium",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Omaha Performing Arts Campus Basic Services",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/60BA4E63-B6E1-4A96-8A36-ABF28EF1D544/omaha-performing-arts-campus-basic-services",
+      "source": "detailed_table"
+    },
+    "proj_19": {
       "name": "Beihang University Qingdao Campus, International Science and Education City",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_20": {
+      "name": "Qingdao Oceantec Valley Administration Bureau",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Lingang Fengxian Biopharm Office ParkShanghai Lingang Huaping Economic Development Co. Ltd.1740",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-fengxian-biopharm-office-park",
+      "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "Lingang Fengxian Biopharm Office Park",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_23": {
+      "name": "Shanghai Lingang Huaping Economic Development Co. Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Hero Tandi PenEnnead Architects International LLP1621",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "hero-tandi-pen",
+      "url": "https://ei.ennead.com/project/A44ADE52-65BF-41A5-8CCB-D5C03ED01E77/hero-tandi-pen",
+      "source": "text_parsing"
+    },
+    "proj_25": {
       "name": "Hero Tandi Pen",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A44ADE52-65BF-41A5-8CCB-D5C03ED01E77/hero-tandi-pen",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_26": {
+      "name": "Ennead Architects International LLP",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "Huawei Qingpu R&D Design CompetitionHuawei Technologies Co., Ltd.1841",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huawei-qingpu-r-d-design-competition",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
+      "source": "text_parsing"
+    },
+    "proj_28": {
       "name": "Huawei Qingpu R&D Design Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "Huawei Technologies Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Charles.wolf@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:04:09.013971",
+  "scraped_at": "2025-09-17T20:51:09.770270",
   "profile_id": null
 }

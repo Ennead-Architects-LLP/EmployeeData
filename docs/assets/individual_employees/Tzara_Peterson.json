@@ -1,7 +1,7 @@
 {
   "human_name": "Tzara Peterson",
   "email": "tzara.peterson@ennead.com",
-  "bio": "I believe that an architect has a social responsibility to improve her profession and the communities she impacts as a whole; a project’s positive qualities are not dictated by its budget, scale, or location, but by the architect’s thoughtfulness, engagement and passion.",
+  "bio": "I believe that an architect has a social responsibility to improve her profession and the communities she impacts as a whole; a project’s positive qualities are not dictated by its budget, scale, or location, but by the architect’s thoughtfulness, engagement and passion. I believe that an architect has a social responsibility to improve her profession and the communities she impacts as a whole; a project’s positive qualities are not dictated by its budget, scale, or location, but by the architect’s thoughtfulness, engagement and passion.",
   "phone": "646-437-1725",
   "mobile": "646-437-1725",
   "office_location": "",
@@ -11,134 +11,315 @@
   "position": "Associate",
   "department": "",
   "years_with_firm": 5,
-  "memberships": [],
+  "memberships": [
+    "AIANational Organization of Minority Architects",
+    "AIA",
+    "National Organization of Minority Architects"
+  ],
   "education": [
     {
       "institution": "Cornell University",
-      "degree": "Graduate",
-      "specialty": "Architecture Art & Planning"
-    },
-    {
-      "institution": "Cornell University",
       "degree": "Undergraduate",
-      "specialty": "Human Ecology"
+      "specialty": "Architecture Art & Planning"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "New York University Kimmel Center StairNew York University2414",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-kimmel-center-stair",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "New York University Kimmel Center Stair",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Roundabout Theatre Master Plan & Concept",
+    "proj_3": {
+      "name": "New York University",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_4": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "roundabout-theatre-master-plan-concept",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "455 First AvenueTaconic Partners LLC2314",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "455-first-avenue",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "455 First Avenue",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "Taconic Partners LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_12": {
+      "name": "Jacobs",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby PlanningNYU Langone Health2128",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "text_parsing"
+    },
+    "proj_14": {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_15": {
+      "name": "NYU Langone Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Jungle Plaza Mixed Use DevelopmentJungle Plaza Associates2102",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "jungle-plaza-mixed-use-development",
+      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
+      "source": "text_parsing"
+    },
+    "proj_17": {
       "name": "Jungle Plaza Mixed Use Development",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
-      "name": "Divco West Cambridge Crossing: Parcel U",
+    "proj_18": {
+      "name": "Jungle Plaza Associates",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "Parcel U",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "divco-west-cambridge-crossing--parcel-u",
       "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_8": {
-      "name": "Weill Cornell Medicine, Belfer Research Building, 8th Floor Fit-Out",
+    "proj_20": {
+      "name": "Weill Cornell Medicine",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "weill-cornell-medicine-belfer-research-building-8th-floor-fit-out",
       "url": "https://ei.ennead.com/project/5095F049-F058-484D-A9D3-F659D335FB34/weill-cornell-medicine-belfer-research-building-8th-floor-fit-out",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_21": {
+      "name": "The Cove, Crescent Park Jersey CityAQ Liberty LLC (Argent Ventures)1902",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-cove-crescent-park-jersey-city",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "The Cove, Crescent Park Jersey City",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_23": {
+      "name": "AQ Liberty LLC (Argent Ventures)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Jefferson Health, Honickman CenterNational Real Estate Development1835",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "jefferson-health-honickman-center",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
+      "source": "text_parsing"
+    },
+    "proj_25": {
       "name": "Jefferson Health, Honickman Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "National Real Estate Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "2330",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "roundabout-theatre-master-plan-concept",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "1933",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "divco-west-cambridge-crossing--parcel-u",
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "1918",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "weill-cornell-medicine-belfer-research-building-8th-floor-fit-out",
+      "url": "https://ei.ennead.com/project/5095F049-F058-484D-A9D3-F659D335FB34/weill-cornell-medicine-belfer-research-building-8th-floor-fit-out",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tpeterson@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:13:11.184214",
+  "scraped_at": "2025-09-17T21:13:44.067481",
   "profile_id": null
 }

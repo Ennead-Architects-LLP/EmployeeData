@@ -1,7 +1,7 @@
 {
   "human_name": "Clara Martucci",
   "email": "Clara.Martucci@ennead.com",
-  "bio": "Originally from Buenos Aires, Argentina but grew up in Orlando, Florida. I come from a performing arts background, so I love to sing, play the guitar, and occasionally do some acting. I am a huge theater and concertgoer, basically any type of live entertainment. I got a Bachelor of Design with a Major in Architecture from the University of Florida, and a minor in Landscape Design. Most recently got my Master of Architecture degree from Carnegie Mellon University, with a specific focus on Theater Design.",
+  "bio": "Originally from Buenos Aires, Argentina but grew up in Orlando, Florida. I come from a performing arts background, so I love to sing, play the guitar, and occasionally do some acting. I am a huge theater and concertgoer, basically any type of live entertainment. I got a Bachelor of Design with a Major in Architecture from the University of Florida, and a minor in Landscape Design. Most recently got my Master of Architecture degree from Carnegie Mellon University, with a specific focus on Theater Design. Originally from Buenos Aires, Argentina but grew up in Orlando, Florida. I come from a performing arts background, so I love to sing, play the guitar, and occasionally do some acting. I am a huge theater and concertgoer, basically any type of live entertainment. I got a Bachelor of Design with a Major in Architecture from the University of Florida, and a minor in Landscape Design. Most recently got my Master of Architecture degree from Carnegie Mellon University, with a specific focus on Theater Design.",
   "phone": "212-792-5949",
   "mobile": "212-792-5949",
   "office_location": "",
@@ -10,18 +10,13 @@
   "image_local_path": null,
   "position": "Architectural Designer",
   "department": "",
-  "years_with_firm": null,
+  "years_with_firm": 0,
   "memberships": [],
   "education": [
     {
-      "institution": "Carnegie Mellon University",
-      "degree": "Graduate",
-      "specialty": "Architecture & Theater Design"
-    },
-    {
       "institution": "University of Florida",
       "degree": "Undergraduate",
-      "specialty": "Architecture & Landscape Arch."
+      "specialty": "Architecture & Theater Design"
     }
   ],
   "licenses": [],
@@ -30,6 +25,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Clara.Martucci@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:04:11.558597",
+  "scraped_at": "2025-09-17T20:51:24.989064",
   "profile_id": null
 }

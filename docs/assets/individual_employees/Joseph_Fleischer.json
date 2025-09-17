@@ -1,0 +1,385 @@
+{
+  "human_name": "Joseph Fleischer",
+  "email": "joseph.fleischer@ennead.com",
+  "bio": null,
+  "phone": "212- 807-7171",
+  "mobile": "212- 807-7171",
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/7AB19767-2636-495D-9325-4A76A179DA9E/joseph-fleischer",
+  "image_url": "https://ei.ennead.com/api/image/9e23ccc8-0430-4ea2-acad-a37217065def/preview?size=150w150h&version=0",
+  "image_local_path": "assets/images/Joseph Fleischer_profile.jpg",
+  "position": "Partner",
+  "department": "",
+  "years_with_firm": 45,
+  "memberships": [
+    "NCARBAIA",
+    "NCARB",
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Montclair Public Schools, Glenfield Middle School",
+      "degree": "807:7171",
+      "specialty": "855:6470"
+    }
+  ],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Brooklyn Museum, Iris and B. Gerald Cantor Auditorium8713A",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "brooklyn-museum-iris-and-b-gerald-cantor-auditorium",
+      "url": "https://ei.ennead.com/project/7B8779BB-B0DF-453F-BA21-BF8192862A2C/brooklyn-museum-iris-and-b-gerald-cantor-auditorium",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Brooklyn Museum, Iris and B. Gerald Cantor Auditorium",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "8713A",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "City University of New York, York College Theater8509B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "city-university-of-new-york-york-college-theater",
+      "url": "https://ei.ennead.com/project/1EA9EFF2-676A-4C0A-9711-379E26F88ED3/city-university-of-new-york-york-college-theater",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "City University of New York, York College Theater",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "8509B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Vietnam Veterans Memorial Education CenterThe Vietnam Veterans Memorial Fund0922",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "vietnam-veterans-memorial-education-center",
+      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Vietnam Veterans Memorial Education Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "The Vietnam Veterans Memorial Fund",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Colin Powell School for Civic and Global Leadership at The City College of New YorkCity University of New York, City College1220",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york",
+      "url": "https://ei.ennead.com/project/4EB6598F-1C37-451C-ACF8-155A62912C15/colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "New Jersey Performing Arts Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C4A9D73B-C081-48B7-8AF6-CC55F2C5CD19/new-jersey-performing-arts-center",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "New York Public Library for the Performing Arts (NYPL)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5F99AFFF-99E8-43DF-9B6E-D5354EB9DF29/new-york-public-library-for-the-performing-arts-nypl",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Phillips Academy, George Washington Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/751BE429-1786-46DB-BD79-C1B22B0993C3/phillips-academy-george-washington-hall",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Riverside Convention Center (Rochester)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/892D29E4-265A-4573-81EB-5BCE8F45651B/riverside-convention-center-rochester",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "The Cove Club, Battery Park City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6A7B1D8E-AC6D-4C59-AE07-5544B1A2D15C/the-cove-club-battery-park-city",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Union Theological Seminary Tower",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CD0C57D7-A22E-4995-925A-59924B0E4017/union-theological-seminary-tower",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "City University of New York, City College, Colin L. Powell Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4001782E-0E09-4E75-B06A-1BB6AD33D5EF/city-university-of-new-york-city-college-colin-l-powell-hall",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Corning Incorporated, Houghton Park, C Building (Renovation)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/28247E7B-D3CE-4855-B9A8-7B95E05D56E1/corning-incorporated-houghton-park-c-building-renovation",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Henry Street Settlement Residential Tower and Arts Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1C8F454C-3632-45EA-84D8-E5ACEFF3E874/henry-street-settlement-residential-tower-and-arts-center",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "New York University, Main Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/881D9B37-7323-4B07-AD94-9C104AB0EC41/new-york-university-main-hall",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "North Shore/Long Island Jewish Health System, The Zucker Hillside Hospital, Master Plan and Ambulatory Care Center (Phase I)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C32DA858-C5ED-4999-ABF4-7B67661F435D/north-shore-long-island-jewish-health-system-the-zucker-hillside-hospital-master-plan-and-ambulatory-care-center-phase-i",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Solomon Schechter Day School of Nassau County",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C00DD073-BC50-4FDA-80C6-03C099BF2605/solomon-schechter-day-school-of-nassau-county",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "University of California, Los Angeles, Morgan Center Intercollegiate Athletics Department and Hall of Fame",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BA81D94F-DF50-4ECA-9138-7F4A18B2C19A/university-of-california-los-angeles-morgan-center-intercollegiate-athletics-department-and-hall-of-fame",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Weitzman National Museum of American Jewish History (first Site)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/40185FFF-5D97-4938-9184-BE011BA9D967/weitzman-national-museum-of-american-jewish-history-first-site",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Columbia University Law School, Library Addition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0B40D3E3-5BDA-46AB-B852-FA845E369EA9/columbia-university-law-school-library-addition",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "North Shore University Hospital | Northwell Health, Emergency Department",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5CD9598E-CAA8-4156-995A-0CD13F2C7E6B/north-shore-university-hospital-northwell-health-emergency-department",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "The Blue Shield of California Theater at YBCA (Yerba Buena)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CB6DA139-4052-449A-9F83-DBBCE4412634/the-blue-shield-of-california-theater-at-ybca-yerba-buena",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "American Museum of Natural History, Hall of Biodiversity",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/86BB28FC-8CCD-43D0-B44B-AC2BCD1B11ED/american-museum-of-natural-history-hall-of-biodiversity",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "American Museum of Natural History, Rose Center for Earth and Space",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "American Museum of Natural History, Samuel J. & Ethel LeFrak IMAX Theater",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/687709A7-4B03-469E-9552-FEBA5162CF1D/american-museum-of-natural-history-samuel-j-ethel-lefrak-imax-theater",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Barnard College, Sulzberger Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5A17BB64-3303-4A90-9DC3-F0ABD2949031/barnard-college-sulzberger-hall",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "Carnegie Hall Master Plan / Building Analysis",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3153350D-9FB7-43DA-8DB9-32DA07A26AFB/carnegie-hall-master-plan-building-analysis",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "Carnegie Hall, Judy and Arthur Zankel Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FD6A3450-04D8-4735-9598-4ECFFA5581F3/carnegie-hall-judy-and-arthur-zankel-hall",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "Cathedral of St. John the Divine Preservation and Site Improvement Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/02A1BF7C-38C0-4C8D-BBBA-0CB41D0FAE11/cathedral-of-st-john-the-divine-preservation-and-site-improvement-plan",
+      "source": "detailed_table"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jfleischer@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-17T20:58:37.570778",
+  "profile_id": null
+}

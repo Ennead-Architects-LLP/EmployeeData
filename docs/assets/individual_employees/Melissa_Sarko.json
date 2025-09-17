@@ -1,7 +1,7 @@
 {
   "human_name": "Melissa Sarko",
   "email": "melissa.sarko@ennead.com",
-  "bio": "21",
+  "bio": null,
   "phone": "(212) 792-5988",
   "mobile": "(212) 792-5988",
   "office_location": "",
@@ -11,7 +11,9 @@
   "position": "Principal",
   "department": "",
   "years_with_firm": 21,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
     {
       "institution": "Carnegie Mellon University",
@@ -19,121 +21,283 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "PA",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "455 First AvenueTaconic Partners LLC2314",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "455-first-avenue",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "455 First Avenue",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Taconic Partners LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_3": {
-      "name": "Cincinnati Music Hall Revitalization",
+    "proj_6": {
+      "name": "Long Island",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E64A9AA3-B607-446C-9BE2-1CB460070430/cincinnati-music-hall-revitalization",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_7": {
+      "name": "Cincinnati",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "cincinnati-music-hall-revitalization",
+      "url": "https://ei.ennead.com/project/E64A9AA3-B607-446C-9BE2-1CB460070430/cincinnati-music-hall-revitalization",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Cincinnati",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Lycée Français de New York, Ongoing Services (Lycee Francais)Lycee Francais de New York0603",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lyc-e-fran-ais-de-new-york-ongoing-services-lycee-francais",
+      "url": "https://ei.ennead.com/project/0399CDA5-3D7D-4E02-B5CA-B3A24903E679/lyc-e-fran-ais-de-new-york-ongoing-services-lycee-francais",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Lycée Français de New York, Ongoing Services (Lycee Francais)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/0399CDA5-3D7D-4E02-B5CA-B3A24903E679/lyc-e-fran-ais-de-new-york-ongoing-services-lycee-francais",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "New York University, Faculty of Arts and Science, Humanities and Social Science Master Planning Study",
+    "proj_11": {
+      "name": "Breaking Ground, The Schermerhorn",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/6134CA69-A4C3-4E0C-8A43-6C9601123F07/new-york-university-faculty-of-arts-and-science-humanities-and-social-science-master-planning-study",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/8DA1E600-965A-46C4-AB1A-221DE9FB1739/breaking-ground-the-schermerhorn",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+    "proj_12": {
+      "name": "General Theological Seminary, Chelsea Enclave",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/C06962F7-763F-437E-8AA0-B0A69A12C787/general-theological-seminary-chelsea-enclave",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "NYU Langone - Long Island, Foreman Site Mother-Baby",
+    "proj_13": {
+      "name": "Museum of the City of New York, Phases I-III (MCNY)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "https://ei.ennead.com/project/EA32AB62-43EF-45BD-9363-C8660919DA7D/museum-of-the-city-of-new-york-phases-i-iii-mcny",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "New York City Center Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ADC0C6E6-C2F0-4AAE-A660-F7B1DFA00231/new-york-city-center-renovation",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "New York University, Department of Journalism",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/64722D05-9BA1-4F2B-8109-9545F58477A4/new-york-university-department-of-journalism",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "New York University, Economics and Politics Department",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AD01B761-8E74-40D8-9ACD-171BE9193419/new-york-university-economics-and-politics-department",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "New York University, Gallatin School of Individualized Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/88100CBA-B5DE-47BD-BEE6-F0FA87C06370/new-york-university-gallatin-school-of-individualized-study",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "New York University, Tisch School of the Arts, Institute of Performing Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0975B49C-6C4B-424C-A09A-D4F493370DBF/new-york-university-tisch-school-of-the-arts-institute-of-performing-arts",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Newseum / Freedom Forum Foundation World Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Stanford NYC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D15FDF3D-263A-4A21-B382-CE2B1A38D438/stanford-nyc",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Sylvia H. Rambo United States Courthouse (Harrisburg Federal Courthouse)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BE3AB8DD-D1A9-4C76-A8C0-7AC7DF83B4CF/sylvia-h-rambo-united-states-courthouse-harrisburg-federal-courthouse",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "The David H. Koch Center for Cancer Care at Memorial Sloan Kettering Cancer Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0E550866-E034-4A49-A363-F69BAE4C5EC8/the-david-h-koch-center-for-cancer-care-at-memorial-sloan-kettering-cancer-center",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "University of Chicago, David M. Rubenstein Forum Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1A527EC8-5AD4-4496-A6E3-9A4A9EC7A69F/university-of-chicago-david-m-rubenstein-forum-competition",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "WGBH Public Broadcasting Station Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BA3DD4BE-A821-4BA5-A5A3-8DED0356D1E9/wgbh-public-broadcasting-station-headquarters",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Yale University Art Gallery Renovation and Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7D89837C-218E-48FE-8DE2-F0191F1DBBE3/yale-university-art-gallery-renovation-and-expansion",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "2119",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-long-island-foreman-site-mother-baby",
       "url": "https://ei.ennead.com/project/E49FAF02-B10F-4199-89A6-DD2E8FDD3786/nyu-langone-long-island-foreman-site-mother-baby",
-      "source": "fallback"
-    },
-    "proj_8": {
-      "name": "New York Blood Center Applied Life Sciences Hub",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
-      "source": "fallback"
-    },
-    "proj_9": {
-      "name": "Project Darwin, Natural History Museum",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/A33E7BEF-8C69-44C1-A92A-41138617A2B3/project-darwin-natural-history-museum",
-      "source": "fallback"
-    },
-    "proj_10": {
-      "name": "Allegheny College, Vukovich Center for Communication Arts",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
-      "source": "fallback"
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=msarko@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:59.412261",
+  "scraped_at": "2025-09-17T21:05:09.126105",
   "profile_id": null
 }

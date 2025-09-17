@@ -1,7 +1,7 @@
 {
   "human_name": "WiL Morales",
   "email": "wilmarie.morales@ennead.com",
-  "bio": "2",
+  "bio": null,
   "phone": "2127925863",
   "mobile": "2127925863",
   "office_location": "",
@@ -14,30 +14,48 @@
   "memberships": [],
   "education": [
     {
-      "institution": "Bryant & Stratton College",
-      "degree": "Associates",
-      "specialty": "Human Resources Administration"
-    },
-    {
       "institution": "Wood Tobe Coburn College",
       "degree": "Associates",
-      "specialty": "Travel and Hospitality"
+      "specialty": "Human Resources Administration"
     }
   ],
-  "licenses": [
-    {
-      "license": "Notary Public",
-      "state": "NJ",
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Emailwilmarie.morales@ennead.comPhone2127925863Teams",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
       "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "wilmarie.morales@ennead.com",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Teams",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
-  ],
-  "projects": {},
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wilmarie.morales@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:13:39.338522",
+  "scraped_at": "2025-09-17T21:14:43.214037",
   "profile_id": null
 }

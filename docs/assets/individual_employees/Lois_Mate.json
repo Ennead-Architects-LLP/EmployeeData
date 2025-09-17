@@ -1,7 +1,7 @@
 {
   "human_name": "Lois Mate",
   "email": "lois.mate@ennead.com",
-  "bio": "38",
+  "bio": null,
   "phone": "(212) 792-5934",
   "mobile": "(212) 792-5934",
   "office_location": "",
@@ -11,134 +11,293 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 38,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Columbia University",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "University of Virginia",
       "degree": "Undergraduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Union Theological Seminary Tower8631",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "union-theological-seminary-tower",
+      "url": "https://ei.ennead.com/project/CD0C57D7-A22E-4995-925A-59924B0E4017/union-theological-seminary-tower",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Union Theological Seminary Tower",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CD0C57D7-A22E-4995-925A-59924B0E4017/union-theological-seminary-tower",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Corning Incorporated, Houghton Park, C Building (Renovation)9303",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "corning-incorporated-houghton-park-c-building-renovation",
+      "url": "https://ei.ennead.com/project/28247E7B-D3CE-4855-B9A8-7B95E05D56E1/corning-incorporated-houghton-park-c-building-renovation",
+      "source": "text_parsing"
+    },
+    "proj_4": {
       "name": "Corning Incorporated, Houghton Park, C Building (Renovation)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/28247E7B-D3CE-4855-B9A8-7B95E05D56E1/corning-incorporated-houghton-park-c-building-renovation",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_5": {
+      "name": "New York Academy of Medicine, Programming and Planning0125",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-academy-of-medicine-programming-and-planning",
+      "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning",
+      "source": "text_parsing"
+    },
+    "proj_6": {
       "name": "New York Academy of Medicine, Programming and Planning",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_7": {
+      "name": "York Avenue Development0615",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "york-avenue-development",
+      "url": "https://ei.ennead.com/project/D19CC9CD-4756-4F8C-8402-F39ED058DCB4/york-avenue-development",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "York Avenue Development",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D19CC9CD-4756-4F8C-8402-F39ED058DCB4/york-avenue-development",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_9": {
+      "name": "New York University, Renovations to Chemical Biology BuildingsNew York University1847",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-renovations-to-chemical-biology-buildings",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "New York University, Renovations to Chemical Biology Buildings",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "The Ohio State University Biomedical and Materials Engineering Complex Phase 2",
+    "proj_11": {
+      "name": "The Blue Shield of California Theater at YBCA (Yerba Buena)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D7D7D3BD-ACEF-47CC-B1B4-2EC1A63C0839/the-ohio-state-university-biomedical-and-materials-engineering-complex-phase-2",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/CB6DA139-4052-449A-9F83-DBBCE4412634/the-blue-shield-of-california-theater-at-ybca-yerba-buena",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "Purdue University Polytechnic Institute, College of Engineering, Dudley and Lambertus Halls (Gateway)",
+    "proj_12": {
+      "name": "Brooklyn Botanic Garden, Eastern Parkway Entrance",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CC0FBA10-4F97-4086-83AC-C1A42862AA28/purdue-university-polytechnic-institute-college-of-engineering-dudley-and-lambertus-halls-gateway",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/2ABBEF3B-4F9B-4146-8224-A27125C6ECD2/brooklyn-botanic-garden-eastern-parkway-entrance",
+      "source": "detailed_table"
     },
-    "proj_8": {
-      "name": "Weill Cornell Medicine, Belfer Research Building, 8th Floor Fit-Out",
+    "proj_13": {
+      "name": "General Theological Seminary, Chelsea Enclave",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5095F049-F058-484D-A9D3-F659D335FB34/weill-cornell-medicine-belfer-research-building-8th-floor-fit-out",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/C06962F7-763F-437E-8AA0-B0A69A12C787/general-theological-seminary-chelsea-enclave",
+      "source": "detailed_table"
     },
-    "proj_9": {
-      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+    "proj_14": {
+      "name": "Jefferson Health, Honickman Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
+      "source": "detailed_table"
     },
-    "proj_10": {
-      "name": "Massachusetts Institute of Technology, Stephen A. Schwarzman College of Computing (MIT)",
+    "proj_15": {
+      "name": "Mashantucket Pequot Museum and Research Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/7B410E83-8B38-4EC1-82B9-33793246428B/massachusetts-institute-of-technology-stephen-a-schwarzman-college-of-computing-mit",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/11768C10-A522-416E-9769-F9B42E36B840/mashantucket-pequot-museum-and-research-center",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "New York Stem Cell Foundation, Research Institute Laboratory",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E740ACA9-4A79-473B-8ECA-D376BCADB117/new-york-stem-cell-foundation-research-institute-laboratory",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "NYU Langone Health, Downtown Ambulatory Care Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/901110C3-C350-4E32-8441-FC1D969BADA3/nyu-langone-health-downtown-ambulatory-care-center",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "NYU Langone Health, Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "NYU Langone Health, Medical Science Building, HVAC Equipment Removal Feasibility Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C80C7C2D-4F19-43A6-8F29-B2736785C088/nyu-langone-health-medical-science-building-hvac-equipment-removal-feasibility-study",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "NYU Langone Health, Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "NYU Langone Health, Skirball Institute for Biomolecular Medicine and Residence Tower",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C68AED36-E85D-4C82-A0F9-F556C045D954/nyu-langone-health-skirball-institute-for-biomolecular-medicine-and-residence-tower",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Phil and Penny Knight Campus for Accelerating Scientific Impact at University of Oregon",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/71B181F2-EDBC-42B9-A856-0078C8571EDC/phil-and-penny-knight-campus-for-accelerating-scientific-impact-at-university-of-oregon",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Stanford NYC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D15FDF3D-263A-4A21-B382-CE2B1A38D438/stanford-nyc",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "University of Michigan, Biomedical Science Research Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/44BB748A-5D2C-47CC-BDA9-B86665A4C364/university-of-michigan-biomedical-science-research-building",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Weill Cornell Medicine, Belfer Research Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DB19CFB5-F090-48CF-B1A5-F41E0C470039/weill-cornell-medicine-belfer-research-building",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "Weill Cornell Medicine, Weill Greenberg Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C2FB767E-4966-4EEF-B1EE-2B973C64242F/weill-cornell-medicine-weill-greenberg-center",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lmate@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:29.019095",
+  "scraped_at": "2025-09-17T21:02:50.281539",
   "profile_id": null
 }

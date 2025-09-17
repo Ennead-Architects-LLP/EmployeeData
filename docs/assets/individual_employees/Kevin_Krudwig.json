@@ -1,7 +1,7 @@
 {
   "human_name": "Kevin Krudwig",
   "email": "kevin.krudwig@ennead.com",
-  "bio": "I was raised in a small suburban town in northern Connecticut before moving on to Boston for undergraduate school. Afterward, I worked a few years for various architecture firms before attending graduate school in upstate New York. With my school days behind me, I came to the city and worked for Gran Associates where I managed their high school restructuring and renovation projects. In 2008, I joined Ennead Architects and began working on the Sinatra School, followed by the Yale Art Gallery renovation and the Kimmel Pavilion Hospital.I am particularly interested in saving the planet through environmentally responsive design and high performance healthcare buildings :-)Outside of work, I enjoy cycling and exploring the city with my son.",
+  "bio": "I was raised in a small suburban town in northern Connecticut before moving on to Boston for undergraduate school. Afterward, I worked a few years for various architecture firms before attending graduate school in upstate New York. With my school days behind me, I came to the city and worked for Gran Associates where I managed their high school restructuring and renovation projects. In 2008, I joined Ennead Architects and began working on the Sinatra School, followed by the Yale Art Gallery renovation and the Kimmel Pavilion Hospital.I am particularly interested in saving the planet through environmentally responsive design and high performance healthcare buildings :-)Outside of work, I enjoy cycling and exploring the city with my son. I was raised in a small suburban town in northern Connecticut before moving on to Boston for undergraduate school. Afterward, I worked a few years for various architecture firms before attending graduate school in upstate New York. With my school days behind me, I came to the city and worked for Gran Associates where I managed their high school restructuring and renovation projects. In 2008, I joined Ennead Architects and began working on the Sinatra School, followed by the Yale Art Gallery renovation and the Kimmel Pavilion Hospital.I am particularly interested in saving the planet through environmentally responsive design and high performance healthcare buildings :-)Outside of work, I enjoy cycling and exploring the city with my son.",
   "phone": "(212) 792-5945",
   "mobile": "(212) 792-5945",
   "office_location": "",
@@ -11,134 +11,305 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 17,
-  "memberships": [],
+  "memberships": [
+    "AIALEED AP BD+C",
+    "AIA",
+    "LEED AP BD+C"
+  ],
   "education": [
-    {
-      "institution": "Rensselaer Polytechnic Institute",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Wentworth Institute of Technology",
       "degree": "Undergraduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Long Island",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby PlanningNYU Langone Health2128",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
-      "name": "Northwell, Third Avenue Medical Office Building",
+    "proj_6": {
+      "name": "NYU Langone Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Northwell,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Northwell,",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "Northwell Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Nature & Culture Museum of WisconsinMilwaukee Public Museum2100",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nature-culture-museum-of-wisconsin",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Nature & Culture Museum of Wisconsin",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_12": {
+      "name": "Milwaukee Public Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care UnitNYU Langone Health1904",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
+      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
+      "source": "text_parsing"
+    },
+    "proj_14": {
       "name": "NYU Langone Health Kimmel, Hassenfeld Children's Hospital, Congenital Cardiovascular Care Unit",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4C189039-A166-4B62-BFE4-FE3468B61A1A/nyu-langone-health-kimmel-hassenfeld-children-s-hospital-congenital-cardiovascular-care-unit",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_15": {
+      "name": "Frank Sinatra School of the ArtsNew York City School Construction Authority0307",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "frank-sinatra-school-of-the-arts",
+      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
+      "source": "text_parsing"
+    },
+    "proj_16": {
       "name": "Frank Sinatra School of the Arts",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_17": {
+      "name": "New York City School Construction Authority",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Jefferson Health, Honickman CenterNational Real Estate Development1835",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "jefferson-health-honickman-center",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "Jefferson Health, Honickman Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_20": {
+      "name": "National Real Estate Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel PavilionNYU Langone Health1013",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
-      "name": "NYU Langone Health, Master Plan, Post-Hurricane Sandy Update",
+    "proj_23": {
+      "name": "Hurricane Sandy Update",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_24": {
+      "name": "Yale University Art Gallery Renovation and ExpansionYale University0708",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "yale-university-art-gallery-renovation-and-expansion",
+      "url": "https://ei.ennead.com/project/7D89837C-218E-48FE-8DE2-F0191F1DBBE3/yale-university-art-gallery-renovation-and-expansion",
+      "source": "text_parsing"
+    },
+    "proj_25": {
       "name": "Yale University Art Gallery Renovation and Expansion",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/7D89837C-218E-48FE-8DE2-F0191F1DBBE3/yale-university-art-gallery-renovation-and-expansion",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "Yale University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "2109",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "1228",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-master-plan-post-hurricane-sandy-update",
+      "url": "https://ei.ennead.com/project/268860C6-5373-4FED-988F-551E7D14BB3D/nyu-langone-health-master-plan-post-hurricane-sandy-update",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kkrudwig@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:08:32.718594",
+  "scraped_at": "2025-09-17T21:00:21.983727",
   "profile_id": null
 }

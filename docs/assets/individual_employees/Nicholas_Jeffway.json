@@ -1,7 +1,7 @@
 {
   "human_name": "Nicholas Jeffway",
   "email": "nicholas.jeffway@ennead.com",
-  "bio": "Stories lie hidden in the textures, forms and spaces which surround us. The subtleties and nuances of these narratives reveal where we have been and where we are headed. Originally from Northampton, Massachusetts; I grew up as one of five children (one of which being my twin sister) with a father who is an electronic engineer and toy inventor and a mother who is a French teacher. I have always been interested in different modes of working creatively. I began my undergraduate studies as a graphic designer, but eventually transferred to the architecture program at the University of Massachusetts, Amherst.I have worked as a fabricator for a small studio making sculpture, furniture and architectural elements. I have worked with the National Trust for Historic Presentation to organize and lead a community-driven design for a memorial park proposal in Richmond, VA. I have designed and built a tea house during the course of a month with a budget of sixty dollars, and I continue to use my interest in photography as an excuse to travel, explore and meet new people.I see architecture as a common ground between disparate voices and as a challenge to create a more holistic and harmonious future.",
+  "bio": "Stories lie hidden in the textures, forms and spaces which surround us. The subtleties and nuances of these narratives reveal where we have been and where we are headed. Originally from Northampton, Massachusetts; I grew up as one of five children (one of which being my twin sister) with a father who is an electronic engineer and toy inventor and a mother who is a French teacher. I have always been interested in different modes of working creatively. I began my undergraduate studies as a graphic designer, but eventually transferred to the architecture program at the University of Massachusetts, Amherst.I have worked as a fabricator for a small studio making sculpture, furniture and architectural elements. I have worked with the National Trust for Historic Presentation to organize and lead a community-driven design for a memorial park proposal in Richmond, VA. I have designed and built a tea house during the course of a month with a budget of sixty dollars, and I continue to use my interest in photography as an excuse to travel, explore and meet new people.I see architecture as a common ground between disparate voices and as a challenge to create a more holistic and harmonious future. Stories lie hidden in the textures, forms and spaces which surround us. The subtleties and nuances of these narratives reveal where we have been and where we are headed. Originally from Northampton, Massachusetts; I grew up as one of five children (one of which being my twin sister) with a father who is an electronic engineer and toy inventor and a mother who is a French teacher. I have always been interested in different modes of working creatively. I began my undergraduate studies as a graphic designer, but eventually transferred to the architecture program at the University of Massachusetts, Amherst.I have worked as a fabricator for a small studio making sculpture, furniture and architectural elements. I have worked with the National Trust for Historic Presentation to organize and lead a community-driven design for a memorial park proposal in Richmond, VA. I have designed and built a tea house during the course of a month with a budget of sixty dollars, and I continue to use my interest in photography as an excuse to travel, explore and meet new people.I see architecture as a common ground between disparate voices and as a challenge to create a more holistic and harmonious future.",
   "phone": "(646) 437-1781",
   "mobile": "(646) 437-1781",
   "office_location": "",
@@ -11,134 +11,343 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 7,
-  "memberships": [],
+  "memberships": [
+    "NCARB"
+  ],
   "education": [
-    {
-      "institution": "University of Massachusetts, Amherst",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "University of Massachusetts, Amherst",
       "degree": "Graduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
-      "name": "Roundabout Theatre Master Plan & Concept",
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "roundabout-theatre-master-plan-concept",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Roundabout",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Universal Hydrogen 2 Manufacturing FacilityUniversal Hydrogen2306",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "universal-hydrogen-2-manufacturing-facility",
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Universal Hydrogen 2 Manufacturing Facility",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "Alibaba Cainiao Phase II",
+    "proj_9": {
+      "name": "Universal Hydrogen",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Alibaba Cainiao Phase IIShenzhen Toutiao Technology Co., Ltd.2127",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "alibaba-cainiao-phase-ii",
       "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+    "proj_11": {
+      "name": "Modern Meadow",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/2775EDA5-9E5B-4A48-BD68-A05BA3AA838C/modern-meadow",
+      "source": "detailed_table"
     },
-    "proj_6": {
+    "proj_12": {
+      "name": "Concordia Pudong",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BAFEA2ED-630A-4C0F-8BB7-0B569EBDB7CB/concordia-pudong",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Fudan Qingpu Branch OBGYN Hospital Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/070F6DE7-EF63-4CB8-B3FC-4352C9046D9F/fudan-qingpu-branch-obgyn-hospital-competition",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Taopu Sci-Tech Smart City Phase I (Taopu 605)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7C36DE44-B5F0-4051-B171-22A9BC33509B/taopu-sci-tech-smart-city-phase-i-taopu-605",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Taopu Smart City Plot 615/616",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/208EEB2F-05ED-407C-9CC8-67F5937024D1/taopu-smart-city-plot-615-616",
+      "source": "detailed_table"
+    },
+    "proj_17": {
       "name": "Shenhzen International Performance Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_18": {
+      "name": "Shenhzen Int. Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "The Public, Delacorte Theater, Central ParkThe Public Theater2031",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-public-delacorte-theater-central-park",
+      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
+      "source": "text_parsing"
+    },
+    "proj_20": {
       "name": "The Public, Delacorte Theater, Central Park",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
-      "name": "Hastings-on-Hudson Waterfront Vision Study",
+    "proj_21": {
+      "name": "The Public Theater",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D5BF0BFE-8EEC-4F7D-951D-7910DE203467/hastings-on-hudson-waterfront-vision-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_22": {
+      "name": "on:Hudson Waterfront Vision Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "Argent Ventures LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Omaha Performing Arts Campus ExpansionOmaha Performing Arts1843",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "omaha-performing-arts-campus-expansion",
+      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
+      "source": "text_parsing"
+    },
+    "proj_25": {
       "name": "Omaha Performing Arts Campus Expansion",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
-      "name": "Taopu Sci-Tech City Plot 606",
+    "proj_26": {
+      "name": "Omaha Performing Arts",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "Tech City Plot 606",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-plot-606",
       "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
-      "source": "fallback"
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "2330",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "roundabout-theatre-master-plan-concept",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "text_parsing"
+    },
+    "proj_30": {
+      "name": "Hastings-on-Hudson Waterfront Vision Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "hastings-on-hudson-waterfront-vision-study",
+      "url": "https://ei.ennead.com/project/D5BF0BFE-8EEC-4F7D-951D-7910DE203467/hastings-on-hudson-waterfront-vision-study",
+      "source": "text_parsing"
+    },
+    "proj_31": {
+      "name": "1821",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "hastings-on-hudson-waterfront-vision-study",
+      "url": "https://ei.ennead.com/project/D5BF0BFE-8EEC-4F7D-951D-7910DE203467/hastings-on-hudson-waterfront-vision-study",
+      "source": "text_parsing"
+    },
+    "proj_32": {
+      "name": "1735",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-plot-606",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=NJeffway@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:10:48.435129",
+  "scraped_at": "2025-09-17T21:07:40.733685",
   "profile_id": null
 }

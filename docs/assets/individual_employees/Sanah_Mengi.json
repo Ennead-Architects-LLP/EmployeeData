@@ -1,7 +1,7 @@
 {
   "human_name": "Sanah Mengi",
   "email": "sanah.mengi@ennead.com",
-  "bio": "2",
+  "bio": null,
   "phone": "646.437.1764",
   "mobile": "646.437.1764",
   "office_location": "",
@@ -11,7 +11,12 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 2,
-  "memberships": [],
+  "memberships": [
+    "AIALEED GANational Organization of Minority Architects",
+    "AIA",
+    "LEED GA",
+    "National Organization of Minority Architects"
+  ],
   "education": [
     {
       "institution": "Columbia University",
@@ -22,50 +27,130 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative CompetitionVIP.com2321",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+    "proj_3": {
+      "name": "VIP.com",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_4": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Long Island",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "NYULH Brooklyn Ambulatory Hub BuildingNYU Langone Health2224",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyulh-brooklyn-ambulatory-hub-building",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "NYU Langone Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "New York University, Renovations to Chemical Biology BuildingsNew York University1847",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-renovations-to-chemical-biology-buildings",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "New York University, Renovations to Chemical Biology Buildings",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "New York University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sanah.mengi@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:22.546989",
+  "scraped_at": "2025-09-17T21:10:21.746036",
   "profile_id": null
 }

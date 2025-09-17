@@ -1,7 +1,7 @@
 {
   "human_name": "Felicia Berger",
   "email": "felicia.berger@ennead.com",
-  "bio": "26",
+  "bio": null,
   "phone": "(646) 437-1713",
   "mobile": "(646) 437-1713",
   "office_location": "",
@@ -11,162 +11,306 @@
   "position": "Principal",
   "department": "",
   "years_with_firm": 26,
-  "memberships": [],
+  "memberships": [
+    "AIALEED APNCARB",
+    "AIA",
+    "LEED AP",
+    "NCARB"
+  ],
   "education": [
-    {
-      "institution": "Princeton University",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "University of Virginia",
       "degree": "Undergraduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "DC",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "MI",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "PA",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "TX",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
-      "name": "University of North Carolina School of Law",
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-north-carolina-school-of-law",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "University of",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Moseley Architects",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Colin Powell School for Civic and Global Leadership at The City College of New YorkCity University of New York, City College1220",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york",
+      "url": "https://ei.ennead.com/project/4EB6598F-1C37-451C-ACF8-155A62912C15/colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Colin Powell School for Civic and Global Leadership at The City College of New York",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4EB6598F-1C37-451C-ACF8-155A62912C15/colin-powell-school-for-civic-and-global-leadership-at-the-city-college-of-new-york",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "City University of New York, City College",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Sherman Avenue Mixed Use Development1229",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "sherman-avenue-mixed-use-development",
+      "url": "https://ei.ennead.com/project/A54AD7A9-0AB3-47C0-B668-2BC495B066B8/sherman-avenue-mixed-use-development",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Sherman Avenue Mixed Use Development",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A54AD7A9-0AB3-47C0-B668-2BC495B066B8/sherman-avenue-mixed-use-development",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "United States Consulate General, Nogales Mexico (planning)1522",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-consulate-general-nogales-mexico-planning",
+      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "United States Consulate General, Nogales Mexico (planning)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "City University of New York, City College, Colin L. Powell Hall",
+    "proj_11": {
+      "name": "Shenzhen Conservatory of Music",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4001782E-0E09-4E75-B06A-1BB6AD33D5EF/city-university-of-new-york-city-college-colin-l-powell-hall",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/B7F03F2C-701F-408A-8176-7D4AB7131F55/shenzhen-conservatory-of-music",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "GSP Arts Uberlandia",
+    "proj_12": {
+      "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DE89DED1-43D9-4AC1-B189-9FC26315137C/gsp-arts-uberlandia",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "Memorial Sloan-Kettering Institute, Benjamin M. Rosen Student & Faculty Club",
+    "proj_13": {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/27F14926-F129-4B31-8EF5-8EE457B16FD7/memorial-sloan-kettering-institute-benjamin-m-rosen-student-faculty-club",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
+      "source": "detailed_table"
     },
-    "proj_8": {
-      "name": "New York Academy of Medicine, Programming and Planning",
+    "proj_14": {
+      "name": "National Medal of Honor Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AF030A72-F5FF-4F8A-A472-5FFC3A969A39/new-york-academy-of-medicine-programming-and-planning",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/7CB3B33A-76A5-4B9F-AC30-F4148E8B5947/national-medal-of-honor-museum",
+      "source": "detailed_table"
     },
-    "proj_9": {
-      "name": "United States Consulate General, Nogales Mexico",
+    "proj_15": {
+      "name": "Project Darwin, Natural History Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/A33E7BEF-8C69-44C1-A92A-41138617A2B3/project-darwin-natural-history-museum",
+      "source": "detailed_table"
     },
-    "proj_10": {
-      "name": "Johns Hopkins University Bloomberg Center",
+    "proj_16": {
+      "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Arizona State University, Beus Center for Law and Society (ASU)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DC6D031D-D1E0-4D39-A43D-6188E2F15C4F/arizona-state-university-beus-center-for-law-and-society-asu",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Holland Performing Arts Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/305CAEA6-B33E-4D5C-9647-C3504794C724/holland-performing-arts-center",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Kansas State University, College of Architecture Planning and Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/254C84D8-F993-449A-9C67-BBD8B9BDF58E/kansas-state-university-college-of-architecture-planning-and-design",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Newseum / Freedom Forum Foundation World Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "The Pennsylvania State University, Penn State Dickinson Law, Lewis Katz Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F0D3AFEF-5D61-4E28-8A48-C46BA7E7DC66/the-pennsylvania-state-university-penn-state-dickinson-law-lewis-katz-hall",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "The Pennsylvania State University, Penn State Law, Lewis Katz Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AB1E54E3-9541-48BF-861A-BEA87BE933C5/the-pennsylvania-state-university-penn-state-law-lewis-katz-building",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "TWA Flight Center (Standard Flight Center)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8FC7C89F-08F8-462F-BCB3-BF30EBC4BB41/twa-flight-center-standard-flight-center",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "United States Embassy, Ankara (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "University of Pennsylvania, School of Veterinary Medicine, Vernon and Shirley Hill Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B4AE6063-DC77-49BA-9585-713FB91D46F0/university-of-pennsylvania-school-of-veterinary-medicine-vernon-and-shirley-hill-pavilion",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "University of Virginia, South Lawn Project Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BE6DF8FE-AC29-4D1A-AB08-3A69EF630C5F/university-of-virginia-south-lawn-project-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "William J. Clinton Presidential Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CB57D320-7490-4B2C-9F31-5A8BC0D42B96/william-j-clinton-presidential-center",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Yale University Art Gallery, Kahn Building Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F9EFB3AC-7C19-4632-BEC2-DA3B3728B8C4/yale-university-art-gallery-kahn-building-renovation",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=fberger@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:06:00.268793",
+  "scraped_at": "2025-09-17T20:54:36.140255",
   "profile_id": null
 }

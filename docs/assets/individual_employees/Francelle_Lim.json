@@ -11,134 +11,345 @@
   "position": "Principal",
   "department": "",
   "years_with_firm": 19,
-  "memberships": [],
+  "memberships": [
+    "LEED AP BD+CAIA",
+    "LEED AP BD+C",
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "University of Michigan",
-      "degree": "Undergraduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "University of Michigan",
       "degree": "Graduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Omaha Performing Arts, Tenaska Center for Arts EngagementOmaha Performing Arts1843C",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "omaha-performing-arts-tenaska-center-for-arts-engagement",
+      "url": "https://ei.ennead.com/project/36CFEB84-F1C4-41CE-8C7B-A40DBE3A721F/omaha-performing-arts-tenaska-center-for-arts-engagement",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Omaha Performing Arts, Tenaska Center for Arts Engagement",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/36CFEB84-F1C4-41CE-8C7B-A40DBE3A721F/omaha-performing-arts-tenaska-center-for-arts-engagement",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Roundabout Theatre Master Plan & Concept",
+    "proj_3": {
+      "name": "Omaha Performing Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "omaha-performing-arts-steelhouse-omaha",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "1843C",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_5": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "roundabout-theatre-master-plan-concept",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Omaha Performing Arts, Steelhouse OmahaOmaha Performing Arts1843B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "omaha-performing-arts-steelhouse-omaha",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "text_parsing"
+    },
+    "proj_9": {
       "name": "Omaha Performing Arts, Steelhouse Omaha",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Chicago Symphony Orchestra, Outdoor Amphitheatre Concept Study",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/B4E440D9-48CC-4C51-80A6-AEB2E81DBFC0/chicago-symphony-orchestra-outdoor-amphitheatre-concept-study",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "City University of New York, Hunter College, Roosevelt House Renovation, Upgrades",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/0BFE4D02-0754-4154-A37B-89350E998772/city-university-of-new-york-hunter-college-roosevelt-house-renovation-upgrades",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "The Old Globe Concept Design",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "Cincinnati Music Hall Revitalization",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/E64A9AA3-B607-446C-9BE2-1CB460070430/cincinnati-music-hall-revitalization",
-      "source": "fallback"
-    },
-    "proj_8": {
-      "name": "The Public Theater at Astor Place, Facilities Assessment and Planning Study",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/0EBCF5D1-782D-4CD6-A0D7-3229001BF0FB/the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
-      "source": "fallback"
-    },
-    "proj_9": {
-      "name": "United States Consulate General, Nogales Mexico (planning)",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+      "name": "1843B",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Shenhzen International Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "The Public, Delacorte Theater, Central Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Omaha Performing Arts Campus Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Sing Sing Prison Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DF537E06-2132-4FC7-995B-66D7BDC8A943/sing-sing-prison-museum",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Connecticut College, Athey Center for Performance and Research at Palmer Auditorium",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Abrons Art Center at Henry Street Settlement",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/818D68E3-B2F1-438D-8DE5-22CFB316CC7B/abrons-art-center-at-henry-street-settlement",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "American Museum of Natural History, Rose Center for Earth and Space",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Barnard Academic Space Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A412DB24-9CAC-4B99-AE23-CAC3FFE688F5/barnard-academic-space-planning",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Goh Keng Swee Centre for Education",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D217F60E-C2D1-4B98-A079-299B4B07C88D/goh-keng-swee-centre-for-education",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Jones Hall Concept Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/57D5344B-D09F-4C82-A653-B0EA29C667CA/jones-hall-concept-design",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Nanjing Qilin Technology Innovation Park (Plot 3)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/706ECC86-72A7-4FD9-B7C9-EF75C03FF86A/nanjing-qilin-technology-innovation-park-plot-3",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "New York University, King Juan Carlos I of Spain Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/753F009D-8873-4C3D-A2AB-53447E87734E/new-york-university-king-juan-carlos-i-of-spain-center",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Public Theater Annex - 440 Lafayette",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/236880BF-3BC5-49C1-8CA0-44EE7D268CC2/public-theater-annex-440-lafayette",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Robinson Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CF27FDF5-238E-48E8-A9CB-6F4A37A94986/robinson-center",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Smithsonian Institution, Cooper-Hewitt National Design Museum, Miller/Fox Houses",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C59A3BC5-820C-4A00-B365-DAB057F71815/smithsonian-institution-cooper-hewitt-national-design-museum-miller-fox-houses",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "The Ed Sullivan Theater",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/390D7AA6-C7C9-48F0-A29B-CE9105A1E6DE/the-ed-sullivan-theater",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "The New York Times Printing Plant",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E6A9029B-8C5C-46A3-AD33-5250BCBBB012/the-new-york-times-printing-plant",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "The Santa Fe Opera",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/99CFB6DF-C0BE-4E5D-BAAD-2543BD16252B/the-santa-fe-opera",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Yale University Art Gallery Renovation and Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7D89837C-218E-48FE-8DE2-F0191F1DBBE3/yale-university-art-gallery-renovation-and-expansion",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Shanghai Astronomy Museum (Planetarium)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/29D257CF-CC0F-4D77-8750-0D4582C95142/shanghai-astronomy-museum-planetarium",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Omaha Performing Arts Campus Basic Services",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/60BA4E63-B6E1-4A96-8A36-ABF28EF1D544/omaha-performing-arts-campus-basic-services",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=flim@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:06:05.046358",
+  "scraped_at": "2025-09-17T20:54:56.851428",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Gary Anderson",
   "email": "gary.anderson@ennead.com",
-  "bio": "29",
+  "bio": null,
   "phone": "(212) 792-5862",
   "mobile": "(212) 792-5862",
   "office_location": "",
@@ -11,7 +11,9 @@
   "position": "Senior Associate",
   "department": "",
   "years_with_firm": 29,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
     {
       "institution": "New York Institute of Technology",
@@ -19,121 +21,363 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Omaha Performing Arts, Steelhouse OmahaOmaha Performing Arts1843B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "omaha-performing-arts-steelhouse-omaha",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Omaha Performing Arts, Steelhouse Omaha",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Omaha Performing Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "1843B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Seoul Foreign School, New High School1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "seoul-foreign-school-new-high-school",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "text_parsing"
+    },
+    "proj_6": {
       "name": "Seoul Foreign School, New High School",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_7": {
+      "name": "1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "The Cathedral School of St. John the Divine Addition1412B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-cathedral-school-of-st-john-the-divine-addition",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
+      "source": "text_parsing"
+    },
+    "proj_9": {
       "name": "The Cathedral School of St. John the Divine Addition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "The Westminster Schools, Barge Commons (formerly Westminster Center Phase 1)",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall Addition",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "The Westminster Schools, Thompson Stadium",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "Vietnam Veterans Memorial Education Center",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/4B2146DA-B92B-4D26-948A-682B3E3E1422/vietnam-veterans-memorial-education-center",
-      "source": "fallback"
-    },
-    "proj_8": {
-      "name": "The Cathedral Church of Saint John the Divine North Transept",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/DDD9956D-205D-413F-9191-2EC65CF9EFA8/the-cathedral-church-of-saint-john-the-divine-north-transept",
-      "source": "fallback"
-    },
-    "proj_9": {
-      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "Children's Hospital at Montefiore",
+      "name": "1412B",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Inova (Franconia) Springfield Hospital",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Inova Oakville at Potomac Yards Healthplex",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7523ABE9-B271-4D5A-9DF9-898EF2044C01/inova-oakville-at-potomac-yards-healthplex",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Mount Sinai Beth Israel - Renovation and Addition 2019",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9C20FC44-BC83-4F7A-A05A-DABB7F1B540F/mount-sinai-beth-israel-renovation-and-addition-2019",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "NYU Langone Health, AH and Ancillary Projects Planning",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D28DDF16-6817-4DB4-BE59-A48971A98F7C/nyu-langone-health-ah-and-ancillary-projects-planning",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "NYU Langone Health, Grossman School of Medicine, Alumni Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D007D6C4-C710-4B76-ABEE-54D0D3B31D48/nyu-langone-health-grossman-school-of-medicine-alumni-hall",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Westminster Schools - Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Omaha Performing Arts Campus Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "The Cove, Crescent Park Jersey City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "East Harlem Tutorial Program, Scholars Academy High School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/839505BB-B85E-4091-AC91-15B9207F2398/east-harlem-tutorial-program-scholars-academy-high-school",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Abrons Art Center at Henry Street Settlement",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/818D68E3-B2F1-438D-8DE5-22CFB316CC7B/abrons-art-center-at-henry-street-settlement",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Anderson Collection at Stanford University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/65A0C468-9D20-4DD1-BD31-58B565C2EB75/anderson-collection-at-stanford-university",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Apple Scottsdale",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/62EAAD49-9D9B-406B-B5FA-FB6B61A3CE5D/apple-scottsdale",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Broadway: 1000 Steps (Ennead Lab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AB094ED6-A669-4246-8E8A-29248DDD64CE/broadway--1000-steps-ennead-lab",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Brooklyn Botanic Garden, Eastern Parkway Entrance",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2ABBEF3B-4F9B-4146-8224-A27125C6ECD2/brooklyn-botanic-garden-eastern-parkway-entrance",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "City University of New York, Medgar Evers College, Academic Building I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFA2FFA1-C895-4B10-8C72-F7E29F740641/city-university-of-new-york-medgar-evers-college-academic-building-i",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Department of Homeless Services, Prevention Assistance and Temporary Housing (PATH)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7DAE1159-AD72-43F3-9C26-98102E0AE6AF/department-of-homeless-services-prevention-assistance-and-temporary-housing-path",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "Fire Department of the City of New York Rescue Company 3",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E40E8E70-684A-4D39-8EB7-6FB28A06AB92/fire-department-of-the-city-of-new-york-rescue-company-3",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Hudson New York (formerly known as Henry Hudson Hotel)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7021F047-AB36-4C46-B78B-EE265A4C0F20/hudson-new-york-formerly-known-as-henry-hudson-hotel",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Husu Dafeng Industrial Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/443B00F1-7DFB-4506-AFBB-DA09A4D98467/husu-dafeng-industrial-park",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Kansas State University, College of Architecture Planning and Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/254C84D8-F993-449A-9C67-BBD8B9BDF58E/kansas-state-university-college-of-architecture-planning-and-design",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "Mashantucket Pequot Museum and Research Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/11768C10-A522-416E-9769-F9B42E36B840/mashantucket-pequot-museum-and-research-center",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "Mount Sinai Downtown Transformation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91667373-B23F-4812-A29A-DE28FCAC59A9/mount-sinai-downtown-transformation",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "New York City Center Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/ADC0C6E6-C2F0-4AAE-A660-F7B1DFA00231/new-york-city-center-renovation",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ganderson@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:06:09.071894",
+  "scraped_at": "2025-09-17T20:55:12.079288",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Thomas Cunningham",
   "email": "thomas.cunningham@ennead.com",
-  "bio": "2",
+  "bio": null,
   "phone": "646-437-1710",
   "mobile": "646-437-1710",
   "office_location": "",
@@ -22,30 +22,60 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "The Westminster Schools, Love HallThe Westminster Schools2105",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-love-hall",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "The Westminster Schools, Love Hall",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Westminster Schools - Blake Center",
+    "proj_3": {
+      "name": "The Westminster Schools",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
       "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
-      "source": "fallback"
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "1946",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Thomas.Cunningham@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:51.334403",
+  "scraped_at": "2025-09-17T21:12:04.357886",
   "profile_id": null
 }

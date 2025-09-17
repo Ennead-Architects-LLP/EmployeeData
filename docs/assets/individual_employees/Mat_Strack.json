@@ -1,7 +1,7 @@
 {
   "human_name": "Mat Strack",
   "email": "mat.strack@ennead.com",
-  "bio": "7",
+  "bio": null,
   "phone": "(212) 792-5877",
   "mobile": "(212) 792-5877",
   "office_location": "",
@@ -11,13 +11,12 @@
   "position": "Senior Associate",
   "department": "",
   "years_with_firm": 7,
-  "memberships": [],
+  "memberships": [
+    "LEED GAAIA",
+    "LEED GA",
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "University of Illinois",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "University of Illinois",
       "degree": "Undergraduate",
@@ -27,110 +26,310 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Science Park and Research Campus (SPARC) Kips Bay2412",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-park-and-research-campus-sparc-kips-bay",
+      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Science Park and Research Campus (SPARC) Kips Bay",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "The Westminster Schools, Barge Commons (formerly Westminster Center Phase 1)",
+    "proj_3": {
+      "name": "Westminster",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
+      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Westminster",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_5": {
+      "name": "The Westminster Schools",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "1761B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
+      "url": "https://ei.ennead.com/project/C6B65984-1DE5-4BE9-B3E0-1DE55CB7B8A6/the-westminster-schools-barge-commons-formerly-westminster-center-phase-1",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall AdditionThe Westminster Schools1761A",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition",
+      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "The Westminster Schools, Campbell Hall Renovation and Hawkins Hall Addition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A33A3211-5E86-40C0-9825-03B0C3A1AB42/the-westminster-schools-campbell-hall-renovation-and-hawkins-hall-addition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "The Westminster Schools, Thompson Stadium",
+    "proj_9": {
+      "name": "1761A",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_10": {
+      "name": "The Westminster Schools, Thompson StadiumThe Westminster Schools1761C",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-thompson-stadium",
+      "url": "https://ei.ennead.com/project/46BDABC4-11D5-46E8-82E2-6197A0C39A02/the-westminster-schools-thompson-stadium",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Sylvia H. Rambo United States Courthouse (Harrisburg Federal Courthouse)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BE3AB8DD-D1A9-4C76-A8C0-7AC7DF83B4CF/sylvia-h-rambo-united-states-courthouse-harrisburg-federal-courthouse",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "The Westminster Schools, Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/89DFBE62-29BC-4E54-851B-2F252F27FEC8/the-westminster-schools-campus-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "The Westminster Schools, Love HallThe Westminster Schools2105",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-love-hall",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
+      "source": "text_parsing"
+    },
+    "proj_14": {
       "name": "The Westminster Schools, Love Hall",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "Westminster Schools - Blake Center",
+    "proj_15": {
+      "name": "Blake Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_16": {
+      "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "kuwait-university-health-sciences-campus",
+      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+      "source": "text_parsing"
+    },
+    "proj_17": {
       "name": "Kuwait University Health Sciences Campus",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_18": {
+      "name": "Perkins Eastman",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_20": {
       "name": "Lingang Pujiang International Healthcare City",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "lingang-pujiang-international-healthcare-city",
       "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_9": {
-      "name": "Metropolitan Opera, Lobby Renovation and Expansion",
+    "proj_21": {
+      "name": "Development",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/14D2CEEA-87F8-4534-BE0F-6B67EB376828/metropolitan-opera-lobby-renovation-and-expansion",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_22": {
+      "name": "Metropolitan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "metropolitan-opera-lobby-renovation-and-expansion",
+      "url": "https://ei.ennead.com/project/14D2CEEA-87F8-4534-BE0F-6B67EB376828/metropolitan-opera-lobby-renovation-and-expansion",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "Metropolitan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Metropolitan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & DesignPrinceton University1836",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "text_parsing"
+    },
+    "proj_26": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "Princeton University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "1946",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "1701",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-pujiang-international-healthcare-city",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
+      "source": "text_parsing"
+    },
+    "proj_30": {
+      "name": "1537",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "metropolitan-opera-lobby-renovation-and-expansion",
+      "url": "https://ei.ennead.com/project/14D2CEEA-87F8-4534-BE0F-6B67EB376828/metropolitan-opera-lobby-renovation-and-expansion",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=MStrack@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:43.003278",
+  "scraped_at": "2025-09-17T21:03:52.358690",
   "profile_id": null
 }

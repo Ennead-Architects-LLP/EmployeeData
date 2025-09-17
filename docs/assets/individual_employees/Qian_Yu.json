@@ -1,0 +1,185 @@
+{
+  "human_name": "Qian Yu",
+  "email": "qian.yu@ennead.com",
+  "bio": null,
+  "phone": "",
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/98061DC4-DD66-4073-8C0A-A2EB8CC696C8/qian-yu",
+  "image_url": "https://ei.ennead.com/api/image/af92e8f7-08a7-40db-8a9d-872a921402c9/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Qian Yu_profile.jpg",
+  "position": "Architectural Designer",
+  "department": "",
+  "years_with_firm": 3,
+  "memberships": [],
+  "education": [],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Shenzhen Hong Kong Science and Technology Innovation Cooperation Zone Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Huzhou Vocational and Technical Campus Master PlanHuzhou Professional School2227",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huzhou-vocational-and-technical-campus-master-plan",
+      "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Huzhou Vocational and Technical Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Huzhou Professional School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Chengdu shudu urban construction co.,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
+      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Chengdu shudu urban construction co.,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bilibili-shanghai-headquarters",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Bilibili Co.,Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Tech City Plot 606",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-plot-606",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Shanghai Rongrong Real Estate Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "2401",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "2220",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
+      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "1735",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-plot-606",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "text_parsing"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Qian.Yu@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-17T21:08:23.502453",
+  "profile_id": null
+}

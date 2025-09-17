@@ -1,7 +1,7 @@
 {
   "human_name": "Weiwei Kuang",
   "email": "weiwei.kuang@ennead.com",
-  "bio": "8",
+  "bio": null,
   "phone": "(212) 792-2624",
   "mobile": "(212) 792-2624",
   "office_location": "",
@@ -19,121 +19,303 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "PRC Class 1 Registered Architect",
-      "state": "Shanghai",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-textile-museum",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Textile Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
-      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+    "proj_3": {
+      "name": "Zhejiang China Textile City Group",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_4": {
+      "name": "Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Shenzhen Hong Kong Science and Technology Innovation Cooperation Zone Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "text_parsing"
+    },
+    "proj_7": {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_8": {
+      "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative CompetitionVIP.com2321",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "Shenhzen International Performance Center",
+    "proj_11": {
+      "name": "China Resources Land MixC Park (CR Land)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/EFDF0880-F722-4F44-AB9A-5FC86CDEF90B/china-resources-land-mixc-park-cr-land",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "Shanghai Lingang WLA Conference Center",
+    "proj_12": {
+      "name": "Huawei Qingpu R&D Design Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/B1A8E4E7-3B91-44AE-AED2-042155E5469F/shanghai-lingang-wla-conference-center",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
+      "source": "detailed_table"
     },
-    "proj_7": {
+    "proj_13": {
+      "name": "Lingang Pujiang International Healthcare City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Yangtze River Estuary Chinese Sturgeon Nature Preserve",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D49DA45D-F81A-491F-B1BB-2BB83F9C773A/yangtze-river-estuary-chinese-sturgeon-nature-preserve",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Shanghai Astronomy Museum (Planetarium)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/29D257CF-CC0F-4D77-8750-0D4582C95142/shanghai-astronomy-museum-planetarium",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Lingang Economic Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Bao Steel Wusong Pilot DistrictLingang BaoWu Group1919",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bao-steel-wusong-pilot-district",
+      "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "Bao Steel Wusong Pilot District",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_20": {
+      "name": "Lingang BaoWu Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Wuxi Art MuseumWuxi Culture and Tourism Bureau1931",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "wuxi-art-museum",
+      "url": "https://ei.ennead.com/project/3D1D6BFF-2B0A-4B7A-9D3B-B84AA3DCF71A/wuxi-art-museum",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "Wuxi Art Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3D1D6BFF-2B0A-4B7A-9D3B-B84AA3DCF71A/wuxi-art-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_23": {
+      "name": "Wuxi Culture and Tourism Bureau",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Shenzhen Science and Technology Museum (S&T)Shenzhen Toutiao Technology Co., Ltd.1923",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-science-and-technology-museum-s-t",
+      "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t",
+      "source": "text_parsing"
+    },
+    "proj_25": {
       "name": "Shenzhen Science and Technology Museum (S&T)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8E12A598-C5A7-4496-80F4-10E3929210E3/shenzhen-science-and-technology-museum-s-t",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_26": {
+      "name": "Shenzhen Toutiao Technology Co., Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "Jiaotong University School of MedicineLingang Economic Group1849",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "jiaotong-university-school-of-medicine",
+      "url": "https://ei.ennead.com/project/A0C7E268-84CF-4256-8255-209394AC6E9E/jiaotong-university-school-of-medicine",
+      "source": "text_parsing"
+    },
+    "proj_28": {
       "name": "Jiaotong University School of Medicine",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A0C7E268-84CF-4256-8255-209394AC6E9E/jiaotong-university-school-of-medicine",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "2401",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wkuang@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:13:17.966004",
+  "scraped_at": "2025-09-17T21:14:10.717337",
   "profile_id": null
 }

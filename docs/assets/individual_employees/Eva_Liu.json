@@ -1,7 +1,7 @@
 {
   "human_name": "Eva Liu",
   "email": "xinyue.liu@ennead.com",
-  "bio": "0",
+  "bio": null,
   "phone": "646-437-1727",
   "mobile": "646-437-1727",
   "office_location": "",
@@ -10,62 +10,152 @@
   "image_local_path": "assets/images/Eva Liu_profile.jpg",
   "position": "Architectural Designer",
   "department": "",
-  "years_with_firm": null,
+  "years_with_firm": 0,
   "memberships": [],
   "education": [
     {
       "institution": "Rice University",
       "degree": "Undergraduate",
-      "specialty": "Architecture - Expected Graduation 2024"
+      "specialty": "Expected Graduation 2024"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Harvard Yard Libraries Feasibility StudyHarvard University2235",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "harvard-yard-libraries-feasibility-study",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Harvard Yard Libraries Feasibility Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Harvard University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "American School in Japan Master PlanAmerican School in Japan2231",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "american-school-in-japan-master-plan",
+      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "American School in Japan Master Plan",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "American School in Japan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Nature & Culture Museum of WisconsinMilwaukee Public Museum2100",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nature-culture-museum-of-wisconsin",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Nature & Culture Museum of Wisconsin",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+    "proj_9": {
+      "name": "Milwaukee Public Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
       "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-      "source": "fallback"
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "2001",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=xinyue.liu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:05:34.442561",
+  "scraped_at": "2025-09-17T20:54:10.087261",
   "profile_id": null
 }

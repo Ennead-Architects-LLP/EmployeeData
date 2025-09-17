@@ -1,7 +1,7 @@
 {
   "human_name": "Michael Hassett",
   "email": "michael.hassett@ennead.com",
-  "bio": "I have lived in Brooklyn, NY my entire life completing my B.A. in Art/Architecural History at Brooklyn College and Masters at Pratt Institute’s School of Library and Information Science. Before joining Ennead I was working at the  The Onassis Library for Hellenic and Roman Art at the Metropolitan Museum. During my free time I enjoying bike riding, golf and playing pool.",
+  "bio": "I have lived in Brooklyn, NY my entire life completing my B.A. in Art/Architecural History at Brooklyn College and Masters at Pratt Institute’s School of Library and Information Science. Before joining Ennead I was working at the  The Onassis Library for Hellenic and Roman Art at the Metropolitan Museum. During my free time I enjoying bike riding, golf and playing pool. I have lived in Brooklyn, NY my entire life completing my B.A. in Art/Architecural History at Brooklyn College and Masters at Pratt Institute’s School of Library and Information Science. Before joining Ennead I was working at the  The Onassis Library for Hellenic and Roman Art at the Metropolitan Museum. During my free time I enjoying bike riding, golf and playing pool.",
   "phone": "(212) 792-5903",
   "mobile": "(212) 792-5903",
   "office_location": "",
@@ -15,21 +15,237 @@
   "education": [
     {
       "institution": "Brooklyn College",
-      "degree": "Undergraduate",
-      "specialty": "Arts in Art/Architectural History"
-    },
-    {
-      "institution": "Pratt",
       "degree": "Graduate",
-      "specialty": "Library and Information Science"
+      "specialty": "Arts in Art/Architectural History"
     }
   ],
   "licenses": [],
-  "projects": {},
+  "projects": {
+    "proj_1": {
+      "name": "Michael HassettAssociateArchivist",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Michael Hassett",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Associate",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Archivist",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Personal BioI have lived in Brooklyn, NY my entire life completing my B.A. in Art/Architecural History at Brooklyn College and Masters at Pratt Institute’s School of Library and Information Science. Before joining Ennead I was working at the  The Onassis Library for Hellenic and Roman Art at the Metropolitan Museum. During my free time I enjoying bike riding, golf and playing pool.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "I have lived in Brooklyn, NY my entire life completing my B.A. in Art/Architecural History at Brooklyn College and Masters at Pratt Institute’s School of Library and Information Science. Before joining Ennead I was working at the  The Onassis Library for Hellenic and Roman Art at the Metropolitan Museum. During my free time I enjoying bike riding, golf and playing pool.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "I'm a Resource ForOpenAsset, Project Data, CRM, Photography Equipment, Printing and Binding",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "OpenAsset, Project Data, CRM, Photography Equipment, Printing and Binding",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "The BasicsYears With Firm21",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Years With Firm21",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Years With Firm",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Architectural",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Architectural",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "Institution",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "Degree",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "Specialty",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Brooklyn College",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Undergraduate",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "Architectural",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_20": {
+      "name": "Pratt",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Graduate",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "Library and",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mhassett@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:10:06.246560",
+  "scraped_at": "2025-09-17T21:05:34.711696",
   "profile_id": null
 }

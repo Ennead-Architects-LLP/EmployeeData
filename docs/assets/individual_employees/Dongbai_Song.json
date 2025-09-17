@@ -1,0 +1,57 @@
+{
+  "human_name": "Dongbai Song",
+  "email": "dongbai.song@ennead.com",
+  "bio": null,
+  "phone": "",
+  "mobile": null,
+  "office_location": "",
+  "profile_url": "https://ei.ennead.com/employee/6BAA771E-EECA-4042-837E-D798F096D7B5/dongbai-song",
+  "image_url": "https://ei.ennead.com/api/image/6caf7cc5-7d4e-4848-a6a3-dbc33b94fbb1/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Dongbai Song_profile.jpg",
+  "position": "Senior Designer",
+  "department": "",
+  "years_with_firm": 3,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [],
+  "licenses": [],
+  "projects": {
+    "proj_1": {
+      "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-textile-museum",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Shaoxing Textile Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Zhejiang China Textile City Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    }
+  },
+  "recent_posts": [],
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=dongbai.song@ennead.com",
+  "linkedin_url": null,
+  "website_url": null,
+  "scraped_at": "2025-09-17T20:52:42.798879",
+  "profile_id": null
+}

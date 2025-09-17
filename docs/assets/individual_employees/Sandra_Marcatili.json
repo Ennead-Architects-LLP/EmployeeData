@@ -1,7 +1,7 @@
 {
   "human_name": "Sandra Marcatili",
   "email": "sandra.marcatili@ennead.com",
-  "bio": "I grew up in the Dallas burbs, and though I will never stop saying \"y'all,\" I am very happy that I now call NYC home.I moved to New York during my preceptorship year at Rice University to intern at MVVA, where I enjoyed learning about the textural approach employed by landscape architects. After graduating I moved back to New York to work at Ennead. I have spent most of my time here working on OBO projects with the occasional excursion into other project types. My extracurriculars have included supporting the office's ei platform, CA Forum, and navigator resources.I danced ballet growing up, and one of my favorite things to do now is go to dance performances. (I once heard someone describe both dance and architecture as the two arts of movement through space.) Other favorite pastimes include hiking, staring wistfully at other people's dogs in dog parks, cooking when I have the time, and very slowly building up my crocheting repertoire.",
+  "bio": "I grew up in the Dallas burbs, and though I will never stop saying \"y'all,\" I am very happy that I now call NYC home.I moved to New York during my preceptorship year at Rice University to intern at MVVA, where I enjoyed learning about the textural approach employed by landscape architects. After graduating I moved back to New York to work at Ennead. I have spent most of my time here working on OBO projects with the occasional excursion into other project types. My extracurriculars have included supporting the office's ei platform, CA Forum, and navigator resources.I danced ballet growing up, and one of my favorite things to do now is go to dance performances. (I once heard someone describe both dance and architecture as the two arts of movement through space.) Other favorite pastimes include hiking, staring wistfully at other people's dogs in dog parks, cooking when I have the time, and very slowly building up my crocheting repertoire. I grew up in the Dallas burbs, and though I will never stop saying \"y'all,\" I am very happy that I now call NYC home.I moved to New York during my preceptorship year at Rice University to intern at MVVA, where I enjoyed learning about the textural approach employed by landscape architects. After graduating I moved back to New York to work at Ennead. I have spent most of my time here working on OBO projects with the occasional excursion into other project types. My extracurriculars have included supporting the office's ei platform, CA Forum, and navigator resources.I danced ballet growing up, and one of my favorite things to do now is go to dance performances. (I once heard someone describe both dance and architecture as the two arts of movement through space.) Other favorite pastimes include hiking, staring wistfully at other people's dogs in dog parks, cooking when I have the time, and very slowly building up my crocheting repertoire.",
   "phone": "(212) 792-5882",
   "mobile": "(212) 792-5882",
   "office_location": "",
@@ -11,7 +11,11 @@
   "position": "Senior Associate",
   "department": "",
   "years_with_firm": 10,
-  "memberships": [],
+  "memberships": [
+    "LEED GAAIA",
+    "LEED GA",
+    "AIA"
+  ],
   "education": [
     {
       "institution": "Rice University",
@@ -19,121 +23,293 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
-      "name": "University of North Carolina School of Law",
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-north-carolina-school-of-law",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "University of",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Moseley Architects",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Inova Central Region Emergency Department ExpansionBallinger2223",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-central-region-emergency-department-expansion",
+      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Inova Central Region Emergency Department Expansion",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/72BE8F7D-5267-403E-BEF6-88E4B519F593/inova-central-region-emergency-department-expansion",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Ballinger",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "United States Consulate General, Nogales MexicoU.S. Department of State1608",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-consulate-general-nogales-mexico",
+      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "United States Consulate General, Nogales Mexico",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "U.S. Department of State",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)U.S. Department of State1807",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-consulate-general-lagos-nigeria-obo",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "United States Consulate General, Lagos Nigeria (OBO)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+    "proj_12": {
+      "name": "University of",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_13": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_14": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "Sidwell Friends School, Comprehensive Master PlanSidwell Friends School1410",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "sidwell-friends-school-comprehensive-master-plan",
+      "url": "https://ei.ennead.com/project/2FA1A651-34A6-4F03-8D08-1C9563F67F96/sidwell-friends-school-comprehensive-master-plan",
+      "source": "text_parsing"
+    },
+    "proj_16": {
       "name": "Sidwell Friends School, Comprehensive Master Plan",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2FA1A651-34A6-4F03-8D08-1C9563F67F96/sidwell-friends-school-comprehensive-master-plan",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_17": {
+      "name": "Sidwell Friends School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Taopu Master Plan and Urban Design (Big Taopu)Ennead Architects International LLP1502",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-master-plan-and-urban-design-big-taopu",
+      "url": "https://ei.ennead.com/project/AEA7479F-4093-43FE-AAF1-92F00E14AFBD/taopu-master-plan-and-urban-design-big-taopu",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "Taopu Master Plan and Urban Design (Big Taopu)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AEA7479F-4093-43FE-AAF1-92F00E14AFBD/taopu-master-plan-and-urban-design-big-taopu",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
-      "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
+    "proj_20": {
+      "name": "Ennead Architects International LLP",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_21": {
+      "name": "Masterplan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city",
+      "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "United Nations High Commissioner for Refugees, Rethinking Refugee Communities (Ennead Lab, UNHCR, Stanford)1216",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-nations-high-commissioner-for-refugees-rethinking-refugee-communities-ennead-lab-unhcr-stanford",
+      "url": "https://ei.ennead.com/project/225877E2-E8B8-42C4-B784-2CFDB402283E/united-nations-high-commissioner-for-refugees-rethinking-refugee-communities-ennead-lab-unhcr-stanford",
+      "source": "text_parsing"
+    },
+    "proj_23": {
       "name": "United Nations High Commissioner for Refugees, Rethinking Refugee Communities (Ennead Lab, UNHCR, Stanford)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/225877E2-E8B8-42C4-B784-2CFDB402283E/united-nations-high-commissioner-for-refugees-rethinking-refugee-communities-ennead-lab-unhcr-stanford",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_24": {
+      "name": "United States Embassy, Ankara (OBO)U.S. Department of State1425",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-embassy-ankara-obo",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
+      "source": "text_parsing"
+    },
+    "proj_25": {
       "name": "United States Embassy, Ankara (OBO)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "2243",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-north-carolina-school-of-law",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "2001",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "1416",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city",
+      "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=smarcatili@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:25.010069",
+  "scraped_at": "2025-09-17T21:10:27.039461",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Nazanin Modaresahmadi",
   "email": "nazanin.modares@ennead.com",
-  "bio": "5",
+  "bio": null,
   "phone": "6464371715",
   "mobile": "6464371715",
   "office_location": "",
@@ -11,126 +11,353 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 5,
-  "memberships": [],
+  "memberships": [
+    "NCARB"
+  ],
   "education": [
-    {
-      "institution": "University North Carolina",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "University of Sciene & Technology",
       "degree": "Graduate",
-      "specialty": "Sustainablity in Architecture"
+      "specialty": "Architecture"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Long Island2151",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
+      "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "nyu-langone-hospital-long-island-hospital-site-study",
       "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
-      "source": "fallback"
-    },
-    "proj_2": {
-      "name": "University of Florida, Natural History Museum, Thompson Earth Systems Institute Addition",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
-      "source": "fallback"
+      "source": "text_parsing"
     },
     "proj_3": {
-      "name": "Evangelical Lutheran Church of the Redeemer (ELCR) Architectural Programming & Master Planning",
+      "name": "Long Island",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_4": {
-      "name": "Bilibili Shanghai Headquarters",
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "University of",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_6": {
+      "name": "University of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Architectural",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Architectural",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "Lord, Aeck & Sargent, Inc.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bilibili-shanghai-headquarters",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Project Darwin, Natural History Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A33E7BEF-8C69-44C1-A92A-41138617A2B3/project-darwin-natural-history-museum",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Shanghai Lingang WLA Conference Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B1A8E4E7-3B91-44AE-AED2-042155E5469F/shanghai-lingang-wla-conference-center",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Taopu Smart City, Plot 603",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "detailed_table"
+    },
+    "proj_14": {
       "name": "Yidan Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "Inova (Franconia) Springfield Hospital",
+    "proj_15": {
+      "name": "Shenzhen Qianhai Yidan Educational, Scientific and Cultural Company",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_16": {
+      "name": "Springfield",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-franconia-springfield-hospital",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "text_parsing"
+    },
+    "proj_17": {
+      "name": "Springfield",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Ballinger",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "Inova Alexandria Hospital at LandmarkBallinger2124",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-alexandria-hospital-at-landmark",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "text_parsing"
+    },
+    "proj_20": {
       "name": "Inova Alexandria Hospital at Landmark",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
-      "name": "Northwell, Third Avenue Medical Office Building",
+    "proj_21": {
+      "name": "Northwell,",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "Northwell,",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_23": {
+      "name": "Northwell Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "Nature & Culture Museum of WisconsinMilwaukee Public Museum2100",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nature-culture-museum-of-wisconsin",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "text_parsing"
+    },
+    "proj_25": {
       "name": "Nature & Culture Museum of Wisconsin",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_26": {
+      "name": "Milwaukee Public Museum",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "Inova Oakville at Potomac Yards HealthplexInova Health System2029",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-oakville-at-potomac-yards-healthplex",
+      "url": "https://ei.ennead.com/project/7523ABE9-B271-4D5A-9DF9-898EF2044C01/inova-oakville-at-potomac-yards-healthplex",
+      "source": "text_parsing"
+    },
+    "proj_28": {
       "name": "Inova Oakville at Potomac Yards Healthplex",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/7523ABE9-B271-4D5A-9DF9-898EF2044C01/inova-oakville-at-potomac-yards-healthplex",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "Inova Health System",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_30": {
+      "name": "2226",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "url": "https://ei.ennead.com/project/6B83C1EA-EA56-41B2-BBB7-C9BC3861BAE9/university-of-florida-natural-history-museum-thompson-earth-systems-institute-addition",
+      "source": "text_parsing"
+    },
+    "proj_31": {
+      "name": "2206",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "url": "https://ei.ennead.com/project/73EE6C6B-0B37-4F72-B275-1D367D5B410F/evangelical-lutheran-church-of-the-redeemer-elcr-architectural-programming-master-planning",
+      "source": "text_parsing"
+    },
+    "proj_32": {
+      "name": "2125",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-franconia-springfield-hospital",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "text_parsing"
+    },
+    "proj_33": {
+      "name": "2109",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "northwell-third-avenue-medical-office-building",
+      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=nmodares@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:10:43.479046",
+  "scraped_at": "2025-09-17T21:07:09.652399",
   "profile_id": null
 }

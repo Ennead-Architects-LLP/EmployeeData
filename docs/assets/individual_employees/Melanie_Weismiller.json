@@ -1,7 +1,7 @@
 {
   "human_name": "Melanie Weismiller",
   "email": "melanie.weismiller@ennead.com",
-  "bio": "12",
+  "bio": null,
   "phone": "1-213-265-7592",
   "mobile": "1-213-265-7592",
   "office_location": "",
@@ -11,7 +11,9 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 12,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
     {
       "institution": "Cornell University",
@@ -19,121 +21,323 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Cao'e River Culture and Art Center Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Universal Hydrogen 2 Manufacturing FacilityUniversal Hydrogen2306",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "universal-hydrogen-2-manufacturing-facility",
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Universal Hydrogen 2 Manufacturing Facility",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Universal Hydrogen",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "The Old Globe Concept DesignThe Old Globe Ampitheatre2230",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-old-globe-concept-design",
+      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "The Old Globe Concept Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "The Public Theater at Astor Place, Facilities Assessment and Planning Study",
+    "proj_9": {
+      "name": "The Old Globe Ampitheatre",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "The Public Theater at Astor Place, Facilities Assessment and Planning StudyThe Public Theater1529",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
       "url": "https://ei.ennead.com/project/0EBCF5D1-782D-4CD6-A0D7-3229001BF0FB/the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+    "proj_11": {
+      "name": "Public Theater Annex - 440 Lafayette",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/236880BF-3BC5-49C1-8CA0-44EE7D268CC2/public-theater-annex-440-lafayette",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "Arizona State University, Beus Center for Law and Society (ASU)",
+    "proj_12": {
+      "name": "R&F Shanghai Hongqiao Plot 5",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DC6D031D-D1E0-4D39-A43D-6188E2F15C4F/arizona-state-university-beus-center-for-law-and-society-asu",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5",
+      "source": "detailed_table"
     },
-    "proj_7": {
+    "proj_13": {
+      "name": "Robinson Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CF27FDF5-238E-48E8-A9CB-6F4A37A94986/robinson-center",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Sidwell Friends School, Comprehensive Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2FA1A651-34A6-4F03-8D08-1C9563F67F96/sidwell-friends-school-comprehensive-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Stanford University, Denning House",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1AE1E92E-5E2C-465A-8FA7-F5EBA5291E06/stanford-university-denning-house",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "The University of Texas at Austin, McCombs School of Business, Robert B. Rowling Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/75809F78-4F70-42FB-B40F-68B3B5660253/the-university-of-texas-at-austin-mccombs-school-of-business-robert-b-rowling-hall",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "University of Chicago, David M. Rubenstein Forum Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1A527EC8-5AD4-4496-A6E3-9A4A9EC7A69F/university-of-chicago-david-m-rubenstein-forum-competition",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Jones Hall Concept DesignFoundation for Jones Hall1618",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "jones-hall-concept-design",
+      "url": "https://ei.ennead.com/project/57D5344B-D09F-4C82-A653-B0EA29C667CA/jones-hall-concept-design",
+      "source": "text_parsing"
+    },
+    "proj_20": {
       "name": "Jones Hall Concept Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/57D5344B-D09F-4C82-A653-B0EA29C667CA/jones-hall-concept-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_21": {
+      "name": "Foundation for",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_22": {
+      "name": "New York Hall of Science Great Hall Upgrades and Terrace ImprovementsNew York Hall of Science0810",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements",
+      "url": "https://ei.ennead.com/project/7DD086B3-436C-4215-AC53-BC344E2D3BD6/new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements",
+      "source": "text_parsing"
+    },
+    "proj_23": {
       "name": "New York Hall of Science Great Hall Upgrades and Terrace Improvements",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/7DD086B3-436C-4215-AC53-BC344E2D3BD6/new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_24": {
+      "name": "New York Hall of Science",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "Peabody Essex Museum, Expansion and RenovationBlue Sky Third Avenue Management LLC1319",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "peabody-essex-museum-expansion-and-renovation",
+      "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation",
+      "source": "text_parsing"
+    },
+    "proj_26": {
       "name": "Peabody Essex Museum, Expansion and Renovation",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_27": {
+      "name": "Blue Sky Third Avenue Management LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & DesignPrinceton University1836",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
+      "source": "text_parsing"
+    },
+    "proj_29": {
       "name": "Princeton University, Environmental Studies (ES) & The School of Engineering Applied Science (SEAS) Master Planning & Design",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A291815C-A408-4F67-9BD8-7700498B532C/princeton-university-environmental-studies-es-the-school-of-engineering-applied-science-seas-master-planning-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_30": {
+      "name": "Princeton University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_31": {
+      "name": "2001",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=mweismiller@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:09:54.976504",
+  "scraped_at": "2025-09-17T21:04:48.527752",
   "profile_id": null
 }

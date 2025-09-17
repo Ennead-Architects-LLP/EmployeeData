@@ -1,7 +1,7 @@
 {
   "human_name": "Chris Stoddard",
   "email": "chris.stoddard@ennead.com",
-  "bio": "5",
+  "bio": null,
   "phone": "646-437-1748",
   "mobile": "646-437-1748",
   "office_location": "",
@@ -11,104 +11,233 @@
   "position": "Principal",
   "department": "",
   "years_with_firm": 5,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
     {
       "institution": "University of Oregon",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
-    {
-      "institution": "Syracuse",
       "degree": "Undergraduate",
-      "specialty": "Fine Arts in Interior"
+      "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "455 First AvenueTaconic Partners LLC2314",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "455-first-avenue",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "455 First Avenue",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Taconic Partners LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Universal Hydrogen 2 Manufacturing FacilityUniversal Hydrogen2306",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "universal-hydrogen-2-manufacturing-facility",
+      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Universal Hydrogen 2 Manufacturing Facility",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Universal Hydrogen",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Genentech Bayview Campus CompetitionGenentech2249",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "genentech-bayview-campus-competition",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Genentech Bayview Campus Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "Genentech",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "text_parsing"
+    },
+    "proj_11": {
       "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_12": {
+      "name": "Jacobs",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_13": {
+      "name": "Jungle Plaza Mixed Use DevelopmentJungle Plaza Associates2102",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "jungle-plaza-mixed-use-development",
+      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
+      "source": "text_parsing"
+    },
+    "proj_14": {
       "name": "Jungle Plaza Mixed Use Development",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_15": {
+      "name": "Jungle Plaza Associates",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "The Cove, Crescent Park Jersey CityAQ Liberty LLC (Argent Ventures)1902",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-cove-crescent-park-jersey-city",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
+      "source": "text_parsing"
+    },
+    "proj_17": {
       "name": "The Cove, Crescent Park Jersey City",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_18": {
+      "name": "AQ Liberty LLC (Argent Ventures)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "Jefferson Health, Honickman CenterNational Real Estate Development1835",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "jefferson-health-honickman-center",
+      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
+      "source": "text_parsing"
+    },
+    "proj_20": {
       "name": "Jefferson Health, Honickman Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/46E72FDC-42F7-4E27-B8A1-B6A1A76DAA62/jefferson-health-honickman-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "National Real Estate Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=cstoddard@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:04:06.462730",
+  "scraped_at": "2025-09-17T20:51:04.519627",
   "profile_id": null
 }

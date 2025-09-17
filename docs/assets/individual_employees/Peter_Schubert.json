@@ -1,7 +1,7 @@
 {
   "human_name": "Peter Schubert",
   "email": "peter.schubert@ennead.com",
-  "bio": "I have a history and a past prior to Ennead. I was at KPF for twenty years. As design principal there, my focus was on institutional as well as commercial buildings. I took that same interest to Hillier / RMJM, where I lead the Design in New York. When coming to Ennead, I was particularly enthused about bringing my interest in intersecting the institutional, cultural and educational into a more global practice for Ennead. I am particularly interested in the urban experience, how the commercial intersects with education and culture, and how aesthetic and urbanistic goals can mutually reinforce one another. I’m thrilled to be here.",
+  "bio": "I have a history and a past prior to Ennead. I was at KPF for twenty years. As design principal there, my focus was on institutional as well as commercial buildings. I took that same interest to Hillier / RMJM, where I lead the Design in New York. When coming to Ennead, I was particularly enthused about bringing my interest in intersecting the institutional, cultural and educational into a more global practice for Ennead. I am particularly interested in the urban experience, how the commercial intersects with education and culture, and how aesthetic and urbanistic goals can mutually reinforce one another. I’m thrilled to be here. I have a history and a past prior to Ennead. I was at KPF for twenty years. As design principal there, my focus was on institutional as well as commercial buildings. I took that same interest to Hillier / RMJM, where I lead the Design in New York. When coming to Ennead, I was particularly enthused about bringing my interest in intersecting the institutional, cultural and educational into a more global practice for Ennead. I am particularly interested in the urban experience, how the commercial intersects with education and culture, and how aesthetic and urbanistic goals can mutually reinforce one another. I’m thrilled to be here.",
   "phone": "(212) 584-6327",
   "mobile": "(212) 584-6327",
   "office_location": "",
@@ -11,169 +11,375 @@
   "position": "Partner",
   "department": "",
   "years_with_firm": 13,
-  "memberships": [],
+  "memberships": [
+    "NCARBAIA",
+    "NCARB",
+    "AIA"
+  ],
   "education": [
-    {
-      "institution": "Columbia University",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
     {
       "institution": "Ohio State University",
       "degree": "Undergraduate",
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "FL",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NJ",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NV",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "TX",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "UT",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Seoul Foreign School, New High School1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "seoul-foreign-school-new-high-school",
+      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Seoul Foreign School, New High School",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "1211B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "455 First AvenueTaconic Partners LLC2314",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "455-first-avenue",
+      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "455 First Avenue",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Taconic Partners LLC",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Genentech Bayview Campus CompetitionGenentech2249",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "genentech-bayview-campus-competition",
+      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Genentech Bayview Campus Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Qilin Science and Technology District, Plot 8 (R&F)",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/AFC52C21-5D64-4A55-8810-BC03FC515152/qilin-science-and-technology-district-plot-8-r-f",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "Jungle Plaza Mixed Use Development",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "DingTalk Competition",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition",
-      "source": "fallback"
-    },
-    "proj_8": {
-      "name": "ByteDance Houhai Center Project",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_9": {
-      "name": "Shenzhen Xiaomi Headquarters",
+      "name": "Genentech",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "New York Blood Center Applied Life Sciences Hub",
+      "name": "Qilin Science and Technology District, Plot 8 (R&F)1304",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "qilin-science-and-technology-district-plot-8-r-f",
+      "url": "https://ei.ennead.com/project/AFC52C21-5D64-4A55-8810-BC03FC515152/qilin-science-and-technology-district-plot-8-r-f",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Divco West Cambridge Crossing: Parcel U",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Bao Steel Wusong Pilot District",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Lingang Kangqiao Phase III",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DA87A9E3-0110-4374-B3DC-9460BAAF96A2/lingang-kangqiao-phase-iii",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Shanghai Pujiang Oriental Smart Media City Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CDB6A79F-F127-4D48-80F9-A8A8A53AF6F2/shanghai-pujiang-oriental-smart-media-city-project",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "Zhangjiang Science City Core Area Plots 76-02/77-02",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D4B4EDBB-65B6-47E1-8750-8F36344BA499/zhangjiang-science-city-core-area-plots-76-02-77-02",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "The Cove, Crescent Park Jersey City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E785339E-720E-43A3-B3AA-8673A2C5670C/the-cove-crescent-park-jersey-city",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Beihang University Qingdao Campus, International Science and Education City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/94A26FDC-8AA3-49D5-A68A-1E06DCF7843F/beihang-university-qingdao-campus-international-science-and-education-city",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Taopu Sci-Tech City Plot 606",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Hero Tandi Pen",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A44ADE52-65BF-41A5-8CCB-D5C03ED01E77/hero-tandi-pen",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "12 West 48th Street",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F3EDC2C6-5F65-4042-A4E8-65E905496C16/12-west-48th-street",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "China Resources Land MixC Park (CR Land)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EFDF0880-F722-4F44-AB9A-5FC86CDEF90B/china-resources-land-mixc-park-cr-land",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Concordia Pudong",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BAFEA2ED-630A-4C0F-8BB7-0B569EBDB7CB/concordia-pudong",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Fudan Qingpu Branch OBGYN Hospital Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/070F6DE7-EF63-4CB8-B3FC-4352C9046D9F/fudan-qingpu-branch-obgyn-hospital-competition",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Fudan University, Handan Campus, China Economy & Cultural Research Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/3BF8EB37-CCD5-43A3-9A61-4CC3DBD2393B/fudan-university-handan-campus-china-economy-cultural-research-center",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Hero South Plot",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/65EA00F8-88A1-4C59-B54B-E20353A438B7/hero-south-plot",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "Hongkun Edgewater",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A3D371E7-B27A-4197-AE68-769A3D0FD928/hongkun-edgewater",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Huawei Wuhan Research and Development Campus",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "Jing'An An Innovation Galaxy International Cultural and Creative Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C25F7304-6BB3-4EFE-9276-2CFDECFCD2DF/jing-an-an-innovation-galaxy-international-cultural-and-creative-park",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Lingang Pujiang International Healthcare City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Nanjing Qilin Technology Innovation Park (Plot 3)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/706ECC86-72A7-4FD9-B7C9-EF75C03FF86A/nanjing-qilin-technology-innovation-park-plot-3",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Pujiang Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "R&F Shanghai Hongqiao Plot 5",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "Seoul Foreign School, Facilities Master Plan (SFS)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5C9CA77A-F708-4BCD-909B-985FEF17DFFD/seoul-foreign-school-facilities-master-plan-sfs",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=pschubert@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:10:55.619411",
+  "scraped_at": "2025-09-17T21:08:08.299721",
   "profile_id": null
 }

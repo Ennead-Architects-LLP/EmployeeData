@@ -1,7 +1,7 @@
 {
   "human_name": "Justin Woo",
   "email": "justin.woo@ennead.com",
-  "bio": "10",
+  "bio": null,
   "phone": "",
   "mobile": null,
   "office_location": "",
@@ -22,30 +22,70 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Tianjin Academy of Fine Arts Competition (TAFA)Tianjin1516",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "tianjin-academy-of-fine-arts-competition-tafa",
+      "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Tianjin Academy of Fine Arts Competition (TAFA)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Tianjin",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Xiamen Music CenterXiamen1535",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "xiamen-music-center",
+      "url": "https://ei.ennead.com/project/8EDD5884-6E70-4E69-9912-7175E7B7715B/xiamen-music-center",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Xiamen Music Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8EDD5884-6E70-4E69-9912-7175E7B7715B/xiamen-music-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Xiamen",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=jwoo@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:07:57.895567",
+  "scraped_at": "2025-09-17T20:59:09.182525",
   "profile_id": null
 }

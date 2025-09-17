@@ -1,7 +1,7 @@
 {
   "human_name": "Stefan Abel",
   "email": "stefan.abel@ennead.com",
-  "bio": "18",
+  "bio": null,
   "phone": "(646) 437-1696",
   "mobile": "(646) 437-1696",
   "office_location": "",
@@ -11,7 +11,11 @@
   "position": "Architectural Designer",
   "department": "",
   "years_with_firm": 18,
-  "memberships": [],
+  "memberships": [
+    "NCARBLEED AP",
+    "NCARB",
+    "LEED AP"
+  ],
   "education": [
     {
       "institution": "New York Institute of Technology",
@@ -22,110 +26,280 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "The Cathedral School of St. John the Divine Addition1412B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-cathedral-school-of-st-john-the-divine-addition",
+      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "The Cathedral School of St. John the Divine Addition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/82B3A769-A9F4-4745-A8F5-996385041DFD/the-cathedral-school-of-st-john-the-divine-addition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "1412B",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion0919",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
+      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "North Shore University Hospital, Northwell Health, West Wing Surgical Expansion",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/49FC0A67-C049-4951-B5DC-3EEAAB7AB603/north-shore-university-hospital-northwell-health-west-wing-surgical-expansion",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "Qilin Science and Technology District, Plot 8 (R&F)1304",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "qilin-science-and-technology-district-plot-8-r-f",
+      "url": "https://ei.ennead.com/project/AFC52C21-5D64-4A55-8810-BC03FC515152/qilin-science-and-technology-district-plot-8-r-f",
+      "source": "text_parsing"
+    },
+    "proj_7": {
       "name": "Qilin Science and Technology District, Plot 8 (R&F)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AFC52C21-5D64-4A55-8810-BC03FC515152/qilin-science-and-technology-district-plot-8-r-f",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Stanford in New York",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/89938168-43BD-41D3-9912-168E07B4412D/stanford-in-new-york",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Zhengzhou Bairui Financial Center",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center",
-      "source": "fallback"
-    },
-    "proj_6": {
-      "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
-      "source": "fallback"
-    },
-    "proj_7": {
-      "name": "Brooklyn Museum, Great Hall",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/DD4ACE57-C761-4267-BA9C-C63D66CB6504/brooklyn-museum-great-hall",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_8": {
-      "name": "Cornell University Comprehensive Campus Master Plan",
+      "name": "Stanford in",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/8CE3D791-A632-4DF9-BC75-65D54FC34F49/cornell-university-comprehensive-campus-master-plan",
-      "source": "fallback"
+      "number": "stanford-in-new-york",
+      "url": "https://ei.ennead.com/project/89938168-43BD-41D3-9912-168E07B4412D/stanford-in-new-york",
+      "source": "text_parsing"
     },
     "proj_9": {
-      "name": "Nanjing Qilin Technology Innovation Park (Plot 3)",
+      "name": "Stanford in",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/706ECC86-72A7-4FD9-B7C9-EF75C03FF86A/nanjing-qilin-technology-innovation-park-plot-3",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
+      "name": "Zhengzhou Bairui Financial Center1330",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "zhengzhou-bairui-financial-center",
+      "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "NYU Langone Health, Cogeneration Building (Energy Building)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AA2C78C0-6E7D-4054-B95E-4F1E077D75E7/nyu-langone-health-cogeneration-building-energy-building",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "NYU Langone Health, Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "NYU Langone Health, Tisch Hospital Elevator Tower and Lobby",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B9543A56-1A01-4772-8B56-97B9A063BF08/nyu-langone-health-tisch-hospital-elevator-tower-and-lobby",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "NYU Langone Health, Tisch Hospital Renovations: Cafeteria",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CD58B9F7-F686-4801-BCF4-831AB75C6074/nyu-langone-health-tisch-hospital-renovations--cafeteria",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "R&F Shanghai Hongqiao Plot 5",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Stanford Law School, William H. Neukom Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFE36D23-2AE6-47EC-8BF3-BE68C6DE7017/stanford-law-school-william-h-neukom-building",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Sylvia H. Rambo United States Courthouse (Harrisburg Federal Courthouse)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/BE3AB8DD-D1A9-4C76-A8C0-7AC7DF83B4CF/sylvia-h-rambo-united-states-courthouse-harrisburg-federal-courthouse",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Syracuse University, S.I. Newhouse School of Public Communications III",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/84D9DEB5-5D80-4BB3-9F10-D9AA1A47428A/syracuse-university-s-i-newhouse-school-of-public-communications-iii",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "The Public Theater at Astor Place Facade Restoration Entry and Lobby Redesign",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CC2E6701-F1B6-4F1C-BA24-D35723C8C53E/the-public-theater-at-astor-place-facade-restoration-entry-and-lobby-redesign",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "United States Embassy, Ankara (OBO)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "University of Michigan, Biological Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5A7A0887-A40A-4900-A8B3-2B541830735D/university-of-michigan-biological-science-building",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Vassar College, Integrated Science Commons",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/43256F2E-323C-4C9C-A218-EE55FA7F35EB/vassar-college-integrated-science-commons",
+      "source": "detailed_table"
+    },
+    "proj_25": {
       "name": "New York University, Gallatin School of Individualized Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/88100CBA-B5DE-47BD-BEE6-F0FA87C06370/new-york-university-gallatin-school-of-individualized-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "New York University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_27": {
+      "name": "1430",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "stanford-in-new-york",
+      "url": "https://ei.ennead.com/project/89938168-43BD-41D3-9912-168E07B4412D/stanford-in-new-york",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=sabel@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:38.725283",
+  "scraped_at": "2025-09-17T21:11:28.225170",
   "profile_id": null
 }

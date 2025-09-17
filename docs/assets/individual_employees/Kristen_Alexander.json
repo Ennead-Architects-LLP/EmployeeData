@@ -1,7 +1,7 @@
 {
   "human_name": "Kristen Alexander",
   "email": "kristen.alexander@ennead.com",
-  "bio": "11",
+  "bio": null,
   "phone": "(212) 792-5887",
   "mobile": "(212) 792-5887",
   "office_location": "",
@@ -11,7 +11,9 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 11,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
     {
       "institution": "University of Texas, Austin",
@@ -19,121 +21,273 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
-      "name": "University of North Carolina School of Law",
+      "name": "University of",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "university-of-north-carolina-school-of-law",
       "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
-      "source": "fallback"
+      "source": "text_parsing"
     },
     "proj_2": {
-      "name": "Barbados Archive: Temporary Facility (ELab)",
+      "name": "University of",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_3": {
-      "name": "Children's Hospital at Montefiore",
+      "name": "Moseley Architects",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_4": {
+      "name": "Temporary Facility (ELab)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "barbados-archive--temporary-facility-elab",
+      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Government of",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Hospital at",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "children-s-hospital-at-montefiore",
+      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Hospital at",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "United States Consulate General, Nogales MexicoU.S. Department of State1608",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-consulate-general-nogales-mexico",
+      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
+      "source": "text_parsing"
+    },
+    "proj_9": {
       "name": "United States Consulate General, Nogales Mexico",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "Bureau of Overseas Buildings Operations - Nassau, Bahamas National Economic Council",
+    "proj_10": {
+      "name": "U.S. Department of State",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
+    "proj_11": {
+      "name": "Westmoreland Museum of American Art",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5BB168F2-21B3-42DE-B36D-C9AD21853342/westmoreland-museum-of-american-art",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "United States Consulate General, Lagos Nigeria (OBO)U.S. Department of State1807",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-consulate-general-lagos-nigeria-obo",
+      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
+      "source": "text_parsing"
+    },
+    "proj_13": {
       "name": "United States Consulate General, Lagos Nigeria (OBO)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C64560CC-E007-4714-B605-D6575450D4E9/united-states-consulate-general-lagos-nigeria-obo",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_14": {
+      "name": "United States Consulate General, Chiang Mai, Thailand (OBO)U.S. Department of State1838",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-consulate-general-chiang-mai-thailand-obo",
+      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo",
+      "source": "text_parsing"
+    },
+    "proj_15": {
       "name": "United States Consulate General, Chiang Mai, Thailand (OBO)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A626D349-2502-48E9-9A6F-344AD0E5A4E2/united-states-consulate-general-chiang-mai-thailand-obo",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_16": {
+      "name": "Huawei Wuhan Research and Development CampusEnnead Architects International LLP1326",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "huawei-wuhan-research-and-development-campus",
+      "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus",
+      "source": "text_parsing"
+    },
+    "proj_17": {
       "name": "Huawei Wuhan Research and Development Campus",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_18": {
+      "name": "Ennead Architects International LLP",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_19": {
+      "name": "R&F Shanghai Hongqiao Plot 5Ennead Architects International LLP1327",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "r-f-shanghai-hongqiao-plot-5",
+      "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5",
+      "source": "text_parsing"
+    },
+    "proj_20": {
       "name": "R&F Shanghai Hongqiao Plot 5",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_21": {
+      "name": "United States Embassy, Ankara (OBO)U.S. Department of State1425",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "united-states-embassy-ankara-obo",
+      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "United States Embassy, Ankara (OBO)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2C67FB41-2E43-4A12-9154-3A998ECEF0C8/united-states-embassy-ankara-obo",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_23": {
+      "name": "2243",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "university-of-north-carolina-school-of-law",
+      "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+      "source": "text_parsing"
+    },
+    "proj_24": {
+      "name": "2234",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "barbados-archive--temporary-facility-elab",
+      "url": "https://ei.ennead.com/project/5B6464C6-8DCA-4ACA-AAA4-C75B03DE6904/barbados-archive--temporary-facility-elab",
+      "source": "text_parsing"
+    },
+    "proj_25": {
+      "name": "1409",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "children-s-hospital-at-montefiore",
+      "url": "https://ei.ennead.com/project/890BA4B7-D67D-4BE1-9695-F7FCE28320BC/children-s-hospital-at-montefiore",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "1700",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
+      "url": "https://ei.ennead.com/project/82D3A259-62B0-4810-8873-FFDCF369D1DE/bureau-of-overseas-buildings-operations-nassau-bahamas-national-economic-council",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kalexander@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:08:42.595542",
+  "scraped_at": "2025-09-17T21:01:04.379541",
   "profile_id": null
 }

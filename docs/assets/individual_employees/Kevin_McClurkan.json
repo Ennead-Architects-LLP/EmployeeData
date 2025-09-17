@@ -11,7 +11,12 @@
   "position": "Partner",
   "department": "",
   "years_with_firm": 38,
-  "memberships": [],
+  "memberships": [
+    "LEED APNCARBAIA",
+    "LEED AP",
+    "NCARB",
+    "AIA"
+  ],
   "education": [
     {
       "institution": "University of Arkansas",
@@ -19,247 +24,363 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "AR",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "AZ",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "CA",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "CO",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "DC",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "FL",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "IN",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "KS",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "MA",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "MO",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NC",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NM",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "OR",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "TN",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "TX",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "UT",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "WA",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Land Surveyor",
-      "state": "NV",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
-      "name": "Shenzhen-Hongkong Science and Technology Innovation Cooperation Zone Phase I",
+      "name": "Hongkong Science and Technology Innovation Cooperation Zone Phase I",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
+      "number": "shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
       "url": "https://ei.ennead.com/project/439C46E4-2C81-4BEF-953D-9B3FB272084B/shenzhen-hongkong-science-and-technology-innovation-cooperation-zone-phase-i",
-      "source": "fallback"
+      "source": "text_parsing"
     },
     "proj_2": {
-      "name": "Roundabout Theatre Master Plan & Concept",
+      "name": "Shenzhen Hong Kong Science and Technology Innovation Cooperation Zone Development Co., Ltd",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_3": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "roundabout-theatre-master-plan-concept",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Roundabout",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Youth Ministries for Peace and Justice, Soundview Economic HubYouth Ministries for Peace & Justice2325",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "youth-ministries-for-peace-and-justice-soundview-economic-hub",
+      "url": "https://ei.ennead.com/project/5B9D7571-1400-4BE2-974E-06AB485D0F38/youth-ministries-for-peace-and-justice-soundview-economic-hub",
+      "source": "text_parsing"
+    },
+    "proj_7": {
       "name": "Youth Ministries for Peace and Justice, Soundview Economic Hub",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5B9D7571-1400-4BE2-974E-06AB485D0F38/youth-ministries-for-peace-and-justice-soundview-economic-hub",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_8": {
+      "name": "Youth Ministries for Peace & Justice",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "300 LafayetteAs Realty Partners0517",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "300-lafayette",
+      "url": "https://ei.ennead.com/project/B2895CED-85EB-4451-9BB4-555F00F32F48/300-lafayette",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "300 Lafayette",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/B2895CED-85EB-4451-9BB4-555F00F32F48/300-lafayette",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "455 First Avenue",
+    "proj_11": {
+      "name": "Zhonghuan Investment Development – Hongqi Village Plot E3",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/2F735A26-5CF6-4B42-B0D1-156FDC05F9AB/455-first-avenue",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/48365B9C-5F8C-47BC-AEDE-CD44D20D897F/zhonghuan-investment-development-hongqi-village-plot-e3",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "The Standard, High Line New York Pizza Oven/Pergola",
+    "proj_12": {
+      "name": "New York University, Faculty of Arts and Science, Humanities and Social Science Master Planning Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/E585E3AC-6426-49B3-AFF1-89389EC3A61E/the-standard-high-line-new-york-pizza-oven-pergola",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/6134CA69-A4C3-4E0C-8A43-6C9601123F07/new-york-university-faculty-of-arts-and-science-humanities-and-social-science-master-planning-study",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "Science and Innovation New City Science and Technology Museum (SciFi Museum)",
+    "proj_13": {
+      "name": "New York University, Main Hall",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/96E577B8-41B3-4DCA-AC06-E15722AF60EE/science-and-innovation-new-city-science-and-technology-museum-scifi-museum",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/881D9B37-7323-4B07-AD94-9C104AB0EC41/new-york-university-main-hall",
+      "source": "detailed_table"
     },
-    "proj_8": {
-      "name": "American Museum of Natural History, Starr Natural Sciences Building",
+    "proj_14": {
+      "name": "R&F Plaza Master Plan",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CBC51CF1-ADE0-445E-B80B-B491CA0FCB8E/american-museum-of-natural-history-starr-natural-sciences-building",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/33E657C4-802D-4D94-AF98-3B8158605F05/r-f-plaza-master-plan",
+      "source": "detailed_table"
     },
-    "proj_9": {
-      "name": "Sherman Avenue Mixed Use Development",
+    "proj_15": {
+      "name": "Smithsonian Institution, Cooper-Hewitt National Design Museum, Drue Heinz Study Center for Drawings & Prints and the Henry Luce Study Room for American Art",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A54AD7A9-0AB3-47C0-B668-2BC495B066B8/sherman-avenue-mixed-use-development",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/605D8853-C51B-49E6-9D16-7985E605EC3D/smithsonian-institution-cooper-hewitt-national-design-museum-drue-heinz-study-center-for-drawings-prints-and-the-henry-luce-study-room-for-american-art",
+      "source": "detailed_table"
     },
-    "proj_10": {
-      "name": "United States Consulate General, Nogales Mexico (planning)",
+    "proj_16": {
+      "name": "The University of Texas at Austin Cockrell School of Engineering, Master Plan Update and Energy Engineering Building Formation Study (EEB)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/1C75C8C0-8454-4CDC-91AE-669230800FC9/united-states-consulate-general-nogales-mexico-planning",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/FEE7E605-5A5B-491E-8AA3-66CC42B85A4A/the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "University of North Texas Health Science Center Medical Education and Training (MET) Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FAF789FA-3EC5-4490-9BC5-EC47B5B83AC8/university-of-north-texas-health-science-center-medical-education-and-training-met-building",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Zhengzhou Bairui Financial Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6299D287-554E-4956-9576-AF481BA6B978/zhengzhou-bairui-financial-center",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Cheung Kong Graduate School of Business (Beijing Campus)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C83C2922-0386-4C1B-B2AA-BBFF1442B9E8/cheung-kong-graduate-school-of-business-beijing-campus",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Alibaba Cainiao Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Bilibili Shanghai Headquarters",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "Yidan Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "United States Consulate General, Nogales Mexico",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/43464934-97A6-49FB-8FA8-A767A950BA52/united-states-consulate-general-nogales-mexico",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Shanghai Academy of Fine Art, Shanghai Univeresity",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CCFD748-A913-48C9-8A2F-6AB4DA2E65F9/shanghai-academy-of-fine-art-shanghai-univeresity",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "Johns Hopkins University Bloomberg Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33896CCE-34AE-47FA-A311-CB46D8C5C227/johns-hopkins-university-bloomberg-center",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "Nanda Plot 111-01",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "Jungle Plaza Mixed Use Development",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D9E483D3-27B9-41E6-B6C7-52EA39DCC310/jungle-plaza-mixed-use-development",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "DingTalk Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0FE2A5D0-F15C-4132-86A0-170DF9523990/dingtalk-competition",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "ByteDance Houhai Center Project",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "Inova Oakville at Potomac Yards Healthplex",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7523ABE9-B271-4D5A-9DF9-898EF2044C01/inova-oakville-at-potomac-yards-healthplex",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "Shenhzen International Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmcclurkan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:08:35.529146",
+  "scraped_at": "2025-09-17T21:00:27.437750",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Todd Schliemann",
   "email": "todd.schliemann@ennead.com",
-  "bio": "45",
+  "bio": null,
   "phone": "(212) 792-5965",
   "mobile": "(212) 792-5965",
   "office_location": "",
@@ -11,7 +11,11 @@
   "position": "Partner",
   "department": "",
   "years_with_firm": 45,
-  "memberships": [],
+  "memberships": [
+    "NCARBAIA",
+    "NCARB",
+    "AIA"
+  ],
   "education": [
     {
       "institution": "Cornell University",
@@ -19,128 +23,363 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "MI",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "American Museum of Natural History, Starr Natural Sciences BuildingAmerican Museum of Natural History9718",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "american-museum-of-natural-history-starr-natural-sciences-building",
+      "url": "https://ei.ennead.com/project/CBC51CF1-ADE0-445E-B80B-B491CA0FCB8E/american-museum-of-natural-history-starr-natural-sciences-building",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "American Museum of Natural History, Starr Natural Sciences Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CBC51CF1-ADE0-445E-B80B-B491CA0FCB8E/american-museum-of-natural-history-starr-natural-sciences-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "American Museum of Natural History",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "New York Public Library for the Performing Arts (NYPL)The New York Public Library9420",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-public-library-for-the-performing-arts-nypl",
+      "url": "https://ei.ennead.com/project/5F99AFFF-99E8-43DF-9B6E-D5354EB9DF29/new-york-public-library-for-the-performing-arts-nypl",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "New York Public Library for the Performing Arts (NYPL)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5F99AFFF-99E8-43DF-9B6E-D5354EB9DF29/new-york-public-library-for-the-performing-arts-nypl",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "The New York Public Library",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Cornell University, Computing and Information Science Building0623",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "cornell-university-computing-and-information-science-building",
+      "url": "https://ei.ennead.com/project/D2D5966C-16CE-4DD4-A900-19D24404D219/cornell-university-computing-and-information-science-building",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Cornell University, Computing and Information Science Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D2D5966C-16CE-4DD4-A900-19D24404D219/cornell-university-computing-and-information-science-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "Corning Incorporated, Houghton Park, C Building (Renovation)9303",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "corning-incorporated-houghton-park-c-building-renovation",
+      "url": "https://ei.ennead.com/project/28247E7B-D3CE-4855-B9A8-7B95E05D56E1/corning-incorporated-houghton-park-c-building-renovation",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "Corning Incorporated, Houghton Park, C Building (Renovation)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/28247E7B-D3CE-4855-B9A8-7B95E05D56E1/corning-incorporated-houghton-park-c-building-renovation",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "The University of Texas at Austin Cockrell School of Engineering, Master Plan Update and Energy Engineering Building Formation Study (EEB)",
+    "proj_11": {
+      "name": "Weill Cornell Medicine, Belfer Research Building, 8th Floor Fit-Out",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/FEE7E605-5A5B-491E-8AA3-66CC42B85A4A/the-university-of-texas-at-austin-cockrell-school-of-engineering-master-plan-update-and-energy-engineering-building-formation-study-eeb",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/5095F049-F058-484D-A9D3-F659D335FB34/weill-cornell-medicine-belfer-research-building-8th-floor-fit-out",
+      "source": "detailed_table"
     },
-    "proj_6": {
-      "name": "University of California, San Diego, Biological and Physical Sciences Building",
+    "proj_12": {
+      "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/83D250EC-9231-4952-8837-2E0C2DB6CC0F/university-of-california-san-diego-biological-and-physical-sciences-building",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+      "source": "detailed_table"
     },
-    "proj_7": {
-      "name": "York Avenue Development",
+    "proj_13": {
+      "name": "Massachusetts Institute of Technology, Stephen A. Schwarzman College of Computing (MIT)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D19CC9CD-4756-4F8C-8402-F39ED058DCB4/york-avenue-development",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/7B410E83-8B38-4EC1-82B9-33793246428B/massachusetts-institute-of-technology-stephen-a-schwarzman-college-of-computing-mit",
+      "source": "detailed_table"
     },
-    "proj_8": {
-      "name": "Northwell, Third Avenue Medical Office Building",
+    "proj_14": {
+      "name": "The Blue Shield of California Theater at YBCA (Yerba Buena)",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/CB6DA139-4052-449A-9F83-DBBCE4412634/the-blue-shield-of-california-theater-at-ybca-yerba-buena",
+      "source": "detailed_table"
     },
-    "proj_9": {
-      "name": "Nature & Culture Museum of Wisconsin",
+    "proj_15": {
+      "name": "Allegheny College, Vukovich Center for Communication Arts",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
+      "source": "detailed_table"
     },
-    "proj_10": {
-      "name": "The University of Texas at Austin, Gary L. Thomas Energy Engineering Building",
+    "proj_16": {
+      "name": "American Museum of Natural History, Rose Center for Earth and Space",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/184552B4-9399-4302-9C2A-CCFED78336C1/the-university-of-texas-at-austin-gary-l-thomas-energy-engineering-building",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/D495DC09-6FFA-46B2-ABD9-2A250BBB1BAC/american-museum-of-natural-history-rose-center-for-earth-and-space",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "American Museum of Natural History, Samuel J. & Ethel LeFrak IMAX Theater",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/687709A7-4B03-469E-9552-FEBA5162CF1D/american-museum-of-natural-history-samuel-j-ethel-lefrak-imax-theater",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "City University of New York, Medgar Evers College, Academic Building I",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FFA2FFA1-C895-4B10-8C72-F7E29F740641/city-university-of-new-york-medgar-evers-college-academic-building-i",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Cornell University Comprehensive Campus Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/8CE3D791-A632-4DF9-BC75-65D54FC34F49/cornell-university-comprehensive-campus-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Department of Homeless Services, Prevention Assistance and Temporary Housing (PATH)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7DAE1159-AD72-43F3-9C26-98102E0AE6AF/department-of-homeless-services-prevention-assistance-and-temporary-housing-path",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Fire Department of the City of New York Rescue Company 3",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/E40E8E70-684A-4D39-8EB7-6FB28A06AB92/fire-department-of-the-city-of-new-york-rescue-company-3",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "Goh Keng Swee Centre for Education",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D217F60E-C2D1-4B98-A079-299B4B07C88D/goh-keng-swee-centre-for-education",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "Marina Bay Integrated Resort Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AE7B93CE-3E9F-4B09-BFD1-F0B3D136F425/marina-bay-integrated-resort-competition",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "NASA Goddard Space Flight Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7EDED3EB-9ECF-4548-8DE7-C02F89B08101/nasa-goddard-space-flight-center",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Natural History Museum of Utah",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F5BBBDFE-34C6-4161-A330-DAD6EF306E58/natural-history-museum-of-utah",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "New York Hall of Science Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/31DF8D21-0364-4B77-AD16-D5857A0E2C8D/new-york-hall-of-science-expansion",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "New York Hall of Science Great Hall Upgrades and Terrace Improvements",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7DD086B3-436C-4215-AC53-BC344E2D3BD6/new-york-hall-of-science-great-hall-upgrades-and-terrace-improvements",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "New York University, Tisch School of the Arts, Institute of Performing Arts",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/0975B49C-6C4B-424C-A09A-D4F493370DBF/new-york-university-tisch-school-of-the-arts-institute-of-performing-arts",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "NYU Langone Health, Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "NYU Langone Health, Science Building",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "NYU Langone Health, Skirball Institute for Biomolecular Medicine and Residence Tower",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C68AED36-E85D-4C82-A0F9-F556C045D954/nyu-langone-health-skirball-institute-for-biomolecular-medicine-and-residence-tower",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "Phil and Penny Knight Campus for Accelerating Scientific Impact at University of Oregon",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/71B181F2-EDBC-42B9-A856-0078C8571EDC/phil-and-penny-knight-campus-for-accelerating-scientific-impact-at-university-of-oregon",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "Purdue University, College of Science, Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/609538FA-9D29-4370-9CF8-AD732A2D22FC/purdue-university-college-of-science-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "Purdue University, Flex Lab Facility",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/91CB6710-C515-442E-8C4D-C3CC788C3D00/purdue-university-flex-lab-facility",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=tschliemann@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:58.960074",
+  "scraped_at": "2025-09-17T21:12:47.392414",
   "profile_id": null
 }

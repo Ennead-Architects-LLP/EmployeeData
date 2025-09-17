@@ -1,7 +1,7 @@
 {
   "human_name": "Vivian Zhan",
   "email": "Vivian.Zhan@ennead.com",
-  "bio": "0",
+  "bio": null,
   "phone": "212.792.5884",
   "mobile": "212.792.5884",
   "office_location": "",
@@ -10,18 +10,15 @@
   "image_local_path": null,
   "position": "Architectural Designer",
   "department": "",
-  "years_with_firm": null,
-  "memberships": [],
+  "years_with_firm": 0,
+  "memberships": [
+    "LEED GA"
+  ],
   "education": [
-    {
-      "institution": "Cornell University",
-      "degree": "Graduate",
-      "specialty": "Master of Architecture"
-    },
     {
       "institution": "Pratt Institute",
       "degree": "Undergraduate",
-      "specialty": "Bachelor of Architecture"
+      "specialty": "Master of Architecture"
     }
   ],
   "licenses": [],
@@ -30,6 +27,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Vivian.Zhan@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:13:13.482129",
+  "scraped_at": "2025-09-17T21:13:49.205473",
   "profile_id": null
 }

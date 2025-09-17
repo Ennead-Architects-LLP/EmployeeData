@@ -11,91 +11,185 @@
   "position": "Intermediate Interior Designer",
   "department": "",
   "years_with_firm": 2,
-  "memberships": [],
+  "memberships": [
+    "LEED GANational Organization of Minority Architects",
+    "LEED GA",
+    "National Organization of Minority Architects"
+  ],
   "education": [
     {
-      "institution": "Harrisburg School of Science &",
-      "degree": "Graduate",
-      "specialty": "Project Management"
-    },
-    {
-      "institution": "Jawaharlal Nehru Architecture &",
-      "degree": "Undergraduate",
-      "specialty": "Architecture & Fine Arts"
-    },
-    {
       "institution": "New England School of Art &",
-      "degree": "Graduate",
-      "specialty": "Art & Design"
+      "degree": "Undergraduate",
+      "specialty": "Project Management"
     }
   ],
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Harvard Yard Libraries Feasibility StudyHarvard University2235",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "harvard-yard-libraries-feasibility-study",
+      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Harvard Yard Libraries Feasibility Study",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/CCC638FA-EBD2-4210-9636-B7169BBCE817/harvard-yard-libraries-feasibility-study",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Harvard University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "NYULH Brooklyn Ambulatory Hub BuildingNYU Langone Health2224",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyulh-brooklyn-ambulatory-hub-building",
+      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "NYULH Brooklyn Ambulatory Hub Building",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5E05E400-5453-4248-8EEC-F21407AE9A2B/nyulh-brooklyn-ambulatory-hub-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "NYU Langone Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "NYU Langone Health Schwartz Health Care Center Lobby PlanningNYU Langone Health2128",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "NYU Langone Health Schwartz Health Care Center Lobby Planning",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DD7A8769-0B75-4322-979C-529E11FEF149/nyu-langone-health-schwartz-health-care-center-lobby-planning",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
+    "proj_9": {
+      "name": "The Westminster Schools, Love HallThe Westminster Schools2105",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "the-westminster-schools-love-hall",
+      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
+      "source": "text_parsing"
+    },
+    "proj_10": {
       "name": "The Westminster Schools, Love Hall",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/AE07E2A9-A9BA-4EBA-AEFC-541815A6EF64/the-westminster-schools-love-hall",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_5": {
+    "proj_11": {
+      "name": "The Westminster Schools",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_12": {
+      "name": "Nature & Culture Museum of WisconsinMilwaukee Public Museum2100",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "nature-culture-museum-of-wisconsin",
+      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
+      "source": "text_parsing"
+    },
+    "proj_13": {
       "name": "Nature & Culture Museum of Wisconsin",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A95D7F6D-C331-4757-BDAB-38A44BCA0CF8/nature-culture-museum-of-wisconsin",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_6": {
-      "name": "Westminster Schools - Blake Center",
+    "proj_14": {
+      "name": "Milwaukee Public Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_15": {
+      "name": "Blake Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
       "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
-      "source": "fallback"
+      "source": "text_parsing"
+    },
+    "proj_16": {
+      "name": "1946",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "westminster-schools-blake-center",
+      "url": "https://ei.ennead.com/project/D586C257-C690-4D90-9C3A-02D09B67C0AF/westminster-schools-blake-center",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=trisha.awasthi@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:13:05.710905",
+  "scraped_at": "2025-09-17T21:13:33.172945",
   "profile_id": null
 }

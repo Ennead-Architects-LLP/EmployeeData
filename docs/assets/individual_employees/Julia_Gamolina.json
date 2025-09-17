@@ -1,7 +1,7 @@
 {
   "human_name": "Julia Gamolina",
   "email": "julia.gamolina@ennead.com",
-  "bio": "3",
+  "bio": null,
   "phone": "646-437-1689",
   "mobile": "646-437-1689",
   "office_location": "",
@@ -11,7 +11,11 @@
   "position": "Associate Principal",
   "department": "",
   "years_with_firm": 3,
-  "memberships": [],
+  "memberships": [
+    "LEED GAAIA",
+    "LEED GA",
+    "AIA"
+  ],
   "education": [
     {
       "institution": "Cornell University",
@@ -25,6 +29,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Julia.Gamolina@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:07:53.346124",
+  "scraped_at": "2025-09-17T20:58:58.242393",
   "profile_id": null
 }

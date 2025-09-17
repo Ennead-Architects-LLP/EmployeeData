@@ -1,7 +1,7 @@
 {
   "human_name": "Weishan Lian",
   "email": "weishan.lian@ennead.com",
-  "bio": "7",
+  "bio": null,
   "phone": "",
   "mobile": null,
   "office_location": "",
@@ -14,11 +14,6 @@
   "memberships": [],
   "education": [
     {
-      "institution": "Gottfried Wilhelm Leibniz Universitat Hannover",
-      "degree": "Graduate",
-      "specialty": "Architecture"
-    },
-    {
       "institution": "Qingdao University of Technology",
       "degree": "Undergraduate",
       "specialty": "Architecture"
@@ -27,110 +22,300 @@
   "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shaoxing-textile-museum",
+      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "Shaoxing Textile Museum",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "Zhejiang China Textile City Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative CompetitionVIP.com2321",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_3": {
+    "proj_6": {
+      "name": "VIP.com",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "bilibili-shanghai-headquarters",
+      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_8": {
       "name": "Bilibili Shanghai Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_4": {
-      "name": "Tencent Danchan Bay DY01-02 Neighborhood",
+    "proj_9": {
+      "name": "Bilibili Co.,Ltd.",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_10": {
+      "name": "02 Neighborhood",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "tencent-danchan-bay-dy01-02-neighborhood",
       "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
-      "source": "fallback"
+      "source": "text_parsing"
     },
-    "proj_5": {
-      "name": "Yidan Center",
+    "proj_11": {
+      "name": "Taopu Sci-Tech City Plot 606",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/9214C713-940A-4B59-B131-49273BF0A3BC/yidan-center",
-      "source": "fallback"
+      "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+      "source": "detailed_table"
     },
-    "proj_6": {
+    "proj_12": {
+      "name": "Lingang Pujiang International Healthcare City",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "Pujiang Phase II",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Pujiang Science and Creation Corridor Phase 1",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/FABD1742-8329-4B83-9B04-4A39F490DC6F/pujiang-science-and-creation-corridor-phase-1",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Taopu Smart City, Plot 603",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+      "source": "detailed_table"
+    },
+    "proj_16": {
       "name": "COMAC Campus, New Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/783B99E6-B9AD-4653-BC0C-5322978FCE38/comac-campus-new-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_7": {
+    "proj_17": {
+      "name": "Lingang",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-fengxian-soccer-training-center",
+      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center",
+      "source": "text_parsing"
+    },
+    "proj_18": {
+      "name": "Shenzhen Xiaomi HeadquartersShenzhen Xiaomi Technology Co. Ltd.2016",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shenzhen-xiaomi-headquarters",
+      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
+      "source": "text_parsing"
+    },
+    "proj_19": {
       "name": "Shenzhen Xiaomi Headquarters",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_8": {
+    "proj_20": {
+      "name": "Shenzhen Xiaomi Technology Co. Ltd.",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_21": {
+      "name": "Lingang Fengxian Soccer Training CenterLingang2005",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lingang-fengxian-soccer-training-center",
+      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center",
+      "source": "text_parsing"
+    },
+    "proj_22": {
       "name": "Lingang Fengxian Soccer Training Center",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/A282A6D9-DA10-4275-A715-8B868B6C9BAA/lingang-fengxian-soccer-training-center",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_9": {
+    "proj_23": {
+      "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+      "source": "text_parsing"
+    },
+    "proj_24": {
       "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_10": {
+    "proj_25": {
+      "name": "Lingang Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_26": {
+      "name": "Baoshan NandaLingang Economic Group1848",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "baoshan-nanda",
+      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda",
+      "source": "text_parsing"
+    },
+    "proj_27": {
       "name": "Baoshan Nanda",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/B559C535-46CD-4D63-8DBF-928FFC5175FF/baoshan-nanda",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_28": {
+      "name": "Lingang Economic Group",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_29": {
+      "name": "2133",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "tencent-danchan-bay-dy01-02-neighborhood",
+      "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
+      "source": "text_parsing"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=wlian@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:13:15.487456",
+  "scraped_at": "2025-09-17T21:13:55.099754",
   "profile_id": null
 }

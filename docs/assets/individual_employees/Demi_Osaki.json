@@ -1,7 +1,7 @@
 {
   "human_name": "Demi Osaki",
   "email": "Demi.Osaki@ennead.com",
-  "bio": "0",
+  "bio": null,
   "phone": "1-213-787-6612",
   "mobile": "1-213-787-6612",
   "office_location": "",
@@ -10,18 +10,13 @@
   "image_local_path": "assets/images/Demi Osaki_profile.jpg",
   "position": "Marketing Coordinator",
   "department": "",
-  "years_with_firm": null,
+  "years_with_firm": 0,
   "memberships": [],
   "education": [
     {
-      "institution": "University of California",
+      "institution": "Orange Coast College",
       "degree": "Undergraduate",
       "specialty": "Graphic Design"
-    },
-    {
-      "institution": "Orange Coast College",
-      "degree": "Associates",
-      "specialty": "Studio Arts"
     }
   ],
   "licenses": [],
@@ -30,6 +25,6 @@
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Demi.Osaki@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:04:23.643824",
+  "scraped_at": "2025-09-17T20:52:02.475043",
   "profile_id": null
 }

@@ -1,7 +1,7 @@
 {
   "human_name": "Stephen Chu",
   "email": "stephen.chu@ennead.com",
-  "bio": "30",
+  "bio": null,
   "phone": "(212) 792-5878",
   "mobile": "(212) 792-5878",
   "office_location": "",
@@ -11,7 +11,9 @@
   "position": "Partner",
   "department": "",
   "years_with_firm": 30,
-  "memberships": [],
+  "memberships": [
+    "AIA"
+  ],
   "education": [
     {
       "institution": "University of California, Berkeley",
@@ -19,128 +21,363 @@
       "specialty": "Architecture"
     }
   ],
-  "licenses": [
-    {
-      "license": "Registered Architect",
-      "state": "FL",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    },
-    {
-      "license": "Registered Architect",
-      "state": "NY",
-      "number": "",
-      "earned": "",
-      "source": "container_1_approach_1"
-    }
-  ],
+  "licenses": [],
   "projects": {
     "proj_1": {
+      "name": "New York University Kimmel Center StairNew York University2414",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "new-york-university-kimmel-center-stair",
+      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
+      "source": "text_parsing"
+    },
+    "proj_2": {
       "name": "New York University Kimmel Center Stair",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/3B1348B8-6268-41CC-8642-F994ABC3EDF7/new-york-university-kimmel-center-stair",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
-    "proj_2": {
+    "proj_3": {
+      "name": "New York University",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Omaha Performing Arts, Tenaska Center for Arts EngagementOmaha Performing Arts1843C",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "omaha-performing-arts-tenaska-center-for-arts-engagement",
+      "url": "https://ei.ennead.com/project/36CFEB84-F1C4-41CE-8C7B-A40DBE3A721F/omaha-performing-arts-tenaska-center-for-arts-engagement",
+      "source": "text_parsing"
+    },
+    "proj_5": {
       "name": "Omaha Performing Arts, Tenaska Center for Arts Engagement",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/36CFEB84-F1C4-41CE-8C7B-A40DBE3A721F/omaha-performing-arts-tenaska-center-for-arts-engagement",
-      "source": "fallback"
-    },
-    "proj_3": {
-      "name": "Roundabout Theatre Master Plan & Concept",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
-      "source": "fallback"
-    },
-    "proj_4": {
-      "name": "Omaha Performing Arts, Steelhouse Omaha",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
-      "source": "fallback"
-    },
-    "proj_5": {
-      "name": "Universal Hydrogen 2 Manufacturing Facility",
-      "description": "",
-      "role": "",
-      "year": "",
-      "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_6": {
-      "name": "Chicago Symphony Orchestra, Outdoor Amphitheatre Concept Study",
+      "name": "Omaha Performing Arts",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/B4E440D9-48CC-4C51-80A6-AEB2E81DBFC0/chicago-symphony-orchestra-outdoor-amphitheatre-concept-study",
-      "source": "fallback"
+      "number": "omaha-performing-arts-steelhouse-omaha",
+      "url": "https://ei.ennead.com/project/3204DCFF-1AA9-49FF-AAFB-CA63C2A7CBC1/omaha-performing-arts-steelhouse-omaha",
+      "source": "text_parsing"
     },
     "proj_7": {
-      "name": "The Old Globe Concept Design",
+      "name": "1843C",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/D23357C7-1CC6-41B9-8150-07190C8FD10B/the-old-globe-concept-design",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_8": {
-      "name": "The Public Theater at Astor Place, Facilities Assessment and Planning Study",
+      "name": "Roundabout",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
-      "number": "",
-      "url": "https://ei.ennead.com/project/0EBCF5D1-782D-4CD6-A0D7-3229001BF0FB/the-public-theater-at-astor-place-facilities-assessment-and-planning-study",
-      "source": "fallback"
+      "number": "roundabout-theatre-master-plan-concept",
+      "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+      "source": "text_parsing"
     },
     "proj_9": {
-      "name": "Koons Townhouse",
+      "name": "Roundabout",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/C786ED04-C90A-4858-9B4A-7D291B6A9832/koons-townhouse",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
     },
     "proj_10": {
-      "name": "University of California, San Diego, Biological and Physical Sciences Building",
+      "name": "Roundabout",
       "description": "",
       "role": "",
       "year": "",
       "client": "",
       "number": "",
-      "url": "https://ei.ennead.com/project/83D250EC-9231-4952-8837-2E0C2DB6CC0F/university-of-california-san-diego-biological-and-physical-sciences-building",
-      "source": "fallback"
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_11": {
+      "name": "New York University, Renovations to Chemical Biology Buildings",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/33086114-1B93-420A-9B07-8024A773CE83/new-york-university-renovations-to-chemical-biology-buildings",
+      "source": "detailed_table"
+    },
+    "proj_12": {
+      "name": "Shenhzen International Performance Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+      "source": "detailed_table"
+    },
+    "proj_13": {
+      "name": "The Public, Delacorte Theater, Central Park",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
+      "source": "detailed_table"
+    },
+    "proj_14": {
+      "name": "Omaha Performing Arts Campus Expansion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
+      "source": "detailed_table"
+    },
+    "proj_15": {
+      "name": "Connecticut College, Athey Center for Performance and Research at Palmer Auditorium",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+      "source": "detailed_table"
+    },
+    "proj_16": {
+      "name": "East Harlem Tutorial Program, Scholars Academy High School",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/839505BB-B85E-4091-AC91-15B9207F2398/east-harlem-tutorial-program-scholars-academy-high-school",
+      "source": "detailed_table"
+    },
+    "proj_17": {
+      "name": "Huawei Qingpu R&D Design Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
+      "source": "detailed_table"
+    },
+    "proj_18": {
+      "name": "Hudson New York (formerly known as Henry Hudson Hotel)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/7021F047-AB36-4C46-B78B-EE265A4C0F20/hudson-new-york-formerly-known-as-henry-hudson-hotel",
+      "source": "detailed_table"
+    },
+    "proj_19": {
+      "name": "Jazz at Lincoln Center, Frederick P. Rose Hall Public Space Redesign",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/4810BF50-1D65-4A4F-8F8E-DEC69077E660/jazz-at-lincoln-center-frederick-p-rose-hall-public-space-redesign",
+      "source": "detailed_table"
+    },
+    "proj_20": {
+      "name": "Jones Hall Concept Design",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/57D5344B-D09F-4C82-A653-B0EA29C667CA/jones-hall-concept-design",
+      "source": "detailed_table"
+    },
+    "proj_21": {
+      "name": "Lycée Français de New York",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/19554F98-DBB0-4730-AFE5-A33AEABBFBBB/lyc-e-fran-ais-de-new-york",
+      "source": "detailed_table"
+    },
+    "proj_22": {
+      "name": "New York University, Center for Genomics and Systems Biology",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/377F48A8-D06C-463E-A678-B1D60AA3775A/new-york-university-center-for-genomics-and-systems-biology",
+      "source": "detailed_table"
+    },
+    "proj_23": {
+      "name": "New York University, Tisch Master Plan",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/212E48B5-602A-4222-AD8D-16D40FC558BC/new-york-university-tisch-master-plan",
+      "source": "detailed_table"
+    },
+    "proj_24": {
+      "name": "NYU Langone Health, Helen L. and Martin S. Kimmel Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/6B5AFF45-DF16-45A2-883F-3BB8AE24FF16/nyu-langone-health-helen-l-and-martin-s-kimmel-pavilion",
+      "source": "detailed_table"
+    },
+    "proj_25": {
+      "name": "Peabody Essex Museum, Expansion and Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/B19FC4B1-0ED3-409A-9CA5-EADD76340532/peabody-essex-museum-expansion-and-renovation",
+      "source": "detailed_table"
+    },
+    "proj_26": {
+      "name": "Public Theater Annex - 440 Lafayette",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/236880BF-3BC5-49C1-8CA0-44EE7D268CC2/public-theater-annex-440-lafayette",
+      "source": "detailed_table"
+    },
+    "proj_27": {
+      "name": "Samuel J. Friedman Theatre for Manhattan Theatre Club (Biltmore)",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/45024801-8442-4299-83C2-4E4CB3DDA91E/samuel-j-friedman-theatre-for-manhattan-theatre-club-biltmore",
+      "source": "detailed_table"
+    },
+    "proj_28": {
+      "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute",
+      "source": "detailed_table"
+    },
+    "proj_29": {
+      "name": "The Public Theater at Astor Place Facade Restoration Entry and Lobby Redesign",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/CC2E6701-F1B6-4F1C-BA24-D35723C8C53E/the-public-theater-at-astor-place-facade-restoration-entry-and-lobby-redesign",
+      "source": "detailed_table"
+    },
+    "proj_30": {
+      "name": "University of Chicago, David M. Rubenstein Forum Competition",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/1A527EC8-5AD4-4496-A6E3-9A4A9EC7A69F/university-of-chicago-david-m-rubenstein-forum-competition",
+      "source": "detailed_table"
+    },
+    "proj_31": {
+      "name": "University of Michigan School of Music, Theatre & Dance, Earl V. Moore Building Renovation and Brehm Pavilion",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/DE7F27EA-9AEA-4067-886B-46EAAC67B6EE/university-of-michigan-school-of-music-theatre-dance-earl-v-moore-building-renovation-and-brehm-pavilion",
+      "source": "detailed_table"
+    },
+    "proj_32": {
+      "name": "Westchester Community College, Gateway Center for English as a Second Language",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/859C8284-F8E2-498B-901D-DE29E9388878/westchester-community-college-gateway-center-for-english-as-a-second-language",
+      "source": "detailed_table"
+    },
+    "proj_33": {
+      "name": "Williams College Paresky Center",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/22E6A32E-AAC8-4D45-8838-43676C8D4BD6/williams-college-paresky-center",
+      "source": "detailed_table"
+    },
+    "proj_34": {
+      "name": "Yale University Art Gallery, Kahn Building Renovation",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/F9EFB3AC-7C19-4632-BEC2-DA3B3728B8C4/yale-university-art-gallery-kahn-building-renovation",
+      "source": "detailed_table"
+    },
+    "proj_35": {
+      "name": "Stanford University, Bing Concert Hall",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "https://ei.ennead.com/project/19D3C710-6AD3-4BDA-AF5E-93E87954A185/stanford-university-bing-concert-hall",
+      "source": "detailed_table"
     }
   },
   "recent_posts": [],
   "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=schu@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-16T16:12:46.161209",
+  "scraped_at": "2025-09-17T21:11:43.517144",
   "profile_id": null
 }
