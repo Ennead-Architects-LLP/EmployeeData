@@ -18,6 +18,9 @@ jobs:
     # 1) Pull the latest repository contents so the job works on current code/data
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0  # Fetch full history for proper git operations
       
     # 2) Install a specific Python version used by the scraper
     - name: Set up Python
@@ -119,8 +122,23 @@ jobs:
         
         # Check if there are any changes to commit
         if ! git diff --staged --quiet; then
+          # Pull latest changes before pushing to avoid conflicts
+          echo "Pulling latest changes from remote..."
+          git pull --rebase origin main || {
+            echo "Rebase failed, trying merge instead..."
+            git pull origin main
+          }
+          
+          # Commit the changes
           git commit -m "🔄 Weekly Scraper Update: $(date) - Updated employee data, JSON artifacts, and profile images"
-          git push
+          
+          # Push with explicit remote and branch specification
+          echo "Pushing changes to remote..."
+          git push origin main || {
+            echo "Push failed, trying to resolve conflicts..."
+            git pull --rebase origin main
+            git push origin main
+          }
         else
           echo "No changes to commit"
         fi
