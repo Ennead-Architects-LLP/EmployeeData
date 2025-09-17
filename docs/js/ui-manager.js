@@ -45,6 +45,42 @@ function renderEmployees(employees = filteredEmployees) {
     }, 100);
 }
 
+// Helper functions for computer information display
+function formatMemory(value) {
+    if (!value) return null;
+    const bytes = parseInt(value);
+    if (isNaN(bytes)) return value;
+    return `${Math.round(bytes / (1024**3))} GB`;
+}
+
+function formatGPUMemory(value) {
+    if (!value) return null;
+    const bytes = parseFloat(value);
+    if (isNaN(bytes)) return value;
+    return `${Math.round(bytes / (1024**3))} GB`;
+}
+
+function renderComputerField(computer, fieldKey, displayLabel, alternateKey = null, formatter = null) {
+    // Fields to skip (as requested by user)
+    const skipFields = ['username', 'Username', 'last name', 'Last Name', 'first name', 'First Name', 'date', 'Date'];
+    
+    // Get value from computer object (try both lowercase and title case keys)
+    let value = computer[fieldKey] || computer[alternateKey];
+    
+    // Skip if no value or if field should be skipped
+    if (!value || skipFields.includes(fieldKey) || skipFields.includes(alternateKey)) {
+        return '';
+    }
+    
+    // Apply formatter if provided
+    if (formatter) {
+        value = formatter(value);
+        if (!value) return '';
+    }
+    
+    return `<p class="computer-item"><strong>${displayLabel}:</strong> ${value}</p>`;
+}
+
 function createEmployeeCard(employee) {
     // Determine the base path for assets (GitHub Pages vs local)
     const isGitHubPages = window.location.hostname.includes('github.io');
@@ -200,14 +236,20 @@ function createEmployeeCard(employee) {
                         </h4>
                         ${computers.map((computer, index) => `
                             <div class="computer-details">
-                                ${computer.computername ? `<h5 class="computer-name">${computer.computername}</h5>` : ''}
+                                ${computer.computername || computer.Computername ? `<h5 class="computer-name">${computer.computername || computer.Computername}</h5>` : ''}
                                 <div class="computer-specs">
-                                    ${computer.os ? `<p class="computer-item"><strong>OS:</strong> ${computer.os}</p>` : ''}
-                                    ${computer.cpu ? `<p class="computer-item"><strong>CPU:</strong> ${computer.cpu}</p>` : ''}
-                                    ${computer.gpu_name ? `<p class="computer-item"><strong>GPU:</strong> ${computer.gpu_name}</p>` : ''}
-                                    ${computer.memory_bytes ? `<p class="computer-item"><strong>RAM:</strong> ${Math.round(computer.memory_bytes / (1024**3))} GB</p>` : ''}
-                                    ${computer.manufacturer && computer.model ? `<p class="computer-item"><strong>Hardware:</strong> ${computer.manufacturer} ${computer.model}</p>` : ''}
-                                    ${computer.serial_number ? `<p class="computer-item"><strong>Serial:</strong> ${computer.serial_number}</p>` : ''}
+                                    ${renderComputerField(computer, 'os', 'OS', 'OS')}
+                                    ${renderComputerField(computer, 'cpu', 'CPU', 'CPU')}
+                                    ${renderComputerField(computer, 'gpu_name', 'GPU', 'GPU Name')}
+                                    ${renderComputerField(computer, 'gpu_processor', 'GPU Processor', 'GPU Processor')}
+                                    ${renderComputerField(computer, 'gpu_driver', 'GPU Driver', 'GPU Driver')}
+                                    ${renderComputerField(computer, 'gpu_age', 'GPU Age', 'GPU Age ')}
+                                    ${renderComputerField(computer, 'replacement_priority', 'Replacement Priority', 'Replacement Piroirty ')}
+                                    ${renderComputerField(computer, 'memory_bytes', 'RAM', 'Total Physical Memory', formatMemory)}
+                                    ${renderComputerField(computer, 'gpu_memory', 'GPU Memory', 'GPU Memory', formatGPUMemory)}
+                                    ${renderComputerField(computer, 'manufacturer', 'Manufacturer', 'Manufacturer')}
+                                    ${renderComputerField(computer, 'model', 'Model', 'Model')}
+                                    ${renderComputerField(computer, 'serial_number', 'Serial', 'Serial Number')}
                                 </div>
                             </div>
                         `).join('')}

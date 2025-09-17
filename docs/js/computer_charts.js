@@ -25,12 +25,13 @@
         }
 
         const fields = [
-            { key: 'os', label: 'Operating System' },
-            { key: 'cpu', label: 'CPU' },
-            { key: 'gpu_name', label: 'GPU' },
-            { key: 'manufacturer', label: 'Manufacturer' },
-            { key: 'model', label: 'Model' },
-            { key: 'memory_bytes', label: 'RAM (GB)', transform: v => v ? `${Math.round(Number(v) / (1024**3))} GB` : undefined },
+            { key: 'os', label: 'Operating System', altKey: 'OS' },
+            { key: 'cpu', label: 'CPU', altKey: 'CPU' },
+            { key: 'gpu_name', label: 'GPU', altKey: 'GPU Name' },
+            { key: 'gpu_processor', label: 'GPU Processor', altKey: 'GPU Processor' },
+            { key: 'manufacturer', label: 'Manufacturer', altKey: 'Manufacturer' },
+            { key: 'model', label: 'Model', altKey: 'Model' },
+            { key: 'memory_bytes', label: 'RAM (GB)', altKey: 'Total Physical Memory', transform: v => v ? `${Math.round(Number(v) / (1024**3))} GB` : undefined },
         ];
 
         const chartsContainer = document.getElementById('charts');
@@ -38,7 +39,8 @@
         for (const field of fields) {
             const counts = new Map();
             for (const c of computers) {
-                let value = c[field.key];
+                // Try both lowercase and title case keys
+                let value = c[field.key] || c[field.altKey];
                 if (field.transform) value = field.transform(value);
                 if (!value) continue;
                 counts.set(value, (counts.get(value) || 0) + 1);

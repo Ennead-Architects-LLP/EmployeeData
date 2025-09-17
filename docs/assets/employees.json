@@ -118,7 +118,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T18:47:49.119697",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-CCMD0M3": {
+        "Computername": "EANY-CCMD0M3",
+        "Username": "Adriana.Burton",
+        "Last Name": "Burton",
+        "First Name": "Adriana ",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133891856,
+        "CPU": "Intel(R) Xeon(R) W-2295 CPU @ 3.00GHz",
+        "Serial Number": "CCMD0M3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T18:29:00"
+      }
+    }
   },
   "Aidan Kim": {
     "human_name": "Aidan Kim",
@@ -439,7 +461,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T18:47:58.703335",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-CL5MWP3": {
+        "Computername": "EANY-CL5MWP3",
+        "Username": "akim",
+        "Last Name": "Kim",
+        "First Name": "Aidan",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893872,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "CL5MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-24T21:08:00"
+      }
+    }
   },
   "Aislinn Weidele": {
     "human_name": "Aislinn Weidele",
@@ -469,7 +513,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T18:48:18.300427",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-4B690W2": {
+        "Computername": "EANY-4B690W2",
+        "Username": "aweidele",
+        "Last Name": "Weidele",
+        "First Name": "Aislinn",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133880952,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "4B690W2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-24T17:01:00"
+      }
+    }
   },
   "Akil Matthews": {
     "human_name": "Akil Matthews",
@@ -794,7 +860,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T18:48:28.372624",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DMZJD3": {
+        "Computername": "EANY-8DMZJD3",
+        "Username": "amatthews",
+        "Last Name": "Matthews",
+        "First Name": "Akil",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DMZJD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-15T12:06:00"
+      }
+    }
   },
   "Alex O'Briant": {
     "human_name": "Alex O'Briant",
@@ -1177,7 +1265,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T18:48:48.231590",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-CYP2R53": {
+        "Computername": "EANY-CYP2R53",
+        "Username": "aobriant",
+        "Last Name": "O'Briant",
+        "First Name": "Alex",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66784184,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "CYP2R53",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-14T15:20:00"
+      }
+    }
   },
   "Alfonso Gorini": {
     "human_name": "Alfonso Gorini",
@@ -1321,7 +1431,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:02:48.837090",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-104K9Z2": {
+        "Computername": "EANY-104K9Z2",
+        "Username": "agorini",
+        "Last Name": "Gorini",
+        "First Name": "Alfonso",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772120,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "104K9Z2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-17T14:18:00"
+      }
+    }
   },
   "Amber Kulikauskas": {
     "human_name": "Amber Kulikauskas",
@@ -1457,7 +1589,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:02:51.373355",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "AKULIKAUSKASW11": {
+        "Computername": "AKULIKAUSKASW11",
+        "Username": "Kulikauskas, Amber",
+        "Last Name": "Kulikauskas",
+        "First Name": "Amber",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66771780,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "JFGXN23",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-17T16:38:00"
+      }
+    }
   },
   "Amy Mielke": {
     "human_name": "Amy Mielke",
@@ -1601,7 +1755,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:02:53.678404",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-FQPPN23": {
+        "Computername": "EANY-FQPPN23",
+        "Username": "amielke",
+        "Last Name": "Mielke",
+        "First Name": "Amy",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133880568,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "FQPPN23",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-09T18:18:00"
+      }
+    }
   },
   "Ana Guillandeaux": {
     "human_name": "Ana Guillandeaux",
@@ -1810,7 +1986,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:03:00.977879",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "AGUARALDO": {
+        "Computername": "AGUARALDO",
+        "Username": "aguaraldo",
+        "Last Name": "Guaraldo",
+        "First Name": "Anthony ",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "FL5MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.5612",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-08-28T16:41:00"
+      }
+    }
   },
   "Anwuli Chukwumah": {
     "human_name": "Anwuli Chukwumah",
@@ -1984,7 +2182,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:03:24.199520",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DY3KD3": {
+        "Computername": "EANY-8DY3KD3",
+        "Username": "Patel, Apexa",
+        "Last Name": "Patel",
+        "First Name": "Apexa",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DY3KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T13:18:00"
+      }
+    }
   },
   "Ashley Marshall": {
     "human_name": "Ashley Marshall",
@@ -2035,7 +2255,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:03:26.485778",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DM8KD3": {
+        "Computername": "EANY-8DM8KD3",
+        "Username": "ashley.marshall",
+        "Last Name": "Marshall",
+        "First Name": "Ashley",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783252,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DM8KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T23:45:00"
+      }
+    }
   },
   "Ayelet Gezow": {
     "human_name": "Ayelet Gezow",
@@ -2171,7 +2413,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:03:28.336913",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8NCHQ2": {
+        "Computername": "EANY-H8NCHQ2",
+        "Username": "agezow",
+        "Last Name": "Gezow",
+        "First Name": "Ayelet ",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219268,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8NCHQ2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "31.0.15.2886",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T11:50:00"
+      }
+    }
   },
   "Brian Masuda": {
     "human_name": "Brian Masuda",
@@ -2310,7 +2574,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:03:48.716182",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-DW8MWP3": {
+        "Computername": "EANY-DW8MWP3",
+        "Username": "bmasuda",
+        "Last Name": "Masuda",
+        "First Name": "Brian",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893872,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "DW8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T22:22:00"
+      }
+    }
   },
   "Callie Fleetwood": {
     "human_name": "Callie Fleetwood",
@@ -2724,7 +3010,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:03:58.491455",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-1MV4PY2": {
+        "Computername": "EANY-1MV4PY2",
+        "Username": "cbrainerd",
+        "Last Name": "Brainerd",
+        "First Name": "Charles",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219320,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "1MV4PY2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-18T02:45:00"
+      }
+    }
   },
   "Charles Griffith": {
     "human_name": "Charles Griffith",
@@ -2870,7 +3178,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:04:01.219585",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DW4KD3": {
+        "Computername": "EANY-8DW4KD3",
+        "Username": "cgriffith",
+        "Last Name": "Griffith",
+        "First Name": "Charles",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DW4KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T15:37:00"
+      }
+    }
   },
   "Chihwei Hsu": {
     "human_name": "Chihwei Hsu",
@@ -3014,7 +3344,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:04:03.875971",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8PHHQ2": {
+        "Computername": "EANY-H8PHHQ2",
+        "Username": "chsu",
+        "Last Name": "Hsu",
+        "First Name": "Chihwei ",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 100326504,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8PHHQ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-27T10:37:00"
+      }
+    }
   },
   "Chris Stoddard": {
     "human_name": "Chris Stoddard",
@@ -3307,7 +3659,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:04:11.558597",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DNZJD3": {
+        "Computername": "EANY-8DNZJD3",
+        "Username": "Clara.Martucci",
+        "Last Name": "Martucci",
+        "First Name": "Clara",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783252,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DNZJD3",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-31T13:37:00"
+      }
+    }
   },
   "Clayton Kaul": {
     "human_name": "Clayton Kaul",
@@ -3401,93 +3775,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:04:14.053387",
-    "profile_id": null
-  },
-  "DaYeon Kim": {
-    "human_name": "DaYeon Kim",
-    "email": "DaYeon.Kim@ennead.com",
-    "bio": "4",
-    "phone": "646-437-1761",
-    "mobile": "646-437-1761",
-    "office_location": "",
-    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
-    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
-    "position": "Senior Project Architect",
-    "department": "",
-    "years_with_firm": 4,
-    "memberships": [],
-    "education": [
-      {
-        "institution": "Dankook University",
-        "degree": "Undergraduate",
-        "specialty": "Architectural Engineering"
-      },
-      {
-        "institution": "Columbia University",
-        "degree": "Graduate",
-        "specialty": "Planning and Preservation M.Arch"
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DVZJD3": {
+        "Computername": "EANY-8DVZJD3",
+        "Username": "Kaul, Clayton",
+        "Last Name": "Kaul",
+        "First Name": "Clayton",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DVZJD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T17:56:00"
       }
-    ],
-    "licenses": [],
-    "projects": {
-      "proj_1": {
-        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-        "source": "fallback"
-      },
-      "proj_2": {
-        "name": "Northwell, Third Avenue Medical Office Building",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-        "source": "fallback"
-      },
-      "proj_3": {
-        "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "source": "fallback"
-      },
-      "proj_4": {
-        "name": "Kuwait University Health Sciences Campus",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
-        "source": "fallback"
-      },
-      "proj_5": {
-        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-        "source": "fallback"
-      }
-    },
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-16T16:04:21.276526",
-    "profile_id": null
+    }
   },
   "David Appel": {
     "human_name": "David Appel",
@@ -3517,7 +3827,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:04:16.543441",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "DAPPEL-M": {
+        "Computername": "DAPPEL-M",
+        "Username": "dappel",
+        "Last Name": "Appel",
+        "First Name": "David",
+        "OS": "Microsoft Windows NT Workstation 10.0 (Tablet Edition)",
+        "Manufacturer": "Microsoft Corporation",
+        "Model": "Surface Laptop 4",
+        "Total Physical Memory": 16203108,
+        "CPU": "AMD Ryzen 7 Microsoft Surface (R) Edition",
+        "Serial Number": 21528313557,
+        "GPU Name": "DisplayLink USB Device",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": null,
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "11.5.6380.0",
+        "GPU Memory": null,
+        "Date": "2024-08-22T15:26:00"
+      }
+    }
   },
   "David Tepper": {
     "human_name": "David Tepper",
@@ -3661,7 +3993,137 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:04:18.964807",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DM5KD3": {
+        "Computername": "EANY-8DM5KD3",
+        "Username": "dtepper",
+        "Last Name": "Tepper",
+        "First Name": "David",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133892232,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DM5KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-27T19:00:00"
+      }
+    }
+  },
+  "DaYeon Kim": {
+    "human_name": "DaYeon Kim",
+    "email": "DaYeon.Kim@ennead.com",
+    "bio": "4",
+    "phone": "646-437-1761",
+    "mobile": "646-437-1761",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
+    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
+    "position": "Senior Project Architect",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Dankook University",
+        "degree": "Undergraduate",
+        "specialty": "Architectural Engineering"
+      },
+      {
+        "institution": "Columbia University",
+        "degree": "Graduate",
+        "specialty": "Planning and Preservation M.Arch"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+        "source": "fallback"
+      },
+      "proj_2": {
+        "name": "Northwell, Third Avenue Medical Office Building",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "fallback"
+      },
+      "proj_3": {
+        "name": "University of California Santa Cruz, Thimann Laboratories Major Capital Project",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "fallback"
+      },
+      "proj_4": {
+        "name": "Kuwait University Health Sciences Campus",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+        "source": "fallback"
+      },
+      "proj_5": {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "fallback"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-16T16:04:21.276526",
+    "profile_id": null,
+    "computer_info": {
+      "EANY-3WSPSZ2": {
+        "Computername": "EANY-3WSPSZ2",
+        "Username": "dayeon.kim",
+        "Last Name": "Kim",
+        "First Name": "Dayeon",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772084,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WSPSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T16:49:00"
+      }
+    }
   },
   "Demi Osaki": {
     "human_name": "Demi Osaki",
@@ -4077,7 +4539,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:04:48.682439",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "DLEWIS": {
+        "Computername": "DLEWIS",
+        "Username": "dlewis",
+        "Last Name": "Lewis",
+        "First Name": "Doris",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DP2KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-08-24T04:13:00"
+      }
+    }
   },
   "Edward Kim": {
     "human_name": "Edward Kim",
@@ -4208,7 +4692,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:04:51.613715",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-JFGVN23": {
+        "Computername": "EANY-JFGVN23",
+        "Username": "ekim",
+        "Last Name": "Kim",
+        "First Name": "Edward",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66771012,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "JFGVN23",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-07T21:49:00"
+      }
+    }
   },
   "Elodie Graham": {
     "human_name": "Elodie Graham",
@@ -4334,7 +4840,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:05:11.652346",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DP5KD3": {
+        "Computername": "EANY-8DP5KD3",
+        "Username": "Graham, Elodie",
+        "Last Name": "Graham",
+        "First Name": "Elodie",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DP5KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "31.0.15.2886",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-11T12:40:00"
+      }
+    }
   },
   "Emily Kirkland": {
     "human_name": "Emily Kirkland",
@@ -4473,7 +5001,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:05:14.357718",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-JFG3P23": {
+        "Computername": "EANY-JFG3P23",
+        "Username": "ekirkland",
+        "Last Name": "Kirkland",
+        "First Name": "Emily",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33217352,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "JFG3P23",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-08-09T13:35:00"
+      }
+    }
   },
   "Eva Liu": {
     "human_name": "Eva Liu",
@@ -4680,7 +5230,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:05:57.508786",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "FGARCIAW11": {
+        "Computername": "FGARCIAW11",
+        "Username": "fgarcia",
+        "Last Name": "Garcia",
+        "First Name": "Favian",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DP6KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-15T12:52:00"
+      }
+    }
   },
   "Felicia Berger": {
     "human_name": "Felicia Berger",
@@ -4852,7 +5424,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:00.268793",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-4B6B0W2": {
+        "Computername": "EANY-4B6B0W2",
+        "Username": "fberger",
+        "Last Name": "Berger",
+        "First Name": "Felicia",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219252,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "4B6B0W2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-27T15:29:00"
+      }
+    }
   },
   "Feliks Peck": {
     "human_name": "Feliks Peck",
@@ -4882,7 +5476,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:02.926334",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "FPECKS": {
+        "Computername": "FPECKS",
+        "Username": "fpeck",
+        "Last Name": "Peck",
+        "First Name": "Feliks",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219268,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8NFHQ2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-08-27T10:19:00"
+      }
+    }
   },
   "Francelle Lim": {
     "human_name": "Francelle Lim",
@@ -5026,7 +5642,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:05.046358",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-104L9Z2": {
+        "Computername": "EANY-104L9Z2",
+        "Username": "flim",
+        "Last Name": "Lim",
+        "First Name": "Francelle",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219328,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "104L9Z2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-14T15:53:00"
+      }
+    }
   },
   "Gary Anderson": {
     "human_name": "Gary Anderson",
@@ -5165,7 +5803,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:09.071894",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DN2KD3": {
+        "Computername": "EANY-8DN2KD3",
+        "Username": "ganderson",
+        "Last Name": "Anderson",
+        "First Name": "Gary",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DN2KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-27T15:26:00"
+      }
+    }
   },
   "Gayatri Desai": {
     "human_name": "Gayatri Desai",
@@ -5211,7 +5871,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:11.574781",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "GDESAI": {
+        "Computername": "GDESAI",
+        "Username": "gayatri.desai",
+        "Last Name": "Desai",
+        "First Name": "Gayatri ",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893872,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "GW8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-08-21T16:01:00"
+      }
+    }
   },
   "Gemma Xie": {
     "human_name": "Gemma Xie",
@@ -5246,7 +5928,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:13.930353",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-BX8MWP3": {
+        "Computername": "EANY-BX8MWP3",
+        "Username": "Gemma.Xie",
+        "Last Name": "Xie",
+        "First Name": "Gemma",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893752,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "BX8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-24T22:34:00"
+      }
+    }
   },
   "Grace Chen": {
     "human_name": "Grace Chen",
@@ -5562,7 +6266,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:19.155678",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DN1KD3": {
+        "Computername": "EANY-8DN1KD3",
+        "Username": "gmaxwell",
+        "Last Name": "Maxwell",
+        "First Name": "Guy",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DN1KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-22T18:25:00"
+      }
+    }
   },
   "Han Isozen": {
     "human_name": "Han Isozen",
@@ -5595,6 +6321,7 @@
     "profile_id": null,
     "computer_info": {
       "EANY-8DW8KD3": {
+<<<<<<< HEAD
         "computername": "EANY-8DW8KD3",
         "os": "Windows 11",
         "manufacturer": "Dell Inc.",
@@ -5605,6 +6332,26 @@
         "memory_bytes": 119925776384,
         "serial_number": "8DW8KD3",
         "last_updated": "2025-09-17T15:54:24.602154"
+=======
+        "Computername": "EANY-8DW8KD3",
+        "Username": "Han.Isozen",
+        "Last Name": "Isozen",
+        "First Name": "Han",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 117115016,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DW8KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "31.0.15.2886",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-14T11:18:00"
+>>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   },
@@ -5641,7 +6388,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:24.114443",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-5GXKG73": {
+        "Computername": "EANY-5GXKG73",
+        "Username": "Peng, HsiaoChiao",
+        "Last Name": "Peng",
+        "First Name": " Hsiaochiao",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66784152,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "5GXKG73",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-24T14:00:00"
+      }
+    }
   },
   "HyunJoo Lee": {
     "human_name": "HyunJoo Lee",
@@ -5747,7 +6516,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:43.826778",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-3WTKSZ2": {
+        "Computername": "EANY-3WTKSZ2",
+        "Username": "hjlee",
+        "Last Name": "Lee",
+        "First Name": "HyunJoo",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772124,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WTKSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-27T18:58:00"
+      }
+    }
   },
   "Ingrid Evenson": {
     "human_name": "Ingrid Evenson",
@@ -5838,7 +6629,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:46.493928",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DM7KD3": {
+        "Computername": "EANY-8DM7KD3",
+        "Username": "ingrid.evenson",
+        "Last Name": "Evenson",
+        "First Name": "Ingrid",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DM7KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T20:59:00"
+      }
+    }
   },
   "James Sinks": {
     "human_name": "James Sinks",
@@ -5982,7 +6795,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:50.204956",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-5GYDG73": {
+        "Computername": "EANY-5GYDG73",
+        "Username": "jsinks",
+        "Last Name": "Sinks",
+        "First Name": "James",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66784260,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "5GYDG73",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-28T00:53:00"
+      }
+    }
   },
   "Jarrett Pelletier": {
     "human_name": "Jarrett Pelletier",
@@ -6121,7 +6956,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:52.336640",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8PBHQ2": {
+        "Computername": "EANY-H8PBHQ2",
+        "Username": "jpelletier",
+        "Last Name": "Pelletier",
+        "First Name": "Jarrett",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219268,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8PBHQ2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-08-09T08:42:00"
+      }
+    }
   },
   "Jasmine Ho": {
     "human_name": "Jasmine Ho",
@@ -6172,7 +7029,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:55.057452",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-BBLS233": {
+        "Computername": "EANY-BBLS233",
+        "Username": "Jasmine.Ho",
+        "Last Name": "Ho",
+        "First Name": "Jasmine",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33229280,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "BBLS233",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-08T18:56:00"
+      }
+    }
   },
   "Jason Ojeda": {
     "human_name": "Jason Ojeda",
@@ -6202,7 +7081,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:57.504341",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-F5KM7X2": {
+        "Computername": "EANY-F5KM7X2",
+        "Username": "Jason.Ojeda",
+        "Last Name": "Ojeda",
+        "First Name": "Jason",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772116,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "F5KM7X2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-08-01T22:54:00"
+      }
+    }
   },
   "Jay Chang": {
     "human_name": "Jay Chang",
@@ -6414,7 +7315,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:07:02.437899",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-JFG1P23": {
+        "Computername": "EANY-JFG1P23",
+        "Username": "jsandoval",
+        "Last Name": "Sandoval",
+        "First Name": "Jenn",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33217276,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "JFG1P23",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-14T18:13:00"
+      }
+    }
   },
   "Jessica Gunraj": {
     "human_name": "Jessica Gunraj",
@@ -6493,7 +7416,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:07:06.026278",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-4B5B0W2": {
+        "Computername": "EANY-4B5B0W2",
+        "Username": "jgunraj",
+        "Last Name": "Gunraj",
+        "First Name": "Jessica",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33217772,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "4B5B0W2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-29T17:09:00"
+      }
+    }
   },
   "Ji Hyeon Park": {
     "human_name": "Ji Hyeon Park",
@@ -6589,7 +7534,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:07:10.894368",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-FV4B9T2": {
+        "Computername": "EANY-FV4B9T2",
+        "Username": "jlees.ahmed",
+        "Last Name": "Ahmed",
+        "First Name": "Jlees",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772188,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "FV4B9T2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-17T22:17:00"
+      }
+    }
   },
   "Joanna Lisiak": {
     "human_name": "Joanna Lisiak",
@@ -6632,7 +7599,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:07:13.462703",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-5GXLG73": {
+        "Computername": "EANY-5GXLG73",
+        "Username": "jlisiak",
+        "Last Name": "Lisiak",
+        "First Name": "Joanna",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33228784,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "5GXLG73",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T11:44:00"
+      }
+    }
   },
   "John Jordan": {
     "human_name": "John Jordan",
@@ -6771,7 +7760,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:07:33.309282",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-1MV6PY2": {
+        "Computername": "EANY-1MV6PY2",
+        "Username": "Jordan, John",
+        "Last Name": "Jordan",
+        "First Name": "John",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219296,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "1MV6PY2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-23T11:50:00"
+      }
+    }
   },
   "Julia Gamolina": {
     "human_name": "Julia Gamolina",
@@ -6801,7 +7812,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:07:53.346124",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DW1KD3": {
+        "Computername": "EANY-8DW1KD3",
+        "Username": "Julia.Gamolina",
+        "Last Name": "Gamolina",
+        "First Name": "Julia",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DW1KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T10:54:00"
+      }
+    }
   },
   "Julia Specht": {
     "human_name": "Julia Specht",
@@ -6862,7 +7895,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:07:55.756079",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DP7KD3": {
+        "Computername": "EANY-8DP7KD3",
+        "Username": "julia.specht",
+        "Last Name": "Specht",
+        "First Name": "Julia",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DP7KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T21:18:00"
+      }
+    }
   },
   "Justin Woo": {
     "human_name": "Justin Woo",
@@ -7223,7 +8278,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:08:25.432270",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "GMAXWELL1": {
+        "Computername": "GMAXWELL1",
+        "Username": "Katie.Fairbrother",
+        "Last Name": "Fairbrother",
+        "First Name": "Katie",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66784196,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "5GWHG73",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-10-28T20:45:00"
+      }
+    }
   },
   "Kevin Hamlett": {
     "human_name": "Kevin Hamlett",
@@ -7367,7 +8444,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:08:28.254875",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-GX8MWP3": {
+        "Computername": "EANY-GX8MWP3",
+        "Username": "khamlett",
+        "Last Name": "Hamlett",
+        "First Name": "Kevin",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893752,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "GX8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7348",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-17T17:58:00"
+      }
+    }
   },
   "Kevin Kim": {
     "human_name": "Kevin Kim",
@@ -7481,7 +8580,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:08:30.317012",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-4X8MWP3": {
+        "Computername": "EANY-4X8MWP3",
+        "Username": "kevin.kim",
+        "Last Name": "Kim",
+        "First Name": "Kevin",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893872,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "4X8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-27T12:40:00"
+      }
+    }
   },
   "Kevin Krudwig": {
     "human_name": "Kevin Krudwig",
@@ -7890,7 +9011,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:08:35.529146",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-HX8MWP3": {
+        "Computername": "EANY-HX8MWP3",
+        "Username": "kmcclurkan",
+        "Last Name": "Mcclurkan",
+        "First Name": "Kevin",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133892116,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "HX8MWP3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T18:30:00"
+      }
+    }
   },
   "Kevin Seymour": {
     "human_name": "Kevin Seymour",
@@ -8034,7 +9177,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:08:37.633953",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-3WSNSZ2": {
+        "Computername": "EANY-3WSNSZ2",
+        "Username": "kseymour",
+        "Last Name": "Seymour",
+        "First Name": "Kevin",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33217688,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WSNSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-27T14:26:00"
+      }
+    }
   },
   "Kori Camacho-Onal": {
     "human_name": "Kori Camacho-Onal",
@@ -8292,7 +9457,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:08:42.595542",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-4B850W2": {
+        "Computername": "EANY-4B850W2",
+        "Username": "kalexander",
+        "Last Name": "Alexander",
+        "First Name": "Kristen",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33217584,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "4B850W2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-24T19:34:00"
+      }
+    }
   },
   "Kyo-Young Jin": {
     "human_name": "Kyo-Young Jin",
@@ -8423,7 +9610,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:08:44.834067",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-FW8MWP3": {
+        "Computername": "EANY-FW8MWP3",
+        "Username": "kjin",
+        "Last Name": "Jin",
+        "First Name": "Kyo-Young",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "FW8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T16:52:00"
+      }
+    }
   },
   "Kyung Min": {
     "human_name": "Kyung Min",
@@ -8559,7 +9768,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:08:47.214246",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8QFHQ2": {
+        "Computername": "EANY-H8QFHQ2",
+        "Username": "kmin",
+        "Last Name": "Min",
+        "First Name": "Kyung",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772072,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8QFHQ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T19:45:00"
+      }
+    }
   },
   "L Fang": {
     "human_name": "L Fang",
@@ -8648,7 +9879,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:09.700137",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8NHHQ2": {
+        "Computername": "EANY-H8NHHQ2",
+        "Username": "lanee.carter",
+        "Last Name": "Carter",
+        "First Name": "Lanee",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 49994852,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8NHHQ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7348",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-14T17:11:00"
+      }
+    }
   },
   "Latoya Kamdang": {
     "human_name": "Latoya Kamdang",
@@ -8696,7 +9949,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:12.297151",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "SURFACELAPTOP73": {
+        "Computername": "SURFACELAPTOP73",
+        "Username": "latoya.kamdang",
+        "Last Name": "Kamdang",
+        "First Name": "Latoya",
+        "OS": "Microsoft Windows NT Workstation 10.0 (Tablet Edition)",
+        "Manufacturer": "Microsoft Corporation",
+        "Model": "Surface Laptop 3",
+        "Total Physical Memory": 16353432,
+        "CPU": "Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz",
+        "Serial Number": 30780305157,
+        "GPU Name": "DisplayLink USB Device",
+        "GPU Date": "2019-10-22T00:00:00",
+        "GPU Age ": "6 Years",
+        "GPU Processor": null,
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "11.5.6380.0",
+        "GPU Memory": null,
+        "Date": "2025-01-22T13:31:00"
+      }
+    }
   },
   "Laura Joo": {
     "human_name": "Laura Joo",
@@ -8802,7 +10077,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:14.762927",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DM6KD3": {
+        "Computername": "EANY-8DM6KD3",
+        "Username": "laura.joo",
+        "Last Name": "Joo",
+        "First Name": "Laura",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133892228,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DM6KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T18:27:00"
+      }
+    }
   },
   "Laura Rodriguez": {
     "human_name": "Laura Rodriguez",
@@ -8893,7 +10190,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:16.881890",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DV7KD3": {
+        "Computername": "EANY-8DV7KD3",
+        "Username": "laura.rodriguez",
+        "Last Name": "Rodriguez",
+        "First Name": "Laura",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133892228,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DV7KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T20:21:00"
+      }
+    }
   },
   "Leah Li": {
     "human_name": "Leah Li",
@@ -8958,7 +10277,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:21.617724",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DN3KD3": {
+        "Computername": "EANY-8DN3KD3",
+        "Username": "lena.yang",
+        "Last Name": "Yang",
+        "First Name": "Lena",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DN3KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-17T23:30:00"
+      }
+    }
   },
   "Lisa Reese": {
     "human_name": "Lisa Reese",
@@ -8988,7 +10329,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:24.102673",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-5GY9G73": {
+        "Computername": "EANY-5GY9G73",
+        "Username": "lreese",
+        "Last Name": "Reese",
+        "First Name": "Lisa",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33229828,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "5GY9G73",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-08-09T20:22:00"
+      }
+    }
   },
   "Liz Shaban": {
     "human_name": "Liz Shaban",
@@ -9072,7 +10435,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:26.993070",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-4B790W2": {
+        "Computername": "EANY-4B790W2",
+        "Username": "liz.shaban",
+        "Last Name": "Shaban",
+        "First Name": "Liz",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772056,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "4B790W2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-22T11:33:00"
+      }
+    }
   },
   "Lois Mate": {
     "human_name": "Lois Mate",
@@ -9216,7 +10601,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:29.019095",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-FQQDN23": {
+        "Computername": "EANY-FQQDN23",
+        "Username": "lmate",
+        "Last Name": "Mate",
+        "First Name": "Lois",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66771784,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "FQQDN23",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T14:39:00"
+      }
+    }
   },
   "Lynn Zhang": {
     "human_name": "Lynn Zhang",
@@ -9411,7 +10818,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:33.508233",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DY4KD3": {
+        "Computername": "EANY-8DY4KD3",
+        "Username": "madeleine.reid",
+        "Last Name": "Reid",
+        "First Name": "Madeleine",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DY4KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T11:25:00"
+      }
+    }
   },
   "Manson Fung": {
     "human_name": "Manson Fung",
@@ -9557,7 +10986,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:35.959257",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-FQQHN23": {
+        "Computername": "EANY-FQQHN23",
+        "Username": "mfung",
+        "Last Name": "Fung",
+        "First Name": "Manson",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 100326216,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "FQQHN23",
+        "GPU Name": "NVIDIA Quadro P5000",
+        "GPU Date": "2016-10-01T00:00:00",
+        "GPU Age ": "9 Years",
+        "GPU Processor": "Quadro P5000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-17T22:44:00"
+      }
+    }
   },
   "Mariana Bravo": {
     "human_name": "Mariana Bravo",
@@ -9658,7 +11109,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:38.140173",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-DL5MWP3": {
+        "Computername": "EANY-DL5MWP3",
+        "Username": "mariana.bravo",
+        "Last Name": "Bravo",
+        "First Name": "Mariana",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893872,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "DL5MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-03T12:26:00"
+      }
+    }
   },
   "Marissa Sweig": {
     "human_name": "Marissa Sweig",
@@ -9802,7 +11275,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:40.482821",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-5GXDG73": {
+        "Computername": "EANY-5GXDG73",
+        "Username": "msweig",
+        "Last Name": "Sweig",
+        "First Name": "Marissa",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66784196,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "5GXDG73",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-10T12:45:00"
+      }
+    }
   },
   "Mat Strack": {
     "human_name": "Mat Strack",
@@ -10069,7 +11564,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:45.621736",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DY7KD3": {
+        "Computername": "EANY-8DY7KD3",
+        "Username": "MHitscherich",
+        "Last Name": "Hitscherich",
+        "First Name": "Matt",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DY7KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T13:07:00"
+      }
+    }
   },
   "Matt Mendicino": {
     "human_name": "Matt Mendicino",
@@ -10185,7 +11702,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:49.846466",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "MRYANW11": {
+        "Computername": "MRYANW11",
+        "Username": "matt.ryan",
+        "Last Name": "Ryan",
+        "First Name": "Matt",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772116,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "F5KQ7X2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-15T12:47:00"
+      }
+    }
   },
   "Matthew Dionne": {
     "human_name": "Matthew Dionne",
@@ -10324,7 +11863,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:52.785489",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-4B760W2": {
+        "Computername": "EANY-4B760W2",
+        "Username": "mdionne",
+        "Last Name": "Dionne",
+        "First Name": "Matthew",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219284,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "4B760W2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T03:11:00"
+      }
+    }
   },
   "Melanie Weismiller": {
     "human_name": "Melanie Weismiller",
@@ -10463,7 +12024,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:54.976504",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DV8KD3": {
+        "Computername": "EANY-8DV8KD3",
+        "Username": "Weismiller, Melanie",
+        "Last Name": "Weismiller",
+        "First Name": "Melanie",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DV8KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "31.0.15.2886",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-21T13:42:00"
+      }
+    }
   },
   "Melissa Hendrix": {
     "human_name": "Melissa Hendrix",
@@ -10529,7 +12112,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:57.223131",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DWZJD3": {
+        "Computername": "EANY-8DWZJD3",
+        "Username": "melissa.hendrix",
+        "Last Name": "Hendrix",
+        "First Name": "Melissa",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DWZJD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T18:50:00"
+      }
+    }
   },
   "Melissa Sarko": {
     "human_name": "Melissa Sarko",
@@ -10668,7 +12273,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:09:59.412261",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8PFHQ2": {
+        "Computername": "EANY-H8PFHQ2",
+        "Username": "msarko",
+        "Last Name": "Sarko",
+        "First Name": "Melissa",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219268,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8PFHQ2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T15:42:00"
+      }
+    }
   },
   "Mia Tsiamis": {
     "human_name": "Mia Tsiamis",
@@ -10719,7 +12346,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:01.765230",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8RBHQ2": {
+        "Computername": "EANY-H8RBHQ2",
+        "Username": "mia.tsiamis",
+        "Last Name": "Tsiamis",
+        "First Name": "Mia",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772072,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8RBHQ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-29T19:20:00"
+      }
+    }
   },
   "Michael Fierle": {
     "human_name": "Michael Fierle",
@@ -10805,7 +12454,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:03.991687",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8W8MWP3": {
+        "Computername": "EANY-8W8MWP3",
+        "Username": "michael.fierle",
+        "Last Name": "Fierle",
+        "First Name": "Michael",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893872,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8W8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-14T15:41:00"
+      }
+    }
   },
   "Michael Hassett": {
     "human_name": "Michael Hassett",
@@ -10840,7 +12511,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:06.246560",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "MHASSETT": {
+        "Computername": "MHASSETT",
+        "Username": "mhassett",
+        "Last Name": "Hassett",
+        "First Name": "Michael",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33218208,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WTGSZ2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-08-22T21:59:00"
+      }
+    }
   },
   "Michael Saltzman": {
     "human_name": "Michael Saltzman",
@@ -10880,7 +12573,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:08.125967",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-F5JM7X2": {
+        "Computername": "EANY-F5JM7X2",
+        "Username": "Saltzman, Michael",
+        "Last Name": "Saltzman",
+        "First Name": "Michael",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772116,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "F5JM7X2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "31.0.15.2886",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-25T11:56:00"
+      }
+    }
   },
   "Michaela Lunz": {
     "human_name": "Michaela Lunz",
@@ -10910,7 +12625,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:10.859723",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-BBMT233": {
+        "Computername": "EANY-BBMT233",
+        "Username": "michaela.lunz",
+        "Last Name": "Lunz",
+        "First Name": "Michaela",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66784196,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "BBMT233",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-07T19:43:00"
+      }
+    }
   },
   "Mimoza Gjonbalaj": {
     "human_name": "Mimoza Gjonbalaj",
@@ -11041,7 +12778,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:30.622666",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "MGJONBALAJW11": {
+        "Computername": "MGJONBALAJW11",
+        "Username": "Gjonbalaj, Mimoza",
+        "Last Name": "Gjonbalaj",
+        "First Name": "Mimoza",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219296,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "1MV2PY2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-08-09T13:44:00"
+      }
+    }
   },
   "Minh Tran": {
     "human_name": "Minh Tran",
@@ -11180,7 +12939,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:33.113303",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-3WSMSZ2": {
+        "Computername": "EANY-3WSMSZ2",
+        "Username": "mtran",
+        "Last Name": "Tran",
+        "First Name": "Minh",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33217656,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WSMSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T18:19:00"
+      }
+    }
   },
   "Miya Ruan": {
     "human_name": "Miya Ruan",
@@ -11637,7 +13418,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:37.703615",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-5GYCG73": {
+        "Computername": "EANY-5GYCG73",
+        "Username": "mmcgowan",
+        "Last Name": "Mcgowan",
+        "First Name": "Molly",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33229752,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "5GYCG73",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T03:44:00"
+      }
+    }
   },
   "Nazanin Modaresahmadi": {
     "human_name": "Nazanin Modaresahmadi",
@@ -11773,7 +13576,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:43.479046",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-BBLR233": {
+        "Computername": "EANY-BBLR233",
+        "Username": "nmodares",
+        "Last Name": "Modaresahmadi",
+        "First Name": "Nazanin",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66784196,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "BBLR233",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T09:51:00"
+      }
+    }
   },
   "Neil Yuan": {
     "human_name": "Neil Yuan",
@@ -12116,7 +13941,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:50.923490",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-BBLW233": {
+        "Computername": "EANY-BBLW233",
+        "Username": "nicole.levine",
+        "Last Name": "Levine",
+        "First Name": "Nicole",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66784196,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "BBLW233",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-08-09T10:06:00"
+      }
+    }
   },
   "Paula Gronda": {
     "human_name": "Paula Gronda",
@@ -12200,6 +14047,7 @@
     "profile_id": null,
     "computer_info": {
       "EANY-8DP1KD3": {
+<<<<<<< HEAD
         "computername": "EANY-8DP1KD3",
         "os": "Windows 11",
         "manufacturer": "Dell Inc.",
@@ -12210,6 +14058,26 @@
         "memory_bytes": 68386164736,
         "serial_number": "8DP1KD3",
         "last_updated": "2025-09-17T18:34:13.859102"
+=======
+        "Computername": "EANY-8DP1KD3",
+        "Username": "paula.gronda",
+        "Last Name": "Gronda",
+        "First Name": "Paula",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DP1KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.8097",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-07T09:56:00"
+>>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   },
@@ -12390,7 +14258,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:55.619411",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-FV5B9T2": {
+        "Computername": "EANY-FV5B9T2",
+        "Username": "pschubert",
+        "Last Name": "Schubert",
+        "First Name": "Peter",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33217652,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "FV5B9T2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T19:17:00"
+      }
+    }
   },
   "Rachel Britain": {
     "human_name": "Rachel Britain",
@@ -12420,7 +14310,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:11:15.350967",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "RBRITAIN": {
+        "Computername": "RBRITAIN",
+        "Username": "Rachel.Britain",
+        "Last Name": "Britain",
+        "First Name": "Rachel",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33218552,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "F5KP7X2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-08-22T13:57:00"
+      }
+    }
   },
   "Richard Olcott": {
     "human_name": "Richard Olcott",
@@ -12654,7 +14566,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:11:55.618077",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANYBL5MWP3": {
+        "Computername": "EANYBL5MWP3",
+        "Username": "Richard.Zhu",
+        "Last Name": "Zhu",
+        "First Name": "Richard",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "BL5MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-11-04T17:54:00"
+      }
+    }
   },
   "Rick Michod": {
     "human_name": "Rick Michod",
@@ -12750,7 +14684,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:11:58.015258",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-4B780W2": {
+        "Computername": "EANY-4B780W2",
+        "Username": "Michod, Rick",
+        "Last Name": "Michod",
+        "First Name": "Rick",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772016,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "4B780W2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T16:26:00"
+      }
+    }
   },
   "Robinson Strong": {
     "human_name": "Robinson Strong",
@@ -12842,6 +14798,7 @@
     "profile_id": null,
     "computer_info": {
       "EANY-8DN6KD3": {
+<<<<<<< HEAD
         "computername": "EANY-8DN6KD3",
         "os": "Windows 11",
         "manufacturer": "Dell Inc.",
@@ -12852,6 +14809,26 @@
         "memory_bytes": 137105645568,
         "serial_number": "8DN6KD3",
         "last_updated": "2025-09-17T18:50:47.706922"
+=======
+        "Computername": "EANY-8DN6KD3",
+        "Username": "robinson.strong",
+        "Last Name": "Strong",
+        "First Name": "Robinson",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133892232,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DN6KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-07T11:24:00"
+>>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   },
@@ -12997,7 +14974,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:19.927631",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DY6KD3": {
+        "Computername": "EANY-8DY6KD3",
+        "Username": "sjohnson",
+        "Last Name": "Johnson",
+        "First Name": "Sam",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DY6KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T20:54:00"
+      }
+    }
   },
   "Sanah Mengi": {
     "human_name": "Sanah Mengi",
@@ -13068,7 +15067,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:22.546989",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DW6KD3": {
+        "Computername": "EANY-8DW6KD3",
+        "Username": "sanah.mengi",
+        "Last Name": "Mengi",
+        "First Name": "Sanah",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DW6KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-14T10:55:00"
+      }
+    }
   },
   "Sandra Marcatili": {
     "human_name": "Sandra Marcatili",
@@ -13207,7 +15228,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:25.010069",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-9L5MWP3": {
+        "Computername": "EANY-9L5MWP3",
+        "Username": "smarcatili",
+        "Last Name": "Marcatili",
+        "First Name": "Sandra",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "9L5MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-07T18:18:00"
+      }
+    }
   },
   "Scott Eno": {
     "human_name": "Scott Eno",
@@ -13355,6 +15398,7 @@
         "gpu_driver": "17.12.55.198",
         "memory_bytes": 33765298176,
         "serial_number": "PW0HJ97N",
+<<<<<<< HEAD
         "last_updated": "2025-09-16T21:10:10.079918"
       },
       "MININT-5V26DTJ": {
@@ -13368,6 +15412,9 @@
         "memory_bytes": 67936788480,
         "serial_number": "System Serial Number",
         "last_updated": "2025-09-17T20:18:54.133701"
+=======
+        "last_updated": "2025-09-16T20:56:13.083928"
+>>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   },
@@ -13438,7 +15485,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:31.428740",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DN4KD3": {
+        "Computername": "EANY-8DN4KD3",
+        "Username": "sha.li",
+        "Last Name": "Li",
+        "First Name": "Sha",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783016,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DN4KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-10T17:58:00"
+      }
+    }
   },
   "Shelley Yang": {
     "human_name": "Shelley Yang",
@@ -13708,7 +15777,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:38.725283",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DX6KD3": {
+        "Computername": "EANY-8DX6KD3",
+        "Username": "sabel",
+        "Last Name": "Abel",
+        "First Name": "Stefan ",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DX6KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-29T09:12:00"
+      }
+    }
   },
   "Stephen Chu": {
     "human_name": "Stephen Chu",
@@ -13854,7 +15945,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:46.161209",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DX8KD3": {
+        "Computername": "EANY-8DX8KD3",
+        "Username": "schu",
+        "Last Name": "Chu",
+        "First Name": "Stephen",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783368,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DX8KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T17:37:00"
+      }
+    }
   },
   "Teresa Rampolla": {
     "human_name": "Teresa Rampolla",
@@ -13935,7 +16048,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:48.941018",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EA-003118113157": {
+        "Computername": "EA-003118113157",
+        "Username": "Rampolla, Teresa",
+        "Last Name": "Rampolla",
+        "First Name": "Teresa",
+        "OS": "Microsoft Windows NT Workstation 10.0 (Tablet Edition)",
+        "Manufacturer": "Microsoft Corporation",
+        "Model": "Surface Laptop 4",
+        "Total Physical Memory": 16203108,
+        "CPU": "AMD Ryzen 7 Microsoft Surface (R) Edition",
+        "Serial Number": 3118113157,
+        "GPU Name": "DisplayLink USB Device",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": null,
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "11.5.6380.0",
+        "GPU Memory": null,
+        "Date": "2024-08-22T15:26:00"
+      }
+    }
   },
   "Thomas Cunningham": {
     "human_name": "Thomas Cunningham",
@@ -13986,7 +16121,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:51.334403",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DY5KD3": {
+        "Computername": "EANY-8DY5KD3",
+        "Username": "Thomas.Cunningham",
+        "Last Name": "Cunningham",
+        "First Name": "Thomas",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DY5KD3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T16:16:00"
+      }
+    }
   },
   "Thomas Wong": {
     "human_name": "Thomas Wong",
@@ -14267,7 +16424,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:56.159877",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DW3KD3": {
+        "Computername": "EANY-8DW3KD3",
+        "Username": "tinglan.guo",
+        "Last Name": "Guo",
+        "First Name": "Tinglan",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DW3KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T21:25:00"
+      }
+    }
   },
   "Todd Schliemann": {
     "human_name": "Todd Schliemann",
@@ -14413,7 +16592,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:58.960074",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-5GYFG73": {
+        "Computername": "EANY-5GYFG73",
+        "Username": "Schliemann, Todd",
+        "Last Name": "Schliemann",
+        "First Name": "Todd",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783216,
+        "CPU": "Intel(R) Xeon(R) W-2102 CPU @ 2.90GHz",
+        "Serial Number": "5GYFG73",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T17:14:00"
+      }
+    }
   },
   "Todd Van Varick": {
     "human_name": "Todd Van Varick",
@@ -14549,7 +16750,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:13:01.324268",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-BBMR233": {
+        "Computername": "EANY-BBMR233",
+        "Username": "tvanvarick",
+        "Last Name": "Van Varick",
+        "First Name": "Todd",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33229768,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "BBMR233",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T17:06:00"
+      }
+    }
   },
   "Tomas Rossant": {
     "human_name": "Tomas Rossant",
@@ -14784,7 +17007,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:13:03.327156",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8PDHQ2": {
+        "Computername": "EANY-H8PDHQ2",
+        "Username": "trossant",
+        "Last Name": "Rossant",
+        "First Name": "Tomas",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33218868,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8PDHQ2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2024-12-17T10:54:00"
+      }
+    }
   },
   "Trisha Awasthi": {
     "human_name": "Trisha Awasthi",
@@ -14885,7 +17130,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:13:05.710905",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-F5KK7X2": {
+        "Computername": "EANY-F5KK7X2",
+        "Username": "trisha.awasthi",
+        "Last Name": "Awasthi",
+        "First Name": "Trisha",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772044,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "F5KK7X2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-24T16:03:00"
+      }
+    }
   },
   "Troi Bailey": {
     "human_name": "Troi Bailey",
@@ -14915,7 +17182,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:13:08.001016",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-FV579T2": {
+        "Computername": "EANY-FV579T2",
+        "Username": "troi.bailey",
+        "Last Name": "Bailey",
+        "First Name": "Troi",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219284,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "FV579T2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "31.0.15.2886",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-29T02:29:00"
+      }
+    }
   },
   "Tzara Peterson": {
     "human_name": "Tzara Peterson",
@@ -15059,7 +17348,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:13:11.184214",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-JW8MWP3": {
+        "Computername": "EANY-JW8MWP3",
+        "Username": "tpeterson",
+        "Last Name": "Peterson",
+        "First Name": "Tzara",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "JW8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-29T03:02:00"
+      }
+    }
   },
   "Vivian Zhan": {
     "human_name": "Vivian Zhan",
@@ -15551,7 +17862,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:13:42.073909",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-H8MFHQ2": {
+        "Computername": "EANY-H8MFHQ2",
+        "Username": "berhard",
+        "Last Name": "Erhard",
+        "First Name": "William ",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133880932,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "H8MFHQ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T11:26:00"
+      }
+    }
   },
   "Winslow Kosior": {
     "human_name": "Winslow Kosior",
@@ -15695,7 +18028,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:13:44.621520",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-103L9Z2": {
+        "Computername": "EANY-103L9Z2",
+        "Username": "wkosior",
+        "Last Name": "Kosior",
+        "First Name": "Winslow",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33219328,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "103L9Z2",
+        "GPU Name": "NVIDIA Quadro P2000",
+        "GPU Date": "Feburary 01, 2017",
+        "GPU Age ": "8 Years",
+        "GPU Processor": "Quadro P2000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-15T18:34:00"
+      }
+    }
   },
   "Xiaoheng Hu": {
     "human_name": "Xiaoheng Hu",
@@ -15821,7 +18176,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:13:46.999673",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-3WTDSZ2": {
+        "Computername": "EANY-3WTDSZ2",
+        "Username": "xhu",
+        "Last Name": "Hu",
+        "First Name": "Xiaoheng",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772124,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WTDSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-27T17:28:00"
+      }
+    }
   },
   "Xinya Li": {
     "human_name": "Xinya Li",
@@ -16098,7 +18475,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:14:29.022864",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-BBPS233": {
+        "Computername": "EANY-BBPS233",
+        "Username": "yhuang",
+        "Last Name": "Huang",
+        "First Name": "Yudou",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783716,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "BBPS233",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T22:49:00"
+      }
+    }
   },
   "Yumeng An": {
     "human_name": "Yumeng An",
@@ -16204,7 +18603,29 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:14:31.513916",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-CW8MWP3": {
+        "Computername": "EANY-CW8MWP3",
+        "Username": "Yumeng.An",
+        "Last Name": "An",
+        "First Name": "Yumeng",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "CW8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-17T09:51:00"
+      }
+    }
   },
   "Zeyi Xuan": {
     "human_name": "Zeyi Xuan",
@@ -16278,6 +18699,7 @@
     "profile_id": null,
     "computer_info": {
       "EANY-9W8MWP3": {
+<<<<<<< HEAD
         "computername": "EANY-9W8MWP3",
         "os": "Windows 11",
         "manufacturer": "Dell Inc.",
@@ -16288,6 +18710,26 @@
         "memory_bytes": 137107308544,
         "serial_number": "9W8MWP3",
         "last_updated": "2025-09-17T18:32:52.475161"
+=======
+        "Computername": "EANY-9W8MWP3",
+        "Username": "zeyi.xuan",
+        "Last Name": "Xuan",
+        "First Name": "Zeyi",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "9W8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T22:05:00"
+>>>>>>> dfa2194 (feat: enhance computer data handling and UI display)
       }
     }
   }
