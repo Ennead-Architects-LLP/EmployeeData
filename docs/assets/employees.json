@@ -5592,7 +5592,21 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:06:21.690245",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DW8KD3": {
+        "computername": "EANY-8DW8KD3",
+        "os": "Windows 11",
+        "manufacturer": "Dell Inc.",
+        "model": "Precision 5820 Tower",
+        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "gpu_name": "DisplayLink USB Device",
+        "gpu_driver": "9.3.3324.0",
+        "memory_bytes": 119925776384,
+        "serial_number": "8DW8KD3",
+        "last_updated": "2025-09-17T15:54:24.602154"
+      }
+    }
   },
   "HsiaoChiao Peng": {
     "human_name": "HsiaoChiao Peng",
@@ -12039,7 +12053,21 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:48.435129",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DN5KD3": {
+        "computername": "EANY-8DN5KD3",
+        "os": "Windows 11",
+        "manufacturer": "Dell Inc.",
+        "model": "Precision 5820 Tower",
+        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "gpu_name": "NVIDIA Quadro RTX 4000",
+        "gpu_driver": "32.0.15.7342",
+        "memory_bytes": 68386164736,
+        "serial_number": "8DN5KD3",
+        "last_updated": "2025-09-17T20:41:33.099575"
+      }
+    }
   },
   "Nicole Levine": {
     "human_name": "Nicole Levine",
@@ -12169,7 +12197,21 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:10:53.248939",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DP1KD3": {
+        "computername": "EANY-8DP1KD3",
+        "os": "Windows 11",
+        "manufacturer": "Dell Inc.",
+        "model": "Precision 5820 Tower",
+        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "gpu_name": "NVIDIA Quadro RTX 4000",
+        "gpu_driver": "32.0.15.8097",
+        "memory_bytes": 68386164736,
+        "serial_number": "8DP1KD3",
+        "last_updated": "2025-09-17T18:34:13.859102"
+      }
+    }
   },
   "Peter Schubert": {
     "human_name": "Peter Schubert",
@@ -12797,7 +12839,21 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-16T16:12:17.428110",
-    "profile_id": null
+    "profile_id": null,
+    "computer_info": {
+      "EANY-8DN6KD3": {
+        "computername": "EANY-8DN6KD3",
+        "os": "Windows 11",
+        "manufacturer": "Dell Inc.",
+        "model": "Precision 5820 Tower",
+        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "gpu_name": "NVIDIA Quadro RTX 4000",
+        "gpu_driver": "32.0.15.7159",
+        "memory_bytes": 137105645568,
+        "serial_number": "8DN6KD3",
+        "last_updated": "2025-09-17T18:50:47.706922"
+      }
+    }
   },
   "Sam Johnson": {
     "human_name": "Sam Johnson",
@@ -13311,7 +13367,7 @@
         "gpu_driver": "31.0.15.3742",
         "memory_bytes": 67936788480,
         "serial_number": "System Serial Number",
-        "last_updated": "2025-09-16T21:58:16.386085"
+        "last_updated": "2025-09-17T20:18:54.133701"
       }
     }
   },
@@ -16231,7 +16287,7 @@
         "gpu_driver": "32.0.15.7342",
         "memory_bytes": 137107308544,
         "serial_number": "9W8MWP3",
-        "last_updated": "2025-09-17T13:19:41.417962"
+        "last_updated": "2025-09-17T18:32:52.475161"
       }
     }
   }
