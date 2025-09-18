@@ -500,22 +500,64 @@ class ComputerInfoCollector:
         try:
             if platform.system() == "Windows" and self.wmi_conn:
                 try:
+                    max_memory_bytes = None
+                    chosen_gpu = None
+
                     for gpu in self.wmi_conn.Win32_VideoController():
-                        self.computer_info.gpu_name = gpu.Name
-                        self.computer_info.gpu_processor = gpu.VideoProcessor
-                        self.computer_info.gpu_driver = gpu.DriverVersion
-                        
-                        # Fix GPU memory detection - handle negative values and overflow
-                        gpu_memory = gpu.AdapterRAM
-                        if gpu_memory:
-                            # Convert to unsigned 32-bit if it's negative (overflow case)
-                            if gpu_memory < 0:
-                                gpu_memory = gpu_memory + (2**32)
-                            # Convert from bytes to MB for consistency
-                            self.computer_info.gpu_memory = gpu_memory / (1024 * 1024)
-                        else:
-                            self.computer_info.gpu_memory = None
-                        break
+                        # Prefer the adapter with the largest memory size
+                        raw = getattr(gpu, 'AdapterRAM', None)
+                        mem_bytes = None
+                        if raw is not None:
+                            try:
+                                # Some systems return strings; coerce to int safely
+                                raw_int = int(raw)
+                                if raw_int < 0:
+                                    # Unsigned wrap (32-bit) → fix by adding 2^32
+                                    raw_int = raw_int + (2 ** 32)
+                                mem_bytes = int(raw_int)
+                            except Exception:
+                                mem_bytes = None
+
+                        if mem_bytes is None:
+                            # Try registry fallback for this adapter
+                            try:
+                                import winreg
+                                with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}") as h:
+                                    # Scan subkeys for HardwareInformation.qwMemorySize
+                                    i = 0
+                                    while True:
+                                        try:
+                                            sub = winreg.EnumKey(h, i)
+                                            i += 1
+                                        except OSError:
+                                            break
+                                        try:
+                                            with winreg.OpenKey(h, sub) as subkey:
+                                                val, typ = winreg.QueryValueEx(subkey, "HardwareInformation.qwMemorySize")
+                                                # Value may already be 64-bit
+                                                if isinstance(val, int) and val > 0:
+                                                    mem_bytes = val
+                                                    break
+                                        except OSError:
+                                            continue
+                            except Exception:
+                                pass
+
+                        if mem_bytes is not None:
+                            if max_memory_bytes is None or mem_bytes > max_memory_bytes:
+                                max_memory_bytes = mem_bytes
+                                chosen_gpu = gpu
+
+                    if chosen_gpu is not None:
+                        self.computer_info.gpu_name = chosen_gpu.Name
+                        self.computer_info.gpu_processor = chosen_gpu.VideoProcessor
+                        self.computer_info.gpu_driver = chosen_gpu.DriverVersion
+                    # Set memory in MB with clamping
+                    if max_memory_bytes is not None:
+                        mem_mb = max(0, int(round(max_memory_bytes / (1024 * 1024))))
+                        self.computer_info.gpu_memory = mem_mb
+                    else:
+                        self.computer_info.gpu_memory = None
                 except Exception as e:
                     self.computer_info.set_error("gpu_wmi", str(e))
             else:
