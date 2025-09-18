@@ -1,0 +1,22 @@
+{
+  "CPU": "Intel(R) Core(TM) Ultra 9 185H",
+  "Computername": "EANY-PW-0HJ97N",
+  "Date": "2025-09-18T12:14:59.585019",
+  "First Name": "Sen",
+  "GPU Date": "2023-04-13T00:00:00",
+  "GPU Driver": "32.0.15.7357",
+  "GPU Memory": 4095,
+  "GPU Name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "GPU Processor": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "Last Name": "Zhang",
+  "Manufacturer": "LENOVO",
+  "Model": "21KV0001US",
+  "OS": "Windows 11",
+  "Serial Number": "PW0HJ97N",
+  "Total Physical Memory": 33765298176,
+  "Username": "szhang",
+  "human_name": "Sen Zhang",
+  "computer_name": "EANY-PW-0HJ97N",
+  "memory_bytes": 33765298176,
+  "server_timestamp": "2025-09-18T16:15:47.103148"
+}
