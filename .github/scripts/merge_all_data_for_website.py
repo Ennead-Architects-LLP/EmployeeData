@@ -38,6 +38,29 @@ def normalize_name_for_matching(name: str) -> str:
     return normalized
 
 
+def fuzzy_name_matching(employee_name: str, gpu_names: list, threshold: float = 0.8) -> str:
+    """
+    Use fuzzy matching to find the best match for an employee name in GPU data.
+    Returns the best matching GPU name if similarity is above threshold, otherwise None.
+    """
+    from difflib import SequenceMatcher
+    
+    best_match = None
+    best_score = 0.0
+    
+    for gpu_name in gpu_names:
+        # Calculate similarity score
+        score = SequenceMatcher(None, employee_name.lower(), gpu_name.lower()).ratio()
+        
+
+            
+        if score > best_score:
+            best_score = score
+            best_match = gpu_name
+    
+    return best_match if best_score >= threshold else None
+
+
 def validate_data_structure(data: dict, expected_type: str) -> bool:
     """
     Validate that the data structure matches the expected type.
@@ -74,6 +97,26 @@ def validate_data_structure(data: dict, expected_type: str) -> bool:
         return any(field in sample_computer for field in expected_fields)
     
     return False
+
+
+def add_data_source_to_employee(employee_data: dict, source_name: str) -> None:
+    """
+    Add a data source to the employee's created_from list.
+    
+    Args:
+        employee_data: Employee data dict to modify
+        source_name: Name of the data source (e.g., "Individual Employee Files", "Individual Computer Data", "GPU Master List 2025")
+    """
+    if "created_from" not in employee_data:
+        employee_data["created_from"] = []
+    
+    if not isinstance(employee_data["created_from"], list):
+        # Convert existing string to list
+        existing_source = employee_data["created_from"]
+        employee_data["created_from"] = [existing_source]
+    
+    if source_name not in employee_data["created_from"]:
+        employee_data["created_from"].append(source_name)
 
 
 def add_computer_data_to_employee(employee_data: dict, computer_data: dict, section_name: str) -> None:
@@ -130,6 +173,8 @@ def merge_all_employees() -> bool:
         clean_key = p.stem  # matches how individual files are named
         employee_key = data.get("human_name", clean_key)
         employees[employee_key] = data
+        # Add data source tracking
+        add_data_source_to_employee(employees[employee_key], "Individual Employee Files")
     print(f"Loaded {len(employees)} employees from individual employee files")
 
     print("\n=== DATA SOURCE 2: INDIVIDUAL COMPUTER INFO FILES (CONFIDENTIAL) ===")
@@ -164,8 +209,57 @@ def merge_all_employees() -> bool:
             if comp:
                 # Add to separate "computer_info" section
                 add_computer_data_to_employee(employee_data, comp, "computer_info")
+                add_data_source_to_employee(employee_data, "Individual Computer Data")
                 computer_matches += 1
-                print(f"Matched individual computer data for: {employee_key}")
+                print(f"✅ Matched individual computer data for: {employee_key}")
+            else:
+                # Try alternative matching - remove "_computer_info" suffix from computer data keys
+                matched = False
+                for comp_key, comp_data in computer_info_by_employee.items():
+                    if comp_key.endswith("_computer_info"):
+                        base_key = comp_key.replace("_computer_info", "")
+                        if base_key == clean_key:
+                            add_computer_data_to_employee(employee_data, comp_data, "computer_info")
+                            add_data_source_to_employee(employee_data, "Individual Computer Data")
+                            computer_matches += 1
+                            print(f"✅ Matched individual computer data for: {employee_key} (via alternative matching)")
+                            matched = True
+                            break
+                
+                # If still no match, try fuzzy matching by name
+                if not matched:
+                    for comp_key, comp_data in computer_info_by_employee.items():
+                        if comp_key.endswith("_computer_info"):
+                            # Extract name from computer data
+                            first_computer = next(iter(comp_data.values())) if comp_data else {}
+                            comp_first_name = first_computer.get("First Name", "").strip()
+                            comp_last_name = first_computer.get("Last Name", "").strip()
+                            comp_full_name = f"{comp_first_name} {comp_last_name}".strip()
+                            
+                            if comp_full_name and comp_full_name.lower() == employee_key.lower():
+                                add_computer_data_to_employee(employee_data, comp_data, "computer_info")
+                                add_data_source_to_employee(employee_data, "Individual Computer Data")
+                                computer_matches += 1
+                                print(f"✅ Matched individual computer data for: {employee_key} (via name matching)")
+                                matched = True
+                                break
+                
+                # If still no match, try matching by human_name field in computer data
+                if not matched:
+                    for comp_key, comp_data in computer_info_by_employee.items():
+                        if comp_key.endswith("_computer_info"):
+                            # Check if any computer has matching human_name
+                            for computer_name, computer_info in comp_data.items():
+                                comp_human_name = computer_info.get("human_name", "").strip()
+                                if comp_human_name and comp_human_name.lower() == employee_key.lower():
+                                    add_computer_data_to_employee(employee_data, comp_data, "computer_info")
+                                    add_data_source_to_employee(employee_data, "Individual Computer Data")
+                                    computer_matches += 1
+                                    print(f"✅ Matched individual computer data for: {employee_key} (via human_name matching)")
+                                    matched = True
+                                    break
+                            if matched:
+                                break
         
         # Create new employees for unmatched computer data
         for clean_key, comp_data in computer_info_by_employee.items():
@@ -190,11 +284,11 @@ def merge_all_employees() -> bool:
                 
                 new_employee = {
                     "human_name": full_name,
-                    "source": "individual_computer_only",
-                    "created_from": "Individual Computer Data"
+                    "source": "individual_computer_only"
                 }
                 # Add computer data to separate section
                 add_computer_data_to_employee(new_employee, comp_data, "computer_info")
+                add_data_source_to_employee(new_employee, "Individual Computer Data")
                 employees[full_name] = new_employee
                 computer_created_employees += 1
                 print(f"Created new employee from individual computer data: {full_name}")
@@ -228,9 +322,18 @@ def merge_all_employees() -> bool:
                     normalized_name = normalize_name_for_matching(human_name)
                     gpu_computers = gpu_data_by_name.get(normalized_name)
                     
+                    # If exact match failed, try fuzzy matching
+                    if not gpu_computers:
+                        gpu_names = list(gpu_data_by_name.keys())
+                        fuzzy_match = fuzzy_name_matching(human_name, gpu_names)
+                        if fuzzy_match:
+                            gpu_computers = gpu_data_by_name.get(fuzzy_match)
+                            print(f"Fuzzy matched '{human_name}' with GPU data '{fuzzy_match}'")
+                    
                     if gpu_computers:
                         # Add to separate "Static GPU Master List" section
                         add_computer_data_to_employee(employee_data, gpu_computers, "Static GPU Master List")
+                        add_data_source_to_employee(employee_data, "GPU Master List 2025")
                         gpu_matches += 1
                         print(f"Matched GPU master list data for: {human_name}")
             
@@ -254,11 +357,11 @@ def merge_all_employees() -> bool:
                     if full_name:
                         new_employee = {
                             "human_name": full_name,
-                            "source": "gpu_master_list_only",
-                            "created_from": "GPU Master List 2025"
+                            "source": "gpu_master_list_only"
                         }
                         # Add GPU data to separate section
                         add_computer_data_to_employee(new_employee, gpu_computers, "Static GPU Master List")
+                        add_data_source_to_employee(new_employee, "GPU Master List 2025")
                         employees[full_name] = new_employee
                         created_employees += 1
                         print(f"Created missing employee from GPU master list: {full_name}")

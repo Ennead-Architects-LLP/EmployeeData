@@ -174,9 +174,9 @@ function renderComputerSection(computers, sectionTitle, basePath, showAllFields 
     // Add data source indicator
     let dataSourceIndicator = '';
     if (sectionTitle.includes('Individual Computer Data')) {
-        dataSourceIndicator = '<span class="data-source-badge confidential">🔒 Confidential</span>';
+        dataSourceIndicator = '<span class="data-source-badge confidential">Live Data</span>';
     } else if (sectionTitle.includes('Static GPU Master List')) {
-        dataSourceIndicator = '<span class="data-source-badge static">📊 Static Data</span>';
+        dataSourceIndicator = '<span class="data-source-badge static">Static Data</span>';
     }
     
     return `
@@ -229,10 +229,10 @@ function createEmployeeCard(employee) {
     let imageUrl;
     let fallbackImageUrl = basePath + 'assets/icons/default_profile_image.jpg';
     
-    if (employee.image_local_path) {
+    if (employee.image_local_path && employee.image_local_path.trim() !== '') {
         // Adjust path for GitHub Pages
         imageUrl = basePath + employee.image_local_path;
-    } else if (employee.image_url) {
+    } else if (employee.image_url && employee.image_url.trim() !== '') {
         // Use the remote image URL as-is
         imageUrl = employee.image_url;
     } else {
@@ -310,21 +310,42 @@ function createEmployeeCard(employee) {
         console.log('--- End Debug ---');
     }
     
-    // Create source indicators for data origin
+    // Create source indicators for data origin using created_from list
     let sourceIndicator = '';
-    if (employee.source) {
-        if (employee.source === 'gpu_master_list_only') {
-            sourceIndicator = '<div class="source-indicator gpu-master" title="Created from GPU Master List 2025">●</div>';
-        } else if (employee.source.includes('individual')) {
-            sourceIndicator = '<div class="source-indicator individual-computer" title="Created from Individual Computer Data">●</div>';
-        }
-    }
-    if (employee.created_from) {
+    if (employee.created_from && Array.isArray(employee.created_from)) {
+        // Create multiple colored dots based on the created_from list
+        const indicators = employee.created_from.map(source => {
+            let colorClass = '';
+            let tooltip = '';
+            
+            if (source.includes('Individual Employee')) {
+                colorClass = 'individual-employee';
+                tooltip = 'Individual Employee Files';
+            } else if (source.includes('Individual Computer')) {
+                colorClass = 'individual-computer';
+                tooltip = 'Individual Computer Data';
+            } else if (source.includes('GPU Master List')) {
+                colorClass = 'gpu-master';
+                tooltip = 'GPU Master List 2025';
+            } else {
+                // Default color for unknown sources
+                colorClass = 'unknown-source';
+                tooltip = source;
+            }
+            
+            return `<div class="source-indicator ${colorClass}" title="${tooltip}">●</div>`;
+        });
+        
+        sourceIndicator = indicators.join('');
+    } else if (employee.created_from && typeof employee.created_from === 'string') {
+        // Handle legacy string format
         const tooltip = `Created from: ${employee.created_from}`;
         if (employee.created_from.includes('GPU Master List')) {
             sourceIndicator = `<div class="source-indicator gpu-master" title="${tooltip}">●</div>`;
         } else if (employee.created_from.includes('Individual Computer')) {
             sourceIndicator = `<div class="source-indicator individual-computer" title="${tooltip}">●</div>`;
+        } else if (employee.created_from.includes('Individual Employee')) {
+            sourceIndicator = `<div class="source-indicator individual-employee" title="${tooltip}">●</div>`;
         }
     }
     
@@ -393,7 +414,7 @@ function createEmployeeCard(employee) {
                     </div>
                 ` : ''}
                 ${(individualComputers.length > 0 || gpuMasterListComputers.length > 0) && (window.sectionToggles?.computer ?? true) ? `
-                    ${renderComputerSection(individualComputers, 'Individual Computer Data (Confidential)', basePath, false)}
+                    ${renderComputerSection(individualComputers, 'Individual Computer Data (Live Data)', basePath, false)}
                     ${renderComputerSection(gpuMasterListComputers, 'Static GPU Master List (2025)', basePath, true)}
                 ` : ''}
                 ${projects.length > 0 && (window.sectionToggles?.projects ?? true) ? `
@@ -430,18 +451,27 @@ function setupImageErrorHandling() {
         
         // Add new error handler that tries fallback image first
         img.addEventListener('error', function() {
+            console.log(`Image failed to load: ${this.src}`);
+            
             if (!this.dataset.fallbackTried) {
                 this.dataset.fallbackTried = 'true';
                 // Try fallback image
                 const isGitHubPages = window.location.hostname.includes('github.io');
                 const basePath = isGitHubPages ? '/EmployeeData/' : '';
                 const fallbackUrl = basePath + 'assets/icons/default_profile_image.jpg';
+                console.log(`Trying fallback image: ${fallbackUrl}`);
                 this.src = fallbackUrl;
             } else {
                 // If fallback also failed, show placeholder
+                console.log('Fallback image also failed, showing placeholder');
                 this.style.display = 'none';
                 this.parentElement.innerHTML = '<div class="no-image-placeholder">📷</div>';
             }
+        });
+        
+        // Add load success handler for debugging
+        img.addEventListener('load', function() {
+            console.log(`Image loaded successfully: ${this.src}`);
         });
     });
 }

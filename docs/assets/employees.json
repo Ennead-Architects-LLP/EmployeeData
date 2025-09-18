@@ -119,6 +119,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:27:08.108642",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-CCMD0M3": {
         "Computername": "EANY-CCMD0M3",
@@ -462,6 +466,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:27:13.446516",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-CL5MWP3": {
         "Computername": "EANY-CL5MWP3",
@@ -514,6 +522,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:27:29.446362",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-4B690W2": {
         "Computername": "EANY-4B690W2",
@@ -861,6 +873,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:27:34.793100",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DMZJD3": {
         "Computername": "EANY-8DMZJD3",
@@ -1266,6 +1282,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:27:50.106571",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-CYP2R53": {
         "Computername": "EANY-CYP2R53",
@@ -1594,6 +1614,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:28:05.296290",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-104K9Z2": {
         "Computername": "EANY-104K9Z2",
@@ -1997,6 +2021,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:28:20.429498",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "AKULIKAUSKASW11": {
         "Computername": "AKULIKAUSKASW11",
@@ -2345,6 +2373,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:28:35.777314",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-FQPPN23": {
         "Computername": "EANY-FQPPN23",
@@ -2396,7 +2428,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:28:50.877950",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "AGUILLANDEAUXW1": {
+        "Computername": "AGUILLANDEAUXW1",
+        "Username": "Guillandeaux, Ana",
+        "Last Name": "Guillandeaux, Ana",
+        "First Name": "Ana",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33229768,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "BBLV233",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-08-11T09:29:00"
+      }
+    }
   },
   "Annie Durden": {
     "human_name": "Annie Durden",
@@ -2436,7 +2494,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:28:56.014724",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Anthony Guaraldo": {
     "human_name": "Anthony Guaraldo",
@@ -2770,6 +2831,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:29:01.023165",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "AGUARALDO": {
         "Computername": "AGUARALDO",
@@ -2817,7 +2882,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:29:16.114673",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "TROMANW11": {
+        "Computername": "TROMANW11",
+        "Username": "Tony Roman",
+        "Last Name": "Roman",
+        "First Name": "Tony",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772116,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WTFSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-15T12:52:00"
+      }
+    }
   },
   "Anwuli Chukwumah": {
     "human_name": "Anwuli Chukwumah",
@@ -2847,7 +2938,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:29:33.202058",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-4B580W2": {
+        "Computername": "EANY-4B580W2",
+        "Username": "A. Chukwuman (Intern)",
+        "Last Name": "Chukwuman",
+        "First Name": "Anwuli",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772044,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "4B580W2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.5639",
+        "GPU Memory": 4193280.0,
+        "Date": null
+      }
+    }
   },
   "Apexa Patel": {
     "human_name": "Apexa Patel",
@@ -3143,6 +3260,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:29:38.224264",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DY3KD3": {
         "Computername": "EANY-8DY3KD3",
@@ -3268,6 +3389,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:29:53.372911",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DM8KD3": {
         "Computername": "EANY-8DM8KD3",
@@ -3623,6 +3748,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:29:58.485112",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8NCHQ2": {
         "Computername": "EANY-H8NCHQ2",
@@ -3885,12 +4014,14 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:30:13.939153",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Brian Masuda": {
     "human_name": "Brian Masuda",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-DW8MWP3": {
         "computer_name": "EANY-DW8MWP3",
@@ -3908,6 +4039,10 @@
         "last_updated": "2025-09-18T15:14:42.082639"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-DW8MWP3": {
         "Computername": "EANY-DW8MWP3",
@@ -4220,7 +4355,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:30:39.174920",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-7W8MWP3": {
+        "Computername": "EANY-7W8MWP3",
+        "Username": "cfleetwood",
+        "Last Name": "Fleetwood",
+        "First Name": "Calie",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "7W8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-17T23:24:00"
+      }
+    }
   },
   "Carly Ruda": {
     "human_name": "Carly Ruda",
@@ -4250,7 +4411,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:30:44.327447",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Catherine Chen": {
     "human_name": "Catherine Chen",
@@ -4481,7 +4645,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:30:49.045737",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Charles Brainerd": {
     "human_name": "Charles Brainerd",
@@ -4883,6 +5050,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:30:54.015163",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-1MV4PY2": {
         "Computername": "EANY-1MV4PY2",
@@ -5241,6 +5412,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:31:09.108868",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DW4KD3": {
         "Computername": "EANY-8DW4KD3",
@@ -5598,6 +5773,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:31:24.392513",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8PHHQ2": {
         "Computername": "EANY-H8PHHQ2",
@@ -5862,7 +6041,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:31:39.482017",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-BBMW233": {
+        "Computername": "EANY-BBMW233",
+        "Username": "cstoddard",
+        "Last Name": "Stoddard",
+        "First Name": "Christopher",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33229780,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "BBMW233",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-26T13:34:00"
+      }
+    }
   },
   "Chuck Wolf": {
     "human_name": "Chuck Wolf",
@@ -6185,12 +6390,14 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:31:44.225794",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Clara Martucci": {
     "human_name": "Clara Martucci",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-8DNZJD3": {
         "computer_name": "EANY-8DNZJD3",
@@ -6208,6 +6415,10 @@
         "last_updated": "2025-09-18T13:14:56.800438"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DNZJD3": {
         "Computername": "EANY-8DNZJD3",
@@ -6423,6 +6634,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:32:04.631339",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DVZJD3": {
         "Computername": "EANY-8DVZJD3",
@@ -6443,219 +6658,6 @@
         "GPU Driver": "32.0.15.7342",
         "GPU Memory": 4193280.0,
         "Date": "2025-07-01T17:56:00"
-      }
-    }
-  },
-  "DaYeon Kim": {
-    "human_name": "DaYeon Kim",
-    "email": "DaYeon.Kim@ennead.com",
-    "bio": null,
-    "phone": "646-437-1761",
-    "mobile": "646-437-1761",
-    "office_location": "",
-    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
-    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
-    "position": "Senior Project Architect",
-    "department": "",
-    "years_with_firm": 4,
-    "memberships": [],
-    "education": [
-      {
-        "institution": "Columbia University",
-        "degree": "Graduate",
-        "specialty": "Architectural Engineering"
-      }
-    ],
-    "licenses": [],
-    "projects": {
-      "proj_1": {
-        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
-        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-        "source": "text_parsing"
-      },
-      "proj_2": {
-        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_3": {
-        "name": "Jacobs",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_4": {
-        "name": "Northwell,",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "northwell-third-avenue-medical-office-building",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-        "source": "text_parsing"
-      },
-      "proj_5": {
-        "name": "Northwell,",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_6": {
-        "name": "Northwell Health",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "lenox-hill-hospital-northwell-health-redevelopment",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-        "source": "text_parsing"
-      },
-      "proj_7": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "source": "text_parsing"
-      },
-      "proj_8": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_9": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_10": {
-        "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "kuwait-university-health-sciences-campus",
-        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
-        "source": "text_parsing"
-      },
-      "proj_11": {
-        "name": "Kuwait University Health Sciences Campus",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_12": {
-        "name": "Perkins Eastman",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_13": {
-        "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "lenox-hill-hospital-northwell-health-redevelopment",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-        "source": "text_parsing"
-      },
-      "proj_14": {
-        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_15": {
-        "name": "2109",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "northwell-third-avenue-medical-office-building",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-        "source": "text_parsing"
-      },
-      "proj_16": {
-        "name": "2001",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "source": "text_parsing"
-      }
-    },
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-17T22:32:29.639780",
-    "profile_id": null,
-    "Static GPU Master List": {
-      "EANY-3WSPSZ2": {
-        "Computername": "EANY-3WSPSZ2",
-        "Username": "dayeon.kim",
-        "Last Name": "Kim",
-        "First Name": "Dayeon",
-        "OS": "Microsoft Windows NT Workstation 10.0",
-        "Manufacturer": "Dell Inc.",
-        "Model": "Precision 5820 Tower",
-        "Total Physical Memory": 66772084,
-        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
-        "Serial Number": "3WSPSZ2",
-        "GPU Name": "NVIDIA Quadro RTX 4000",
-        "GPU Date": "2018-11-13T00:00:00",
-        "GPU Age ": "7 years",
-        "GPU Processor": "Quadro RTX 4000",
-        "Replacement Piroirty ": 2,
-        "GPU Driver": "32.0.15.7159",
-        "GPU Memory": 4193280.0,
-        "Date": "2025-07-01T16:49:00"
       }
     }
   },
@@ -6688,6 +6690,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:32:09.768850",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "DAPPEL-M": {
         "Computername": "DAPPEL-M",
@@ -7096,6 +7102,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:32:14.552066",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DM5KD3": {
         "Computername": "EANY-8DM5KD3",
@@ -7116,6 +7126,223 @@
         "GPU Driver": "32.0.15.7159",
         "GPU Memory": 4193280.0,
         "Date": "2025-06-27T19:00:00"
+      }
+    }
+  },
+  "DaYeon Kim": {
+    "human_name": "DaYeon Kim",
+    "email": "DaYeon.Kim@ennead.com",
+    "bio": null,
+    "phone": "646-437-1761",
+    "mobile": "646-437-1761",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
+    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
+    "position": "Senior Project Architect",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Graduate",
+        "specialty": "Architectural Engineering"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
+        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Jacobs",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Northwell,",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "northwell-third-avenue-medical-office-building",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Northwell,",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Northwell Health",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "lenox-hill-hospital-northwell-health-redevelopment",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "kuwait-university-health-sciences-campus",
+        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Kuwait University Health Sciences Campus",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "Perkins Eastman",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_13": {
+        "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "lenox-hill-hospital-northwell-health-redevelopment",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "text_parsing"
+      },
+      "proj_14": {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_15": {
+        "name": "2109",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "northwell-third-avenue-medical-office-building",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "text_parsing"
+      },
+      "proj_16": {
+        "name": "2001",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:32:29.639780",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-3WSPSZ2": {
+        "Computername": "EANY-3WSPSZ2",
+        "Username": "dayeon.kim",
+        "Last Name": "Kim",
+        "First Name": "Dayeon",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772084,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WSPSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T16:49:00"
       }
     }
   },
@@ -7147,7 +7374,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:32:34.723355",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Di Chang": {
     "human_name": "Di Chang",
@@ -7488,7 +7718,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:32:39.714696",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Don Weinreich": {
     "human_name": "Don Weinreich",
@@ -7875,7 +8108,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:32:54.951425",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Dongbai Song": {
     "human_name": "Dongbai Song",
@@ -7932,7 +8168,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:33:09.989930",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Doris Lewis": {
     "human_name": "Doris Lewis",
@@ -7963,6 +8202,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:33:19.669000",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "DLEWIS": {
         "Computername": "DLEWIS",
@@ -8326,6 +8569,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:33:24.709422",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-JFGVN23": {
         "Computername": "EANY-JFGVN23",
@@ -8376,6 +8623,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:33:39.984738",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-87TCS33": {
         "Computername": "EANY-87TCS33",
@@ -8701,6 +8952,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:33:57.260126",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DP5KD3": {
         "Computername": "EANY-8DP5KD3",
@@ -9009,6 +9264,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:34:02.311070",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-JFG3P23": {
         "Computername": "EANY-JFG3P23",
@@ -9054,7 +9313,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:34:17.525337",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Eva Liu": {
     "human_name": "Eva Liu",
@@ -9215,7 +9477,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:34:34.557532",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Fang Cui": {
     "human_name": "Fang Cui",
@@ -9270,7 +9535,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:34:39.991363",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Fanny Liu": {
     "human_name": "Fanny Liu",
@@ -9505,7 +9773,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:34:49.963038",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Favian Garcia": {
     "human_name": "Favian Garcia",
@@ -9787,6 +10058,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:34:54.735416",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "FGARCIAW11": {
         "Computername": "FGARCIAW11",
@@ -10125,6 +10400,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:34:59.758695",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-4B6B0W2": {
         "Computername": "EANY-4B6B0W2",
@@ -10177,6 +10456,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:35:15.094374",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "FPECKS": {
         "Computername": "FPECKS",
@@ -10554,6 +10837,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:35:20.138726",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-104L9Z2": {
         "Computername": "EANY-104L9Z2",
@@ -10959,6 +11246,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:35:35.254563",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DN2KD3": {
         "Computername": "EANY-8DN2KD3",
@@ -11048,6 +11339,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:35:50.589914",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "GDESAI": {
         "Computername": "GDESAI",
@@ -11100,6 +11395,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:35:55.736103",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-BX8MWP3": {
         "Computername": "EANY-BX8MWP3",
@@ -11504,7 +11803,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:36:02.281184",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Guy Maxwell": {
     "human_name": "Guy Maxwell",
@@ -11800,6 +12102,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:36:20.272530",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DN1KD3": {
         "Computername": "EANY-8DN1KD3",
@@ -11826,7 +12132,6 @@
   "Han Isozen": {
     "human_name": "Han Isozen",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-8DW8KD3": {
         "computername": "EANY-8DW8KD3",
@@ -11841,6 +12146,10 @@
         "last_updated": "2025-09-17T15:54:24.602154"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DW8KD3": {
         "Computername": "EANY-8DW8KD3",
@@ -11893,6 +12202,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:36:40.108730",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-5GXKG73": {
         "Computername": "EANY-5GXKG73",
@@ -11938,7 +12251,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:36:45.022120",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "HyunJoo Lee": {
     "human_name": "HyunJoo Lee",
@@ -12160,6 +12476,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:37:02.387522",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-3WTKSZ2": {
         "Computername": "EANY-3WTKSZ2",
@@ -12186,7 +12506,6 @@
   "Ingrid Evenson": {
     "human_name": "Ingrid Evenson",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-8DM7KD3": {
         "computer_name": "EANY-8DM7KD3",
@@ -12201,9 +12520,15 @@
         "os": "Windows 11",
         "serial_number": "8DM7KD3",
         "username": "ingrid.evenson",
-        "last_updated": "2025-09-18T13:41:16.636021"
+        "last_updated": "2025-09-18T20:38:25.241417",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-18T20:38:25.241421"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DM7KD3": {
         "Computername": "EANY-8DM7KD3",
@@ -12551,6 +12876,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:37:12.452604",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-5GYDG73": {
         "Computername": "EANY-5GYDG73",
@@ -12898,6 +13227,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:37:27.498714",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8PBHQ2": {
         "Computername": "EANY-H8PBHQ2",
@@ -13011,6 +13344,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:37:42.619476",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-BBLS233": {
         "Computername": "EANY-BBLS233",
@@ -13063,6 +13400,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:37:47.675896",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-F5KM7X2": {
         "Computername": "EANY-F5KM7X2",
@@ -13240,7 +13581,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:37:52.714752",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Jenn Sandoval": {
     "human_name": "Jenn Sandoval",
@@ -13572,6 +13916,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:37:57.706866",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-JFG1P23": {
         "Computername": "EANY-JFG1P23",
@@ -13747,6 +14095,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:38:12.762233",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-4B5B0W2": {
         "Computername": "EANY-4B5B0W2",
@@ -13894,7 +14246,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:38:17.922831",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-BW8MWP3": {
+        "Computername": "EANY-BW8MWP3",
+        "Username": "jihyeon.park",
+        "Last Name": "Park",
+        "First Name": "Jihyeon",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893496,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "BW8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T14:15:00"
+      }
+    }
   },
   "Jlees Ahmed": {
     "human_name": "Jlees Ahmed",
@@ -13925,6 +14303,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:38:22.998991",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-FV4B9T2": {
         "Computername": "EANY-FV4B9T2",
@@ -14008,6 +14390,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:38:27.969256",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-5GXLG73": {
         "Computername": "EANY-5GXLG73",
@@ -14194,7 +14580,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:38:33.049680",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "John Jordan": {
     "human_name": "John Jordan",
@@ -14531,6 +14920,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:38:43.167463",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-1MV6PY2": {
         "Computername": "EANY-1MV6PY2",
@@ -14937,7 +15330,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:38:58.481166",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Julia Gamolina": {
     "human_name": "Julia Gamolina",
@@ -14972,6 +15368,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:39:18.547713",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DW1KD3": {
         "Computername": "EANY-8DW1KD3",
@@ -15127,6 +15527,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:39:23.574400",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DP7KD3": {
         "Computername": "EANY-8DP7KD3",
@@ -15239,7 +15643,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:39:28.582926",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Kailey Baker-Sequeira": {
     "human_name": "Kailey Baker-Sequeira",
@@ -15592,7 +15999,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:39:33.296481",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Kang Yu": {
     "human_name": "Kang Yu",
@@ -15647,7 +16057,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:39:48.283109",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Kathleen Kulpa": {
     "human_name": "Kathleen Kulpa",
@@ -15990,7 +16403,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:39:58.402760",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-8DY8KD3": {
+        "Computername": "EANY-8DY8KD3",
+        "Username": "kkulpa",
+        "Last Name": "Kulpa",
+        "First Name": "Kate",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DY8KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-28T15:47:00"
+      }
+    }
   },
   "Katie Fairbrother": {
     "human_name": "Katie Fairbrother",
@@ -16021,6 +16460,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:40:13.601447",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "GMAXWELL1": {
         "Computername": "GMAXWELL1",
@@ -16366,6 +16809,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:40:18.668478",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-GX8MWP3": {
         "Computername": "EANY-GX8MWP3",
@@ -16392,12 +16839,11 @@
   "Kevin Kim": {
     "human_name": "Kevin Kim",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-4X8MWP3": {
         "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
         "Computername": "EANY-4X8MWP3",
-        "Date": "2025-09-18T15:56:33.939153",
+        "Date": "2025-09-18T17:58:42.908783",
         "First Name": "Kevin",
         "GPU Date": "2021-04-12T00:00:00",
         "GPU Driver": "32.0.15.7342",
@@ -16412,10 +16858,16 @@
         "Total Physical Memory": 137107324928,
         "Username": "kevin.kim",
         "human_name": "Kevin Kim",
-        "last_updated": "2025-09-18T19:57:02.292537",
-        "computername": "EANY-4X8MWP3"
+        "last_updated": "2025-09-18T21:59:11.859575",
+        "computername": "EANY-4X8MWP3",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-18T21:59:11.859579"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-4X8MWP3": {
         "Computername": "EANY-4X8MWP3",
@@ -16752,7 +17204,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:40:38.755575",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Kevin McClurkan": {
     "human_name": "Kevin McClurkan",
@@ -17139,6 +17594,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:40:43.778998",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-HX8MWP3": {
         "Computername": "EANY-HX8MWP3",
@@ -17508,6 +17967,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:40:58.883327",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-3WSNSZ2": {
         "Computername": "EANY-3WSNSZ2",
@@ -17806,7 +18269,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:41:14.043592",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-3X8MWP3": {
+        "Computername": "EANY-3X8MWP3",
+        "Username": "kcamacho",
+        "Last Name": "Camacho",
+        "First Name": "Kori",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893856,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "3X8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T21:55:00"
+      }
+    }
   },
   "Kristen Alexander": {
     "human_name": "Kristen Alexander",
@@ -18100,6 +18589,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:41:18.653016",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-4B850W2": {
         "Computername": "EANY-4B850W2",
@@ -18435,6 +18928,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:41:33.752316",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-FW8MWP3": {
         "Computername": "EANY-FW8MWP3",
@@ -18461,12 +18958,11 @@
   "Kyung Min": {
     "human_name": "Kyung Min",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-H8QFHQ2": {
         "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
         "Computername": "EANY-H8QFHQ2",
-        "Date": "2025-09-18T14:09:35.295899",
+        "Date": "2025-09-18T16:55:36.551453",
         "First Name": "Kyung",
         "GPU Date": "2018-11-13T00:00:00",
         "GPU Driver": "32.0.15.7159",
@@ -18481,10 +18977,16 @@
         "Total Physical Memory": 68374601728,
         "Username": "kmin",
         "human_name": "Kyung Min",
-        "last_updated": "2025-09-18T18:10:02.693779",
-        "computername": "EANY-H8QFHQ2"
+        "last_updated": "2025-09-18T20:56:06.556110",
+        "computername": "EANY-H8QFHQ2",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-18T20:56:06.556114"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8QFHQ2": {
         "Computername": "EANY-H8QFHQ2",
@@ -18536,7 +19038,68 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:04.289042",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
+  },
+  "Lan Chen": {
+    "human_name": "Lan Chen",
+    "email": "Lan.Chen@ennead.com",
+    "bio": null,
+    "phone": "",
+    "mobile": null,
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
+    "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Lan Chen_profile.jpg",
+    "position": "Project Architect",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [],
+    "education": [],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "bilibili-shanghai-headquarters",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Bilibili Shanghai Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Bilibili Co.,Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:42:09.254077",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "LaNee Carter": {
     "human_name": "LaNee Carter",
@@ -18632,6 +19195,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:19.284802",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8NHHQ2": {
         "Computername": "EANY-H8NHHQ2",
@@ -18654,61 +19221,6 @@
         "Date": "2025-07-14T17:11:00"
       }
     }
-  },
-  "Lan Chen": {
-    "human_name": "Lan Chen",
-    "email": "Lan.Chen@ennead.com",
-    "bio": null,
-    "phone": "",
-    "mobile": null,
-    "office_location": "",
-    "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
-    "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Lan Chen_profile.jpg",
-    "position": "Project Architect",
-    "department": "",
-    "years_with_firm": 4,
-    "memberships": [],
-    "education": [],
-    "licenses": [],
-    "projects": {
-      "proj_1": {
-        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "bilibili-shanghai-headquarters",
-        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
-        "source": "text_parsing"
-      },
-      "proj_2": {
-        "name": "Bilibili Shanghai Headquarters",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_3": {
-        "name": "Bilibili Co.,Ltd.",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      }
-    },
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-17T22:42:09.254077",
-    "profile_id": null
   },
   "Latoya Kamdang": {
     "human_name": "Latoya Kamdang",
@@ -19136,6 +19648,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:24.363984",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "SURFACELAPTOP73": {
         "Computername": "SURFACELAPTOP73",
@@ -19409,6 +19925,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:29.357397",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DM6KD3": {
         "Computername": "EANY-8DM6KD3",
@@ -19642,6 +20162,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:34.059530",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DV7KD3": {
         "Computername": "EANY-8DV7KD3",
@@ -19693,7 +20217,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:39.004567",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Lena Yang": {
     "human_name": "Lena Yang",
@@ -19945,6 +20472,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:44.027457",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DN3KD3": {
         "Computername": "EANY-8DN3KD3",
@@ -20183,6 +20714,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:48.602208",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-5GY9G73": {
         "Computername": "EANY-5GY9G73",
@@ -20370,6 +20905,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:53.842712",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-4B790W2": {
         "Computername": "EANY-4B790W2",
@@ -20695,6 +21234,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:42:58.806605",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-FQQDN23": {
         "Computername": "EANY-FQQDN23",
@@ -21037,7 +21580,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:43:14.062376",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Madeleine Reid": {
     "human_name": "Madeleine Reid",
@@ -21131,6 +21677,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:43:29.119394",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DY4KD3": {
         "Computername": "EANY-8DY4KD3",
@@ -21456,6 +22006,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:43:33.704393",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-FQQHN23": {
         "Computername": "EANY-FQQHN23",
@@ -21719,6 +22273,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:43:38.579013",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-DL5MWP3": {
         "Computername": "EANY-DL5MWP3",
@@ -22056,6 +22614,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:43:43.621119",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-5GXDG73": {
         "Computername": "EANY-5GXDG73",
@@ -22412,7 +22974,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:43:58.686054",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-87V7243": {
+        "Computername": "EANY-87V7243",
+        "Username": "mstrack",
+        "Last Name": "Strack",
+        "First Name": "Matt",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783288,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "87V7243",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-17T17:06:00"
+      }
+    }
   },
   "Matt Hitscherich": {
     "human_name": "Matt Hitscherich",
@@ -22734,6 +23322,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:44:13.747809",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DY7KD3": {
         "Computername": "EANY-8DY7KD3",
@@ -22938,7 +23530,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:44:28.938724",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-8DY0KD3": {
+        "Computername": "EANY-8DY0KD3",
+        "Username": "Matthew.Mendicino",
+        "Last Name": "Mendicino",
+        "First Name": "Matthew",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DY0KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 1,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-09T12:39:00"
+      }
+    }
   },
   "Matt Ryan": {
     "human_name": "Matt Ryan",
@@ -23130,6 +23748,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:44:34.027426",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "MRYANW11": {
         "Computername": "MRYANW11",
@@ -23437,6 +24059,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:44:39.083127",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-4B760W2": {
         "Computername": "EANY-4B760W2",
@@ -23802,6 +24428,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:44:54.373553",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DV8KD3": {
         "Computername": "EANY-8DV8KD3",
@@ -23889,6 +24519,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:45:09.462830",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DWZJD3": {
         "Computername": "EANY-8DWZJD3",
@@ -24214,6 +24848,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:45:14.441178",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8PFHQ2": {
         "Computername": "EANY-H8PFHQ2",
@@ -24287,6 +24925,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:45:29.650131",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8RBHQ2": {
         "Computername": "EANY-H8RBHQ2",
@@ -24462,6 +25104,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:45:34.649891",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8W8MWP3": {
         "Computername": "EANY-8W8MWP3",
@@ -24735,6 +25381,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:45:39.744607",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "MHASSETT": {
         "Computername": "MHASSETT",
@@ -24787,6 +25437,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:45:44.806061",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-F5JM7X2": {
         "Computername": "EANY-F5JM7X2",
@@ -25020,6 +25674,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:45:49.363767",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-BBMT233": {
         "Computername": "EANY-BBMT233",
@@ -25065,7 +25723,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:45:54.790470",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Mimoza Gjonbalaj": {
     "human_name": "Mimoza Gjonbalaj",
@@ -25447,6 +26108,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:46:15.944515",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "MGJONBALAJW11": {
         "Computername": "MGJONBALAJW11",
@@ -25804,6 +26469,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:46:31.060162",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-3WSMSZ2": {
         "Computername": "EANY-3WSMSZ2",
@@ -26146,7 +26815,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:46:46.332788",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Molly McGowan": {
     "human_name": "Molly McGowan",
@@ -26532,6 +27204,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:47:01.553914",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-5GYCG73": {
         "Computername": "EANY-5GYCG73",
@@ -26917,6 +27593,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:47:16.641279",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-BBLR233": {
         "Computername": "EANY-BBLR233",
@@ -27269,12 +27949,14 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:47:31.918896",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Nicholas Jeffway": {
     "human_name": "Nicholas Jeffway",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-8DN5KD3": {
         "computer_name": "EANY-8DN5KD3",
@@ -27291,7 +27973,10 @@
         "username": "NJeffway",
         "last_updated": "2025-09-18T14:30:56.208136"
       }
-    }
+    },
+    "created_from": [
+      "Individual Computer Data"
+    ]
   },
   "Nicole Levine": {
     "human_name": "Nicole Levine",
@@ -27353,6 +28038,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:48:02.249984",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-BBLW233": {
         "Computername": "EANY-BBLW233",
@@ -27379,7 +28068,6 @@
   "Paula Gronda": {
     "human_name": "Paula Gronda",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-8DP1KD3": {
         "computer_name": "EANY-8DP1KD3",
@@ -27397,6 +28085,10 @@
         "last_updated": "2025-09-18T18:31:51.169900"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DP1KD3": {
         "Computername": "EANY-8DP1KD3",
@@ -27804,6 +28496,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:48:12.634764",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-FV5B9T2": {
         "Computername": "EANY-FV5B9T2",
@@ -28010,7 +28706,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:48:27.758380",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Rachel Britain": {
     "human_name": "Rachel Britain",
@@ -28041,6 +28740,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:48:37.899682",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "RBRITAIN": {
         "Computername": "RBRITAIN",
@@ -28086,7 +28789,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:48:42.890378",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-8DV6KD3": {
+        "Computername": "EANY-8DV6KD3",
+        "Username": "rvermeulen",
+        "Last Name": "Vermeulen",
+        "First Name": "Rea",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DV6KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T00:01:00"
+      }
+    }
   },
   "Regina Jiang": {
     "human_name": "Regina Jiang",
@@ -28381,7 +29110,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:49:00.060988",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Richard Olcott": {
     "human_name": "Richard Olcott",
@@ -28766,7 +29498,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:49:20.211595",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Richard Zhu": {
     "human_name": "Richard Zhu",
@@ -28820,6 +29555,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:49:35.334600",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANYBL5MWP3": {
         "Computername": "EANYBL5MWP3",
@@ -29035,6 +29774,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:49:40.033161",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-4B780W2": {
         "Computername": "EANY-4B780W2",
@@ -29080,12 +29823,14 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:49:44.927147",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Robinson Strong": {
     "human_name": "Robinson Strong",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-8DN6KD3": {
         "computer_name": "EANY-8DN6KD3",
@@ -29103,6 +29848,10 @@
         "last_updated": "2025-09-18T13:44:43.580170"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DN6KD3": {
         "Computername": "EANY-8DN6KD3",
@@ -29420,6 +30169,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:50:07.684553",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DY6KD3": {
         "Computername": "EANY-8DY6KD3",
@@ -29598,6 +30351,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:50:23.004416",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DW6KD3": {
         "Computername": "EANY-8DW6KD3",
@@ -29935,6 +30692,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:50:27.798017",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-9L5MWP3": {
         "Computername": "EANY-9L5MWP3",
@@ -29986,12 +30747,14 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:50:33.027278",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Sen Zhang": {
     "human_name": "Sen Zhang",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-PW-0HJ97N": {
         "Computername": "EANY-PW-0HJ97N",
@@ -30079,32 +30842,110 @@
         "computername": "EANY-PW-0HJ97N"
       },
       "MININT-5V26DTJ": {
-        "CPU": "Intel(R) Core(TM) Ultra 9 285",
         "Computername": "MININT-5V26DTJ",
-        "Date": "2025-09-18T11:22:28.683614",
         "First Name": "Sen",
-        "GPU Date": "2021-05-31T00:00:00",
-        "GPU Driver": "31.0.15.3742",
-        "GPU Memory": 4095,
-        "GPU Name": "NVIDIA RTX A2000 12GB",
-        "GPU Processor": "NVIDIA RTX A2000 12GB",
         "Last Name": "Zhang",
         "Manufacturer": "ASUS",
         "Model": "PRIME B860-PLUS WIFI",
         "OS": "Windows 11",
         "Serial Number": "241146563400017",
-        "Total Physical Memory": 67936788480,
         "Username": "szhang",
+        "all_cpus": {
+          "cpu_1": {
+            "architecture": 9,
+            "cache_l3_size": 36864,
+            "cores": 24,
+            "driver": "N/A",
+            "family": 775,
+            "hyperthreading_enabled": false,
+            "logical_processors": 24,
+            "max_clock_speed": 2500,
+            "memory_bytes": null,
+            "memory_mb": null,
+            "model": 0,
+            "name": "Intel(R) Core(TM) Ultra 9 285",
+            "processor": "Intel(R) Core(TM) Ultra 9 285",
+            "release_date": "Unknown",
+            "stepping": 0,
+            "type": "Physical",
+            "virtualization_support": false
+          }
+        },
+        "all_gpus": {
+          "gpu_1": {
+            "driver": "31.0.15.3742",
+            "is_virtual": false,
+            "memory_bytes": 4293918720,
+            "memory_formatted": "4.0 GB",
+            "memory_gb": 3.999,
+            "memory_mb": 4095,
+            "name": "NVIDIA RTX A2000 12GB",
+            "priority": 3,
+            "processor": "NVIDIA RTX A2000 12GB",
+            "release_date": "Unknown",
+            "type": "Physical"
+          },
+          "gpu_2": {
+            "driver": "32.0.101.6737",
+            "is_virtual": false,
+            "memory_bytes": 2147479552,
+            "memory_formatted": "2.0 GB",
+            "memory_gb": 2,
+            "memory_mb": 2048,
+            "name": "Intel(R) Graphics",
+            "priority": 1,
+            "processor": "Intel(R) Graphics Family",
+            "release_date": "Unknown",
+            "type": "Physical"
+          }
+        },
+        "collection_date": "2025-09-18T17:57:14.332889",
         "human_name": "Sen Zhang",
-        "last_updated": "2025-09-18T15:22:49.584203",
-        "computername": "MININT-5V26DTJ"
+        "system_info": {
+          "available_memory_bytes": 40074301440,
+          "memory_percent": 41,
+          "total_memory_bytes": 67936788480,
+          "total_memory_formatted": "63.3 GB",
+          "total_memory_gb": 63.271,
+          "total_memory_mb": 64789.57,
+          "used_memory_bytes": 27862487040
+        },
+        "last_updated": "2025-09-18T21:57:41.447976",
+        "computername": "MININT-5V26DTJ",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-18T21:57:41.447980"
+      }
+    },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-9X8MWP3": {
+        "Computername": "EANY-9X8MWP3",
+        "Username": "syang",
+        "Last Name": "Yang",
+        "First Name": "Sen",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 133893872,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "9X8MWP3",
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Date": "Apirl 12,2021",
+        "GPU Age ": "4 Years",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-25T16:05:00"
       }
     }
   },
   "Sha Li": {
     "human_name": "Sha Li",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-8DN4KD3": {
         "computer_name": "EANY-8DN4KD3",
@@ -30122,6 +30963,10 @@
         "last_updated": "2025-09-18T15:29:36.686989"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DN4KD3": {
         "Computername": "EANY-8DN4KD3",
@@ -30398,7 +31243,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:50:48.418855",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Shuhan Dong": {
     "human_name": "Shuhan Dong",
@@ -30422,7 +31270,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:50:53.421631",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Sivan Szapiro": {
     "human_name": "Sivan Szapiro",
@@ -30452,7 +31303,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:51:10.395799",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Stefan Abel": {
     "human_name": "Stefan Abel",
@@ -30758,6 +31612,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:51:15.407512",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DX6KD3": {
         "Computername": "EANY-8DX6KD3",
@@ -31123,6 +31981,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:51:30.523879",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DX8KD3": {
         "Computername": "EANY-8DX8KD3",
@@ -31169,6 +32031,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:51:59.142930",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EA-003118113157": {
         "Computername": "EA-003118113157",
@@ -31272,6 +32138,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:52:01.303091",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DY5KD3": {
         "Computername": "EANY-8DY5KD3",
@@ -31678,7 +32548,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:52:06.317361",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-JFG2P23": {
+        "Computername": "EANY-JFG2P23",
+        "Username": "twong",
+        "Last Name": "Wong",
+        "First Name": "Tom",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 33217328,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "JFG2P23",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-03T15:43:00"
+      }
+    }
   },
   "TianYang Gao": {
     "human_name": "TianYang Gao",
@@ -31702,7 +32598,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:52:21.413013",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Tinglan Guo": {
     "human_name": "Tinglan Guo",
@@ -31828,6 +32727,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:52:38.624857",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DW3KD3": {
         "Computername": "EANY-8DW3KD3",
@@ -32235,6 +33138,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:52:43.961591",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-5GYFG73": {
         "Computername": "EANY-5GYFG73",
@@ -32590,6 +33497,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:52:59.502143",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-BBMR233": {
         "Computername": "EANY-BBMR233",
@@ -32997,6 +33908,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:53:14.687555",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8PDHQ2": {
         "Computername": "EANY-H8PDHQ2",
@@ -33214,6 +34129,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:53:30.079447",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-F5KK7X2": {
         "Computername": "EANY-F5KK7X2",
@@ -33266,6 +34185,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:53:35.155245",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-FV579T2": {
         "Computername": "EANY-FV579T2",
@@ -33613,6 +34536,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:53:40.172754",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-JW8MWP3": {
         "Computername": "EANY-JW8MWP3",
@@ -33639,24 +34566,34 @@
   "Vivian Zhan": {
     "human_name": "Vivian Zhan",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-HW8MWP3": {
-        "computer_name": "EANY-HW8MWP3",
-        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
-        "gpu_driver": "32.0.15.8097",
-        "gpu_memory": -1048576,
-        "gpu_name": "NVIDIA RTX A4000",
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Computername": "EANY-HW8MWP3",
+        "Date": "2025-09-18T17:36:21.223298",
+        "First Name": "Vivian",
+        "GPU Date": "2021-04-12T00:00:00",
+        "GPU Driver": "32.0.15.8097",
+        "GPU Memory": 4095,
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Last Name": "Zhan",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "OS": "Windows 11",
+        "Serial Number": "HW8MWP3",
+        "Total Physical Memory": 137107308544,
+        "Username": "Vivian.Zhan",
         "human_name": "Vivian Zhan",
-        "manufacturer": "Dell Inc.",
-        "memory_bytes": 137107308544,
-        "model": "Precision 5820 Tower",
-        "os": "Windows 11",
-        "serial_number": "HW8MWP3",
-        "username": "Vivian.Zhan",
-        "last_updated": "2025-09-18T13:42:39.341354"
+        "last_updated": "2025-09-18T21:36:52.399964",
+        "computername": "EANY-HW8MWP3",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-18T21:36:52.399968"
       }
-    }
+    },
+    "created_from": [
+      "Individual Computer Data"
+    ]
   },
   "Weishan Lian": {
     "human_name": "Weishan Lian",
@@ -33977,7 +34914,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:53:50.441979",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Weiwei Kuang": {
     "human_name": "Weiwei Kuang",
@@ -34298,7 +35238,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:54:05.475946",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Wenyu Sun": {
     "human_name": "Wenyu Sun",
@@ -34322,7 +35265,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:54:20.667683",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "WiL Morales": {
     "human_name": "WiL Morales",
@@ -34383,7 +35329,33 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:54:37.679678",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-8DW5KD3": {
+        "Computername": "EANY-8DW5KD3",
+        "Username": "wilmarie.morales",
+        "Last Name": "Morales",
+        "First Name": "Wilmarie",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66783364,
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Serial Number": "8DW5KD3",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 3,
+        "GPU Driver": "32.0.15.7342",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-06-30T17:45:00"
+      }
+    }
   },
   "William Erhard": {
     "human_name": "William Erhard",
@@ -34700,6 +35672,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:54:42.719016",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-H8MFHQ2": {
         "Computername": "EANY-H8MFHQ2",
@@ -35045,6 +36021,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:54:57.885795",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-103L9Z2": {
         "Computername": "EANY-103L9Z2",
@@ -35380,6 +36360,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:55:13.226533",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-3WTDSZ2": {
         "Computername": "EANY-3WTDSZ2",
@@ -35576,7 +36560,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:55:18.309085",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Xinya Li": {
     "human_name": "Xinya Li",
@@ -35887,7 +36874,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:55:28.448277",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Yao Yao": {
     "human_name": "Yao Yao",
@@ -36092,7 +37082,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:55:43.510791",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Yeng-Tse Wu": {
     "human_name": "Yeng-Tse Wu",
@@ -36122,7 +37115,10 @@
     "linkedin_url": null,
     "website_url": null,
     "scraped_at": "2025-09-17T22:55:53.130347",
-    "profile_id": null
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Yudou Huang": {
     "human_name": "Yudou Huang",
@@ -36396,6 +37392,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:55:58.214429",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-BBPS233": {
         "Computername": "EANY-BBPS233",
@@ -36649,6 +37649,10 @@
     "website_url": null,
     "scraped_at": "2025-09-17T22:56:02.775617",
     "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-CW8MWP3": {
         "Computername": "EANY-CW8MWP3",
@@ -36675,7 +37679,6 @@
   "Zeyi Xuan": {
     "human_name": "Zeyi Xuan",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-9W8MWP3": {
         "computer_name": "EANY-9W8MWP3",
@@ -36693,6 +37696,10 @@
         "last_updated": "2025-09-18T17:32:47.905703"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-9W8MWP3": {
         "Computername": "EANY-9W8MWP3",
@@ -36719,7 +37726,6 @@
   "Matthew Mendicino": {
     "human_name": "Matthew Mendicino",
     "source": "individual_computer_only",
-    "created_from": "Individual Computer Data",
     "computer_info": {
       "EANY-8DY0KD3": {
         "computername": "EANY-8DY0KD3",
@@ -36734,6 +37740,10 @@
         "last_updated": "2025-09-17T20:26:18.345914"
       }
     },
+    "created_from": [
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "Static GPU Master List": {
       "EANY-8DY0KD3": {
         "Computername": "EANY-8DY0KD3",
@@ -36760,7 +37770,6 @@
   "Fangzhou Liu": {
     "human_name": "Fangzhou Liu",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-8DX0KD3": {
         "Computername": "EANY-8DX0KD3",
@@ -36782,12 +37791,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-25T13:03:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Kailey Baker": {
     "human_name": "Kailey Baker",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-87V6S33": {
         "Computername": "EANY-87V6S33",
@@ -36809,12 +37820,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-07-14T12:45:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Nick Jeffway": {
     "human_name": "Nick Jeffway",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-8DN5KD3": {
         "Computername": "EANY-8DN5KD3",
@@ -36836,12 +37849,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-25T13:46:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Szhang Zhang": {
     "human_name": "Szhang Zhang",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "VRIEGO": {
         "Computername": "VRIEGO",
@@ -36863,12 +37878,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2024-08-20T21:27:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Xinyue Liu": {
     "human_name": "Xinyue Liu",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-8DY1KD3": {
         "Computername": "EANY-8DY1KD3",
@@ -36890,12 +37907,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-30T13:59:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Jungin Chang": {
     "human_name": "Jungin Chang",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-8DZ0KD3": {
         "Computername": "EANY-8DZ0KD3",
@@ -36917,12 +37936,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-27T20:46:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Matt Strack": {
     "human_name": "Matt Strack",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-87V7243": {
         "Computername": "EANY-87V7243",
@@ -36944,12 +37965,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-07-17T17:06:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Anwuli Chukwuman": {
     "human_name": "Anwuli Chukwuman",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-4B580W2": {
         "Computername": "EANY-4B580W2",
@@ -36971,12 +37994,14 @@
         "GPU Memory": 4193280.0,
         "Date": null
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Christopher Stoddard": {
     "human_name": "Christopher Stoddard",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-BBMW233": {
         "Computername": "EANY-BBMW233",
@@ -36998,12 +38023,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-26T13:34:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Kate Kulpa": {
     "human_name": "Kate Kulpa",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-8DY8KD3": {
         "Computername": "EANY-8DY8KD3",
@@ -37025,12 +38052,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-28T15:47:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Calie Fleetwood": {
     "human_name": "Calie Fleetwood",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-7W8MWP3": {
         "Computername": "EANY-7W8MWP3",
@@ -37052,12 +38081,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-17T23:24:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Jihyeon Park": {
     "human_name": "Jihyeon Park",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-BW8MWP3": {
         "Computername": "EANY-BW8MWP3",
@@ -37079,12 +38110,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-25T14:15:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Kori Camacho": {
     "human_name": "Kori Camacho",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-3X8MWP3": {
         "Computername": "EANY-3X8MWP3",
@@ -37106,12 +38139,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-30T21:55:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Ana Guillandeaux, Ana": {
     "human_name": "Ana Guillandeaux, Ana",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "AGUILLANDEAUXW1": {
         "Computername": "AGUILLANDEAUXW1",
@@ -37133,12 +38168,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-08-11T09:29:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Rea Vermeulen": {
     "human_name": "Rea Vermeulen",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-8DV6KD3": {
         "Computername": "EANY-8DV6KD3",
@@ -37160,12 +38197,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-07-01T00:01:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Tony Roman": {
     "human_name": "Tony Roman",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "TROMANW11": {
         "Computername": "TROMANW11",
@@ -37187,12 +38226,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-15T12:52:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Tom Wong": {
     "human_name": "Tom Wong",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-JFG2P23": {
         "Computername": "EANY-JFG2P23",
@@ -37214,12 +38255,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-07-03T15:43:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Wilmarie Morales": {
     "human_name": "Wilmarie Morales",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-8DW5KD3": {
         "Computername": "EANY-8DW5KD3",
@@ -37241,12 +38284,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-30T17:45:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Ywu Wu": {
     "human_name": "Ywu Wu",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-H8MHHQ2": {
         "Computername": "EANY-H8MHHQ2",
@@ -37268,12 +38313,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-30T20:08:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Charles Wolf": {
     "human_name": "Charles Wolf",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-FX8MWP3": {
         "Computername": "EANY-FX8MWP3",
@@ -37295,12 +38342,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-18T13:38:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Sen Yang": {
     "human_name": "Sen Yang",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-9X8MWP3": {
         "Computername": "EANY-9X8MWP3",
@@ -37322,12 +38371,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-25T16:05:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Zhan Vivian": {
     "human_name": "Zhan Vivian",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-HW8MWP3": {
         "Computername": "EANY-HW8MWP3",
@@ -37349,12 +38400,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2024-08-20T16:49:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Michael Cruz": {
     "human_name": "Michael Cruz",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-F5KN7X2": {
         "Computername": "EANY-F5KN7X2",
@@ -37376,12 +38429,14 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-24T14:16:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   },
   "Christopher Eno": {
     "human_name": "Christopher Eno",
     "source": "gpu_master_list_only",
-    "created_from": "GPU Master List 2025",
     "Static GPU Master List": {
       "EANY-CYPWQ53": {
         "Computername": "EANY-CYPWQ53",
@@ -37403,6 +38458,9 @@
         "GPU Memory": 4193280.0,
         "Date": "2025-06-27T12:53:00"
       }
-    }
+    },
+    "created_from": [
+      "GPU Master List 2025"
+    ]
   }
 }

@@ -400,17 +400,34 @@
 /* Source indicators for employee data origin */
 .source-indicator {
     display: inline-block;
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 12px;
     cursor: help;
     vertical-align: middle;
     line-height: 1;
+    transition: opacity 0.2s ease;
 }
 
+.source-indicator:hover {
+    opacity: 0.7;
+}
+
+/* Individual Employee Files - Blue dot */
+.source-indicator.individual-employee {
+    color: #00bfff; /* Blue dot for individual employee files */
+}
+
+/* Individual Computer Data - Orange dot */
+.source-indicator.individual-computer {
+    color: #ff8c00; /* Orange dot for individual computer data */
+}
+
+/* GPU Master List - Green dot */
 .source-indicator.gpu-master {
     color: #28a745; /* Green dot for GPU master list */
 }
 
-.source-indicator.individual-computer {
-    color: #ff8c00; /* Orange dot for individual computer data */
+/* Unknown source - Gray dot */
+.source-indicator.unknown-source {
+    color: #888888; /* Gray dot for unknown sources */
 }
