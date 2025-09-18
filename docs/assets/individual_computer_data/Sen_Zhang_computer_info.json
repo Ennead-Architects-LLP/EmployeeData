@@ -87,7 +87,7 @@
   "MININT-5V26DTJ": {
     "CPU": "Intel(R) Core(TM) Ultra 9 285",
     "Computername": "MININT-5V26DTJ",
-    "Date": "2025-09-18T11:22:28.683614",
+    "Date": "2025-09-18T16:11:04.425656",
     "First Name": "Sen",
     "GPU Date": "2021-05-31T00:00:00",
     "GPU Driver": "31.0.15.3742",
@@ -102,7 +102,9 @@
     "Total Physical Memory": 67936788480,
     "Username": "szhang",
     "human_name": "Sen Zhang",
-    "last_updated": "2025-09-18T15:22:49.584203",
-    "computername": "MININT-5V26DTJ"
+    "last_updated": "2025-09-18T20:11:32.141916",
+    "computername": "MININT-5V26DTJ",
+    "processed_by_server": true,
+    "server_processing_timestamp": "2025-09-18T20:11:32.141920"
   }
 }
