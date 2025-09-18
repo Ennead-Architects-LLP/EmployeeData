@@ -1,7 +1,7 @@
 {
   "EANY-PW-0HJ97N": {
     "Computername": "EANY-PW-0HJ97N",
-    "Date": "2025-09-18T12:47:48.276154",
+    "Date": "2025-09-18T12:49:27.222930",
     "First Name": "Sen",
     "Last Name": "Zhang",
     "Manufacturer": "LENOVO",
@@ -12,10 +12,12 @@
     "all_cpus": {
       "cpu_1": {
         "architecture": 9,
+        "cache_l3_size": 24576,
         "cores": 16,
         "date": "2024-01-01T00:00:00",
         "driver": "N/A",
         "family": 775,
+        "hyperthreading_enabled": false,
         "logical_processors": 22,
         "max_clock_speed": 2300,
         "memory_bytes": null,
@@ -24,7 +26,8 @@
         "name": "Intel(R) Core(TM) Ultra 9 185H",
         "processor": "Intel(R) Core(TM) Ultra 9 185H",
         "stepping": 0,
-        "type": "Physical"
+        "type": "Physical",
+        "virtualization_support": false
       }
     },
     "all_gpus": {
@@ -70,15 +73,15 @@
     },
     "human_name": "Sen Zhang",
     "system_info": {
-      "available_memory_bytes": 7981608960,
-      "memory_percent": 76.4,
+      "available_memory_bytes": 8112779264,
+      "memory_percent": 76,
       "total_memory_bytes": 33765298176,
       "total_memory_formatted": "31.4 GB",
       "total_memory_gb": 31.446,
       "total_memory_mb": 32201.1,
-      "used_memory_bytes": 25783689216
+      "used_memory_bytes": 25652518912
     },
-    "last_updated": "2025-09-18T16:48:40.376341",
+    "last_updated": "2025-09-18T16:50:21.173807",
     "computername": "EANY-PW-0HJ97N"
   },
   "MININT-5V26DTJ": {
