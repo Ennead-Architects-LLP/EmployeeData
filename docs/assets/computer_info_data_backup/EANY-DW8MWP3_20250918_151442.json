@@ -1,0 +1,15 @@
+{
+  "computer_name": "EANY-DW8MWP3",
+  "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+  "gpu_driver": "32.0.15.7342",
+  "gpu_memory": -1048576,
+  "gpu_name": "NVIDIA RTX A4000",
+  "human_name": "Brian Masuda",
+  "manufacturer": "Dell Inc.",
+  "memory_bytes": 137107324928,
+  "model": "Precision 5820 Tower",
+  "os": "Windows 11",
+  "serial_number": "DW8MWP3",
+  "username": "bmasuda",
+  "server_timestamp": "2025-09-18T15:14:42.082461"
+}
