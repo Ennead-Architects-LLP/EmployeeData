@@ -66,11 +66,10 @@ class ComputerInfo:
     # Hardware specs
     cpu: Optional[str] = None
     total_physical_memory: Optional[int] = None
-    gpu_name: Optional[str] = None
-    gpu_processor: Optional[str] = None
-    gpu_driver: Optional[str] = None
-    gpu_memory: Optional[float] = None
-    gpu_date: Optional[str] = None
+    # Multi-GPU support (dict of dict) - contains all GPU information
+    all_gpus: Optional[dict] = field(default_factory=dict)
+    # Multi-CPU support (dict of dict) - contains all CPU information
+    all_cpus: Optional[dict] = field(default_factory=dict)
     
     # Metadata
     date: Optional[str] = None
@@ -85,12 +84,84 @@ class ComputerInfo:
     memory_info_error: Optional[str] = None
     cpu_info_error: Optional[str] = None
     gpu_info_error: Optional[str] = None
-    gpu_date_error: Optional[str] = None
     
     def __post_init__(self):
         """Initialize date field after object creation"""
         if self.date is None:
             self.date = datetime.now().isoformat()
+    
+    def __repr__(self):
+        """Return a comprehensive string representation of the computer information"""
+        lines = []
+        lines.append("="*60)
+        lines.append("COMPUTER INFORMATION")
+        lines.append("="*60)
+        
+        # Basic Information
+        lines.append("\n📋 BASIC INFORMATION:")
+        lines.append(f"   Computer Name: {self.computername or 'Unknown'}")
+        lines.append(f"   Username: {self.username or 'Unknown'}")
+        lines.append(f"   Full Name: {self.human_name or 'Unknown'}")
+        lines.append(f"   First Name: {self.first_name or 'Unknown'}")
+        lines.append(f"   Last Name: {self.last_name or 'Unknown'}")
+        
+        # System Information
+        lines.append("\n💻 SYSTEM INFORMATION:")
+        lines.append(f"   OS: {self.os or 'Unknown'}")
+        lines.append(f"   Manufacturer: {self.manufacturer or 'Unknown'}")
+        lines.append(f"   Model: {self.model or 'Unknown'}")
+        lines.append(f"   Serial Number: {self.serial_number or 'Unknown'}")
+        
+        # Hardware Information
+        lines.append("\n🔧 HARDWARE INFORMATION:")
+        lines.append(f"   CPU: {self.cpu or 'Unknown'}")
+        if self.total_physical_memory:
+            memory_gb = self.total_physical_memory / (1024**3)
+            lines.append(f"   Total Memory: {memory_gb:.1f} GB")
+        else:
+            lines.append(f"   Total Memory: Unknown")
+        
+        # CPU Details
+        if self.all_cpus:
+            lines.append(f"\n   🖥️  CPUs ({len(self.all_cpus)} found):")
+            for cpu_key, cpu in self.all_cpus.items():
+                lines.append(f"     {cpu_key.upper()}: {cpu.get('name', 'Unknown')}")
+                lines.append(f"       Type: {cpu.get('type', 'Unknown')}")
+                lines.append(f"       Cores: {cpu.get('cores', 'Unknown')}")
+                lines.append(f"       Logical Processors: {cpu.get('logical_processors', 'Unknown')}")
+                lines.append(f"       Date: {cpu.get('date', 'Unknown')}")
+        
+        # GPU Details
+        if self.all_gpus:
+            lines.append(f"\n   🎮 GPUs ({len(self.all_gpus)} found):")
+            for gpu_key, gpu in self.all_gpus.items():
+                lines.append(f"     {gpu_key.upper()}: {gpu.get('name', 'Unknown')}")
+                lines.append(f"       Type: {gpu.get('type', 'Unknown')}")
+                if gpu.get('memory_mb'):
+                    lines.append(f"       Memory: {gpu['memory_mb']:.0f} MB")
+                lines.append(f"       Driver: {gpu.get('driver', 'Unknown')}")
+                lines.append(f"       Priority: {gpu.get('priority', 'Unknown')}")
+                lines.append(f"       Date: {gpu.get('date', 'Unknown')}")
+        
+        # Collection Information
+        lines.append("\n📅 COLLECTION INFORMATION:")
+        lines.append(f"   Collection Date: {self.date or 'Unknown'}")
+        
+        # Error Information (if any)
+        errors = []
+        for field in ['computername_error', 'user_info_error', 'full_name_api_error', 
+                     'os_info_error', 'hardware_info_error', 'memory_info_error', 
+                     'cpu_info_error', 'gpu_info_error', 'collection_error']:
+            error_value = getattr(self, field, None)
+            if error_value:
+                errors.append(f"   {field}: {error_value}")
+        
+        if errors:
+            lines.append("\n⚠️  ERRORS ENCOUNTERED:")
+            lines.extend(errors)
+        
+        lines.append("="*60)
+        return "\n".join(lines)
     
     def to_dict(self) -> Dict[str, Any]:
         """Convert ComputerInfo instance to dictionary for JSON serialization"""
@@ -119,11 +190,6 @@ class ComputerInfo:
             'serial_number': 'Serial Number',
             'cpu': 'CPU',
             'total_physical_memory': 'Total Physical Memory',
-            'gpu_name': 'GPU Name',
-            'gpu_processor': 'GPU Processor',
-            'gpu_driver': 'GPU Driver',
-            'gpu_memory': 'GPU Memory',
-            'gpu_date': 'GPU Date',
             'date': 'Date'
         }
         return key_mapping.get(field_name, field_name)
@@ -314,7 +380,6 @@ class ComputerInfoCollector:
             self._get_memory_info()
             self._get_cpu_info()
             self._get_gpu_info()
-            self._get_gpu_date()
             self._get_system_serial()
             
             # Date is automatically set in __post_init__
@@ -470,30 +535,206 @@ class ComputerInfoCollector:
             self.computer_info.set_error("memory_info", str(e))
     
     def _get_cpu_info(self):
-        """Get CPU information"""
+        """Get CPU information for all CPUs"""
         try:
             if platform.system() == "Windows" and self.wmi_conn:
                 try:
+                    all_cpu_info = {}
+                    primary_cpu = None
+                    cpu_index = 1
+                    
                     for cpu in self.wmi_conn.Win32_Processor():
-                        self.computer_info.cpu = cpu.Name
-                        break
+                        # Create CPU info dictionary with safe attribute access
+                        cpu_key = f"cpu_{cpu_index}"
+                        cpu_info = {
+                            "name": getattr(cpu, 'Name', None) or "Unknown",
+                            "processor": getattr(cpu, 'Name', None) or "Unknown",  # For CPUs, name and processor are the same
+                            "driver": "N/A",  # CPUs don't have drivers like GPUs
+                            "memory_mb": None,  # CPUs don't have dedicated memory
+                            "memory_bytes": None,
+                            "date": self._get_cpu_release_date(getattr(cpu, 'Name', None) or ""),
+                            "type": "Physical",  # All real CPUs are physical
+                            "cores": getattr(cpu, 'NumberOfCores', None) or 0,
+                            "logical_processors": getattr(cpu, 'NumberOfLogicalProcessors', None) or 0,
+                            "max_clock_speed": getattr(cpu, 'MaxClockSpeed', None) or 0,
+                            "architecture": getattr(cpu, 'Architecture', None) or 0,
+                            "family": getattr(cpu, 'Family', None) or 0,
+                            "model": getattr(cpu, 'Model', None) or 0,
+                            "stepping": getattr(cpu, 'Stepping', None) or 0
+                        }
+                        
+                        all_cpu_info[cpu_key] = cpu_info
+                        
+                        # Set primary CPU (first one found)
+                        if primary_cpu is None:
+                            primary_cpu = cpu
+                        
+                        cpu_index += 1
+                    
+                    # Store all CPU information
+                    self.computer_info.all_cpus = all_cpu_info
+                    
+                    # Set primary CPU
+                    if primary_cpu is not None:
+                        self.computer_info.cpu = primary_cpu.Name
+                    else:
+                        self.computer_info.cpu = platform.processor()
                 except Exception as e:
+                    self.computer_info.set_error("cpu_wmi", str(e))
                     self.computer_info.cpu = platform.processor()
+                    self.computer_info.all_cpus = {}
             else:
                 self.computer_info.cpu = platform.processor()
+                self.computer_info.all_cpus = {}
         except Exception as e:
             self.computer_info.set_error("cpu_info", str(e))
     
+    def _get_cpu_release_date(self, cpu_name):
+        """Get CPU release date based on CPU name"""
+        try:
+            if not cpu_name or cpu_name.lower() == "unknown":
+                return "Unknown"
+            
+            cpu_name_lower = cpu_name.lower()
+            
+            # Intel CPU release dates
+            intel_dates = {
+                # Core Ultra series (2024)
+                'core ultra 9 185h': '2024-01-01T00:00:00',
+                'core ultra 7 165h': '2024-01-01T00:00:00',
+                'core ultra 5 125h': '2024-01-01T00:00:00',
+                
+                # 13th Gen (2022-2023)
+                'core i9-13900': '2022-10-20T00:00:00',
+                'core i7-13700': '2022-10-20T00:00:00',
+                'core i5-13600': '2022-10-20T00:00:00',
+                'core i9-13900h': '2023-01-03T00:00:00',
+                'core i7-13700h': '2023-01-03T00:00:00',
+                'core i5-13500h': '2023-01-03T00:00:00',
+                
+                # 12th Gen (2021-2022)
+                'core i9-12900': '2021-11-04T00:00:00',
+                'core i7-12700': '2021-11-04T00:00:00',
+                'core i5-12600': '2021-11-04T00:00:00',
+                'core i9-12900h': '2022-01-04T00:00:00',
+                'core i7-12700h': '2022-01-04T00:00:00',
+                'core i5-12500h': '2022-01-04T00:00:00',
+                
+                # 11th Gen (2020-2021)
+                'core i9-11900': '2021-03-30T00:00:00',
+                'core i7-11700': '2021-03-30T00:00:00',
+                'core i5-11600': '2021-03-30T00:00:00',
+                'core i9-11980hk': '2021-05-11T00:00:00',
+                'core i7-11800h': '2021-05-11T00:00:00',
+                'core i5-11400h': '2021-05-11T00:00:00',
+                
+                # 10th Gen (2019-2020)
+                'core i9-10900': '2020-04-30T00:00:00',
+                'core i7-10700': '2020-04-30T00:00:00',
+                'core i5-10600': '2020-04-30T00:00:00',
+                'core i9-10980hk': '2020-04-02T00:00:00',
+                'core i7-10875h': '2020-04-02T00:00:00',
+                'core i5-10300h': '2020-04-02T00:00:00',
+            }
+            
+            # AMD CPU release dates
+            amd_dates = {
+                # Ryzen 7000 series (2022-2023)
+                'ryzen 9 7950x': '2022-09-27T00:00:00',
+                'ryzen 7 7700x': '2022-09-27T00:00:00',
+                'ryzen 5 7600x': '2022-09-27T00:00:00',
+                'ryzen 9 7945hx': '2023-01-04T00:00:00',
+                'ryzen 7 7745hx': '2023-01-04T00:00:00',
+                'ryzen 5 7645hx': '2023-01-04T00:00:00',
+                
+                # Ryzen 6000 series (2022)
+                'ryzen 9 6900hx': '2022-01-04T00:00:00',
+                'ryzen 7 6800h': '2022-01-04T00:00:00',
+                'ryzen 5 6600h': '2022-01-04T00:00:00',
+                'ryzen 9 6980hx': '2022-01-04T00:00:00',
+                'ryzen 7 6800hs': '2022-01-04T00:00:00',
+                'ryzen 5 6600hs': '2022-01-04T00:00:00',
+                
+                # Ryzen 5000 series (2020-2021)
+                'ryzen 9 5950x': '2020-11-05T00:00:00',
+                'ryzen 7 5800x': '2020-11-05T00:00:00',
+                'ryzen 5 5600x': '2020-11-05T00:00:00',
+                'ryzen 9 5900hx': '2021-01-12T00:00:00',
+                'ryzen 7 5800h': '2021-01-12T00:00:00',
+                'ryzen 5 5600h': '2021-01-12T00:00:00',
+            }
+            
+            # Try exact matches first
+            for cpu_key, date in intel_dates.items():
+                if cpu_key in cpu_name_lower:
+                    return date
+            
+            for cpu_key, date in amd_dates.items():
+                if cpu_key in cpu_name_lower:
+                    return date
+            
+            # Try partial matches for series detection
+            if 'core ultra' in cpu_name_lower or 'ultra 9' in cpu_name_lower:
+                return '2024-01-01T00:00:00'
+            elif 'core i9-13' in cpu_name_lower:
+                return '2022-10-20T00:00:00'
+            elif 'core i7-13' in cpu_name_lower:
+                return '2022-10-20T00:00:00'
+            elif 'core i5-13' in cpu_name_lower:
+                return '2022-10-20T00:00:00'
+            elif 'core i9-12' in cpu_name_lower:
+                return '2021-11-04T00:00:00'
+            elif 'core i7-12' in cpu_name_lower:
+                return '2021-11-04T00:00:00'
+            elif 'core i5-12' in cpu_name_lower:
+                return '2021-11-04T00:00:00'
+            elif 'ryzen 9 7' in cpu_name_lower:
+                return '2022-09-27T00:00:00'
+            elif 'ryzen 7 7' in cpu_name_lower:
+                return '2022-09-27T00:00:00'
+            elif 'ryzen 5 7' in cpu_name_lower:
+                return '2022-09-27T00:00:00'
+            elif 'ryzen 9 6' in cpu_name_lower:
+                return '2022-01-04T00:00:00'
+            elif 'ryzen 7 6' in cpu_name_lower:
+                return '2022-01-04T00:00:00'
+            elif 'ryzen 5 6' in cpu_name_lower:
+                return '2022-01-04T00:00:00'
+            
+            return "Unknown"
+            
+        except Exception as e:
+            return "Unknown"
+    
     def _get_gpu_info(self):
-        """Get GPU information"""
+        """Get GPU information for all GPUs"""
         try:
             if platform.system() == "Windows" and self.wmi_conn:
                 try:
+                    # List of virtual/generic GPU names to exclude from primary selection
+                    virtual_gpu_names = [
+                        "microsoft basic display driver",
+                        "microsoft basic render driver", 
+                        "meta virtual monitor",
+                        "virtual display",
+                        "generic pnp monitor",
+                        "default display device"
+                    ]
+                    
+                    all_gpu_info = {}
+                    best_gpu = None
                     max_memory_bytes = None
-                    chosen_gpu = None
-
+                    gpu_priority = 0  # Higher number = higher priority
+                    gpu_index = 1
+                    
                     for gpu in self.wmi_conn.Win32_VideoController():
-                        # Prefer the adapter with the largest memory size
+                        gpu_name = (gpu.Name or "").lower()
+                        
+                        # Skip GPUs with no meaningful name
+                        if not gpu.Name or gpu.Name.strip() == "":
+                            continue
+                        
+                        # Calculate memory size
                         raw = getattr(gpu, 'AdapterRAM', None)
                         mem_bytes = None
                         if raw is not None:
@@ -531,39 +772,79 @@ class ComputerInfoCollector:
                                             continue
                             except Exception:
                                 pass
+                        
+                        # Determine GPU priority (dedicated > integrated > basic)
+                        current_priority = 0
+                        if "nvidia" in gpu_name or "geforce" in gpu_name or "quadro" in gpu_name or "rtx" in gpu_name or "gtx" in gpu_name:
+                            current_priority = 3  # Dedicated NVIDIA
+                        elif "amd" in gpu_name or "radeon" in gpu_name or "rx" in gpu_name:
+                            current_priority = 3  # Dedicated AMD
+                        elif "intel" in gpu_name and ("arc" in gpu_name or "iris" in gpu_name):
+                            current_priority = 2  # Intel Arc/Iris (higher-end integrated)
+                        elif "intel" in gpu_name:
+                            current_priority = 1  # Basic Intel integrated
+                        else:
+                            current_priority = 0  # Unknown/other
+                        
+                        # Create GPU info dictionary
+                        gpu_key = f"gpu_{gpu_index}"
+                        gpu_info = {
+                            "name": gpu.Name,
+                            "processor": gpu.VideoProcessor or "Unknown",
+                            "driver": gpu.DriverVersion or "Unknown",
+                            "memory_mb": max(0, int(round(mem_bytes / (1024 * 1024)))) if mem_bytes else None,
+                            "memory_bytes": mem_bytes,
+                            "date": self._get_gpu_release_date(gpu.Name or ""),
+                            "type": "Virtual" if any(virtual_name in gpu_name for virtual_name in virtual_gpu_names) else "Physical",
+                            "priority": current_priority,
+                            "is_virtual": any(virtual_name in gpu_name for virtual_name in virtual_gpu_names)
+                        }
+                        
+                        # Add to all GPUs dict
+                        all_gpu_info[gpu_key] = gpu_info
+                        
+                        gpu_index += 1
+                        
+                        # Skip virtual GPUs from primary selection
+                        if gpu_info["is_virtual"]:
+                            continue
+                        
+                        # Select best GPU based on priority and memory
+                        should_select = False
+                        if best_gpu is None:
+                            should_select = True
+                        elif current_priority > gpu_priority:
+                            should_select = True
+                        elif current_priority == gpu_priority and mem_bytes is not None and (max_memory_bytes is None or mem_bytes > max_memory_bytes):
+                            should_select = True
+                        
+                        if should_select:
+                            best_gpu = gpu
+                            max_memory_bytes = mem_bytes
+                            gpu_priority = current_priority
 
-                        if mem_bytes is not None:
-                            if max_memory_bytes is None or mem_bytes > max_memory_bytes:
-                                max_memory_bytes = mem_bytes
-                                chosen_gpu = gpu
-
-                    if chosen_gpu is not None:
-                        self.computer_info.gpu_name = chosen_gpu.Name
-                        self.computer_info.gpu_processor = chosen_gpu.VideoProcessor
-                        self.computer_info.gpu_driver = chosen_gpu.DriverVersion
-                    # Set memory in MB with clamping
-                    if max_memory_bytes is not None:
-                        mem_mb = max(0, int(round(max_memory_bytes / (1024 * 1024))))
-                        self.computer_info.gpu_memory = mem_mb
-                    else:
-                        self.computer_info.gpu_memory = None
+                    # Store all GPU information
+                    self.computer_info.all_gpus = all_gpu_info
+                    
+                    # All GPU information is now stored in all_gpus dict
                 except Exception as e:
                     self.computer_info.set_error("gpu_wmi", str(e))
+                    self.computer_info.all_gpus = {}
             else:
-                self.computer_info.gpu_name = "Unknown"
-                self.computer_info.gpu_processor = "Unknown"
-                self.computer_info.gpu_driver = "Unknown"
-                self.computer_info.gpu_memory = None
+                self.computer_info.all_gpus = {}
         except Exception as e:
             self.computer_info.set_error("gpu_info", str(e))
     
-    def _get_gpu_date(self):
-        """Get GPU release date (age calculation done on website side)"""
+    def _get_gpu_release_date(self, gpu_name):
+        """Get GPU release date based on GPU name"""
         try:
-            gpu_name = self.computer_info.gpu_name or ''
-            if gpu_name and gpu_name != 'Unknown':
-                # GPU date mapping based on common GPU release dates
-                gpu_dates = {
+            if not gpu_name or gpu_name.lower() == "unknown":
+                return "Unknown"
+            
+            gpu_name_lower = gpu_name.lower()
+            
+            # GPU date mapping based on common GPU release dates
+            gpu_dates = {
                     # Quadro Professional Series
                     'Quadro P5000': '2016-10-01T00:00:00',
                     'Quadro P2000': '2017-02-01T00:00:00',
@@ -601,6 +882,15 @@ class ComputerInfoCollector:
                     'GeForce RTX 4080': '2022-11-16T00:00:00',
                     'GeForce RTX 4090': '2022-10-12T00:00:00',
                     
+                    # Laptop GPU variants
+                    'RTX 4070 Laptop GPU': '2023-02-22T00:00:00',
+                    'RTX 4060 Laptop GPU': '2023-02-22T00:00:00',
+                    'RTX 4080 Laptop GPU': '2023-02-22T00:00:00',
+                    'RTX 4090 Laptop GPU': '2023-02-22T00:00:00',
+                    'RTX 3070 Laptop GPU': '2021-01-12T00:00:00',
+                    'RTX 3080 Laptop GPU': '2021-01-12T00:00:00',
+                    'RTX 3060 Laptop GPU': '2021-01-12T00:00:00',
+                    
                     # RTX A Series (Professional)
                     'RTX A2000': '2021-05-31T00:00:00',
                     'RTX A4000': '2021-04-12T00:00:00',
@@ -626,54 +916,61 @@ class ComputerInfoCollector:
                     'Intel Arc A380': '2022-06-14T00:00:00',
                     'Intel Arc A750': '2022-10-12T00:00:00',
                     'Intel Arc A770': '2022-10-12T00:00:00',
+                    'Intel Arc Pro Graphics': '2022-10-12T00:00:00',
+                    'Intel Arc Graphics': '2022-10-12T00:00:00',
+                    'Arc Pro Graphics': '2022-10-12T00:00:00',
+                    'Arc Graphics': '2022-10-12T00:00:00',
                 }
                 
-                # Find matching GPU date with improved matching
-                gpu_date = None
-                gpu_name_lower = gpu_name.lower()
+            # Find matching GPU date with improved matching
+            gpu_date = None
+            gpu_name_lower = gpu_name.lower()
+            
+            # Clean the GPU name by removing trademark symbols and extra spaces
+            import re
+            cleaned_name = re.sub(r'[®™]', '', gpu_name_lower)  # Remove trademark symbols
+            cleaned_name = re.sub(r'\([^)]*\)', '', cleaned_name)  # Remove everything in parentheses
+            cleaned_name = re.sub(r'\s+', ' ', cleaned_name).strip()  # Normalize spaces
+            
+            # Sort by key length (longer keys first) to prioritize more specific matches
+            sorted_gpu_dates = sorted(gpu_dates.items(), key=lambda x: len(x[0]), reverse=True)
+            
+            # Try matches, prioritizing longer (more specific) keys
+            for gpu_key, date in sorted_gpu_dates:
+                if gpu_key.lower() in cleaned_name:
+                    gpu_date = date
+                    break
+            
+            # If no exact match, try partial matches for common patterns
+            if not gpu_date:
+                # Extract key terms from GPU name
+                gpu_terms = []
+                if 'rtx' in gpu_name_lower:
+                    gpu_terms.append('rtx')
+                if 'gtx' in gpu_name_lower:
+                    gpu_terms.append('gtx')
+                if 'quadro' in gpu_name_lower:
+                    gpu_terms.append('quadro')
+                if 'radeon' in gpu_name_lower:
+                    gpu_terms.append('radeon')
                 
-                # First try exact matches
+                # Look for number patterns
+                import re
+                numbers = re.findall(r'\d+', gpu_name)
+                
+                # Try to match based on series and numbers
                 for gpu_key, date in gpu_dates.items():
-                    if gpu_key.lower() in gpu_name_lower:
-                        gpu_date = date
-                        break
+                    key_lower = gpu_key.lower()
+                    # Check if all terms match
+                    if all(term in key_lower for term in gpu_terms):
+                        # Check if any number from GPU name is in the key
+                        if any(num in key_lower for num in numbers):
+                            gpu_date = date
+                            break
                 
-                # If no exact match, try partial matches for common patterns
-                if not gpu_date:
-                    # Extract key terms from GPU name
-                    gpu_terms = []
-                    if 'rtx' in gpu_name_lower:
-                        gpu_terms.append('rtx')
-                    if 'gtx' in gpu_name_lower:
-                        gpu_terms.append('gtx')
-                    if 'quadro' in gpu_name_lower:
-                        gpu_terms.append('quadro')
-                    if 'radeon' in gpu_name_lower:
-                        gpu_terms.append('radeon')
-                    
-                    # Look for number patterns
-                    import re
-                    numbers = re.findall(r'\d+', gpu_name)
-                    
-                    # Try to match based on series and numbers
-                    for gpu_key, date in gpu_dates.items():
-                        key_lower = gpu_key.lower()
-                        # Check if all terms match
-                        if all(term in key_lower for term in gpu_terms):
-                            # Check if any number from GPU name is in the key
-                            if any(num in key_lower for num in numbers):
-                                gpu_date = date
-                                break
-                
-                if gpu_date:
-                    self.computer_info.gpu_date = gpu_date
-                else:
-                    self.computer_info.gpu_date = "Unknown"
-            else:
-                self.computer_info.gpu_date = "Unknown"
+            return gpu_date
         except Exception as e:
-            self.computer_info.set_error("gpu_date", str(e))
-            self.computer_info.gpu_date = "Unknown"
+            return "Unknown"
     
     def _get_system_serial(self):
         """Get system serial number"""
@@ -750,6 +1047,40 @@ class ComputerInfoCollector:
             print(f"   Computer: {self.computer_info.computername or 'Unknown'}")
             print(f"   User: {self.computer_info.human_name or 'Unknown'} ({self.computer_info.username or 'Unknown'})")
             
+            # Print payload information
+            print(f"\n📋 PAYLOAD INFORMATION:")
+            print(f"   Repository: {EMBEDDED_REPO_OWNER}/{EMBEDDED_REPO_NAME}")
+            print(f"   Event Type: computer-data")
+            print(f"   Timestamp: {datetime.now().isoformat()}")
+            
+            # Print computer info structure
+            computer_dict = self.computer_info.to_dict()
+            print(f"\n📊 COMPUTER INFO STRUCTURE:")
+            for key, value in computer_dict.items():
+                if key == 'all_cpus':
+                    print(f"   {key}: {len(value) if value else 0} CPUs")
+                    if value:
+                        for cpu_key, cpu in value.items():
+                            print(f"     {cpu_key.upper()}: {cpu.get('name', 'Unknown')} ({cpu.get('type', 'Unknown')})")
+                elif key == 'all_gpus':
+                    print(f"   {key}: {len(value) if value else 0} GPUs")
+                    if value:
+                        for gpu_key, gpu in value.items():
+                            print(f"     {gpu_key.upper()}: {gpu.get('name', 'Unknown')} ({gpu.get('type', 'Unknown')})")
+                else:
+                    # Truncate very long values for display
+                    display_value = str(value)
+                    if len(display_value) > 60:
+                        display_value = display_value[:57] + "..."
+                    print(f"   {key}: {display_value}")
+            
+            print(f"\n📦 PAYLOAD SIZE: {len(json.dumps(payload))} characters")
+            
+            # Optional: Print complete payload JSON for debugging
+            if os.environ.get("ABOUTME_DEBUG_PAYLOAD") == "1":
+                print(f"\n🔍 COMPLETE PAYLOAD JSON:")
+                print(json.dumps(payload, indent=2, ensure_ascii=False, default=str))
+            
             response = requests.post(url, json=payload, headers=headers, timeout=30)
             
             if response.status_code == 204:  # 204 No Content is success for repository dispatch
@@ -769,49 +1100,8 @@ class ComputerInfoCollector:
             return False
 
     def print_summary(self):
-        """Print a summary of collected information"""
-        print("\n" + "="*50)
-        print("COMPUTER INFORMATION SUMMARY")
-        print("="*50)
-        
-        # Define field mappings with formatters
-        field_mappings = {
-            'computername': ('Computer Name', None),
-            'human_name': ('User', None),
-            'username': ('Username', None),
-            'first_name': ('First Name', None),
-            'last_name': ('Last Name', None),
-            'os': ('OS', None),
-            'manufacturer': ('Manufacturer', None),
-            'model': ('Model', None),
-            'cpu': ('CPU', None),
-            'total_physical_memory': ('Memory', lambda v: f"{v / (1024**3):.1f} GB" if isinstance(v, int) else v),
-            'gpu_name': ('GPU', None),
-            'gpu_memory': ('GPU Memory', lambda v: f"{v:.0f} MB" if isinstance(v, (int, float)) and v is not None else v),
-            'gpu_date': ('GPU Date', None),
-            'serial_number': ('Serial Number', None),
-            'date': ('Collection Date', None)
-        }
-        
-        # Print all available fields
-        for field_name, (display_label, formatter) in field_mappings.items():
-            if hasattr(self.computer_info, field_name):
-                value = getattr(self.computer_info, field_name)
-                if value is not None:
-                    # Apply formatter if available
-                    if formatter:
-                        try:
-                            value = formatter(value)
-                        except (TypeError, ValueError):
-                            pass  # Keep original value if formatting fails
-                    
-                    # Special handling for User field to include username
-                    if field_name == 'human_name' and self.computer_info.username:
-                        print(f"{display_label}: {value} ({self.computer_info.username})")
-                    else:
-                        print(f"{display_label}: {value}")
-        
-        print("="*50)
+        """Print a summary of collected information using the __repr__ method"""
+        print(repr(self.computer_info))
 
 def main():
     """GUI entrypoint with CLI fallback."""
@@ -907,72 +1197,224 @@ class AboutMeApp:
         content = ttk.Frame(container)
         content.pack(side="top", fill="both", expand=True)
 
-        header = ttk.Label(content, text="AboutMe", font=("Segoe UI", 14, "bold"))
+        header = ttk.Label(content, text="AboutMe - Data Collection Review", font=("Segoe UI", 14, "bold"))
         header.pack(anchor="w", pady=(0, 8))
-        note = ttk.Label(content, text="After the reimaging of computers we need to collect the current machine data. You just need to approve.")
-        note.pack(anchor="w", pady=(0, 12))
-
-        columns = ("Key", "Value")
-        tree = ttk.Treeview(content, columns=columns, show="headings", height=12)
-        tree.heading("Key", text="Key")
-        tree.heading("Value", text="Value")
-        tree.column("Key", width=220, anchor="w")
-        tree.column("Value", width=460, anchor="w")
-        vsb = ttk.Scrollbar(content, orient="vertical", command=tree.yview)
-        tree.configure(yscrollcommand=vsb.set)
-        tree.pack(side="left", fill="both", expand=True)
-        vsb.pack(side="right", fill="y")
-
-        # Dynamically get all available fields from ComputerInfo class
-        computer_info = self.collector.computer_info
-        display_items = []
         
-        # Define field mappings: (field_name, display_label, formatter_function)
-        field_mappings = {
-            'computername': ('Computername', None),
-            'human_name': ('Human Name', None),
-            'first_name': ('First Name', None),
-            'last_name': ('Last Name', None),
-            'username': ('Username', None),
-            'os': ('OS', None),
-            'manufacturer': ('Manufacturer', None),
-            'model': ('Model', None),
-            'cpu': ('CPU', None),
-            'total_physical_memory': ('Total Physical Memory', lambda v: f"{v / (1024**3):.1f} GB" if isinstance(v, int) else v),
-            'gpu_name': ('GPU Name', None),
-            'gpu_processor': ('GPU Processor', None),
-            'gpu_driver': ('GPU Driver', None),
-            'gpu_memory': ('GPU Memory', lambda v: f"{v:.0f} MB" if isinstance(v, (int, float)) and v is not None else v),
-            'gpu_date': ('GPU Date', None),
-            'serial_number': ('Serial Number', None),
-            'date': ('Date', None)
-        }
+        # Data collection notice
+        notice = ttk.Label(content, text="After the reimaging of computers we need to collect the current machine data. You just need to approve.", 
+                          font=("Segoe UI", 10))
+        notice.pack(anchor="w", pady=(0, 8))
         
-        # Add fields that have values (not None)
-        for field_name, (display_label, formatter) in field_mappings.items():
-            if hasattr(computer_info, field_name):
-                value = getattr(computer_info, field_name)
-                if value is not None:
-                    # Apply formatter if available
-                    if formatter:
-                        try:
-                            value = formatter(value)
-                        except (TypeError, ValueError):
-                            pass  # Keep original value if formatting fails
-                    display_items.append((display_label, value))
+        # Data collection summary
+        summary = ttk.Label(content, text="📋 The following information will be collected and shared with the IT team:", 
+                           font=("Segoe UI", 10, "bold"))
+        summary.pack(anchor="w", pady=(0, 8))
         
-        # Insert items into tree
-        for label, value in display_items:
-            tree.insert("", "end", values=(label, value))
+        # Create notebook for tabs
+        notebook = ttk.Notebook(content)
+        notebook.pack(fill="both", expand=True, pady=(0, 8))
+        
+        # Tab 1: Basic System Information
+        basic_frame = ttk.Frame(notebook)
+        notebook.add(basic_frame, text="Basic System Info")
+        
+        # Tab 2: Hardware Details
+        hardware_frame = ttk.Frame(notebook)
+        notebook.add(hardware_frame, text="Hardware Details")
+        
+        # Tab 3: All Data Preview
+        preview_frame = ttk.Frame(notebook)
+        notebook.add(preview_frame, text="Complete Data Preview")
+        
+        # Populate Basic System Information tab
+        self._populate_basic_info_tab(basic_frame)
+        
+        # Populate Hardware Details tab
+        self._populate_hardware_info_tab(hardware_frame)
+        
+        # Populate Complete Data Preview tab
+        self._populate_preview_tab(preview_frame)
 
         # Fixed bottom action bar
         actions = ttk.Frame(container)
         actions.pack(side="bottom", fill="x", pady=(8, 0))
-        self.send_btn = ttk.Button(actions, text="Allow Share", command=self.on_send_click)
-        self.cancel_btn = ttk.Button(actions, text="Disallow Share", command=self.on_close)
+        # Add privacy notice
+        privacy_frame = ttk.Frame(container)
+        privacy_frame.pack(side="bottom", fill="x", pady=(8, 0))
+        
+        privacy_text = "🔒 Privacy Notice: This data is shared securely with the IT team for system inventory purposes only."
+        privacy_label = ttk.Label(privacy_frame, text=privacy_text, font=("Segoe UI", 9), 
+                                 foreground="#888888")
+        privacy_label.pack(anchor="center")
+        
+        self.send_btn = ttk.Button(actions, text="✅ Allow Share", command=self.on_send_click)
+        self.cancel_btn = ttk.Button(actions, text="❌ Disallow Share", command=self.on_close)
         self.send_btn.pack(side="left")
         self.cancel_btn.pack(side="right")
         self._add_footer(self.root)
+    
+    def _populate_basic_info_tab(self, parent):
+        """Populate the Basic System Information tab"""
+        # Create scrollable frame
+        canvas = tk.Canvas(parent, bg="#121212")
+        scrollbar = ttk.Scrollbar(parent, orient="vertical", command=canvas.yview)
+        scrollable_frame = ttk.Frame(canvas)
+        
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        
+        # Basic system information
+        basic_info = [
+            ("Computer Name", "Identifies your specific computer"),
+            ("Username", "Your Windows username"),
+            ("Full Name", "Your display name from Windows"),
+            ("Operating System", "Windows version and build"),
+            ("Manufacturer", "Computer manufacturer (e.g., Lenovo, Dell)"),
+            ("Model", "Computer model number"),
+            ("Serial Number", "Hardware serial number"),
+            ("Total Memory", "Amount of RAM installed"),
+            ("Collection Date", "When this data was collected")
+        ]
+        
+        info_label = ttk.Label(scrollable_frame, text="📋 Basic System Information", 
+                              font=("Segoe UI", 12, "bold"))
+        info_label.pack(anchor="w", pady=(0, 8))
+        
+        for field, description in basic_info:
+            frame = ttk.Frame(scrollable_frame)
+            frame.pack(fill="x", pady=2)
+            
+            field_label = ttk.Label(frame, text=f"• {field}:", font=("Segoe UI", 10, "bold"))
+            field_label.pack(side="left", anchor="w")
+            
+            desc_label = ttk.Label(frame, text=description, font=("Segoe UI", 9))
+            desc_label.pack(side="left", anchor="w", padx=(10, 0))
+        
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+    
+    def _populate_hardware_info_tab(self, parent):
+        """Populate the Hardware Details tab"""
+        # Create scrollable frame
+        canvas = tk.Canvas(parent, bg="#121212")
+        scrollbar = ttk.Scrollbar(parent, orient="vertical", command=canvas.yview)
+        scrollable_frame = ttk.Frame(canvas)
+        
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        
+        # Hardware information
+        hardware_info = [
+            ("CPU Information", "Processor name, cores, speed, and release date"),
+            ("GPU Information", "All graphics cards with details like memory, driver, and type"),
+            ("Physical vs Virtual", "Distinguishes between real hardware and virtual devices"),
+            ("Hardware Priority", "Ranks GPUs by performance (dedicated > integrated > virtual)"),
+            ("Memory Details", "GPU memory allocation and system RAM"),
+            ("Driver Information", "Current driver versions for all hardware")
+        ]
+        
+        info_label = ttk.Label(scrollable_frame, text="🔧 Hardware Details", 
+                              font=("Segoe UI", 12, "bold"))
+        info_label.pack(anchor="w", pady=(0, 8))
+        
+        for field, description in hardware_info:
+            frame = ttk.Frame(scrollable_frame)
+            frame.pack(fill="x", pady=2)
+            
+            field_label = ttk.Label(frame, text=f"• {field}:", font=("Segoe UI", 10, "bold"))
+            field_label.pack(side="left", anchor="w")
+            
+            desc_label = ttk.Label(frame, text=description, font=("Segoe UI", 9))
+            desc_label.pack(side="left", anchor="w", padx=(10, 0))
+        
+        # Show actual hardware count
+        computer_info = self.collector.computer_info
+        count_frame = ttk.Frame(scrollable_frame)
+        count_frame.pack(fill="x", pady=(16, 0))
+        
+        count_label = ttk.Label(count_frame, text="📊 Your System Hardware:", 
+                               font=("Segoe UI", 10, "bold"))
+        count_label.pack(anchor="w")
+        
+        cpu_count = len(computer_info.all_cpus) if computer_info.all_cpus else 0
+        gpu_count = len(computer_info.all_gpus) if computer_info.all_gpus else 0
+        
+        cpu_info = ttk.Label(count_frame, text=f"• CPUs: {cpu_count} found")
+        cpu_info.pack(anchor="w", padx=(20, 0))
+        
+        gpu_info = ttk.Label(count_frame, text=f"• GPUs: {gpu_count} found")
+        gpu_info.pack(anchor="w", padx=(20, 0))
+        
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+    
+    def _populate_preview_tab(self, parent):
+        """Populate the Complete Data Preview tab"""
+        # Create treeview for complete data preview
+        columns = ("Field", "Value")
+        tree = ttk.Treeview(parent, columns=columns, show="headings", height=15)
+        tree.heading("Field", text="Field")
+        tree.heading("Value", text="Value")
+        tree.column("Field", width=250, anchor="w")
+        tree.column("Value", width=400, anchor="w")
+        
+        vsb = ttk.Scrollbar(parent, orient="vertical", command=tree.yview)
+        tree.configure(yscrollcommand=vsb.set)
+        
+        # Populate with actual data
+        computer_info = self.collector.computer_info
+        
+        # Basic fields
+        basic_fields = {
+            'computername': 'Computer Name',
+            'human_name': 'Full Name',
+            'username': 'Username',
+            'os': 'Operating System',
+            'manufacturer': 'Manufacturer',
+            'model': 'Model',
+            'serial_number': 'Serial Number',
+            'total_physical_memory': 'Total Memory',
+            'date': 'Collection Date'
+        }
+        
+        for field_name, display_label in basic_fields.items():
+            if hasattr(computer_info, field_name):
+                value = getattr(computer_info, field_name)
+                if value is not None:
+                    if field_name == 'total_physical_memory' and isinstance(value, int):
+                        value = f"{value / (1024**3):.1f} GB"
+                    tree.insert("", "end", values=(display_label, str(value)))
+        
+        # CPU information
+        if computer_info.all_cpus:
+            for cpu_key, cpu in computer_info.all_cpus.items():
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Name", cpu.get('name', 'Unknown')))
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Cores", str(cpu.get('cores', 0))))
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Logical Processors", str(cpu.get('logical_processors', 0))))
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Type", cpu.get('type', 'Unknown')))
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Date", cpu.get('date', 'Unknown')))
+        
+        # GPU information
+        if computer_info.all_gpus:
+            for gpu_key, gpu in computer_info.all_gpus.items():
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Name", gpu.get('name', 'Unknown')))
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Type", gpu.get('type', 'Unknown')))
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Memory", f"{gpu.get('memory_mb', 0):.0f} MB" if gpu.get('memory_mb') else 'N/A'))
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Driver", gpu.get('driver', 'Unknown')))
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Priority", str(gpu.get('priority', 0))))
+        
+        tree.pack(side="left", fill="both", expand=True)
+        vsb.pack(side="right", fill="y")
 
     def _build_success_ui(self, success):
         for w in self.root.winfo_children():
