@@ -1,0 +1,22 @@
+{
+  "CPU": "Intel(R) Core(TM) Ultra 9 285",
+  "Computername": "MININT-5V26DTJ",
+  "Date": "2025-09-18T11:22:28.683614",
+  "First Name": "Sen",
+  "GPU Date": "2021-05-31T00:00:00",
+  "GPU Driver": "31.0.15.3742",
+  "GPU Memory": 4095,
+  "GPU Name": "NVIDIA RTX A2000 12GB",
+  "GPU Processor": "NVIDIA RTX A2000 12GB",
+  "Last Name": "Zhang",
+  "Manufacturer": "ASUS",
+  "Model": "PRIME B860-PLUS WIFI",
+  "OS": "Windows 11",
+  "Serial Number": "241146563400017",
+  "Total Physical Memory": 67936788480,
+  "Username": "szhang",
+  "human_name": "Sen Zhang",
+  "computer_name": "MININT-5V26DTJ",
+  "memory_bytes": 67936788480,
+  "server_timestamp": "2025-09-18T15:22:49.583968"
+}
