@@ -1,15 +1,23 @@
 {
   "EANY-PW-0HJ97N": {
-    "computername": "EANY-PW-0HJ97N",
-    "os": "Windows 11",
-    "manufacturer": "LENOVO",
-    "model": "21KV0001US",
-    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
-    "gpu_name": "Meta Virtual Monitor",
-    "gpu_driver": "17.12.55.198",
-    "memory_bytes": 33765298176,
-    "serial_number": "PW0HJ97N",
-    "last_updated": "2025-09-16T21:10:10.079918"
+    "CPU": "Intel(R) Core(TM) Ultra 9 185H",
+    "Computername": "EANY-PW-0HJ97N",
+    "Date": "2025-09-18T10:59:47.095981",
+    "First Name": "Sen",
+    "GPU Date": "Unknown",
+    "GPU Driver": "17.12.55.198",
+    "GPU Memory": 8188,
+    "GPU Name": "Meta Virtual Monitor",
+    "Last Name": "Zhang",
+    "Manufacturer": "LENOVO",
+    "Model": "21KV0001US",
+    "OS": "Windows 11",
+    "Serial Number": "PW0HJ97N",
+    "Total Physical Memory": 33765298176,
+    "Username": "szhang",
+    "human_name": "Sen Zhang",
+    "last_updated": "2025-09-18T15:00:36.324906",
+    "computername": "EANY-PW-0HJ97N"
   },
   "MININT-5V26DTJ": {
     "CPU": "Intel(R) Core(TM) Ultra 9 285",
