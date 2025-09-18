@@ -38,6 +38,7 @@ jobs:
           .venv\Scripts\python.exe 5-assistant\build_vectorstore.py
 
       - name: Commit vectorstore
+        shell: bash
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
