@@ -1,7 +1,7 @@
 {
   "EANY-PW-0HJ97N": {
     "Computername": "EANY-PW-0HJ97N",
-    "Date": "2025-09-18T12:42:41.777988",
+    "Date": "2025-09-18T12:47:48.276154",
     "First Name": "Sen",
     "Last Name": "Zhang",
     "Manufacturer": "LENOVO",
@@ -70,15 +70,15 @@
     },
     "human_name": "Sen Zhang",
     "system_info": {
-      "available_memory_bytes": 7722450944,
-      "memory_percent": 77.1,
+      "available_memory_bytes": 7981608960,
+      "memory_percent": 76.4,
       "total_memory_bytes": 33765298176,
       "total_memory_formatted": "31.4 GB",
       "total_memory_gb": 31.446,
       "total_memory_mb": 32201.1,
-      "used_memory_bytes": 26042847232
+      "used_memory_bytes": 25783689216
     },
-    "last_updated": "2025-09-18T16:43:34.629796",
+    "last_updated": "2025-09-18T16:48:40.376341",
     "computername": "EANY-PW-0HJ97N"
   },
   "MININT-5V26DTJ": {
