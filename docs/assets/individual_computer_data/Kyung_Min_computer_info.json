@@ -1,0 +1,23 @@
+{
+  "EANY-H8QFHQ2": {
+    "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+    "Computername": "EANY-H8QFHQ2",
+    "Date": "2025-09-18T13:53:09.726818",
+    "First Name": "Kyung",
+    "GPU Date": "2018-11-13T00:00:00",
+    "GPU Driver": "32.0.15.7159",
+    "GPU Memory": 4095,
+    "GPU Name": "NVIDIA Quadro RTX 4000",
+    "GPU Processor": "Quadro RTX 4000",
+    "Last Name": "Min",
+    "Manufacturer": "Dell Inc.",
+    "Model": "Precision 5820 Tower",
+    "OS": "Windows 11",
+    "Serial Number": "H8QFHQ2",
+    "Total Physical Memory": 68374601728,
+    "Username": "kmin",
+    "human_name": "Kyung Min",
+    "last_updated": "2025-09-18T17:53:36.836703",
+    "computername": "EANY-H8QFHQ2"
+  }
+}
