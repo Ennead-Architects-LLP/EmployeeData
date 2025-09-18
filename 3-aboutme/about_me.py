@@ -44,6 +44,9 @@ except Exception:
 token_file = "token.json"
 EMBEDDED_GITHUB_TOKEN = None
 
+# Detect silent/headless mode (used by about_me_silent and packaged exe)
+SILENT_MODE = os.environ.get("ABOUTME_FORCE_SILENT") == "1"
+
 @dataclass
 class ComputerInfo:
     """Computer information data class with structured fields"""
@@ -169,47 +172,33 @@ def try_half_token():
     
 
 
-try:
-    with open(token_file, 'r') as f:
-        token_data = json.load(f)
-        EMBEDDED_GITHUB_TOKEN = token_data['token']
-    print(f"✅ GitHub token loaded successfully")
-except FileNotFoundError:
+def _pause_if_interactive():
+    if not SILENT_MODE:
+        try:
+            input("\nPress Enter to close this window...")
+        except Exception:
+            pass
 
-    error_msg = f"❌ Error: {token_file} not found!"
-    print(error_msg)
-    print("   Please ensure the token.json file is in the same directory as the executable.")
-    save_token_error(error_msg)
+try:
+    # Prefer half token first
+    EMBEDDED_GITHUB_TOKEN = try_half_token()
+    print("✅ GitHub token loaded from half token (preferred)")
+except Exception:
+    # Fall back to existing token.json if available
     try:
-        EMBEDDED_GITHUB_TOKEN = try_half_token()
-        print(f"✅ GitHub token loaded successfully from half token")
-        with open(token_file, 'w') as f:
-            json.dump({'token': EMBEDDED_GITHUB_TOKEN}, f)
+        with open(token_file, 'r') as f:
+            token_data = json.load(f)
+            EMBEDDED_GITHUB_TOKEN = token_data['token']
+        print(f"✅ GitHub token loaded successfully from token.json")
     except Exception as e:
-        error_msg = f"❌ Error: Failed to load GitHub token from half token: {e}"
-        print(error_msg)
-        save_token_error(error_msg, e)
-        input("\nPress Enter to close this window...")
-        sys.exit(1)
-    
-except json.JSONDecodeError as e:
-    error_msg = f"❌ Error: Invalid JSON in {token_file}: {e}"
-    print(error_msg)
-    save_token_error(error_msg, e)
-    input("\nPress Enter to close this window...")
-    sys.exit(1)
-except KeyError:
-    error_msg = f"❌ Error: 'token' key not found in {token_file}"
-    print(error_msg)
-    save_token_error(error_msg)
-    input("\nPress Enter to close this window...")
-    sys.exit(1)
-except Exception as e:
-    error_msg = f"❌ Error loading token: {e}"
-    print(error_msg)
-    save_token_error(error_msg, e)
-    input("\nPress Enter to close this window...")
-    sys.exit(1)
+        # As a last attempt, try half token again and exit on failure
+        try:
+            EMBEDDED_GITHUB_TOKEN = try_half_token()
+            print("✅ GitHub token recovered from half token")
+        except Exception:
+            save_token_error(f"Token load failed: {e}")
+            _pause_if_interactive()
+            sys.exit(1)
 
 # EMBEDDED CONFIGURATION - Replace with your actual values
 EMBEDDED_REPO_OWNER = "Ennead-Architects-LLP"
