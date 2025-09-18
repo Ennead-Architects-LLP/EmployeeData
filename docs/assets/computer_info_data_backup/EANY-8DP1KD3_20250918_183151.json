@@ -1,0 +1,15 @@
+{
+  "computer_name": "EANY-8DP1KD3",
+  "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+  "gpu_driver": "32.0.15.8097",
+  "gpu_memory": -1048576,
+  "gpu_name": "NVIDIA Quadro RTX 4000",
+  "human_name": "Paula Gronda",
+  "manufacturer": "Dell Inc.",
+  "memory_bytes": 68386164736,
+  "model": "Precision 5820 Tower",
+  "os": "Windows 11",
+  "serial_number": "8DP1KD3",
+  "username": "Paula.Gronda",
+  "server_timestamp": "2025-09-18T18:31:51.169719"
+}
