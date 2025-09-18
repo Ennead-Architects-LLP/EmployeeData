@@ -2,7 +2,7 @@
   "EANY-PW-0HJ97N": {
     "CPU": "Intel(R) Core(TM) Ultra 9 185H",
     "Computername": "EANY-PW-0HJ97N",
-    "Date": "2025-09-18T12:23:31.226238",
+    "Date": "2025-09-18T12:25:54.979063",
     "First Name": "Sen",
     "GPU Date": "2023-04-13T00:00:00",
     "GPU Driver": "32.0.15.7357",
@@ -16,8 +16,8 @@
     "Serial Number": "PW0HJ97N",
     "Total Physical Memory": 33765298176,
     "Username": "szhang",
-    "all_cpus": [
-      {
+    "all_cpus": {
+      "cpu_1": {
         "architecture": 9,
         "cores": 16,
         "date": "2024-01-01T00:00:00",
@@ -33,9 +33,9 @@
         "stepping": 0,
         "type": "Physical"
       }
-    ],
-    "all_gpus": [
-      {
+    },
+    "all_gpus": {
+      "gpu_1": {
         "date": null,
         "driver": "17.12.55.198",
         "is_virtual": true,
@@ -46,7 +46,7 @@
         "processor": "Unknown",
         "type": "Virtual"
       },
-      {
+      "gpu_2": {
         "date": null,
         "driver": "32.0.101.6637",
         "is_virtual": false,
@@ -57,7 +57,7 @@
         "processor": "Intel(R) Arc(TM) Pro Graphics Family",
         "type": "Physical"
       },
-      {
+      "gpu_3": {
         "date": "2023-04-13T00:00:00",
         "driver": "32.0.15.7357",
         "is_virtual": false,
@@ -68,9 +68,9 @@
         "processor": "NVIDIA GeForce RTX 4070 Laptop GPU",
         "type": "Physical"
       }
-    ],
+    },
     "human_name": "Sen Zhang",
-    "last_updated": "2025-09-18T16:24:24.782689",
+    "last_updated": "2025-09-18T16:26:44.692157",
     "computername": "EANY-PW-0HJ97N"
   },
   "MININT-5V26DTJ": {
