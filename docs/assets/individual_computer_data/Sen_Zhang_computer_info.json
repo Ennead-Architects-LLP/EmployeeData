@@ -1,23 +1,23 @@
 {
   "EANY-PW-0HJ97N": {
-    "CPU": "Intel(R) Core(TM) Ultra 9 185H",
     "Computername": "EANY-PW-0HJ97N",
-    "Date": "2025-09-18T12:35:07.495598",
+    "Date": "2025-09-18T12:49:27.222930",
     "First Name": "Sen",
     "Last Name": "Zhang",
     "Manufacturer": "LENOVO",
     "Model": "21KV0001US",
     "OS": "Windows 11",
     "Serial Number": "PW0HJ97N",
-    "Total Physical Memory": 33765298176,
     "Username": "szhang",
     "all_cpus": {
       "cpu_1": {
         "architecture": 9,
+        "cache_l3_size": 24576,
         "cores": 16,
         "date": "2024-01-01T00:00:00",
         "driver": "N/A",
         "family": 775,
+        "hyperthreading_enabled": false,
         "logical_processors": 22,
         "max_clock_speed": 2300,
         "memory_bytes": null,
@@ -26,7 +26,8 @@
         "name": "Intel(R) Core(TM) Ultra 9 185H",
         "processor": "Intel(R) Core(TM) Ultra 9 185H",
         "stepping": 0,
-        "type": "Physical"
+        "type": "Physical",
+        "virtualization_support": false
       }
     },
     "all_gpus": {
@@ -35,6 +36,8 @@
         "driver": "17.12.55.198",
         "is_virtual": true,
         "memory_bytes": 8585740288,
+        "memory_formatted": "8.0 GB",
+        "memory_gb": 7.996,
         "memory_mb": 8188,
         "name": "Meta Virtual Monitor",
         "priority": 0,
@@ -46,6 +49,8 @@
         "driver": "32.0.101.6637",
         "is_virtual": false,
         "memory_bytes": 2147479552,
+        "memory_formatted": "2.0 GB",
+        "memory_gb": 2,
         "memory_mb": 2048,
         "name": "Intel(R) Arc(TM) Pro Graphics",
         "priority": 2,
@@ -57,6 +62,8 @@
         "driver": "32.0.15.7357",
         "is_virtual": false,
         "memory_bytes": 4293918720,
+        "memory_formatted": "4.0 GB",
+        "memory_gb": 3.999,
         "memory_mb": 4095,
         "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
         "priority": 3,
@@ -65,7 +72,16 @@
       }
     },
     "human_name": "Sen Zhang",
-    "last_updated": "2025-09-18T16:35:56.031033",
+    "system_info": {
+      "available_memory_bytes": 8112779264,
+      "memory_percent": 76,
+      "total_memory_bytes": 33765298176,
+      "total_memory_formatted": "31.4 GB",
+      "total_memory_gb": 31.446,
+      "total_memory_mb": 32201.1,
+      "used_memory_bytes": 25652518912
+    },
+    "last_updated": "2025-09-18T16:50:21.173807",
     "computername": "EANY-PW-0HJ97N"
   },
   "MININT-5V26DTJ": {

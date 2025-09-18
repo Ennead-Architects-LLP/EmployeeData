@@ -1,0 +1,85 @@
+{
+  "Computername": "EANY-PW-0HJ97N",
+  "Date": "2025-09-18T12:49:27.222930",
+  "First Name": "Sen",
+  "Last Name": "Zhang",
+  "Manufacturer": "LENOVO",
+  "Model": "21KV0001US",
+  "OS": "Windows 11",
+  "Serial Number": "PW0HJ97N",
+  "Username": "szhang",
+  "all_cpus": {
+    "cpu_1": {
+      "architecture": 9,
+      "cache_l3_size": 24576,
+      "cores": 16,
+      "date": "2024-01-01T00:00:00",
+      "driver": "N/A",
+      "family": 775,
+      "hyperthreading_enabled": false,
+      "logical_processors": 22,
+      "max_clock_speed": 2300,
+      "memory_bytes": null,
+      "memory_mb": null,
+      "model": 0,
+      "name": "Intel(R) Core(TM) Ultra 9 185H",
+      "processor": "Intel(R) Core(TM) Ultra 9 185H",
+      "stepping": 0,
+      "type": "Physical",
+      "virtualization_support": false
+    }
+  },
+  "all_gpus": {
+    "gpu_1": {
+      "date": null,
+      "driver": "17.12.55.198",
+      "is_virtual": true,
+      "memory_bytes": 8585740288,
+      "memory_formatted": "8.0 GB",
+      "memory_gb": 7.996,
+      "memory_mb": 8188,
+      "name": "Meta Virtual Monitor",
+      "priority": 0,
+      "processor": "Unknown",
+      "type": "Virtual"
+    },
+    "gpu_2": {
+      "date": "2022-10-12T00:00:00",
+      "driver": "32.0.101.6637",
+      "is_virtual": false,
+      "memory_bytes": 2147479552,
+      "memory_formatted": "2.0 GB",
+      "memory_gb": 2,
+      "memory_mb": 2048,
+      "name": "Intel(R) Arc(TM) Pro Graphics",
+      "priority": 2,
+      "processor": "Intel(R) Arc(TM) Pro Graphics Family",
+      "type": "Physical"
+    },
+    "gpu_3": {
+      "date": "2023-02-22T00:00:00",
+      "driver": "32.0.15.7357",
+      "is_virtual": false,
+      "memory_bytes": 4293918720,
+      "memory_formatted": "4.0 GB",
+      "memory_gb": 3.999,
+      "memory_mb": 4095,
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "priority": 3,
+      "processor": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "Physical"
+    }
+  },
+  "human_name": "Sen Zhang",
+  "system_info": {
+    "available_memory_bytes": 8112779264,
+    "memory_percent": 76,
+    "total_memory_bytes": 33765298176,
+    "total_memory_formatted": "31.4 GB",
+    "total_memory_gb": 31.446,
+    "total_memory_mb": 32201.1,
+    "used_memory_bytes": 25652518912
+  },
+  "computer_name": "EANY-PW-0HJ97N",
+  "server_timestamp": "2025-09-18T16:50:21.173511"
+}
