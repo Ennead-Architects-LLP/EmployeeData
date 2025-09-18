@@ -1,0 +1,18 @@
+# Hardware Release Date Manager Dependencies
+# Core requirements for the dynamic hardware release date system
+
+# HTTP requests for API calls
+requests>=2.28.0
+
+# Optional: Enhanced JSON handling
+# ujson>=5.0.0  # Faster JSON parsing (optional)
+
+# Optional: Better HTTP client
+# httpx>=0.24.0  # Async HTTP client (optional)
+
+# Optional: Data validation
+# pydantic>=1.10.0  # Data validation (optional)
+
+# Note: The system is designed to work with minimal dependencies
+# Only 'requests' is required for the core functionality
+# All other dependencies are optional enhancements

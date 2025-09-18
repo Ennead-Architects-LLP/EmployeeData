@@ -20,7 +20,7 @@ import logging
 from datetime import datetime
 import threading
 import queue
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, asdict
 from typing import Optional, Dict, Any, List
 try:
     import tkinter as tk
@@ -59,7 +59,7 @@ class InfoDataCPU:
     family: int
     model: int
     stepping: int
-    date: str
+    release_date: str
     type: str = "Physical"
     driver: str = "N/A"  # CPUs don't have drivers
     memory_mb: Optional[int] = None  # CPUs don't have dedicated memory
@@ -91,35 +91,12 @@ class InfoDataCPU:
         if self.hyperthreading_enabled:
             lines.append(f"  Hyperthreading: Enabled")
             
-        lines.append(f"  Release Date: {self.date}")
+        lines.append(f"  Release Date: {self.release_date}")
         return "\n".join(lines)
     
-    def to_dict(self) -> Dict[str, Any]:
-        """Convert to dictionary for JSON serialization"""
-        return {
-            "name": self.name,
-            "processor": self.processor,
-            "driver": self.driver,
-            "memory_mb": self.memory_mb,
-            "memory_bytes": self.memory_bytes,
-            "date": self.date,
-            "type": self.type,
-            "cores": self.cores,
-            "logical_processors": self.logical_processors,
-            "max_clock_speed": self.max_clock_speed,
-            "architecture": self.architecture,
-            "family": self.family,
-            "model": self.model,
-            "stepping": self.stepping,
-            
-            # NEW FIELDS - Automatically included in JSON!
-            "virtualization_support": self.virtualization_support,
-            "hyperthreading_enabled": self.hyperthreading_enabled,
-            "cache_l3_size": self.cache_l3_size
-        }
     
     @classmethod
-    def from_wmi_processor(cls, cpu, cpu_release_date_func):
+    def from_wmi_processor(cls, cpu):
         """Create InfoDataCPU from WMI Win32_Processor object"""
         return cls(
             name=getattr(cpu, 'Name', None) or "Unknown",
@@ -131,13 +108,25 @@ class InfoDataCPU:
             family=getattr(cpu, 'Family', None) or 0,
             model=getattr(cpu, 'Model', None) or 0,
             stepping=getattr(cpu, 'Stepping', None) or 0,
-            date=cpu_release_date_func(getattr(cpu, 'Name', None) or ""),
+            release_date=cls.get_release_date(getattr(cpu, 'Name', None) or ""),
             
             # NEW: Extract new fields from WMI
             virtualization_support=getattr(cpu, 'VirtualizationFirmwareEnabled', False),
             hyperthreading_enabled=getattr(cpu, 'HyperThreadingEnabled', False),
             cache_l3_size=getattr(cpu, 'L3CacheSize', None)
         )
+    
+    @staticmethod
+    def get_release_date(cpu_name):
+        """Get CPU release date using dynamic hardware manager"""
+        try:
+            from hardware_release_date_manager import get_release_date
+            return get_release_date(cpu_name, 'cpu')
+        except ImportError:
+            # Fallback if hardware manager is not available
+            return "Unknown"
+        except Exception as e:
+            return "Unknown"
 
 @dataclass
 class InfoDataGPU:
@@ -149,7 +138,7 @@ class InfoDataGPU:
     memory_mb: Optional[float]
     memory_gb: Optional[float]
     memory_formatted: Optional[str]
-    date: Optional[str]
+    release_date: Optional[str]
     type: str
     priority: int
     is_virtual: bool
@@ -165,27 +154,12 @@ class InfoDataGPU:
             lines.append(f"  Memory: {self.memory_formatted}")
         lines.append(f"  Priority: {self.priority}")
         lines.append(f"  Virtual: {self.is_virtual}")
-        lines.append(f"  Release Date: {self.date or 'Unknown'}")
+        lines.append(f"  Release Date: {self.release_date or 'Unknown'}")
         return "\n".join(lines)
     
-    def to_dict(self) -> Dict[str, Any]:
-        """Convert to dictionary for JSON serialization"""
-        return {
-            "name": self.name,
-            "processor": self.processor,
-            "driver": self.driver,
-            "memory_bytes": self.memory_bytes,
-            "memory_mb": self.memory_mb,
-            "memory_gb": self.memory_gb,
-            "memory_formatted": self.memory_formatted,
-            "date": self.date,
-            "type": self.type,
-            "priority": self.priority,
-            "is_virtual": self.is_virtual
-        }
     
     @classmethod
-    def from_wmi_video_controller(cls, gpu, memory_formatting_func, gpu_release_date_func, virtual_gpu_names):
+    def from_wmi_video_controller(cls, gpu, memory_formatting_func, virtual_gpu_names):
         """Create InfoDataGPU from WMI Win32_VideoController object"""
         gpu_name = (gpu.Name or "").lower()
         
@@ -253,11 +227,23 @@ class InfoDataGPU:
             memory_mb=memory_mb,
             memory_gb=memory_gb,
             memory_formatted=memory_formatted,
-            date=gpu_release_date_func(gpu.Name or ""),
+            release_date=cls.get_release_date(gpu.Name or ""),
             type="Virtual" if is_virtual else "Physical",
             priority=current_priority,
             is_virtual=is_virtual
         )
+    
+    @staticmethod
+    def get_release_date(gpu_name):
+        """Get GPU release date using dynamic hardware manager"""
+        try:
+            from hardware_release_date_manager import get_release_date
+            return get_release_date(gpu_name, 'gpu')
+        except ImportError:
+            # Fallback if hardware manager is not available
+            return "Unknown"
+        except Exception as e:
+            return "Unknown"
 
 @dataclass
 class InfoDataSystem:
@@ -279,22 +265,11 @@ class InfoDataSystem:
         lines.append(f"  Usage: {self.memory_percent:.1f}%")
         return "\n".join(lines)
     
-    def to_dict(self) -> Dict[str, Any]:
-        """Convert to dictionary for JSON serialization"""
-        return {
-            "total_memory_bytes": self.total_memory_bytes,
-            "total_memory_formatted": self.total_memory_formatted,
-            "total_memory_mb": self.total_memory_mb,
-            "total_memory_gb": self.total_memory_gb,
-            "available_memory_bytes": self.available_memory_bytes,
-            "used_memory_bytes": self.used_memory_bytes,
-            "memory_percent": self.memory_percent
-        }
     
     @classmethod
-    def from_psutil_memory(cls, memory, memory_formatting_func):
+    def from_psutil_memory(cls, memory):
         """Create InfoDataSystem from psutil.virtual_memory() object"""
-        memory_formatted, memory_mb, memory_gb = memory_formatting_func(memory.total)
+        memory_formatted, memory_mb, memory_gb = cls.format_memory_size(memory.total)
         
         return cls(
             total_memory_bytes=memory.total,
@@ -305,6 +280,33 @@ class InfoDataSystem:
             used_memory_bytes=memory.used,
             memory_percent=memory.percent
         )
+    
+    @staticmethod
+    def format_memory_size(bytes_value):
+        """Format memory size from bytes to human-readable format (MB or GB) - moved from ComputerInfoCollector
+        
+        Args:
+            bytes_value (int): Memory size in bytes
+            
+        Returns:
+            tuple: (formatted_size_str, size_mb, size_gb)
+        """
+        if bytes_value is None or bytes_value == 0:
+            return None, None, None
+        
+        # Convert to MB and GB
+        size_mb = bytes_value / (1024 * 1024)
+        size_gb = bytes_value / (1024 * 1024 * 1024)
+        
+        # Choose the best unit for display
+        if size_gb >= 1:
+            # Use GB if 1GB or more
+            formatted = f"{size_gb:.1f} GB"
+        else:
+            # Use MB if less than 1GB
+            formatted = f"{size_mb:.0f} MB"
+        
+        return formatted, round(size_mb, 2), round(size_gb, 3)
 
 @dataclass
 class ComputerInfo:
@@ -328,7 +330,7 @@ class ComputerInfo:
     all_cpus: List[InfoDataCPU] = field(default_factory=list)
     
     # Metadata
-    date: Optional[str] = None
+    collection_date: Optional[str] = None
     
     # Error tracking
     collection_error: Optional[str] = None
@@ -342,9 +344,9 @@ class ComputerInfo:
     gpu_info_error: Optional[str] = None
     
     def __post_init__(self):
-        """Initialize date field after object creation"""
-        if self.date is None:
-            self.date = datetime.now().isoformat()
+        """Initialize collection_date field after object creation"""
+        if self.collection_date is None:
+            self.collection_date = datetime.now().isoformat()
     
     def __repr__(self):
         """Return a comprehensive string representation of the computer information"""
@@ -390,7 +392,7 @@ class ComputerInfo:
                 lines.append(f"       Type: {cpu.type}")
                 lines.append(f"       Cores: {cpu.cores}")
                 lines.append(f"       Logical Processors: {cpu.logical_processors}")
-                lines.append(f"       Date: {cpu.date}")
+                lines.append(f"       Release Date: {cpu.release_date}")
         
         # GPU Details
         if self.all_gpus:
@@ -402,11 +404,11 @@ class ComputerInfo:
                     lines.append(f"       Memory: {gpu.memory_formatted}")
                 lines.append(f"       Driver: {gpu.driver}")
                 lines.append(f"       Priority: {gpu.priority}")
-                lines.append(f"       Date: {gpu.date or 'Unknown'}")
+                lines.append(f"       Release Date: {gpu.release_date or 'Unknown'}")
         
         # Collection Information
         lines.append("\n📅 COLLECTION INFORMATION:")
-        lines.append(f"   Collection Date: {self.date or 'Unknown'}")
+        lines.append(f"   Collection Date: {self.collection_date or 'Unknown'}")
         
         # Error Information (if any)
         errors = []
@@ -424,31 +426,31 @@ class ComputerInfo:
         lines.append("="*60)
         return "\n".join(lines)
     
-    def to_dict(self) -> Dict[str, Any]:
-        """Convert ComputerInfo instance to dictionary for JSON serialization"""
+    def to_json_dict(self) -> Dict[str, Any]:
+        """Convert ComputerInfo instance to dictionary for JSON serialization using dataclasses.asdict"""
         result = {}
         
-        # Add basic fields
+        # Add basic fields with JSON key mapping
         for field_name, field_value in self.__dict__.items():
             if field_value is not None and field_name not in ['system_info', 'all_gpus', 'all_cpus']:
                 json_key = self._get_json_key(field_name)
                 result[json_key] = field_value
         
-        # Add structured system info
+        # Add structured system info using asdict
         if self.system_info:
-            result["system_info"] = self.system_info.to_dict()
+            result["system_info"] = asdict(self.system_info)
         
-        # Add structured GPU info
+        # Add structured GPU info using asdict
         if self.all_gpus:
             result["all_gpus"] = {}
             for i, gpu in enumerate(self.all_gpus, 1):
-                result["all_gpus"][f"gpu_{i}"] = gpu.to_dict()
+                result["all_gpus"][f"gpu_{i}"] = asdict(gpu)
         
-        # Add structured CPU info
+        # Add structured CPU info using asdict
         if self.all_cpus:
             result["all_cpus"] = {}
             for i, cpu in enumerate(self.all_cpus, 1):
-                result["all_cpus"][f"cpu_{i}"] = cpu.to_dict()
+                result["all_cpus"][f"cpu_{i}"] = asdict(cpu)
         
         return result
     
@@ -635,31 +637,6 @@ class ComputerInfoCollector:
         self.computer_info = ComputerInfo()
         self.wmi_conn = None
     
-    def _format_memory_size(self, bytes_value):
-        """Format memory size from bytes to human-readable format (MB or GB)
-        
-        Args:
-            bytes_value (int): Memory size in bytes
-            
-        Returns:
-            tuple: (formatted_size_str, size_mb, size_gb)
-        """
-        if bytes_value is None or bytes_value == 0:
-            return None, None, None
-        
-        # Convert to MB and GB
-        size_mb = bytes_value / (1024 * 1024)
-        size_gb = bytes_value / (1024 * 1024 * 1024)
-        
-        # Choose the best unit for display
-        if size_gb >= 1:
-            # Use GB if 1GB or more
-            formatted = f"{size_gb:.1f} GB"
-        else:
-            # Use MB if less than 1GB
-            formatted = f"{size_mb:.0f} MB"
-        
-        return formatted, round(size_mb, 2), round(size_gb, 3)
         
     def collect_all_info(self):
         """Collect essential computer information matching Excel headers"""
@@ -831,7 +808,7 @@ class ComputerInfoCollector:
             memory = psutil.virtual_memory()
             
             # Create structured system info object
-            self.computer_info.system_info = InfoDataSystem.from_psutil_memory(memory, self._format_memory_size)
+            self.computer_info.system_info = InfoDataSystem.from_psutil_memory(memory)
         except Exception as e:
             self.computer_info.set_error("memory_info", str(e))
             self.computer_info.system_info = None
@@ -845,7 +822,7 @@ class ComputerInfoCollector:
                     
                     for cpu in self.wmi_conn.Win32_Processor():
                         # Create structured CPU info object
-                        cpu_info = InfoDataCPU.from_wmi_processor(cpu, self._get_cpu_release_date)
+                        cpu_info = InfoDataCPU.from_wmi_processor(cpu)
                         all_cpus.append(cpu_info)
                     
                     # Store all CPU information
@@ -858,122 +835,6 @@ class ComputerInfoCollector:
         except Exception as e:
             self.computer_info.set_error("cpu_info", str(e))
     
-    def _get_cpu_release_date(self, cpu_name):
-        """Get CPU release date based on CPU name"""
-        try:
-            if not cpu_name or cpu_name.lower() == "unknown":
-                return "Unknown"
-            
-            cpu_name_lower = cpu_name.lower()
-            
-            # Intel CPU release dates
-            intel_dates = {
-                # Core Ultra series (2024)
-                'core ultra 9 185h': '2024-01-01T00:00:00',
-                'core ultra 7 165h': '2024-01-01T00:00:00',
-                'core ultra 5 125h': '2024-01-01T00:00:00',
-                
-                # 13th Gen (2022-2023)
-                'core i9-13900': '2022-10-20T00:00:00',
-                'core i7-13700': '2022-10-20T00:00:00',
-                'core i5-13600': '2022-10-20T00:00:00',
-                'core i9-13900h': '2023-01-03T00:00:00',
-                'core i7-13700h': '2023-01-03T00:00:00',
-                'core i5-13500h': '2023-01-03T00:00:00',
-                
-                # 12th Gen (2021-2022)
-                'core i9-12900': '2021-11-04T00:00:00',
-                'core i7-12700': '2021-11-04T00:00:00',
-                'core i5-12600': '2021-11-04T00:00:00',
-                'core i9-12900h': '2022-01-04T00:00:00',
-                'core i7-12700h': '2022-01-04T00:00:00',
-                'core i5-12500h': '2022-01-04T00:00:00',
-                
-                # 11th Gen (2020-2021)
-                'core i9-11900': '2021-03-30T00:00:00',
-                'core i7-11700': '2021-03-30T00:00:00',
-                'core i5-11600': '2021-03-30T00:00:00',
-                'core i9-11980hk': '2021-05-11T00:00:00',
-                'core i7-11800h': '2021-05-11T00:00:00',
-                'core i5-11400h': '2021-05-11T00:00:00',
-                
-                # 10th Gen (2019-2020)
-                'core i9-10900': '2020-04-30T00:00:00',
-                'core i7-10700': '2020-04-30T00:00:00',
-                'core i5-10600': '2020-04-30T00:00:00',
-                'core i9-10980hk': '2020-04-02T00:00:00',
-                'core i7-10875h': '2020-04-02T00:00:00',
-                'core i5-10300h': '2020-04-02T00:00:00',
-            }
-            
-            # AMD CPU release dates
-            amd_dates = {
-                # Ryzen 7000 series (2022-2023)
-                'ryzen 9 7950x': '2022-09-27T00:00:00',
-                'ryzen 7 7700x': '2022-09-27T00:00:00',
-                'ryzen 5 7600x': '2022-09-27T00:00:00',
-                'ryzen 9 7945hx': '2023-01-04T00:00:00',
-                'ryzen 7 7745hx': '2023-01-04T00:00:00',
-                'ryzen 5 7645hx': '2023-01-04T00:00:00',
-                
-                # Ryzen 6000 series (2022)
-                'ryzen 9 6900hx': '2022-01-04T00:00:00',
-                'ryzen 7 6800h': '2022-01-04T00:00:00',
-                'ryzen 5 6600h': '2022-01-04T00:00:00',
-                'ryzen 9 6980hx': '2022-01-04T00:00:00',
-                'ryzen 7 6800hs': '2022-01-04T00:00:00',
-                'ryzen 5 6600hs': '2022-01-04T00:00:00',
-                
-                # Ryzen 5000 series (2020-2021)
-                'ryzen 9 5950x': '2020-11-05T00:00:00',
-                'ryzen 7 5800x': '2020-11-05T00:00:00',
-                'ryzen 5 5600x': '2020-11-05T00:00:00',
-                'ryzen 9 5900hx': '2021-01-12T00:00:00',
-                'ryzen 7 5800h': '2021-01-12T00:00:00',
-                'ryzen 5 5600h': '2021-01-12T00:00:00',
-            }
-            
-            # Try exact matches first
-            for cpu_key, date in intel_dates.items():
-                if cpu_key in cpu_name_lower:
-                    return date
-            
-            for cpu_key, date in amd_dates.items():
-                if cpu_key in cpu_name_lower:
-                    return date
-            
-            # Try partial matches for series detection
-            if 'core ultra' in cpu_name_lower or 'ultra 9' in cpu_name_lower:
-                return '2024-01-01T00:00:00'
-            elif 'core i9-13' in cpu_name_lower:
-                return '2022-10-20T00:00:00'
-            elif 'core i7-13' in cpu_name_lower:
-                return '2022-10-20T00:00:00'
-            elif 'core i5-13' in cpu_name_lower:
-                return '2022-10-20T00:00:00'
-            elif 'core i9-12' in cpu_name_lower:
-                return '2021-11-04T00:00:00'
-            elif 'core i7-12' in cpu_name_lower:
-                return '2021-11-04T00:00:00'
-            elif 'core i5-12' in cpu_name_lower:
-                return '2021-11-04T00:00:00'
-            elif 'ryzen 9 7' in cpu_name_lower:
-                return '2022-09-27T00:00:00'
-            elif 'ryzen 7 7' in cpu_name_lower:
-                return '2022-09-27T00:00:00'
-            elif 'ryzen 5 7' in cpu_name_lower:
-                return '2022-09-27T00:00:00'
-            elif 'ryzen 9 6' in cpu_name_lower:
-                return '2022-01-04T00:00:00'
-            elif 'ryzen 7 6' in cpu_name_lower:
-                return '2022-01-04T00:00:00'
-            elif 'ryzen 5 6' in cpu_name_lower:
-                return '2022-01-04T00:00:00'
-            
-            return "Unknown"
-            
-        except Exception as e:
-            return "Unknown"
     
     def _get_gpu_info(self):
         """Get GPU information for all GPUs"""
@@ -995,13 +856,12 @@ class ComputerInfoCollector:
                     for gpu in self.wmi_conn.Win32_VideoController():
                         # Skip GPUs with no meaningful name
                         if not gpu.Name or gpu.Name.strip() == "":
-                            continue
+                                            continue
                         
                         # Create structured GPU info object
                         gpu_info = InfoDataGPU.from_wmi_video_controller(
                             gpu, 
-                            self._format_memory_size, 
-                            self._get_gpu_release_date,
+                            InfoDataSystem.format_memory_size, 
                             virtual_gpu_names
                         )
                         all_gpus.append(gpu_info)
@@ -1016,142 +876,6 @@ class ComputerInfoCollector:
         except Exception as e:
             self.computer_info.set_error("gpu_info", str(e))
     
-    def _get_gpu_release_date(self, gpu_name):
-        """Get GPU release date based on GPU name"""
-        try:
-            if not gpu_name or gpu_name.lower() == "unknown":
-                return "Unknown"
-            
-            gpu_name_lower = gpu_name.lower()
-            
-            # GPU date mapping based on common GPU release dates
-            gpu_dates = {
-                    # Quadro Professional Series
-                    'Quadro P5000': '2016-10-01T00:00:00',
-                    'Quadro P2000': '2017-02-01T00:00:00',
-                    'Quadro P4000': '2017-02-01T00:00:00',
-                    'Quadro P6000': '2016-10-01T00:00:00',
-                    'Quadro RTX 4000': '2018-11-13T00:00:00',
-                    'Quadro RTX 5000': '2018-11-13T00:00:00',
-                    'Quadro RTX 6000': '2018-11-13T00:00:00',
-                    'Quadro RTX 8000': '2018-11-13T00:00:00',
-                    'Quadro RTX A2000': '2021-05-31T00:00:00',
-                    'Quadro RTX A4000': '2021-04-12T00:00:00',
-                    'Quadro RTX A5000': '2021-04-12T00:00:00',
-                    'Quadro RTX A6000': '2020-10-05T00:00:00',
-                    'Quadro T1000': '2019-05-27T00:00:00',
-                    'Quadro T2000': '2019-05-27T00:00:00',
-                    'Quadro T400': '2020-05-14T00:00:00',
-                    'Quadro T600': '2021-04-12T00:00:00',
-                    'Quadro T1000': '2019-05-27T00:00:00',
-                    
-                    # GeForce Gaming Series
-                    'GeForce GTX 1060': '2016-07-19T00:00:00',
-                    'GeForce GTX 1070': '2016-06-10T00:00:00',
-                    'GeForce GTX 1080': '2016-05-27T00:00:00',
-                    'GeForce GTX 1650': '2019-04-23T00:00:00',
-                    'GeForce GTX 1660': '2019-03-14T00:00:00',
-                    'GeForce RTX 2060': '2019-01-15T00:00:00',
-                    'GeForce RTX 2070': '2018-10-17T00:00:00',
-                    'GeForce RTX 2080': '2018-09-20T00:00:00',
-                    'GeForce RTX 3060': '2021-02-25T00:00:00',
-                    'GeForce RTX 3070': '2020-10-29T00:00:00',
-                    'GeForce RTX 3080': '2020-09-17T00:00:00',
-                    'GeForce RTX 3090': '2020-09-24T00:00:00',
-                    'GeForce RTX 4060': '2023-05-18T00:00:00',
-                    'GeForce RTX 4070': '2023-04-13T00:00:00',
-                    'GeForce RTX 4080': '2022-11-16T00:00:00',
-                    'GeForce RTX 4090': '2022-10-12T00:00:00',
-                    
-                    # Laptop GPU variants
-                    'RTX 4070 Laptop GPU': '2023-02-22T00:00:00',
-                    'RTX 4060 Laptop GPU': '2023-02-22T00:00:00',
-                    'RTX 4080 Laptop GPU': '2023-02-22T00:00:00',
-                    'RTX 4090 Laptop GPU': '2023-02-22T00:00:00',
-                    'RTX 3070 Laptop GPU': '2021-01-12T00:00:00',
-                    'RTX 3080 Laptop GPU': '2021-01-12T00:00:00',
-                    'RTX 3060 Laptop GPU': '2021-01-12T00:00:00',
-                    
-                    # RTX A Series (Professional)
-                    'RTX A2000': '2021-05-31T00:00:00',
-                    'RTX A4000': '2021-04-12T00:00:00',
-                    'RTX A5000': '2021-04-12T00:00:00',
-                    'RTX A6000': '2020-10-05T00:00:00',
-                    
-                    # AMD Radeon Series
-                    'Radeon RX 580': '2017-04-18T00:00:00',
-                    'Radeon RX 6600': '2021-10-13T00:00:00',
-                    'Radeon RX 6700': '2021-06-09T00:00:00',
-                    'Radeon RX 6800': '2020-11-18T00:00:00',
-                    'Radeon RX 6900': '2020-12-08T00:00:00',
-                    'Radeon Pro WX 3200': '2019-07-15T00:00:00',
-                    'Radeon Pro WX 4100': '2017-02-27T00:00:00',
-                    'Radeon Pro WX 5100': '2017-02-27T00:00:00',
-                    'Radeon Pro WX 7100': '2017-02-27T00:00:00',
-                    'Radeon Pro WX 8200': '2018-08-13T00:00:00',
-                    
-                    # Intel Graphics
-                    'Intel UHD Graphics': '2017-01-03T00:00:00',
-                    'Intel HD Graphics': '2015-01-05T00:00:00',
-                    'Intel Iris Xe': '2020-09-02T00:00:00',
-                    'Intel Arc A380': '2022-06-14T00:00:00',
-                    'Intel Arc A750': '2022-10-12T00:00:00',
-                    'Intel Arc A770': '2022-10-12T00:00:00',
-                    'Intel Arc Pro Graphics': '2022-10-12T00:00:00',
-                    'Intel Arc Graphics': '2022-10-12T00:00:00',
-                    'Arc Pro Graphics': '2022-10-12T00:00:00',
-                    'Arc Graphics': '2022-10-12T00:00:00',
-                }
-                
-            # Find matching GPU date with improved matching
-            gpu_date = None
-            gpu_name_lower = gpu_name.lower()
-            
-            # Clean the GPU name by removing trademark symbols and extra spaces
-            import re
-            cleaned_name = re.sub(r'[®™]', '', gpu_name_lower)  # Remove trademark symbols
-            cleaned_name = re.sub(r'\([^)]*\)', '', cleaned_name)  # Remove everything in parentheses
-            cleaned_name = re.sub(r'\s+', ' ', cleaned_name).strip()  # Normalize spaces
-            
-            # Sort by key length (longer keys first) to prioritize more specific matches
-            sorted_gpu_dates = sorted(gpu_dates.items(), key=lambda x: len(x[0]), reverse=True)
-            
-            # Try matches, prioritizing longer (more specific) keys
-            for gpu_key, date in sorted_gpu_dates:
-                if gpu_key.lower() in cleaned_name:
-                    gpu_date = date
-                    break
-            
-            # If no exact match, try partial matches for common patterns
-            if not gpu_date:
-                # Extract key terms from GPU name
-                gpu_terms = []
-                if 'rtx' in gpu_name_lower:
-                    gpu_terms.append('rtx')
-                if 'gtx' in gpu_name_lower:
-                    gpu_terms.append('gtx')
-                if 'quadro' in gpu_name_lower:
-                    gpu_terms.append('quadro')
-                if 'radeon' in gpu_name_lower:
-                    gpu_terms.append('radeon')
-                
-                # Look for number patterns
-                import re
-                numbers = re.findall(r'\d+', gpu_name)
-                
-                # Try to match based on series and numbers
-                for gpu_key, date in gpu_dates.items():
-                    key_lower = gpu_key.lower()
-                    # Check if all terms match
-                    if all(term in key_lower for term in gpu_terms):
-                        # Check if any number from GPU name is in the key
-                        if any(num in key_lower for num in numbers):
-                            gpu_date = date
-                            break
-                
-            return gpu_date
-        except Exception as e:
-            return "Unknown"
     
     def _get_system_serial(self):
         """Get system serial number"""
@@ -1214,7 +938,7 @@ class ComputerInfoCollector:
                 "event_type": "computer-data",
                 "client_payload": {
                     "timestamp": datetime.now().isoformat(),
-                    "computer_info": self.computer_info.to_dict()
+                    "computer_info": self.computer_info.to_json_dict()
                 }
             }
             
@@ -1235,7 +959,7 @@ class ComputerInfoCollector:
             print(f"   Timestamp: {datetime.now().isoformat()}")
             
             # Print computer info structure
-            computer_dict = self.computer_info.to_dict()
+            computer_dict = self.computer_info.to_json_dict()
             print(f"\n📊 COMPUTER INFO STRUCTURE:")
             for key, value in computer_dict.items():
                 if key == 'all_cpus':
@@ -1551,7 +1275,7 @@ class AboutMeApp:
         
         vsb = ttk.Scrollbar(parent, orient="vertical", command=tree.yview)
         tree.configure(yscrollcommand=vsb.set)
-        
+
         # Populate with actual data
         computer_info = self.collector.computer_info
         
@@ -1564,7 +1288,7 @@ class AboutMeApp:
             'manufacturer': 'Manufacturer',
             'model': 'Model',
             'serial_number': 'Serial Number',
-            'date': 'Collection Date'
+            'collection_date': 'Collection Date'
         }
         
         for field_name, display_label in basic_fields.items():

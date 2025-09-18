@@ -87,7 +87,7 @@ def create_individual_computer_data_file(computer_data):
         # Create computer info entry using ALL available data from ComputerInfo class
         computer_name = computer_data.get('Computername', computer_data.get('computer_name', 'Unknown'))
         
-        # Start with all the data from the payload (rich data from ComputerInfo.to_dict())
+        # Start with all the data from the payload (rich data from ComputerInfo.to_json_dict())
         computer_info = computer_data.copy()
         
         # Add metadata
@@ -96,6 +96,10 @@ def create_individual_computer_data_file(computer_data):
         # Ensure computername is set correctly
         if 'computername' not in computer_info and 'Computername' in computer_info:
             computer_info['computername'] = computer_info['Computername']
+        
+        # Add processing metadata
+        computer_info['processed_by_server'] = True
+        computer_info['server_processing_timestamp'] = datetime.now().isoformat()
         
         # Update or add computer info (dict of dicts format)
         existing_data[computer_name] = computer_info
@@ -134,8 +138,10 @@ def backup_computer_data(computer_data):
         if 'Total Physical Memory' in backup_data and 'memory_bytes' not in backup_data:
             backup_data['memory_bytes'] = backup_data['Total Physical Memory']
         
-        # Add server timestamp
+        # Add server metadata
         backup_data["server_timestamp"] = datetime.now().isoformat()
+        backup_data["backup_type"] = "full_computer_data"
+        backup_data["structure_version"] = computer_data.get('payload_version', '1.0')
         
         # Save backup file
         with open(file_path, 'w', encoding='utf-8') as f:
@@ -154,23 +160,31 @@ def process_computer_data_workflow(computer_data):
     success_count = 0
     total_operations = 3  # backup, individual file, commit
     
-    print(f"📥 Processing computer data for: {computer_data.get('computer_name', computer_data.get('Computername', 'Unknown'))}")
+    # Get enhanced summary for better logging
+    summary = get_computer_summary(computer_data)
+    print(f"📥 Processing computer data for: {summary['human_name']} ({summary['computer_name']})")
+    print(f"   Hardware: {summary['cpu_name']} + {summary['gpu_name']}")
+    print(f"   Memory: {summary['memory']}")
+    print(f"   Payload Version: {computer_data.get('payload_version', 'Unknown')}")
     
     # Create backup of computer data
     if backup_computer_data(computer_data):
         success_count += 1
+        print("✅ Computer data backup created successfully")
     else:
         print("⚠️  Warning: Computer backup failed, but continuing with other operations")
     
     # Create/update individual computer data file
     if create_individual_computer_data_file(computer_data):
         success_count += 1
+        print("✅ Individual computer data file updated successfully")
     else:
         print("⚠️  Warning: Individual computer data file creation failed, but continuing with other operations")
     
     # Commit to GitHub (if configured)
     if commit_to_github(computer_data):
         success_count += 1
+        print("✅ Changes committed to GitHub successfully")
     else:
         print("⚠️  Warning: GitHub commit failed, but data was saved locally")
     
@@ -233,6 +247,89 @@ def commit_to_github(computer_data=None):
         print(f"❌ Error committing to GitHub: {e}")
         return False
 
+def flatten_nested_structure(computer_data):
+    """Flatten nested structure for backward compatibility with existing processing"""
+    
+    # Extract primary GPU info for backward compatibility
+    if 'all_gpus' in computer_data and computer_data['all_gpus']:
+        primary_gpu = None
+        highest_priority = -1
+        
+        # Find GPU with highest priority
+        for gpu_key, gpu_data in computer_data['all_gpus'].items():
+            if gpu_data.get('priority', 0) > highest_priority:
+                highest_priority = gpu_data['priority']
+                primary_gpu = gpu_data
+        
+        if primary_gpu:
+            # Map to legacy field names for backward compatibility
+            computer_data['GPU Name'] = primary_gpu.get('name', 'Unknown')
+            computer_data['GPU Driver'] = primary_gpu.get('driver', 'Unknown')
+            computer_data['GPU Memory'] = primary_gpu.get('memory_formatted', 'Unknown')
+            computer_data['GPU Date'] = primary_gpu.get('release_date', 'Unknown')
+            computer_data['GPU Type'] = primary_gpu.get('type', 'Unknown')
+            computer_data['GPU Priority'] = primary_gpu.get('priority', 0)
+    
+    # Extract primary CPU info for backward compatibility
+    if 'all_cpus' in computer_data and computer_data['all_cpus']:
+        primary_cpu = list(computer_data['all_cpus'].values())[0]  # First CPU
+        if primary_cpu:
+            computer_data['CPU Name'] = primary_cpu.get('name', 'Unknown')
+            computer_data['CPU Date'] = primary_cpu.get('release_date', 'Unknown')
+            computer_data['CPU Cores'] = primary_cpu.get('cores', 0)
+            computer_data['CPU Logical Processors'] = primary_cpu.get('logical_processors', 0)
+            computer_data['CPU Max Clock Speed'] = primary_cpu.get('max_clock_speed', 0)
+    
+    # Extract system memory info for backward compatibility
+    if 'system_info' in computer_data:
+        system_info = computer_data['system_info']
+        computer_data['Total Physical Memory'] = system_info.get('total_memory_bytes', 0)
+        computer_data['Total Physical Memory Formatted'] = system_info.get('total_memory_formatted', 'Unknown')
+        computer_data['Total Physical Memory MB'] = system_info.get('total_memory_mb', 0)
+        computer_data['Total Physical Memory GB'] = system_info.get('total_memory_gb', 0)
+        computer_data['Available Memory Bytes'] = system_info.get('available_memory_bytes', 0)
+        computer_data['Used Memory Bytes'] = system_info.get('used_memory_bytes', 0)
+        computer_data['Memory Usage Percent'] = system_info.get('memory_percent', 0)
+    
+    return computer_data
+
+def get_computer_summary(computer_data):
+    """Extract key information for logging and processing"""
+    
+    # Try new structure first
+    if 'all_gpus' in computer_data and computer_data['all_gpus']:
+        gpu_count = len(computer_data['all_gpus'])
+        primary_gpu = None
+        for gpu_data in computer_data['all_gpus'].values():
+            if gpu_data.get('priority', 0) >= (primary_gpu.get('priority', 0) if primary_gpu else -1):
+                primary_gpu = gpu_data
+        
+        gpu_name = primary_gpu.get('name', 'Unknown') if primary_gpu else 'Unknown'
+    else:
+        # Fallback to legacy fields
+        gpu_name = computer_data.get('GPU Name', 'Unknown')
+        gpu_count = 1
+    
+    # Similar logic for CPUs
+    if 'all_cpus' in computer_data and computer_data['all_cpus']:
+        cpu_count = len(computer_data['all_cpus'])
+        primary_cpu = list(computer_data['all_cpus'].values())[0]
+        cpu_name = primary_cpu.get('name', 'Unknown')
+    else:
+        cpu_name = computer_data.get('CPU Name', 'Unknown')
+        cpu_count = 1
+    
+    return {
+        'computer_name': computer_data.get('Computername', 'Unknown'),
+        'human_name': computer_data.get('human_name', 'Unknown'),
+        'gpu_name': gpu_name,
+        'gpu_count': gpu_count,
+        'cpu_name': cpu_name,
+        'cpu_count': cpu_count,
+        'memory': computer_data.get('system_info', {}).get('total_memory_formatted', 
+                  computer_data.get('Total Physical Memory Formatted', 'Unknown'))
+    }
+
 def extract_computer_data_from_request(data):
     """Extract computer data from request payload, handling both old and new structures"""
     from datetime import datetime, date
@@ -243,14 +340,24 @@ def extract_computer_data_from_request(data):
     
     # Handle both old and new payload structures
     if 'computer_info' in data:
-        # New nested structure from ComputerInfo.to_dict()
+        # New nested structure from ComputerInfo.to_json_dict()
         computer_data = data.get('computer_info', {})
         print("✅ Using new ComputerInfo payload structure")
+        
+        # Process nested structures for backward compatibility
+        computer_data = flatten_nested_structure(computer_data)
+        
+        # Add payload metadata
+        computer_data['payload_version'] = '2.0'
+        computer_data['data_source'] = 'ComputerInfo.to_json_dict()'
+        
     else:
         # Old flat structure (for backward compatibility)
         if current_date <= COMPATIBILITY_DEADLINE:
             computer_data = data.get('computer_data', {})
             print(f"⚠️  Using legacy payload structure (backward compatibility expires {COMPATIBILITY_DEADLINE})")
+            computer_data['payload_version'] = '1.0'
+            computer_data['data_source'] = 'Legacy ComputerInfo'
         else:
             print(f"❌ Legacy payload structure no longer supported after {COMPATIBILITY_DEADLINE}")
             raise ValueError(f"Legacy payload structure is no longer supported. Please update to use the new ComputerInfo format.")
@@ -283,13 +390,23 @@ def handle_computer_data():
         if not computer_data:
             return jsonify({'error': 'No computer data provided'}), 400
         
-        # Log received data structure for debugging
-        print(f"📥 Received computer data with {len(computer_data)} fields:")
-        for key, value in computer_data.items():
-            if isinstance(value, str) and len(value) > 50:
-                print(f"  {key}: {value[:50]}...")
-            else:
-                print(f"  {key}: {value}")
+        # Log received data structure for debugging with enhanced summary
+        summary = get_computer_summary(computer_data)
+        print(f"📥 Received computer data for: {summary['human_name']} ({summary['computer_name']})")
+        print(f"   Hardware: {summary['cpu_name']} + {summary['gpu_name']}")
+        print(f"   Memory: {summary['memory']}")
+        print(f"   Payload Version: {computer_data.get('payload_version', 'Unknown')}")
+        print(f"   Data Source: {computer_data.get('data_source', 'Unknown')}")
+        
+        # Log structured data counts
+        if 'all_gpus' in computer_data:
+            print(f"   GPUs: {len(computer_data['all_gpus'])} found")
+        if 'all_cpus' in computer_data:
+            print(f"   CPUs: {len(computer_data['all_cpus'])} found")
+        if 'system_info' in computer_data:
+            print(f"   System Info: Available")
+        
+        print(f"📊 Total fields: {len(computer_data)}")
         
         # Process computer data using unified workflow
         success_count, total_operations = process_computer_data_workflow(computer_data)
