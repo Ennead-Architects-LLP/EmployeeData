@@ -2,13 +2,8 @@
   "EANY-PW-0HJ97N": {
     "CPU": "Intel(R) Core(TM) Ultra 9 185H",
     "Computername": "EANY-PW-0HJ97N",
-    "Date": "2025-09-18T12:27:59.261272",
+    "Date": "2025-09-18T12:30:50.526491",
     "First Name": "Sen",
-    "GPU Date": "2023-04-13T00:00:00",
-    "GPU Driver": "32.0.15.7357",
-    "GPU Memory": 4095,
-    "GPU Name": "NVIDIA GeForce RTX 4070 Laptop GPU",
-    "GPU Processor": "NVIDIA GeForce RTX 4070 Laptop GPU",
     "Last Name": "Zhang",
     "Manufacturer": "LENOVO",
     "Model": "21KV0001US",
@@ -70,7 +65,7 @@
       }
     },
     "human_name": "Sen Zhang",
-    "last_updated": "2025-09-18T16:28:52.072015",
+    "last_updated": "2025-09-18T16:31:39.456335",
     "computername": "EANY-PW-0HJ97N"
   },
   "MININT-5V26DTJ": {
