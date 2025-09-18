@@ -2,7 +2,7 @@
   "EANY-4X8MWP3": {
     "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
     "Computername": "EANY-4X8MWP3",
-    "Date": "2025-09-18T15:56:33.939153",
+    "Date": "2025-09-18T17:58:42.908783",
     "First Name": "Kevin",
     "GPU Date": "2021-04-12T00:00:00",
     "GPU Driver": "32.0.15.7342",
@@ -17,7 +17,9 @@
     "Total Physical Memory": 137107324928,
     "Username": "kevin.kim",
     "human_name": "Kevin Kim",
-    "last_updated": "2025-09-18T19:57:02.292537",
-    "computername": "EANY-4X8MWP3"
+    "last_updated": "2025-09-18T21:59:11.859575",
+    "computername": "EANY-4X8MWP3",
+    "processed_by_server": true,
+    "server_processing_timestamp": "2025-09-18T21:59:11.859579"
   }
 }
