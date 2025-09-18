@@ -2,7 +2,7 @@
   "EANY-PW-0HJ97N": {
     "CPU": "Intel(R) Core(TM) Ultra 9 185H",
     "Computername": "EANY-PW-0HJ97N",
-    "Date": "2025-09-18T12:32:09.994371",
+    "Date": "2025-09-18T12:35:07.495598",
     "First Name": "Sen",
     "Last Name": "Zhang",
     "Manufacturer": "LENOVO",
@@ -42,7 +42,7 @@
         "type": "Virtual"
       },
       "gpu_2": {
-        "date": null,
+        "date": "2022-10-12T00:00:00",
         "driver": "32.0.101.6637",
         "is_virtual": false,
         "memory_bytes": 2147479552,
@@ -53,7 +53,7 @@
         "type": "Physical"
       },
       "gpu_3": {
-        "date": "2023-04-13T00:00:00",
+        "date": "2023-02-22T00:00:00",
         "driver": "32.0.15.7357",
         "is_virtual": false,
         "memory_bytes": 4293918720,
@@ -65,7 +65,7 @@
       }
     },
     "human_name": "Sen Zhang",
-    "last_updated": "2025-09-18T16:32:55.186264",
+    "last_updated": "2025-09-18T16:35:56.031033",
     "computername": "EANY-PW-0HJ97N"
   },
   "MININT-5V26DTJ": {
