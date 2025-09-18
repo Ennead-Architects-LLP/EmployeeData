@@ -1,0 +1,22 @@
+{
+  "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+  "Computername": "EANY-4X8MWP3",
+  "Date": "2025-09-18T15:56:33.939153",
+  "First Name": "Kevin",
+  "GPU Date": "2021-04-12T00:00:00",
+  "GPU Driver": "32.0.15.7342",
+  "GPU Memory": 4095,
+  "GPU Name": "NVIDIA RTX A4000",
+  "GPU Processor": "NVIDIA RTX A4000",
+  "Last Name": "Kim",
+  "Manufacturer": "Dell Inc.",
+  "Model": "Precision 5820 Tower",
+  "OS": "Windows 11",
+  "Serial Number": "4X8MWP3",
+  "Total Physical Memory": 137107324928,
+  "Username": "kevin.kim",
+  "human_name": "Kevin Kim",
+  "computer_name": "EANY-4X8MWP3",
+  "memory_bytes": 137107324928,
+  "server_timestamp": "2025-09-18T19:57:02.292304"
+}
