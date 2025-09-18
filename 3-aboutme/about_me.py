@@ -21,7 +21,7 @@ from datetime import datetime
 import threading
 import queue
 from dataclasses import dataclass, field
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 try:
     import tkinter as tk
     from tkinter import ttk, messagebox
@@ -48,6 +48,265 @@ EMBEDDED_GITHUB_TOKEN = None
 SILENT_MODE = os.environ.get("ABOUTME_FORCE_SILENT") == "1"
 
 @dataclass
+class InfoDataCPU:
+    """CPU information data class"""
+    name: str
+    processor: str
+    cores: int
+    logical_processors: int
+    max_clock_speed: int
+    architecture: int
+    family: int
+    model: int
+    stepping: int
+    date: str
+    type: str = "Physical"
+    driver: str = "N/A"  # CPUs don't have drivers
+    memory_mb: Optional[int] = None  # CPUs don't have dedicated memory
+    memory_bytes: Optional[int] = None
+    
+    # NEW FIELDS - Just added for demo!
+    virtualization_support: bool = False
+    hyperthreading_enabled: bool = False
+    cache_l3_size: Optional[int] = None  # KB
+    
+    def __repr__(self):
+        """Return a comprehensive string representation of CPU information"""
+        lines = []
+        lines.append(f"CPU: {self.name}")
+        lines.append(f"  Type: {self.type}")
+        lines.append(f"  Cores: {self.cores}")
+        lines.append(f"  Logical Processors: {self.logical_processors}")
+        lines.append(f"  Max Clock Speed: {self.max_clock_speed} MHz")
+        lines.append(f"  Architecture: {self.architecture}")
+        lines.append(f"  Family: {self.family}")
+        lines.append(f"  Model: {self.model}")
+        lines.append(f"  Stepping: {self.stepping}")
+        
+        # NEW: Show new fields if available
+        if self.cache_l3_size:
+            lines.append(f"  L3 Cache: {self.cache_l3_size} KB")
+        if self.virtualization_support:
+            lines.append(f"  Virtualization: Supported")
+        if self.hyperthreading_enabled:
+            lines.append(f"  Hyperthreading: Enabled")
+            
+        lines.append(f"  Release Date: {self.date}")
+        return "\n".join(lines)
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary for JSON serialization"""
+        return {
+            "name": self.name,
+            "processor": self.processor,
+            "driver": self.driver,
+            "memory_mb": self.memory_mb,
+            "memory_bytes": self.memory_bytes,
+            "date": self.date,
+            "type": self.type,
+            "cores": self.cores,
+            "logical_processors": self.logical_processors,
+            "max_clock_speed": self.max_clock_speed,
+            "architecture": self.architecture,
+            "family": self.family,
+            "model": self.model,
+            "stepping": self.stepping,
+            
+            # NEW FIELDS - Automatically included in JSON!
+            "virtualization_support": self.virtualization_support,
+            "hyperthreading_enabled": self.hyperthreading_enabled,
+            "cache_l3_size": self.cache_l3_size
+        }
+    
+    @classmethod
+    def from_wmi_processor(cls, cpu, cpu_release_date_func):
+        """Create InfoDataCPU from WMI Win32_Processor object"""
+        return cls(
+            name=getattr(cpu, 'Name', None) or "Unknown",
+            processor=getattr(cpu, 'Name', None) or "Unknown",
+            cores=getattr(cpu, 'NumberOfCores', None) or 0,
+            logical_processors=getattr(cpu, 'NumberOfLogicalProcessors', None) or 0,
+            max_clock_speed=getattr(cpu, 'MaxClockSpeed', None) or 0,
+            architecture=getattr(cpu, 'Architecture', None) or 0,
+            family=getattr(cpu, 'Family', None) or 0,
+            model=getattr(cpu, 'Model', None) or 0,
+            stepping=getattr(cpu, 'Stepping', None) or 0,
+            date=cpu_release_date_func(getattr(cpu, 'Name', None) or ""),
+            
+            # NEW: Extract new fields from WMI
+            virtualization_support=getattr(cpu, 'VirtualizationFirmwareEnabled', False),
+            hyperthreading_enabled=getattr(cpu, 'HyperThreadingEnabled', False),
+            cache_l3_size=getattr(cpu, 'L3CacheSize', None)
+        )
+
+@dataclass
+class InfoDataGPU:
+    """GPU information data class"""
+    name: str
+    processor: str
+    driver: str
+    memory_bytes: Optional[int]
+    memory_mb: Optional[float]
+    memory_gb: Optional[float]
+    memory_formatted: Optional[str]
+    date: Optional[str]
+    type: str
+    priority: int
+    is_virtual: bool
+    
+    def __repr__(self):
+        """Return a comprehensive string representation of GPU information"""
+        lines = []
+        lines.append(f"GPU: {self.name}")
+        lines.append(f"  Type: {self.type}")
+        lines.append(f"  Processor: {self.processor}")
+        lines.append(f"  Driver: {self.driver}")
+        if self.memory_formatted:
+            lines.append(f"  Memory: {self.memory_formatted}")
+        lines.append(f"  Priority: {self.priority}")
+        lines.append(f"  Virtual: {self.is_virtual}")
+        lines.append(f"  Release Date: {self.date or 'Unknown'}")
+        return "\n".join(lines)
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary for JSON serialization"""
+        return {
+            "name": self.name,
+            "processor": self.processor,
+            "driver": self.driver,
+            "memory_bytes": self.memory_bytes,
+            "memory_mb": self.memory_mb,
+            "memory_gb": self.memory_gb,
+            "memory_formatted": self.memory_formatted,
+            "date": self.date,
+            "type": self.type,
+            "priority": self.priority,
+            "is_virtual": self.is_virtual
+        }
+    
+    @classmethod
+    def from_wmi_video_controller(cls, gpu, memory_formatting_func, gpu_release_date_func, virtual_gpu_names):
+        """Create InfoDataGPU from WMI Win32_VideoController object"""
+        gpu_name = (gpu.Name or "").lower()
+        
+        # Calculate memory size
+        raw = getattr(gpu, 'AdapterRAM', None)
+        mem_bytes = None
+        if raw is not None:
+            try:
+                raw_int = int(raw)
+                if raw_int < 0:
+                    raw_int = raw_int + (2 ** 32)
+                mem_bytes = int(raw_int)
+            except Exception:
+                mem_bytes = None
+
+        # Try registry fallback for memory if WMI didn't provide it
+        if mem_bytes is None:
+            try:
+                import winreg
+                with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}") as h:
+                    # Scan subkeys for HardwareInformation.qwMemorySize
+                    i = 0
+                    while True:
+                        try:
+                            sub = winreg.EnumKey(h, i)
+                            i += 1
+                        except OSError:
+                            break
+                        try:
+                            with winreg.OpenKey(h, sub) as subkey:
+                                val, typ = winreg.QueryValueEx(subkey, "HardwareInformation.qwMemorySize")
+                                # Value may already be 64-bit
+                                if isinstance(val, int) and val > 0:
+                                    mem_bytes = val
+                                    break
+                        except OSError:
+                            continue
+            except Exception:
+                pass
+        
+        # Format memory size
+        memory_formatted, memory_mb, memory_gb = memory_formatting_func(mem_bytes)
+        
+        # Determine GPU priority
+        current_priority = 0
+        if "nvidia" in gpu_name or "geforce" in gpu_name or "quadro" in gpu_name or "rtx" in gpu_name or "gtx" in gpu_name:
+            current_priority = 3  # Dedicated NVIDIA
+        elif "amd" in gpu_name or "radeon" in gpu_name or "rx" in gpu_name:
+            current_priority = 3  # Dedicated AMD
+        elif "intel" in gpu_name and ("arc" in gpu_name or "iris" in gpu_name):
+            current_priority = 2  # Intel Arc/Iris (higher-end integrated)
+        elif "intel" in gpu_name:
+            current_priority = 1  # Basic Intel integrated
+        else:
+            current_priority = 0  # Unknown/other
+        
+        # Determine if virtual
+        is_virtual = any(virtual_name in gpu_name for virtual_name in virtual_gpu_names)
+        
+        return cls(
+            name=gpu.Name,
+            processor=gpu.VideoProcessor or "Unknown",
+            driver=gpu.DriverVersion or "Unknown",
+            memory_bytes=mem_bytes,
+            memory_mb=memory_mb,
+            memory_gb=memory_gb,
+            memory_formatted=memory_formatted,
+            date=gpu_release_date_func(gpu.Name or ""),
+            type="Virtual" if is_virtual else "Physical",
+            priority=current_priority,
+            is_virtual=is_virtual
+        )
+
+@dataclass
+class InfoDataSystem:
+    """System-level information data class"""
+    total_memory_bytes: int
+    total_memory_formatted: str
+    total_memory_mb: float
+    total_memory_gb: float
+    available_memory_bytes: int
+    used_memory_bytes: int
+    memory_percent: float
+    
+    def __repr__(self):
+        """Return a comprehensive string representation of system information"""
+        lines = []
+        lines.append(f"System Memory: {self.total_memory_formatted}")
+        lines.append(f"  Available: {self.available_memory_bytes / (1024**3):.1f} GB")
+        lines.append(f"  Used: {self.used_memory_bytes / (1024**3):.1f} GB")
+        lines.append(f"  Usage: {self.memory_percent:.1f}%")
+        return "\n".join(lines)
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary for JSON serialization"""
+        return {
+            "total_memory_bytes": self.total_memory_bytes,
+            "total_memory_formatted": self.total_memory_formatted,
+            "total_memory_mb": self.total_memory_mb,
+            "total_memory_gb": self.total_memory_gb,
+            "available_memory_bytes": self.available_memory_bytes,
+            "used_memory_bytes": self.used_memory_bytes,
+            "memory_percent": self.memory_percent
+        }
+    
+    @classmethod
+    def from_psutil_memory(cls, memory, memory_formatting_func):
+        """Create InfoDataSystem from psutil.virtual_memory() object"""
+        memory_formatted, memory_mb, memory_gb = memory_formatting_func(memory.total)
+        
+        return cls(
+            total_memory_bytes=memory.total,
+            total_memory_formatted=memory_formatted,
+            total_memory_mb=memory_mb,
+            total_memory_gb=memory_gb,
+            available_memory_bytes=memory.available,
+            used_memory_bytes=memory.used,
+            memory_percent=memory.percent
+        )
+
+@dataclass
 class ComputerInfo:
     """Computer information data class with structured fields"""
     # Basic computer info
@@ -63,13 +322,10 @@ class ComputerInfo:
     model: Optional[str] = None
     serial_number: Optional[str] = None
     
-    # Hardware specs
-    cpu: Optional[str] = None
-    total_physical_memory: Optional[int] = None
-    # Multi-GPU support (dict of dict) - contains all GPU information
-    all_gpus: Optional[dict] = field(default_factory=dict)
-    # Multi-CPU support (dict of dict) - contains all CPU information
-    all_cpus: Optional[dict] = field(default_factory=dict)
+    # Structured hardware information
+    system_info: Optional[InfoDataSystem] = None
+    all_gpus: List[InfoDataGPU] = field(default_factory=list)
+    all_cpus: List[InfoDataCPU] = field(default_factory=list)
     
     # Metadata
     date: Optional[str] = None
@@ -114,34 +370,39 @@ class ComputerInfo:
         
         # Hardware Information
         lines.append("\n🔧 HARDWARE INFORMATION:")
-        lines.append(f"   CPU: {self.cpu or 'Unknown'}")
-        if self.total_physical_memory:
-            memory_gb = self.total_physical_memory / (1024**3)
-            lines.append(f"   Total Memory: {memory_gb:.1f} GB")
-        else:
-            lines.append(f"   Total Memory: Unknown")
+        # Get primary CPU from all_cpus
+        primary_cpu_name = "Unknown"
+        if self.all_cpus:
+            primary_cpu_name = self.all_cpus[0].name
+        lines.append(f"   CPU: {primary_cpu_name}")
+        
+        # Get system memory from system_info
+        system_memory = "Unknown"
+        if self.system_info:
+            system_memory = self.system_info.total_memory_formatted
+        lines.append(f"   Total Memory: {system_memory}")
         
         # CPU Details
         if self.all_cpus:
             lines.append(f"\n   🖥️  CPUs ({len(self.all_cpus)} found):")
-            for cpu_key, cpu in self.all_cpus.items():
-                lines.append(f"     {cpu_key.upper()}: {cpu.get('name', 'Unknown')}")
-                lines.append(f"       Type: {cpu.get('type', 'Unknown')}")
-                lines.append(f"       Cores: {cpu.get('cores', 'Unknown')}")
-                lines.append(f"       Logical Processors: {cpu.get('logical_processors', 'Unknown')}")
-                lines.append(f"       Date: {cpu.get('date', 'Unknown')}")
+            for i, cpu in enumerate(self.all_cpus, 1):
+                lines.append(f"     CPU_{i}: {cpu.name}")
+                lines.append(f"       Type: {cpu.type}")
+                lines.append(f"       Cores: {cpu.cores}")
+                lines.append(f"       Logical Processors: {cpu.logical_processors}")
+                lines.append(f"       Date: {cpu.date}")
         
         # GPU Details
         if self.all_gpus:
             lines.append(f"\n   🎮 GPUs ({len(self.all_gpus)} found):")
-            for gpu_key, gpu in self.all_gpus.items():
-                lines.append(f"     {gpu_key.upper()}: {gpu.get('name', 'Unknown')}")
-                lines.append(f"       Type: {gpu.get('type', 'Unknown')}")
-                if gpu.get('memory_mb'):
-                    lines.append(f"       Memory: {gpu['memory_mb']:.0f} MB")
-                lines.append(f"       Driver: {gpu.get('driver', 'Unknown')}")
-                lines.append(f"       Priority: {gpu.get('priority', 'Unknown')}")
-                lines.append(f"       Date: {gpu.get('date', 'Unknown')}")
+            for i, gpu in enumerate(self.all_gpus, 1):
+                lines.append(f"     GPU_{i}: {gpu.name}")
+                lines.append(f"       Type: {gpu.type}")
+                if gpu.memory_formatted:
+                    lines.append(f"       Memory: {gpu.memory_formatted}")
+                lines.append(f"       Driver: {gpu.driver}")
+                lines.append(f"       Priority: {gpu.priority}")
+                lines.append(f"       Date: {gpu.date or 'Unknown'}")
         
         # Collection Information
         lines.append("\n📅 COLLECTION INFORMATION:")
@@ -167,12 +428,27 @@ class ComputerInfo:
         """Convert ComputerInfo instance to dictionary for JSON serialization"""
         result = {}
         
-        # Add all non-None fields to the result
+        # Add basic fields
         for field_name, field_value in self.__dict__.items():
-            if field_value is not None:
-                # Convert field names to match expected JSON keys
+            if field_value is not None and field_name not in ['system_info', 'all_gpus', 'all_cpus']:
                 json_key = self._get_json_key(field_name)
                 result[json_key] = field_value
+        
+        # Add structured system info
+        if self.system_info:
+            result["system_info"] = self.system_info.to_dict()
+        
+        # Add structured GPU info
+        if self.all_gpus:
+            result["all_gpus"] = {}
+            for i, gpu in enumerate(self.all_gpus, 1):
+                result["all_gpus"][f"gpu_{i}"] = gpu.to_dict()
+        
+        # Add structured CPU info
+        if self.all_cpus:
+            result["all_cpus"] = {}
+            for i, cpu in enumerate(self.all_cpus, 1):
+                result["all_cpus"][f"cpu_{i}"] = cpu.to_dict()
         
         return result
     
@@ -188,8 +464,6 @@ class ComputerInfo:
             'manufacturer': 'Manufacturer',
             'model': 'Model',
             'serial_number': 'Serial Number',
-            'cpu': 'CPU',
-            'total_physical_memory': 'Total Physical Memory',
             'date': 'Date'
         }
         return key_mapping.get(field_name, field_name)
@@ -360,7 +634,32 @@ class ComputerInfoCollector:
     def __init__(self, website_url=None):
         self.computer_info = ComputerInfo()
         self.wmi_conn = None
-        self.website_url = website_url or EMBEDDED_WEBSITE_URL
+    
+    def _format_memory_size(self, bytes_value):
+        """Format memory size from bytes to human-readable format (MB or GB)
+        
+        Args:
+            bytes_value (int): Memory size in bytes
+            
+        Returns:
+            tuple: (formatted_size_str, size_mb, size_gb)
+        """
+        if bytes_value is None or bytes_value == 0:
+            return None, None, None
+        
+        # Convert to MB and GB
+        size_mb = bytes_value / (1024 * 1024)
+        size_gb = bytes_value / (1024 * 1024 * 1024)
+        
+        # Choose the best unit for display
+        if size_gb >= 1:
+            # Use GB if 1GB or more
+            formatted = f"{size_gb:.1f} GB"
+        else:
+            # Use MB if less than 1GB
+            formatted = f"{size_mb:.0f} MB"
+        
+        return formatted, round(size_mb, 2), round(size_gb, 3)
         
     def collect_all_info(self):
         """Collect essential computer information matching Excel headers"""
@@ -530,62 +829,32 @@ class ComputerInfoCollector:
         """Get memory information"""
         try:
             memory = psutil.virtual_memory()
-            self.computer_info.total_physical_memory = memory.total
+            
+            # Create structured system info object
+            self.computer_info.system_info = InfoDataSystem.from_psutil_memory(memory, self._format_memory_size)
         except Exception as e:
             self.computer_info.set_error("memory_info", str(e))
+            self.computer_info.system_info = None
     
     def _get_cpu_info(self):
         """Get CPU information for all CPUs"""
         try:
             if platform.system() == "Windows" and self.wmi_conn:
                 try:
-                    all_cpu_info = {}
-                    primary_cpu = None
-                    cpu_index = 1
+                    all_cpus = []
                     
                     for cpu in self.wmi_conn.Win32_Processor():
-                        # Create CPU info dictionary with safe attribute access
-                        cpu_key = f"cpu_{cpu_index}"
-                        cpu_info = {
-                            "name": getattr(cpu, 'Name', None) or "Unknown",
-                            "processor": getattr(cpu, 'Name', None) or "Unknown",  # For CPUs, name and processor are the same
-                            "driver": "N/A",  # CPUs don't have drivers like GPUs
-                            "memory_mb": None,  # CPUs don't have dedicated memory
-                            "memory_bytes": None,
-                            "date": self._get_cpu_release_date(getattr(cpu, 'Name', None) or ""),
-                            "type": "Physical",  # All real CPUs are physical
-                            "cores": getattr(cpu, 'NumberOfCores', None) or 0,
-                            "logical_processors": getattr(cpu, 'NumberOfLogicalProcessors', None) or 0,
-                            "max_clock_speed": getattr(cpu, 'MaxClockSpeed', None) or 0,
-                            "architecture": getattr(cpu, 'Architecture', None) or 0,
-                            "family": getattr(cpu, 'Family', None) or 0,
-                            "model": getattr(cpu, 'Model', None) or 0,
-                            "stepping": getattr(cpu, 'Stepping', None) or 0
-                        }
-                        
-                        all_cpu_info[cpu_key] = cpu_info
-                        
-                        # Set primary CPU (first one found)
-                        if primary_cpu is None:
-                            primary_cpu = cpu
-                        
-                        cpu_index += 1
+                        # Create structured CPU info object
+                        cpu_info = InfoDataCPU.from_wmi_processor(cpu, self._get_cpu_release_date)
+                        all_cpus.append(cpu_info)
                     
                     # Store all CPU information
-                    self.computer_info.all_cpus = all_cpu_info
-                    
-                    # Set primary CPU
-                    if primary_cpu is not None:
-                        self.computer_info.cpu = primary_cpu.Name
-                    else:
-                        self.computer_info.cpu = platform.processor()
+                    self.computer_info.all_cpus = all_cpus
                 except Exception as e:
                     self.computer_info.set_error("cpu_wmi", str(e))
-                    self.computer_info.cpu = platform.processor()
-                    self.computer_info.all_cpus = {}
+                    self.computer_info.all_cpus = []
             else:
-                self.computer_info.cpu = platform.processor()
-                self.computer_info.all_cpus = {}
+                self.computer_info.all_cpus = []
         except Exception as e:
             self.computer_info.set_error("cpu_info", str(e))
     
@@ -711,6 +980,8 @@ class ComputerInfoCollector:
         try:
             if platform.system() == "Windows" and self.wmi_conn:
                 try:
+                    all_gpus = []
+                    
                     # List of virtual/generic GPU names to exclude from primary selection
                     virtual_gpu_names = [
                         "microsoft basic display driver",
@@ -721,117 +992,27 @@ class ComputerInfoCollector:
                         "default display device"
                     ]
                     
-                    all_gpu_info = {}
-                    best_gpu = None
-                    max_memory_bytes = None
-                    gpu_priority = 0  # Higher number = higher priority
-                    gpu_index = 1
-                    
                     for gpu in self.wmi_conn.Win32_VideoController():
-                        gpu_name = (gpu.Name or "").lower()
-                        
                         # Skip GPUs with no meaningful name
                         if not gpu.Name or gpu.Name.strip() == "":
                             continue
                         
-                        # Calculate memory size
-                        raw = getattr(gpu, 'AdapterRAM', None)
-                        mem_bytes = None
-                        if raw is not None:
-                            try:
-                                # Some systems return strings; coerce to int safely
-                                raw_int = int(raw)
-                                if raw_int < 0:
-                                    # Unsigned wrap (32-bit) → fix by adding 2^32
-                                    raw_int = raw_int + (2 ** 32)
-                                mem_bytes = int(raw_int)
-                            except Exception:
-                                mem_bytes = None
-
-                        if mem_bytes is None:
-                            # Try registry fallback for this adapter
-                            try:
-                                import winreg
-                                with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}") as h:
-                                    # Scan subkeys for HardwareInformation.qwMemorySize
-                                    i = 0
-                                    while True:
-                                        try:
-                                            sub = winreg.EnumKey(h, i)
-                                            i += 1
-                                        except OSError:
-                                            break
-                                        try:
-                                            with winreg.OpenKey(h, sub) as subkey:
-                                                val, typ = winreg.QueryValueEx(subkey, "HardwareInformation.qwMemorySize")
-                                                # Value may already be 64-bit
-                                                if isinstance(val, int) and val > 0:
-                                                    mem_bytes = val
-                                                    break
-                                        except OSError:
-                                            continue
-                            except Exception:
-                                pass
-                        
-                        # Determine GPU priority (dedicated > integrated > basic)
-                        current_priority = 0
-                        if "nvidia" in gpu_name or "geforce" in gpu_name or "quadro" in gpu_name or "rtx" in gpu_name or "gtx" in gpu_name:
-                            current_priority = 3  # Dedicated NVIDIA
-                        elif "amd" in gpu_name or "radeon" in gpu_name or "rx" in gpu_name:
-                            current_priority = 3  # Dedicated AMD
-                        elif "intel" in gpu_name and ("arc" in gpu_name or "iris" in gpu_name):
-                            current_priority = 2  # Intel Arc/Iris (higher-end integrated)
-                        elif "intel" in gpu_name:
-                            current_priority = 1  # Basic Intel integrated
-                        else:
-                            current_priority = 0  # Unknown/other
-                        
-                        # Create GPU info dictionary
-                        gpu_key = f"gpu_{gpu_index}"
-                        gpu_info = {
-                            "name": gpu.Name,
-                            "processor": gpu.VideoProcessor or "Unknown",
-                            "driver": gpu.DriverVersion or "Unknown",
-                            "memory_mb": max(0, int(round(mem_bytes / (1024 * 1024)))) if mem_bytes else None,
-                            "memory_bytes": mem_bytes,
-                            "date": self._get_gpu_release_date(gpu.Name or ""),
-                            "type": "Virtual" if any(virtual_name in gpu_name for virtual_name in virtual_gpu_names) else "Physical",
-                            "priority": current_priority,
-                            "is_virtual": any(virtual_name in gpu_name for virtual_name in virtual_gpu_names)
-                        }
-                        
-                        # Add to all GPUs dict
-                        all_gpu_info[gpu_key] = gpu_info
-                        
-                        gpu_index += 1
-                        
-                        # Skip virtual GPUs from primary selection
-                        if gpu_info["is_virtual"]:
-                            continue
-                        
-                        # Select best GPU based on priority and memory
-                        should_select = False
-                        if best_gpu is None:
-                            should_select = True
-                        elif current_priority > gpu_priority:
-                            should_select = True
-                        elif current_priority == gpu_priority and mem_bytes is not None and (max_memory_bytes is None or mem_bytes > max_memory_bytes):
-                            should_select = True
-                        
-                        if should_select:
-                            best_gpu = gpu
-                            max_memory_bytes = mem_bytes
-                            gpu_priority = current_priority
-
-                    # Store all GPU information
-                    self.computer_info.all_gpus = all_gpu_info
+                        # Create structured GPU info object
+                        gpu_info = InfoDataGPU.from_wmi_video_controller(
+                            gpu, 
+                            self._format_memory_size, 
+                            self._get_gpu_release_date,
+                            virtual_gpu_names
+                        )
+                        all_gpus.append(gpu_info)
                     
-                    # All GPU information is now stored in all_gpus dict
+                    # Store all GPU information
+                    self.computer_info.all_gpus = all_gpus
                 except Exception as e:
                     self.computer_info.set_error("gpu_wmi", str(e))
-                    self.computer_info.all_gpus = {}
+                    self.computer_info.all_gpus = []
             else:
-                self.computer_info.all_gpus = {}
+                self.computer_info.all_gpus = []
         except Exception as e:
             self.computer_info.set_error("gpu_info", str(e))
     
@@ -1383,7 +1564,6 @@ class AboutMeApp:
             'manufacturer': 'Manufacturer',
             'model': 'Model',
             'serial_number': 'Serial Number',
-            'total_physical_memory': 'Total Memory',
             'date': 'Collection Date'
         }
         
@@ -1391,27 +1571,37 @@ class AboutMeApp:
             if hasattr(computer_info, field_name):
                 value = getattr(computer_info, field_name)
                 if value is not None:
-                    if field_name == 'total_physical_memory' and isinstance(value, int):
-                        value = f"{value / (1024**3):.1f} GB"
                     tree.insert("", "end", values=(display_label, str(value)))
+        
+        # System information
+        if computer_info.system_info:
+            tree.insert("", "end", values=("Total Memory", computer_info.system_info.total_memory_formatted))
+            tree.insert("", "end", values=("Available Memory", f"{computer_info.system_info.available_memory_bytes / (1024**3):.1f} GB"))
+            tree.insert("", "end", values=("Memory Usage", f"{computer_info.system_info.memory_percent:.1f}%"))
+        
+        # Primary CPU information
+        if computer_info.all_cpus:
+            primary_cpu = computer_info.all_cpus[0]
+            tree.insert("", "end", values=("Primary CPU", primary_cpu.name))
         
         # CPU information
         if computer_info.all_cpus:
-            for cpu_key, cpu in computer_info.all_cpus.items():
-                tree.insert("", "end", values=(f"{cpu_key.upper()} - Name", cpu.get('name', 'Unknown')))
-                tree.insert("", "end", values=(f"{cpu_key.upper()} - Cores", str(cpu.get('cores', 0))))
-                tree.insert("", "end", values=(f"{cpu_key.upper()} - Logical Processors", str(cpu.get('logical_processors', 0))))
-                tree.insert("", "end", values=(f"{cpu_key.upper()} - Type", cpu.get('type', 'Unknown')))
-                tree.insert("", "end", values=(f"{cpu_key.upper()} - Date", cpu.get('date', 'Unknown')))
+            for i, cpu in enumerate(computer_info.all_cpus, 1):
+                tree.insert("", "end", values=(f"CPU_{i} - Name", cpu.name))
+                tree.insert("", "end", values=(f"CPU_{i} - Cores", str(cpu.cores)))
+                tree.insert("", "end", values=(f"CPU_{i} - Logical Processors", str(cpu.logical_processors)))
+                tree.insert("", "end", values=(f"CPU_{i} - Type", cpu.type))
+                tree.insert("", "end", values=(f"CPU_{i} - Date", cpu.date))
         
         # GPU information
         if computer_info.all_gpus:
-            for gpu_key, gpu in computer_info.all_gpus.items():
-                tree.insert("", "end", values=(f"{gpu_key.upper()} - Name", gpu.get('name', 'Unknown')))
-                tree.insert("", "end", values=(f"{gpu_key.upper()} - Type", gpu.get('type', 'Unknown')))
-                tree.insert("", "end", values=(f"{gpu_key.upper()} - Memory", f"{gpu.get('memory_mb', 0):.0f} MB" if gpu.get('memory_mb') else 'N/A'))
-                tree.insert("", "end", values=(f"{gpu_key.upper()} - Driver", gpu.get('driver', 'Unknown')))
-                tree.insert("", "end", values=(f"{gpu_key.upper()} - Priority", str(gpu.get('priority', 0))))
+            for i, gpu in enumerate(computer_info.all_gpus, 1):
+                tree.insert("", "end", values=(f"GPU_{i} - Name", gpu.name))
+                tree.insert("", "end", values=(f"GPU_{i} - Type", gpu.type))
+                memory_display = gpu.memory_formatted if gpu.memory_formatted else 'N/A'
+                tree.insert("", "end", values=(f"GPU_{i} - Memory", memory_display))
+                tree.insert("", "end", values=(f"GPU_{i} - Driver", gpu.driver))
+                tree.insert("", "end", values=(f"GPU_{i} - Priority", str(gpu.priority)))
         
         tree.pack(side="left", fill="both", expand=True)
         vsb.pack(side="right", fill="y")
