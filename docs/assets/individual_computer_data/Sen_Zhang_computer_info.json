@@ -1,18 +1,13 @@
 {
   "EANY-PW-0HJ97N": {
-    "CPU": "Intel(R) Core(TM) Ultra 9 185H",
     "Computername": "EANY-PW-0HJ97N",
-    "Date": "2025-09-18T12:41:04.047346",
+    "Date": "2025-09-18T12:42:41.777988",
     "First Name": "Sen",
     "Last Name": "Zhang",
     "Manufacturer": "LENOVO",
     "Model": "21KV0001US",
     "OS": "Windows 11",
     "Serial Number": "PW0HJ97N",
-    "Total Physical Memory": 33765298176,
-    "Total Physical Memory (Formatted)": "31.4 GB",
-    "Total Physical Memory (GB)": 31.446,
-    "Total Physical Memory (MB)": 32201.1,
     "Username": "szhang",
     "all_cpus": {
       "cpu_1": {
@@ -74,7 +69,16 @@
       }
     },
     "human_name": "Sen Zhang",
-    "last_updated": "2025-09-18T16:41:49.204195",
+    "system_info": {
+      "available_memory_bytes": 7722450944,
+      "memory_percent": 77.1,
+      "total_memory_bytes": 33765298176,
+      "total_memory_formatted": "31.4 GB",
+      "total_memory_gb": 31.446,
+      "total_memory_mb": 32201.1,
+      "used_memory_bytes": 26042847232
+    },
+    "last_updated": "2025-09-18T16:43:34.629796",
     "computername": "EANY-PW-0HJ97N"
   },
   "MININT-5V26DTJ": {
