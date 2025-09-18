@@ -1,0 +1,15 @@
+{
+  "computer_name": "EANY-8DNZJD3",
+  "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+  "gpu_driver": "32.0.15.7342",
+  "gpu_memory": -1048576,
+  "gpu_name": "NVIDIA Quadro P2000",
+  "human_name": "Clara Martucci",
+  "manufacturer": "Dell Inc.",
+  "memory_bytes": 68386050048,
+  "model": "Precision 5820 Tower",
+  "os": "Windows 11",
+  "serial_number": "8DNZJD3",
+  "username": "Clara.Martucci",
+  "server_timestamp": "2025-09-18T13:09:15.776007"
+}
