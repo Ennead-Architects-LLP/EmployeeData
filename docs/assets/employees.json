@@ -4021,7 +4021,398 @@
   },
   "Brian Masuda": {
     "human_name": "Brian Masuda",
-    "source": "individual_computer_only",
+    "email": "brian.masuda@ennead.com",
+    "bio": null,
+    "phone": "212-792-5986",
+    "mobile": "212-792-5986",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/D2D3DAC4-707D-4B7F-9405-86FECC71FE84/brian-masuda",
+    "image_url": "https://ei.ennead.com/api/image/fc3d6739-a7ab-4c21-93d3-3c5bd9c61289/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Brian Masuda_profile.jpg",
+    "position": "Principal",
+    "department": "",
+    "years_with_firm": 24,
+    "memberships": [
+      "LEED GAAIANational Organization of Minority ArchitectsLEED AP BD+CNCARBWELLGBCI",
+      "LEED GA",
+      "AIA",
+      "National Organization of Minority Architects",
+      "LEED AP BD+C",
+      "NCARB",
+      "WELL",
+      "GBCI"
+    ],
+    "education": [
+      {
+        "institution": "University of Hawaii, Manoa",
+        "degree": "5 Year Professional",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shaoxing-textile-museum",
+        "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Shaoxing Textile Museum",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Zhejiang China Textile City Group",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Shinsegae Town Mixed Use Development CompetitionShinsegae Inc.2320",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shinsegae-town-mixed-use-development-competition",
+        "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Shinsegae Town Mixed Use Development Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Shinsegae Inc.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "Water Wheels (New York Times)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "working-waterfront--water-wheels-new-york-times",
+        "url": "https://ei.ennead.com/project/2AF9D5D6-3EE8-4786-8FE6-4A110ADEFBF6/working-waterfront--water-wheels-new-york-times",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "P09NYTM",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "working-waterfront--water-wheels-new-york-times",
+        "url": "https://ei.ennead.com/project/2AF9D5D6-3EE8-4786-8FE6-4A110ADEFBF6/working-waterfront--water-wheels-new-york-times",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Huzhou Vocational and Technical Campus Master PlanHuzhou Professional School2227",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "huzhou-vocational-and-technical-campus-master-plan",
+        "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Huzhou Vocational and Technical Campus Master Plan",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Bilibili Shanghai Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+        "source": "detailed_table"
+      },
+      "proj_12": {
+        "name": "University of Florida Phillips Center Feasibility Study and Renovation",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/5A2C1C9F-5936-477A-9AC8-F86450212C11/university-of-florida-phillips-center-feasibility-study-and-renovation",
+        "source": "detailed_table"
+      },
+      "proj_13": {
+        "name": "Northwell, Third Avenue Medical Office Building",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "detailed_table"
+      },
+      "proj_14": {
+        "name": "Wuxi Art Museum",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/3D1D6BFF-2B0A-4B7A-9D3B-B84AA3DCF71A/wuxi-art-museum",
+        "source": "detailed_table"
+      },
+      "proj_15": {
+        "name": "Sing Sing Prison Museum",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/DF537E06-2132-4FC7-995B-66D7BDC8A943/sing-sing-prison-museum",
+        "source": "detailed_table"
+      },
+      "proj_16": {
+        "name": "Connecticut College, Athey Center for Performance and Research at Palmer Auditorium",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/10882038-1765-407C-A0C7-95CEFBECB8E2/connecticut-college-athey-center-for-performance-and-research-at-palmer-auditorium",
+        "source": "detailed_table"
+      },
+      "proj_17": {
+        "name": "Capitol Crossing",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/68EE3B2C-BE0A-49B5-9862-A125B2393589/capitol-crossing",
+        "source": "detailed_table"
+      },
+      "proj_18": {
+        "name": "Allegheny College, Vukovich Center for Communication Arts",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/953D143D-6A76-4029-9C97-ED37CD679E8C/allegheny-college-vukovich-center-for-communication-arts",
+        "source": "detailed_table"
+      },
+      "proj_19": {
+        "name": "Apple Scottsdale",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/62EAAD49-9D9B-406B-B5FA-FB6B61A3CE5D/apple-scottsdale",
+        "source": "detailed_table"
+      },
+      "proj_20": {
+        "name": "Arizona State University, Beus Center for Law and Society (ASU)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/DC6D031D-D1E0-4D39-A43D-6188E2F15C4F/arizona-state-university-beus-center-for-law-and-society-asu",
+        "source": "detailed_table"
+      },
+      "proj_21": {
+        "name": "Cornell University Comprehensive Campus Master Plan",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/8CE3D791-A632-4DF9-BC75-65D54FC34F49/cornell-university-comprehensive-campus-master-plan",
+        "source": "detailed_table"
+      },
+      "proj_22": {
+        "name": "Frank Sinatra School of the Arts",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/C7BAD07C-9363-45DC-ABB4-1EA4A4829173/frank-sinatra-school-of-the-arts",
+        "source": "detailed_table"
+      },
+      "proj_23": {
+        "name": "Goh Keng Swee Centre for Education",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/D217F60E-C2D1-4B98-A079-299B4B07C88D/goh-keng-swee-centre-for-education",
+        "source": "detailed_table"
+      },
+      "proj_24": {
+        "name": "Kansas State University, College of Architecture Planning and Design",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/254C84D8-F993-449A-9C67-BBD8B9BDF58E/kansas-state-university-college-of-architecture-planning-and-design",
+        "source": "detailed_table"
+      },
+      "proj_25": {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "detailed_table"
+      },
+      "proj_26": {
+        "name": "Marina Bay Integrated Resort Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/AE7B93CE-3E9F-4B09-BFD1-F0B3D136F425/marina-bay-integrated-resort-competition",
+        "source": "detailed_table"
+      },
+      "proj_27": {
+        "name": "Massachusetts College of Art and Design, Design and Media Center",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/F16D9CBC-D1F9-4673-A57B-C6608E795FCB/massachusetts-college-of-art-and-design-design-and-media-center",
+        "source": "detailed_table"
+      },
+      "proj_28": {
+        "name": "Museum of the City of New York, Phases I-III (MCNY)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/EA32AB62-43EF-45BD-9363-C8660919DA7D/museum-of-the-city-of-new-york-phases-i-iii-mcny",
+        "source": "detailed_table"
+      },
+      "proj_29": {
+        "name": "New York University, Tisch School of the Arts, Institute of Performing Arts",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/0975B49C-6C4B-424C-A09A-D4F493370DBF/new-york-university-tisch-school-of-the-arts-institute-of-performing-arts",
+        "source": "detailed_table"
+      },
+      "proj_30": {
+        "name": "Newseum / Freedom Forum Foundation World Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/09D888AB-9F7A-4433-A6A3-209B49BE8CBA/newseum-freedom-forum-foundation-world-headquarters",
+        "source": "detailed_table"
+      },
+      "proj_31": {
+        "name": "Northwell Health, Inpatient Care Center (Phase II)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/6EE19E91-45FB-4B7B-91FC-C0F630CD0D58/northwell-health-inpatient-care-center-phase-ii",
+        "source": "detailed_table"
+      },
+      "proj_32": {
+        "name": "Northwestern, New University Commons [CLIENT CONFIDENTIAL GET F. LIM PERMISSION]",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/D8B72F1C-A458-4104-8E01-4E33C162B9BD/northwestern-new-university-commons-client-confidential-get-f-lim-permission",
+        "source": "detailed_table"
+      },
+      "proj_33": {
+        "name": "NYU Langone Health, Master Plan",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/DBAA4604-B965-4262-80E5-4F1FF05F086E/nyu-langone-health-master-plan",
+        "source": "detailed_table"
+      },
+      "proj_34": {
+        "name": "NYU Langone Health, Science Building",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+        "source": "detailed_table"
+      },
+      "proj_35": {
+        "name": "Samuel J. Friedman Theatre for Manhattan Theatre Club (Biltmore)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/45024801-8442-4299-83C2-4E4CB3DDA91E/samuel-j-friedman-theatre-for-manhattan-theatre-club-biltmore",
+        "source": "detailed_table"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=bmasuda@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:30:24.057286",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-DW8MWP3": {
         "computer_name": "EANY-DW8MWP3",
@@ -4036,13 +4427,11 @@
         "os": "Windows 11",
         "serial_number": "DW8MWP3",
         "username": "bmasuda",
-        "last_updated": "2025-09-18T15:14:42.082639"
+        "last_updated": "2025-09-19T13:28:19.709521",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T13:28:19.709524"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-DW8MWP3": {
         "Computername": "EANY-DW8MWP3",
@@ -4358,8 +4747,34 @@
     "profile_id": null,
     "created_from": [
       "Individual Employee Files",
+      "Individual Computer Data",
       "GPU Master List 2025"
     ],
+    "computer_info": {
+      "EANY-7W8MWP3": {
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Computername": "EANY-7W8MWP3",
+        "Date": "2025-09-19T09:32:07.966120",
+        "First Name": "Callie",
+        "GPU Date": "2021-04-12T00:00:00",
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4095,
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Last Name": "Fleetwood",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "OS": "Windows 11",
+        "Serial Number": "7W8MWP3",
+        "Total Physical Memory": 137107308544,
+        "Username": "cfleetwood",
+        "human_name": "Callie Fleetwood",
+        "last_updated": "2025-09-19T13:32:32.785411",
+        "computername": "EANY-7W8MWP3",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T13:32:32.785415"
+      }
+    },
     "Static GPU Master List": {
       "EANY-7W8MWP3": {
         "Computername": "EANY-7W8MWP3",
@@ -5775,8 +6190,72 @@
     "profile_id": null,
     "created_from": [
       "Individual Employee Files",
+      "Individual Computer Data",
       "GPU Master List 2025"
     ],
+    "computer_info": {
+      "EANY-H8PHHQ2": {
+        "Computername": "EANY-H8PHHQ2",
+        "First Name": "Chihwei",
+        "Last Name": "Hsu",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "OS": "Windows 11",
+        "Serial Number": "H8PHHQ2",
+        "Username": "chsu",
+        "all_cpus": {
+          "cpu_1": {
+            "architecture": 9,
+            "cache_l3_size": 8448,
+            "cores": 4,
+            "driver": "N/A",
+            "family": 179,
+            "hyperthreading_enabled": false,
+            "logical_processors": 8,
+            "max_clock_speed": 3600,
+            "memory_bytes": null,
+            "memory_mb": null,
+            "model": 0,
+            "name": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+            "processor": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+            "release_date": "Unknown",
+            "stepping": 0,
+            "type": "Physical",
+            "virtualization_support": false
+          }
+        },
+        "all_gpus": {
+          "gpu_1": {
+            "driver": "32.0.15.7342",
+            "is_virtual": false,
+            "memory_bytes": 4293918720,
+            "memory_formatted": "4.0 GB",
+            "memory_gb": 3.999,
+            "memory_mb": 4095,
+            "name": "NVIDIA Quadro RTX 4000",
+            "priority": 3,
+            "processor": "Quadro RTX 4000",
+            "release_date": "2022-10-12T00:00:00",
+            "type": "Physical"
+          }
+        },
+        "collection_date": "2025-09-19T09:15:10.179862",
+        "human_name": "Chihwei Hsu",
+        "system_info": {
+          "available_memory_bytes": 73205952512,
+          "memory_percent": 28.7,
+          "total_memory_bytes": 102734340096,
+          "total_memory_formatted": "95.7 GB",
+          "total_memory_gb": 95.679,
+          "total_memory_mb": 97975.1,
+          "used_memory_bytes": 29528387584
+        },
+        "last_updated": "2025-09-19T13:15:44.633218",
+        "computername": "EANY-H8PHHQ2",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T13:15:44.633222"
+      }
+    },
     "Static GPU Master List": {
       "EANY-H8PHHQ2": {
         "Computername": "EANY-H8PHHQ2",
@@ -6397,7 +6876,38 @@
   },
   "Clara Martucci": {
     "human_name": "Clara Martucci",
-    "source": "individual_computer_only",
+    "email": "Clara.Martucci@ennead.com",
+    "bio": "Originally from Buenos Aires, Argentina but grew up in Orlando, Florida. I come from a performing arts background, so I love to sing, play the guitar, and occasionally do some acting. I am a huge theater and concertgoer, basically any type of live entertainment. I got a Bachelor of Design with a Major in Architecture from the University of Florida, and a minor in Landscape Design. Most recently got my Master of Architecture degree from Carnegie Mellon University, with a specific focus on Theater Design. Originally from Buenos Aires, Argentina but grew up in Orlando, Florida. I come from a performing arts background, so I love to sing, play the guitar, and occasionally do some acting. I am a huge theater and concertgoer, basically any type of live entertainment. I got a Bachelor of Design with a Major in Architecture from the University of Florida, and a minor in Landscape Design. Most recently got my Master of Architecture degree from Carnegie Mellon University, with a specific focus on Theater Design.",
+    "phone": "212-792-5949",
+    "mobile": "212-792-5949",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/EF800CF9-9DE0-40EB-B3F4-4751DDDAB7B4/clara-martucci",
+    "image_url": "",
+    "image_local_path": null,
+    "position": "Architectural Designer",
+    "department": "",
+    "years_with_firm": 0,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "University of Florida",
+        "degree": "Undergraduate",
+        "specialty": "Architecture & Theater Design"
+      }
+    ],
+    "licenses": [],
+    "projects": {},
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Clara.Martucci@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:31:59.540364",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-8DNZJD3": {
         "computer_name": "EANY-8DNZJD3",
@@ -6415,10 +6925,6 @@
         "last_updated": "2025-09-18T13:14:56.800438"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-8DNZJD3": {
         "Computername": "EANY-8DNZJD3",
@@ -12131,7 +12637,38 @@
   },
   "Han Isozen": {
     "human_name": "Han Isozen",
-    "source": "individual_computer_only",
+    "email": "Han.Isozen@ennead.com",
+    "bio": null,
+    "phone": "212-792-5941",
+    "mobile": "212-792-5941",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/392A9D64-179D-4800-B73D-2E71AB4F50C5/han-isozen",
+    "image_url": "",
+    "image_local_path": null,
+    "position": "Architectural Designer",
+    "department": "",
+    "years_with_firm": 0,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "University of Southern California",
+        "degree": "Undergraduate",
+        "specialty": "Bachelor of Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {},
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Han.Isozen@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:36:35.491940",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-8DW8KD3": {
         "computername": "EANY-8DW8KD3",
@@ -12146,10 +12683,6 @@
         "last_updated": "2025-09-17T15:54:24.602154"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-8DW8KD3": {
         "Computername": "EANY-8DW8KD3",
@@ -12505,7 +13038,219 @@
   },
   "Ingrid Evenson": {
     "human_name": "Ingrid Evenson",
-    "source": "individual_computer_only",
+    "email": "ingrid.evenson@ennead.com",
+    "bio": null,
+    "phone": "646-437-1726",
+    "mobile": "646-437-1726",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/47832C14-0186-4B81-A95C-CC7DF9DDD1FB/ingrid-evenson",
+    "image_url": "https://ei.ennead.com/api/image/bae4208c-1f64-4352-8de2-1214b858f3b1/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Ingrid Evenson_profile.jpg",
+    "position": "Architectural Designer",
+    "department": "",
+    "years_with_firm": 0,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Cornell University",
+        "degree": "Undergraduate",
+        "specialty": "Expected Graduation 2024"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shaoxing-textile-museum",
+        "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Shaoxing Textile Museum",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Zhejiang China Textile City Group",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative CompetitionVIP.com2321",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+        "url": "https://ei.ennead.com/project/DEC082A1-8C8D-4F7B-BE5C-5EE9E01898D3/vip-com-guangzhou-urban-resort-and-fashion-collaborative-competition",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "VIP.com Guangzhou Urban Resort and Fashion Collaborative Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "VIP.com",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "Long Island2151",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Long Island",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "American School in Japan Master PlanAmerican School in Japan2231",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "american-school-in-japan-master-plan",
+        "url": "https://ei.ennead.com/project/A7D26C2E-7E48-4650-A89B-0CF501ED25C2/american-school-in-japan-master-plan",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "American School in Japan Master Plan",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "American School in Japan",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_13": {
+        "name": "Springfield",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "inova-franconia-springfield-hospital",
+        "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+        "source": "text_parsing"
+      },
+      "proj_14": {
+        "name": "Springfield",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_15": {
+        "name": "Ballinger",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_16": {
+        "name": "Inova Alexandria Hospital at LandmarkBallinger2124",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "inova-alexandria-hospital-at-landmark",
+        "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+        "source": "text_parsing"
+      },
+      "proj_17": {
+        "name": "Inova Alexandria Hospital at Landmark",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_18": {
+        "name": "2125",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "inova-franconia-springfield-hospital",
+        "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=ingrid.evenson@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:37:07.448162",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-8DM7KD3": {
         "computer_name": "EANY-8DM7KD3",
@@ -12520,15 +13265,11 @@
         "os": "Windows 11",
         "serial_number": "8DM7KD3",
         "username": "ingrid.evenson",
-        "last_updated": "2025-09-18T20:38:25.241417",
+        "last_updated": "2025-09-19T13:58:30.708276",
         "processed_by_server": true,
-        "server_processing_timestamp": "2025-09-18T20:38:25.241421"
+        "server_processing_timestamp": "2025-09-19T13:58:30.708280"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-8DM7KD3": {
         "Computername": "EANY-8DM7KD3",
@@ -16838,7 +17579,254 @@
   },
   "Kevin Kim": {
     "human_name": "Kevin Kim",
-    "source": "individual_computer_only",
+    "email": "kevin.kim@ennead.com",
+    "bio": null,
+    "phone": "646-437-1734",
+    "mobile": "646-437-1734",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/5053A60F-E553-4AC8-B39E-DCF70274DF30/kevin-kim",
+    "image_url": "https://ei.ennead.com/api/image/fe8b0e5e-064e-46a4-af30-f2e5f6fe8c88/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Kevin Kim_profile.jpg",
+    "position": "Associate",
+    "department": "",
+    "years_with_firm": 5,
+    "memberships": [
+      "NCARBAIALEED GA",
+      "NCARB",
+      "AIA",
+      "LEED GA"
+    ],
+    "education": [
+      {
+        "institution": "Rhode Island School of Design",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Shinsegae Town Mixed Use Development CompetitionShinsegae Inc.2320",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shinsegae-town-mixed-use-development-competition",
+        "url": "https://ei.ennead.com/project/046F8FE0-66E7-49A8-804F-E78ED7345942/shinsegae-town-mixed-use-development-competition",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Shinsegae Town Mixed Use Development Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Shinsegae Inc.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Genentech Bayview Campus CompetitionGenentech2249",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "genentech-bayview-campus-competition",
+        "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Genentech Bayview Campus Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Genentech",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
+        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Jacobs",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Lingang",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Shenzhen Xiaomi HeadquartersShenzhen Xiaomi Technology Co. Ltd.2016",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shenzhen-xiaomi-headquarters",
+        "url": "https://ei.ennead.com/project/5D7544EC-F668-46FC-AA33-7E195B67DB93/shenzhen-xiaomi-headquarters",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "Shenzhen Xiaomi Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_13": {
+        "name": "Shenzhen Xiaomi Technology Co. Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_14": {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+        "source": "text_parsing"
+      },
+      "proj_15": {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_16": {
+        "name": "Lingang Group",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_17": {
+        "name": "Shanghai Lingang WLA Conference CenterLingang Economic Group1941",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shanghai-lingang-wla-conference-center",
+        "url": "https://ei.ennead.com/project/B1A8E4E7-3B91-44AE-AED2-042155E5469F/shanghai-lingang-wla-conference-center",
+        "source": "text_parsing"
+      },
+      "proj_18": {
+        "name": "Shanghai Lingang WLA Conference Center",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_19": {
+        "name": "Lingang Economic Group",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_20": {
+        "name": "Nanda Plot 111-01",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nanda-plot-111-01",
+        "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+        "source": "text_parsing"
+      },
+      "proj_21": {
+        "name": "2103",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nanda-plot-111-01",
+        "url": "https://ei.ennead.com/project/86CBF410-5CC7-44A9-AA36-A7ED5CF32807/nanda-plot-111-01",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kevin.kim@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:40:33.725283",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-4X8MWP3": {
         "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
@@ -16864,10 +17852,6 @@
         "server_processing_timestamp": "2025-09-18T21:59:11.859579"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-4X8MWP3": {
         "Computername": "EANY-4X8MWP3",
@@ -18957,7 +19941,361 @@
   },
   "Kyung Min": {
     "human_name": "Kyung Min",
-    "source": "individual_computer_only",
+    "email": "kyung.min@ennead.com",
+    "bio": null,
+    "phone": "(212) 792-5978",
+    "mobile": "(212) 792-5978",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/6A3F30BF-0D4A-4CC3-8A3E-784DAAB74571/kyung-min",
+    "image_url": "https://ei.ennead.com/api/image/398b7ada-278f-495b-86c8-2296706c4694/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Kyung Min_profile.jpg",
+    "position": "Architectural Designer",
+    "department": "",
+    "years_with_firm": 11,
+    "memberships": [
+      "NCARB"
+    ],
+    "education": [
+      {
+        "institution": "Syracuse University",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Seoul Foreign School, New High School1211B",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "seoul-foreign-school-new-high-school",
+        "url": "https://ei.ennead.com/project/4711B3D3-A40D-48BB-A243-E594D39DF05F/seoul-foreign-school-new-high-school",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Seoul Foreign School, New High School",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "1211B",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Genentech Bayview Campus CompetitionGenentech2249",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "genentech-bayview-campus-competition",
+        "url": "https://ei.ennead.com/project/CAE8CA57-73D1-4E52-B1B9-9B0F94D0873D/genentech-bayview-campus-competition",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Genentech Bayview Campus Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Genentech",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "Long Island2151",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Long Island",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Huzhou Vocational and Technical Campus Master PlanHuzhou Professional School2227",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "huzhou-vocational-and-technical-campus-master-plan",
+        "url": "https://ei.ennead.com/project/5DB3E269-0361-4AE1-AE10-D13504AFF403/huzhou-vocational-and-technical-campus-master-plan",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "ByteDance Houhai Center Project",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+        "source": "detailed_table"
+      },
+      "proj_12": {
+        "name": "New York Blood Center Applied Life Sciences Hub",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/BD6121E7-E8A5-4FC9-853C-F38C47EEA4D4/new-york-blood-center-applied-life-sciences-hub",
+        "source": "detailed_table"
+      },
+      "proj_13": {
+        "name": "Divco West Cambridge Crossing: Parcel U",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/7B52DC65-8B1D-4562-99E6-E970C567EEAD/divco-west-cambridge-crossing--parcel-u",
+        "source": "detailed_table"
+      },
+      "proj_14": {
+        "name": "Bao Steel Wusong Pilot District",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/0F4AC8F1-5D3A-402F-BFA0-C1F3B460430A/bao-steel-wusong-pilot-district",
+        "source": "detailed_table"
+      },
+      "proj_15": {
+        "name": "Shanghai Pujiang Oriental Smart Media City Project",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/CDB6A79F-F127-4D48-80F9-A8A8A53AF6F2/shanghai-pujiang-oriental-smart-media-city-project",
+        "source": "detailed_table"
+      },
+      "proj_16": {
+        "name": "Lingang Fengxian Biopharm Office Park",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/0FA12D59-594C-40A6-B850-F883AF7AE1D5/lingang-fengxian-biopharm-office-park",
+        "source": "detailed_table"
+      },
+      "proj_17": {
+        "name": "Taopu Sci-Tech City Plot 606",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+        "source": "detailed_table"
+      },
+      "proj_18": {
+        "name": "China Resources Land MixC Park (CR Land)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/EFDF0880-F722-4F44-AB9A-5FC86CDEF90B/china-resources-land-mixc-park-cr-land",
+        "source": "detailed_table"
+      },
+      "proj_19": {
+        "name": "Huawei Wuhan Research and Development Campus",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/0E21F6ED-4139-4519-8B7D-E67B7EC64BBD/huawei-wuhan-research-and-development-campus",
+        "source": "detailed_table"
+      },
+      "proj_20": {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "detailed_table"
+      },
+      "proj_21": {
+        "name": "Lingang Pujiang International Healthcare City",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/4D876A3B-E478-4842-A3A0-A05C04BE0591/lingang-pujiang-international-healthcare-city",
+        "source": "detailed_table"
+      },
+      "proj_22": {
+        "name": "NYU Langone Health, Science Building",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/DCEDB890-A03E-4EAC-98C5-B8737DE20184/nyu-langone-health-science-building",
+        "source": "detailed_table"
+      },
+      "proj_23": {
+        "name": "Pujiang Phase II",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/4CDB66F3-8149-4FF3-AF71-69AC46A369D6/pujiang-phase-ii",
+        "source": "detailed_table"
+      },
+      "proj_24": {
+        "name": "R&F Shanghai Hongqiao Plot 5",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/27717843-4596-4E13-A3FD-03365FB7F57F/r-f-shanghai-hongqiao-plot-5",
+        "source": "detailed_table"
+      },
+      "proj_25": {
+        "name": "Seoul Foreign School, Facilities Master Plan (SFS)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/5C9CA77A-F708-4BCD-909B-985FEF17DFFD/seoul-foreign-school-facilities-master-plan-sfs",
+        "source": "detailed_table"
+      },
+      "proj_26": {
+        "name": "Shanghai Children's Library Design Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/0ACE6F00-9DD9-4839-9DA2-3BA9BDC0AC11/shanghai-children-s-library-design-competition",
+        "source": "detailed_table"
+      },
+      "proj_27": {
+        "name": "Stanford University Sarafan ChEM-H and the Wu Tsai Neurosciences Institute",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/C863F410-27AE-4EA5-8C01-00DD6CF641F1/stanford-university-sarafan-chem-h-and-the-wu-tsai-neurosciences-institute",
+        "source": "detailed_table"
+      },
+      "proj_28": {
+        "name": "Stanford University, Bass Biology Building",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/EC3145A0-7E07-47F8-A90A-13EE36802DA9/stanford-university-bass-biology-building",
+        "source": "detailed_table"
+      },
+      "proj_29": {
+        "name": "Taopu Master Plan and Urban Design (Big Taopu)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/AEA7479F-4093-43FE-AAF1-92F00E14AFBD/taopu-master-plan-and-urban-design-big-taopu",
+        "source": "detailed_table"
+      },
+      "proj_30": {
+        "name": "Taopu Sci-Tech City, Phase I - Masterplan Competition for Taopu Smart City",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/A7E1FA99-874E-4C5A-8E49-EAE304B75731/taopu-sci-tech-city-phase-i-masterplan-competition-for-taopu-smart-city",
+        "source": "detailed_table"
+      },
+      "proj_31": {
+        "name": "Taopu Smart City, Plot 603",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+        "source": "detailed_table"
+      },
+      "proj_32": {
+        "name": "Tianjin Academy of Fine Arts Competition (TAFA)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/A8BAD248-8488-4808-BCB7-7D3E5E2718AE/tianjin-academy-of-fine-arts-competition-tafa",
+        "source": "detailed_table"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=kmin@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:41:49.146853",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-H8QFHQ2": {
         "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
@@ -18983,10 +20321,6 @@
         "server_processing_timestamp": "2025-09-18T20:56:06.556114"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-H8QFHQ2": {
         "Computername": "EANY-H8QFHQ2",
@@ -27956,7 +29290,360 @@
   },
   "Nicholas Jeffway": {
     "human_name": "Nicholas Jeffway",
-    "source": "individual_computer_only",
+    "email": "nicholas.jeffway@ennead.com",
+    "bio": "Stories lie hidden in the textures, forms and spaces which surround us. The subtleties and nuances of these narratives reveal where we have been and where we are headed. Originally from Northampton, Massachusetts; I grew up as one of five children (one of which being my twin sister) with a father who is an electronic engineer and toy inventor and a mother who is a French teacher. I have always been interested in different modes of working creatively. I began my undergraduate studies as a graphic designer, but eventually transferred to the architecture program at the University of Massachusetts, Amherst.I have worked as a fabricator for a small studio making sculpture, furniture and architectural elements. I have worked with the National Trust for Historic Presentation to organize and lead a community-driven design for a memorial park proposal in Richmond, VA. I have designed and built a tea house during the course of a month with a budget of sixty dollars, and I continue to use my interest in photography as an excuse to travel, explore and meet new people.I see architecture as a common ground between disparate voices and as a challenge to create a more holistic and harmonious future. Stories lie hidden in the textures, forms and spaces which surround us. The subtleties and nuances of these narratives reveal where we have been and where we are headed. Originally from Northampton, Massachusetts; I grew up as one of five children (one of which being my twin sister) with a father who is an electronic engineer and toy inventor and a mother who is a French teacher. I have always been interested in different modes of working creatively. I began my undergraduate studies as a graphic designer, but eventually transferred to the architecture program at the University of Massachusetts, Amherst.I have worked as a fabricator for a small studio making sculpture, furniture and architectural elements. I have worked with the National Trust for Historic Presentation to organize and lead a community-driven design for a memorial park proposal in Richmond, VA. I have designed and built a tea house during the course of a month with a budget of sixty dollars, and I continue to use my interest in photography as an excuse to travel, explore and meet new people.I see architecture as a common ground between disparate voices and as a challenge to create a more holistic and harmonious future.",
+    "phone": "(646) 437-1781",
+    "mobile": "(646) 437-1781",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/76F7BD0C-57A9-4BC1-A63E-B145443C64F9/nicholas-jeffway",
+    "image_url": "https://ei.ennead.com/api/image/88ef39bd-ab0b-462b-9174-12cf1fd92df7/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Nicholas Jeffway_profile.jpg",
+    "position": "Architectural Designer",
+    "department": "",
+    "years_with_firm": 7,
+    "memberships": [
+      "NCARB"
+    ],
+    "education": [
+      {
+        "institution": "University of Massachusetts, Amherst",
+        "degree": "Graduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Roundabout",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "roundabout-theatre-master-plan-concept",
+        "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Roundabout",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Roundabout",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+        "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "Universal Hydrogen 2 Manufacturing FacilityUniversal Hydrogen2306",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "universal-hydrogen-2-manufacturing-facility",
+        "url": "https://ei.ennead.com/project/E125A81D-167C-4ACA-AFFF-C9D385C09F95/universal-hydrogen-2-manufacturing-facility",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "Universal Hydrogen 2 Manufacturing Facility",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Universal Hydrogen",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Alibaba Cainiao Phase IIShenzhen Toutiao Technology Co., Ltd.2127",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "alibaba-cainiao-phase-ii",
+        "url": "https://ei.ennead.com/project/4CD0BCAF-B793-4575-A573-13FF0D6B2041/alibaba-cainiao-phase-ii",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Modern Meadow",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/2775EDA5-9E5B-4A48-BD68-A05BA3AA838C/modern-meadow",
+        "source": "detailed_table"
+      },
+      "proj_12": {
+        "name": "Concordia Pudong",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/BAFEA2ED-630A-4C0F-8BB7-0B569EBDB7CB/concordia-pudong",
+        "source": "detailed_table"
+      },
+      "proj_13": {
+        "name": "Fudan Qingpu Branch OBGYN Hospital Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/070F6DE7-EF63-4CB8-B3FC-4352C9046D9F/fudan-qingpu-branch-obgyn-hospital-competition",
+        "source": "detailed_table"
+      },
+      "proj_14": {
+        "name": "Huawei Qingpu R&D Design Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/AD4B7D95-E793-4A4A-ADE4-6A9B2715D81A/huawei-qingpu-r-d-design-competition",
+        "source": "detailed_table"
+      },
+      "proj_15": {
+        "name": "Taopu Sci-Tech Smart City Phase I (Taopu 605)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/7C36DE44-B5F0-4051-B171-22A9BC33509B/taopu-sci-tech-smart-city-phase-i-taopu-605",
+        "source": "detailed_table"
+      },
+      "proj_16": {
+        "name": "Taopu Smart City Plot 615/616",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "https://ei.ennead.com/project/208EEB2F-05ED-407C-9CC8-67F5937024D1/taopu-smart-city-plot-615-616",
+        "source": "detailed_table"
+      },
+      "proj_17": {
+        "name": "Shenhzen International Performance Center",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_18": {
+        "name": "Shenhzen Int. Performance Center",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_19": {
+        "name": "The Public, Delacorte Theater, Central ParkThe Public Theater2031",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "the-public-delacorte-theater-central-park",
+        "url": "https://ei.ennead.com/project/D45C8EB2-784A-43C9-B740-242E5ABB4061/the-public-delacorte-theater-central-park",
+        "source": "text_parsing"
+      },
+      "proj_20": {
+        "name": "The Public, Delacorte Theater, Central Park",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_21": {
+        "name": "The Public Theater",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_22": {
+        "name": "on:Hudson Waterfront Vision Study",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_23": {
+        "name": "Argent Ventures LLC",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_24": {
+        "name": "Omaha Performing Arts Campus ExpansionOmaha Performing Arts1843",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "omaha-performing-arts-campus-expansion",
+        "url": "https://ei.ennead.com/project/590081E8-623D-4758-948D-2E90B231CE3C/omaha-performing-arts-campus-expansion",
+        "source": "text_parsing"
+      },
+      "proj_25": {
+        "name": "Omaha Performing Arts Campus Expansion",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_26": {
+        "name": "Omaha Performing Arts",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_27": {
+        "name": "Tech City Plot 606",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "taopu-sci-tech-city-plot-606",
+        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+        "source": "text_parsing"
+      },
+      "proj_28": {
+        "name": "Shanghai Rongrong Real Estate Co., Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_29": {
+        "name": "2330",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "roundabout-theatre-master-plan-concept",
+        "url": "https://ei.ennead.com/project/F96C770D-71F4-4C8C-915E-E6FAC5AC84DE/roundabout-theatre-master-plan-concept",
+        "source": "text_parsing"
+      },
+      "proj_30": {
+        "name": "Hastings-on-Hudson Waterfront Vision Study",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "hastings-on-hudson-waterfront-vision-study",
+        "url": "https://ei.ennead.com/project/D5BF0BFE-8EEC-4F7D-951D-7910DE203467/hastings-on-hudson-waterfront-vision-study",
+        "source": "text_parsing"
+      },
+      "proj_31": {
+        "name": "1821",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "hastings-on-hudson-waterfront-vision-study",
+        "url": "https://ei.ennead.com/project/D5BF0BFE-8EEC-4F7D-951D-7910DE203467/hastings-on-hudson-waterfront-vision-study",
+        "source": "text_parsing"
+      },
+      "proj_32": {
+        "name": "1735",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "taopu-sci-tech-city-plot-606",
+        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=NJeffway@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:47:46.955948",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data"
+    ],
     "computer_info": {
       "EANY-8DN5KD3": {
         "computer_name": "EANY-8DN5KD3",
@@ -27973,10 +29660,7 @@
         "username": "NJeffway",
         "last_updated": "2025-09-18T14:30:56.208136"
       }
-    },
-    "created_from": [
-      "Individual Computer Data"
-    ]
+    }
   },
   "Nicole Levine": {
     "human_name": "Nicole Levine",
@@ -28067,7 +29751,231 @@
   },
   "Paula Gronda": {
     "human_name": "Paula Gronda",
-    "source": "individual_computer_only",
+    "email": "Paula.Gronda@ennead.com",
+    "bio": null,
+    "phone": "212-792-5834",
+    "mobile": "212-792-5834",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/2700EBA6-4AFA-45E9-B746-8A7D9512EDEA/paula-gronda",
+    "image_url": "https://ei.ennead.com/api/image/c3d4e2ef-8d30-41a7-980b-2da2546d00bf/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Paula Gronda_profile.jpg",
+    "position": "Architectural Designer",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [
+      "National Organization of Minority Architects"
+    ],
+    "education": [
+      {
+        "institution": "Universidad Torcuato Di Tella",
+        "degree": "Unknown",
+        "specialty": "Unknown"
+      },
+      {
+        "institution": "Graduate",
+        "degree": "Unknown",
+        "specialty": "Unknown"
+      },
+      {
+        "institution": "Architecture",
+        "degree": "Unknown",
+        "specialty": "Unknown"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Long Island2151",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Long Island",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "bilibili-shanghai-headquarters",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Bilibili Shanghai Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Bilibili Co.,Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "Springfield",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "inova-franconia-springfield-hospital",
+        "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "Springfield",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Ballinger",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Northwell,",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "northwell-third-avenue-medical-office-building",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Northwell,",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "Northwell Health",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_13": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "text_parsing"
+      },
+      "proj_14": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_15": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_16": {
+        "name": "2125",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "inova-franconia-springfield-hospital",
+        "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+        "source": "text_parsing"
+      },
+      "proj_17": {
+        "name": "2109",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "northwell-third-avenue-medical-office-building",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "text_parsing"
+      },
+      "proj_18": {
+        "name": "2001",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Paula.Gronda@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:48:07.592513",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-8DP1KD3": {
         "computer_name": "EANY-8DP1KD3",
@@ -28085,10 +29993,6 @@
         "last_updated": "2025-09-18T18:31:51.169900"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-8DP1KD3": {
         "Computername": "EANY-8DP1KD3",
@@ -29830,7 +31734,194 @@
   },
   "Robinson Strong": {
     "human_name": "Robinson Strong",
-    "source": "individual_computer_only",
+    "email": "robinson.strong@ennead.com",
+    "bio": "I am a native New Yorker and second generation architect with extra interest in computational design. Before Ennead, I worked as a project architect at Michael K Chen Architecture where I led efforts in computation and specialty fabrication. Currently, I teach Morphology at Pratt’s School of Architecture. Outside of work, I race an occasional triathlon, enjoy the outdoors, and DIY home improvement. I am a native New Yorker and second generation architect with extra interest in computational design. Before Ennead, I worked as a project architect at Michael K Chen Architecture where I led efforts in computation and specialty fabrication. Currently, I teach Morphology at Pratt’s School of Architecture. Outside of work, I race an occasional triathlon, enjoy the outdoors, and DIY home improvement.",
+    "phone": "212-792-5973",
+    "mobile": "212-792-5973",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/61E6B0A1-B90D-4219-A188-C86088141053/robinson-strong",
+    "image_url": "https://ei.ennead.com/api/image/743b4f1b-8875-434f-a654-a4e1fbb91900/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Robinson Strong_profile.jpg",
+    "position": "Associate",
+    "department": "",
+    "years_with_firm": 3,
+    "memberships": [
+      "AIAGBCILEED GA",
+      "AIA",
+      "GBCI",
+      "LEED GA"
+    ],
+    "education": [
+      {
+        "institution": "Pratt Institute",
+        "degree": "Undergraduate",
+        "specialty": "Bachelor of Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Shaoxing Textile MuseumZhejiang China Textile City Group2418",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shaoxing-textile-museum",
+        "url": "https://ei.ennead.com/project/D8CC9F96-61D1-4D36-9F9E-CBD9E5EF150A/shaoxing-textile-museum",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Shaoxing Textile Museum",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Zhejiang China Textile City Group",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Shaoxing Cao'e River Culture and Art Center CompetitionShaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd2322",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shaoxing-cao-e-river-culture-and-art-center-competition",
+        "url": "https://ei.ennead.com/project/822E0D04-D363-4715-8AA2-C3EC1B337B3D/shaoxing-cao-e-river-culture-and-art-center-competition",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Shaoxing Cao'e River Culture and Art Center Competition",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Shaoxing Shangyu Urban and Rural Ecological and Environmental Protection Development Co., Ltd",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "Long Island2151",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Long Island",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "02 Neighborhood",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "tencent-danchan-bay-dy01-02-neighborhood",
+        "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Tencent",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "Shenhzen International Performance CenterShenhzen Int. Performance Center2025",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shenhzen-international-performance-center",
+        "url": "https://ei.ennead.com/project/84C25244-2841-485A-8761-1AFC8294424B/shenhzen-international-performance-center",
+        "source": "text_parsing"
+      },
+      "proj_13": {
+        "name": "Shenhzen International Performance Center",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_14": {
+        "name": "Shenhzen Int. Performance Center",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_15": {
+        "name": "2133",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "tencent-danchan-bay-dy01-02-neighborhood",
+        "url": "https://ei.ennead.com/project/DA04EF4C-5491-4F35-823A-6C3F5E7C823B/tencent-danchan-bay-dy01-02-neighborhood",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Robinson.Strong@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:50:02.316010",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-8DN6KD3": {
         "computer_name": "EANY-8DN6KD3",
@@ -29848,10 +31939,6 @@
         "last_updated": "2025-09-18T13:44:43.580170"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-8DN6KD3": {
         "Computername": "EANY-8DN6KD3",
@@ -30754,7 +32841,251 @@
   },
   "Sen Zhang": {
     "human_name": "Sen Zhang",
-    "source": "individual_computer_only",
+    "email": "sen.zhang@ennead.com",
+    "bio": "Dyn,Revit,Rhino,Blender,pythonEnnead TabRock Climbing",
+    "phone": "(212) 807-7171",
+    "mobile": "(212) 807-7171",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/AFAC893E-5BBE-4022-A73A-81E8977F35CF/sen-zhang",
+    "image_url": "https://ei.ennead.com/api/image/043875ea-6ef6-4ad3-9e47-b5b6e809526d/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Sen Zhang_profile.jpg",
+    "position": "Associate",
+    "department": "",
+    "years_with_firm": 5,
+    "memberships": [
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "Rensselaer Polytechnic Institute",
+        "degree": "Undergraduate",
+        "specialty": "Advance Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Long Island2151",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Long Island",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "bilibili-shanghai-headquarters",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Bilibili Shanghai Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Bilibili Co.,Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "ByteDance Houhai Center ProjectShenzhen Toutiao Technology Co., Ltd.2018",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "bytedance-houhai-center-project",
+        "url": "https://ei.ennead.com/project/EA887F65-5FFC-4A7E-A052-9C9157EAA236/bytedance-houhai-center-project",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "ByteDance Houhai Center Project",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Shenzhen Toutiao Technology Co., Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot ProjectLingang Group1940",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+        "url": "https://ei.ennead.com/project/8391D4A9-195B-42B3-93F5-1CFAF4FDE39A/shanghai-lingang-new-area-dishui-river-financial-bay-pilot-project",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Shanghai Lingang New Area Dishui River Financial Bay Pilot Project",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "Lingang Group",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_13": {
+        "name": "Tech City Plot 606",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "taopu-sci-tech-city-plot-606",
+        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+        "source": "text_parsing"
+      },
+      "proj_14": {
+        "name": "Shanghai Rongrong Real Estate Co., Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_15": {
+        "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "lenox-hill-hospital-northwell-health-redevelopment",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "text_parsing"
+      },
+      "proj_16": {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_17": {
+        "name": "Northwell Health",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_18": {
+        "name": "Taopu Smart City, Plot 603Taopu North1763",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "taopu-smart-city-plot-603",
+        "url": "https://ei.ennead.com/project/4659D611-98B7-40C1-80B9-A3FF6EDEDF9D/taopu-smart-city-plot-603",
+        "source": "text_parsing"
+      },
+      "proj_19": {
+        "name": "Taopu Smart City, Plot 603",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_20": {
+        "name": "Taopu North",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_21": {
+        "name": "1735",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "taopu-sci-tech-city-plot-606",
+        "url": "https://ei.ennead.com/project/854DF798-704E-41B8-9F8D-6BB594E88B94/taopu-sci-tech-city-plot-606",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=szhang@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:50:38.013222",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-PW-0HJ97N": {
         "Computername": "EANY-PW-0HJ97N",
@@ -30899,27 +33230,48 @@
             "type": "Physical"
           }
         },
-        "collection_date": "2025-09-18T17:57:14.332889",
+        "collection_date": "2025-09-19T07:11:58.293346",
         "human_name": "Sen Zhang",
         "system_info": {
-          "available_memory_bytes": 40074301440,
+          "available_memory_bytes": 40064192512,
           "memory_percent": 41,
           "total_memory_bytes": 67936788480,
           "total_memory_formatted": "63.3 GB",
           "total_memory_gb": 63.271,
           "total_memory_mb": 64789.57,
-          "used_memory_bytes": 27862487040
+          "used_memory_bytes": 27872595968
         },
-        "last_updated": "2025-09-18T21:57:41.447976",
+        "last_updated": "2025-09-19T11:12:28.250054",
         "computername": "MININT-5V26DTJ",
         "processed_by_server": true,
-        "server_processing_timestamp": "2025-09-18T21:57:41.447980"
+        "server_processing_timestamp": "2025-09-19T11:12:28.250059"
+      },
+      "EA-25CWFS3": {
+        "Computername": "EA-25CWFS3",
+        "First Name": "Sen",
+        "Last Name": "Zhang",
+        "Manufacturer": "Unknown",
+        "Model": "Unknown",
+        "OS": "Windows 11",
+        "Serial Number": "Unknown",
+        "Username": "szhang",
+        "collection_date": "2025-09-19T09:52:32.485261",
+        "human_name": "Sen Zhang",
+        "system_info": {
+          "available_memory_bytes": 4571758592,
+          "memory_percent": 72.8,
+          "total_memory_bytes": 16815702016,
+          "total_memory_formatted": "15.7 GB",
+          "total_memory_gb": 15.661,
+          "total_memory_mb": 16036.7,
+          "used_memory_bytes": 12243943424
+        },
+        "last_updated": "2025-09-19T13:53:08.304361",
+        "computername": "EA-25CWFS3",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T13:53:08.304365"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-9X8MWP3": {
         "Computername": "EANY-9X8MWP3",
@@ -30945,7 +33297,143 @@
   },
   "Sha Li": {
     "human_name": "Sha Li",
-    "source": "individual_computer_only",
+    "email": "Sha.Li@ennead.com",
+    "bio": null,
+    "phone": "646-437-1694",
+    "mobile": "646-437-1694",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/CE15FC96-7131-4088-A016-EC892D0437E3/sha-li",
+    "image_url": "https://ei.ennead.com/api/image/2f26977d-7ce9-434a-ab09-7e0de8060a82/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Sha Li_profile.jpg",
+    "position": "Associate",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [
+      "GBCIAIA",
+      "GBCI",
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "Columbia",
+        "degree": "Unknown",
+        "specialty": "Unknown"
+      },
+      {
+        "institution": "Undergraduate",
+        "degree": "Unknown",
+        "specialty": "Unknown"
+      },
+      {
+        "institution": "Architecture",
+        "degree": "Unknown",
+        "specialty": "Unknown"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Long Island2151",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "NYU Langone Hospital – Long Island, Hospital Site Study",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "nyu-langone-hospital-long-island-hospital-site-study",
+        "url": "https://ei.ennead.com/project/3027063C-FEF6-4B68-96FB-F4E369D72642/nyu-langone-hospital-long-island-hospital-site-study",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Long Island",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "bilibili-shanghai-headquarters",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Bilibili Shanghai Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Bilibili Co.,Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "Inova Alexandria Hospital at LandmarkBallinger2124",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "inova-alexandria-hospital-at-landmark",
+        "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "Inova Alexandria Hospital at Landmark",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Ballinger",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Sha.Li@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:50:43.259088",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-8DN4KD3": {
         "computer_name": "EANY-8DN4KD3",
@@ -30963,10 +33451,6 @@
         "last_updated": "2025-09-18T15:29:36.686989"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-8DN4KD3": {
         "Computername": "EANY-8DN4KD3",
@@ -34565,7 +37049,39 @@
   },
   "Vivian Zhan": {
     "human_name": "Vivian Zhan",
-    "source": "individual_computer_only",
+    "email": "Vivian.Zhan@ennead.com",
+    "bio": null,
+    "phone": "212.792.5884",
+    "mobile": "212.792.5884",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/D1A6C8F7-BB24-454C-BD12-EFBCB61C6015/vivian-zhan",
+    "image_url": "",
+    "image_local_path": null,
+    "position": "Architectural Designer",
+    "department": "",
+    "years_with_firm": 0,
+    "memberships": [
+      "LEED GA"
+    ],
+    "education": [
+      {
+        "institution": "Pratt Institute",
+        "degree": "Undergraduate",
+        "specialty": "Master of Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {},
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Vivian.Zhan@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:53:45.405413",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data"
+    ],
     "computer_info": {
       "EANY-HW8MWP3": {
         "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
@@ -34590,10 +37106,7 @@
         "processed_by_server": true,
         "server_processing_timestamp": "2025-09-18T21:36:52.399968"
       }
-    },
-    "created_from": [
-      "Individual Computer Data"
-    ]
+    }
   },
   "Weishan Lian": {
     "human_name": "Weishan Lian",
@@ -35267,8 +37780,72 @@
     "scraped_at": "2025-09-17T22:54:20.667683",
     "profile_id": null,
     "created_from": [
-      "Individual Employee Files"
-    ]
+      "Individual Employee Files",
+      "Individual Computer Data"
+    ],
+    "computer_info": {
+      "cn-wysun": {
+        "Computername": "cn-wysun",
+        "First Name": "Wenyu",
+        "Last Name": "Sun",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "OS": "Windows 10",
+        "Serial Number": "1Z5D1M3",
+        "Username": "wenyu.sun",
+        "all_cpus": {
+          "cpu_1": {
+            "architecture": 9,
+            "cache_l3_size": 8448,
+            "cores": 6,
+            "driver": "N/A",
+            "family": 179,
+            "hyperthreading_enabled": false,
+            "logical_processors": 12,
+            "max_clock_speed": 3792,
+            "memory_bytes": null,
+            "memory_mb": null,
+            "model": 0,
+            "name": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+            "processor": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+            "release_date": "Unknown",
+            "stepping": 0,
+            "type": "Physical",
+            "virtualization_support": true
+          }
+        },
+        "all_gpus": {
+          "gpu_1": {
+            "driver": "32.0.15.7159",
+            "is_virtual": false,
+            "memory_bytes": 4293918720,
+            "memory_formatted": "4.0 GB",
+            "memory_gb": 3.999,
+            "memory_mb": 4095,
+            "name": "NVIDIA RTX A4000",
+            "priority": 3,
+            "processor": "NVIDIA RTX A4000",
+            "release_date": "Unknown",
+            "type": "Physical"
+          }
+        },
+        "collection_date": "2025-09-19T16:39:39.157561",
+        "human_name": "Wenyu Sun",
+        "system_info": {
+          "available_memory_bytes": 35533975552,
+          "memory_percent": 48,
+          "total_memory_bytes": 68387852288,
+          "total_memory_formatted": "63.7 GB",
+          "total_memory_gb": 63.691,
+          "total_memory_mb": 65219.74,
+          "used_memory_bytes": 32853876736
+        },
+        "last_updated": "2025-09-19T08:40:01.576804",
+        "computername": "cn-wysun",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T08:40:01.576807"
+      }
+    }
   },
   "WiL Morales": {
     "human_name": "WiL Morales",
@@ -36562,8 +39139,28 @@
     "scraped_at": "2025-09-17T22:55:18.309085",
     "profile_id": null,
     "created_from": [
-      "Individual Employee Files"
-    ]
+      "Individual Employee Files",
+      "Individual Computer Data"
+    ],
+    "computer_info": {
+      "cn-xtwang": {
+        "computer_name": "cn-xtwang",
+        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "gpu_driver": "32.0.15.7348",
+        "gpu_memory": -1048576,
+        "gpu_name": "NVIDIA RTX A4000",
+        "human_name": "Xiaotong Wang",
+        "manufacturer": "Dell Inc.",
+        "memory_bytes": 68387852288,
+        "model": "Precision 5820 Tower",
+        "os": "Windows 10",
+        "serial_number": "JY5D1M3",
+        "username": "xwang",
+        "last_updated": "2025-09-19T06:52:34.171241",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T06:52:34.171245"
+      }
+    }
   },
   "Xinya Li": {
     "human_name": "Xinya Li",
@@ -37678,7 +40275,161 @@
   },
   "Zeyi Xuan": {
     "human_name": "Zeyi Xuan",
-    "source": "individual_computer_only",
+    "email": "zeyi.xuan@ennead.com",
+    "bio": null,
+    "phone": "2127925823",
+    "mobile": "2127925823",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/716C5DB1-BE5D-46DE-B0F9-F77BBC3BB868/zeyi-xuan",
+    "image_url": "https://ei.ennead.com/api/image/4d423cf5-a4f5-439b-8e87-c0aa02cc06bc/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Zeyi Xuan_profile.jpg",
+    "position": "Architectural Designer",
+    "department": "",
+    "years_with_firm": 6,
+    "memberships": [
+      "AIA"
+    ],
+    "education": [
+      {
+        "institution": "Cornell University",
+        "degree": "Undergraduate",
+        "specialty": "Architecture"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Science Park and Research Campus (SPARC) Kips Bay2412",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "science-park-and-research-campus-sparc-kips-bay",
+        "url": "https://ei.ennead.com/project/ACA9CBB8-2674-4FFD-A420-38E4F8BDDCBB/science-park-and-research-campus-sparc-kips-bay",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Science Park and Research Campus (SPARC) Kips Bay",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Mayo Clinic Executive Health GondaBWBR Architects, Inc.2338",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "mayo-clinic-executive-health-gonda",
+        "url": "https://ei.ennead.com/project/3E245278-2E66-49C7-B5AC-7F79AB132DA0/mayo-clinic-executive-health-gonda",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Mayo Clinic Executive Health Gonda",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "BWBR Architects, Inc.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-north-carolina-school-of-law",
+        "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "Moseley Architects",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "kuwait-university-health-sciences-campus",
+        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Kuwait University Health Sciences Campus",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Perkins Eastman",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "2243",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-north-carolina-school-of-law",
+        "url": "https://ei.ennead.com/project/DCD54AC1-095E-4C3C-AE8E-F59FC01EBD15/university-of-north-carolina-school-of-law",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=zeyi.xuan@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:56:07.748565",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "Individual Computer Data",
+      "GPU Master List 2025"
+    ],
     "computer_info": {
       "EANY-9W8MWP3": {
         "computer_name": "EANY-9W8MWP3",
@@ -37696,10 +40447,6 @@
         "last_updated": "2025-09-18T17:32:47.905703"
       }
     },
-    "created_from": [
-      "Individual Computer Data",
-      "GPU Master List 2025"
-    ],
     "Static GPU Master List": {
       "EANY-9W8MWP3": {
         "Computername": "EANY-9W8MWP3",
