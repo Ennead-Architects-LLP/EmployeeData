@@ -1,0 +1,25 @@
+{
+  "Computername": "EA-25CWFS3",
+  "First Name": "Sen",
+  "Last Name": "Zhang",
+  "Manufacturer": "Unknown",
+  "Model": "Unknown",
+  "OS": "Windows 11",
+  "Serial Number": "Unknown",
+  "Username": "szhang",
+  "collection_date": "2025-09-19T09:43:59.734867",
+  "human_name": "Sen Zhang",
+  "system_info": {
+    "available_memory_bytes": 5816848384,
+    "memory_percent": 65.4,
+    "total_memory_bytes": 16815702016,
+    "total_memory_formatted": "15.7 GB",
+    "total_memory_gb": 15.661,
+    "total_memory_mb": 16036.7,
+    "used_memory_bytes": 10998853632
+  },
+  "computer_name": "EA-25CWFS3",
+  "server_timestamp": "2025-09-19T13:44:48.070818",
+  "backup_type": "full_computer_data",
+  "structure_version": "1.0"
+}

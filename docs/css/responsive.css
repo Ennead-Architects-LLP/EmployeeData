@@ -1,40 +1,128 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 15px;
+    }
+
+    .header {
+        padding: 25px 20px;
+        margin-bottom: 25px;
     }
 
     .main-title {
         font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem !important;
+        line-height: 1.3;
+        margin-bottom: 15px !important;
     }
 
     .header-top {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .header-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-meta {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .meta-text {
+        font-size: 0.8rem;
     }
 
     .download-btn {
-        align-self: flex-end;
-        padding: 10px 16px;
+        padding: 12px 16px;
         font-size: 0.85rem;
+        width: 100%;
+        justify-content: center;
     }
 
     .download-text {
-        display: none;
+        display: inline;
     }
 
-    .search-container {
-        flex-direction: column;
+    .search-section {
+        padding: 20px;
+        margin-bottom: 25px;
     }
 
-    .filter-container {
-        flex-direction: column;
+    .search-input {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 12px 16px;
+    }
+
+    .section-toggles {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+    }
+
+    .pretty-toggle {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .position-filter details,
+    .project-filter details {
+        margin-bottom: 15px;
+    }
+
+    .position-filter summary,
+    .project-filter summary {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+
+    #positionFilterOptions,
+    #projectFilterOptions {
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+
+    .pretty-check {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 12px;
     }
 
     .employee-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .employee-card {
+        padding: 15px;
+        min-width: 0; /* Prevents card from being too wide */
+        overflow-wrap: break-word; /* Prevents text overflow */
+    }
+
+    .employee-image img,
+    .no-image-placeholder {
+        width: 100px;
+        height: 100px;
+    }
+
+    .employee-name {
+        font-size: 1.2rem;
+    }
+
+    .contact-item {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
     }
 
     .computer-stats {
@@ -54,13 +142,152 @@
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem !important;
+    }
+
     .download-btn {
-        padding: 8px 12px;
+        padding: 10px 12px;
         font-size: 0.8rem;
     }
     
     .download-icon {
         font-size: 1rem;
+    }
+
+    .search-section {
+        padding: 15px;
+    }
+
+    .search-input {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    .employee-card {
+        padding: 12px;
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
+
+    .employee-image img,
+    .no-image-placeholder {
+        width: 80px;
+        height: 80px;
+    }
+
+    .employee-grid {
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .employee-name {
+        font-size: 1.1rem;
+    }
+
+    .employee-position {
+        font-size: 0.9rem;
+    }
+
+    .contact-item {
+        font-size: 0.8rem;
+    }
+
+    .projects-section h4,
+    .education-section h4,
+    .licenses-section h4,
+    .memberships-section h4,
+    .computer-section h4 {
+        font-size: 0.9rem;
+    }
+
+    .toggle-projects {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .project-item p,
+    .computer-item {
+        font-size: 0.8rem;
+    }
+}
+
+/* Additional mobile improvements */
+@media (max-width: 768px) {
+    /* Improve touch targets */
+    .pretty-toggle,
+    .pretty-check,
+    .suggestion-item {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Better spacing for touch devices */
+    .section-toggles label {
+        margin-bottom: 8px;
+    }
+
+    /* Improve button spacing */
+    .download-btn + .download-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Better search suggestions on mobile */
+    .suggestion-list {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .suggestion-item {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px 12px;
+    }
+
+    /* Improve filter controls */
+    .position-filter > div,
+    .project-filter > div {
+        margin-top: 12px;
+    }
+
+    /* Better computer details display */
+    .computer-details {
+        padding: 12px;
+    }
+
+    .computer-specs {
+        gap: 6px;
+    }
+}
+
+/* Landscape orientation improvements */
+@media (max-width: 768px) and (orientation: landscape) {
+    .header {
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .employee-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
     }
 }
 

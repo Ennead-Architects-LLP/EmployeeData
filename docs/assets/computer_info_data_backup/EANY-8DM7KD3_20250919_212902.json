@@ -1,0 +1,61 @@
+{
+  "Computername": "EANY-8DM7KD3",
+  "First Name": "Ingrid",
+  "Last Name": "Evenson",
+  "Manufacturer": "Dell Inc.",
+  "Model": "Precision 5820 Tower",
+  "OS": "Windows 11",
+  "Serial Number": "8DM7KD3",
+  "Username": "ingrid.evenson",
+  "all_cpus": {
+    "cpu_1": {
+      "architecture": 9,
+      "cache_l3_size": 8448,
+      "cores": 6,
+      "driver": "N/A",
+      "family": 179,
+      "hyperthreading_enabled": false,
+      "logical_processors": 12,
+      "max_clock_speed": 3792,
+      "memory_bytes": null,
+      "memory_mb": null,
+      "model": 0,
+      "name": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+      "processor": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+      "release_date": "Unknown",
+      "stepping": 0,
+      "type": "Physical",
+      "virtualization_support": false
+    }
+  },
+  "all_gpus": {
+    "gpu_1": {
+      "driver": "32.0.15.7342",
+      "is_virtual": false,
+      "memory_bytes": 4293918720,
+      "memory_formatted": "4.0 GB",
+      "memory_gb": 3.999,
+      "memory_mb": 4095,
+      "name": "NVIDIA Quadro RTX 4000",
+      "priority": 3,
+      "processor": "Quadro RTX 4000",
+      "release_date": "2022-10-12T00:00:00",
+      "type": "Physical"
+    }
+  },
+  "collection_date": "2025-09-19T17:28:39.938704",
+  "human_name": "Ingrid Evenson",
+  "system_info": {
+    "available_memory_bytes": 48330276864,
+    "memory_percent": 29.3,
+    "total_memory_bytes": 68386164736,
+    "total_memory_formatted": "63.7 GB",
+    "total_memory_gb": 63.69,
+    "total_memory_mb": 65218.13,
+    "used_memory_bytes": 20055887872
+  },
+  "computer_name": "EANY-8DM7KD3",
+  "server_timestamp": "2025-09-19T21:29:02.819209",
+  "backup_type": "full_computer_data",
+  "structure_version": "1.0"
+}

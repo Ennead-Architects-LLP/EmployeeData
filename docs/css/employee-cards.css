@@ -6,6 +6,28 @@
     margin-bottom: 40px;
 }
 
+/* Responsive grid adjustments */
+@media (max-width: 1200px) {
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .employee-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
 .employee-card {
     background: rgba(0, 0, 0, 0.46);
     border-radius: 8px;
@@ -14,6 +36,9 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .employee-card:hover {
@@ -417,14 +442,14 @@
     color: #00bfff; /* Blue dot for individual employee files */
 }
 
-/* Individual Computer Data - Orange dot */
+/* Individual Computer Data - Green dot (Live Data) */
 .source-indicator.individual-computer {
-    color: #ff8c00; /* Orange dot for individual computer data */
+    color: #28a745; /* Green dot for individual computer data (live data) */
 }
 
-/* GPU Master List - Green dot */
+/* GPU Master List - Orange dot (Static Data) */
 .source-indicator.gpu-master {
-    color: #28a745; /* Green dot for GPU master list */
+    color: #ff8c00; /* Orange dot for GPU master list (static data) */
 }
 
 /* Unknown source - Gray dot */

@@ -1,30 +1,24 @@
 {
   "human_name": "Leah Li",
-  "email": "leah.li@ennead.com",
+  "email": null,
   "bio": null,
-  "phone": "",
+  "phone": null,
   "mobile": null,
-  "office_location": "",
+  "office_location": null,
   "profile_url": "https://ei.ennead.com/employee/4F51B4E0-1A6E-4839-AC67-1D2D9553B6B1/leah-li",
-  "image_url": "https://ei.ennead.com/api/image/767ddf15-3a45-4d2c-ac58-c2bf894605a3/preview?size=300w300h_fxd&version=0",
-  "image_local_path": "assets/images/Leah Li_profile.jpg",
-  "position": "Senior Associate",
-  "department": "",
-  "years_with_firm": 10,
+  "image_url": "https://ei.ennead.com/api/image/767ddf15-3a45-4d2c-ac58-c2bf894605a3/preview?size=250w250h_fxd&version=0",
+  "image_local_path": null,
+  "position": null,
+  "department": null,
+  "years_with_firm": null,
   "memberships": [],
-  "education": [
-    {
-      "institution": "Shanghai University of Finance and Economics",
-      "degree": "Graduate",
-      "specialty": "English Literature"
-    }
-  ],
+  "education": [],
   "licenses": [],
   "projects": {},
   "recent_posts": [],
-  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=lli@ennead.com",
+  "teams_url": null,
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-17T22:42:39.004567",
+  "scraped_at": "2025-09-19T14:18:35.076577",
   "profile_id": null
 }

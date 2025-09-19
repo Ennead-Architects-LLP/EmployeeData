@@ -1,0 +1,61 @@
+{
+  "Computername": "EA-25CWFS3",
+  "First Name": "Sen",
+  "Last Name": "Zhang",
+  "Manufacturer": "Dell Inc.",
+  "Model": "Latitude 5540",
+  "OS": "Windows 10",
+  "Serial Number": "1X5CKS3",
+  "Username": "szhang",
+  "all_cpus": {
+    "cpu_1": {
+      "architecture": 9,
+      "cache_l3_size": 24576,
+      "cores": 14,
+      "driver": "N/A",
+      "family": 198,
+      "hyperthreading_enabled": false,
+      "logical_processors": 20,
+      "max_clock_speed": 1900,
+      "memory_bytes": null,
+      "memory_mb": null,
+      "model": 0,
+      "name": "13th Gen Intel(R) Core(TM) i7-1370P",
+      "processor": "13th Gen Intel(R) Core(TM) i7-1370P",
+      "release_date": "2022-10-20T00:00:00",
+      "stepping": 0,
+      "type": "Physical",
+      "virtualization_support": false
+    }
+  },
+  "all_gpus": {
+    "gpu_1": {
+      "driver": "32.0.101.6078",
+      "is_virtual": false,
+      "memory_bytes": 2147479552,
+      "memory_formatted": "2.0 GB",
+      "memory_gb": 2,
+      "memory_mb": 2048,
+      "name": "Intel(R) Iris(R) Xe Graphics",
+      "priority": 2,
+      "processor": "Intel(R) Iris(R) Xe Graphics Family",
+      "release_date": "2020-09-02T00:00:00",
+      "type": "Physical"
+    }
+  },
+  "collection_date": "2025-09-19T09:26:16.059420",
+  "human_name": "Sen Zhang",
+  "system_info": {
+    "available_memory_bytes": 6817894400,
+    "memory_percent": 59.5,
+    "total_memory_bytes": 16815702016,
+    "total_memory_formatted": "15.7 GB",
+    "total_memory_gb": 15.661,
+    "total_memory_mb": 16036.7,
+    "used_memory_bytes": 9997807616
+  },
+  "computer_name": "EA-25CWFS3",
+  "server_timestamp": "2025-09-19T13:27:05.473930",
+  "backup_type": "full_computer_data",
+  "structure_version": "1.0"
+}

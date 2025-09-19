@@ -320,13 +320,13 @@ function createEmployeeCard(employee) {
             
             if (source.includes('Individual Employee')) {
                 colorClass = 'individual-employee';
-                tooltip = 'Individual Employee Files';
+                tooltip = 'Individual Employee Files (Blue)';
             } else if (source.includes('Individual Computer')) {
                 colorClass = 'individual-computer';
-                tooltip = 'Individual Computer Data';
+                tooltip = 'Individual Computer Data (Green - Live Data)';
             } else if (source.includes('GPU Master List')) {
                 colorClass = 'gpu-master';
-                tooltip = 'GPU Master List 2025';
+                tooltip = 'GPU Master List 2025 (Orange - Static Data)';
             } else {
                 // Default color for unknown sources
                 colorClass = 'unknown-source';
@@ -339,12 +339,15 @@ function createEmployeeCard(employee) {
         sourceIndicator = indicators.join('');
     } else if (employee.created_from && typeof employee.created_from === 'string') {
         // Handle legacy string format
-        const tooltip = `Created from: ${employee.created_from}`;
+        let tooltip = `Created from: ${employee.created_from}`;
         if (employee.created_from.includes('GPU Master List')) {
+            tooltip = 'GPU Master List 2025 (Orange - Static Data)';
             sourceIndicator = `<div class="source-indicator gpu-master" title="${tooltip}">●</div>`;
         } else if (employee.created_from.includes('Individual Computer')) {
+            tooltip = 'Individual Computer Data (Green - Live Data)';
             sourceIndicator = `<div class="source-indicator individual-computer" title="${tooltip}">●</div>`;
         } else if (employee.created_from.includes('Individual Employee')) {
+            tooltip = 'Individual Employee Files (Blue)';
             sourceIndicator = `<div class="source-indicator individual-employee" title="${tooltip}">●</div>`;
         }
     }

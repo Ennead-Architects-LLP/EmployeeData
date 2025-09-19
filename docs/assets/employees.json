@@ -4427,7 +4427,9 @@
         "os": "Windows 11",
         "serial_number": "DW8MWP3",
         "username": "bmasuda",
-        "last_updated": "2025-09-18T15:14:42.082639"
+        "last_updated": "2025-09-19T13:28:19.709521",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T13:28:19.709524"
       }
     },
     "Static GPU Master List": {
@@ -4745,8 +4747,34 @@
     "profile_id": null,
     "created_from": [
       "Individual Employee Files",
+      "Individual Computer Data",
       "GPU Master List 2025"
     ],
+    "computer_info": {
+      "EANY-7W8MWP3": {
+        "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "Computername": "EANY-7W8MWP3",
+        "Date": "2025-09-19T09:32:07.966120",
+        "First Name": "Callie",
+        "GPU Date": "2021-04-12T00:00:00",
+        "GPU Driver": "32.0.15.7324",
+        "GPU Memory": 4095,
+        "GPU Name": "NVIDIA RTX A4000",
+        "GPU Processor": "NVIDIA RTX A4000",
+        "Last Name": "Fleetwood",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "OS": "Windows 11",
+        "Serial Number": "7W8MWP3",
+        "Total Physical Memory": 137107308544,
+        "Username": "cfleetwood",
+        "human_name": "Callie Fleetwood",
+        "last_updated": "2025-09-19T13:32:32.785411",
+        "computername": "EANY-7W8MWP3",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T13:32:32.785415"
+      }
+    },
     "Static GPU Master List": {
       "EANY-7W8MWP3": {
         "Computername": "EANY-7W8MWP3",
@@ -6162,8 +6190,72 @@
     "profile_id": null,
     "created_from": [
       "Individual Employee Files",
+      "Individual Computer Data",
       "GPU Master List 2025"
     ],
+    "computer_info": {
+      "EANY-H8PHHQ2": {
+        "Computername": "EANY-H8PHHQ2",
+        "First Name": "Chihwei",
+        "Last Name": "Hsu",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "OS": "Windows 11",
+        "Serial Number": "H8PHHQ2",
+        "Username": "chsu",
+        "all_cpus": {
+          "cpu_1": {
+            "architecture": 9,
+            "cache_l3_size": 8448,
+            "cores": 4,
+            "driver": "N/A",
+            "family": 179,
+            "hyperthreading_enabled": false,
+            "logical_processors": 8,
+            "max_clock_speed": 3600,
+            "memory_bytes": null,
+            "memory_mb": null,
+            "model": 0,
+            "name": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+            "processor": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+            "release_date": "Unknown",
+            "stepping": 0,
+            "type": "Physical",
+            "virtualization_support": false
+          }
+        },
+        "all_gpus": {
+          "gpu_1": {
+            "driver": "32.0.15.7342",
+            "is_virtual": false,
+            "memory_bytes": 4293918720,
+            "memory_formatted": "4.0 GB",
+            "memory_gb": 3.999,
+            "memory_mb": 4095,
+            "name": "NVIDIA Quadro RTX 4000",
+            "priority": 3,
+            "processor": "Quadro RTX 4000",
+            "release_date": "2022-10-12T00:00:00",
+            "type": "Physical"
+          }
+        },
+        "collection_date": "2025-09-19T09:15:10.179862",
+        "human_name": "Chihwei Hsu",
+        "system_info": {
+          "available_memory_bytes": 73205952512,
+          "memory_percent": 28.7,
+          "total_memory_bytes": 102734340096,
+          "total_memory_formatted": "95.7 GB",
+          "total_memory_gb": 95.679,
+          "total_memory_mb": 97975.1,
+          "used_memory_bytes": 29528387584
+        },
+        "last_updated": "2025-09-19T13:15:44.633218",
+        "computername": "EANY-H8PHHQ2",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T13:15:44.633222"
+      }
+    },
     "Static GPU Master List": {
       "EANY-H8PHHQ2": {
         "Computername": "EANY-H8PHHQ2",
@@ -7075,6 +7167,223 @@
       }
     }
   },
+  "DaYeon Kim": {
+    "human_name": "DaYeon Kim",
+    "email": "DaYeon.Kim@ennead.com",
+    "bio": null,
+    "phone": "646-437-1761",
+    "mobile": "646-437-1761",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
+    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
+    "position": "Senior Project Architect",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Graduate",
+        "specialty": "Architectural Engineering"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
+        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Jacobs",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Northwell,",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "northwell-third-avenue-medical-office-building",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Northwell,",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Northwell Health",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "lenox-hill-hospital-northwell-health-redevelopment",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "kuwait-university-health-sciences-campus",
+        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Kuwait University Health Sciences Campus",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "Perkins Eastman",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_13": {
+        "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "lenox-hill-hospital-northwell-health-redevelopment",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "text_parsing"
+      },
+      "proj_14": {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_15": {
+        "name": "2109",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "northwell-third-avenue-medical-office-building",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "text_parsing"
+      },
+      "proj_16": {
+        "name": "2001",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:32:29.639780",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-3WSPSZ2": {
+        "Computername": "EANY-3WSPSZ2",
+        "Username": "dayeon.kim",
+        "Last Name": "Kim",
+        "First Name": "Dayeon",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772084,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WSPSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T16:49:00"
+      }
+    }
+  },
   "David Appel": {
     "human_name": "David Appel",
     "email": "david.appel@ennead.com",
@@ -7540,223 +7849,6 @@
         "GPU Driver": "32.0.15.7159",
         "GPU Memory": 4193280.0,
         "Date": "2025-06-27T19:00:00"
-      }
-    }
-  },
-  "DaYeon Kim": {
-    "human_name": "DaYeon Kim",
-    "email": "DaYeon.Kim@ennead.com",
-    "bio": null,
-    "phone": "646-437-1761",
-    "mobile": "646-437-1761",
-    "office_location": "",
-    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
-    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
-    "position": "Senior Project Architect",
-    "department": "",
-    "years_with_firm": 4,
-    "memberships": [],
-    "education": [
-      {
-        "institution": "Columbia University",
-        "degree": "Graduate",
-        "specialty": "Architectural Engineering"
-      }
-    ],
-    "licenses": [],
-    "projects": {
-      "proj_1": {
-        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
-        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-        "source": "text_parsing"
-      },
-      "proj_2": {
-        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_3": {
-        "name": "Jacobs",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_4": {
-        "name": "Northwell,",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "northwell-third-avenue-medical-office-building",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-        "source": "text_parsing"
-      },
-      "proj_5": {
-        "name": "Northwell,",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_6": {
-        "name": "Northwell Health",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "lenox-hill-hospital-northwell-health-redevelopment",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-        "source": "text_parsing"
-      },
-      "proj_7": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "source": "text_parsing"
-      },
-      "proj_8": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_9": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_10": {
-        "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "kuwait-university-health-sciences-campus",
-        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
-        "source": "text_parsing"
-      },
-      "proj_11": {
-        "name": "Kuwait University Health Sciences Campus",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_12": {
-        "name": "Perkins Eastman",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_13": {
-        "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "lenox-hill-hospital-northwell-health-redevelopment",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-        "source": "text_parsing"
-      },
-      "proj_14": {
-        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_15": {
-        "name": "2109",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "northwell-third-avenue-medical-office-building",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-        "source": "text_parsing"
-      },
-      "proj_16": {
-        "name": "2001",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "source": "text_parsing"
-      }
-    },
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-17T22:32:29.639780",
-    "profile_id": null,
-    "created_from": [
-      "Individual Employee Files",
-      "GPU Master List 2025"
-    ],
-    "Static GPU Master List": {
-      "EANY-3WSPSZ2": {
-        "Computername": "EANY-3WSPSZ2",
-        "Username": "dayeon.kim",
-        "Last Name": "Kim",
-        "First Name": "Dayeon",
-        "OS": "Microsoft Windows NT Workstation 10.0",
-        "Manufacturer": "Dell Inc.",
-        "Model": "Precision 5820 Tower",
-        "Total Physical Memory": 66772084,
-        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
-        "Serial Number": "3WSPSZ2",
-        "GPU Name": "NVIDIA Quadro RTX 4000",
-        "GPU Date": "2018-11-13T00:00:00",
-        "GPU Age ": "7 years",
-        "GPU Processor": "Quadro RTX 4000",
-        "Replacement Piroirty ": 2,
-        "GPU Driver": "32.0.15.7159",
-        "GPU Memory": 4193280.0,
-        "Date": "2025-07-01T16:49:00"
       }
     }
   },
@@ -13173,9 +13265,9 @@
         "os": "Windows 11",
         "serial_number": "8DM7KD3",
         "username": "ingrid.evenson",
-        "last_updated": "2025-09-18T20:38:25.241417",
+        "last_updated": "2025-09-19T13:58:30.708276",
         "processed_by_server": true,
-        "server_processing_timestamp": "2025-09-18T20:38:25.241421"
+        "server_processing_timestamp": "2025-09-19T13:58:30.708280"
       }
     },
     "Static GPU Master List": {
@@ -20285,64 +20377,6 @@
       "Individual Employee Files"
     ]
   },
-  "Lan Chen": {
-    "human_name": "Lan Chen",
-    "email": "Lan.Chen@ennead.com",
-    "bio": null,
-    "phone": "",
-    "mobile": null,
-    "office_location": "",
-    "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
-    "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Lan Chen_profile.jpg",
-    "position": "Project Architect",
-    "department": "",
-    "years_with_firm": 4,
-    "memberships": [],
-    "education": [],
-    "licenses": [],
-    "projects": {
-      "proj_1": {
-        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "bilibili-shanghai-headquarters",
-        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
-        "source": "text_parsing"
-      },
-      "proj_2": {
-        "name": "Bilibili Shanghai Headquarters",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_3": {
-        "name": "Bilibili Co.,Ltd.",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      }
-    },
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-17T22:42:09.254077",
-    "profile_id": null,
-    "created_from": [
-      "Individual Employee Files"
-    ]
-  },
   "LaNee Carter": {
     "human_name": "LaNee Carter",
     "email": "lanee.carter@ennead.com",
@@ -20463,6 +20497,64 @@
         "Date": "2025-07-14T17:11:00"
       }
     }
+  },
+  "Lan Chen": {
+    "human_name": "Lan Chen",
+    "email": "Lan.Chen@ennead.com",
+    "bio": null,
+    "phone": "",
+    "mobile": null,
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
+    "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Lan Chen_profile.jpg",
+    "position": "Project Architect",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [],
+    "education": [],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "bilibili-shanghai-headquarters",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Bilibili Shanghai Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Bilibili Co.,Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:42:09.254077",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Latoya Kamdang": {
     "human_name": "Latoya Kamdang",
@@ -33138,21 +33230,46 @@
             "type": "Physical"
           }
         },
-        "collection_date": "2025-09-18T17:57:14.332889",
+        "collection_date": "2025-09-19T07:11:58.293346",
         "human_name": "Sen Zhang",
         "system_info": {
-          "available_memory_bytes": 40074301440,
+          "available_memory_bytes": 40064192512,
           "memory_percent": 41,
           "total_memory_bytes": 67936788480,
           "total_memory_formatted": "63.3 GB",
           "total_memory_gb": 63.271,
           "total_memory_mb": 64789.57,
-          "used_memory_bytes": 27862487040
+          "used_memory_bytes": 27872595968
         },
-        "last_updated": "2025-09-18T21:57:41.447976",
+        "last_updated": "2025-09-19T11:12:28.250054",
         "computername": "MININT-5V26DTJ",
         "processed_by_server": true,
-        "server_processing_timestamp": "2025-09-18T21:57:41.447980"
+        "server_processing_timestamp": "2025-09-19T11:12:28.250059"
+      },
+      "EA-25CWFS3": {
+        "Computername": "EA-25CWFS3",
+        "First Name": "Sen",
+        "Last Name": "Zhang",
+        "Manufacturer": "Unknown",
+        "Model": "Unknown",
+        "OS": "Windows 11",
+        "Serial Number": "Unknown",
+        "Username": "szhang",
+        "collection_date": "2025-09-19T09:52:32.485261",
+        "human_name": "Sen Zhang",
+        "system_info": {
+          "available_memory_bytes": 4571758592,
+          "memory_percent": 72.8,
+          "total_memory_bytes": 16815702016,
+          "total_memory_formatted": "15.7 GB",
+          "total_memory_gb": 15.661,
+          "total_memory_mb": 16036.7,
+          "used_memory_bytes": 12243943424
+        },
+        "last_updated": "2025-09-19T13:53:08.304361",
+        "computername": "EA-25CWFS3",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T13:53:08.304365"
       }
     },
     "Static GPU Master List": {
@@ -37663,8 +37780,72 @@
     "scraped_at": "2025-09-17T22:54:20.667683",
     "profile_id": null,
     "created_from": [
-      "Individual Employee Files"
-    ]
+      "Individual Employee Files",
+      "Individual Computer Data"
+    ],
+    "computer_info": {
+      "cn-wysun": {
+        "Computername": "cn-wysun",
+        "First Name": "Wenyu",
+        "Last Name": "Sun",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "OS": "Windows 10",
+        "Serial Number": "1Z5D1M3",
+        "Username": "wenyu.sun",
+        "all_cpus": {
+          "cpu_1": {
+            "architecture": 9,
+            "cache_l3_size": 8448,
+            "cores": 6,
+            "driver": "N/A",
+            "family": 179,
+            "hyperthreading_enabled": false,
+            "logical_processors": 12,
+            "max_clock_speed": 3792,
+            "memory_bytes": null,
+            "memory_mb": null,
+            "model": 0,
+            "name": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+            "processor": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+            "release_date": "Unknown",
+            "stepping": 0,
+            "type": "Physical",
+            "virtualization_support": true
+          }
+        },
+        "all_gpus": {
+          "gpu_1": {
+            "driver": "32.0.15.7159",
+            "is_virtual": false,
+            "memory_bytes": 4293918720,
+            "memory_formatted": "4.0 GB",
+            "memory_gb": 3.999,
+            "memory_mb": 4095,
+            "name": "NVIDIA RTX A4000",
+            "priority": 3,
+            "processor": "NVIDIA RTX A4000",
+            "release_date": "Unknown",
+            "type": "Physical"
+          }
+        },
+        "collection_date": "2025-09-19T16:39:39.157561",
+        "human_name": "Wenyu Sun",
+        "system_info": {
+          "available_memory_bytes": 35533975552,
+          "memory_percent": 48,
+          "total_memory_bytes": 68387852288,
+          "total_memory_formatted": "63.7 GB",
+          "total_memory_gb": 63.691,
+          "total_memory_mb": 65219.74,
+          "used_memory_bytes": 32853876736
+        },
+        "last_updated": "2025-09-19T08:40:01.576804",
+        "computername": "cn-wysun",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T08:40:01.576807"
+      }
+    }
   },
   "WiL Morales": {
     "human_name": "WiL Morales",
@@ -38958,8 +39139,28 @@
     "scraped_at": "2025-09-17T22:55:18.309085",
     "profile_id": null,
     "created_from": [
-      "Individual Employee Files"
-    ]
+      "Individual Employee Files",
+      "Individual Computer Data"
+    ],
+    "computer_info": {
+      "cn-xtwang": {
+        "computer_name": "cn-xtwang",
+        "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "gpu_driver": "32.0.15.7348",
+        "gpu_memory": -1048576,
+        "gpu_name": "NVIDIA RTX A4000",
+        "human_name": "Xiaotong Wang",
+        "manufacturer": "Dell Inc.",
+        "memory_bytes": 68387852288,
+        "model": "Precision 5820 Tower",
+        "os": "Windows 10",
+        "serial_number": "JY5D1M3",
+        "username": "xwang",
+        "last_updated": "2025-09-19T06:52:34.171241",
+        "processed_by_server": true,
+        "server_processing_timestamp": "2025-09-19T06:52:34.171245"
+      }
+    }
   },
   "Xinya Li": {
     "human_name": "Xinya Li",

@@ -1,14 +1,19 @@
 {
   "EANY-8DW8KD3": {
-    "computername": "EANY-8DW8KD3",
-    "os": "Windows 11",
-    "manufacturer": "Dell Inc.",
-    "model": "Precision 5820 Tower",
+    "computer_name": "EANY-8DW8KD3",
     "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
-    "gpu_name": "DisplayLink USB Device",
     "gpu_driver": "9.3.3324.0",
+    "gpu_memory": null,
+    "gpu_name": "DisplayLink USB Device",
+    "human_name": "Han Isozen",
+    "manufacturer": "Dell Inc.",
     "memory_bytes": 119925776384,
+    "model": "Precision 5820 Tower",
+    "os": "Windows 11",
     "serial_number": "8DW8KD3",
-    "last_updated": "2025-09-17T15:54:24.602154"
+    "username": "Han.Isozen",
+    "last_updated": "2025-09-19T20:43:08.501467",
+    "processed_by_server": true,
+    "server_processing_timestamp": "2025-09-19T20:43:08.501471"
   }
 }

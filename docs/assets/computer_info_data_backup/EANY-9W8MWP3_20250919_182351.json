@@ -1,0 +1,17 @@
+{
+  "computer_name": "EANY-9W8MWP3",
+  "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+  "gpu_driver": "32.0.15.7342",
+  "gpu_memory": -1048576,
+  "gpu_name": "NVIDIA RTX A4000",
+  "human_name": "Zeyi Xuan",
+  "manufacturer": "Dell Inc.",
+  "memory_bytes": 137107308544,
+  "model": "Precision 5820 Tower",
+  "os": "Windows 11",
+  "serial_number": "9W8MWP3",
+  "username": "zeyi.xuan",
+  "server_timestamp": "2025-09-19T18:23:51.134957",
+  "backup_type": "full_computer_data",
+  "structure_version": "1.0"
+}

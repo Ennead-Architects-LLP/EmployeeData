@@ -1,0 +1,74 @@
+{
+  "Computername": "MININT-5V26DTJ",
+  "First Name": "Sen",
+  "Last Name": "Zhang",
+  "Manufacturer": "ASUS",
+  "Model": "PRIME B860-PLUS WIFI",
+  "OS": "Windows 11",
+  "Serial Number": "241146563400017",
+  "Username": "szhang",
+  "all_cpus": {
+    "cpu_1": {
+      "architecture": 9,
+      "cache_l3_size": 36864,
+      "cores": 24,
+      "driver": "N/A",
+      "family": 775,
+      "hyperthreading_enabled": false,
+      "logical_processors": 24,
+      "max_clock_speed": 2500,
+      "memory_bytes": null,
+      "memory_mb": null,
+      "model": 0,
+      "name": "Intel(R) Core(TM) Ultra 9 285",
+      "processor": "Intel(R) Core(TM) Ultra 9 285",
+      "release_date": "Unknown",
+      "stepping": 0,
+      "type": "Physical",
+      "virtualization_support": false
+    }
+  },
+  "all_gpus": {
+    "gpu_1": {
+      "driver": "31.0.15.3742",
+      "is_virtual": false,
+      "memory_bytes": 4293918720,
+      "memory_formatted": "4.0 GB",
+      "memory_gb": 3.999,
+      "memory_mb": 4095,
+      "name": "NVIDIA RTX A2000 12GB",
+      "priority": 3,
+      "processor": "NVIDIA RTX A2000 12GB",
+      "release_date": "Unknown",
+      "type": "Physical"
+    },
+    "gpu_2": {
+      "driver": "32.0.101.6737",
+      "is_virtual": false,
+      "memory_bytes": 2147479552,
+      "memory_formatted": "2.0 GB",
+      "memory_gb": 2,
+      "memory_mb": 2048,
+      "name": "Intel(R) Graphics",
+      "priority": 1,
+      "processor": "Intel(R) Graphics Family",
+      "release_date": "Unknown",
+      "type": "Physical"
+    }
+  },
+  "collection_date": "2025-09-19T14:13:48.450343",
+  "human_name": "Sen Zhang",
+  "system_info": {
+    "available_memory_bytes": 35157848064,
+    "memory_percent": 48.2,
+    "total_memory_bytes": 67936788480,
+    "total_memory_formatted": "63.3 GB",
+    "total_memory_gb": 63.271,
+    "total_memory_mb": 64789.57,
+    "used_memory_bytes": 32778940416
+  },
+  "computer_name": "MININT-5V26DTJ",
+  "server_timestamp": "2025-09-19T18:14:12.322497",
+  "backup_type": "full_computer_data",
+  "structure_version": "1.0"
+}

@@ -1,0 +1,19 @@
+{
+  "cn-xtwang": {
+    "computer_name": "cn-xtwang",
+    "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+    "gpu_driver": "32.0.15.7348",
+    "gpu_memory": -1048576,
+    "gpu_name": "NVIDIA RTX A4000",
+    "human_name": "Xiaotong Wang",
+    "manufacturer": "Dell Inc.",
+    "memory_bytes": 68387852288,
+    "model": "Precision 5820 Tower",
+    "os": "Windows 10",
+    "serial_number": "JY5D1M3",
+    "username": "xwang",
+    "last_updated": "2025-09-19T06:52:34.171241",
+    "processed_by_server": true,
+    "server_processing_timestamp": "2025-09-19T06:52:34.171245"
+  }
+}
