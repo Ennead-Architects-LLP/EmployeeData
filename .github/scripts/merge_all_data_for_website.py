@@ -188,11 +188,12 @@ def merge_all_employees() -> bool:
         # Load all individual computer data files
         for cp in sorted(computers_dir.glob("*_computer_info.json")):
             clean_key = cp.stem.replace("_computer_info", "")
+            normalized_key = "_".join(clean_key.strip().split()).lower()
             payload = _safe_read_json(cp)
             if isinstance(payload, dict):
                 # Validate this is individual computer data structure
                 if validate_data_structure(payload, "individual_computer"):
-                    computer_info_by_employee[clean_key] = payload
+                    computer_info_by_employee[normalized_key] = payload
                     print(f"✅ Validated individual computer data: {cp.name}")
                 else:
                     computer_validation_errors += 1
@@ -203,7 +204,7 @@ def merge_all_employees() -> bool:
         
         # Try to match individual computer data to existing employees
         for employee_key, employee_data in employees.items():
-            # Try to find matching computer info by filename
+            # Try to find matching computer info by normalized key
             clean_key = employee_key.lower().replace(" ", "_")
             comp = computer_info_by_employee.get(clean_key)
             if comp:
@@ -216,15 +217,14 @@ def merge_all_employees() -> bool:
                 # Try alternative matching - remove "_computer_info" suffix from computer data keys
                 matched = False
                 for comp_key, comp_data in computer_info_by_employee.items():
-                    if comp_key.endswith("_computer_info"):
-                        base_key = comp_key.replace("_computer_info", "")
-                        if base_key == clean_key:
-                            add_computer_data_to_employee(employee_data, comp_data, "computer_info")
-                            add_data_source_to_employee(employee_data, "Individual Computer Data")
-                            computer_matches += 1
-                            print(f"✅ Matched individual computer data for: {employee_key} (via alternative matching)")
-                            matched = True
-                            break
+                    # comp_key is already normalized
+                    if comp_key == clean_key:
+                        add_computer_data_to_employee(employee_data, comp_data, "computer_info")
+                        add_data_source_to_employee(employee_data, "Individual Computer Data")
+                        computer_matches += 1
+                        print(f"✅ Matched individual computer data for: {employee_key} (via alternative matching)")
+                        matched = True
+                        break
                 
                 # If still no match, try fuzzy matching by name
                 if not matched:
@@ -274,24 +274,32 @@ def merge_all_employees() -> bool:
                 # Create new employee from computer data
                 # Extract name from computer data (use clean_key as fallback)
                 first_computer = next(iter(comp_data.values())) if comp_data else {}
+                human_name = first_computer.get("human_name", "").strip()
                 first_name = first_computer.get("first_name", "").strip()
                 last_name = first_computer.get("last_name", "").strip()
-                full_name = f"{first_name} {last_name}".strip()
+                full_name = f"{first_name} {last_name}".strip() or human_name
                 
                 if not full_name:
                     # Use clean_key as fallback, convert back to readable format
                     full_name = clean_key.replace("_", " ").title()
                 
-                new_employee = {
-                    "human_name": full_name,
-                    "source": "individual_computer_only"
-                }
-                # Add computer data to separate section
-                add_computer_data_to_employee(new_employee, comp_data, "computer_info")
-                add_data_source_to_employee(new_employee, "Individual Computer Data")
-                employees[full_name] = new_employee
-                computer_created_employees += 1
-                print(f"Created new employee from individual computer data: {full_name}")
+                if full_name in employees:
+                    # Augment existing employee from source 1 instead of creating a new one
+                    add_computer_data_to_employee(employees[full_name], comp_data, "computer_info")
+                    add_data_source_to_employee(employees[full_name], "Individual Computer Data")
+                    computer_matches += 1
+                    print(f"✅ Augmented existing employee with individual computer data: {full_name}")
+                else:
+                    new_employee = {
+                        "human_name": full_name,
+                        "source": "individual_computer_only"
+                    }
+                    # Add computer data to separate section
+                    add_computer_data_to_employee(new_employee, comp_data, "computer_info")
+                    add_data_source_to_employee(new_employee, "Individual Computer Data")
+                    employees[full_name] = new_employee
+                    computer_created_employees += 1
+                    print(f"Created new employee from individual computer data: {full_name}")
         
         print(f"Loaded computer info for {len(computer_info_by_employee)} employees")
         print(f"Successfully matched {computer_matches} employees with individual computer data")
