@@ -44,20 +44,20 @@
         "type": "Physical"
       }
     },
-    "collection_date": "2025-09-19T09:15:10.179862",
+    "collection_date": "2025-09-19T11:10:58.879772",
     "human_name": "Chihwei Hsu",
     "system_info": {
-      "available_memory_bytes": 73205952512,
-      "memory_percent": 28.7,
+      "available_memory_bytes": 68319657984,
+      "memory_percent": 33.5,
       "total_memory_bytes": 102734340096,
       "total_memory_formatted": "95.7 GB",
       "total_memory_gb": 95.679,
       "total_memory_mb": 97975.1,
-      "used_memory_bytes": 29528387584
+      "used_memory_bytes": 34414682112
     },
-    "last_updated": "2025-09-19T13:15:44.633218",
+    "last_updated": "2025-09-19T15:11:23.059978",
     "computername": "EANY-H8PHHQ2",
     "processed_by_server": true,
-    "server_processing_timestamp": "2025-09-19T13:15:44.633222"
+    "server_processing_timestamp": "2025-09-19T15:11:23.059983"
   }
 }
