@@ -203,20 +203,20 @@
         "type": "Physical"
       }
     },
-    "collection_date": "2025-09-19T09:21:57.545851",
+    "collection_date": "2025-09-19T09:26:16.059420",
     "human_name": "Sen Zhang",
     "system_info": {
-      "available_memory_bytes": 6715228160,
-      "memory_percent": 60.1,
+      "available_memory_bytes": 6817894400,
+      "memory_percent": 59.5,
       "total_memory_bytes": 16815702016,
       "total_memory_formatted": "15.7 GB",
       "total_memory_gb": 15.661,
       "total_memory_mb": 16036.7,
-      "used_memory_bytes": 10100473856
+      "used_memory_bytes": 9997807616
     },
-    "last_updated": "2025-09-19T13:22:20.253326",
+    "last_updated": "2025-09-19T13:27:05.474211",
     "computername": "EA-25CWFS3",
     "processed_by_server": true,
-    "server_processing_timestamp": "2025-09-19T13:22:20.253330"
+    "server_processing_timestamp": "2025-09-19T13:27:05.474215"
   }
 }
