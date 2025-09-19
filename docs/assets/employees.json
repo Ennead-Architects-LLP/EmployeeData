@@ -6661,6 +6661,223 @@
       }
     }
   },
+  "DaYeon Kim": {
+    "human_name": "DaYeon Kim",
+    "email": "DaYeon.Kim@ennead.com",
+    "bio": null,
+    "phone": "646-437-1761",
+    "mobile": "646-437-1761",
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
+    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
+    "position": "Senior Project Architect",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [],
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Graduate",
+        "specialty": "Architectural Engineering"
+      }
+    ],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
+        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Jacobs",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_4": {
+        "name": "Northwell,",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "northwell-third-avenue-medical-office-building",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "text_parsing"
+      },
+      "proj_5": {
+        "name": "Northwell,",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_6": {
+        "name": "Northwell Health",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "lenox-hill-hospital-northwell-health-redevelopment",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "text_parsing"
+      },
+      "proj_7": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "text_parsing"
+      },
+      "proj_8": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_9": {
+        "name": "University of",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_10": {
+        "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "kuwait-university-health-sciences-campus",
+        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
+        "source": "text_parsing"
+      },
+      "proj_11": {
+        "name": "Kuwait University Health Sciences Campus",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_12": {
+        "name": "Perkins Eastman",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_13": {
+        "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "lenox-hill-hospital-northwell-health-redevelopment",
+        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+        "source": "text_parsing"
+      },
+      "proj_14": {
+        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_15": {
+        "name": "2109",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "northwell-third-avenue-medical-office-building",
+        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
+        "source": "text_parsing"
+      },
+      "proj_16": {
+        "name": "2001",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:32:29.639780",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files",
+      "GPU Master List 2025"
+    ],
+    "Static GPU Master List": {
+      "EANY-3WSPSZ2": {
+        "Computername": "EANY-3WSPSZ2",
+        "Username": "dayeon.kim",
+        "Last Name": "Kim",
+        "First Name": "Dayeon",
+        "OS": "Microsoft Windows NT Workstation 10.0",
+        "Manufacturer": "Dell Inc.",
+        "Model": "Precision 5820 Tower",
+        "Total Physical Memory": 66772084,
+        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+        "Serial Number": "3WSPSZ2",
+        "GPU Name": "NVIDIA Quadro RTX 4000",
+        "GPU Date": "2018-11-13T00:00:00",
+        "GPU Age ": "7 years",
+        "GPU Processor": "Quadro RTX 4000",
+        "Replacement Piroirty ": 2,
+        "GPU Driver": "32.0.15.7159",
+        "GPU Memory": 4193280.0,
+        "Date": "2025-07-01T16:49:00"
+      }
+    }
+  },
   "David Appel": {
     "human_name": "David Appel",
     "email": "david.appel@ennead.com",
@@ -7126,223 +7343,6 @@
         "GPU Driver": "32.0.15.7159",
         "GPU Memory": 4193280.0,
         "Date": "2025-06-27T19:00:00"
-      }
-    }
-  },
-  "DaYeon Kim": {
-    "human_name": "DaYeon Kim",
-    "email": "DaYeon.Kim@ennead.com",
-    "bio": null,
-    "phone": "646-437-1761",
-    "mobile": "646-437-1761",
-    "office_location": "",
-    "profile_url": "https://ei.ennead.com/employee/B96E7F7B-8244-45F4-9BD1-EC12BA85E102/dayeon-kim",
-    "image_url": "https://ei.ennead.com/api/image/588774b5-a72f-4497-a0b9-9f318def1d46/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/DaYeon Kim_profile.jpg",
-    "position": "Senior Project Architect",
-    "department": "",
-    "years_with_firm": 4,
-    "memberships": [],
-    "education": [
-      {
-        "institution": "Columbia University",
-        "degree": "Graduate",
-        "specialty": "Architectural Engineering"
-      }
-    ],
-    "licenses": [],
-    "projects": {
-      "proj_1": {
-        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)Jacobs2210",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "wentworth-institue-of-technology-phase-1-500-huntingon",
-        "url": "https://ei.ennead.com/project/A000256E-93CA-4DE6-B7EB-F0238301311E/wentworth-institue-of-technology-phase-1-500-huntingon",
-        "source": "text_parsing"
-      },
-      "proj_2": {
-        "name": "Wentworth Institue of Technology Phase 1 (500 Huntingon)",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_3": {
-        "name": "Jacobs",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_4": {
-        "name": "Northwell,",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "northwell-third-avenue-medical-office-building",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-        "source": "text_parsing"
-      },
-      "proj_5": {
-        "name": "Northwell,",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_6": {
-        "name": "Northwell Health",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "lenox-hill-hospital-northwell-health-redevelopment",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-        "source": "text_parsing"
-      },
-      "proj_7": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "source": "text_parsing"
-      },
-      "proj_8": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_9": {
-        "name": "University of",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_10": {
-        "name": "Kuwait University Health Sciences CampusPerkins Eastman1704",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "kuwait-university-health-sciences-campus",
-        "url": "https://ei.ennead.com/project/8C9A69D2-A9C5-4F34-A62A-97A6FF0F65E8/kuwait-university-health-sciences-campus",
-        "source": "text_parsing"
-      },
-      "proj_11": {
-        "name": "Kuwait University Health Sciences Campus",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_12": {
-        "name": "Perkins Eastman",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_13": {
-        "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "lenox-hill-hospital-northwell-health-redevelopment",
-        "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
-        "source": "text_parsing"
-      },
-      "proj_14": {
-        "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_15": {
-        "name": "2109",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "northwell-third-avenue-medical-office-building",
-        "url": "https://ei.ennead.com/project/109C9F8F-1224-44E9-AFCB-8D6AA67E6B07/northwell-third-avenue-medical-office-building",
-        "source": "text_parsing"
-      },
-      "proj_16": {
-        "name": "2001",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "url": "https://ei.ennead.com/project/E53DD793-21F9-4562-86D0-A4D19E2B1F83/university-of-california-santa-cruz-thimann-laboratories-major-capital-project",
-        "source": "text_parsing"
-      }
-    },
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=DaYeon.Kim@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-17T22:32:29.639780",
-    "profile_id": null,
-    "created_from": [
-      "Individual Employee Files",
-      "GPU Master List 2025"
-    ],
-    "Static GPU Master List": {
-      "EANY-3WSPSZ2": {
-        "Computername": "EANY-3WSPSZ2",
-        "Username": "dayeon.kim",
-        "Last Name": "Kim",
-        "First Name": "Dayeon",
-        "OS": "Microsoft Windows NT Workstation 10.0",
-        "Manufacturer": "Dell Inc.",
-        "Model": "Precision 5820 Tower",
-        "Total Physical Memory": 66772084,
-        "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
-        "Serial Number": "3WSPSZ2",
-        "GPU Name": "NVIDIA Quadro RTX 4000",
-        "GPU Date": "2018-11-13T00:00:00",
-        "GPU Age ": "7 years",
-        "GPU Processor": "Quadro RTX 4000",
-        "Replacement Piroirty ": 2,
-        "GPU Driver": "32.0.15.7159",
-        "GPU Memory": 4193280.0,
-        "Date": "2025-07-01T16:49:00"
       }
     }
   },
@@ -19043,64 +19043,6 @@
       "Individual Employee Files"
     ]
   },
-  "Lan Chen": {
-    "human_name": "Lan Chen",
-    "email": "Lan.Chen@ennead.com",
-    "bio": null,
-    "phone": "",
-    "mobile": null,
-    "office_location": "",
-    "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
-    "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
-    "image_local_path": "assets/images/Lan Chen_profile.jpg",
-    "position": "Project Architect",
-    "department": "",
-    "years_with_firm": 4,
-    "memberships": [],
-    "education": [],
-    "licenses": [],
-    "projects": {
-      "proj_1": {
-        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "bilibili-shanghai-headquarters",
-        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
-        "source": "text_parsing"
-      },
-      "proj_2": {
-        "name": "Bilibili Shanghai Headquarters",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      },
-      "proj_3": {
-        "name": "Bilibili Co.,Ltd.",
-        "description": "",
-        "role": "",
-        "year": "",
-        "client": "",
-        "number": "",
-        "url": "",
-        "source": "text_parsing"
-      }
-    },
-    "recent_posts": [],
-    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
-    "linkedin_url": null,
-    "website_url": null,
-    "scraped_at": "2025-09-17T22:42:09.254077",
-    "profile_id": null,
-    "created_from": [
-      "Individual Employee Files"
-    ]
-  },
   "LaNee Carter": {
     "human_name": "LaNee Carter",
     "email": "lanee.carter@ennead.com",
@@ -19221,6 +19163,64 @@
         "Date": "2025-07-14T17:11:00"
       }
     }
+  },
+  "Lan Chen": {
+    "human_name": "Lan Chen",
+    "email": "Lan.Chen@ennead.com",
+    "bio": null,
+    "phone": "",
+    "mobile": null,
+    "office_location": "",
+    "profile_url": "https://ei.ennead.com/employee/BB005038-7822-46DA-9A52-A344B3409568/lan-chen",
+    "image_url": "https://ei.ennead.com/api/image/798c1ce2-aa98-417f-b3ce-0d5ecf06bc81/preview?size=300w300h_fxd&version=0",
+    "image_local_path": "assets/images/Lan Chen_profile.jpg",
+    "position": "Project Architect",
+    "department": "",
+    "years_with_firm": 4,
+    "memberships": [],
+    "education": [],
+    "licenses": [],
+    "projects": {
+      "proj_1": {
+        "name": "Bilibili Shanghai HeadquartersBilibili Co.,Ltd.2135",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "bilibili-shanghai-headquarters",
+        "url": "https://ei.ennead.com/project/6C3B3123-1D0D-41A4-A0AF-A99AEC2BA0B0/bilibili-shanghai-headquarters",
+        "source": "text_parsing"
+      },
+      "proj_2": {
+        "name": "Bilibili Shanghai Headquarters",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      },
+      "proj_3": {
+        "name": "Bilibili Co.,Ltd.",
+        "description": "",
+        "role": "",
+        "year": "",
+        "client": "",
+        "number": "",
+        "url": "",
+        "source": "text_parsing"
+      }
+    },
+    "recent_posts": [],
+    "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=Lan.Chen@ennead.com",
+    "linkedin_url": null,
+    "website_url": null,
+    "scraped_at": "2025-09-17T22:42:09.254077",
+    "profile_id": null,
+    "created_from": [
+      "Individual Employee Files"
+    ]
   },
   "Latoya Kamdang": {
     "human_name": "Latoya Kamdang",
