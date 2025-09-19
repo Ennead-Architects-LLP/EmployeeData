@@ -1145,7 +1145,7 @@ class AboutMeApp:
         except Exception:
             pass
         self.root.title("AboutMe")
-        self.root.geometry("720x520")
+        self.root.geometry("800x600")
         self.root.configure(bg="#121212")
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
         self._apply_dark_style()
@@ -1241,22 +1241,28 @@ class AboutMeApp:
         # Populate Complete Data Preview tab
         self._populate_preview_tab(preview_frame)
 
-        # Fixed bottom action bar
+        # Fixed bottom action bar with proper spacing
         actions = ttk.Frame(container)
-        actions.pack(side="bottom", fill="x", pady=(8, 0))
+        actions.pack(side="bottom", fill="x", pady=(12, 8))
+        
         # Add privacy notice
         privacy_frame = ttk.Frame(container)
-        privacy_frame.pack(side="bottom", fill="x", pady=(8, 0))
+        privacy_frame.pack(side="bottom", fill="x", pady=(0, 8))
         
         privacy_text = "🔒 Privacy Notice: This data is shared securely with the IT team for system inventory purposes only."
         privacy_label = ttk.Label(privacy_frame, text=privacy_text, font=("Segoe UI", 9), 
                                  foreground="#888888")
         privacy_label.pack(anchor="center")
         
+        # Buttons with proper spacing and sizing
         self.send_btn = ttk.Button(actions, text="✅ Allow Share", command=self.on_send_click)
         self.cancel_btn = ttk.Button(actions, text="❌ Disallow Share", command=self.on_close)
-        self.send_btn.pack(side="left")
-        self.cancel_btn.pack(side="right")
+        
+        # Pack buttons with proper spacing
+        self.send_btn.pack(side="left", padx=(0, 8))
+        self.cancel_btn.pack(side="right", padx=(8, 0))
+        
+        # Add footer with proper spacing
         self._add_footer(self.root)
     
     def _populate_basic_info_tab(self, parent):
@@ -1380,8 +1386,8 @@ class AboutMeApp:
             tree = ttk.Treeview(parent, columns=columns, show="headings", height=15)
             tree.heading("Field", text="Field")
             tree.heading("Value", text="Value")
-            tree.column("Field", width=250, anchor="w")
-            tree.column("Value", width=400, anchor="w")
+            tree.column("Field", width=300, anchor="w")
+            tree.column("Value", width=450, anchor="w")
         except Exception as e:
             log_error("Failed to create preview tab", e)
             return
@@ -1389,13 +1395,16 @@ class AboutMeApp:
         vsb = ttk.Scrollbar(parent, orient="vertical", command=tree.yview)
         tree.configure(yscrollcommand=vsb.set)
 
-        # Populate with actual data
+        # Populate with actual data using the proper data structure
         computer_info = self.collector.computer_info
         
-        # Basic fields
+        # Get the JSON dict representation which has the correct structure
+        computer_dict = computer_info.to_json_dict()
+        
+        # Basic fields - use the actual data from the dict
         basic_fields = {
             'computername': 'Computer Name',
-            'human_name': 'Full Name',
+            'human_name': 'Full Name', 
             'username': 'Username',
             'os': 'Operating System',
             'manufacturer': 'Manufacturer',
@@ -1405,40 +1414,34 @@ class AboutMeApp:
         }
         
         for field_name, display_label in basic_fields.items():
-            if hasattr(computer_info, field_name):
-                value = getattr(computer_info, field_name)
-                if value is not None:
-                    tree.insert("", "end", values=(display_label, str(value)))
+            value = computer_dict.get(field_name, 'Unknown')
+            if value and value != 'Unknown':
+                tree.insert("", "end", values=(display_label, str(value)))
         
-        # System information
-        if computer_info.system_info:
-            tree.insert("", "end", values=("Total Memory", computer_info.system_info.total_memory_formatted))
-            tree.insert("", "end", values=("Available Memory", f"{computer_info.system_info.available_memory_bytes / (1024**3):.1f} GB"))
-            tree.insert("", "end", values=("Memory Usage", f"{computer_info.system_info.memory_percent:.1f}%"))
+        # System information from system_info dict
+        if 'system_info' in computer_dict and computer_dict['system_info']:
+            sys_info = computer_dict['system_info']
+            tree.insert("", "end", values=("Total Memory", sys_info.get('total_memory_formatted', 'Unknown')))
+            tree.insert("", "end", values=("Available Memory", sys_info.get('available_memory_formatted', 'Unknown')))
+            tree.insert("", "end", values=("Memory Usage", f"{sys_info.get('memory_percent', 0):.1f}%"))
         
-        # Primary CPU information
-        if computer_info.all_cpus:
-            primary_cpu = computer_info.all_cpus[0]
-            tree.insert("", "end", values=("Primary CPU", primary_cpu.name))
+        # CPU information from all_cpus dict
+        if 'all_cpus' in computer_dict and computer_dict['all_cpus']:
+            for cpu_key, cpu_data in computer_dict['all_cpus'].items():
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Name", cpu_data.get('name', 'Unknown')))
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Cores", str(cpu_data.get('cores', 0))))
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Logical Processors", str(cpu_data.get('logical_processors', 0))))
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Type", cpu_data.get('type', 'Unknown')))
+                tree.insert("", "end", values=(f"{cpu_key.upper()} - Release Date", cpu_data.get('release_date', 'Unknown')))
         
-        # CPU information
-        if computer_info.all_cpus:
-            for i, cpu in enumerate(computer_info.all_cpus, 1):
-                tree.insert("", "end", values=(f"CPU_{i} - Name", cpu.name))
-                tree.insert("", "end", values=(f"CPU_{i} - Cores", str(cpu.cores)))
-                tree.insert("", "end", values=(f"CPU_{i} - Logical Processors", str(cpu.logical_processors)))
-                tree.insert("", "end", values=(f"CPU_{i} - Type", cpu.type))
-                tree.insert("", "end", values=(f"CPU_{i} - Date", cpu.date))
-        
-        # GPU information
-        if computer_info.all_gpus:
-            for i, gpu in enumerate(computer_info.all_gpus, 1):
-                tree.insert("", "end", values=(f"GPU_{i} - Name", gpu.name))
-                tree.insert("", "end", values=(f"GPU_{i} - Type", gpu.type))
-                memory_display = gpu.memory_formatted if gpu.memory_formatted else 'N/A'
-                tree.insert("", "end", values=(f"GPU_{i} - Memory", memory_display))
-                tree.insert("", "end", values=(f"GPU_{i} - Driver", gpu.driver))
-                tree.insert("", "end", values=(f"GPU_{i} - Priority", str(gpu.priority)))
+        # GPU information from all_gpus dict  
+        if 'all_gpus' in computer_dict and computer_dict['all_gpus']:
+            for gpu_key, gpu_data in computer_dict['all_gpus'].items():
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Name", gpu_data.get('name', 'Unknown')))
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Type", gpu_data.get('type', 'Unknown')))
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Memory", gpu_data.get('memory_formatted', 'N/A')))
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Driver", gpu_data.get('driver', 'Unknown')))
+                tree.insert("", "end", values=(f"{gpu_key.upper()} - Priority", str(gpu_data.get('priority', 0))))
         
         tree.pack(side="left", fill="both", expand=True)
         vsb.pack(side="right", fill="y")

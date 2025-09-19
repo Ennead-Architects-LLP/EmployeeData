@@ -1,0 +1,16 @@
+{
+  "13th gen intel core i7-1370p": {
+    "name": "13th Gen Intel(R) Core(TM) i7-1370P",
+    "release_date": "2022-10-20T00:00:00",
+    "source": "fallback",
+    "confidence": 0.6,
+    "last_updated": "2025-09-19T09:43:48.761337"
+  },
+  "intel iris xe graphics": {
+    "name": "Intel(R) Iris(R) Xe Graphics",
+    "release_date": "2020-09-02T00:00:00",
+    "source": "fallback",
+    "confidence": 0.6,
+    "last_updated": "2025-09-19T09:43:49.949984"
+  }
+}
