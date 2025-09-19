@@ -10,9 +10,18 @@ import json
 import os
 import platform
 import ctypes
-import psutil
-import wmi
-import requests
+try:
+    import psutil  # optional at import-time in packaged exe
+except Exception:
+    psutil = None  # will degrade gracefully at runtime
+try:
+    import wmi  # optional
+except Exception:
+    wmi = None
+try:
+    import requests  # optional
+except Exception:
+    requests = None
 import argparse
 import traceback
 import sys
@@ -46,6 +55,14 @@ EMBEDDED_GITHUB_TOKEN = None
 
 # Detect silent/headless mode (used by about_me_silent and packaged exe)
 SILENT_MODE = os.environ.get("ABOUTME_FORCE_SILENT") == "1"
+
+# Detect if running as compiled exe (PyInstaller)
+IS_COMPILED_EXE = getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS')
+
+def silent_print(*args, **kwargs):
+    """Print only when not running as compiled exe - completely silent in exe"""
+    if not IS_COMPILED_EXE:
+        print(*args, **kwargs)
 
 @dataclass
 class InfoDataCPU:
@@ -515,31 +532,37 @@ def try_half_token():
 
 
 def _pause_if_interactive():
+    """Pause for user input only if stdin is available and not in silent mode."""
     if not SILENT_MODE:
         try:
-            input("\nPress Enter to close this window...")
-        except Exception:
+            # Check if stdin is available and interactive
+            import sys
+            if sys.stdin.isatty() and hasattr(sys.stdin, 'read'):
+                input("\nPress Enter to close this window...")
+        except (EOFError, OSError, AttributeError, RuntimeError):
+            # Handle cases where stdin is not available
+            # This includes: GUI apps, packaged executables, redirected input
             pass
 
 try:
     # Prefer half token first
     EMBEDDED_GITHUB_TOKEN = try_half_token()
-    print("✅ GitHub token loaded from half token (preferred)")
+    # Silent in compiled exe - no print statements
 except Exception:
     # Fall back to existing token.json if available
     try:
         with open(token_file, 'r') as f:
             token_data = json.load(f)
             EMBEDDED_GITHUB_TOKEN = token_data['token']
-        print(f"✅ GitHub token loaded successfully from token.json")
+        # Silent in compiled exe - no print statements
     except Exception as e:
         # As a last attempt, try half token again and exit on failure
         try:
             EMBEDDED_GITHUB_TOKEN = try_half_token()
-            print("✅ GitHub token recovered from half token")
+            # Silent in compiled exe - no print statements
         except Exception:
             save_token_error(f"Token load failed: {e}")
-            _pause_if_interactive()
+            # Silent exit - no user notification
             sys.exit(1)
 
 # EMBEDDED CONFIGURATION - Replace with your actual values
@@ -573,7 +596,7 @@ def setup_logging(silent=False):
         
         return log_file
     except Exception as e:
-        print(f"⚠️  Warning: Could not setup logging: {e}")
+        silent_print(f"⚠️  Warning: Could not setup logging: {e}")
         return None
 
 def save_error_to_file(error_msg, exception=None, log_file=None):
@@ -614,7 +637,7 @@ def save_error_to_file(error_msg, exception=None, log_file=None):
         
         return error_file
     except Exception as e:
-        print(f"❌ Failed to save error to file: {e}")
+        silent_print(f"❌ Failed to save error to file: {e}")
         return None
 
 def log_error(error_msg, exception=None):
@@ -626,11 +649,70 @@ def log_error(error_msg, exception=None):
         else:
             logging.error(error_msg)
     except Exception as e:
-        print(f"❌ Error logging failed: {e}")
-        print(f"Original error: {error_msg}")
+        silent_print(f"❌ Error logging failed: {e}")
+        silent_print(f"Original error: {error_msg}")
         if exception:
-            print(f"Exception: {str(exception)}")
-            print(f"Traceback: {traceback.format_exc()}")
+            silent_print(f"Exception: {str(exception)}")
+            silent_print(f"Traceback: {traceback.format_exc()}")
+
+def _show_fatal_dialog_or_console(message: str):
+    """Completely silent fatal handler - no output, no dialogs, no user notification."""
+    # Intentionally do NOT show anything to users - fail silently
+    pass
+
+def _global_exception_handler(exc_type, exc, tb, log_file=None):
+    """Catch-all handler for uncaught exceptions in any thread or the main thread."""
+    try:
+        error_msg = f"Unhandled exception: {exc_type.__name__}: {str(exc)}"
+        # Log and persist
+        try:
+            log_error(error_msg, exc)
+        except Exception:
+            pass
+        report_path = None
+        try:
+            report_path = save_error_to_file(error_msg, exc, log_file)
+        except Exception:
+            report_path = None
+        # Completely silent - no user notification at all
+        # Only write error report for debugging purposes
+        pass
+    finally:
+        try:
+            # Ensure non-zero exit so wrappers/launchers know it failed
+            os._exit(1)
+        except Exception:
+            pass
+
+def _install_global_exception_handlers(log_file=None, enable_gui_hooks=False):
+    """Install sys and threading exception hooks; optionally hook Tkinter callbacks."""
+    try:
+        # sys.excepthook for main thread
+        def _sys_hook(exc_type, exc, tb):
+            _global_exception_handler(exc_type, exc, tb, log_file)
+        sys.excepthook = _sys_hook
+    except Exception:
+        pass
+    try:
+        # threading.excepthook (Python 3.8+)
+        def _thread_hook(args):
+            try:
+                _global_exception_handler(args.exc_type, args.exc_value, args.exc_traceback, log_file)
+            except Exception:
+                pass
+        if hasattr(threading, "excepthook"):
+            threading.excepthook = _thread_hook
+    except Exception:
+        pass
+    if enable_gui_hooks and tk is not None:
+        try:
+            # Will be bound later to the Tk root once available; provide a fallback callable
+            def _tk_report_callback_exception(exc_type, exc, tb):
+                _global_exception_handler(exc_type, exc, tb, log_file)
+            # Stash on module for AboutMeApp to attach to root
+            globals()["_TK_REPORT_CALLBACK_EXCEPTION"] = _tk_report_callback_exception
+        except Exception:
+            pass
 
 class ComputerInfoCollector:
     def __init__(self, website_url=None):
@@ -646,7 +728,7 @@ class ComputerInfoCollector:
                 try:
                     self.wmi_conn = wmi.WMI()
                 except Exception as e:
-                    print(f"Warning: Could not initialize WMI: {e}")
+                    silent_print(f"Warning: Could not initialize WMI: {e}")
             
             # Collect only essential information matching Excel headers
             self._get_computername()
@@ -922,10 +1004,10 @@ class ComputerInfoCollector:
         try:
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(self.computer_info.to_dict(), f, indent=2, ensure_ascii=False, default=str)
-            print(f"Computer information saved to {filename}")
+            silent_print(f"Computer information saved to {filename}")
             return True
         except Exception as e:
-            print(f"Error saving to JSON: {e}")
+            silent_print(f"Error saving to JSON: {e}")
             return False
     
     def send_to_github_repo(self):
@@ -948,65 +1030,65 @@ class ComputerInfoCollector:
                 "User-Agent": "AboutMe-ComputerInfo/1.0"
             }
             
-            print(f"Sending computer information to GitHub...")
-            print(f"   Computer: {self.computer_info.computername or 'Unknown'}")
-            print(f"   User: {self.computer_info.human_name or 'Unknown'} ({self.computer_info.username or 'Unknown'})")
+            silent_print(f"Sending computer information to GitHub...")
+            silent_print(f"   Computer: {self.computer_info.computername or 'Unknown'}")
+            silent_print(f"   User: {self.computer_info.human_name or 'Unknown'} ({self.computer_info.username or 'Unknown'})")
             
             # Print payload information
-            print(f"\n📋 PAYLOAD INFORMATION:")
-            print(f"   Repository: {EMBEDDED_REPO_OWNER}/{EMBEDDED_REPO_NAME}")
-            print(f"   Event Type: computer-data")
-            print(f"   Timestamp: {datetime.now().isoformat()}")
+            silent_print(f"\n📋 PAYLOAD INFORMATION:")
+            silent_print(f"   Repository: {EMBEDDED_REPO_OWNER}/{EMBEDDED_REPO_NAME}")
+            silent_print(f"   Event Type: computer-data")
+            silent_print(f"   Timestamp: {datetime.now().isoformat()}")
             
             # Print computer info structure
             computer_dict = self.computer_info.to_json_dict()
-            print(f"\n📊 COMPUTER INFO STRUCTURE:")
+            silent_print(f"\n📊 COMPUTER INFO STRUCTURE:")
             for key, value in computer_dict.items():
                 if key == 'all_cpus':
-                    print(f"   {key}: {len(value) if value else 0} CPUs")
+                    silent_print(f"   {key}: {len(value) if value else 0} CPUs")
                     if value:
                         for cpu_key, cpu in value.items():
-                            print(f"     {cpu_key.upper()}: {cpu.get('name', 'Unknown')} ({cpu.get('type', 'Unknown')})")
+                            silent_print(f"     {cpu_key.upper()}: {cpu.get('name', 'Unknown')} ({cpu.get('type', 'Unknown')})")
                 elif key == 'all_gpus':
-                    print(f"   {key}: {len(value) if value else 0} GPUs")
+                    silent_print(f"   {key}: {len(value) if value else 0} GPUs")
                     if value:
                         for gpu_key, gpu in value.items():
-                            print(f"     {gpu_key.upper()}: {gpu.get('name', 'Unknown')} ({gpu.get('type', 'Unknown')})")
+                            silent_print(f"     {gpu_key.upper()}: {gpu.get('name', 'Unknown')} ({gpu.get('type', 'Unknown')})")
                 else:
                     # Truncate very long values for display
                     display_value = str(value)
                     if len(display_value) > 60:
                         display_value = display_value[:57] + "..."
-                    print(f"   {key}: {display_value}")
+                    silent_print(f"   {key}: {display_value}")
             
-            print(f"\n📦 PAYLOAD SIZE: {len(json.dumps(payload))} characters")
+            silent_print(f"\n📦 PAYLOAD SIZE: {len(json.dumps(payload))} characters")
             
             # Optional: Print complete payload JSON for debugging
             if os.environ.get("ABOUTME_DEBUG_PAYLOAD") == "1":
-                print(f"\n🔍 COMPLETE PAYLOAD JSON:")
-                print(json.dumps(payload, indent=2, ensure_ascii=False, default=str))
+                silent_print(f"\n🔍 COMPLETE PAYLOAD JSON:")
+                silent_print(json.dumps(payload, indent=2, ensure_ascii=False, default=str))
             
             response = requests.post(url, json=payload, headers=headers, timeout=30)
             
             if response.status_code == 204:  # 204 No Content is success for repository dispatch
-                print("✅ Computer information sent successfully!")
-                print("   Your data will be processed and appear on the website shortly.")
+                silent_print("✅ Computer information sent successfully!")
+                silent_print("   Your data will be processed and appear on the website shortly.")
                 return True
             else:
-                print(f"❌ Failed to send data. Status code: {response.status_code}")
-                print(f"Response: {response.text}")
+                silent_print(f"❌ Failed to send data. Status code: {response.status_code}")
+                silent_print(f"Response: {response.text}")
                 return False
                 
         except requests.exceptions.RequestException as e:
-            print(f"❌ Network error: {e}")
+            silent_print(f"❌ Network error: {e}")
             return False
         except Exception as e:
-            print(f"❌ Error sending data: {e}")
+            silent_print(f"❌ Error sending data: {e}")
             return False
 
     def print_summary(self):
         """Print a summary of collected information using the __repr__ method"""
-        print(repr(self.computer_info))
+        silent_print(repr(self.computer_info))
 
 def main():
     """GUI entrypoint with CLI fallback."""
@@ -1022,6 +1104,8 @@ def main():
 
     is_cli = force_silent or tk is None
     log_file = setup_logging(silent=is_cli)
+    # Install global exception handlers early
+    _install_global_exception_handlers(log_file=log_file, enable_gui_hooks=not is_cli)
     if is_cli:
         return main_cli(log_file, silent=True)
     try:
@@ -1053,6 +1137,13 @@ class AboutMeApp:
     def __init__(self, log_file=None):
         self.log_file = log_file
         self.root = tk.Tk()
+        # Attach Tkinter-level global exception handler if prepared
+        try:
+            tk_hook = globals().get("_TK_REPORT_CALLBACK_EXCEPTION")
+            if callable(tk_hook):
+                self.root.report_callback_exception = tk_hook
+        except Exception:
+            pass
         self.root.title("AboutMe")
         self.root.geometry("720x520")
         self.root.configure(bg="#121212")
@@ -1065,38 +1156,48 @@ class AboutMeApp:
         self._start_collection()
 
     def _apply_dark_style(self):
-        style = ttk.Style()
         try:
-            style.theme_use("clam")
-        except Exception:
-            pass
-        style.configure("TLabel", background="#121212", foreground="#E0E0E0")
-        style.configure("TFrame", background="#121212")
-        style.configure("TButton", background="#1E1E1E", foreground="#E0E0E0", padding=8)
-        style.map("TButton", background=[("active", "#2A2A2A")])
-        style.configure("Treeview", background="#1E1E1E", foreground="#E0E0E0", fieldbackground="#1E1E1E")
-        style.configure("Treeview.Heading", background="#1E1E1E", foreground="#E0E0E0")
+            style = ttk.Style()
+            try:
+                style.theme_use("clam")
+            except Exception:
+                pass
+            style.configure("TLabel", background="#121212", foreground="#E0E0E0")
+            style.configure("TFrame", background="#121212")
+            style.configure("TButton", background="#1E1E1E", foreground="#E0E0E0", padding=8)
+            style.map("TButton", background=[("active", "#2A2A2A")])
+            style.configure("Treeview", background="#1E1E1E", foreground="#E0E0E0", fieldbackground="#1E1E1E")
+            style.configure("Treeview.Heading", background="#1E1E1E", foreground="#E0E0E0")
+        except Exception as e:
+            log_error("Failed to apply dark style", e)
 
     def _build_loading_ui(self):
-        for w in self.root.winfo_children():
-            w.destroy()
-        frame = ttk.Frame(self.root)
-        frame.pack(expand=True, fill="both", padx=24, pady=24)
-        title = ttk.Label(frame, text="AboutMe", font=("Segoe UI", 16, "bold"))
-        title.pack(pady=(40, 12))
-        subtitle = ttk.Label(frame, text="After the reimaging of computers we need to collect the current machine data. You just need to approve.")
-        subtitle.pack(pady=(0, 24))
-        self.progress = ttk.Progressbar(frame, mode="indeterminate")
-        self.progress.pack(fill="x")
-        self.progress.start(10)
-        self._add_footer(self.root)
+        try:
+            for w in self.root.winfo_children():
+                w.destroy()
+            frame = ttk.Frame(self.root)
+            frame.pack(expand=True, fill="both", padx=24, pady=24)
+            title = ttk.Label(frame, text="AboutMe", font=("Segoe UI", 16, "bold"))
+            title.pack(pady=(40, 12))
+            subtitle = ttk.Label(frame, text="After the reimaging of computers we need to collect the current machine data. You just need to approve.")
+            subtitle.pack(pady=(0, 24))
+            self.progress = ttk.Progressbar(frame, mode="indeterminate")
+            self.progress.pack(fill="x")
+            self.progress.start(10)
+            self._add_footer(self.root)
+        except Exception as e:
+            log_error("Failed to build loading UI", e)
 
     def _build_review_ui(self):
-        for w in self.root.winfo_children():
-            w.destroy()
+        try:
+            for w in self.root.winfo_children():
+                w.destroy()
 
-        container = ttk.Frame(self.root)
-        container.pack(expand=True, fill="both", padx=16, pady=12)
+            container = ttk.Frame(self.root)
+            container.pack(expand=True, fill="both", padx=16, pady=12)
+        except Exception as e:
+            log_error("Failed to build review UI", e)
+            return
 
         # Content area (top)
         content = ttk.Frame(container)
@@ -1160,10 +1261,14 @@ class AboutMeApp:
     
     def _populate_basic_info_tab(self, parent):
         """Populate the Basic System Information tab"""
-        # Create scrollable frame
-        canvas = tk.Canvas(parent, bg="#121212")
-        scrollbar = ttk.Scrollbar(parent, orient="vertical", command=canvas.yview)
-        scrollable_frame = ttk.Frame(canvas)
+        try:
+            # Create scrollable frame
+            canvas = tk.Canvas(parent, bg="#121212")
+            scrollbar = ttk.Scrollbar(parent, orient="vertical", command=canvas.yview)
+            scrollable_frame = ttk.Frame(canvas)
+        except Exception as e:
+            log_error("Failed to create basic info tab", e)
+            return
         
         scrollable_frame.bind(
             "<Configure>",
@@ -1205,10 +1310,14 @@ class AboutMeApp:
     
     def _populate_hardware_info_tab(self, parent):
         """Populate the Hardware Details tab"""
-        # Create scrollable frame
-        canvas = tk.Canvas(parent, bg="#121212")
-        scrollbar = ttk.Scrollbar(parent, orient="vertical", command=canvas.yview)
-        scrollable_frame = ttk.Frame(canvas)
+        try:
+            # Create scrollable frame
+            canvas = tk.Canvas(parent, bg="#121212")
+            scrollbar = ttk.Scrollbar(parent, orient="vertical", command=canvas.yview)
+            scrollable_frame = ttk.Frame(canvas)
+        except Exception as e:
+            log_error("Failed to create hardware info tab", e)
+            return
         
         scrollable_frame.bind(
             "<Configure>",
@@ -1265,13 +1374,17 @@ class AboutMeApp:
     
     def _populate_preview_tab(self, parent):
         """Populate the Complete Data Preview tab"""
-        # Create treeview for complete data preview
-        columns = ("Field", "Value")
-        tree = ttk.Treeview(parent, columns=columns, show="headings", height=15)
-        tree.heading("Field", text="Field")
-        tree.heading("Value", text="Value")
-        tree.column("Field", width=250, anchor="w")
-        tree.column("Value", width=400, anchor="w")
+        try:
+            # Create treeview for complete data preview
+            columns = ("Field", "Value")
+            tree = ttk.Treeview(parent, columns=columns, show="headings", height=15)
+            tree.heading("Field", text="Field")
+            tree.heading("Value", text="Value")
+            tree.column("Field", width=250, anchor="w")
+            tree.column("Value", width=400, anchor="w")
+        except Exception as e:
+            log_error("Failed to create preview tab", e)
+            return
         
         vsb = ttk.Scrollbar(parent, orient="vertical", command=tree.yview)
         tree.configure(yscrollcommand=vsb.set)
@@ -1331,10 +1444,14 @@ class AboutMeApp:
         vsb.pack(side="right", fill="y")
 
     def _build_success_ui(self, success):
-        for w in self.root.winfo_children():
-            w.destroy()
-        frame = ttk.Frame(self.root)
-        frame.pack(expand=True, fill="both", padx=24, pady=24)
+        try:
+            for w in self.root.winfo_children():
+                w.destroy()
+            frame = ttk.Frame(self.root)
+            frame.pack(expand=True, fill="both", padx=24, pady=24)
+        except Exception as e:
+            log_error("Failed to build success UI", e)
+            return
         if success:
             title = ttk.Label(frame, text="Data Shared", font=("Segoe UI", 18, "bold"))
             title.pack(pady=(24, 8))
@@ -1376,29 +1493,40 @@ class AboutMeApp:
         self._add_footer(self.root)
 
     def _resolve_asset(self, relative_path):
-        base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
-        return os.path.join(base, relative_path)
+        try:
+            base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+            return os.path.join(base, relative_path)
+        except Exception as e:
+            log_error("Failed to resolve asset", e)
+            return relative_path
 
     def _find_duck_gif(self):
-        candidates = [
-            self._resolve_asset("assets/duck-dance.gif"),
-            self._resolve_asset("duck-dance.gif"),
-            os.path.join(os.path.dirname(os.path.abspath(__file__)), "duck-dance.gif"),
-        ]
-        for p in candidates:
-            if p and os.path.exists(p):
-                return p
-        return None
+        try:
+            candidates = [
+                self._resolve_asset("assets/duck-dance.gif"),
+                self._resolve_asset("duck-dance.gif"),
+                os.path.join(os.path.dirname(os.path.abspath(__file__)), "duck-dance.gif"),
+            ]
+            for p in candidates:
+                if p and os.path.exists(p):
+                    return p
+            return None
+        except Exception as e:
+            log_error("Failed to find duck gif", e)
+            return None
 
     def _start_collection(self):
-        def work():
-            try:
-                self.collector.collect_all_info()
-                self.queue.put(("done", None))
-            except Exception as e:
-                self.queue.put(("error", e))
-        threading.Thread(target=work, daemon=True).start()
-        self.root.after(100, self._poll_queue)
+        try:
+            def work():
+                try:
+                    self.collector.collect_all_info()
+                    self.queue.put(("done", None))
+                except Exception as e:
+                    self.queue.put(("error", e))
+            threading.Thread(target=work, daemon=True).start()
+            self.root.after(100, self._poll_queue)
+        except Exception as e:
+            log_error("Failed to start collection", e)
 
     def _poll_queue(self):
         try:
@@ -1406,45 +1534,58 @@ class AboutMeApp:
         except queue.Empty:
             self.root.after(100, self._poll_queue)
             return
-        if kind == "done":
-            if hasattr(self, "progress"):
-                try:
-                    self.progress.stop()
-                except Exception:
-                    pass
-            self._build_review_ui()
-        elif kind == "error":
-            log_error("Failed during collection", payload)
-            messagebox.showerror("Error", "Failed to collect computer information.")
-            self.on_close()
-        else:
-            self.root.after(100, self._poll_queue)
+        except Exception as e:
+            log_error("Failed to poll queue", e)
+            return
+        
+        try:
+            if kind == "done":
+                if hasattr(self, "progress"):
+                    try:
+                        self.progress.stop()
+                    except Exception:
+                        pass
+                self._build_review_ui()
+            elif kind == "error":
+                log_error("Failed during collection", payload)
+                messagebox.showerror("Error", "Failed to collect computer information.")
+                self.on_close()
+            else:
+                self.root.after(100, self._poll_queue)
+        except Exception as e:
+            log_error("Failed to handle queue message", e)
 
     def on_send_click(self):
-        self.send_btn.state(["disabled"]) if self.send_btn else None
-        self.cancel_btn.state(["disabled"]) if self.cancel_btn else None
-        def send_work():
-            try:
-                success = self.collector.send_to_github_repo()
-            except Exception as e:
-                log_error("Failed to send to GitHub", e)
-                success = False
-            self.queue.put(("sent", success))
-        threading.Thread(target=send_work, daemon=True).start()
-        self._show_sending_state()
-        self.root.after(100, self._poll_send_queue)
+        try:
+            self.send_btn.state(["disabled"]) if self.send_btn else None
+            self.cancel_btn.state(["disabled"]) if self.cancel_btn else None
+            def send_work():
+                try:
+                    success = self.collector.send_to_github_repo()
+                except Exception as e:
+                    log_error("Failed to send to GitHub", e)
+                    success = False
+                self.queue.put(("sent", success))
+            threading.Thread(target=send_work, daemon=True).start()
+            self._show_sending_state()
+            self.root.after(100, self._poll_send_queue)
+        except Exception as e:
+            log_error("Failed to handle send click", e)
 
     def _show_sending_state(self):
-        for w in self.root.winfo_children():
-            w.destroy()
-        frame = ttk.Frame(self.root)
-        frame.pack(expand=True, fill="both", padx=24, pady=24)
-        title = ttk.Label(frame, text="Sending...", font=("Segoe UI", 16, "bold"))
-        title.pack(pady=(40, 12))
-        self.progress = ttk.Progressbar(frame, mode="indeterminate")
-        self.progress.pack(fill="x")
-        self.progress.start(10)
-        self._add_footer(self.root)
+        try:
+            for w in self.root.winfo_children():
+                w.destroy()
+            frame = ttk.Frame(self.root)
+            frame.pack(expand=True, fill="both", padx=24, pady=24)
+            title = ttk.Label(frame, text="Sending...", font=("Segoe UI", 16, "bold"))
+            title.pack(pady=(40, 12))
+            self.progress = ttk.Progressbar(frame, mode="indeterminate")
+            self.progress.pack(fill="x")
+            self.progress.start(10)
+            self._add_footer(self.root)
+        except Exception as e:
+            log_error("Failed to show sending state", e)
 
     def _poll_send_queue(self):
         try:
@@ -1452,14 +1593,21 @@ class AboutMeApp:
         except queue.Empty:
             self.root.after(100, self._poll_send_queue)
             return
-        if kind == "sent":
-            try:
-                self.progress.stop()
-            except Exception:
-                pass
-            self._build_success_ui(bool(payload))
-        else:
-            self.root.after(100, self._poll_send_queue)
+        except Exception as e:
+            log_error("Failed to poll send queue", e)
+            return
+        
+        try:
+            if kind == "sent":
+                try:
+                    self.progress.stop()
+                except Exception:
+                    pass
+                self._build_success_ui(bool(payload))
+            else:
+                self.root.after(100, self._poll_send_queue)
+        except Exception as e:
+            log_error("Failed to handle send queue message", e)
 
     def on_close(self):
         try:
@@ -1468,14 +1616,18 @@ class AboutMeApp:
             pass
 
     def run(self):
-        # Center window
-        self.root.update_idletasks()
-        w = self.root.winfo_width()
-        h = self.root.winfo_height()
-        x = (self.root.winfo_screenwidth() // 2) - (w // 2)
-        y = (self.root.winfo_screenheight() // 2) - (h // 2)
-        self.root.geometry(f"{w}x{h}+{x}+{y}")
-        self.root.mainloop()
+        try:
+            # Center window
+            self.root.update_idletasks()
+            w = self.root.winfo_width()
+            h = self.root.winfo_height()
+            x = (self.root.winfo_screenwidth() // 2) - (w // 2)
+            y = (self.root.winfo_screenheight() // 2) - (h // 2)
+            self.root.geometry(f"{w}x{h}+{x}+{y}")
+            self.root.mainloop()
+        except Exception as e:
+            log_error("Failed to run GUI", e)
+            self.on_close()
 
     def _set_window_icon(self):
         try:
@@ -1512,13 +1664,17 @@ class _CircularGifAnimator:
         self._load_frames()
 
     def _load_frames(self):
-        img = Image.open(self.gif_path)
-        # Prepare circular mask once
-        mask_size = (self.diameter, self.diameter)
-        circle_mask = Image.new("L", mask_size, 0)
-        draw = ImageDraw.Draw(circle_mask)
-        draw.ellipse((0, 0, self.diameter, self.diameter), fill=255)
-        white_bg = Image.new("RGBA", mask_size, (255, 255, 255, 255))
+        try:
+            img = Image.open(self.gif_path)
+            # Prepare circular mask once
+            mask_size = (self.diameter, self.diameter)
+            circle_mask = Image.new("L", mask_size, 0)
+            draw = ImageDraw.Draw(circle_mask)
+            draw.ellipse((0, 0, self.diameter, self.diameter), fill=255)
+            white_bg = Image.new("RGBA", mask_size, (255, 255, 255, 255))
+        except Exception as e:
+            log_error("Failed to load GIF frames", e)
+            return
 
         # Some GIFs require seeking frames rather than ImageSequence for correct disposal
         try:
@@ -1577,13 +1733,16 @@ class _CircularGifAnimator:
         self.canvas._anim_refs.extend(self._tk_frames)
 
     def start(self):
-        if not self._tk_frames:
-            return
-        cx = int(self.canvas.cget("width")) // 2
-        cy = int(self.canvas.cget("height")) // 2
-        if self._item is None:
-            self._item = self.canvas.create_image(cx, cy, image=self._tk_frames[0])
-        self._animate()
+        try:
+            if not self._tk_frames:
+                return
+            cx = int(self.canvas.cget("width")) // 2
+            cy = int(self.canvas.cget("height")) // 2
+            if self._item is None:
+                self._item = self.canvas.create_image(cx, cy, image=self._tk_frames[0])
+            self._animate()
+        except Exception as e:
+            log_error("Failed to start GIF animation", e)
 
     def _animate(self):
         if not self._tk_frames:
