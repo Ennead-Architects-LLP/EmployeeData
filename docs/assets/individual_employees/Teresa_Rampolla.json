@@ -1,24 +1,123 @@
 {
   "human_name": "Teresa Rampolla",
-  "email": null,
+  "email": "teresa.rampolla@ennead.com",
   "bio": null,
-  "phone": null,
-  "mobile": null,
-  "office_location": null,
+  "phone": "212-792-5890",
+  "mobile": "212-792-5890",
+  "office_location": "",
   "profile_url": "https://ei.ennead.com/employee/5C2E5A44-624F-493B-8944-9F6840C1A330/teresa-rampolla",
-  "image_url": "https://ei.ennead.com/api/image/0bdaa2da-cebb-4df4-95aa-0fa6ba0cb337/preview?size=250w250h_fxd&version=0",
-  "image_local_path": null,
-  "position": null,
-  "department": null,
-  "years_with_firm": null,
-  "memberships": [],
-  "education": [],
+  "image_url": "https://ei.ennead.com/api/image/0bdaa2da-cebb-4df4-95aa-0fa6ba0cb337/preview?size=300w300h_fxd&version=0",
+  "image_local_path": "assets/images/Teresa Rampolla_profile.jpg",
+  "position": "Senior Associate",
+  "department": "",
+  "years_with_firm": 2,
+  "memberships": [
+    "AIA"
+  ],
+  "education": [
+    {
+      "institution": "Parson School of Design",
+      "degree": "Graduate",
+      "specialty": "Environmental Design"
+    }
+  ],
   "licenses": [],
-  "projects": {},
+  "projects": {
+    "proj_1": {
+      "name": "Springfield",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-franconia-springfield-hospital",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "text_parsing"
+    },
+    "proj_2": {
+      "name": "Springfield",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_3": {
+      "name": "Ballinger",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_4": {
+      "name": "Inova Alexandria Hospital at LandmarkBallinger2124",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-alexandria-hospital-at-landmark",
+      "url": "https://ei.ennead.com/project/13EA8163-DF4D-4F40-96DB-39473C1C4D56/inova-alexandria-hospital-at-landmark",
+      "source": "text_parsing"
+    },
+    "proj_5": {
+      "name": "Inova Alexandria Hospital at Landmark",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_6": {
+      "name": "Lenox Hill Hospital, Northwell Health RedevelopmentNorthwell Health1643",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "lenox-hill-hospital-northwell-health-redevelopment",
+      "url": "https://ei.ennead.com/project/D87ED9D1-4E9B-4AC3-8D76-670860E01F85/lenox-hill-hospital-northwell-health-redevelopment",
+      "source": "text_parsing"
+    },
+    "proj_7": {
+      "name": "Lenox Hill Hospital, Northwell Health Redevelopment",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_8": {
+      "name": "Northwell Health",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "",
+      "url": "",
+      "source": "text_parsing"
+    },
+    "proj_9": {
+      "name": "2125",
+      "description": "",
+      "role": "",
+      "year": "",
+      "client": "",
+      "number": "inova-franconia-springfield-hospital",
+      "url": "https://ei.ennead.com/project/C73B6963-4AD3-4DFA-A7EE-112CA0D74EE9/inova-franconia-springfield-hospital",
+      "source": "text_parsing"
+    }
+  },
   "recent_posts": [],
-  "teams_url": null,
+  "teams_url": "https://teams.microsoft.com/l/chat/0/0?users=teresa.rampolla@ennead.com",
   "linkedin_url": null,
   "website_url": null,
-  "scraped_at": "2025-09-17T22:51:59.142930",
+  "scraped_at": "2025-09-19T14:28:32.975280",
   "profile_id": null
 }
