@@ -57,20 +57,20 @@
         "type": "Physical"
       }
     },
-    "collection_date": "2025-09-19T18:05:58.594913",
+    "collection_date": "2025-09-19T18:38:10.395847",
     "human_name": "Paula Gronda",
     "system_info": {
-      "available_memory_bytes": 43344044032,
-      "memory_percent": 36.6,
+      "available_memory_bytes": 38205468672,
+      "memory_percent": 44.1,
       "total_memory_bytes": 68386164736,
       "total_memory_formatted": "63.7 GB",
       "total_memory_gb": 63.69,
       "total_memory_mb": 65218.13,
-      "used_memory_bytes": 25042120704
+      "used_memory_bytes": 30180696064
     },
-    "last_updated": "2025-09-19T22:06:20.630562",
+    "last_updated": "2025-09-19T22:38:36.227316",
     "computername": "EANY-8DP1KD3",
     "processed_by_server": true,
-    "server_processing_timestamp": "2025-09-19T22:06:20.630566"
+    "server_processing_timestamp": "2025-09-19T22:38:36.227321"
   }
 }
