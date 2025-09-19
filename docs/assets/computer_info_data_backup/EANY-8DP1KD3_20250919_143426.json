@@ -1,0 +1,74 @@
+{
+  "Computername": "EANY-8DP1KD3",
+  "First Name": "Paula",
+  "Last Name": "Gronda",
+  "Manufacturer": "Dell Inc.",
+  "Model": "Precision 5820 Tower",
+  "OS": "Windows 11",
+  "Serial Number": "8DP1KD3",
+  "Username": "Paula.Gronda",
+  "all_cpus": {
+    "cpu_1": {
+      "architecture": 9,
+      "cache_l3_size": 8448,
+      "cores": 6,
+      "driver": "N/A",
+      "family": 179,
+      "hyperthreading_enabled": false,
+      "logical_processors": 12,
+      "max_clock_speed": 3792,
+      "memory_bytes": null,
+      "memory_mb": null,
+      "model": 0,
+      "name": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+      "processor": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+      "release_date": "Unknown",
+      "stepping": 0,
+      "type": "Physical",
+      "virtualization_support": false
+    }
+  },
+  "all_gpus": {
+    "gpu_1": {
+      "driver": "10.0.26100.5074",
+      "is_virtual": false,
+      "memory_bytes": 8589934592,
+      "memory_formatted": "8.0 GB",
+      "memory_gb": 8,
+      "memory_mb": 8192,
+      "name": "Microsoft Remote Display Adapter",
+      "priority": 0,
+      "processor": "Unknown",
+      "release_date": "Unknown",
+      "type": "Physical"
+    },
+    "gpu_2": {
+      "driver": "32.0.15.8097",
+      "is_virtual": false,
+      "memory_bytes": 4293918720,
+      "memory_formatted": "4.0 GB",
+      "memory_gb": 3.999,
+      "memory_mb": 4095,
+      "name": "NVIDIA Quadro RTX 4000",
+      "priority": 3,
+      "processor": "Quadro RTX 4000",
+      "release_date": "2022-10-12T00:00:00",
+      "type": "Physical"
+    }
+  },
+  "collection_date": "2025-09-19T10:34:01.319596",
+  "human_name": "Paula Gronda",
+  "system_info": {
+    "available_memory_bytes": 41488719872,
+    "memory_percent": 39.3,
+    "total_memory_bytes": 68386164736,
+    "total_memory_formatted": "63.7 GB",
+    "total_memory_gb": 63.69,
+    "total_memory_mb": 65218.13,
+    "used_memory_bytes": 26897444864
+  },
+  "computer_name": "EANY-8DP1KD3",
+  "server_timestamp": "2025-09-19T14:34:26.197328",
+  "backup_type": "full_computer_data",
+  "structure_version": "1.0"
+}
