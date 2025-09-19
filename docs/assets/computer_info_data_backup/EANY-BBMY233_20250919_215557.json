@@ -1,0 +1,23 @@
+{
+  "CPU": "Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz",
+  "Computername": "EANY-BBMY233",
+  "Date": "2025-09-19T17:55:37.105913",
+  "First Name": "Mia",
+  "GPU Date": "Unknown",
+  "GPU Driver": "10.0.26100.4484",
+  "GPU Memory": 16376,
+  "GPU Name": "Microsoft Remote Display Adapter",
+  "Last Name": "Tsiamis",
+  "Manufacturer": "Dell Inc.",
+  "Model": "Precision 5820 Tower",
+  "OS": "Windows 11",
+  "Serial Number": "BBMY233",
+  "Total Physical Memory": 34027282432,
+  "Username": "mia.tsiamis",
+  "human_name": "Mia Tsiamis",
+  "computer_name": "EANY-BBMY233",
+  "memory_bytes": 34027282432,
+  "server_timestamp": "2025-09-19T21:55:57.710052",
+  "backup_type": "full_computer_data",
+  "structure_version": "1.0"
+}
