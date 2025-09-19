@@ -142,20 +142,20 @@
         "type": "Physical"
       }
     },
-    "collection_date": "2025-09-18T17:57:14.332889",
+    "collection_date": "2025-09-19T07:11:58.293346",
     "human_name": "Sen Zhang",
     "system_info": {
-      "available_memory_bytes": 40074301440,
+      "available_memory_bytes": 40064192512,
       "memory_percent": 41,
       "total_memory_bytes": 67936788480,
       "total_memory_formatted": "63.3 GB",
       "total_memory_gb": 63.271,
       "total_memory_mb": 64789.57,
-      "used_memory_bytes": 27862487040
+      "used_memory_bytes": 27872595968
     },
-    "last_updated": "2025-09-18T21:57:41.447976",
+    "last_updated": "2025-09-19T11:12:28.250054",
     "computername": "MININT-5V26DTJ",
     "processed_by_server": true,
-    "server_processing_timestamp": "2025-09-18T21:57:41.447980"
+    "server_processing_timestamp": "2025-09-19T11:12:28.250059"
   }
 }
