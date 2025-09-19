@@ -271,7 +271,6 @@ def merge_all_employees() -> bool:
                     break
             
             if not already_matched:
-                # Create new employee from computer data
                 # Extract name from computer data (use clean_key as fallback)
                 first_computer = next(iter(comp_data.values())) if comp_data else {}
                 first_name = first_computer.get("first_name", "").strip()
@@ -282,16 +281,24 @@ def merge_all_employees() -> bool:
                     # Use clean_key as fallback, convert back to readable format
                     full_name = clean_key.replace("_", " ").title()
                 
-                new_employee = {
-                    "human_name": full_name,
-                    "source": "individual_computer_only"
-                }
-                # Add computer data to separate section
-                add_computer_data_to_employee(new_employee, comp_data, "computer_info")
-                add_data_source_to_employee(new_employee, "Individual Computer Data")
-                employees[full_name] = new_employee
-                computer_created_employees += 1
-                print(f"Created new employee from individual computer data: {full_name}")
+                # Check if employee already exists (from individual employee files)
+                if full_name in employees:
+                    # Employee already exists, just add computer data
+                    add_computer_data_to_employee(employees[full_name], comp_data, "computer_info")
+                    add_data_source_to_employee(employees[full_name], "Individual Computer Data")
+                    print(f"✅ Added computer data to existing employee: {full_name}")
+                else:
+                    # Create new employee from computer data
+                    new_employee = {
+                        "human_name": full_name,
+                        "source": "individual_computer_only"
+                    }
+                    # Add computer data to separate section
+                    add_computer_data_to_employee(new_employee, comp_data, "computer_info")
+                    add_data_source_to_employee(new_employee, "Individual Computer Data")
+                    employees[full_name] = new_employee
+                    computer_created_employees += 1
+                    print(f"Created new employee from individual computer data: {full_name}")
         
         print(f"Loaded computer info for {len(computer_info_by_employee)} employees")
         print(f"Successfully matched {computer_matches} employees with individual computer data")
