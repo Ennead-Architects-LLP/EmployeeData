@@ -1,0 +1,17 @@
+{
+  "computer_name": "EANY-8DW8KD3",
+  "cpu": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+  "gpu_driver": "9.3.3324.0",
+  "gpu_memory": null,
+  "gpu_name": "DisplayLink USB Device",
+  "human_name": "Han Isozen",
+  "manufacturer": "Dell Inc.",
+  "memory_bytes": 119925776384,
+  "model": "Precision 5820 Tower",
+  "os": "Windows 11",
+  "serial_number": "8DW8KD3",
+  "username": "Han.Isozen",
+  "server_timestamp": "2025-09-19T19:34:57.474594",
+  "backup_type": "full_computer_data",
+  "structure_version": "1.0"
+}
