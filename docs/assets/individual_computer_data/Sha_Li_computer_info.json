@@ -44,20 +44,20 @@
         "type": "Physical"
       }
     },
-    "collection_date": "2025-09-19T14:19:20.181612",
+    "collection_date": "2025-09-19T14:31:11.264556",
     "human_name": "Sha Li",
     "system_info": {
-      "available_memory_bytes": 47287078912,
-      "memory_percent": 30.9,
+      "available_memory_bytes": 53220560896,
+      "memory_percent": 22.2,
       "total_memory_bytes": 68385808384,
       "total_memory_formatted": "63.7 GB",
       "total_memory_gb": 63.689,
       "total_memory_mb": 65217.79,
-      "used_memory_bytes": 21098729472
+      "used_memory_bytes": 15165247488
     },
-    "last_updated": "2025-09-19T18:19:48.374597",
+    "last_updated": "2025-09-19T18:31:35.867221",
     "computername": "EANY-8DN4KD3",
     "processed_by_server": true,
-    "server_processing_timestamp": "2025-09-19T18:19:48.374601"
+    "server_processing_timestamp": "2025-09-19T18:31:35.867225"
   }
 }
