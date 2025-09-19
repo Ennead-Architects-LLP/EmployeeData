@@ -142,21 +142,21 @@
         "type": "Physical"
       }
     },
-    "collection_date": "2025-09-19T07:11:58.293346",
+    "collection_date": "2025-09-19T11:32:35.203822",
     "human_name": "Sen Zhang",
     "system_info": {
-      "available_memory_bytes": 40064192512,
-      "memory_percent": 41,
+      "available_memory_bytes": 42878021632,
+      "memory_percent": 36.9,
       "total_memory_bytes": 67936788480,
       "total_memory_formatted": "63.3 GB",
       "total_memory_gb": 63.271,
       "total_memory_mb": 64789.57,
-      "used_memory_bytes": 27872595968
+      "used_memory_bytes": 25058766848
     },
-    "last_updated": "2025-09-19T11:12:28.250054",
+    "last_updated": "2025-09-19T15:33:01.294471",
     "computername": "MININT-5V26DTJ",
     "processed_by_server": true,
-    "server_processing_timestamp": "2025-09-19T11:12:28.250059"
+    "server_processing_timestamp": "2025-09-19T15:33:01.294475"
   },
   "EA-25CWFS3": {
     "Computername": "EA-25CWFS3",
