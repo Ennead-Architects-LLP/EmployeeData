@@ -182,5 +182,66 @@
     "computername": "EA-25CWFS3",
     "processed_by_server": true,
     "server_processing_timestamp": "2025-09-19T13:53:08.304365"
+  },
+  "EANY-1X8MWP3": {
+    "Computername": "EANY-1X8MWP3",
+    "First Name": "Sen",
+    "Last Name": "Zhang",
+    "Manufacturer": "Dell Inc.",
+    "Model": "Precision 5820 Tower",
+    "OS": "Windows 11",
+    "Serial Number": "1X8MWP3",
+    "Username": "szhang",
+    "all_cpus": {
+      "cpu_1": {
+        "architecture": 9,
+        "cache_l3_size": 8448,
+        "cores": 6,
+        "driver": "N/A",
+        "family": 179,
+        "hyperthreading_enabled": false,
+        "logical_processors": 12,
+        "max_clock_speed": 3792,
+        "memory_bytes": null,
+        "memory_mb": null,
+        "model": 0,
+        "name": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "processor": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+        "release_date": "Unknown",
+        "stepping": 0,
+        "type": "Physical",
+        "virtualization_support": false
+      }
+    },
+    "all_gpus": {
+      "gpu_1": {
+        "driver": "32.0.15.8115",
+        "is_virtual": false,
+        "memory_bytes": 4293918720,
+        "memory_formatted": "4.0 GB",
+        "memory_gb": 3.999,
+        "memory_mb": 4095,
+        "name": "NVIDIA RTX A4000",
+        "priority": 3,
+        "processor": "NVIDIA RTX A4000",
+        "release_date": "Unknown",
+        "type": "Physical"
+      }
+    },
+    "collection_date": "2025-09-19T16:07:53.653777",
+    "human_name": "Sen Zhang",
+    "system_info": {
+      "available_memory_bytes": 123868278784,
+      "memory_percent": 9.7,
+      "total_memory_bytes": 137107324928,
+      "total_memory_formatted": "127.7 GB",
+      "total_memory_gb": 127.691,
+      "total_memory_mb": 130755.73,
+      "used_memory_bytes": 13239046144
+    },
+    "last_updated": "2025-09-19T20:08:20.202156",
+    "computername": "EANY-1X8MWP3",
+    "processed_by_server": true,
+    "server_processing_timestamp": "2025-09-19T20:08:20.202161"
   }
 }
