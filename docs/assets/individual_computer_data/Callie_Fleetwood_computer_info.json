@@ -1,0 +1,25 @@
+{
+  "EANY-7W8MWP3": {
+    "CPU": "Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz",
+    "Computername": "EANY-7W8MWP3",
+    "Date": "2025-09-19T09:32:07.966120",
+    "First Name": "Callie",
+    "GPU Date": "2021-04-12T00:00:00",
+    "GPU Driver": "32.0.15.7324",
+    "GPU Memory": 4095,
+    "GPU Name": "NVIDIA RTX A4000",
+    "GPU Processor": "NVIDIA RTX A4000",
+    "Last Name": "Fleetwood",
+    "Manufacturer": "Dell Inc.",
+    "Model": "Precision 5820 Tower",
+    "OS": "Windows 11",
+    "Serial Number": "7W8MWP3",
+    "Total Physical Memory": 137107308544,
+    "Username": "cfleetwood",
+    "human_name": "Callie Fleetwood",
+    "last_updated": "2025-09-19T13:32:32.785411",
+    "computername": "EANY-7W8MWP3",
+    "processed_by_server": true,
+    "server_processing_timestamp": "2025-09-19T13:32:32.785415"
+  }
+}
