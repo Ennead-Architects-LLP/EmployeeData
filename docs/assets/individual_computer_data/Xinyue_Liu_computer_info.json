@@ -44,20 +44,20 @@
         "type": "Physical"
       }
     },
-    "collection_date": "2025-09-19T11:21:50.582909",
+    "collection_date": "2025-09-19T15:06:21.976665",
     "human_name": "Xinyue Liu",
     "system_info": {
-      "available_memory_bytes": 100583079936,
-      "memory_percent": 26.6,
+      "available_memory_bytes": 98627940352,
+      "memory_percent": 28.1,
       "total_memory_bytes": 137105641472,
       "total_memory_formatted": "127.7 GB",
       "total_memory_gb": 127.69,
       "total_memory_mb": 130754.13,
-      "used_memory_bytes": 36522561536
+      "used_memory_bytes": 38477701120
     },
-    "last_updated": "2025-09-19T15:22:15.011322",
+    "last_updated": "2025-09-19T19:06:54.755676",
     "computername": "EANY-8DY1KD3",
     "processed_by_server": true,
-    "server_processing_timestamp": "2025-09-19T15:22:15.011326"
+    "server_processing_timestamp": "2025-09-19T19:06:54.755680"
   }
 }
